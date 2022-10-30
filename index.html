@@ -40,14 +40,9 @@
 
 <body>
 
-  <!-- ======= Header ======= -->
   <header id="header" class="fixed-top d-flex align-items-center">
     <div class="container d-flex align-items-center">
-
       <h1 class="logo me-auto"><a href="index.html">Java Interview Q&A</a></h1>
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-
       <nav id="navbar" class="navbar">
         <ul>
           <li><a href="index.html" class="active">Home</a></li>
@@ -98,8 +93,20 @@
               </li>
             </ul>
           </li>
-          <li><a href="#">Design</a></li>
-          <li><a href="#">Database</a></li>
+          <li class="dropdown"><a href="database.html"><span>Database</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">SQL</a></li>
+              <li><a href="#">Pl-SQL</a></li>
+              <li class="dropdown"><a href="nosql.html"><span>NoSQL</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">Apache Cassandra</a></li>
+                  <li><a href="#">MongoDB</a></li>
+                  <li><a href="#">Redis</a></li>
+                  <li><a href="#">ArangoDB</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
           <li class="dropdown"><a href="cloud.html"><span>Cloud</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="#">AWS</a></li>
@@ -119,10 +126,19 @@
               <li><a href="#">html</a></li>
             </ul>
           </li>
+          <li class="dropdown"><a href="#"><span>Other</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Company wise</a></li>
+              <li><a href="#">Design pattern</a></li>
+              <li><a href="#">Microservices</a></li>
+              <li><a href="#">Data Structure</a></li>
+              <li><a href="#">Architect</a></li>
+            </ul>
+          </li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav>
-  </header><!-- End Header -->
+  </header>
 
   </br></br> </br>
 
