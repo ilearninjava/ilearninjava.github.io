@@ -18,6 +18,11 @@ a {
   color: #d9232d;
 }
 
+a.title {
+  text-decoration: none;
+  color: hwb(216 14% 15%);
+}
+
 a:hover {
   color: #e24d55;
   text-decoration: none;
