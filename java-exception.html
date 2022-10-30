@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Java Interview Q&A</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Sailor - v4.9.1
+  * Template URL: https://bootstrapmade.com/sailor-free-bootstrap-theme/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center">
+
+      <h1 class="logo me-auto"><a href="index.html">Java Interview Q&A</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+
+          <li class="dropdown"><a href="#"><span>Java</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Oops</a></li>
+              <li><a href="#">Multithreading</a></li>
+              <li><a href="#">Exception handling</a></li>
+
+              <li class="dropdown"><a href="#"><span>Collection framework</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">Map</a></li>
+                  <li><a href="#">List</a></li>
+                  <li><a href="#">Queue</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>Framework</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Spring</a></li>
+              <li><a href="#">Hibernate</a></li>
+              <li><a href="#">SpringBoot</a></li>
+			  <li><a href="#">JSF</a></li>
+			  <li><a href="#">Struts</a></li>
+			  <li class="dropdown"><a href="#"><span>Entity Framework</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">JPA</a></li>
+                  <li><a href="#">Hibernate</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>          
+          <li class="dropdown"><a href="#"><span>Coding</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+			  <li><a href="index.html">Java</a></li>
+              <li><a href="#">Spring</a></li>
+              <li><a href="#">Hibernate</a></li>
+              <li><a href="#">SpringBoot</a></li>
+			  <li><a href="#">JSF</a></li>
+			  <li><a href="#">Struts</a></li>
+			  <li class="dropdown"><a href="#"><span>Entity Framework</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">JPA</a></li>
+                  <li><a href="#">Hibernate</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+		  <li><a href="#">Design</a></li>
+          <li><a href="#">Database</a></li>
+		  <li class="dropdown"><a href="#"><span>Cloud</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">AWS</a></li>
+              <li><a href="#">GCP</a></li>
+			  <li><a href="#">Azure</a></li>
+              <li><a href="#">IBM Cloud</a></li>
+			  <li><a href="#">Docker</a></li>
+			  <li><a href="#">Kubernetes</a></li>
+            </ul>
+          </li>
+		  <li class="dropdown"><a href="#"><span>UI</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Angular</a></li>
+              <li><a href="#">ReactJS</a></li>
+              <li><a href="#">Javascript</a></li>
+			  <li><a href="#">css</a></li>
+			  <li><a href="#">html</a></li>
+            </ul>
+          </li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+  </header><!-- End Header -->
+
+</br>
+  <main id="main">
+
+    <section id="about" class="about">
+      <div class="container">
+        <div class="row"> 
+		
+          <br>
+          <span style="color: #38761d;"><b>Q1. What is an Exception in java?</b></span>
+          An Exception is a failure condition that occurs during the execution of a program and disrupts the normal flow of the program. It has to be handled properly, failing which program will be terminated abruptly.<br>
+          <br>
+          <span style="color: #38761d;"><b>Q2. How the exceptions are handled in java? </b></span>
+          Exceptions handling can be done using try, catch and finally blocks.<br>
+          <b>try :</b> The code or set of statements that may raise exception should be try block.<br>
+          <b>catch :</b> This block catches the exceptions thrown in the try block.<br>
+          <b>finally :</b> This block of code is always executed whether an exception has occurred in the try block or not except in one scenario explained in below question.<br>
+          <br>
+          <span style="color: #38761d;"><b>Q3 Is finally block always get executed in the java program?</b></span> <br>
+          <b>This question is very important</b>. finally block is always executed but there is one scenario when finally block does not execute.<br>
+          <a name="more"></a>By using <b>System.exit(0)</b> in the try or catch block, results in <b>finally block does not execute</b>. The reason is System.exit(0) line terminates the running java virtual machine. Termination leads to no more execution of the program.<br>
+          <br>
+          <b>This is the only scenario when finally block fails to execute.</b> <br>
+          <br>
+          <br>
+          <div style="background: #F3F3F3; border-width: .1em .1em .1em .1em; border: 1px dotted; overflow: auto; padding: .2em .6em; width: auto;">
+          <pre style="line-height: 125%; margin: 0;"><span style="color: #008800; font-weight: bold;">public</span> <span style="color: #008800; font-weight: bold;">class</span> <span style="color: #bb0066; font-weight: bold;">ILearnJava</span><span style="color: #333333;">{</span>
+              <span style="color: #008800; font-weight: bold;">public</span> <span style="color: #008800; font-weight: bold;">static</span> <span style="color: #333399; font-weight: bold;">void</span> <span style="color: #0066bb; font-weight: bold;">main</span><span style="color: #333333;">(</span>String<span style="color: #333333;">[]</span> args<span style="color: #333333;">)</span> 
+              <span style="color: #333333;">{</span>
+                  <span style="color: #008800; font-weight: bold;">try</span>
+                  <span style="color: #333333;">{</span>
+                      System<span style="color: #333333;">.</span><span style="color: #0000cc;">out</span><span style="color: #333333;">.</span><span style="color: #0000cc;">println</span><span style="color: #333333;">(</span><span style="background-color: #fff0f0;">"Inside try block "</span><span style="color: #333333;">);</span>
+                      <span style="color: #888888;">/* After executing below line</span>
+          <span style="color: #888888;">            jvm terminates the program */</span>
+                      System<span style="color: #333333;">.</span><span style="color: #0000cc;">exit</span><span style="color: #333333;">(</span><span style="color: #0000dd; font-weight: bold;">0</span><span style="color: #333333;">);</span>            
+                  <span style="color: #333333;">}</span>
+                  <span style="color: #008800; font-weight: bold;">catch</span> <span style="color: #333333;">(</span>Exception e<span style="color: #333333;">)</span>
+                  <span style="color: #333333;">{</span>
+                      System<span style="color: #333333;">.</span><span style="color: #0000cc;">out</span><span style="color: #333333;">.</span><span style="color: #0000cc;">println</span><span style="color: #333333;">(</span><span style="background-color: #fff0f0;">"Inside catch block"</span><span style="color: #333333;">);</span>
+                  <span style="color: #333333;">}</span>
+                  <span style="color: #008800; font-weight: bold;">finally</span>
+                  <span style="color: #333333;">{</span>
+                      System<span style="color: #333333;">.</span><span style="color: #0000cc;">out</span><span style="color: #333333;">.</span><span style="color: #0000cc;">println</span><span style="color: #333333;">(</span><span style="background-color: #fff0f0;">"Inside finally block"</span><span style="color: #333333;">);</span>
+                  <span style="color: #333333;">}</span>
+              <span style="color: #333333;">}</span>
+          <span style="color: #333333;">}</span>
+          </pre>
+          </div>
+          <br>
+          <span style="color: black;"><b>Output :</b></span>
+          Inside try block <br>
+          <br>
+          <span style="color: #38761d;"><b>Q4. What are the differences between Error and Exception in java?</b></span>
+          <br>
+          Main differences between Error and Exception are : <br>
+          <br>
+          a. Errors are caused by the JVM environment in which the application is running. Example: OutOfMemoryError while Exceptions are caused by the application itself. Example: NullPointerException.<br>
+          b. Errors can only occur at runtime while Exceptions can occur at compile time or runtime. <br>
+          <br>
+         
+          <span style="color: #38761d;"><b>Q5. What statements can exist in between try, catch and finally blocks?</b></span>
+          <br>
+          No, try, catch and finally forms a single unit and no other statements should exist in between try, catch and finally blocks.<br>
+          <br>
+          <span style="color: #38761d;"><b>Q6. Are we allowed to use only try block without a catch and finally blocks?</b></span>
+          <br>
+          <i><b>Prior to Java 7:</b></i> <br>
+          No, it is not allowed. If used it shows compilation error. The try block must be followed by a catch block or finally block.<br>
+          <br>
+          <i><b>After Java 7 (Correct Answer): </b></i><br>
+          Yes, it is possible to have a try block without a catch and finally blocks. The introduction of try-with-resources concept makes it possible.<br>
+          The only constraint is resources which we are passing as a parameter in try block must implement <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/AutoCloseable.html" target="_blank">AutoCloseable</a> interface.<br>
+          <br>
+          <br>
+          <div style="background: #F3F3F3; border-width: .1em .1em .1em .1em; border: 1px dotted; overflow: auto; padding: .2em .6em; width: auto;">
+          <pre style="line-height: 125%; margin: 0;"><span style="color: #008800; font-weight: bold;">import</span> <span style="color: #0e84b5; font-weight: bold;">java.util.*</span><span style="color: #333333;">;</span>
+          
+          <span style="color: #008800; font-weight: bold;">public</span> <span style="color: #008800; font-weight: bold;">class</span> <span style="color: #bb0066; font-weight: bold;">ILearnJava</span><span style="color: #333333;">{</span>
+              <span style="color: #008800; font-weight: bold;">public</span> <span style="color: #008800; font-weight: bold;">static</span> <span style="color: #333399; font-weight: bold;">void</span> <span style="color: #0066bb; font-weight: bold;">main</span><span style="color: #333333;">(</span>String<span style="color: #333333;">[]</span> args<span style="color: #333333;">)</span> 
+              <span style="color: #333333;">{</span>
+                  <span style="color: #888888;">/* After completion of try block,</span>
+          <span style="color: #888888;">        the Scanner object would be auto closed</span></pre>
+          <pre style="line-height: 125%; margin: 0;"><span style="color: #888888;">        as Scanner class implements AutoCloseable&nbsp;</span></pre>
+          <pre style="line-height: 125%; margin: 0;"><span style="color: #888888;">        interface. */</span>
+                  <span style="color: #008800; font-weight: bold;">try</span><span style="color: #333333;">(</span>Scanner sc <span style="color: #333333;">=</span> <span style="color: #008800; font-weight: bold;">new</span> Scanner<span style="color: #333333;">(</span>System<span style="color: #333333;">.</span><span style="color: #0000cc;">in</span><span style="color: #333333;">))</span>
+                  <span style="color: #333333;">{</span>
+                      System<span style="color: #333333;">.</span><span style="color: #0000cc;">out</span><span style="color: #333333;">.</span><span style="color: #0000cc;">println</span><span style="color: #333333;">(</span><span style="background-color: #fff0f0;">" try without catch/finally block "</span><span style="color: #333333;">);</span>
+                  <span style="color: #333333;">}</span>
+              <span style="color: #333333;">}</span>
+          <span style="color: #333333;">}</span>
+          </pre>
+          </div>
+          <br>
+          <span style="color: black;"><b>Output :</b></span>
+          try without catch/finally block <br>
+          <br>
+          <span style="color: #38761d;"><b>Q7. What are Checked and Unchecked exceptions in java?</b></span>
+          <br>
+          Exceptions which are known to the compiler are called Checked exceptions. Checked exceptions are checked at compile-time only. <br>
+          <br>
+          Unchecked exceptions occur only at run time. Unchecked exceptions are also called as run time exceptions. All subclasses of java.lang.RuntimeException and java.lang.Error is of Unchecked type.<br>
+          <br>
+          <span style="color: #38761d;"><b>Q8. What is the difference between Checked and Unchecked exceptions in java?</b></span> <br>
+          <br>
+          This is one of the most popular interview questions for java developers. Make sure this question is in your to-do list before appearing for the interview.<br>
+          Main differences between Checked and Unchecked exceptions are :<br>
+          <br>
+          a. Checked exceptions are checked at compile time while Unchecked exceptions are checked at run time.<br>
+          b. Checked exceptions must be handled by try/catch block or throws keyword while Unchecked exceptions are not necessary to handle.<br>
+          <br>
+          
+          <span style="color: #38761d;"><b>Q9. What is the difference between final, finally and finalize in java?</b></span>
+          <br>
+          <b>final keyword:</b><br>
+          By declaring a variable as final, the value of final variable cannot be changed.<br>
+          By declaring a method as final, method cannot be overridden.<br>
+          By declaring a class as final, class cannot be extended.<br>
+          <br>
+          <b>finally:</b><br>
+          Used
+           after try or try-catch block, will get executed after the try and 
+          catch blocks without considering whether an exception is thrown or not.<br>
+          <br>
+          <b>finalize:</b><br>
+          Finalize
+           method is the method that Garbage Collector always calls just before 
+          the deletion/destroying the object which is no longer in use in the 
+          code.<br>
+          <br>
+          <span style="color: #38761d;"><b>Q10 What is try-with-resources concept in java? How it differs from an ordinary try statement?</b></span>
+          <br>
+          According to <a href="https://docs.oracle.com/javase/tutorial/essential/exceptions/tryResourceClose.html" target="_blank">Java docs</a>,
+           try-with-resources statement is a try statement that declares one or more resources. It ensures that each resource is closed at the end of the statement. <br>
+          <br>
+          try-with-resources statement can have catch or finally block similar to ordinary try statement. In a 
+          try-with-resources statement, JVM makes sure catch or finally block is run after the resources declared have been closed. <br>
+          <br>
+          <span style="color: #38761d;"><b>Q11. What is RuntimeException in java. Give example?</b></span>
+          <br>
+          The
+           exceptions which occur at runtime are called as RuntimeException. These exceptions are unknown to the compiler. All subclasses of 
+          java.lang.RuntimeException are RuntimeExceptions.<br>
+          <br>
+          For example:<br>
+          NumberFormatException, 
+          NullPointerException, ClassCastException, ArrayIndexOutOfBoundException&nbsp;
+           etc.<br>
+          <br>
+          <span style="color: #38761d;"><b>Q12. What is the difference between ClassNotFoundException and NoClassDefFoundError in java?</b></span>
+          <br>
+          This question is important because very few Java developers are aware of the difference between ClassNotFoundException and NoClassDefFoundError.<br>
+          <br>
+          <b>ClassNotFoundException:</b><br>
+          An exception that occurs when you try to load a class at run time using Class.forName() or loadClass() methods and mentioned classes are not found in the classpath is called ClassNotFoundException.<br>
+          <br>
+          <b>NoClassDefFoundError:</b><br>
+          An exception that occurs when a particular class is present at compile-time but was missing at run time is called NoClassDefFoundError.<br>
+          <br>
+          
+          <span style="color: #38761d;"><b>Q13. Can we throw an exception manually/explicitly?</b></span>
+          <br>
+          Yes, using <b><i>throw</i></b> keyword we can throw an exception manually.<br>
+          <br>
+          <b>Syntax:</b><br>
+          <br>
+          <div style="background: #F3F3F3; border-width: .1em .1em .1em .1em; border: 1px dotted; overflow: auto; padding: .2em .6em; width: auto;">
+          <pre style="line-height: 125%; margin: 0;"><span style="color: #008800; font-weight: bold;">throw</span> InstanceOfThrowableType<span style="color: #333333;">;</span>
+          </pre>
+          </div>
+          <br>
+          <b>For example:</b><br>
+          <br>
+          <div style="background: #F3F3F3; border-width: .1em .1em .1em .1em; border: 1px dotted; overflow: auto; padding: .2em .6em; width: auto;">
+          <pre style="line-height: 125%; margin: 0;"><span style="color: #008800; font-weight: bold;">public</span> <span style="color: #008800; font-weight: bold;">class</span> <span style="color: #bb0066; font-weight: bold;">ILearnJava</span><span style="color: #333333;">{</span>
+              <span style="color: #008800; font-weight: bold;">public</span> <span style="color: #008800; font-weight: bold;">static</span> <span style="color: #333399; font-weight: bold;">void</span> <span style="color: #0066bb; font-weight: bold;">main</span><span style="color: #333333;">(</span>String<span style="color: #333333;">[]</span> args<span style="color: #333333;">)</span> 
+              <span style="color: #333333;">{</span>
+                  <span style="color: #008800; font-weight: bold;">try</span>
+                  <span style="color: #333333;">{</span>
+                      <span style="color: #888888;">// Creating an object of ArithmeticException</span>
+                      ArithmeticException ae <span style="color: #333333;">=</span> <span style="color: #008800; font-weight: bold;">new</span> ArithmeticException<span style="color: #333333;">();</span>
+                      <span style="color: #888888;">//Manually throwing ArithmeticException</span>
+                      <span style="color: #008800; font-weight: bold;">throw</span> ae<span style="color: #333333;">;</span>
+                  <span style="color: #333333;">}</span>
+                  <span style="color: #008800; font-weight: bold;">catch</span> <span style="color: #333333;">(</span>ArithmeticException e<span style="color: #333333;">)</span>
+                  <span style="color: #333333;">{</span>
+                      System<span style="color: #333333;">.</span><span style="color: #0000cc;">out</span><span style="color: #333333;">.</span><span style="color: #0000cc;">println</span><span style="color: #333333;">(</span><span style="background-color: #fff0f0;">"Caught the manually thrown Exception"</span><span style="color: #333333;">);</span>
+                  <span style="color: #333333;">}</span>
+              <span style="color: #333333;">}</span>
+          <span style="color: #333333;">}</span>
+          </pre>
+          </div>
+          <br>
+          <span style="color: black;"><b>Output:</b></span>
+          Caught the manually thrown Exception<br>
+          <br>
+          <br>
+          <span style="color: #38761d;"><b>Q14. Does catch block rethrow an exception in java?</b></span>
+          <br>
+          Yes, catch block can rethrow an exception using throw keyword. It is called re-throwing an exception. <br>
+          <br>
+          For example :<br>
+          <br>
+          <div style="background: #F3F3F3; border-width: .1em .1em .1em .1em; border: 1px dotted; overflow: auto; padding: .2em .6em; width: auto;">
+          <pre style="line-height: 125%; margin: 0;"><span style="color: #008800; font-weight: bold;">public</span> <span style="color: #008800; font-weight: bold;">class</span> <span style="color: #bb0066; font-weight: bold;">ILearnJava</span><span style="color: #333333;">{</span>
+              <span style="color: #008800; font-weight: bold;">public</span> <span style="color: #008800; font-weight: bold;">static</span> <span style="color: #333399; font-weight: bold;">void</span> <span style="color: #0066bb; font-weight: bold;">main</span><span style="color: #333333;">(</span>String<span style="color: #333333;">[]</span> args<span style="color: #333333;">)</span> 
+              <span style="color: #333333;">{</span>
+                  <span style="color: #008800; font-weight: bold;">try</span>
+                  <span style="color: #333333;">{</span>
+                      <span style="color: #888888;">// Creating an object of ArithmeticException</span>
+                      ArithmeticException ae <span style="color: #333333;">=</span> <span style="color: #008800; font-weight: bold;">new</span> ArithmeticException<span style="color: #333333;">();</span>
+                      <span style="color: #888888;">//Manually throwing ArithmeticException</span>
+                      <span style="color: #008800; font-weight: bold;">throw</span> ae<span style="color: #333333;">;</span>
+                  <span style="color: #333333;">}</span>
+                  <span style="color: #008800; font-weight: bold;">catch</span> <span style="color: #333333;">(</span>ArithmeticException e<span style="color: #333333;">)</span>
+                  <span style="color: #333333;">{</span>
+                      System<span style="color: #333333;">.</span><span style="color: #0000cc;">out</span><span style="color: #333333;">.</span><span style="color: #0000cc;">println</span><span style="color: #333333;">(</span><span style="background-color: #fff0f0;">"Rethrowing the caught exception below "</span><span style="color: #333333;">);</span>&nbsp;</pre>
+          <pre style="line-height: 125%; margin: 0;">            <span style="color: #888888;">//Rethrowing ArithmeticException</span> </pre>
+          <pre style="line-height: 125%; margin: 0;">&nbsp;<span style="color: #008800; font-weight: bold;">           throw</span> e<span style="color: #333333;">;</span>
+                  <span style="color: #333333;">}</span>
+              <span style="color: #333333;">}</span>
+          <span style="color: #333333;">}</span>
+          </pre>
+          </div>
+          <br>
+          <b>Output :</b><br>
+          Rethrowing the caught exception below <br>
+          <br>
+          Exception in thread "main" java.lang.ArithmeticException<br>
+          &nbsp;&nbsp;&nbsp; at ILearnJava.main(ILearnJava.java:7)<br>
+          <br>
+          <span style="color: #38761d;"><b>Q15. What is the use of throws keyword in java?</b></span>
+          <br>
+          throws keyword is used to declare an exception.  
+          <br>
+          <span style="color: #38761d;"><b>Q16. Why it is always recommended that clean up activities like closing the DB connections and I/O resources to keep inside a finally block?</b></span>
+          <br>
+          finally block will always be executed except one scenario as discussed above in Q3. By ensuring the cleanup operations in finally block, you will assure that those operations will be always executed irrespective of whether an exception has occurred or not.<br>
+          <br>
+          <span style="color: #38761d;"><b>Q17. What is OutOfMemoryError in Exception Handling?</b></span>
+          <br>
+          OutOfMemoryError is the subclass of java.lang.Error. It occurs when JVM runs out of memory. <br>
+          <br>
+          <span style="color: #38761d;"><b>Q18. What is ClassCastException in Exception Handling?</b></span>
+          <br>
+          RunTimeException which occurs when JVM not able to cast an object of one type to another type is called ClassCastException.<br>
+          <br>
+          <span style="color: #38761d;"><b id="geom_inter_1667147155095_50_1">Q19. What is the difference between throws and throw in java?</b></span>
+          <br>
+          This is one of the most frequently asked interview questions for java developers.<br>
+          Main differences between throws and throw are :<br>
+          <br>
+          a. throws keyword is used when writing methods, to declare that the method in question throws the specified (checked) exception.<br>
+          throw is used when an instruction is to explicitly throw the exception.<br>
+          b.&nbsp; throws is used with a method signature while the throw is used inside a method.<br>
+          <br>
+          <span style="color: #38761d;"><b>Q20. What is StackOverflowError in Exception Handling?</b></span>
+          <br>
+          StackOverflowError is thrown by the JVM when stack overflows in a program.<br>
+          <br>
+          <span style="color: #38761d;"><b>Q21. Which class is the root class for all types of errors and exceptions in Exception Hierarchy?</b></span>
+          <br>
+          java.lang.Throwable is the superclass for all types of errors and exceptions in java.<br>
+          <br>
+          <span style="color: #38761d;"><b>Q22. When do we use printStackTrace() method in java?</b></span>
+          <br>
+          printStackTrace() function is used to print the detailed information about the exception thrown by the try/catch block.<br>
+          <br>
+          <span style="color: #38761d;"><b>Q23. Give some examples of Checked exceptions?</b></span>
+          <br>
+          SQLException, ClassNotFoundException, IOException<br>
+          <br>
+          <span style="color: #38761d;"><b>Q24. Give some examples of Unchecked exceptions?</b></span>
+          <br>
+          ArrayIndexOutOfBoundsException, NullPointerException, NumberFormatException<br>
+          <br>
+          <span style="color: #38761d;"><b>Q25. List the Methods in the Throwable class?</b></span>
+          <br>
+          Below are the important methods of Throwable class:<br>
+          <br>
+          •&nbsp;&nbsp; &nbsp;getMessage()<br>
+          •&nbsp;&nbsp; &nbsp;Throwable getCause()<br>
+          •&nbsp;&nbsp; &nbsp;toString()<br>
+          •&nbsp;&nbsp; &nbsp;printStackTrace()<br>
+          •&nbsp;&nbsp; &nbsp;StackTraceElement [] getStackTrace()<br>
+          <br>
+          <span style="color: #38761d;"><b id="geom_inter_1667147172559_13_3">Q26. What is a SQLException in Exception Handling?</b></span>
+          <br>
+          An exception that provides information related to database access error or other errors is called SQL Exception.<br>
+          <br>
+          <span style="color: #38761d;"><b id="geom_inter_1667147172559_1_4">Q27. What is NumberFormatException in java?</b></span>
+          <br>
+          NumberFormatException is thrown when you try to convert a String into a number.<br>
+          <br>
+          <span style="color: #38761d;"><b>Q28. What is ArrayIndexOutOfBoundsException in java?</b></span>
+          <br>
+          ArrayIndexOutOfBoundsException arises while trying to access an index of the array that does not exist or out of the bound of this array.<br>
+          <br>
+          <span style="color: #38761d;"><b>Q29. What will happen if an exception is thrown by the main method?</b></span>
+          <br>
+          When an exception is thrown by the main method then JVM terminates the program. As a result, you will find the exception message and stack trace in the system console.<br>
+          <br>
+          <span style="color: #38761d;"><b>Q30. Is it legal to have an empty catch block?</b></span>
+          <br>
+          Yes, we can have an empty catch block in java but it is not the best practice. If an exception is caught by the empty catch block, then we do not have any information about the exception occurred. You should provide at least the logging statement to log the exception details.<br>
+          <br>
+          <span style="color: #38761d;"><b>Q31. What are the keywords in Java for Exception Handling?</b></span>
+          <br>
+          throw, throws, try, catch and finally<br>
+          <br>
+          <span style="color: #38761d;"><b>Q32. List some important methods of Java Exception class?</b></span> <br>
+          <br>
+          a. printStackTrace()<br>
+          b. toString()<br>
+          c. getMessage()<br>
+          <br>
+          <span style="color: #38761d;"><b>Q33. What are the advantages of using Exceptions in your programs?</b></span>
+          <br>
+          According to <a href="https://docs.oracle.com/javase/tutorial/essential/exceptions/advantages.html" target="_blank">Java doc</a>,<br>
+          <br>
+          a. Separating "regular" code from error handling code.<br>
+          b. The ability to propagate errors reporting up the call stack of methods.<br>
+          c. Differentiating and grouping error types.&nbsp; &nbsp; <br>
+          <br>
+          
+          <span style="color: #38761d;"><b>Q46. What is unreachable catch block error?</b></span>
+          &nbsp; <br>
+          When
+           there is more than one catch block, then, the order of catch blocks must be from most specific to most general ones. In other words, subclasses of Exception must come first and superclasses later. If you try to keep superclasses first and subclasses later, the compiler will stop you and show unreachable catch block error.<br>
+          <br>
+          <span style="color: #38761d;"><b>Q47. Can we provide the statements after finally block if the control is returning from the finally block itself?</b></span>
+          <br>
+          No, because control is returning from the finally block itself so it shows unreachable code error.<br>
+          <br>
+          <span style="color: #38761d;"><b>Q48. Does finally block get executed if either try or catch blocks are returning the control?</b></span>
+          <br>
+          Yes, finally block will be always executed no matter whether try or catch blocks are returning the control or not. There is one scenario where finally block does not execute, for more information check out Q3.<br>
+          <br>
+          <span style="color: #38761d;"><b>Q49.&nbsp; Suppose there is a catch block corresponding to a try block with three statements – statement1, 
+          statement2, and statement3. Assume that exception is thrown in statement2. Does statement3 get executed?</b></span>
+          <br>
+          Statement3 will not get executed because once a try block throws an exception, remaining statements will not be executed.<br>
+          <br>
+          <span style="color: #38761d;"><b>Q50. What will happen if we override a superclass method which is throwing an unchecked exception with a checked exception in the subclass?</b></span>
+          <br>
+          If the overridden method throwing an unchecked exception, then the subclass overriding method must have the same exception or any other unchecked exceptions. If you are trying to throw checked exception with subclass overriding method then it will give a compilation error.<br>
+          <br>
+          <span style="color: #38761d;"><b>Rule of thumb : </b></span>An overriding method (subclass method) can not throw a broader exception than an overridden method (superclass method).<br>
+          <br>
+          That's all for today, please mention in comments if you have any questions related to exception handling in java interview questions and answers for freshers and experienced.
+		 
+        </div>	
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
