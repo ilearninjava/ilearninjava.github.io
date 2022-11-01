@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Java Interview Q&A</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Sailor - v4.9.1
+  * Template URL: https://bootstrapmade.com/sailor-free-bootstrap-theme/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center">
+      <h1 class="logo me-auto"><a href="index.html">Java Interview Q&A</a></h1>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="jdk8.html.html">Jdk8</a></li>
+
+          <li class="dropdown"><a href="java.html"><span>Java</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="java-oops.html">Oops</a></li>
+              <li><a href="#">Multithreading</a></li>
+              <li><a href="java-exception.html">Exception handling</a></li>
+
+              <li class="dropdown"><a href="java-collection.html"><span>Collection framework</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="java-collection.html">Map</a></li>
+                  <li><a href="java-collection.html">List</a></li>
+                  <li><a href="java-collection.html">Queue</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="cloud.html"><span>Cloud</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">AWS</a></li>
+              <li><a href="#">GCP</a></li>
+              <li><a href="#">Azure</a></li>
+              <li><a href="#">IBM Cloud</a></li>
+              <li><a href="#">Docker</a></li>
+              <li><a href="#">Kubernetes</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>UI</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Angular</a></li>
+              <li><a href="#">ReactJS</a></li>
+              <li><a href="#">Javascript</a></li>
+              <li><a href="#">css</a></li>
+              <li><a href="#">html</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>Other</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Company wise</a></li>
+              <li><a href="#">Design pattern</a></li>
+              <li><a href="#">Microservices</a></li>
+              <li><a href="#">Data Structure</a></li>
+              <li><a href="#">Architect</a></li>
+            </ul>
+          </li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+  </header>
+
+  </br>
+  <main id="main">
+
+    <section id="about" class="about">
+      <div class="container">
+        <div class="row-content">
+
+          <p>Java is a class-based object-oriented programming (OOP) language built around the concept of objects. OOP concepts are intended to improve code readability and reusability by defining how to structure your Java program efficiently. The core principles of object-oriented programming are:</p>
+
+<ol>
+<li><a href="#abstraction" class="">Abstraction</a><br></li>
+<li><a href="#encapsulation" class="">Encapsulation</a></li>
+<li><a href="#inheritance" class="">Inheritance</a></li>
+<li><a href="#polymorphism" class="">Polymorphism</a></li>
+<li><a href="#association" class="">Association</a></li>
+<li><a href="#aggregation" class="">Aggregation</a></li>
+<li><a href="#composition" class="">Composition</a></li>
+</ol>
+
+<p>Java comes with specific code structures for each OOP concept, such as the <code>extends</code> keyword for the inheritance principle or the getter and setter methods for the encapsulation principle.</p>
+
+<p><em>While these concepts are crucial for creating well-structured Java programs in the development phase, implementing can also help you catch the errors your end-users encounter in the operation and maintenance phase of the.</em></p>
+
+<p>In this guide, we’ll look into both the theory and practice of object-oriented programming to help you write performant and.</p>
+
+<h2 id="what-are-oop-concepts-in-java">What are OOP concepts in Java?</h2>
+
+<p>OOP concepts allow us to create specific interactions between Java objects. They make it possible to reuse code without creating security risks or harming performance and code readability.</p>
+
+<p>There are four main and three secondary principles of object-oriented Java programming. Let’s take a look at what they are and why they’re useful.</p>
+
+<h3 id="abstraction">1. Abstraction</h3>
+
+<p>Abstraction aims to hide complexity from users and show them only relevant information. For example, if you’re driving a car, you don’t need to know about its internal workings.</p>
+
+<p>The same is true of Java classes. You can hide internal implementation details using abstract classes or interfaces. On the abstract level, you only need to define the method signatures (name and parameter list) and let each class implement them in their own way.</p>
+
+<p><strong>Abstraction in Java:</strong></p>
+
+<ul>
+<li>Hides the underlying complexity of data</li>
+<li>Helps avoid repetitive code</li>
+<li>Presents only the signature of internal functionality</li>
+<li>Gives flexibility to programmers to change the implementation of abstract behavior</li>
+<li>Partial abstraction (0-100%) can be achieved with abstract classes</li>
+<li>Total abstraction (100%) can be achieved with interfaces</li>
+</ul>
+
+<h3 id="encapsulation">2. Encapsulation</h3>
+
+<p>Encapsulation helps with data security, allowing you to protect the data stored in a class from system-wide access. As the name suggests, it safeguards the internal contents of a class like a capsule.</p>
+
+<p>You can implement encapsulation in Java by making the fields (class variables) private and accessing them via their public getter and setter methods. <a href="https://en.wikipedia.org/wiki/JavaBeans" target="_blank">JavaBeans</a> are examples of fully encapsulated classes.</p>
+
+<p><strong>Encapsulation in Java:</strong></p>
+
+<ul>
+<li>Restricts direct access to data members (fields) of a class</li>
+<li>Fields are set to private</li>
+<li>Each field has a getter and setter method</li>
+<li>Getter methods return the field</li>
+<li>Setter methods let us change the value of the field</li>
+</ul>
+
+<h3 id="inheritance">3. Inheritance</h3>
+
+<p><a href="https://en.wikipedia.org/wiki/Inheritance_(object-oriented_programming)" target="_blank">Inheritance</a> makes it possible to create a child class that inherits the fields and methods of the parent class. The child class can override the values and methods of the parent class, but it’s not necessary. It can also add new data and functionality to its parent.</p>
+
+<p>Parent classes are also called superclasses or base classes, while child classes are known as subclasses or derived classes as well. Java uses the <code>extends</code> keyword to implement the principle of inheritance in code.</p>
+
+<p><strong>Inheritance in Java:</strong></p>
+
+<ul>
+<li>A class (child class) can extend another class (parent class) by inheriting its features<br></li>
+<li>Implements the <a href="https://en.wikipedia.org/wiki/Don%27t_repeat_yourself" target="_blank">DRY (Don’t Repeat Yourself)</a> programming principle</li>
+<li>Improves code reusability</li>
+<li>Multi-level inheritance is allowed in Java (a child class can have its own child class as well)</li>
+<li>Multiple inheritances are not allowed in Java (a class can’t extend more than one class)</li>
+</ul>
+
+<p>Abstraction, encapsulation, polymorphism, and inheritance are the four main theoretical principles of object-oriented programming. But Java also works with three further OOP concepts: association, aggregation, and composition. Aggregation is a special form of association, while composition is a special form of aggregation. While that may sound a bit convoluted, we’re about to explain. Read on!</p>
+
+<h3 id="polymorphism">4. Polymorphism</h3>
+
+<p><a href="https://en.wikipedia.org/wiki/Polymorphism_(computer_science)" target="_blank">Polymorphism</a> refers to the ability to perform a certain action in different ways. In Java, polymorphism can take two forms: method overloading and method overriding.</p>
+
+<p>Method overloading happens when various methods with the same name are present in a class. When they are called, they are differentiated by the number, order, or types of their parameters. Method overriding occurs when a child class overrides a method of its parent.</p>
+
+<p><strong>Polymorphism in Java:</strong></p>
+
+<ul>
+<li>The same method name is used several times</li>
+<li>Different methods of the same name can be called from an object</li>
+<li>All Java objects can be considered polymorphic (at the minimum, they are of their own type and instances of the <code>Object</code> class)</li>
+<li>Static polymorphism in Java is implemented by method overloading<br></li>
+<li>Dynamic polymorphism in Java is implemented by method overriding</li>
+</ul>
+
+<h3 id="association">5. Association</h3>
+
+<p><a href="https://javapapers.com/oops/association-aggregation-composition-abstraction-generalization-realization-dependency/" target="_blank">Association</a> means the act of establishing a relationship between two unrelated classes. For example, when you declare two fields of different types (e.g. <code>Car</code> and <code>Bicycle</code>) within the same class and make them interact with each other, you have created an association.</p>
+
+<p><strong>Association in Java:</strong></p>
+
+<ul>
+<li>Two separate classes are associated through their objects</li>
+<li>The two classes are unrelated, each can exist without the other one</li>
+<li>Can be a one-to-one, one-to-many, many-to-one, or many-to-many relationship</li>
+</ul>
+
+<h3 id="aggregation">6. Aggregation</h3>
+
+<p><a href="https://beginnersbook.com/2013/05/aggregation/" target="_blank">Aggregation</a> is a narrower kind of association. It occurs when there’s a one-way (HAS-A) relationship between the two classes we associate through their objects.</p>
+
+<p>For example, every <code>Passenger</code> has a <code>Car</code>, but a <code>Car</code> doesn’t necessarily have a <code>Passenger</code>. When you declare the <code>Passenger</code> class, you can create a field of the <code>Car</code> type that shows which car the passenger belongs to. Then, when you instantiate a new <code>Passenger</code> object, you can access the data stored in the related <code>Car</code> as well.</p>
+
+<p><strong>Aggregation in Java:</strong></p>
+
+<ul>
+<li>One-directional association<br></li>
+<li>Represents a HAS-A relationship between two classes</li>
+<li>Only one class is dependent on the other</li>
+</ul>
+
+<h3 id="composition">7. Composition</h3>
+
+<p><a href="https://www.infoworld.com/article/3029325/application-development/exploring-association-aggregation-and-composition-in-oop.html" target="_blank">Composition</a> is a stricter form of aggregation. It occurs when the two classes you associate are mutually dependent and can’t exist without each other.</p>
+
+<p>For example, take a <code>Car</code> and an <code>Engine</code> class. A <code>Car</code> cannot run without an <code>Engine</code>, while an <code>Engine</code> also can’t function without being built into a <code>Car</code>. This kind of relationship between objects is also called a PART-OF relationship.</p>
+
+<p><strong>Composition in Java:</strong></p>
+
+<ul>
+<li>A restricted form of aggregation<br></li>
+<li>Represents a PART-OF relationship between two classes</li>
+<li>Both classes are dependent on each other</li>
+<li>If one class ceases to exist, the other can’t survive alone</li>
+</ul>
+
+<h2 id="what-are-the-characteristics-of-oop">What are the characteristics of OOP?</h2>
+
+<p>Now, let’s see the real-life implementations of the four main OOP concepts in Java: abstraction, encapsulation, inheritance, and polymorphism.</p>
+
+<p>You can also download or clone the code examples below from <a href="https://github.com/azaleamollis/oopJavaRaygun" target="_blank">this GitHub repo</a>.</p>
+
+<h3 id="abstraction-1">Abstraction</h3>
+
+<p>As mentioned above, abstraction allows you to hide the internal workings of an object and only show the features the user needs to know about.</p>
+
+<p>Java provides two ways to implement abstraction: abstract classes and interfaces. With abstract classes, you can achieve partial abstraction, while interfaces make total (100%) abstraction possible.</p>
+
+<h4 id="abstract-classes">Abstract classes</h4>
+
+<p>An abstract class is a superclass (parent class) that cannot be instantiated. To create a new object, you need to instantiate one of its child classes. Abstract classes can have both abstract and concrete methods. Abstract methods contain only the method signature, while concrete methods declare the method body as well. Abstract classes are defined with the <code>abstract</code> keyword.</p>
+
+<p>In the code example below, we create an abstract class called <code>Animal</code> with two abstract and one concrete method.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">abstract</span>  <span style="color:#66d9ef">class</span>  <span style="color:#a6e22e">Animal</span>  <span style="color:#f92672">{</span>
+<span style="color:#75715e">// abstract methods
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">abstract</span>  <span style="color:#66d9ef">void</span>  <span style="color:#a6e22e">move</span><span style="color:#f92672">();</span>
+<span style="color:#66d9ef">abstract</span>  <span style="color:#66d9ef">void</span>  <span style="color:#a6e22e">eat</span><span style="color:#f92672">();</span>
+<span style="color:#75715e">// concrete method
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">void</span>  <span style="color:#a6e22e">label</span><span style="color:#f92672">()</span>  <span style="color:#f92672">{</span>
+System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">"Animal's data:"</span><span style="color:#f92672">);</span>
+<span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+
+<p>Then, we extend it with two child classes: <code>Bird</code> and <code>Fish</code>. Both of them define their own implementations of the <code>move()</code> and <code>eat()</code> abstract methods.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">class</span>  <span style="color:#a6e22e">Bird</span>  <span style="color:#66d9ef">extends</span> Animal <span style="color:#f92672">{</span>
+<span style="color:#66d9ef">void</span>  <span style="color:#a6e22e">move</span><span style="color:#f92672">()</span>  <span style="color:#f92672">{</span>
+System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">"Moves by flying."</span><span style="color:#f92672">);</span>
+<span style="color:#f92672">}</span>
+<span style="color:#66d9ef">void</span>  <span style="color:#a6e22e">eat</span><span style="color:#f92672">()</span>  <span style="color:#f92672">{</span>
+System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">"Eats birdfood."</span><span style="color:#f92672">);</span>
+<span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">class</span>  <span style="color:#a6e22e">Fish</span>  <span style="color:#66d9ef">extends</span> Animal <span style="color:#f92672">{</span>
+<span style="color:#66d9ef">void</span>  <span style="color:#a6e22e">move</span><span style="color:#f92672">()</span>  <span style="color:#f92672">{</span>
+System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">"Moves by swimming."</span><span style="color:#f92672">);</span>
+<span style="color:#f92672">}</span>
+<span style="color:#66d9ef">void</span>  <span style="color:#a6e22e">eat</span><span style="color:#f92672">()</span>  <span style="color:#f92672">{</span>
+System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">"Eats seafood."</span><span style="color:#f92672">);</span>
+<span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+
+<p>Now, we’ll test it with the help of the <code>TestBird</code> and <code>TestFish</code> classes. Both initialize an object (<code>myBird</code> and <code>myFish</code>) and call the one concrete (<code>label()</code>) and the two abstract (<code>move()</code> and <code>eat()</code>) methods.</p>
+
+<p>Note, however, that you don’t necessarily have to call all the methods if you don’t want to — this is how abstract classes make partial abstraction possible (for example, you could call just <code>move()</code>).</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">class</span>  <span style="color:#a6e22e">TestBird</span>  <span style="color:#f92672">{</span>
+<span style="color:#66d9ef">public</span>  <span style="color:#66d9ef">static</span>  <span style="color:#66d9ef">void</span>  <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span>  <span style="color:#f92672">{</span>
+Animal myBird <span style="color:#f92672">=</span>  <span style="color:#66d9ef">new</span> Bird<span style="color:#f92672">();</span>
+myBird<span style="color:#f92672">.</span><span style="color:#a6e22e">label</span><span style="color:#f92672">();</span>
+myBird<span style="color:#f92672">.</span><span style="color:#a6e22e">move</span><span style="color:#f92672">();</span>
+myBird<span style="color:#f92672">.</span><span style="color:#a6e22e">eat</span><span style="color:#f92672">();</span>
+<span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">class</span>  <span style="color:#a6e22e">TestFish</span>  <span style="color:#f92672">{</span>
+<span style="color:#66d9ef">public</span>  <span style="color:#66d9ef">static</span>  <span style="color:#66d9ef">void</span>  <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span>  <span style="color:#f92672">{</span>
+Animal myFish <span style="color:#f92672">=</span>  <span style="color:#66d9ef">new</span> Fish<span style="color:#f92672">();</span>
+myFish<span style="color:#f92672">.</span><span style="color:#a6e22e">label</span><span style="color:#f92672">();</span>
+myFish<span style="color:#f92672">.</span><span style="color:#a6e22e">move</span><span style="color:#f92672">();</span>
+myFish<span style="color:#f92672">.</span><span style="color:#a6e22e">eat</span><span style="color:#f92672">();</span>
+<span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+
+<p>As you can see below, the concrete method has been called from the <code>Animal</code> abstract class, while the two abstract methods have been called from <code>Bird</code> and <code>Fish</code>, respectively.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-plain" data-lang="plain">[Console output of TestBird]
+Animal's data:
+Moves by flying.
+Eats birdfood.</code></pre></div>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-plain" data-lang="plain">[Console output of TestFish]
+Animal's data:
+Moves by swimming.
+Eats seafood.</code></pre></div>
+
+<h4 id="interfaces">Interfaces</h4>
+
+<p>An interface is a 100% abstract class. It can only have static, final, and public fields and abstract methods. It’s frequently referred to as a blueprint of a class as well. Java interfaces allow you to implement multiple inheritances in your code, as a class can implement any number of interfaces. Classes can access an interface with the <code>implements</code> keyword.</p>
+
+<p>In the example, we define two interfaces: <code>Animal</code> with two abstract methods (interface methods are abstract by default) and <code>Bird</code> with two static fields and an abstract method.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">interface</span>  <span style="color:#a6e22e">Animal</span>  <span style="color:#f92672">{</span>
+<span style="color:#66d9ef">public</span>  <span style="color:#66d9ef">void</span>  <span style="color:#a6e22e">eat</span><span style="color:#f92672">();</span>
+<span style="color:#66d9ef">public</span>  <span style="color:#66d9ef">void</span>  <span style="color:#a6e22e">sound</span><span style="color:#f92672">();</span>
+<span style="color:#f92672">}</span></code></pre></div>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">interface</span>  <span style="color:#a6e22e">Bird</span>  <span style="color:#f92672">{</span>
+<span style="color:#66d9ef">int</span> numberOfLegs <span style="color:#f92672">=</span> 2<span style="color:#f92672">;</span>
+String outerCovering <span style="color:#f92672">=</span>  <span style="color:#e6db74">"feather"</span><span style="color:#f92672">;</span>
+<span style="color:#66d9ef">public</span>  <span style="color:#66d9ef">void</span>  <span style="color:#a6e22e">fly</span><span style="color:#f92672">();</span>
+<span style="color:#f92672">}</span></code></pre></div>
+
+<p>The class <code>Eagle</code> implements both interfaces. It defines its own functionality for the three abstract methods. The <code>eat()</code> and <code>sound()</code> methods come from the <code>Animal</code> class, while <code>fly()</code> comes from <code>Bird</code>.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">class</span>  <span style="color:#a6e22e">Eagle</span>  <span style="color:#66d9ef">implements</span> Animal<span style="color:#f92672">,</span> Bird <span style="color:#f92672">{</span>
+<span style="color:#66d9ef">public</span>  <span style="color:#66d9ef">void</span>  <span style="color:#a6e22e">eat</span><span style="color:#f92672">()</span>  <span style="color:#f92672">{</span>
+System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">"Eats reptiles and amphibians."</span><span style="color:#f92672">);</span>
+<span style="color:#f92672">}</span>
+<span style="color:#66d9ef">public</span>  <span style="color:#66d9ef">void</span>  <span style="color:#a6e22e">sound</span><span style="color:#f92672">()</span>  <span style="color:#f92672">{</span>
+System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">"Has a high-pitched whistling sound."</span><span style="color:#f92672">);</span>
+<span style="color:#f92672">}</span>
+<span style="color:#66d9ef">public</span>  <span style="color:#66d9ef">void</span>  <span style="color:#a6e22e">fly</span><span style="color:#f92672">()</span>  <span style="color:#f92672">{</span>
+System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">"Flies up to 10,000 feet."</span><span style="color:#f92672">);</span>
+<span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+
+<p>In the <code>TestEagleInterfaces</code> test class, we instantiate a new <code>Eagle</code> object (called <code>myEagle</code>) and print out all the fields and methods to the console.</p>
+
+<p>As static fields (<code>numberOfLegs</code> and <code>outerCovering</code>) don’t belong to a specific object but to the interface, we need to access them from the <code>Bird</code> interface instead of the <code>myEagle</code> object.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">class</span>  <span style="color:#a6e22e">TestEagleInterfaces</span>  <span style="color:#f92672">{</span>
+<span style="color:#66d9ef">public</span>  <span style="color:#66d9ef">static</span>  <span style="color:#66d9ef">void</span>  <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span>  <span style="color:#f92672">{</span>
+Eagle myEagle <span style="color:#f92672">=</span>  <span style="color:#66d9ef">new</span> Eagle<span style="color:#f92672">();</span>
+
+myEagle<span style="color:#f92672">.</span><span style="color:#a6e22e">eat</span><span style="color:#f92672">();</span>
+myEagle<span style="color:#f92672">.</span><span style="color:#a6e22e">sound</span><span style="color:#f92672">();</span>
+myEagle<span style="color:#f92672">.</span><span style="color:#a6e22e">fly</span><span style="color:#f92672">();</span>
+
+System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">"Number of legs: "</span>  <span style="color:#f92672">+</span> Bird<span style="color:#f92672">.</span><span style="color:#a6e22e">numberOfLegs</span><span style="color:#f92672">);</span>
+System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">"Outer covering: "</span>  <span style="color:#f92672">+</span> Bird<span style="color:#f92672">.</span><span style="color:#a6e22e">outerCovering</span><span style="color:#f92672">);</span>
+<span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+
+<p>The Java console returns all the information we wanted to access:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-plain" data-lang="plain">[Console output of TestEagleInterfaces]
+Eats reptiles and amphibians.
+Has a high-pitched whistling sound.
+Flies up to 10,000 feet.
+Number of legs: 2
+Outer covering: feather</code></pre></div>
+
+<h3 id="encapsulation-1">Encapsulation</h3>
+
+<p>With encapsulation, you can protect the fields of a class. To do so, you need to declare the fields as <code>private</code> and provide access to them with getter and setter methods.</p>
+
+<p>The <code>Animal</code> class below is fully encapsulated. It has three private fields, and each has its own pair of getter and setter methods.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">class</span>  <span style="color:#a6e22e">Animal</span>  <span style="color:#f92672">{</span>
+<span style="color:#66d9ef">private</span> String name<span style="color:#f92672">;</span>
+<span style="color:#66d9ef">private</span>  <span style="color:#66d9ef">double</span> averageWeight<span style="color:#f92672">;</span>
+<span style="color:#66d9ef">private</span>  <span style="color:#66d9ef">int</span> numberOfLegs<span style="color:#f92672">;</span>
+
+<span style="color:#75715e">// Getter methods
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">public</span> String <span style="color:#a6e22e">getName</span><span style="color:#f92672">()</span>  <span style="color:#f92672">{</span>
+<span style="color:#66d9ef">return</span> name<span style="color:#f92672">;</span>
+<span style="color:#f92672">}</span>
+<span style="color:#66d9ef">public</span>  <span style="color:#66d9ef">double</span>  <span style="color:#a6e22e">getAverageWeight</span><span style="color:#f92672">()</span>  <span style="color:#f92672">{</span>
+<span style="color:#66d9ef">return</span> averageWeight<span style="color:#f92672">;</span>
+<span style="color:#f92672">}</span>
+<span style="color:#66d9ef">public</span>  <span style="color:#66d9ef">int</span>  <span style="color:#a6e22e">getNumberOfLegs</span><span style="color:#f92672">()</span>  <span style="color:#f92672">{</span>
+<span style="color:#66d9ef">return</span> numberOfLegs<span style="color:#f92672">;</span>
+<span style="color:#f92672">}</span>
+<span style="color:#75715e">// Setter methods
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">public</span>  <span style="color:#66d9ef">void</span>  <span style="color:#a6e22e">setName</span><span style="color:#f92672">(</span>String name<span style="color:#f92672">)</span>  <span style="color:#f92672">{</span>
+<span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">name</span>  <span style="color:#f92672">=</span> name<span style="color:#f92672">;</span>
+<span style="color:#f92672">}</span>
+<span style="color:#66d9ef">public</span>  <span style="color:#66d9ef">void</span>  <span style="color:#a6e22e">setAverageWeight</span><span style="color:#f92672">(</span><span style="color:#66d9ef">double</span> averageWeight<span style="color:#f92672">)</span>  <span style="color:#f92672">{</span>
+<span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">averageWeight</span>  <span style="color:#f92672">=</span> averageWeight<span style="color:#f92672">;</span>
+<span style="color:#f92672">}</span>
+<span style="color:#66d9ef">public</span>  <span style="color:#66d9ef">void</span>  <span style="color:#a6e22e">setNumberOfLegs</span><span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> numberOfLegs<span style="color:#f92672">)</span>  <span style="color:#f92672">{</span>
+<span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">numberOfLegs</span>  <span style="color:#f92672">=</span> numberOfLegs<span style="color:#f92672">;</span>
+<span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+
+<p>The <code>TestAnimal</code> class first creates a new <code>Animal</code> object (called <code>myAnimal</code>), then defines a value for each field with the setter methods, and finally prints out the values using the getter methods.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">class</span>  <span style="color:#a6e22e">TestAnimal</span>  <span style="color:#f92672">{</span>
+<span style="color:#66d9ef">public</span>  <span style="color:#66d9ef">static</span>  <span style="color:#66d9ef">void</span>  <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span>  <span style="color:#f92672">{</span>
+Animal myAnimal <span style="color:#f92672">=</span>  <span style="color:#66d9ef">new</span> Animal<span style="color:#f92672">();</span>
+myAnimal<span style="color:#f92672">.</span><span style="color:#a6e22e">setName</span><span style="color:#f92672">(</span><span style="color:#e6db74">"Eagle"</span><span style="color:#f92672">);</span>
+myAnimal<span style="color:#f92672">.</span><span style="color:#a6e22e">setAverageWeight</span><span style="color:#f92672">(</span>1<span style="color:#f92672">.</span><span style="color:#a6e22e">5</span><span style="color:#f92672">);</span>
+myAnimal<span style="color:#f92672">.</span><span style="color:#a6e22e">setNumberOfLegs</span><span style="color:#f92672">(</span>2<span style="color:#f92672">);</span>
+System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">"Name: "</span>  <span style="color:#f92672">+</span> myAnimal<span style="color:#f92672">.</span><span style="color:#a6e22e">getName</span><span style="color:#f92672">());</span>
+System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">"Average weight: "</span>  <span style="color:#f92672">+</span> myAnimal<span style="color:#f92672">.</span><span style="color:#a6e22e">getAverageWeight</span><span style="color:#f92672">()</span>  <span style="color:#f92672">+</span>  <span style="color:#e6db74">"kg"</span><span style="color:#f92672">);</span>
+System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">"Number of legs: "</span>  <span style="color:#f92672">+</span> myAnimal<span style="color:#f92672">.</span><span style="color:#a6e22e">getNumberOfLegs</span><span style="color:#f92672">());</span>
+<span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+
+<p>As you can see below, the Java console returns all the values we have set with the setter methods:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-plain" data-lang="plain">[Console output of TestAnimal]
+Name: Eagle
+Average weight: 1.5kg
+Number of legs: 2</code></pre></div>
+
+<h3 id="inheritance-1">Inheritance</h3>
+
+<p>Inheritance lets you extend a class with one or more child classes that inherit the fields and methods of the parent class. It’s an excellent way to achieve code reusability. In Java, you need to use the <code>extends</code> keyword to create a child class.</p>
+
+<p>In the example below, the <code>Eagle</code> class extends the <code>Bird</code> parent class. It inherits all of its fields and methods, plus defines two extra fields that belong only to <code>Eagle</code>.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">class</span>  <span style="color:#a6e22e">Bird</span>  <span style="color:#f92672">{</span>
+<span style="color:#66d9ef">public</span> String reproduction <span style="color:#f92672">=</span>  <span style="color:#e6db74">"egg"</span><span style="color:#f92672">;</span>
+<span style="color:#66d9ef">public</span> String outerCovering <span style="color:#f92672">=</span>  <span style="color:#e6db74">"feather"</span><span style="color:#f92672">;</span>
+<span style="color:#66d9ef">public</span>  <span style="color:#66d9ef">void</span>  <span style="color:#a6e22e">flyUp</span><span style="color:#f92672">()</span>  <span style="color:#f92672">{</span>
+System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">"Flying up..."</span><span style="color:#f92672">);</span>
+<span style="color:#f92672">}</span>
+<span style="color:#66d9ef">public</span>  <span style="color:#66d9ef">void</span>  <span style="color:#a6e22e">flyDown</span><span style="color:#f92672">()</span>  <span style="color:#f92672">{</span>
+System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">"Flying down..."</span><span style="color:#f92672">);</span>
+<span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">class</span>  <span style="color:#a6e22e">Eagle</span>  <span style="color:#66d9ef">extends</span> Bird <span style="color:#f92672">{</span>
+<span style="color:#66d9ef">public</span> String name <span style="color:#f92672">=</span>  <span style="color:#e6db74">"eagle"</span><span style="color:#f92672">;</span>
+<span style="color:#66d9ef">public</span>  <span style="color:#66d9ef">int</span> lifespan <span style="color:#f92672">=</span> 15<span style="color:#f92672">;</span>
+<span style="color:#f92672">}</span></code></pre></div>
+
+<p>The <code>TestEagleInheritance</code> class instantiates a new <code>Eagle</code> object (called <code>myEagle</code>) and prints out all the information (both the inherited fields and methods and the two fields defined by the <code>Eagle</code> class).</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">class</span>  <span style="color:#a6e22e">TestEagleInheritance</span>  <span style="color:#f92672">{</span>
+<span style="color:#66d9ef">public</span>  <span style="color:#66d9ef">static</span>  <span style="color:#66d9ef">void</span>  <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span>  <span style="color:#f92672">{</span>
+Eagle myEagle <span style="color:#f92672">=</span>  <span style="color:#66d9ef">new</span> Eagle<span style="color:#f92672">();</span>
+System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">"Name: "</span>  <span style="color:#f92672">+</span> myEagle<span style="color:#f92672">.</span><span style="color:#a6e22e">name</span><span style="color:#f92672">);</span>  System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">"Reproduction: "</span>  <span style="color:#f92672">+</span> myEagle<span style="color:#f92672">.</span><span style="color:#a6e22e">reproduction</span><span style="color:#f92672">);</span>
+System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">"Outer covering: "</span>  <span style="color:#f92672">+</span> myEagle<span style="color:#f92672">.</span><span style="color:#a6e22e">outerCovering</span><span style="color:#f92672">);</span>
+System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">"Lifespan: "</span>  <span style="color:#f92672">+</span> myEagle<span style="color:#f92672">.</span><span style="color:#a6e22e">lifespan</span><span style="color:#f92672">);</span>
+myEagle<span style="color:#f92672">.</span><span style="color:#a6e22e">flyUp</span><span style="color:#f92672">();</span>
+myEagle<span style="color:#f92672">.</span><span style="color:#a6e22e">flyDown</span><span style="color:#f92672">();</span>
+<span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+
+<p>Here’s the console output we get:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-plain" data-lang="plain">[Console output of TestEagleInheritance]
+Name: eagle
+Reproduction: egg
+Outer covering: feather
+Lifespan: 15
+Flying up...
+Flying down...</code></pre></div>
+
+<h3 id="polymorphism-1">Polymorphism</h3>
+
+<p>Polymorphism makes it possible to use the same code structure in different forms. In Java, this means that you can declare several methods with the same name as long as they are different in certain characteristics.</p>
+
+<p>As mentioned above, Java provides two ways to implement polymorphism: method overloading and method overriding.</p>
+
+<h4 id="static-polymorphism-method-overloading">Static polymorphism (method overloading)</h4>
+
+<p>Method overloading means that you can have several methods with the same name within a class. However, the number, names, or types of their parameters need to be different.</p>
+
+<p>For example, the <code>Bird()</code> class below has three <code>fly()</code> methods. The first one doesn’t have any parameters, the second one has one parameter (<code>height</code>), and the third one has two parameters (<code>name</code> and <code>height</code>).</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">class</span>  <span style="color:#a6e22e">Bird</span>  <span style="color:#f92672">{</span>
+<span style="color:#66d9ef">public</span>  <span style="color:#66d9ef">void</span>  <span style="color:#a6e22e">fly</span><span style="color:#f92672">()</span>  <span style="color:#f92672">{</span>
+System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">"The bird is flying."</span><span style="color:#f92672">);</span>
+<span style="color:#f92672">}</span>
+<span style="color:#66d9ef">public</span>  <span style="color:#66d9ef">void</span>  <span style="color:#a6e22e">fly</span><span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> height<span style="color:#f92672">)</span>  <span style="color:#f92672">{</span>
+System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">"The bird is flying "</span>  <span style="color:#f92672">+</span> height <span style="color:#f92672">+</span>  <span style="color:#e6db74">" feet high."</span><span style="color:#f92672">);</span>
+<span style="color:#f92672">}</span>
+<span style="color:#66d9ef">public</span>  <span style="color:#66d9ef">void</span>  <span style="color:#a6e22e">fly</span><span style="color:#f92672">(</span>String name<span style="color:#f92672">,</span>  <span style="color:#66d9ef">int</span> height<span style="color:#f92672">)</span>  <span style="color:#f92672">{</span>
+System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">"The "</span>  <span style="color:#f92672">+</span> name <span style="color:#f92672">+</span>  <span style="color:#e6db74">" is flying "</span>  <span style="color:#f92672">+</span> height <span style="color:#f92672">+</span>  <span style="color:#e6db74">" feet high."</span><span style="color:#f92672">);</span>
+<span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+
+<p>The test class instantiates a new <code>Bird</code> object and calls the <code>fly()</code> method three times: first, without parameters, second, with one integer parameter for <code>height</code>, and third, with two parameters for <code>name</code> and <code>height</code>.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">class</span>  <span style="color:#a6e22e">TestBirdStatic</span>  <span style="color:#f92672">{</span>
+<span style="color:#66d9ef">public</span>  <span style="color:#66d9ef">static</span>  <span style="color:#66d9ef">void</span>  <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span>  <span style="color:#f92672">{</span>
+Bird myBird <span style="color:#f92672">=</span>  <span style="color:#66d9ef">new</span> Bird<span style="color:#f92672">();</span>
+myBird<span style="color:#f92672">.</span><span style="color:#a6e22e">fly</span><span style="color:#f92672">();</span>
+myBird<span style="color:#f92672">.</span><span style="color:#a6e22e">fly</span><span style="color:#f92672">(</span>10000<span style="color:#f92672">);</span>
+myBird<span style="color:#f92672">.</span><span style="color:#a6e22e">fly</span><span style="color:#f92672">(</span><span style="color:#e6db74">"eagle"</span><span style="color:#f92672">,</span> 10000<span style="color:#f92672">);</span>
+<span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+
+<p>In the console, you can see that Java could have differentiated the three polymorphic fly() methods:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-plain" data-lang="plain">[Console output of TestBirdStatic]
+The bird is flying.
+The bird is flying 10000 feet high.
+The eagle is flying 10000 feet high.</code></pre></div>
+
+<h4 id="dynamic-polymorphism-method-overriding">Dynamic polymorphism (method overriding)</h4>
+
+<p>Using the method overriding feature of Java, you can override the methods of a parent class from its child class.</p>
+
+<p>In the code example below, the <code>Bird</code> class extends the <code>Animal</code> class. Both have an <code>eat()</code> method. By default, <code>Bird</code> inherits its parent’s <code>eat()</code> method. However, as it also defines its own <code>eat()</code> method, Java will override the original method and call <code>eat()</code> from the child class.
+</p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">class</span>  <span style="color:#a6e22e">Animal</span>  <span style="color:#f92672">{</span>
+<span style="color:#66d9ef">public</span>  <span style="color:#66d9ef">void</span>  <span style="color:#a6e22e">eat</span><span style="color:#f92672">()</span>  <span style="color:#f92672">{</span>
+System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">"This animal eats insects."</span><span style="color:#f92672">);</span>
+<span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div><p></p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">class</span>  <span style="color:#a6e22e">Bird</span>  <span style="color:#66d9ef">extends</span> Animal <span style="color:#f92672">{</span>
+<span style="color:#66d9ef">public</span>  <span style="color:#66d9ef">void</span>  <span style="color:#a6e22e">eat</span><span style="color:#f92672">()</span>  <span style="color:#f92672">{</span>
+System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">"This bird eats seeds."</span><span style="color:#f92672">);</span>
+<span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+
+<p>The <code>TestBirdDynamic</code>  class first instantiates a new <code>Animal</code> object and calls its <code>eat()</code> method. Then, it also creates a <code>Bird</code> object and calls the polymorphic <code>eat()</code> method again.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">class</span>  <span style="color:#a6e22e">TestBirdDynamic</span>  <span style="color:#f92672">{</span>
+<span style="color:#66d9ef">public</span>  <span style="color:#66d9ef">static</span>  <span style="color:#66d9ef">void</span>  <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span>  <span style="color:#f92672">{</span>
+Animal myAnimal <span style="color:#f92672">=</span>  <span style="color:#66d9ef">new</span> Animal<span style="color:#f92672">();</span>
+myAnimal<span style="color:#f92672">.</span><span style="color:#a6e22e">eat</span><span style="color:#f92672">();</span>
+Bird myBird <span style="color:#f92672">=</span>  <span style="color:#66d9ef">new</span> Bird<span style="color:#f92672">();</span>
+myBird<span style="color:#f92672">.</span><span style="color:#a6e22e">eat</span><span style="color:#f92672">();</span>
+<span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+
+<p>The console returns the values of the relevant methods properly because Java could have differentiated the two <code>eat()</code> methods:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-plain" data-lang="plain">[Console output of TestBirdDynamic]
+This animal eats insects.
+This bird eats seeds.</code></pre></div>
+
+<h2 id="summary">Summary</h2>
+
+<p>OOP concepts in Java help you to structure your program more efficiently. The seven object-oriented principles we’ve explored here (abstraction, encapsulation, polymorphism, inheritance, association, aggregation, and composition) can help you reuse your code, prevent security issues, and improve the performance of your Java applications.</p>
+
+
+        </div>
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

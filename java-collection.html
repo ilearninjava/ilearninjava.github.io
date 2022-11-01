@@ -1,0 +1,1633 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Java Interview Q&A</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Sailor - v4.9.1
+  * Template URL: https://bootstrapmade.com/sailor-free-bootstrap-theme/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center">
+      <h1 class="logo me-auto"><a href="index.html">Java Interview Q&A</a></h1>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="jdk8.html.html">Jdk8</a></li>
+
+          <li class="dropdown"><a href="java.html"><span>Java</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="java-oops.html">Oops</a></li>
+              <li><a href="#">Multithreading</a></li>
+              <li><a href="java-exception.html">Exception handling</a></li>
+
+              <li class="dropdown"><a href="java-collection.html"><span>Collection framework</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="java-collection.html">Map</a></li>
+                  <li><a href="java-collection.html">List</a></li>
+                  <li><a href="java-collection.html">Queue</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="cloud.html"><span>Cloud</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">AWS</a></li>
+              <li><a href="#">GCP</a></li>
+              <li><a href="#">Azure</a></li>
+              <li><a href="#">IBM Cloud</a></li>
+              <li><a href="#">Docker</a></li>
+              <li><a href="#">Kubernetes</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>UI</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Angular</a></li>
+              <li><a href="#">ReactJS</a></li>
+              <li><a href="#">Javascript</a></li>
+              <li><a href="#">css</a></li>
+              <li><a href="#">html</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>Other</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Company wise</a></li>
+              <li><a href="#">Design pattern</a></li>
+              <li><a href="#">Microservices</a></li>
+              <li><a href="#">Data Structure</a></li>
+              <li><a href="#">Architect</a></li>
+            </ul>
+          </li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+  </header>
+
+  </br>
+  <main id="main">
+
+    <section id="about" class="about">
+      <div class="container">
+        <div class="row-content">
+          <div class="blog-content mt-md-4 mt-lg-4 mt-xl-4 color-4a">
+            
+            <p style="text-align: justify;">Collection Framework is one of
+              the most important pillars that support the fundamental concepts of the Java programming language. If you
+              are an aspiring Java Developer, it is very important for you to have a strong knowledge of these
+              core concepts before you appear for an interview. Through the medium of this article, I will share the
+              <em>Top 50 Java Collections Interview Questions and Answers</em> that will definitely help you in clearing
+              your interview with flying colors.</p>
+            <p style="text-align: justify;">The questions in this article have been divided into the following sections:
+            </p>
+            <ul style="text-align: justify;">
+              <li><a href="#generic">Generic&nbsp;</a></li>
+              <li><a href="#list">List</a></li>
+              <li><a href="#queue">Queue</a></li>
+              <li><a href="#set">Set</a><a name="generic"></a></li>
+              <li><a href="#map">Map</a></li>
+              <li><a href="#differences">Differences</a></li>
+            </ul>
+            <h2 style="text-align: center;"><strong>Generic –&nbsp; Java Collections Interview Questions</strong></h2>
+            <h3 style="text-align: justify;"><strong>1. What are the advantages of the Collection Framework in
+                Java?</strong></h3>
+            <p style="text-align: justify;">Below table contains the major advantages of the Java Collection Framework:
+            </p>
+            <table border="1px">
+              <tbody>
+                <tr>
+                  <td style="width: 30%;"><strong>Feature</strong></td>
+                  <td style="width: 70%;"><strong>Description</strong></td>
+                </tr>
+                <tr>
+                  <td style="width: 30%; text-align: center;"><em>Performance</em></td>
+                  <td style="width: 70%;">The collection framework provides highly effective and efficient data
+                    structures that result in enhancing the speed and accuracy of a program.</td>
+                </tr>
+                <tr>
+                  <td style="width: 30%; text-align: center;"><em>Maintainability</em></td>
+                  <td style="width: 70%;">The code developed with the collection framework is easy to maintain as it
+                    supports data consistency and interoperability within the implementation.</td>
+                </tr>
+                <tr>
+                  <td style="width: 30%; text-align: center;"><em>Reusability</em></td>
+                  <td style="width: 70%;">The classes in Collection Framework can effortlessly mix with other types
+                    which results in increasing the code reusability.</td>
+                </tr>
+                <tr>
+                  <td style="width: 30%; text-align: center;"><em>Extensibility</em></td>
+                  <td style="width: 70%;">The Collection Framework in Java allows the developers to customize the
+                    primitive collection types as per their requirements.</td>
+                </tr>
+              </tbody>
+            </table>
+            <h3 style="text-align: justify;"><strong>2. What do you understand by&nbsp;Collection Framework in
+                Java?</strong></h3>
+            <p style="text-align: justify;"><span>The Java Collection framework provides an architecture to store and
+                manage a group of objects. It permits the developers to access prepackaged data structures as well as
+                algorithms to manipulate data. The collection framework includes the following:</span></p>
+            <ul style="text-align: justify;">
+              <li><span>Interfaces</span></li>
+              <li><span>Classes</span></a></li>
+              <li><span>Algorithm</span></li>
+            </ul>
+            <p style="text-align: justify;">All these classes and interfaces support various operations such as
+              Searching, Sorting, Insertion, Manipulation, and Deletion which makes the data manipulation really easy
+              and quick.</p>
+            <p style="text-align: justify;"><strong>3. Describe the Collection hierarchy in Java.</strong></p>
+            <p style="text-align: justify;"><img class="aligncenter wp-image-117461 size-full"
+                src="/blog/wp-content/uploads/2019/10/Java-Collection-Heirarchy-1.png"
+                width="587" height="331"
+                srcset="https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2019/10/Java-Collection-Heirarchy-1.png 587w, https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2019/10/Java-Collection-Heirarchy-1-150x85.png 150w, https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2019/10/Java-Collection-Heirarchy-1-300x169.png 300w, https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2019/10/Java-Collection-Heirarchy-1-528x298.png 528w, https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2019/10/Java-Collection-Heirarchy-1-319x180.png 319w"
+                sizes="(max-width: 587px) 100vw, 587px"></p>
+            <h3 style="text-align: justify;"><strong>4.&nbsp;List down the primary interfaces provided by Java
+                Collections Framework?</strong></h3>
+            <p style="text-align: justify;">Below are the major interfaces provided by the Collection Framework:</p>
+            <ul style="text-align: justify;">
+              <li><em>Collection Interface</em>: java.util.Collection is the root of the Java Collection framework and
+                most of the collections in Java are inherited from this <a rel="noopener noreferrer"
+                  href="https://www.edureka.co/blog/java-interface/" target="_blank">interface</a>.</li>
+            </ul>
+            <div>
+              <div id="highlighter_154571" class="syntaxhighlighter  java">
+                <table border="0" cellpadding="0" cellspacing="0">
+                  <tbody>
+                    <tr>
+                      <td class="gutter">
+                        <div class="line number1 index0 alt2">1</div>
+                      </td>
+                      <td class="code">
+                        <div class="container">
+                          <div class="line number1 index0 alt2"><code class="java keyword">public</code> <code
+                              class="java keyword">interface</code> <code
+                              class="java plain">Collection&lt;E&gt;</code><code class="java keyword">extends</code>
+                            <code class="java plain">Iterable</code></div>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <ul style="text-align: justify;">
+              <li><em>List Interface</em>: java.util.List is an extended form of an array that contains ordered elements
+                and may include duplicates. It supports the index-based search, but elements can be easily inserted
+                irrespective of the position. <span>The List interface is implemented by various classes such as
+                  ArrayList, LinkedList, Vector, etc.</span></li>
+            </ul>
+            <div>
+              <div id="highlighter_399337" class="syntaxhighlighter  java">
+                <table border="0" cellpadding="0" cellspacing="0">
+                  <tbody>
+                    <tr>
+                      <td class="gutter">
+                        <div class="line number1 index0 alt2">1</div>
+                      </td>
+                      <td class="code">
+                        <div class="container">
+                          <div class="line number1 index0 alt2"><code class="java keyword">public</code> <code
+                              class="java keyword">interface</code> <code class="java plain">List&lt;E&gt; </code><code
+                              class="java keyword">extends</code> <code class="java plain">Collection&lt;E&gt;</code>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <ul style="text-align: justify;">
+              <li><em>Set Interface</em>: java.util.Set <span>refers to a collection class that cannot contain duplicate
+                  elements. Since it doesn’t define an order for the elements, the index-based search is not supported.
+                  It is majorly used as a mathematical set abstraction model. The Set interface is implemented by
+                  various classes such as HashSet, TreeSetand LinkedHashSet.</span></li>
+            </ul>
+            <div>
+              <div id="highlighter_231394" class="syntaxhighlighter  java">
+                <table border="0" cellpadding="0" cellspacing="0">
+                  <tbody>
+                    <tr>
+                      <td class="gutter">
+                        <div class="line number1 index0 alt2">1</div>
+                      </td>
+                      <td class="code">
+                        <div class="container">
+                          <div class="line number1 index0 alt2"><code class="java keyword">public</code> <code
+                              class="java keyword">interface</code> <code class="java plain">Set&lt;E&gt; </code><code
+                              class="java keyword">extends</code> <code class="java plain">Collection&lt;E&gt;</code>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <ul style="text-align: justify;">
+              <li><em>Queue Interface</em>: <span>java.util.Queue </span><span>in Java follows a&nbsp;FIFO approach
+                  i.e.&nbsp;</span><span>it</span><span> orders the elements in First In First Out manner. Elements in
+                  Queue will be added from the rear end while removed from the front.</span></li>
+            </ul>
+            <div>
+              <div id="highlighter_787795" class="syntaxhighlighter  java">
+                <table border="0" cellpadding="0" cellspacing="0">
+                  <tbody>
+                    <tr>
+                      <td class="gutter">
+                        <div class="line number1 index0 alt2">1</div>
+                      </td>
+                      <td class="code">
+                        <div class="container">
+                          <div class="line number1 index0 alt2"><code class="java keyword">public</code> <code
+                              class="java keyword">interface</code> <code class="java plain">Queue&lt;E&gt; </code><code
+                              class="java keyword">extends</code> <code class="java plain">Collection&lt;E&gt;</code>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <ul style="text-align: justify;">
+              <li><em>Map Interface</em>: java.util.Map is a two-dimensional data structure in Java that is used to
+                store the data in the form of a Key-Value pair. The key here is the unique hashcode and value represent
+                the element. Map in Java is another form of the Java Set but can’t contain duplicate elements.</li>
+            </ul>
+            <h3 style="text-align: justify;"><strong>5. Why Collection doesn’t extend the Cloneable and Serializable
+                interfaces?</strong></h3>
+            <p style="text-align: justify;">The Collection interface in Java specifies a group of objects called
+              elements. The maintainability and ordering of elements is completely dependent on the concrete
+              implementations provided by each of the Collection. Thus, there is no use of extending the Cloneable and
+              Serializable interfaces.</p>
+            <ul style="text-align: justify;"></ul>
+            <h3 style="text-align: justify;"><strong>6. List down the major advantages of the Generic
+                Collection.</strong></h3>
+            <p style="text-align: justify;">Below are the main advantages of using the <a rel="noopener noreferrer"
+                href="https://www.edureka.co/blog/generics-in-java/" target="_blank">generic collection</a> in Java:</p>
+            <ul style="text-align: justify;">
+              <li>Provides stronger type checks at the time of compilation</li>
+              <li>Eliminates the need for typecasting</li>
+              <li>Enables the implementation of generic algorithms which makes the code customizable, type-safe and
+                easier to read</li>
+            </ul>
+            <h3 style="text-align: justify;"><strong>7. What is the main benefit of using the Properties file?</strong>
+            </h3>
+            <p style="text-align: justify;">The main advantage of using the properties file in Java is that in case the
+              values in the properties file is changed it will be automatically reflected without having to recompile
+              the java class.&nbsp; Thus it is mainly used to store information which is liable to change such as
+              username and passwords. This makes the management of the application easy and efficient. Below is an
+              example of the same:</p>
+            <div>
+              <div id="highlighter_573627" class="syntaxhighlighter  java">
+                <table border="0" cellpadding="0" cellspacing="0">
+                  <tbody>
+                    <tr>
+                      <td class="gutter">
+                        <div class="line number1 index0 alt2">1</div>
+                        <div class="line number2 index1 alt1">2</div>
+                        <div class="line number3 index2 alt2">3</div>
+                        <div class="line number4 index3 alt1">4</div>
+                        <div class="line number5 index4 alt2">5</div>
+                        <div class="line number6 index5 alt1">6</div>
+                        <div class="line number7 index6 alt2">7</div>
+                        <div class="line number8 index7 alt1">8</div>
+                        <div class="line number9 index8 alt2">9</div>
+                        <div class="line number10 index9 alt1">10</div>
+                        <div class="line number11 index10 alt2">11</div>
+                      </td>
+                      <td class="code">
+                        <div class="container">
+                          <div class="line number1 index0 alt2"><code class="java keyword">import</code> <code
+                              class="java plain">java.util.*;</code></div>
+                          <div class="line number2 index1 alt1"><code class="java keyword">import</code> <code
+                              class="java plain">java.io.*;</code></div>
+                          <div class="line number3 index2 alt2"><code class="java keyword">public</code> <code
+                              class="java keyword">class</code> <code class="java plain">PropertiesDemo{</code></div>
+                          <div class="line number4 index3 alt1"><code class="java keyword">public</code> <code
+                              class="java keyword">static</code> <code class="java keyword">void</code> <code
+                              class="java plain">main(String[] args)</code><code class="java keyword">throws</code>
+                            <code class="java plain">Exception{ </code></div>
+                          <div class="line number5 index4 alt2"><code class="java plain">FileReader fr=</code><code
+                              class="java keyword">new</code> <code class="java plain">FileReader(</code><code
+                              class="java string">"db.properties"</code><code class="java plain">); </code></div>
+                          <div class="line number6 index5 alt1"><code class="java plain">Properties pr=</code><code
+                              class="java keyword">new</code> <code class="java plain">Properties();</code></div>
+                          <div class="line number7 index6 alt2"><code class="java plain">pr.load(fr);</code></div>
+                          <div class="line number8 index7 alt1"><code
+                              class="java plain">System.out.println(pr.getProperty(</code><code
+                              class="java string">"user"</code><code class="java plain">));</code></div>
+                          <div class="line number9 index8 alt2"><code
+                              class="java plain">System.out.println(pr.getProperty(</code><code
+                              class="java string">"password"</code><code class="java plain">));</code></div>
+                          <div class="line number10 index9 alt1"><code class="java plain">}</code></div>
+                          <div class="line number11 index10 alt2"><code class="java plain">}</code></div>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <h3 style="text-align: justify;"><strong>8. What do you understand by Iterator in the Java Collection
+                Framework?</strong></h3>
+            <p style="text-align: justify;">Iterator in Java is an interface of the Collection framework present in
+              java.util package. It is a Cursor in Java which is used to iterate a collection of objects. Below are a
+              few other major functionalities provided by the Iterator interface:</p>
+            <ul style="text-align: justify;">
+              <li>Traverse a collection object elements one by one</li>
+              <li>Known as Universal Java Cursor as it is applicable for all the classes of the Collection framework
+              </li>
+              <li>Supports READ and REMOVE Operations.</li>
+              <li>Iterator method names are easy to implement</li>
+            </ul>
+            <h3 style="text-align: justify;"><strong>9.&nbsp;What is the need for overriding equals() method in
+                Java?</strong></h3>
+            <p style="text-align: justify;">The initial implementation of the equals method helps in checking whether
+              two objects are the same or not. But in case you want to compare the objects based on the property you
+              will have to override this method.</p>
+            <h3 style="text-align: justify;"><strong>10. How the Collection objects are sorted in
+                Java?</strong><span><br> </span></h3>
+            <p style="text-align: justify;">Sorting in Java Collections is <span>implemented via <a
+                  rel="noopener noreferrer" href="https://www.edureka.co/blog/comparable-in-java/"
+                  target="_blank">Comparable</a> and <a rel="noopener noreferrer"
+                  href="https://www.edureka.co/blog/comparator-interface-java/" target="_blank">Comparator</a>
+                interfaces. When Collections.sort()&nbsp; method is used the elements <a name="list"></a>get sorted
+                based on the natural order that is specified in the </span><span>compareTo()</span><span>&nbsp;method.
+                On the other hand when Collections.sort(Comparator) method is used it sorts the objects based on
+                compare() method of the Comparator interface.&nbsp;</span><span><br> <a
+                  href="https://javarevisited.blogspot.com/2011/11/collection-interview-questions-answers.html#ixzz61wm6v0Pw"></a></span>
+            </p>
+            <h2 style="text-align: center;"><strong>List – Java Collections Interview Questions</strong></h2>
+            <h3 style="text-align: justify;"><strong>11.&nbsp;What is the use of the List interface?</strong></h3>
+            <p style="text-align: justify;">The List interface in Java is an <strong>ordered collection</strong> of
+              elements. It maintains the insertion order and allows duplicate values to be stored within. This interface
+              contains various methods which enables smooth manipulation of elements based on the element
+              index.&nbsp;The main classes implementing the List interface of the Collection framework are<span><strong>
+                  ArrayList</strong>, <a rel="noopener noreferrer"
+                  href="https://www.edureka.co/blog/arraylist-vs-linkedlist/"
+                  target="_blank"><strong>LinkedList</strong></a>, </span><strong>Stack, and Vector</strong>.</p>
+            <h3 style="text-align: justify;"><strong>12. What is ArrayList in Java?</strong></h3>
+            <p style="text-align: justify;"><span>ArrayList is the implementation of List Interface where the elements
+                can be dynamically added or removed from the list. ArrayList in the Collection framework provides
+                positional access and insertion of elements. It is an ordered collection that permits duplicate values.
+              </span><span>The size of an ArrayList can be increased dynamically if the number of elements is more than
+                the initial size.&nbsp;</span></p>
+            <p style="text-align: justify;"><span><strong><img
+                    class="blur-up lazyloaded wp-image-46004 size-full aligncenter  blur-up "
+                    src="https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2017/05/array-list.png"
+                    data-src="https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2017/05/array-list.png"
+                    alt="Arraylist - Java Collections Interview Questions - Edureka" width="736" height="460"
+                    data-sizes="(max-width: 736px) 100vw, 736px"
+                    data-srcset="https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2017/05/array-list.png 736w, https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2017/05/array-list-150x94.png 150w, https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2017/05/array-list-300x188.png 300w, https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2017/05/array-list-480x300.png 480w, https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2017/05/array-list-288x180.png 288w"
+                    sizes="(max-width: 736px) 100vw, 736px"
+                    srcset="https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2017/05/array-list.png 736w, https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2017/05/array-list-150x94.png 150w, https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2017/05/array-list-300x188.png 300w, https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2017/05/array-list-480x300.png 480w, https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2017/05/array-list-288x180.png 288w">Syntax</strong>:</span><span></span>
+            </p>
+            <div>
+              <div id="highlighter_184247" class="syntaxhighlighter  java">
+                <table border="0" cellpadding="0" cellspacing="0">
+                  <tbody>
+                    <tr>
+                      <td class="gutter">
+                        <div class="line number1 index0 alt2">1</div>
+                      </td>
+                      <td class="code">
+                        <div class="container">
+                          <div class="line number1 index0 alt2"><code class="java plain">ArrayList object = </code><code
+                              class="java keyword">new</code> <code class="java plain">ArrayList ();</code></div>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <h2 style="text-align: justify;"><strong>13. How would you convert an ArrayList to Array and an Array to
+                ArrayList?</strong></h2>
+            <p style="text-align: justify;">An Array can be converted into an ArrayList by making use of the asList()
+              method provided by the Array class. It is a static method that accepts List objects as a parameter.</p><a
+              href="https://www.edureka.co/java-j2ee-training-course?utm_source=blogbanner&amp;utm_campaign=curriculum"
+              target="_blank" class="cta-ads-block-inline curriculum-link">
+              
+            </a>
+            <p style="text-align: justify;"><strong>Syntax:</strong></p>
+            <div>
+              <div id="highlighter_144864" class="syntaxhighlighter  java">
+                <table border="0" cellpadding="0" cellspacing="0">
+                  <tbody>
+                    <tr>
+                      <td class="gutter">
+                        <div class="line number1 index0 alt2">1</div>
+                      </td>
+                      <td class="code">
+                        <div class="container">
+                          <div class="line number1 index0 alt2"><code class="java plain">Arrays.asList(item)</code>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <p style="text-align: justify;">Whereas an ArrayList can be converted into an Array using the toArray()
+              method of the ArrayList class.</p>
+            <p style="text-align: justify;"><strong>Syntax:</strong></p>
+            <div>
+              <div id="highlighter_577290" class="syntaxhighlighter  java">
+                <table border="0" cellpadding="0" cellspacing="0">
+                  <tbody>
+                    <tr>
+                      <td class="gutter">
+                        <div class="line number1 index0 alt2">1</div>
+                      </td>
+                      <td class="code">
+                        <div class="container">
+                          <div class="line number1 index0 alt2"><code
+                              class="java plain">List_object.toArray(</code><code class="java keyword">new</code> <code
+                              class="java plain">String[List_object.size()])</code></div>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <p style="text-align: justify;"><strong>14. How will you reverse an List?</strong></p>
+            <p style="text-align: justify;">ArrayList can be reversed using the reverse() method of the Collections
+              class.</p>
+            <p style="text-align: justify;"><em><strong>Syntax:</strong></em></p>
+            <div>
+              <div id="highlighter_991631" class="syntaxhighlighter  java">
+                <table border="0" cellpadding="0" cellspacing="0">
+                  <tbody>
+                    <tr>
+                      <td class="gutter">
+                        <div class="line number1 index0 alt2">1</div>
+                      </td>
+                      <td class="code">
+                        <div class="container">
+                          <div class="line number1 index0 alt2"><code class="java keyword">public</code> <code
+                              class="java keyword">static</code> <code class="java keyword">void</code> <code
+                              class="java plain">reverse(Collection c)</code></div>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <p style="text-align: justify;"><em><strong>For Example:</strong></em></p>
+            <div>
+              <div id="highlighter_134818" class="syntaxhighlighter  java">
+                <table border="0" cellpadding="0" cellspacing="0">
+                  <tbody>
+                    <tr>
+                      <td class="gutter">
+                        <div class="line number1 index0 alt2">1</div>
+                        <div class="line number2 index1 alt1">2</div>
+                        <div class="line number3 index2 alt2">3</div>
+                        <div class="line number4 index3 alt1">4</div>
+                        <div class="line number5 index4 alt2">5</div>
+                        <div class="line number6 index5 alt1">6</div>
+                        <div class="line number7 index6 alt2">7</div>
+                        <div class="line number8 index7 alt1">8</div>
+                        <div class="line number9 index8 alt2">9</div>
+                        <div class="line number10 index9 alt1">10</div>
+                        <div class="line number11 index10 alt2">11</div>
+                        <div class="line number12 index11 alt1">12</div>
+                        <div class="line number13 index12 alt2">13</div>
+                        <div class="line number14 index13 alt1">14</div>
+                      </td>
+                      <td class="code">
+                        <div class="container">
+                          <div class="line number1 index0 alt2"><code class="java keyword">public</code> <code
+                              class="java keyword">class</code> <code class="java plain">ReversingArrayList { </code>
+                          </div>
+                          <div class="line number2 index1 alt1"><code class="java keyword">public</code> <code
+                              class="java keyword">static</code> <code class="java keyword">void</code> <code
+                              class="java plain">main(String[] args) { </code></div>
+                          <div class="line number3 index2 alt2"><code
+                              class="java plain">List&lt;String&gt; myList = </code><code
+                              class="java keyword">new</code> <code
+                              class="java plain">ArrayList&lt;String&gt;(); </code></div>
+                          <div class="line number4 index3 alt1"><code class="java plain">myList.add(</code><code
+                              class="java string">"AWS"</code><code class="java plain">); </code></div>
+                          <div class="line number5 index4 alt2"><code class="java plain">myList.add(</code><code
+                              class="java string">"Java"</code><code class="java plain">); </code></div>
+                          <div class="line number6 index5 alt1"><code class="java plain">myList.add(</code><code
+                              class="java string">"Python"</code><code class="java plain">); </code></div>
+                          <div class="line number7 index6 alt2"><code class="java plain">myList .add(</code><code
+                              class="java string">"Blockchain"</code><code class="java plain">); </code></div>
+                          <div class="line number8 index7 alt1"><code class="java plain">System.out.println(</code><code
+                              class="java string">"Before Reversing"</code><code class="java plain">); </code></div>
+                          <div class="line number9 index8 alt2"><code
+                              class="java plain">System.out.println(myList.toString()); </code></div>
+                          <div class="line number10 index9 alt1"><code
+                              class="java plain">Collections.reverse(myList); </code></div>
+                          <div class="line number11 index10 alt2"><code
+                              class="java plain">System.out.println(</code><code
+                              class="java string">"After Reversing"</code><code class="java plain">); </code></div>
+                          <div class="line number12 index11 alt1"><code
+                              class="java plain">System.out.println(myList); </code></div>
+                          <div class="line number13 index12 alt2"><code class="java plain">} </code></div>
+                          <div class="line number14 index13 alt1"><code class="java plain">}</code></div>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <h3 style="text-align: justify;"><strong>15. What do you understand by LinkedList in Java? How many types of
+                LinkedList does Java support?</strong></h3>
+            <p style="text-align: justify;">LinkedList in Java is a data structure that contains a sequence of links.
+              Here each link contains a connection to the next link.</p>
+            <p style="text-align: justify;"><strong>Syntax:</strong></p>
+            <div>
+              <div id="highlighter_938534" class="syntaxhighlighter  java">
+                <table border="0" cellpadding="0" cellspacing="0">
+                  <tbody>
+                    <tr>
+                      <td class="gutter">
+                        <div class="line number1 index0 alt2">1</div>
+                      </td>
+                      <td class="code">
+                        <div class="container">
+                          <div class="line number1 index0 alt2"><code
+                              class="java plain">Linkedlist object = </code><code class="java keyword">new</code> <code
+                              class="java plain">Linkedlist();</code></div>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <p style="text-align: justify;">Java LinkedList class uses two types of LinkedList to store the elements:
+            </p>
+            <ul style="text-align: justify;">
+              <li><strong><em>Singly Linked List: </em></strong>In a singly LinkedList, each node in this list stores
+                the data of the node and a pointer or reference to the next node in the list.</li>
+            </ul>
+            <p style="text-align: justify;"><span><img
+                  class="aligncenter size-full wp-image-46665 blur-up lazyloaded  blur-up "
+                  src="https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2017/05/Singly-LinkedList-1.jpg"
+                  data-src="https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2017/05/Singly-LinkedList-1.jpg"
+                  alt="SinglyLinkedList - Java Collections - Edureka" width="1135" height="212"
+                  data-sizes="(max-width: 1135px) 100vw, 1135px"
+                  data-srcset="https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2017/05/Singly-LinkedList-1.jpg 1135w, https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2017/05/Singly-LinkedList-1-150x28.jpg 150w, https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2017/05/Singly-LinkedList-1-300x56.jpg 300w, https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2017/05/Singly-LinkedList-1-768x143.jpg 768w, https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2017/05/Singly-LinkedList-1-528x99.jpg 528w, https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2017/05/Singly-LinkedList-1-590x110.jpg 590w"
+                  sizes="(max-width: 1135px) 100vw, 1135px"
+                  srcset="https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2017/05/Singly-LinkedList-1.jpg 1135w, https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2017/05/Singly-LinkedList-1-150x28.jpg 150w, https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2017/05/Singly-LinkedList-1-300x56.jpg 300w, https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2017/05/Singly-LinkedList-1-768x143.jpg 768w, https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2017/05/Singly-LinkedList-1-528x99.jpg 528w, https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2017/05/Singly-LinkedList-1-590x110.jpg 590w"></span>
+            </p>
+            <ul style="text-align: justify;">
+              <li><span><em><strong>Doubly Linked List: </strong></em></span>In a doubly LinkedList, it has two
+                references, one to the next node and another to the previous node.</li>
+            </ul>
+            <p style="text-align: justify;"><span><img
+                  class="aligncenter size-full wp-image-46666 blur-up lazyloaded  blur-up "
+                  src="https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2017/05/Doubly-LinkedList.jpg"
+                  data-src="https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2017/05/Doubly-LinkedList.jpg"
+                  alt="DoublyLinkedList - Java Collections - Edureka" width="1135" height="463"
+                  data-sizes="(max-width: 1135px) 100vw, 1135px"
+                  data-srcset="https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2017/05/Doubly-LinkedList.jpg 1135w, https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2017/05/Doubly-LinkedList-150x61.jpg 150w, https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2017/05/Doubly-LinkedList-300x122.jpg 300w, https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2017/05/Doubly-LinkedList-768x313.jpg 768w, https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2017/05/Doubly-LinkedList-528x215.jpg 528w, https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2017/05/Doubly-LinkedList-441x180.jpg 441w"
+                  sizes="(max-width: 1135px) 100vw, 1135px"
+                  srcset="https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2017/05/Doubly-LinkedList.jpg 1135w, https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2017/05/Doubly-LinkedList-150x61.jpg 150w, https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2017/05/Doubly-LinkedList-300x122.jpg 300w, https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2017/05/Doubly-LinkedList-768x313.jpg 768w, https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2017/05/Doubly-LinkedList-528x215.jpg 528w, https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2017/05/Doubly-LinkedList-441x180.jpg 441w"></span>
+            </p>
+            <p style="text-align: justify;"><strong>16. What is a Vector in Java?</strong></p>
+            <p style="text-align: justify;"><span><a rel="noopener noreferrer"
+                  href="https://www.edureka.co/blog/vector-in-java/" target="_blank">Vectors</a> are similar to arrays,
+                where the elements of the vector object can be accessed via an index into the vector. Vector implements
+                a dynamic array. Also, the vector is not limited to a specific size, it can shrink or grow automatically
+                whenever required. It is similar to ArrayList, but with two differences :</span></p>
+            <ul style="text-align: justify;">
+              <li><span>Vector is synchronized.</span></li>
+              <li><span>Vector contains many legacy methods that are not part of the collections framework.</span></li>
+            </ul>
+            <p style="text-align: justify;"><a name="queue"></a><span class="aligncenter"><img
+                  class="aligncenter size-full wp-image-46001 blur-up lazyloaded  blur-up "
+                  src="https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2017/05/vector-list.png"
+                  data-src="https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2017/05/vector-list.png"
+                  alt="Vector - Java Collections - Edureka" width="736" height="460"
+                  data-sizes="(max-width: 736px) 100vw, 736px"
+                  data-srcset="https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2017/05/vector-list.png 736w, https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2017/05/vector-list-150x94.png 150w, https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2017/05/vector-list-300x188.png 300w, https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2017/05/vector-list-480x300.png 480w, https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2017/05/vector-list-288x180.png 288w"
+                  sizes="(max-width: 736px) 100vw, 736px"
+                  srcset="https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2017/05/vector-list.png 736w, https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2017/05/vector-list-150x94.png 150w, https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2017/05/vector-list-300x188.png 300w, https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2017/05/vector-list-480x300.png 480w, https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2017/05/vector-list-288x180.png 288w"><strong>Syntax</strong>:</span><span></span>
+            </p>
+            <div>
+              <div id="highlighter_38491" class="syntaxhighlighter  java">
+                <table border="0" cellpadding="0" cellspacing="0">
+                  <tbody>
+                    <tr>
+                      <td class="gutter">
+                        <div class="line number1 index0 alt2">1</div>
+                      </td>
+                      <td class="code">
+                        <div class="container">
+                          <div class="line number1 index0 alt2"><code class="java plain">Vector object = </code><code
+                              class="java keyword">new</code> <code class="java plain">Vector(size,increment);</code>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <p>&nbsp;</p>
+            <h2 style="text-align: center;"><strong>Queue – Java Collections Interview Questions</strong></h2>
+            <h3 style="text-align: justify;"><strong>17. What are the various methods provided by the Queue
+                interface?</strong></h3>
+            <p style="text-align: justify;"><span>Below are some of the methods of Java Queue interface:</span></p>
+            <table border="1" width="100%">
+              <tbody>
+                <tr>
+                  <th><span>Method</span></th>
+                  <th><span>Description</span></th>
+                </tr>
+                <tr>
+                  <td><em>&nbsp;boolean add(object)</em></td>
+                  <td><span>&nbsp;Inserts the specified element into the queue and returns true if it is a
+                      success.</span></td>
+                </tr>
+                <tr>
+                  <td><em>&nbsp;boolean offer(object)</em></td>
+                  <td><span>&nbsp;Inserts the specified element into this queue.</span></td>
+                </tr>
+                <tr>
+                  <td><em>&nbsp;Object remove()</em></td>
+                  <td><span>&nbsp;Retrieves and removes the head of the queue.</span></td>
+                </tr>
+                <tr>
+                  <td><em>&nbsp;Object poll()</em></td>
+                  <td><span>&nbsp;Retrieves and removes the head of the queue, or returns null if the queue is
+                      empty.</span></td>
+                </tr>
+                <tr>
+                  <td><em>&nbsp;Object element()</em></td>
+                  <td><span>&nbsp;Retrieves, but does not remove the head of the queue.</span></td>
+                </tr>
+                <tr>
+                  <td><em>&nbsp;Object peek()</em></td>
+                  <td><span>&nbsp;Retrieves, but does not remove the head of this queue, or returns null if the queue is
+                      empty.</span></td>
+                </tr>
+              </tbody>
+            </table>
+            <h3 style="text-align: justify;"><strong>18. What do you understand by BlockingQueue?</strong></h3>
+            <p style="text-align: justify;"><span>BlockingQueue interface belongs to
+                the&nbsp;<b>java.util.concurrent&nbsp;</b><a rel="noopener noreferrer"
+                  href="https://www.edureka.co/blog/packages-in-java/"
+                  target="_blank">package</a>.&nbsp;</span><span>This interface enhances flow control by activating
+                blocking, in case a thread is trying to dequeue an empty queue or enqueue an already full queue.
+              </span><span>While working with the BlockingQueue interface in Java, you must remember that it does not
+                accept a null value. In case you try to do that it will instantly throw a NullPointerException. The
+                below figure represents the working of the BlockingQueue interface in Java.</span></p>
+            
+            <p style="text-align: justify;"><span><img class="aligncenter wp-image-111960 size-full  blur-up lazyloaded"
+                  src="https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2019/09/BlockingQueue.png"
+                  data-src="https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2019/09/BlockingQueue.png"
+                  alt="BlockingQueue - Java Collections Interview Questions - Edureka" width="836" height="278"
+                  data-srcset="https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2019/09/BlockingQueue.png 836w, https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2019/09/BlockingQueue-150x50.png 150w, https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2019/09/BlockingQueue-300x100.png 300w, https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2019/09/BlockingQueue-768x255.png 768w, https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2019/09/BlockingQueue-528x176.png 528w, https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2019/09/BlockingQueue-541x180.png 541w"
+                  data-sizes="(max-width: 836px) 100vw, 836px" sizes="(max-width: 836px) 100vw, 836px"
+                  srcset="https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2019/09/BlockingQueue.png 836w, https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2019/09/BlockingQueue-150x50.png 150w, https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2019/09/BlockingQueue-300x100.png 300w, https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2019/09/BlockingQueue-768x255.png 768w, https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2019/09/BlockingQueue-528x176.png 528w, https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2019/09/BlockingQueue-541x180.png 541w"></span>
+            </p>
+            <h3 style="text-align: justify;"><strong>19. What is a priority queue in Java?</strong></h3>
+            <p style="text-align: justify;">A priority queue in Java is an abstract data type similar to a regular queue
+              or stack data structure but has a special feature called priority associated with each element. In this
+              queue, a high priority element is served before a low priority element irrespective of their insertion
+              order. The PriorityQueue is based on the priority heap. The elements of the priority queue are ordered
+              according to the natural ordering, or by a Comparator provided at queue construction time, depending on
+              which constructor is used.</p>
+            <h3 style="text-align: justify;"><strong>20. What is the Stack class in Java and what are the various
+                methods provided by it?</strong></h3>
+            <p style="text-align: justify;">Java Stack class is an important part of&nbsp; the Java Collection framework
+              and is based on the basic principle of last-in-first-out. In other words, the elements are added as well
+              as removed from the rear end. The action of adding an element to a stack is called push while removing an
+              element is referred to as pop. Below are the various methods provided by this class:</p>
+            <table style="width: 0px;" border="1px">
+              <tbody>
+                <tr>
+                  <td style="width: 170px;"><strong>Methods</strong></td>
+                  <td style="width: 801px;"><strong>Description</strong></td>
+                </tr>
+                <tr>
+                  <td style="width: 170px; text-align: center;"><em>empty()</em></td>
+                  <td style="width: 801px;">Checks if the stack is empty</td>
+                </tr>
+                <tr>
+                  <td style="width: 170px; text-align: center;"><em>push()</em></td>
+                  <td style="width: 801px;">Pust an item to the top of the stack</td>
+                </tr>
+                <tr>
+                  <td style="width: 170px; text-align: center;"><a name="set"></a><em>pop()</em></td>
+                  <td style="width: 801px;">Remove the object from the stack</td>
+                </tr>
+                <tr>
+                  <td style="width: 170px; text-align: center;"><em>peek()</em></td>
+                  <td style="width: 801px;">Looks at the object of a stack without removing it</td>
+                </tr>
+                <tr>
+                  <td style="width: 170px; text-align: center;"><em>search()</em></td>
+                  <td style="width: 801px;"><span>Searches item in the stack to get its index</span></td>
+                </tr>
+              </tbody>
+            </table>
+            <h2 style="text-align: center;"><strong>Set&nbsp; – Java Collections Interview Questions</strong></h2>
+            <h3 style="text-align: justify;"><strong>21. What is Set in Java Collections framework and list down its
+                various implementations?</strong></h3>
+            <p style="text-align: justify;"><span>A Set refers to a collection that cannot contain duplicate elements.
+                It is mainly used to model the mathematical set abstraction.&nbsp;</span>The Java platform provides
+              three general-purpose Set implementations which are:</p>
+            <ol style="text-align: justify;">
+              <li>HashSet</li>
+              <li>TreeSet</li>
+              <li>LinkedHashSet</li>
+            </ol>
+            <h3 style="text-align: justify;"><strong>22. What is the HashSet class in Java and how does it store
+                elements?</strong></h3>
+            <p style="text-align: justify;">java.util.HashSet class is a member of the Java collections framework which
+              inherits the AbstractSet class and implements the Set interface. It implicitly implements a hashtable for
+              creating and storing a collection of unique elements. Hashtable is an instance of the HashMap class that
+              uses a hashing mechanism for storing the information within a HashSet.&nbsp;Hashing is the process of
+              converting the informational content into a unique value that is more popularly known as hash code. This
+              hashcode is then used for indexing the data associated with the key. The entire process of transforming
+              the informational key into the hashcode is performed internally.</p>
+            <h3 style="text-align: justify;"><strong>23.&nbsp;Can you add a null element into a TreeSet or
+                HashSet?</strong></h3>
+            <p style="text-align: justify;">In HashSet, only one null element can be added but in TreeSet it can’t be
+              added as it makes use of NavigableMap for storing the elements. This is because the NavigableMap is a
+              subtype of SortedMap that doesn’t allow null keys. So, in case you try to add null elements to a TreeSet,
+              it will throw a NullPointerException.</p>
+            <h3 style="text-align: justify;"><strong>24. Explain the emptySet() method in the Collections
+                framework?</strong></h3>
+            <p style="text-align: justify;"><span>The Collections.emptySet() is used to return the empty immutable Set
+                while removing the null elements. The set returned by this method is serializable. Below is the method
+                declaration of emptySet().</span></p>
+            <p style="text-align: justify;"><strong>Syntax: </strong></p>
+            <div>
+              <div id="highlighter_126899" class="syntaxhighlighter  java">
+                <table border="0" cellpadding="0" cellspacing="0">
+                  <tbody>
+                    <tr>
+                      <td class="gutter">
+                        <div class="line number1 index0 alt2">1</div>
+                      </td>
+                      <td class="code">
+                        <div class="container">
+                          <div class="line number1 index0 alt2"><code class="java keyword">public</code> <code
+                              class="java keyword">static</code> <code class="java keyword">final</code> <code
+                              class="java plain">&lt;T&gt; Set&lt;T&gt; emptySet()</code></div>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <h3 style="text-align: justify;"><strong>25. What is LinkedHashSet in Java Collections Framework?</strong>
+            </h3>
+            <p style="text-align: justify;">A <span>java.util.LinkedHashSet <a name="map"></a>is a subclass of
+                the&nbsp;<a rel="noopener noreferrer" href="https://www.edureka.co/blog/hashset-in-java/"
+                  target="_blank">HashSet&nbsp;</a>class and implements the Set interface. It</span><span> </span>is an
+              ordered version of HashSet which maintains a doubly-linked List across all elements contained within. It
+              preserves the insertion order and contains only unique elements like its parent class.</p>
+            <p style="text-align: justify;"><strong>Syntax:</strong></p>
+            <div>
+              <div id="highlighter_70902" class="syntaxhighlighter  java">
+                <table border="0" cellpadding="0" cellspacing="0">
+                  <tbody>
+                    <tr>
+                      <td class="gutter">
+                        <div class="line number1 index0 alt2">1</div>
+                      </td>
+                      <td class="code">
+                        <div class="container">
+                          <div class="line number1 index0 alt2"><code
+                              class="java plain">LinkedHashSet&lt;String&gt; hs = </code><code
+                              class="java keyword">new</code> <code
+                              class="java plain">LinkedHashSet&lt;String&gt;();</code></div>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <p style="text-align: center;"><strong>Map&nbsp; – Java Collections Interview Questions</strong></p>
+            <h3 style="text-align: justify;"><strong>26. What is Map interface in Java?</strong></h3>
+            <p style="text-align: justify;">The java.util.Map interface in Java stores the elements in the form of
+              keys-values pairs which is designed for faster lookups. Here every key is unique and maps to a single
+              value. These key-value pairs are known as the map entries. This interface <span>includes method signatures
+                for insertion, removal, and retrieval of elements based on a key. With such methods, it’s a perfect tool
+                to use for key-value association mapping such as dictionaries.&nbsp;</span></p>
+            <p style="text-align: justify;"><strong>27. Why Map doesn’t extend the Collection Interface?</strong></p>
+            <p style="text-align: justify;">The Map interface in Java follows a key/value pair structure whereas the
+              Collection interface is a collection of objects which are stored in a structured manner with a specified
+              access mechanism. The main reason Map doesn’t extend the Collection interface is that the add(E e) method
+              of the Collection interface doesn’t support the key-value pair like Map interface’s put(K, V) method. It
+              might not extend the Collection interface but still is an integral part of the Java Collections framework.
+            </p>
+            <h3 style="text-align: justify;"><strong>28.&nbsp;List down the different Collection views provided by the
+                Map interface in the Java Collection framework?</strong></h3>
+            <p style="text-align: justify;">The Map interface provides 3 views of key-value pairs which are:</p>
+            <ul style="text-align: justify;">
+              <li>key set view</li>
+              <li>value set view</li>
+              <li>entry set view</li>
+            </ul>
+            <p style="text-align: justify;">All these views can be easily navigated through using the iterators.</p>
+            <h3 style="text-align: justify;"><strong>29. What is the ConcurrentHashMap in Java and do you implement
+                it?</strong></h3>
+            <p style="text-align: justify;"><strong>ConcurrentHashMap</strong><span> is a Java class that implements
+                ConcurrentMap as well as Serializable interfaces. This class is the enhanced version of HashMap as it
+                doesn’t perform well in the multithreaded environment. It has a higher performance rate compared to the
+                HashMap.&nbsp;</span></p>
+            <p style="text-align: justify;">Below is a small example demonstrating the implementation of
+              ConcurrentHashMap:</p>
+            <div>
+              <div id="highlighter_357311" class="syntaxhighlighter  java">
+                <table border="0" cellpadding="0" cellspacing="0">
+                  <tbody>
+                    <tr>
+                      <td class="gutter">
+                        <div class="line number1 index0 alt2">1</div>
+                        <div class="line number2 index1 alt1">2</div>
+                        <div class="line number3 index2 alt2">3</div>
+                        <div class="line number4 index3 alt1">4</div>
+                        <div class="line number5 index4 alt2">5</div>
+                        <div class="line number6 index5 alt1">6</div>
+                        <div class="line number7 index6 alt2">7</div>
+                        <div class="line number8 index7 alt1">8</div>
+                        <div class="line number9 index8 alt2">9</div>
+                        <div class="line number10 index9 alt1">10</div>
+                        <div class="line number11 index10 alt2">11</div>
+                        <div class="line number12 index11 alt1">12</div>
+                        <div class="line number13 index12 alt2">13</div>
+                        <div class="line number14 index13 alt1">14</div>
+                        <div class="line number15 index14 alt2">15</div>
+                        <div class="line number16 index15 alt1">16</div>
+                        <div class="line number17 index16 alt2">17</div>
+                        <div class="line number18 index17 alt1">18</div>
+                        <div class="line number19 index18 alt2">19</div>
+                        <div class="line number20 index19 alt1">20</div>
+                        <div class="line number21 index20 alt2">21</div>
+                        <div class="line number22 index21 alt1">22</div>
+                        <div class="line number23 index22 alt2">23</div>
+                        <div class="line number24 index23 alt1">24</div>
+                        <div class="line number25 index24 alt2">25</div>
+                        <div class="line number26 index25 alt1">26</div>
+                        <div class="line number27 index26 alt2">27</div>
+                        <div class="line number28 index27 alt1">28</div>
+                        <div class="line number29 index28 alt2">29</div>
+                        <div class="line number30 index29 alt1">30</div>
+                        <div class="line number31 index30 alt2">31</div>
+                        <div class="line number32 index31 alt1">32</div>
+                        <div class="line number33 index32 alt2">33</div>
+                      </td>
+                      <td class="code">
+                        <div class="container">
+                          <div class="line number1 index0 alt2"><code class="java keyword">package</code> <code
+                              class="java plain">test;</code></div>
+                          <div class="line number2 index1 alt1"><code class="java keyword">import</code> <code
+                              class="java plain">java.util.concurrent.*;</code></div>
+                          <div class="line number3 index2 alt2">&nbsp;</div>
+                          <div class="line number4 index3 alt1"><code class="java keyword">public</code> <code
+                              class="java keyword">class</code> <code class="java plain">ConcurrentHashMapDemo {</code>
+                          </div>
+                          <div class="line number5 index4 alt2"><code
+                              class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                              class="java keyword">public</code> <code class="java keyword">static</code> <code
+                              class="java keyword">void</code> <code class="java plain">main(String[] args) </code>
+                          </div>
+                          <div class="line number6 index5 alt1"><code
+                              class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java plain">{ </code>
+                          </div>
+                          <div class="line number7 index6 alt2"><code
+                              class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                              class="java plain">ConcurrentHashMap m = </code><code class="java keyword">new</code>
+                            <code class="java plain">ConcurrentHashMap(); </code></div>
+                          <div class="line number8 index7 alt1"><code
+                              class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                              class="java plain">m.put(</code><code class="java value">1</code><code
+                              class="java plain">, </code><code class="java string">"Welcome"</code><code
+                              class="java plain">); </code></div>
+                          <div class="line number9 index8 alt2"><code
+                              class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                              class="java plain">m.put(</code><code class="java value">2</code><code
+                              class="java plain">, </code><code class="java string">"to"</code><code
+                              class="java plain">); </code></div>
+                          <div class="line number10 index9 alt1"><code
+                              class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                              class="java plain">m.put(</code><code class="java value">3</code><code
+                              class="java plain">, </code><code class="java string">"Test"</code><code
+                              class="java plain">);</code></div>
+                          <div class="line number11 index10 alt2"><code
+                              class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                              class="java plain">m.put(</code><code class="java value">4</code><code
+                              class="java plain">, </code><code class="java string">"Demo"</code><code
+                              class="java plain">);</code></div>
+                          <div class="line number12 index11 alt1"><code class="java spaces">&nbsp;&nbsp;</code>&nbsp;
+                          </div>
+                          <div class="line number13 index12 alt2"><code
+                              class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                              class="java plain">System.out.println(m);</code></div>
+                          <div class="line number14 index13 alt1"><code
+                              class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code>&nbsp;</div>
+                          <div class="line number15 index14 alt2"><code
+                              class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                              class="java comments">// Here we cant add Hello because 101 key </code></div>
+                          <div class="line number16 index15 alt1"><code
+                              class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                              class="java comments">// is already present in ConcurrentHashMap object </code></div>
+                          <div class="line number17 index16 alt2"><code
+                              class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                              class="java plain">m.putIfAbsent(</code><code class="java value">3</code><code
+                              class="java plain">, </code><code class="java string">"Online"</code><code
+                              class="java plain">); </code></div>
+                          <div class="line number18 index17 alt1"><code
+                              class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                              class="java plain">System.out.println(</code><code
+                              class="java string">"Checking if key 3 is already present in the ConcurrentHashMap object: "</code><code
+                              class="java plain">+ m);</code></div>
+                          <div class="line number19 index18 alt2"><code class="java spaces">&nbsp;&nbsp;</code>&nbsp;
+                          </div>
+                          <div class="line number20 index19 alt1"><code
+                              class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                              class="java comments">// We can remove entry because 101 key </code></div>
+                          <div class="line number21 index20 alt2"><code
+                              class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                              class="java comments">// is associated with For value </code></div>
+                          <div class="line number22 index21 alt1"><code
+                              class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                              class="java plain">m.remove(</code><code class="java value">1</code><code
+                              class="java plain">, </code><code class="java string">"Welcome"</code><code
+                              class="java plain">);</code></div>
+                          <div class="line number23 index22 alt2"><code
+                              class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                              class="java plain">System.out.println(</code><code
+                              class="java string">"Removing the value of key 1: "</code><code
+                              class="java plain">+m);</code></div>
+                          <div class="line number24 index23 alt1"><code class="java spaces">&nbsp;&nbsp;</code>&nbsp;
+                          </div>
+                          <div class="line number25 index24 alt2"><code
+                              class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                              class="java comments">// Now we can add Hello </code></div>
+                          <div class="line number26 index25 alt1"><code
+                              class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                              class="java plain">m.putIfAbsent(</code><code class="java value">1</code><code
+                              class="java plain">, </code><code class="java string">"Hello"</code><code
+                              class="java plain">);</code></div>
+                          <div class="line number27 index26 alt2"><code
+                              class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                              class="java plain">System.out.println(</code><code
+                              class="java string">"Adding new value to the key 1: "</code><code
+                              class="java plain">+m);</code></div>
+                          <div class="line number28 index27 alt1"><code class="java spaces">&nbsp;&nbsp;</code>&nbsp;
+                          </div>
+                          <div class="line number29 index28 alt2"><code
+                              class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                              class="java comments">// We cant replace Hello with For </code></div>
+                          <div class="line number30 index29 alt1"><code
+                              class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                              class="java plain">m.replace(</code><code class="java value">1</code><code
+                              class="java plain">, </code><code class="java string">"Hello"</code><code
+                              class="java plain">, </code><code class="java string">"Welcome"</code><code
+                              class="java plain">); </code></div>
+                          <div class="line number31 index30 alt2"><code
+                              class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                              class="java plain">System.out.println(</code><code
+                              class="java string">"Replacing value of key 1 with Welcome: "</code><code
+                              class="java plain">+ m); </code></div>
+                          <div class="line number32 index31 alt1"><code
+                              class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java plain">}</code></div>
+                          <div class="line number33 index32 alt2"><code class="java plain">}</code></div>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <h3 style="text-align: justify;"><strong>30.&nbsp;Can you use any class as a Map key?</strong></h3>
+            <p style="text-align: justify;">Yes, any class can be used as Map Key as long as the following points are
+              considered:</p>
+            <ul style="text-align: justify;">
+              <li>The class overriding the equals() method must also override the hashCode() method</li>
+              <li>The class should adhere to the rules associated<a name="differences"></a> with equals() and hashCode()
+                for all instances</li>
+              <li>The class field which is not used in the equals() method should not be used in hashCode() method as
+                well</li>
+              <li>The best way to use a user-defined key class is by making it immutable. It helps in caching the
+                hashCode() value for better performance. Also if the class is made immutable it will ensure that the
+                hashCode() and equals() are not changing in the future.</li>
+            </ul>
+            <p style="text-align: center;"><strong>Differences – Java Collections Interview Questions</strong></p>
+            <h3 style="text-align: justify;"><strong>31. Differentiate between Collection and Collections.</strong></h3>
+            <table border="1px">
+              <tbody>
+                <tr>
+                  <td style="width: 50%;"><strong>Collection</strong></td>
+                  <td style="width: 50%;"><strong>Collections</strong></td>
+                </tr>
+                <tr>
+                  <td style="width: 50%;">java.util.Collection&nbsp;is an interface</td>
+                  <td style="width: 50%;">java.util.Collections is a class</td>
+                </tr>
+                <tr>
+                  <td style="width: 50%;">Is used to represent a group of objects as a single entity</td>
+                  <td style="width: 50%;">It is used to define various utility method for collection objects</td>
+                </tr>
+                <tr>
+                  <td style="width: 50%;">It is the root interface of the Collection framework</td>
+                  <td style="width: 50%;">It is a utility class</td>
+                </tr>
+                <tr>
+                  <td style="width: 50%;">It is used to derive the data structures of the Collection framework</td>
+                  <td style="width: 50%;">It contains various static methods which help in data structure manipulation
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <h3 style="text-align: justify;"><strong>32. Differentiate between an Array and an ArrayList.</strong></h3>
+            <table border="1px">
+              <tbody>
+                <tr>
+                  <td style="width: 50%;"><strong>Array</strong></td>
+                  <td style="width: 50%;"><strong>ArrayList</strong></td>
+                </tr>
+                <tr>
+                  <td style="width: 50%;">java.util.Array is a class</td>
+                  <td style="width: 50%;">java.util.ArrayList is a class</td>
+                </tr>
+                <tr>
+                  <td style="width: 50%;">It is strongly typed</td>
+                  <td style="width: 50%;">It is loosely types</td>
+                </tr>
+                <tr>
+                  <td style="width: 50%;">Cannot be dynamically resized</td>
+                  <td style="width: 50%;">Can be dynamically resized</td>
+                </tr>
+                <tr>
+                  <td style="width: 50%;">No need to box and unbox the elements</td>
+                  <td style="width: 50%;">Needs to box and unbox the elements</td>
+                </tr>
+              </tbody>
+            </table>
+            <h3 style="text-align: justify;"><strong>33. Differentiate between Iterable and Iterator.</strong></h3>
+            <table border="1px">
+              <tbody>
+                <tr>
+                  <td style="width: 50%;"><strong>Iterable</strong></td>
+                  <td style="width: 50%;"><strong>Iterator</strong></td>
+                </tr>
+                <tr>
+                  <td style="width: 50%;">Iterable is an interface</td>
+                  <td style="width: 50%;">Iterator is an interface</td>
+                </tr>
+                <tr>
+                  <td style="width: 50%;">Belongs to java.lang package</td>
+                  <td style="width: 50%;">Belongs to java.util package</td>
+                </tr>
+                <tr>
+                  <td style="width: 50%;">Provides one single abstract method called iterator()</td>
+                  <td style="width: 50%;">Provides two abstract methods called hasNext() and next()</td>
+                </tr>
+                <tr>
+                  <td style="width: 50%;">It is a representation of a series of elements that can be traversed</td>
+                  <td style="width: 50%;">It represents the object with iteration state</td>
+                </tr>
+              </tbody>
+            </table>
+            <h3 style="text-align: justify;"><strong>34. Differentiate between ArrayList and LinkedList.</strong></h3>
+            <table border="1px">
+              <tbody>
+                <tr>
+                  <td style="width: 50%;"><strong>ArrayList</strong></td>
+                  <td style="width: 50%;"><strong>LinkedList</strong></td>
+                </tr>
+                <tr>
+                  <td style="width: 50%;">Implements dynamic array internally to store elements</td>
+                  <td style="width: 50%;">Implements doubly linked list internally to store elements</td>
+                </tr>
+                <tr>
+                  <td style="width: 50%;">Manipulation of elements is slower</td>
+                  <td style="width: 50%;">Manipulation of elements is faster</td>
+                </tr>
+                <tr>
+                  <td style="width: 50%;">Can act only as a List</td>
+                  <td style="width: 50%;">Can act as a List and a Queue</td>
+                </tr>
+                <tr>
+                  <td style="width: 50%;">Effective for data storage and access</td>
+                  <td style="width: 50%;">Effective for data manipulation</td>
+                </tr>
+              </tbody>
+            </table>
+            <h3 style="text-align: justify;"><strong>35. Differentiate between Comparable and Comparator.</strong></h3>
+            <table border="1px">
+              <tbody>
+                <tr>
+                  <td style="width: 50%;"><strong>Comparable</strong></td>
+                  <td style="width: 50%;"><strong>Comparator</strong></td>
+                </tr>
+                <tr>
+                  <td style="width: 50%;">Present in java.lang package</td>
+                  <td style="width: 50%;">Present in java.util package</td>
+                </tr>
+                <tr>
+                  <td style="width: 50%;">Elements are sorted based on natural ordering</td>
+                  <td style="width: 50%;">Elements are sorted based on user-customized ordering</td>
+                </tr>
+                <tr>
+                  <td style="width: 50%;">Provides a single method called compareTo()</td>
+                  <td style="width: 50%;">Provides to methods equals() and compare()</td>
+                </tr>
+                <tr>
+                  <td style="width: 50%;">Modifies the actual class</td>
+                  <td style="width: 50%;">Doesn’t modifies the actual class</td>
+                </tr>
+              </tbody>
+            </table>
+            <h3 style="text-align: justify;"><strong>36. Differentiate between List and Set.</strong></h3>
+            <table border="1px">
+              <tbody>
+                <tr>
+                  <td style="width: 50%;"><strong>List</strong></td>
+                  <td style="width: 50%;"><strong>Set</strong></td>
+                </tr>
+                <tr>
+                  <td style="width: 50%;">An ordered collection of elements</td>
+                  <td style="width: 50%;">An unordered collection of elements</td>
+                </tr>
+                <tr>
+                  <td style="width: 50%;">Preserves the insertion order</td>
+                  <td style="width: 50%;">Doesn’t preserves the insertion order</td>
+                </tr>
+                <tr>
+                  <td style="width: 50%;">Duplicate values are allowed</td>
+                  <td style="width: 50%;">Duplicate values are not allowed</td>
+                </tr>
+                <tr>
+                  <td style="width: 50%;">Any number of null values can be stored</td>
+                  <td style="width: 50%;">Only one null values can be stored</td>
+                </tr>
+                <tr>
+                  <td style="width: 50%;">ListIterator can be used to traverse the List in any direction</td>
+                  <td style="width: 50%;">ListIterator cannot be used to traverse a Set</td>
+                </tr>
+                <tr>
+                  <td style="width: 50%;">Contains a legacy class called vector</td>
+                  <td style="width: 50%;">Doesn’t contains any legacy class</td>
+                </tr>
+              </tbody>
+            </table>
+            <h3 style="text-align: justify;"><strong>37. Differentiate between Set and Map.</strong></h3>
+            <table border="1px">
+              <tbody>
+                <tr>
+                  <td style="width: 412.5px;"><strong>Set</strong></td>
+                  <td style="width: 412.5px;"><strong>Map</strong></td>
+                </tr>
+                <tr>
+                  <td style="width: 412.5px;">Belongs to java.util package</td>
+                  <td style="width: 412.5px;">Belongs to java.util package</td>
+                </tr>
+                <tr>
+                  <td style="width: 412.5px;">Extends the Collection interface</td>
+                  <td style="width: 412.5px;">Doesn’t extend the Collection interface</td>
+                </tr>
+                <tr>
+                  <td style="width: 412.5px;">Duplicate values are not allowed</td>
+                  <td style="width: 412.5px;">Duplicate keys are not allowed but duplicate values are</td>
+                </tr>
+                <tr>
+                  <td style="width: 412.5px;">Only one null values can be stored</td>
+                  <td style="width: 412.5px;">Only one null key can be stored but multiple null values are allowed</td>
+                </tr>
+                <tr>
+                  <td style="width: 412.5px;">Doesn’t maintain any insertion order</td>
+                  <td style="width: 412.5px;">Doesn’t maintain any insertion order</td>
+                </tr>
+              </tbody>
+            </table>
+            <h3 style="text-align: justify;"><strong>38. Differentiate between List and Map.</strong></h3>
+            <table border="1px">
+              <tbody>
+                <tr>
+                  <td style="width: 412.5px;"><strong>List</strong></td>
+                  <td style="width: 412.5px;"><strong>Map</strong></td>
+                </tr>
+                <tr>
+                  <td style="width: 412.5px;">Belongs to java.util package</td>
+                  <td style="width: 412.5px;">Belongs to java.util package</td>
+                </tr>
+                <tr>
+                  <td style="width: 412.5px;">Extends the Collection interface</td>
+                  <td style="width: 412.5px;">Doesn’t extend the Collection interface</td>
+                </tr>
+                <tr>
+                  <td style="width: 412.5px;">Duplicate elements are allowed</td>
+                  <td style="width: 412.5px;">Duplicate keys are not allowed but duplicate values are</td>
+                </tr>
+                <tr>
+                  <td style="width: 412.5px;">Multiple null values can be stored</td>
+                  <td style="width: 412.5px;">Only one null key can be stored but multiple null values are allowed</td>
+                </tr>
+                <tr>
+                  <td style="width: 412.5px;">Preserves the insertion order</td>
+                  <td style="width: 412.5px;">Doesn’t maintain any insertion order</td>
+                </tr>
+                <tr>
+                  <td style="width: 412.5px;">Stores elements based on Array Data Structure</td>
+                  <td style="width: 412.5px;">Stores data in key-value pairs using various hashing techniques</td>
+                </tr>
+              </tbody>
+            </table>
+            <h3 style="text-align: justify;"><strong>39. Differentiate between Queue and Stack.</strong></h3>
+            <table border="1px">
+              <tbody>
+                <tr>
+                  <td style="width: 412.5px;"><strong>Queue</strong></td>
+                  <td style="width: 412.5px;"><strong>Stack</strong></td>
+                </tr>
+                <tr>
+                  <td style="width: 412.5px;">Based on FIFO (First-In-First-Out) principle</td>
+                  <td style="width: 412.5px;">Based on LIFO (Last-In-First-Out) principle</td>
+                </tr>
+                <tr>
+                  <td style="width: 412.5px;">Insertion and deletion takes place from two opposite ends</td>
+                  <td style="width: 412.5px;">Insertion and deletion takes place the same end</td>
+                </tr>
+                <tr>
+                  <td style="width: 412.5px;">Element insertion is called enqueue</td>
+                  <td style="width: 412.5px;">Element insertion is called push</td>
+                </tr>
+                <tr>
+                  <td style="width: 412.5px;">Element deletion is called dequeue</td>
+                  <td style="width: 412.5px;">Element deletion is called pop</td>
+                </tr>
+                <tr>
+                  <td style="width: 412.5px;">Two pointers are maintained one point to the first element and the other
+                    one points the last element on the list</td>
+                  <td style="width: 412.5px;">Only one pointer is maintained which points to the top element on the
+                    stack</td>
+                </tr>
+              </tbody>
+            </table>
+            <h3 style="text-align: justify;"><strong>40. Differentiate between PriorityQueue and TreeSet.</strong></h3>
+            <table border="1px">
+              <tbody>
+                <tr>
+                  <td style="width: 412.5px;"><strong>PriorityQueue</strong></td>
+                  <td style="width: 412.5px;"><strong>TreeSet</strong></td>
+                </tr>
+                <tr>
+                  <td style="width: 412.5px;">It is a type of Queue</td>
+                  <td style="width: 412.5px;">It is based on a Set data structure</td>
+                </tr>
+                <tr>
+                  <td style="width: 412.5px;">Allows duplicate elements</td>
+                  <td style="width: 412.5px;">Doesn’t allows duplicate elements</td>
+                </tr>
+                <tr>
+                  <td style="width: 412.5px;">Stores the elements based on an additional factor called priority</td>
+                  <td style="width: 412.5px;">Stores the elements in a sorted order</td>
+                </tr>
+              </tbody>
+            </table>
+            <h3 style="text-align: justify;"><strong>41. Differentiate between the Singly Linked List and Doubly Linked
+                List.</strong></h3>
+            <table border="1px">
+              <tbody>
+                <tr>
+                  <td style="width: 412.5px;"><strong>Singly Linked List(SLL)</strong></td>
+                  <td style="width: 412.5px;"><strong>Doubly Linked List(DLL)</strong></td>
+                </tr>
+                <tr>
+                  <td style="width: 412.5px;">Contains nodes with a data field and a next node-link field</td>
+                  <td style="width: 412.5px;">Contains nodes with a data field, a previous link field, and a next link
+                    field</td>
+                </tr>
+                <tr>
+                  <td style="width: 412.5px;">Can be traversed using the next node-link field only</td>
+                  <td style="width: 412.5px;">Can be traversed using the previous node-link or the next node-link</td>
+                </tr>
+                <tr>
+                  <td style="width: 412.5px;">Occupies less memory space</td>
+                  <td style="width: 412.5px;">Occupies more memory space</td>
+                </tr>
+                <tr>
+                  <td style="width: 412.5px;">Less efficient in providing access to the elements</td>
+                  <td style="width: 412.5px;">More efficient in providing access to the elements</td>
+                </tr>
+              </tbody>
+            </table>
+            <h3 style="text-align: justify;"><strong>42. Differentiate between Iterator and Enumeration.</strong></h3>
+            <table border="1px">
+              <tbody>
+                <tr>
+                  <td style="width: 412.5px;"><strong>Iterator</strong></td>
+                  <td style="width: 412.5px;"><strong>Enumeration</strong></td>
+                </tr>
+                <tr>
+                  <td style="width: 412.5px;">Collection element can be removed while traversing it</td>
+                  <td style="width: 412.5px;">Can only traverse through the Collection</td>
+                </tr>
+                <tr>
+                  <td style="width: 412.5px;">Used to traverse most of the classes of the Java Collection framework</td>
+                  <td style="width: 412.5px;">Used to traverse the legacy classes such as Vector, HashTable, etc</td>
+                </tr>
+                <tr>
+                  <td style="width: 412.5px;">Is fail-fast in nature</td>
+                  <td style="width: 412.5px;">Is fail-safe in nature</td>
+                </tr>
+                <tr>
+                  <td style="width: 412.5px;">Is safe and secure</td>
+                  <td style="width: 412.5px;">Is not safe and secure</td>
+                </tr>
+                <tr>
+                  <td style="width: 412.5px;">Provides methods like hasNext(), next() and remove()</td>
+                  <td style="width: 412.5px;">Provides methods like hasMoreElements() and nextElement()</td>
+                </tr>
+              </tbody>
+            </table>
+            <h3 style="text-align: justify;"><strong>43. Differentiate between HashMap and HashTable.</strong></h3>
+            <table border="1px">
+              <tbody>
+                <tr>
+                  <td style="width: 412.5px;"><strong>HashMap</strong></td>
+                  <td style="width: 412.5px;"><strong>HashTable</strong></td>
+                </tr>
+                <tr>
+                  <td style="width: 412.5px;">It is non-synchronized in nature</td>
+                  <td style="width: 412.5px;">It is synchronized in nature</td>
+                </tr>
+                <tr>
+                  <td style="width: 412.5px;">Allows only one null key but multiple null values</td>
+                  <td style="width: 412.5px;">Doesn’t allow any null key or value</td>
+                </tr>
+                <tr>
+                  <td style="width: 412.5px;">Has faster processing</td>
+                  <td style="width: 412.5px;">has slower processing</td>
+                </tr>
+                <tr>
+                  <td style="width: 412.5px;">Can be traversed by Iterator</td>
+                  <td style="width: 412.5px;">Can be traversed by Iterator and Enumeration</td>
+                </tr>
+                <tr>
+                  <td style="width: 412.5px;">Inherits AbstractMap class</td>
+                  <td style="width: 412.5px;">Inherits Dictionary class</td>
+                </tr>
+              </tbody>
+            </table>
+            <h3 style="text-align: justify;"><strong>44. Differentiate between HashSet and HashMap.</strong></h3>
+            <table border="1px">
+              <tbody>
+                <tr>
+                  <td style="width: 412px;"><strong>HashSet</strong></td>
+                  <td style="width: 412px;"><strong>HasMap</strong></td>
+                </tr>
+                <tr>
+                  <td style="width: 412px;">Based on Set implementation</td>
+                  <td style="width: 412px;">Based on Map implementation</td>
+                </tr>
+                <tr>
+                  <td style="width: 412px;">Doesn’t allow any duplicate elements</td>
+                  <td style="width: 412px;">Doesn’t allow any duplicate keys but duplicate values are allowed</td>
+                </tr>
+                <tr>
+                  <td style="width: 412px;">Allows only a single null value</td>
+                  <td style="width: 412px;">Allows only one null key but any number of null values</td>
+                </tr>
+                <tr>
+                  <td style="width: 412px;">Has slower processing time</td>
+                  <td style="width: 412px;">Has faster processing time</td>
+                </tr>
+                <tr>
+                  <td style="width: 412px;">Uses HashMap as an underlying data structure</td>
+                  <td style="width: 412px;">Uses various hashing techniques for data manipulation</td>
+                </tr>
+              </tbody>
+            </table>
+            <h3 style="text-align: justify;"><strong>45. Differentiate between Iterator and ListIterator.</strong></h3>
+            <table border="1px">
+              <tbody>
+                <tr>
+                  <td style="width: 412px;"><strong>Iterator</strong></td>
+                  <td style="width: 412px;"><strong>ListIterator</strong></td>
+                </tr>
+                <tr>
+                  <td style="width: 412px;">Can only perform remove operations on the Collection elements</td>
+                  <td style="width: 412px;">Can perform add, remove and replace operations the Collection elements</td>
+                </tr>
+                <tr>
+                  <td style="width: 412px;">Can traverse List, Sets and maps</td>
+                  <td style="width: 412px;">Can traverse only Lists</td>
+                </tr>
+                <tr>
+                  <td style="width: 412px;">Can traverse the Collection in forward direction</td>
+                  <td style="width: 412px;">Can traverse the collection in any direction</td>
+                </tr>
+                <tr>
+                  <td style="width: 412px;">Provides no method to retrieve the index of the element</td>
+                  <td style="width: 412px;">Provides methods to retrieve the index of the elements</td>
+                </tr>
+                <tr>
+                  <td style="width: 412px;">iterator() method is available for the entire Collection Framework</td>
+                  <td style="width: 412px;">listIterator() is only available for the collections implementing the List
+                    interface</td>
+                </tr>
+              </tbody>
+            </table>
+            <h3 style="text-align: justify;"><strong>46. Differentiate between HashSet and TreeSet.</strong></h3>
+            <table border="1px">
+              <tbody>
+                <tr>
+                  <td style="width: 412px;"><strong>HashSet</strong></td>
+                  <td style="width: 412px;"><strong>TreeSet</strong></td>
+                </tr>
+                <tr>
+                  <td style="width: 412px;">Uses HasMap to store elements</td>
+                  <td style="width: 412px;">Uses Treemap to store elements</td>
+                </tr>
+                <tr>
+                  <td style="width: 412px;">It is unordered in nature</td>
+                  <td style="width: 412px;">By default, it stores elements in their natural ordering</td>
+                </tr>
+                <tr>
+                  <td style="width: 412px;">Has faster processing time</td>
+                  <td style="width: 412px;">Has slower processing time</td>
+                </tr>
+                <tr>
+                  <td style="width: 412px;">Uses hasCode() and equals() for comparing</td>
+                  <td style="width: 412px;">Uses compare() and compareTo() for comparing</td>
+                </tr>
+                <tr>
+                  <td style="width: 412px;">Allows only one null element</td>
+                  <td style="width: 412px;">Doesn’t allow any null element</td>
+                </tr>
+                <tr>
+                  <td style="width: 412px;">Takes up less memory space</td>
+                  <td style="width: 412px;">Takes up more memory space</td>
+                </tr>
+              </tbody>
+            </table>
+            <h3 style="text-align: justify;"><strong>47. Differentiate between Queue and Deque.</strong></h3>
+            <table border="1px">
+              <tbody>
+                <tr>
+                  <td style="width: 412px;"><strong>Queue</strong></td>
+                  <td style="width: 412px;"><strong>Deque</strong></td>
+                </tr>
+                <tr>
+                  <td style="width: 412px;">Refers to single-ended queue</td>
+                  <td style="width: 412px;">Refers to double-ended queue</td>
+                </tr>
+                <tr>
+                  <td style="width: 412px;">Elements can be added or removed from only one end</td>
+                  <td style="width: 412px;">Elements can be added and removed from either end</td>
+                </tr>
+                <tr>
+                  <td style="width: 412px;">Less versatile</td>
+                  <td style="width: 412px;">More versatile</td>
+                </tr>
+              </tbody>
+            </table>
+            <h3 style="text-align: justify;"><strong>48. Differentiate between HashMap and TreeMap.</strong></h3>
+            <table border="1px">
+              <tbody>
+                <tr>
+                  <td style="width: 412px;"><strong>HashMap</strong></td>
+                  <td style="width: 412px;"><strong>TreeMap</strong></td>
+                </tr>
+                <tr>
+                  <td style="width: 412px;">Doesn’t preserves any ordering</td>
+                  <td style="width: 412px;">Preserves the natural ordering</td>
+                </tr>
+                <tr>
+                  <td style="width: 412px;">Implicitly implements the hashing principle</td>
+                  <td style="width: 412px;">Implicitly implements the Red-Black Tree Implementation</td>
+                </tr>
+                <tr>
+                  <td style="width: 412px;">Can store only one null key</td>
+                  <td style="width: 412px;">Cannot store any null key</td>
+                </tr>
+                <tr>
+                  <td style="width: 412px;">More memory usage</td>
+                  <td style="width: 412px;">Less memory usage</td>
+                </tr>
+                <tr>
+                  <td style="width: 412px;">Not synchronized</td>
+                  <td style="width: 412px;">Not synchronized</td>
+                </tr>
+              </tbody>
+            </table>
+            <h3 style="text-align: justify;"><strong>49. Differentiate between ArrayList and Vector.</strong></h3>
+            <table border="1px">
+              <tbody>
+                <tr>
+                  <td style="width: 412px;"><strong>ArrayList</strong></td>
+                  <td style="width: 412px;"><strong>Vector</strong></td>
+                </tr>
+                <tr>
+                  <td style="width: 412px;">Non-synchronized in nature</td>
+                  <td style="width: 412px;">Synchronized in nature</td>
+                </tr>
+                <tr>
+                  <td style="width: 412px;">It is not a legacy class</td>
+                  <td style="width: 412px;">Is a legacy class</td>
+                </tr>
+                <tr>
+                  <td style="width: 412px;">Increases size by 1/2 of the ArrayList</td>
+                  <td style="width: 412px;">Increases size by double of the ArrayList</td>
+                </tr>
+                <tr>
+                  <td style="width: 412px;">It is not thread-safe</td>
+                  <td style="width: 412px;">It is thread-safe</td>
+                </tr>
+              </tbody>
+            </table>
+            <h3 style="text-align: justify;"><strong>50. Differentiate between failfast and failsafe.</strong></h3>
+            <table border="1px">
+              <tbody>
+                <tr>
+                  <td style="width: 412px;"><strong>failfast</strong></td>
+                  <td style="width: 412px;"><strong>failsafe</strong></td>
+                </tr>
+                <tr>
+                  <td style="width: 412px;">Doesn’t allow modifications of a collection while iterating</td>
+                  <td style="width: 412px;"><span>Allows modifications of a collection while iterating</span></td>
+                </tr>
+                <tr>
+                  <td style="width: 412px;">Throws ConcurrentModificationException</td>
+                  <td style="width: 412px;">Don’t throw any exceptions</td>
+                </tr>
+                <tr>
+                  <td style="width: 412px;">Uses the original collection to traverse over the elements</td>
+                  <td style="width: 412px;">Uses a copy of the original collection to traverse over the elements</td>
+                </tr>
+                <tr>
+                  <td style="width: 412px;">Don’t require extra memory</td>
+                  <td style="width: 412px;">Require extra memory</td>
+                </tr>
+              </tbody>
+            </table>
+            
+
+        </div>
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
