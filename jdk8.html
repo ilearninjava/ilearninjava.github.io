@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Java Interview Q&A</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Sailor - v4.9.1
+  * Template URL: https://bootstrapmade.com/sailor-free-bootstrap-theme/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center">
+      <h1 class="logo me-auto"><a href="index.html">Java Interview Q&A</a></h1>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li class="dropdown"><a href="java.html"><span>Java</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="java-oops.html">Oops</a></li>
+              <li><a href="java-multithreading.html">Multithreading</a></li>
+              <li><a href="java-exception.html">Exception handling</a></li>
+
+              <li class="dropdown"><a href="java-collection.html"><span>Collection framework</span> <i
+                    class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="java-collection.html">Map</a></li>
+                  <li><a href="java-collection.html">List</a></li>
+                  <li><a href="java-collection.html">Queue</a></li>
+                </ul>
+              </li>
+              <li><a href="jdk8.html">JDK8 features</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="cloud.html"><span>Cloud</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">AWS</a></li>
+              <li><a href="#">GCP</a></li>
+              <li><a href="#">Azure</a></li>
+              <li><a href="#">IBM Cloud</a></li>
+              <li><a href="#">Docker</a></li>
+              <li><a href="#">Kubernetes</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>UI</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Angular</a></li>
+              <li><a href="#">ReactJS</a></li>
+              <li><a href="#">Javascript</a></li>
+              <li><a href="#">css</a></li>
+              <li><a href="#">html</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>Other</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Company wise</a></li>
+              <li><a href="#">Design pattern</a></li>
+              <li><a href="#">Microservices</a></li>
+              <li><a href="#">Data Structure</a></li>
+              <li><a href="#">Architect</a></li>
+            </ul>
+          </li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+  </header>
+
+  </br>
+  <main id="main">
+
+    <section id="about" class="about">
+      <div class="container">
+        <div class="row-content">
+
+          <h2><span id="Features_Added_To_Java_8_Release">Features Added To Java 8 Release</span></h2>
+          <p>Among the major changes, the following are the notable features that were added to this release.</p>
+          <ul>
+            <li>Functional Interfaces and Lambda Expressions</li>
+            <li>forEach() method in Iterable interface</li>
+            <li>Optional class,</li>
+            <li>default and static methods in Interfaces</li>
+            <li>Method references</li>
+            <li>Java Stream API for Bulk Data Operations on Collections</li>
+            <li>Java Date Time API</li>
+            <li>Collection API improvements</li>
+            <li>Concurrency API improvements</li>
+            <li>Java IO improvements</li>
+            <li>Nashorn JavaScript engine</li>
+            <li>Base64 Encode Decode</li>
+            <li>Miscellaneous Core API improvements</li>
+          </ul>
+          <p>In this tutorial, we will discuss each of these features briefly and try to explain each of them with the
+            help of simple and easy examples.</p>
+          <h3><span id="Functional_Interfaces_And_Lambda_Expressions"><span style="color: #ff6600;">Functional
+                Interfaces And Lambda Expressions</span></span></h3>
+          <p>Java 8 introduces an annotation known as @FunctionalInterface that is usually for compiler level errors. It
+            is typically used when the interface you are using violates the contracts of functional interface.</p>
+          <p>Alternatively, you can call a functional interface as SAM interface or Single Abstract Method interface. A
+            functional interface allows exactly one “abstract method” as its member.</p>
+          <p><span style="text-decoration: underline;"><strong>Below given is an example of Functional
+                Interface:</strong></span></p>
+          <div>
+            <div id="highlighter_874780" class="syntaxhighlighter nogutter  java">
+              <table border="0" cellpadding="0" cellspacing="0">
+                <tbody>
+                  <tr>
+                    <td class="code">
+                      <div class="container">
+                        <div class="line number1 index0 alt2"><code class="java color1">@FunctionalInterface</code>
+                        </div>
+                        <div class="line number2 index1 alt1"><code class="java keyword">public</code> <code
+                            class="java keyword">interface</code> <code
+                            class="java plain">MyFirstFunctionalInterface {</code></div>
+                        <div class="line number3 index2 alt2"><code
+                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java keyword">public</code>
+                          <code class="java keyword">void</code> <code class="java plain">firstWork();</code></div>
+                        <div class="line number4 index3 alt1"><code class="java plain">}</code></div>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <p>You can omit the annotation, @FunctionalInterface and your functional interface will still be a valid one.
+            We use this annotation only to inform the compiler that the interface will have a single abstract method.
+          </p>
+          <p><span style="text-decoration: underline; color: #ff6600;"><strong>Note:</strong></span> By definition,
+            default methods are Non-abstract and you can add as many default methods in the functional interface as you
+            like.</p>
+          <p>Secondly, if an interface has an abstract method that overrides one of the public methods of
+            “java.lang.object” then it is not considered as the interface’s abstract method.</p>
+          <p><span style="text-decoration: underline;"><strong>Given below is a valid Functional Interface
+                example.</strong></span></p>
+          <div>
+            <div id="highlighter_986455" class="syntaxhighlighter nogutter  java">
+              <table border="0" cellpadding="0" cellspacing="0">
+                <tbody>
+                  <tr>
+                    <td class="code">
+                      <div class="container">
+                        <div class="line number1 index0 alt2"><code class="java color1">@FunctionalInterface</code>
+                        </div>
+                        <div class="line number2 index1 alt1"><code class="java keyword">public</code>&nbsp;<code
+                            class="java keyword">interface</code>&nbsp;<code
+                            class="java plain">FunctionalInterface_one</code></div>
+                        <div class="line number3 index2 alt2"><code class="java plain">{</code></div>
+                        <div class="line number4 index3 alt1"><code
+                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                            class="java keyword">public</code>&nbsp;<code class="java keyword">void</code>&nbsp;<code
+                            class="java plain">firstInt_method();</code></div>
+                        <div class="line number5 index4 alt2">&nbsp;</div>
+                        <div class="line number6 index5 alt1"><code
+                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                            class="java color1">@Override</code></div>
+                        <div class="line number7 index6 alt2"><code
+                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                            class="java keyword">public</code>&nbsp;<code
+                            class="java plain">String toString();&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                            class="java comments">//Overridden from Object class</code></div>
+                        <div class="line number8 index7 alt1">&nbsp;</div>
+                        <div class="line number9 index8 alt2"><code
+                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                            class="java color1">@Override</code></div>
+                        <div class="line number10 index9 alt1"><code
+                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                            class="java keyword">public</code>&nbsp;<code class="java keyword">boolean</code>&nbsp;<code
+                            class="java plain">equals(Object obj);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                            class="java comments">//Overridden from Object class</code></div>
+                        <div class="line number11 index10 alt2"><code class="java plain">}</code></div>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <p>A Lambda Expression (or function) can be defined as an anonymous function, (a function with no name and an
+            identifier). Lambda Expressions are defined exactly in the place where they are needed, usually as a
+            parameter to some other function.</p>
+          
+          <p>From a different perspective, Lambda Expressions express instances of <a
+              href="https://www.geeksforgeeks.org/functional-interfaces-java/" target="_blank" rel="noopener">Functional
+              Interfaces</a> (described above). Lambda Expressions implement the only abstract function present in the
+            functional interface and thus implement functional interfaces.</p>
+          <p><strong>The basic&nbsp;syntax of a Lambda Expression&nbsp;is:</strong></p>
+          <p><a
+              href="https://www.softwaretestinghelp.com/wp-content/qa/uploads/2019/10/lambda-expression-syntax.png"><img
+                class="alignnone size-full wp-image-107972 entered lazyloaded"
+                src="https://www.softwaretestinghelp.com/wp-content/qa/uploads/2019/10/lambda-expression-syntax.png"
+                alt="lambda expression syntax" width="208" height="126"
+                data-lazy-src="https://www.softwaretestinghelp.com/wp-content/qa/uploads/2019/10/lambda-expression-syntax.png"
+                data-ll-status="loaded"><noscript><img class="alignnone size-full wp-image-107972"
+                  src="https://www.softwaretestinghelp.com/wp-content/qa/uploads/2019/10/lambda-expression-syntax.png"
+                  alt="lambda expression syntax" width="208" height="126" /></noscript></a></p>
+          <p><span style="text-decoration: underline;"><strong>A basic example of the Lambda Expression
+                is:</strong></span></p>
+          <p><a
+              href="https://www.softwaretestinghelp.com/wp-content/qa/uploads/2019/10/lambda-expression-example.png"><img
+                class="alignnone size-full wp-image-107973 entered lazyloaded"
+                src="https://www.softwaretestinghelp.com/wp-content/qa/uploads/2019/10/lambda-expression-example.png"
+                alt="lambda expression example" width="116" height="47"
+                data-lazy-src="https://www.softwaretestinghelp.com/wp-content/qa/uploads/2019/10/lambda-expression-example.png"
+                data-ll-status="loaded"><noscript><img class="alignnone size-full wp-image-107973"
+                  src="https://www.softwaretestinghelp.com/wp-content/qa/uploads/2019/10/lambda-expression-example.png"
+                  alt="lambda expression example" width="116" height="47" /></noscript></a></p>
+          <p>The above expression takes two parameters x and y and returns its sum x+y. Based on the data type of x and
+            y, the method can be used multiple times in various places. Thus the parameters x and y will match int or
+            Integer and string, and based on context, it will add two integers (when parameters are int) or concat the
+            two strings (when parameters are a string).</p>
+          <p><strong>Let’s implement a program that demonstrates Lambda Expressions.</strong></p>
+          <div>
+            <div id="highlighter_905795" class="syntaxhighlighter nogutter  java">
+              <table border="0" cellpadding="0" cellspacing="0">
+                <tbody>
+                  <tr>
+                    <td class="code">
+                      <div class="container">
+                        <div class="line number1 index0 alt2"><code class="java keyword">interface</code> <code
+                            class="java plain">MyInterface </code></div>
+                        <div class="line number2 index1 alt1"><code class="java plain">{ </code></div>
+                        <div class="line number3 index2 alt2"><code
+                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                            class="java keyword">void</code> <code class="java plain">abstract_func(</code><code
+                            class="java keyword">int</code> <code class="java plain">x,</code><code
+                            class="java keyword">int</code> <code class="java plain">y); </code></div>
+                        <div class="line number4 index3 alt1">&nbsp;</div>
+                        <div class="line number5 index4 alt2"><code
+                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                            class="java keyword">default</code> <code class="java keyword">void</code> <code
+                            class="java plain">default_Fun() </code></div>
+                        <div class="line number6 index5 alt1"><code
+                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java plain">{ </code></div>
+                        <div class="line number7 index6 alt2"><code
+                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                            class="java plain">System.out.println(</code><code
+                            class="java string">"This is default method"</code><code class="java plain">); </code></div>
+                        <div class="line number8 index7 alt1"><code
+                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java plain">} </code></div>
+                        <div class="line number9 index8 alt2"><code class="java plain">} </code></div>
+                        <div class="line number10 index9 alt1">&nbsp;</div>
+                        <div class="line number11 index10 alt2"><code class="java keyword">class</code> <code
+                            class="java plain">Main </code></div>
+                        <div class="line number12 index11 alt1"><code class="java plain">{ </code></div>
+                        <div class="line number13 index12 alt2"><code
+                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                            class="java keyword">public</code> <code class="java keyword">static</code> <code
+                            class="java keyword">void</code> <code class="java plain">main(String args[]) </code></div>
+                        <div class="line number14 index13 alt1"><code
+                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java plain">{ </code></div>
+                        <div class="line number15 index14 alt2"><code
+                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                            class="java comments">//lambda expression</code></div>
+                        <div class="line number16 index15 alt1"><code
+                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                            class="java plain">MyInterface fobj = (</code><code class="java keyword">int</code> <code
+                            class="java plain">x, </code><code class="java keyword">int</code> <code
+                            class="java plain">y)-&gt;System.out.println(x+y); </code></div>
+                        <div class="line number17 index16 alt2">&nbsp;</div>
+                        <div class="line number18 index17 alt1"><code
+                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                            class="java plain">System.out.print(</code><code
+                            class="java string">"The result = "</code><code class="java plain">);</code></div>
+                        <div class="line number19 index18 alt2"><code
+                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                            class="java plain">fobj.abstract_func(</code><code class="java value">5</code><code
+                            class="java plain">,</code><code class="java value">5</code><code
+                            class="java plain">); </code></div>
+                        <div class="line number20 index19 alt1"><code
+                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                            class="java plain">fobj.default_Fun();</code></div>
+                        <div class="line number21 index20 alt2"><code
+                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java plain">} </code></div>
+                        <div class="line number22 index21 alt1"><code class="java plain">}</code></div>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <p><strong>Output:</strong></p>
+          <p><a
+              href="https://www.softwaretestinghelp.com/wp-content/qa/uploads/2019/10/lambda-expression-program-output.png"><img
+                class="alignnone wp-image-107975 size-full entered lazyloaded"
+                src="https://www.softwaretestinghelp.com/wp-content/qa/uploads/2019/10/lambda-expression-program-output.png"
+                alt="lambda expression - output" width="196" height="51"
+                data-lazy-src="https://www.softwaretestinghelp.com/wp-content/qa/uploads/2019/10/lambda-expression-program-output.png"
+                data-ll-status="loaded"><noscript><img class="alignnone wp-image-107975 size-full"
+                  src="https://www.softwaretestinghelp.com/wp-content/qa/uploads/2019/10/lambda-expression-program-output.png"
+                  alt="lambda expression - output" width="196" height="51" /></noscript></a></p>
+          <p>The above program shows the use of Lambda Expression to add to parameters and displays their sum. Then we
+            use this to implement the abstract method “abstract_fun” which we declared in the interface definition. The
+            result of calling the function “abstract_fun” is the sum of the two integers passed as parameters while
+            calling the function.</p>
+          <p>We will learn more about Lambda Expressions later in the tutorial.</p>
+          <h3><span id="forEach_Method_In_Iterable_Interface"><span style="color: #ff6600;">forEach() Method In Iterable
+                Interface</span></span></h3>
+          <p>Java 8 has introduced a “forEach” method in the interface java.lang.Iterable that can iterate over the
+            elements in the collection. “forEach” is a default method defined in the Iterable interface. It is used by
+            the Collection classes that extend the Iterable interface to iterate elements.</p>
+          <p>The “forEach” method takes the Functional Interface as a single parameter i.e. you can pass Lambda
+            Expression as an argument.</p>
+          <p><span style="text-decoration: underline;"><strong>Example of the forEach() method.</strong></span></p>
+          <div>
+            <div id="highlighter_58067" class="syntaxhighlighter nogutter  java">
+              <table border="0" cellpadding="0" cellspacing="0">
+                <tbody>
+                  <tr>
+                    <td class="code">
+                      <div class="container">
+                        <div class="line number1 index0 alt2"><code
+                            class="java plain">importjava.util.ArrayList;&nbsp; </code></div>
+                        <div class="line number2 index1 alt1"><code
+                            class="java plain">importjava.util.List;&nbsp; </code></div>
+                        <div class="line number3 index2 alt2"><code class="java keyword">public</code> <code
+                            class="java keyword">class</code> <code class="java plain">Main {&nbsp; </code></div>
+                        <div class="line number4 index3 alt1"><code
+                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                            class="java keyword">public</code> <code class="java keyword">static</code> <code
+                            class="java keyword">void</code> <code
+                            class="java plain">main(String[] args) {&nbsp; </code></div>
+                        <div class="line number5 index4 alt2"><code
+                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                            class="java plain">List&lt;String&gt; subList = </code><code class="java keyword">new</code>
+                          <code class="java plain">ArrayList&lt;String&gt;();&nbsp; </code></div>
+                        <div class="line number6 index5 alt1"><code
+                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                            class="java plain">subList.add(</code><code class="java string">"Maths"</code><code
+                            class="java plain">);&nbsp; </code></div>
+                        <div class="line number7 index6 alt2"><code
+                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                            class="java plain">subList.add(</code><code class="java string">"English"</code><code
+                            class="java plain">);&nbsp; </code></div>
+                        <div class="line number8 index7 alt1"><code
+                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                            class="java plain">subList.add(</code><code class="java string">"French"</code><code
+                            class="java plain">);&nbsp; </code></div>
+                        <div class="line number9 index8 alt2"><code
+                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                            class="java plain">subList.add(</code><code class="java string">"Sanskrit"</code><code
+                            class="java plain">);</code></div>
+                        <div class="line number10 index9 alt1"><code
+                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                            class="java plain">subList.add(</code><code class="java string">"Abacus"</code><code
+                            class="java plain">);</code></div>
+                        <div class="line number11 index10 alt2"><code
+                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                            class="java plain">System.out.println(</code><code
+                            class="java string">"------------Subject List--------------"</code><code
+                            class="java plain">);&nbsp; </code></div>
+                        <div class="line number12 index11 alt1"><code
+                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                            class="java plain">subList.forEach(sub -&gt; System.out.println(sub));&nbsp; </code></div>
+                        <div class="line number13 index12 alt2"><code class="java spaces">&nbsp;&nbsp;</code><code
+                            class="java plain">}&nbsp; </code></div>
+                        <div class="line number14 index13 alt1"><code class="java plain">}&nbsp; </code></div>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <p><strong>Output:</strong></p>
+          <p><a href="https://www.softwaretestinghelp.com/wp-content/qa/uploads/2019/10/forEach-method-output.png"><img
+                class="alignnone size-full wp-image-107977 entered lazyloaded"
+                src="https://www.softwaretestinghelp.com/wp-content/qa/uploads/2019/10/forEach-method-output.png"
+                alt="forEach method output" width="270" height="175"
+                data-lazy-src="https://www.softwaretestinghelp.com/wp-content/qa/uploads/2019/10/forEach-method-output.png"
+                data-ll-status="loaded"><noscript><img class="alignnone size-full wp-image-107977"
+                  src="https://www.softwaretestinghelp.com/wp-content/qa/uploads/2019/10/forEach-method-output.png"
+                  alt="forEach method output" width="270" height="175" /></noscript></a></p>
+          <p>So we have a collection of subjects i.e. subList. We display the contents of the subList using the forEach
+            method that takes Lambda Expression to print each element.</p>
+          <h3><span id="Optional_Class"><span style="color: #ff6600;">Optional Class</span></span></h3>
+          <p>Java 8 introduced an optional class in the “java.util” package. “Optional” is a public final class and is
+            used to deal with NullPointerException in the Java application. Using Optional, you can specify alternate
+            code or values to run. By using Optional you don’t have to use too many null checks to avoid
+            nullPointerException.</p>
+          <p>You can use the Optional class to avoid abnormal termination of the program and prevent the program from
+            crashing. The Optional class provides methods that are used to check the presence of value for a particular
+            variable.</p>
+          <p><strong>The following program demonstrates the use of the Optional class.</strong></p>
+          <div>
+            <div id="highlighter_685846" class="syntaxhighlighter nogutter  java">
+              <table border="0" cellpadding="0" cellspacing="0">
+                <tbody>
+                  <tr>
+                    <td class="code">
+                      <div class="container">
+                        <div class="line number1 index0 alt2"><code class="java keyword">import</code> <code
+                            class="java plain">java.util.Optional;&nbsp;&nbsp; </code></div>
+                        <div class="line number2 index1 alt1"><code class="java keyword">public</code> <code
+                            class="java keyword">class</code> <code class="java plain">Main{&nbsp;&nbsp; </code></div>
+                        <div class="line number3 index2 alt2"><code class="java spaces">&nbsp;</code>&nbsp;</div>
+                        <div class="line number4 index3 alt1"><code class="java spaces">&nbsp;&nbsp;&nbsp;</code><code
+                            class="java keyword">public</code> <code class="java keyword">static</code> <code
+                            class="java keyword">void</code> <code
+                            class="java plain">main(String[] args) {&nbsp;&nbsp; </code></div>
+                        <div class="line number5 index4 alt2"><code
+                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                            class="java plain">String[] str = </code><code class="java keyword">new</code> <code
+                            class="java plain">String[</code><code class="java value">10</code><code
+                            class="java plain">];&nbsp;&nbsp; </code></div>
+                        <div class="line number6 index5 alt1"><code
+                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                            class="java plain">Optional&lt;String&gt;checkNull =&nbsp; </code></div>
+                        <div class="line number7 index6 alt2"><code
+                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                            class="java plain">Optional.ofNullable(str[</code><code class="java value">5</code><code
+                            class="java plain">]);&nbsp;&nbsp; </code></div>
+                        <div class="line number8 index7 alt1"><code
+                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                            class="java keyword">if</code> <code
+                            class="java plain">(checkNull.isPresent()) {&nbsp;&nbsp; </code></div>
+                        <div class="line number9 index8 alt2"><code
+                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                            class="java plain">String word = str[</code><code class="java value">5</code><code
+                            class="java plain">].toLowerCase();&nbsp;&nbsp; </code></div>
+                        <div class="line number10 index9 alt1"><code
+                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                            class="java plain">System.out.print(str);&nbsp;&nbsp; </code></div>
+                        <div class="line number11 index10 alt2"><code
+                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                            class="java plain">} </code><code class="java keyword">else</code>&nbsp;</div>
+                        <div class="line number12 index11 alt1"><code
+                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                            class="java plain">System.out.println(</code><code
+                            class="java string">"string is null"</code><code class="java plain">);&nbsp;&nbsp; </code>
+                        </div>
+                        <div class="line number13 index12 alt2"><code
+                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                            class="java plain">}&nbsp;&nbsp; </code></div>
+                        <div class="line number14 index13 alt1"><code class="java plain">}&nbsp; </code></div>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <p><strong>Output:</strong></p>
+          <p><a href="https://www.softwaretestinghelp.com/wp-content/qa/uploads/2019/10/Optional-class-output.png"><img
+                class="alignnone size-full wp-image-107979 entered lazyloaded"
+                src="https://www.softwaretestinghelp.com/wp-content/qa/uploads/2019/10/Optional-class-output.png"
+                alt="Optional class output" width="126" height="25"
+                data-lazy-src="https://www.softwaretestinghelp.com/wp-content/qa/uploads/2019/10/Optional-class-output.png"
+                data-ll-status="loaded"><noscript><img class="alignnone size-full wp-image-107979"
+                  src="https://www.softwaretestinghelp.com/wp-content/qa/uploads/2019/10/Optional-class-output.png"
+                  alt="Optional class output" width="126" height="25" /></noscript></a></p>
+          <p>In this program, we use the “ofNullable” property of the Optional class to check if the string is null. If
+            it is, the appropriate message is printed to the user.</p>
+
+          <div class="quads-location quads-ad2" id="quads-ad2"
+            style="float:none;margin:10px 0 10px 0;text-align:center;">
+
+            <div align="center" data-freestar-ad="__300x250 __336x280" id="softwaretestinghelp_midcontent"
+              name="softwaretestinghelp_midcontent" data-google-query-id="CN3slaTkj_sCFRGkZgIdNQkHvg">
+              <script data-cfasync="false" type="text/javascript">
+                freestar.config.enabled_slots.push({ placementName: "softwaretestinghelp_midcontent", slotId: "softwaretestinghelp_midcontent" });
+              </script>
+              <div id="google_ads_iframe_/15184186,1018030/softwaretestinghelp_midcontent_0__container__"
+                style="border: 0pt none; width: 88px; height: 0px;"></div>
+            </div>
+          </div>
+          <h3><span id="Default_And_Static_Methods_In_Interfaces"><span style="color: #ff6600;">Default And Static
+                Methods In Interfaces</span></span></h3>
+          <p>In Java 8, you can add methods in the interface that are not abstract i.e. you can have interfaces with
+            method implementation. You can use the Default and Static keyword to create interfaces with method
+            implementation. Default methods mainly enable Lambda Expression functionality.</p>
+          <p>Using default methods you can add new functionality to your interfaces in your libraries. This will ensure
+            that the code written for the older versions is compatible with those interfaces (binary compatibility).</p>
+          <p><span style="text-decoration: underline;"><strong>Let’s understand the Default Method with an
+                example:</strong></span></p>
+          <div>
+            <div id="highlighter_780421" class="syntaxhighlighter nogutter  java">
+              <table border="0" cellpadding="0" cellspacing="0">
+                <tbody>
+                  <tr>
+                    <td class="code">
+                      <div class="container">
+                        <div class="line number1 index0 alt2"><code class="java keyword">import</code> <code
+                            class="java plain">java.util.Optional;&nbsp;&nbsp; </code></div>
+                        <div class="line number2 index1 alt1"><code class="java keyword">interface</code> <code
+                            class="java plain">interface_default {</code></div>
+                        <div class="line number3 index2 alt2"><code
+                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                            class="java keyword">default</code> <code class="java keyword">void</code> <code
+                            class="java plain">default_method(){</code></div>
+                        <div class="line number4 index3 alt1"><code
+                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                            class="java plain">System.out.println(</code><code
+                            class="java string">"I am default method of interface"</code><code
+                            class="java plain">);</code></div>
+                        <div class="line number5 index4 alt2"><code
+                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java plain">}</code></div>
+                        <div class="line number6 index5 alt1"><code class="java plain">}</code></div>
+                        <div class="line number7 index6 alt2"><code class="java keyword">class</code> <code
+                            class="java plain">derived_class </code><code class="java keyword">implements</code> <code
+                            class="java plain">interface_default{</code></div>
+                        <div class="line number8 index7 alt1">&nbsp;</div>
+                        <div class="line number9 index8 alt2"><code class="java plain">}</code></div>
+                        <div class="line number10 index9 alt1"><code class="java keyword">class</code> <code
+                            class="java plain">Main{</code></div>
+                        <div class="line number11 index10 alt2"><code class="java spaces">&nbsp;&nbsp;&nbsp;</code><code
+                            class="java keyword">public</code> <code class="java keyword">static</code> <code
+                            class="java keyword">void</code> <code class="java plain">main(String[] args){</code></div>
+                        <div class="line number12 index11 alt1"><code
+                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                            class="java plain">derived_class obj1 = </code><code class="java keyword">new</code> <code
+                            class="java plain">derived_class();</code></div>
+                        <div class="line number13 index12 alt2"><code
+                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                            class="java plain">obj1.default_method();</code></div>
+                        <div class="line number14 index13 alt1"><code
+                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java plain">}</code></div>
+                        <div class="line number15 index14 alt2"><code class="java plain">}</code></div>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <p><strong>Output:</strong></p>
+          <p><a href="https://www.softwaretestinghelp.com/wp-content/qa/uploads/2019/10/Default-method-output.png"><img
+                class="alignnone wp-image-107981 size-full entered lazyloaded"
+                src="https://www.softwaretestinghelp.com/wp-content/qa/uploads/2019/10/Default-method-output.png"
+                alt="Default method - output" width="274" height="21"
+                data-lazy-src="https://www.softwaretestinghelp.com/wp-content/qa/uploads/2019/10/Default-method-output.png"
+                data-ll-status="loaded"><noscript><img class="alignnone wp-image-107981 size-full"
+                  src="https://www.softwaretestinghelp.com/wp-content/qa/uploads/2019/10/Default-method-output.png"
+                  alt="Default method - output" width="274" height="21" /></noscript></a></p>
+          <p>We have an interface named “interface_default” with the method default_method() with a default
+            implementation. Next, we define a class “derived_class” that implements the interface “interface_default”.
+          </p>
+          <p>Note that we have not implemented any interface methods in this class. Then in the main function, we create
+            an object of class “derived_class” and directly call the “default_method” of the interface without having to
+            define it in the class.</p>
+          <p>This is the use of default and static methods in the interface. However, if a class wants to customize the
+            default method then you can provide its own implementation by overriding the method.</p>
+          <h3><span id="Method_References"><span style="color: #ff6600;">Method References</span></span></h3>
+          <p>The Method reference feature introduced in Java 8 is a shorthand notation for Lambda Expressions to call a
+            method of Functional Interface. So each time you use a Lambda Expression to refer a method, you can replace
+            your Lambda Expression with method reference.</p>
+          <p><span style="text-decoration: underline;"><strong>Example of Method Reference.</strong></span></p>
+          <div>
+            <div id="highlighter_90464" class="syntaxhighlighter nogutter  java">
+              <table border="0" cellpadding="0" cellspacing="0">
+                <tbody>
+                  <tr>
+                    <td class="code">
+                      <div class="container">
+                        <div class="line number1 index0 alt2"><code class="java keyword">import</code> <code
+                            class="java plain">java.util.Optional;&nbsp;&nbsp; </code></div>
+                        <div class="line number2 index1 alt1"><code class="java keyword">interface</code> <code
+                            class="java plain">interface_default {</code></div>
+                        <div class="line number3 index2 alt2"><code
+                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                            class="java keyword">void</code> <code class="java plain">display();</code></div>
+                        <div class="line number4 index3 alt1"><code class="java plain">}</code></div>
+                        <div class="line number5 index4 alt2"><code class="java keyword">class</code> <code
+                            class="java plain">derived_class{</code></div>
+                        <div class="line number6 index5 alt1">&nbsp;</div>
+                        <div class="line number7 index6 alt2"><code
+                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java keyword">public</code>
+                          <code class="java keyword">void</code> <code class="java plain">classMethod(){&nbsp; </code>
+                        </div>
+                        <div class="line number8 index7 alt1"><code
+                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                            class="java plain">System.out.println(</code><code
+                            class="java string">"Derived class Method"</code><code class="java plain">);&nbsp; </code>
+                        </div>
+                        <div class="line number9 index8 alt2"><code
+                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java plain">}</code></div>
+                        <div class="line number10 index9 alt1"><code class="java plain">}</code></div>
+                        <div class="line number11 index10 alt2"><code class="java keyword">class</code> <code
+                            class="java plain">Main{</code></div>
+                        <div class="line number12 index11 alt1"><code
+                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                            class="java keyword">public</code> <code class="java keyword">static</code> <code
+                            class="java keyword">void</code> <code class="java plain">main(String[] args){</code></div>
+                        <div class="line number13 index12 alt2"><code
+                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                            class="java plain">derived_class obj1 = </code><code class="java keyword">new</code> <code
+                            class="java plain">derived_class();</code></div>
+                        <div class="line number14 index13 alt1"><code
+                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                            class="java plain">interface_default&nbsp; ref = obj1::classMethod; </code></div>
+                        <div class="line number15 index14 alt2"><code
+                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                            class="java plain">ref.display();</code></div>
+                        <div class="line number16 index15 alt1"><code
+                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java plain">}</code></div>
+                        <div class="line number17 index16 alt2"><code class="java plain">}</code></div>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <p><strong>Output:</strong></p>
+          <p><a
+              href="https://www.softwaretestinghelp.com/wp-content/qa/uploads/2019/10/Method-Reference-output.png"><img
+                class="alignnone size-full wp-image-107986 entered lazyloaded"
+                src="https://www.softwaretestinghelp.com/wp-content/qa/uploads/2019/10/Method-Reference-output.png"
+                alt="Method Reference output" width="176" height="20"
+                data-lazy-src="https://www.softwaretestinghelp.com/wp-content/qa/uploads/2019/10/Method-Reference-output.png"
+                data-ll-status="loaded"><noscript><img class="alignnone size-full wp-image-107986"
+                  src="https://www.softwaretestinghelp.com/wp-content/qa/uploads/2019/10/Method-Reference-output.png"
+                  alt="Method Reference output" width="176" height="20" /></noscript></a></p>
+          <p>In this program, we have an interface “interface_default” with an abstract method “display ()”. Next, there
+            is a class “derived_class” which has a public method “classMethod” that prints out a message.</p>
+          <p>In the main function, we have an object for the class, and then we have a reference to the interface that
+            references a class method “classMethod” through obj1 (class object). Now when the abstract method display is
+            called by interface reference, then the contents of classMethod are displayed.</p>
+          <h3><span id="Java_Stream_API_For_Bulk_Data_Operations_On_Collections"><span style="color: #ff6600;">Java
+                Stream API For Bulk Data Operations On Collections</span></span></h3>
+          <p>The Stream API is yet another major change introduced in Java 8. Stream API is used for processing the
+            collection of objects and it supports a different type of iteration. A Stream is a sequence of objects
+            (elements) that allows you to pipeline different methods to produce the desired results.</p>
+          <p>A Stream is not a data structure and it receives its input from collections, arrays or other channels. We
+            can pipeline various intermediate operations using Streams and the terminal operations return the result. We
+            will discuss stream API in more detail in a separate Java tutorial.</p>
+          <h3><span id="Java_Date_Time_API"><span style="color: #ff6600;">Java Date Time API</span></span></h3>
+          <p>Java 8 introduces a new date-time API under the package java.time.</p>
+          <p><strong>The most important classes among them are:</strong></p>
+          <ul>
+            <li><strong>Local:&nbsp;</strong>Simplified date-time API with no complexity of timezone handling.</li>
+            <li><strong>Zoned:&nbsp;</strong>Specialized date-time API to deal with various timezones.</li>
+          </ul>
+          <p><strong>Dates</strong></p>
+          <p>Date&nbsp;class has become obsolete in Java 8.</p>
+          <p><strong>Following are the new classes introduced:</strong></p>
+          <ul>
+            <li><strong>The LocalDate class</strong> defines a date. It has no representation for time or time-zone.
+            </li>
+            <li><strong>The LocalTime</strong>&nbsp;<strong>class</strong> defines a time. It has no representation for
+              date or time-zone.</li>
+            <li><strong>The&nbsp;LocalDateTime&nbsp;class</strong> defines a date-time. It has no representation of a
+              time-zone.</li>
+          </ul>
+          <p>To include time-zone information with date functionality, you can use Lambda that provides 3 classes i.e.
+            OffsetDate, OffsetTime, and OffsetDateTime. Here Timezone offset is represented using another class –
+            “ZoneId”. We will cover this topic in detail in the later parts of this Java series.</p>
+          <h3><span id="Nashorn_JavaScript_Engine"><span style="color: #ff6600;">Nashorn JavaScript Engine</span></span>
+          </h3>
+          <p>Java 8 introduced a much-improved engine for JavaScript i.e. Nashorn that replaces the existing Rhino.
+            Nashorn directly compiles the code in memory and then passes the bytecode to JVM thereby improving the
+            performance by 10 times.</p>
+          <p>Nashorn introduces a new command-line tool – jjs that executes JavaScript code at the console.</p>
+          <p><strong>Let us create a JavaScript file ‘sample.js’ that contains the following code.</strong></p>
+          <div>
+            <div id="highlighter_173005" class="syntaxhighlighter nogutter  java">
+              <table border="0" cellpadding="0" cellspacing="0">
+                <tbody>
+                  <tr>
+                    <td class="code">
+                      <div class="container">
+                        <div class="line number1 index0 alt2"><code class="java plain">print (‘Hello, World!!’);</code>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <p><strong>Give the following command in the console:</strong></p>
+          <p>C:\Java\jjs sample.js</p>
+          <p><strong>Output: </strong>Hello, World!!</p>
+          <p>We can also run JavaScript programs in interactive mode and also provide arguments to the programs.</p>
+          <h3><span id="Base64_Encode_Decode"><span style="color: #ff6600;">Base64 Encode Decode</span></span></h3>
+          <p>In Java 8 there is inbuilt encode and decode for Base64 encoding. The class for Base64 encoding is
+            java.util.Base64.</p>
+          <p><strong>This class provides three Base64 encodes and decoders:</strong></p>
+          <ul>
+            <li><strong>Basic:</strong> In this, the output is mapped to a set of characters between A-Za-z0-9+/. No
+              line feed is added to the output by the encoder and the decoder rejects any character other than the
+              above.</li>
+            <li><strong>URL:</strong> Here the output is the URL and filename safe is mapped to the set of characters
+              between A-Za-z0-9+/.</li>
+            <li><strong>MIME:</strong> In this type of encoder, the output is mapped to a MIME friendly format.</li>
+          </ul>
+          <h3><span id="Collection_API_Improvements"><span style="color: #ff6600;">Collection API
+                Improvements</span></span></h3>
+          <p><strong>Java 8 has added the following new methods to the Collection API:</strong></p>
+          <ul>
+            <li>forEachRemaining (Consumer action): This is a Default method and it is for the Iterator. It performs the
+              “action” for each of the remaining elements until all the elements are processed or “action” throws an
+              exception.</li>
+            <li>The default method for collection removeIf (Predicate filter): This removes all the elements in the
+              collection that satisfies the given “filter”.</li>
+            <li>Spliterator (): This is a collection method and returns spliterator instance which you can use for
+              traversing the elements in either sequential or parallel fashion.</li>
+            <li>Map collection has replaceAll (), compute() and merge() methods.</li>
+            <li>HashMap class with Key collisions has been improved to enhance performance.</li>
+          </ul>
+          <h3><span id="Concurrency_API_ChangesEnhancements"><span style="color: #ff6600;">Concurrency API
+                Changes/Enhancements</span></span></h3>
+          <p><strong>Following are the important enhancements in Concurrent API:</strong></p>
+          <ul>
+            <li>ConcurrentHashMap is enhanced with the following methods:
+              <ol>
+                <li>compute (),</li>
+                <li>forEach (),</li>
+                <li>forEachEntry (),</li>
+                <li>forEachKey (),</li>
+                <li>forEachValue (),</li>
+                <li>merge (),</li>
+                <li>reduce () and</li>
+                <li>search ()</li>
+              </ol>
+            </li>
+            <li>The method “newWorkStealingPool ()” for executors creates a work-stealing thread pool. It uses the
+              available processors as its target parallelism level.</li>
+            <li>Method “completableFuture” is the one that we can complete explicitly (by setting its value and status).
+            </li>
+          </ul>
+          <h3><span id="Java_IO_Improvements"><span style="color: #ff6600;">Java IO Improvements</span></span></h3>
+          <p><strong>IO improvements done in Java 8 include:</strong></p>
+          <ul>
+            <li><strong>Files.list (Path dir):</strong> This returns a jlazily populated stream, whose each element is
+              the entry in the directory.</li>
+            <li><strong>Files.lines (Path path):</strong> Reads all the lines from a stream.</li>
+            <li><strong>Files.find ():</strong> Search for files in the file tree rooted at a given starting file and
+              returns a stream populated by a path.</li>
+            <li><strong>BufferedReader.lines ():</strong> Returns a stream with its every element as the lines read from
+              BufferedReader.</li>
+          </ul>
+          <h3><span id="Miscellaneous_Core_API_Improvements"><span style="color: #ff6600;">Miscellaneous Core API
+                Improvements</span></span></h3>
+          <p><strong>We have the following misc API improvements:</strong></p>
+          <ul>
+            <li>Static method withInitial (Supplier&nbsp;supplier) of ThreadLocal to create instance easily.</li>
+            <li>The interface “Comparator” is extended with the default and static methods for natural ordering reverse
+              order etc.</li>
+            <li>Integer, Long and Double wrapper classes have min (), max () and sum () methods.</li>
+            <li>Boolean class is enhanced with logicalAnd (), logicalOr () and logicalXor () methods.</li>
+            <li>Several utility methods are introduced in the Math class.</li>
+            <li>JDBC-ODBC Bridge is removed.</li>
+            <li>PermGen memory space is removed.</li>
+          </ul>
+
+
+        </div>
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
