@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Java Interview Q&A</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Sailor - v4.9.1
+  * Template URL: https://bootstrapmade.com/sailor-free-bootstrap-theme/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center">
+      <h1 class="logo me-auto"><a href="index.html">Java Interview Q&A</a></h1>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+
+          <li class="dropdown"><a href="java.html"><span>Java</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="java-oops.html">Oops</a></li>
+              <li><a href="java-multithreading.html">Multithreading</a></li>
+              <li><a href="java-exception.html">Exception handling</a></li>
+
+              <li class="dropdown"><a href="java-collection.html"><span>Collection framework</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="java-collection.html">Map</a></li>
+                  <li><a href="java-collection.html">List</a></li>
+                  <li><a href="java-collection.html">Queue</a></li>
+                </ul>
+              </li>
+              <li><a href="jdk8.html">JDK8 features</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>Framework</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="spring.html">Spring</a></li>
+              <li><a href="hibernate.html">Hibernate</a></li>
+              <li><a href="springboot.html">SpringBoot</a></li>
+              <li><a href="jsf.html">JSF</a></li>
+              <li><a href="struts.html">Struts</a></li>
+              <li class="dropdown"><a href="#"><span>Entity Framework</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="jpa.html">JPA</a></li>
+                  <li><a href="hibernate.html">Hibernate</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          
+          <li class="dropdown"><a href="cloud.html"><span>Cloud</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">AWS</a></li>
+              <li><a href="#">GCP</a></li>
+              <li><a href="#">Azure</a></li>
+              <li><a href="#">IBM Cloud</a></li>
+              <li><a href="#">Docker</a></li>
+              <li><a href="#">Kubernetes</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>UI</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Angular</a></li>
+              <li><a href="#">ReactJS</a></li>
+              <li><a href="#">Javascript</a></li>
+              <li><a href="#">css</a></li>
+              <li><a href="#">html</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>Other</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Company wise</a></li>
+              <li><a href="#">Design pattern</a></li>
+              <li><a href="#">Microservices</a></li>
+              <li><a href="#">Data Structure</a></li>
+              <li><a href="#">Architect</a></li>
+            </ul>
+          </li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+  </header>
+
+  </br>
+  <main id="main">
+
+    <section id="about" class="about">
+      <div class="container">
+        <div class="row-content">
+
+ 
+<h3>1. What are the components of Struts Framework?</h3>
+<p>Struts framework is comprised of following components:</p>
+<ol>
+<li>Java Servlets</li>
+<li>JSP (Java Server Pages)</li>
+<li>Custom Tags</li>
+<li>Message Resources</li>
+</ol>
+
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>2. What’s the role of a handler in MVC based applications?</h3>
+<p>It’s the job of handlers to transfer the requests to appropriate models as they are bound to the model layer of MVC architecture. Handlers use mapping information from configuration files for request transfer.</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>3. What’s the flow of requests in Struts based applications?</h3>
+<p>Struts based applications use MVC design pattern. The flow of requests is as follows:</p>
+<ul>
+<li>User interacts with View by clicking any link or by submitting any form.</li>
+<li>Upon user’s interaction, the request is passed towards the controller.</li>
+<li>Controller is responsible for passing the request to appropriate action.</li>
+<li>Action is responsible for calling a function in Model which has all business logic implemented.</li>
+<li>Response from the model layer is received back by the action which then passes it towards the view where user is able to see the response.</li>
+</ul>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<div class="code-block code-block-2" style="margin: 8px 0; clear: both;">
+
+<h3>4. &nbsp;Which file is used by controller to get mapping information for request routing?</h3>
+<p>Controller uses a configuration file “struts-config.<a class="wpil_keyword_link" title="xml" href="https://career.guru99.com/xml-interview-questions/" data-wpil-keyword-link="linked">xml</a> file to get all mapping information to decide which action to use for routing of user’s request.</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>5. &nbsp;What’s the role of Action Class in Struts?</h3>
+<p>In Struts, Action Class acts as a controller and performs following key tasks:</p>
+<ul>
+<li>After receiving user request, it processes the user’s request.</li>
+<li>Uses appropriate model and pulls data from model (if required).</li>
+<li>Selects proper view to show the response to the user.</li>
+</ul>
+
+<h3>6. How an actionForm bean is created?</h3>
+<p><strong>Surrogate</strong></p>
+<p>actionForm bean is created by extending the class <code>org.apache.struts.action.ActionForm</code></p>
+<p><code>In the following example we have created an actionForm bean with the name 'testForm':</code></p>
+<pre class="lang:java decode:true ">import javax.servlet.http.HttpServletRequest; 
+import org.apache.struts.action.*; 
+public class testForm extends ActionForm { 
+private String Id=null; 
+private String State=null; 
+public void setId(String id){
+this.Id=id; 
+} 
+public String getId(){
+return this.Id;
+}
+public void setState(String state){ 
+this.State=state; 
+} 
+public String getState(){ 
+return this.State; 
+}</pre>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>7. What are the two types of validations supported by Validator FrameWork?</h3>
+<p>Validator Framework is used for form data validation. This framework provides two types of validations:</p>
+<ol>
+<li>Client Side validation on user’s browser</li>
+<li>Server side validation</li>
+</ol>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>8. What are the steps of Struts Installation?</h3>
+<p>In order to use Struts framework, we only need to add Struts.Jar file in our development environment. Once jar file is available in the CLASSPATH, we can use the framework and develop Strut based applications.</p>
+
+<h3>9. How client side validation is enabled on a JSP form?</h3>
+<p>In order to enable client side validation in Struts, first we need to enable validator plug-in in struts-config.xml file. This is done by adding following configuration entries in this file:</p>
+<pre class="lang:xhtml decode:true ">&lt;!--&nbsp; Validator plugin --&gt;
+&lt;plug-in className="org.apache.struts.validator.ValidatorPlugIn"&gt;
+&lt;set-property
+property="pathnames"
+value="/WEB-INF/validator-rules.xml,/WEB-INF/validation.xml"/&gt;
+&lt;/plug-in&gt;</pre>
+<p>Then Validation rules are defined in validation.xml file.&nbsp;If a form contains email field and we want to enable client side validation for this field, following code is added in validation.xml file:</p>
+<pre class="lang:xhtml decode:true ">&lt;form name="testForm"&gt;
+&lt;field&nbsp; property="email"
+depends="required"&gt;
+&lt;arg key="testForm.email"/&gt;
+&lt;/field&gt;
+&lt;/form&gt;</pre>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>10. How action-mapping tag is used for request forwarding in Struts configuration file?</h3>
+<p>In Struts configuration file (struts-config.xml), forwarding options are defined under action-mapping tag.</p>
+<p>In the following example, when a user will click on the hyperlink <strong>test.do</strong>, request will be forwarded to <strong>/pages/testing.jsp </strong>using following configurations from struts-config.xml file:</p>
+<pre class="lang:xhtml decode:true ">&lt;action&nbsp; path="/test" forward="/pages/testing.jsp"&gt;</pre>
+<p>This forwarding will take place when user will click on following hyperlink on the jsp page:</p>
+<pre class="lang:xhtml decode:true ">&lt;html:link&lt;/strong&gt; page="/test.do&lt;/strong&gt;"&gt;Controller Example&lt;/html:link&gt;</pre>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>11. How duplicate form submission can be controlled in Struts?</h3>
+<p>In Struts, action class provides two important methods which can be used to avoid duplicate form submissions.</p>
+<p>saveToken() method of action class generates a unique token and saves it in the user’s session. isTokenValid() method is used then used to check uniqueness of tokens.</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>12. In Struts, how can we access Java beans and their properties?</h3>
+<p>Bean Tag Library is a Struts library which can be used for accessing Java beans.</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>13. Which configuration file is used for storing JSP configuration information in Struts?</h3>
+<p>For JSP configuration details, Web.xml file is used.</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>14. What’s the purpose of Execute method of action class?</h3>
+<p>Execute method of action class is responsible for execution of business logic. If any processing is required on the user’s request, it’s performed in this method. This method returns actionForward object which routes the application to appropriate page.</p>
+<p>In the following example, execute method will return an object of actionForward defined in struts-config.xml with the name “exampleAction”:</p>
+<pre class="lang:java decode:true ">import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.apache.struts.action.Action;
+import org.apache.struts.action.ActionForm;
+import org.apache.struts.action.ActionForward;
+import org.apache.struts.action.ActionMapping;
+
+public class actionExample extends Action
+{
+public ActionForward execute(
+ActionMapping mapping,
+ActionForm form,
+HttpServletRequest request,
+HttpServletResponse response) throws Exception{
+return mapping.findForward("exampleAction");
+}
+}</pre>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>15. What’s the difference between validation.xml and validator-rules.xml files in Struts Validation framework?</h3>
+<p>In Validation.xml, we define validation rules for any specific Java bean while in validator-rules.xml file, standard and generic validation rules are defined.</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>16. How can we display all validation errors to user on JSP page?</h3>
+<p>To display all validation errors based on the validation rules defined in validation.xml file, we use &lt;html:errors /&gt; tag in our JSP file.</p><div class="code-block code-block-3" style="margin: 8px 0; clear: both;">
+
+<h3>17. What’s declarative exception handling in Struts?</h3>
+<p>When logic for exception handling is defined in struts-config.xml or within the action tag, it’s known as declarative exception handling in Struts.</p>
+<p>In the following example, we have defined exception in struts-config.xml file for NullPointerException:</p>
+<pre class="lang:xhtml decode:true ">&lt;global-exceptions&gt;
+
+&lt;exception key="test.key"
+
+Type="java.lang.NullPointerException"
+
+Path="/WEB-INF/errors/error_page.jsp"
+
+&lt;/global-exceptions&gt;</pre>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>18. What’s DynaActionForm?</h3>
+<p>DynaActionForm is a special type of actionForm class (sub-class of ActionForm Class) that’s used for dynamically creating form beans. It uses configuration files for form bean creation.</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>19. What configuration changes are required to use Tiles in Struts?</h3>
+<p>To create reusable components with Tiles framework, we need to add following plugin definition code in struts-config.xml file:</p>
+<pre class="lang:xhtml decode:true ">&lt;plug-in className="org.apache.struts.tiles.TilesPlugin" &gt;
+
+&lt;set-property property="definitions-config" value="/WEB-INF/tiles-defs.xml" /&gt;
+
+&lt;set-property property="moduleAware" value="true" /&gt;
+
+&lt;/plug-in&gt;</pre>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>20. What’s the difference between Jakarta Struts and Apache Struts? Which one is better to use?</h3>
+<p>Both are same and there is no difference between them.</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>21. What’s the use of Struts.xml configuration file?</h3>
+<p>Struts.xml file is one the key configuration files of Struts framework which is used to define mapping between URL and action. When a user’s request is received by the controller, controller uses mapping information from this file to select appropriate action class.</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>22. How tag libraries are defined in Struts?</h3>
+<p>Tag libraries are defined in the configuration file (web.xml) inside &lt;taglib&gt; tag as follows:</p>
+<pre class="lang:xhtml decode:true ">&lt;taglib&gt;
+
+&lt;taglib-uri&gt;/WEB-INF/struts-bean.tld&lt;/taglib-uri&gt;
+
+&lt;taglib-location&gt;/WEB-INF/struts-bean.tld&lt;/taglib-location&gt;
+
+&lt;/taglib&gt;</pre>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>23. What’s the significance of logic tags in Struts?</h3>
+<p>Use of logic tags in Struts helps in writing a clean and efficient code at presentation layer without use of scriptlets.</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>24. What are the two scope types for formbeans?</h3>
+<ul>
+<li><strong>Request Scope:</strong> Formbean values are available in the current request only</li>
+<li><strong>Session Scope:</strong> Formbean values are available for all requests in the current session.</li>
+</ul>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>25. How can we group related actions in one group in Struts?</h3>
+<p>To group multiple related actions in one group, we can use DispatcherAction class.</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>26. When should we use SwtichAction?</h3>
+<p>The best scenario to use SwitchAction class is when we have a modular application with multiple modules working separately. Using SwitchAction class we can switch from a resource in one module to another resource in some different module of the application.</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>27. What are the benefits of Struts framework?</h3>
+<p>Struts is based on MVC and hence there is a good separation of different layers in Struts which makes Struts applications development and customization easy. Use of different configuration files makes Struts applications easily configurable. Also, Struts is open source and hence, cost effective.</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>28. What steps are required to for an application migration from Struts1 to Struts2?</h3>
+<p>Following Steps are required for Struts1 to Struts2 migration:</p>
+<ol>
+<li>Move Struts1 actionForm to Struts2 POJO.</li>
+<li>Convert Struts1 configuration file (struts-config.xml) to Struts2 configuration file (struts.xml)</li>
+</ol>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>29. How properties of a form are validated in Struts?</h3>
+<p>For validation of populated properties, validate() method of ActionForm class is used before handling the control of formbean to Action class.</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>30. What’s the use of reset method of ActionForm class?</h3>
+<p>reset method of actionForm class is used to clear the values of a form before initiation of a new request.</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>31. What are disadvantages of Struts?</h3>
+<p>Although Struts have large number of advantages associated, it also requires bigger learning curve and also reduces transparency in the development process.</p>
+<p>Struts also lack proper documentation and for many of its components, users are unable to get proper online resources for help.</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>32. What’s the use of resourcebundle.properties file in Struts Validation framework?</h3>
+<p>resourcebundle.properties file is used to define specific error messages in key value pairs for any possible errors that may occur in the code.</p>
+<p>This approach helps to keep the code clean as developer doesn’t need to embed all error messages inside code.</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>33. Can I have <a class="wpil_keyword_link" title="html" href="https://career.guru99.com/top-50-html-interview-questions/" data-wpil-keyword-link="linked">html</a> form property without associated getter and setter formbean methods?</h3>
+<p>For each html form property, getter and setter methods in the formbean must be defined otherwise application results in an error.</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>34. How many servlet controllers are used in a Struts Application?</h3>
+<p>Struts framework works on the concept of centralized control approach and the whole application is controlled by a single servlet controller. Hence, we require only one servlet controller in a servlet application.</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>35. For a single Struts application, can we have multiple struts-config.xml files?</h3>
+<p>We can have any number of Struts-config.xml files for a single application.</p>
+<p>We need following configurations for this:</p>
+<pre class="lang:xhtml decode:true ">&lt;servlet&gt;
+
+&lt;servlet-name&gt;action&lt;/servlet-name&gt;
+
+&lt;servlet-class&gt;
+
+org.apache.struts.action.ActionServlet
+
+&lt;/servlet-class&gt;
+
+&lt;init-param&gt;
+
+&lt;param-name&gt;config&lt;/param-name&gt;
+
+&lt;param-value&gt;
+
+/WEB-INF/struts-config.xml
+
+/WEB-INF/struts-config_user.xml
+
+/WEB-INF/struts-config_admin.xml
+
+&lt;/param-value&gt;
+
+&lt;/init-param&gt;
+
+.............
+
+.............
+
+&lt;/servlet&gt;</pre>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>36. Which model components are supported by Struts?</h3>
+<p>Struts support all types of models including Java beans, EJB, CORBA. However, Struts doesn’t have any in-built support for any specific model and it’s the developer’s choice to opt for any model.</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>37. When it’s useful to use IncludeAction?</h3>
+<p>IncludeAction is action class provided by Struts which is useful when an integration is required between Struts and Servlet based application.</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>38. Is Struts thread safe?</h3>
+<p>Yes Struts are thread safe. In Struts, a new servlet object is not required to handle each request; rather a new thread of action class object is used for each new request.</p><div class="code-block code-block-6" style="margin: 8px 0; clear: both;">
+
+
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>39. What configuration changes are required to use resource files in Struts?</h3>
+<p>Resource files (.properties files) can be used in Struts by adding following configuration entry in struts-config.xml file:</p>
+<pre class="lang:java decode:true">&lt;message-resources parameter="com.login.struts.ApplicationResources"/&gt;
+</pre>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>40. How nested beans can be used in Struts applications?</h3>
+<p>Struts provide a separate tag library (Nested Tag Library) for this purpose. Using this library, we can nest the beans in any Struts based application.</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>41. What are the Core classes of Struts Framework?</h3>
+<p>Following are the core classes provided by Struts Framework:</p>
+<ul>
+<li>Action Class</li>
+<li>ActionForm Class</li>
+<li>ActionMapping Class</li>
+<li>ActionForward Class</li>
+<li>ActionServlet Class</li>
+</ul>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>42. Can we handle exceptions in Struts programmatically?</h3>
+<p>Yes we can handle exceptions in Struts programmatically by using try, catch blocks in the code.</p>
+<pre class="lang:xhtml decode:true ">try {
+
+// Struts code
+
+}
+
+Catch (Exception e) {
+
+// exception handling code
+
+}</pre>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>43. Is Struts Framework part of <a class="wpil_keyword_link" title="J2EE" href="https://career.guru99.com/top-50-j2ee-interview-questions/" data-wpil-keyword-link="linked">J2EE</a>?</h3>
+<p>Although Struts framework is based on J2EE technologies like JSP, Java Beans, Servlets etc but it’s not a part of J2EE standards.</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>44. &nbsp;How action mapping is configured in Struts?</h3>
+<p>Action mappings are configured in the configuration file struts-config.xml under the tag &lt;action-mapping&gt; as follows:</p>
+<pre class="lang:xhtml decode:true ">&lt;pre&gt;&lt;action-mappings&gt;
+&lt;action path="/login"
+type="login.loginAction"
+name="loginForm"
+input="/login.jsp"
+scope="request"
+validate="true"&gt;
+&lt;forward name="success" path="/index.jsp"/&gt;
+&lt;forward name="failure" path="/login_error.jsp"/&gt;
+&lt;/action&gt;
+&lt;/action-mappings&gt;</pre>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>45. When should be opt for Struts Framework?</h3>
+<p>Struts should be used when any or some of the following conditions are true:</p>
+<ul>
+<li>A highly robust enterprise level application development is required.</li>
+<li>A reusable, highly configurable application is required.</li>
+<li>A loosely coupled, MVC based application is required with clear segregation of different layers.</li>
+</ul>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>46. Why ActionServlet is singleton in Struts?</h3>
+<p>In Struts framework, actionServlet acts as a controller and all the requests made by users are controlled by this controller. ActionServlet is based on singleton design patter as only one object needs to be created for this controller class. Multiple threads are created later for each user request.</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>47. What are the steps required for setting up validator framework in Struts?</h3>
+<p>Following Steps are required to setup validator framework in Struts: – <strong><em>Wrong Spelling</em></strong></p>
+<ol>
+<li>In WEB-INF directory place valdator-rules.xml and validation.xml files.</li>
+<li>Enable validation plugin in struts-config.xml files by adding following:</li>
+</ol>
+<pre class="lang:xhtml decode:true ">&lt;plug-in className="org.apache.struts.validator.ValidatorPlugIn"&gt;
+&lt;set-property property="pathnames" value="/WEB-INF/validator-rules.xml,
+/WEB-INF/validation.xml"/&gt;
+&lt;/plug-in&gt;</pre>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>48. Which technologies can be used at View Layer in Struts?</h3>
+<p>In Struts, we can use any of the following technologies in view layer:</p>
+<ul>
+<li>JSP</li>
+<li>HTML</li>
+<li>XML/XSLT</li>
+<li>WML Files</li>
+<li>Velocity Templates</li>
+<li>Servlets</li>
+</ul>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>49. What are the conditions for actionForm to work correctly?</h3>
+<p>ActionForm must fulfill following conditions to work correctly:</p>
+<ul>
+<li>It must have a no argument constructor.</li>
+<li>It should have public getter and setter methods for all its properties.</li>
+</ul>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>50. &nbsp;Which library is provided by Struts for form elements like check boxes, text boxes etc?</h3>
+<p>Struts provide HTML Tags library which can be used for adding form elements like text fields, text boxes, radio buttons etc.</p>
+
+
+        </div>
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

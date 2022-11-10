@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Java Interview Q&A</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Sailor - v4.9.1
+  * Template URL: https://bootstrapmade.com/sailor-free-bootstrap-theme/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center">
+      <h1 class="logo me-auto"><a href="index.html">Java Interview Q&A</a></h1>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+
+          <li class="dropdown"><a href="java.html"><span>Java</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="java-oops.html">Oops</a></li>
+              <li><a href="java-multithreading.html">Multithreading</a></li>
+              <li><a href="java-exception.html">Exception handling</a></li>
+
+              <li class="dropdown"><a href="java-collection.html"><span>Collection framework</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="java-collection.html">Map</a></li>
+                  <li><a href="java-collection.html">List</a></li>
+                  <li><a href="java-collection.html">Queue</a></li>
+                </ul>
+              </li>
+              <li><a href="jdk8.html">JDK8 features</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>Framework</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="spring.html">Spring</a></li>
+              <li><a href="hibernate.html">Hibernate</a></li>
+              <li><a href="springboot.html">SpringBoot</a></li>
+              <li><a href="jsf.html">JSF</a></li>
+              <li><a href="struts.html">Struts</a></li>
+              <li class="dropdown"><a href="#"><span>Entity Framework</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="jpa.html">JPA</a></li>
+                  <li><a href="hibernate.html">Hibernate</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          
+          <li class="dropdown"><a href="cloud.html"><span>Cloud</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">AWS</a></li>
+              <li><a href="#">GCP</a></li>
+              <li><a href="#">Azure</a></li>
+              <li><a href="#">IBM Cloud</a></li>
+              <li><a href="#">Docker</a></li>
+              <li><a href="#">Kubernetes</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>UI</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Angular</a></li>
+              <li><a href="#">ReactJS</a></li>
+              <li><a href="#">Javascript</a></li>
+              <li><a href="#">css</a></li>
+              <li><a href="#">html</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>Other</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Company wise</a></li>
+              <li><a href="#">Design pattern</a></li>
+              <li><a href="#">Microservices</a></li>
+              <li><a href="#">Data Structure</a></li>
+              <li><a href="#">Architect</a></li>
+            </ul>
+          </li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+  </header>
+
+  </br>
+  <main id="main">
+
+    <section id="about" class="about">
+      <div class="container">
+        <div class="row-content">
+
+ 
+<h3>1. What is Hibernate?</h3>
+<p>Hibernate is a popular framework of Java which allows an efficient Object Relational mapping using configuration files in XML format. After java objects mapping to database tables, database is used and handled using Java objects without writing complex database queries.</p>
+
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>2. What is ORM?</h3>
+<p>ORM (Object Relational Mapping) is the fundamental concept of Hibernate framework which maps database tables with Java Objects and then provides various <a class="wpil_keyword_link" title="API" href="https://career.guru99.com/top-20-questions-on-api-testing/" data-wpil-keyword-link="linked">API</a> is to perform different types of operations on the data tables.</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>3. How properties of a class are mapped to the columns of a database table in Hibernate?</h3>
+<p>Mappings between class properties and table columns are specified in <a class="wpil_keyword_link" title="XML" href="https://career.guru99.com/xml-interview-questions/" data-wpil-keyword-link="linked">XML</a> file as in the below example:<br>
+
+<p></p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>4. What is the usage of Configuration Interface in hibernate?</h3>
+<p>Configuration interface of hibernate framework is used to configure hibernate. It is also used to <a class="wpil_keyword_link" title="bootstrap" href="https://career.guru99.com/top-25-bootstrap-interview-questions/" data-wpil-keyword-link="linked">bootstrap</a> hibernate. Mapping documents of hibernate are located using this interface.</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>5. How can we use new custom interfaces to enhance functionality of built-in interfaces of hibernate?</h3>
+<p>We can use extension interfaces in order to add any required functionality which is not supported by built-in interfaces.</p>
+
+<h3>6. Should all the mapping files of hibernate have .hbm.xml extension to work properly?</h3>
+<p>No, having .hbm.xml extension is a convention and not a requirement for hibernate mapping file names. We can have any extension for these mapping files.</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>7. How do we create session factory in hibernate?</h3>
+
+<p>To create a session factory in hibernate, an object of configuration is created first which refers to the path of configuration file and then for that configuration, session factory is created as given in the example below:</p>
+<pre class="lang:java decode:true">Configuration config = new Configuration();
+config.addResource(&amp;amp;quot;myinstance/configuration.hbm.xml&amp;amp;quot;);
+config.setProperties( System.getProperties() );
+SessionFactory sessions = config.buildSessionFactory();
+</pre>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>8. What are POJOs and What is their significance?</h3>
+<p>POJOs( Plain Old Java Objects) are java beans with proper getter and setter methods for each and every properties.<br>
+Use of POJOs instead of simple java classes results in an efficient and well constructed code.</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>9. What is HQL?</h3>
+<p>HQL is the query language used in Hibernate which is an extension of <a class="wpil_keyword_link" title="SQL" href="https://www.guru99.com/sql-server-questions.html" data-wpil-keyword-link="linked">SQL</a>. HQL is very efficient, simple and flexible query language to do various type of operations on relational database without writing complex database queries.</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>10. How can we invoke stored procedures in hibernate?</h3>
+<p>In hibernate we can execute stored procedures using code as below:</p>
+<p><a href="https://career.guru99.com/wp-content/uploads/2014/07/hibernate_interview_1.png"><img width="837" height="126" class="alignnone size-medium wp-image-6656 lazyloaded" src="https://career.guru99.com/wp-content/uploads/2014/07/hibernate_interview_1.png" alt="" sizes="(max-width: 837px) 100vw, 837px" srcset="https://career.guru99.com/wp-content/uploads/2014/07/hibernate_interview_1.png 837w, https://career.guru99.com/wp-content/uploads/2014/07/hibernate_interview_1-300x45.png 300w, https://career.guru99.com/wp-content/uploads/2014/07/hibernate_interview_1-768x116.png 768w, https://career.guru99.com/wp-content/uploads/2014/07/hibernate_interview_1-705x106.png 705w, https://career.guru99.com/wp-content/uploads/2014/07/hibernate_interview_1-450x68.png 450w" data-ll-status="loaded"><noscript><img width="837" height="126" class="alignnone size-medium wp-image-6656" src="https://career.guru99.com/wp-content/uploads/2014/07/hibernate_interview_1.png" alt="" srcset="https://career.guru99.com/wp-content/uploads/2014/07/hibernate_interview_1.png 837w, https://career.guru99.com/wp-content/uploads/2014/07/hibernate_interview_1-300x45.png 300w, https://career.guru99.com/wp-content/uploads/2014/07/hibernate_interview_1-768x116.png 768w, https://career.guru99.com/wp-content/uploads/2014/07/hibernate_interview_1-705x106.png 705w, https://career.guru99.com/wp-content/uploads/2014/07/hibernate_interview_1-450x68.png 450w" sizes="(max-width: 837px) 100vw, 837px" /></noscript></a></p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>11. What is criteria API?</h3>
+<p>Criteria is a simple yet powerful API of hibernate which is used to retrieve entities through criteria object composition.</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>12. What are the benefits of using Hibernate template?</h3>
+<p>Following are some key benefits of using Hibernate template:<br>
+a. Session closing is automated.<br>
+b. Interaction with hibernate session is simplified.<br>
+c. Exception handling is automated.</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>13. How can we see hibernate generated SQL on console?</h3>
+<p>We need to add following in hibernate configuration file to enable viewing SQL on the console for debugging purposes:</p>
+<p><a href="https://career.guru99.com/wp-content/uploads/2014/07/hibernate_interview_2.png"><img width="842" height="22" class="alignnone size-medium wp-image-6657 lazyloaded" src="https://career.guru99.com/wp-content/uploads/2014/07/hibernate_interview_2.png" alt="" sizes="(max-width: 842px) 100vw, 842px" srcset="https://career.guru99.com/wp-content/uploads/2014/07/hibernate_interview_2.png 842w, https://career.guru99.com/wp-content/uploads/2014/07/hibernate_interview_2-300x8.png 300w, https://career.guru99.com/wp-content/uploads/2014/07/hibernate_interview_2-768x20.png 768w, https://career.guru99.com/wp-content/uploads/2014/07/hibernate_interview_2-705x18.png 705w, https://career.guru99.com/wp-content/uploads/2014/07/hibernate_interview_2-450x12.png 450w" data-ll-status="loaded"><noscript><img width="842" height="22" class="alignnone size-medium wp-image-6657" src="https://career.guru99.com/wp-content/uploads/2014/07/hibernate_interview_2.png" alt="" srcset="https://career.guru99.com/wp-content/uploads/2014/07/hibernate_interview_2.png 842w, https://career.guru99.com/wp-content/uploads/2014/07/hibernate_interview_2-300x8.png 300w, https://career.guru99.com/wp-content/uploads/2014/07/hibernate_interview_2-768x20.png 768w, https://career.guru99.com/wp-content/uploads/2014/07/hibernate_interview_2-705x18.png 705w, https://career.guru99.com/wp-content/uploads/2014/07/hibernate_interview_2-450x12.png 450w" sizes="(max-width: 842px) 100vw, 842px" /></noscript></a></p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>14. What are the two types of collections in hibernate?</h3>
+<p>Following are the two types of collections in hibernate:</p>
+<ol>
+<li>Sorted Collection</li>
+<li>Order Collection</li>
+</ol>
+
+<h3>15. What is the difference between session.save() and session.saveOrUpdate() methods in hibernate?</h3>
+<p><strong>Sessionsave() method</strong> saves a record only if it is unique with respect to its primary key and will fail to insert if primary key already exists in the table.<br>
+<strong>saveOrUpdate() method</strong> inserts a new record if primary key is unique and will update an existing record if primary key exists in the table already.</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>16. What the benefits are of hibernate over <a class="wpil_keyword_link" title="JDBC" href="https://career.guru99.com/top-50-jdbc-interview-questions-and-answers/" data-wpil-keyword-link="linked">JDBC</a>?</h3>
+<ul>
+<li>Hibernate can be used seamlessly with any type of database as its database independent while in case of JDBC, developer has to write database specific queries.</li>
+<li>Using hibernate, developer does not need to be an expert of writing complex queries as HQL simplifies query writing process while in case of JDBC, its job of developer to write and tune queries.</li>
+<li>In case of hibernate, there is no need to create connection pools as hibernate does all connection handling automatically while in case of JDBC, connection pools need to be created.</li>
+</ul>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>17. How can we get hibernate statistics?</h3>
+<p>We can get hibernate statistics using getStatistics() method of SessionFactory class as shown below:</p>
+<pre class="lang:java decode:true">SessionFactory.getStatistics()
+</pre>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>18. What is transient instance state in Hibernate?</h3>
+<p>If an instance is not associated with any persistent context and also, it has never been associated with any persistent context, then it is said to be in transient state.</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>19. How can we reduce database write action times in Hibernate?</h3>
+<p>Hibernate provides dirty checking feature which can be used to reduce database write times. Dirty checking feature of hibernate updates only those fields which require a change while keeps others unchanged.</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>20. What is the usage of callback interfaces in hibernate?</h3>
+<p>Callback interfaces of hibernate are useful in receiving event notifications from objects. For example, when an object is loaded or deleted, an event is generated and notification is sent using callback interfaces.</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>21. When an instance goes in detached state in hibernate?</h3>
+<p>When an instance was earlier associated with some persistent context (e.g. a table) and is no longer associated, it is called to be in detached state.</p><div class="code-block code-block-3" style="margin: 8px 0; clear: both;">
+
+<h3>22. What the four ORM levels are in hibernate?</h3>
+<p>Following are the four ORM levels in hibernate:</p>
+<ul>
+<li>Pure Relational</li>
+<li>Light Object Mapping</li>
+<li>Medium Object Mapping</li>
+<li>Full Object Mapping</li>
+</ul>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>23. What is transaction management in hibernate? How it works?</h3>
+<p>Transaction management is the process of managing a set of statements or commands. In hibernate; transaction management is done by transaction interface as shown in below code:</p>
+<pre lang="java">Session s = null;
+Transaction tr = null;
+try {
+s = sessionFactory.openSession();
+tr = s.beginTransaction();
+doTheAction(s);
+tr.commit();
+} catch (RuntimeException exc) {
+tr.rollback();
+} finally {
+s.close();
+}
+</pre>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>24. What the two methods are of hibernate configuration?</h3>
+<p>We can use any of the following two methods of hibernate configuration:</p>
+<ol>
+<li>XML based configuration ( using hibernate.cfg.xml file)</li>
+<li>Programmatic configuration ( Using code logic)</li>
+</ol>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>25. What is the default cache service of hibernate?</h3>
+<p>Hibernate supports multiple cache services like EHCache, OSCache, SWARMCache and TreeCache and default cache service of hibernate is EHCache.</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>26. What are the two mapping associations used in hibernate?</h3>
+<p>In hibernate; we have following two types of mapping associations between entities:</p>
+<ol>
+<li>One-to-One Association</li>
+<li>Many-to-Many Association</li>
+</ol>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>27. What is the usage of Hibernate QBC API?</h3>
+<p>Hibernate Query By Criteria (QBC) API is used to create queries by manipulation of criteria objects at runtime.</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>28. In how many ways, objects can be fetched from database in hibernate?</h3>
+<p>Hibernate provides following four ways to fetch objects from database:</p>
+<ul>
+<li>Using HQL</li>
+<li>Using identifier</li>
+<li>Using Criteria API</li>
+<li>Using Standard SQL</li>
+</ul>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>29. How primary key is created by using hibernate?</h3>
+<p>Database primary key is specified in the configuration file hbm.xml. Generator can also be used to specify how primary key is being created in the database.<br>
+In the below example, deptId acts as primary key:</p>
+<p><a href="https://career.guru99.com/wp-content/uploads/2014/07/hibernate_interview_3.png"><img width="841" height="67" class="alignnone size-medium wp-image-6658 lazyloaded" src="https://career.guru99.com/wp-content/uploads/2014/07/hibernate_interview_3.png" alt="" sizes="(max-width: 841px) 100vw, 841px" srcset="https://career.guru99.com/wp-content/uploads/2014/07/hibernate_interview_3.png 841w, https://career.guru99.com/wp-content/uploads/2014/07/hibernate_interview_3-300x24.png 300w, https://career.guru99.com/wp-content/uploads/2014/07/hibernate_interview_3-768x61.png 768w, https://career.guru99.com/wp-content/uploads/2014/07/hibernate_interview_3-705x56.png 705w, https://career.guru99.com/wp-content/uploads/2014/07/hibernate_interview_3-450x36.png 450w" data-ll-status="loaded"><noscript><img width="841" height="67" class="alignnone size-medium wp-image-6658" src="https://career.guru99.com/wp-content/uploads/2014/07/hibernate_interview_3.png" alt="" srcset="https://career.guru99.com/wp-content/uploads/2014/07/hibernate_interview_3.png 841w, https://career.guru99.com/wp-content/uploads/2014/07/hibernate_interview_3-300x24.png 300w, https://career.guru99.com/wp-content/uploads/2014/07/hibernate_interview_3-768x61.png 768w, https://career.guru99.com/wp-content/uploads/2014/07/hibernate_interview_3-705x56.png 705w, https://career.guru99.com/wp-content/uploads/2014/07/hibernate_interview_3-450x36.png 450w" sizes="(max-width: 841px) 100vw, 841px" /></noscript></a></p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>30. How can we reattach any detached objects in Hibernate?</h3>
+<p>Objects which have been detached and are no longer associated with any persistent entities can be reattached by calling session.merge() method of session class.</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>31. What are different ways to disable hibernate second level cache?</h3>
+<p>Hibernate second level cache can be disabled using any of the following ways:</p>
+<ul>
+<li>By setting use_second_level_cache as false.</li>
+<li>By using CACHEMODE.IGNORE</li>
+<li>Using cache provider as org.hibernate.cache.NoCacheProvider</li>
+</ul>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>32. What is ORM metadata?</h3>
+<p>All the mapping between classes and tables, properties and columns, Java types and SQL types etc is defined in ORM metadata.</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>33. Which one is the default transaction factory in hibernate?</h3>
+<p>With hibernate 3.2, default transaction factory is JDBCTransactionFactory.</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>34. What is the role of JMX in hibernate?</h3>
+<p>Java Applications and components are managed in hibernate by a standard API called JMX API. JMX provides tools for development of efficient and robust distributed, web based solutions.</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>35. How can we bind hibernate session factory to JNDI ?</h3>
+<p>Hibernate session factory can be bound to JNDI by making configuration changes in hibernate.cfg file.</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>36. In how many ways objects can be identified in Hibernate?</h3>
+<p>Object identification can be done in hibernate in following three ways:</p>
+<ul>
+<li>Using Object Identity: Using == operator.</li>
+<li>Using Object Equality: Using equals() method.</li>
+<li>Using database identity: Relational database objects can be identified if they represent same row.</li>
+</ul>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>37. What different fetching strategies are of hibernate?</h3>
+<p>Following fetching strategies are available in hibernate:</p>
+<ol>
+<li>Join Fetching</li>
+<li>Batch Fetching</li>
+<li>Select Fetching</li>
+<li>Sub-select Fetching</li>
+</ol>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>38. How mapping of java objects is done with database tables?</h3>
+<p>To map java objects with database tables, we need to have Java beans properties names same as column names of a database table. Then mapping is provided in hbm.xml file as given below:</p>
+<p><a href="https://career.guru99.com/wp-content/uploads/2014/07/hibernate_interview_4.png"><img width="839" height="130" class="alignnone size-medium wp-image-6659 lazyloaded" src="https://career.guru99.com/wp-content/uploads/2014/07/hibernate_interview_4.png" alt="" sizes="(max-width: 839px) 100vw, 839px" srcset="https://career.guru99.com/wp-content/uploads/2014/07/hibernate_interview_4.png 839w, https://career.guru99.com/wp-content/uploads/2014/07/hibernate_interview_4-300x46.png 300w, https://career.guru99.com/wp-content/uploads/2014/07/hibernate_interview_4-768x119.png 768w, https://career.guru99.com/wp-content/uploads/2014/07/hibernate_interview_4-705x109.png 705w, https://career.guru99.com/wp-content/uploads/2014/07/hibernate_interview_4-450x70.png 450w" data-ll-status="loaded"><noscript><img width="839" height="130" class="alignnone size-medium wp-image-6659" src="https://career.guru99.com/wp-content/uploads/2014/07/hibernate_interview_4.png" alt="" srcset="https://career.guru99.com/wp-content/uploads/2014/07/hibernate_interview_4.png 839w, https://career.guru99.com/wp-content/uploads/2014/07/hibernate_interview_4-300x46.png 300w, https://career.guru99.com/wp-content/uploads/2014/07/hibernate_interview_4-768x119.png 768w, https://career.guru99.com/wp-content/uploads/2014/07/hibernate_interview_4-705x109.png 705w, https://career.guru99.com/wp-content/uploads/2014/07/hibernate_interview_4-450x70.png 450w" sizes="(max-width: 839px) 100vw, 839px" /></noscript></a></p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>39. What are derived properties in hibernate?</h3>
+<p>Derived properties are those properties which are not mapped to any columns of a database table. Such properties are calculated at runtime by evaluation of any expressions.</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>40. What is meant by a Named SQL Query in hibernate and how it is used?</h3>
+<p>Named SQL queries are those queries which are defined in mapping file and are called as required anywhere.<br>
+For example, we can write a SQL query in our XML mapping file as follows:</p>
+<p><a href="https://career.guru99.com/wp-content/uploads/2014/07/hibernate_interview_5.png"><img width="841" height="114" class="alignnone size-medium wp-image-6660 lazyloaded" src="https://career.guru99.com/wp-content/uploads/2014/07/hibernate_interview_5.png" alt="" sizes="(max-width: 841px) 100vw, 841px" srcset="https://career.guru99.com/wp-content/uploads/2014/07/hibernate_interview_5.png 841w, https://career.guru99.com/wp-content/uploads/2014/07/hibernate_interview_5-300x41.png 300w, https://career.guru99.com/wp-content/uploads/2014/07/hibernate_interview_5-768x104.png 768w, https://career.guru99.com/wp-content/uploads/2014/07/hibernate_interview_5-705x96.png 705w, https://career.guru99.com/wp-content/uploads/2014/07/hibernate_interview_5-450x61.png 450w" data-ll-status="loaded"><noscript><img width="841" height="114" class="alignnone size-medium wp-image-6660" src="https://career.guru99.com/wp-content/uploads/2014/07/hibernate_interview_5.png" alt="" srcset="https://career.guru99.com/wp-content/uploads/2014/07/hibernate_interview_5.png 841w, https://career.guru99.com/wp-content/uploads/2014/07/hibernate_interview_5-300x41.png 300w, https://career.guru99.com/wp-content/uploads/2014/07/hibernate_interview_5-768x104.png 768w, https://career.guru99.com/wp-content/uploads/2014/07/hibernate_interview_5-705x96.png 705w, https://career.guru99.com/wp-content/uploads/2014/07/hibernate_interview_5-450x61.png 450w" sizes="(max-width: 841px) 100vw, 841px" /></noscript></a></p>
+<p>Then this query can be called as follows:</p>
+<pre lang="java">List students = session.getNamedQuery(&amp;amp;quot;studentdetails&amp;amp;quot;)
+.setString(&amp;amp;quot;TomBrady&amp;amp;quot;, name)
+.setMaxResults(50)
+.list();
+</pre>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>41. What is the difference between load() and get() method in hibernate?</h3>
+<p>Load() methods results in an exception if the required records is not found in the database while get() method returns null when records against the id is not found in the database.<br>
+So, ideally we should use Load() method only when we are sure about existence of records against an id.</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>42. What is the use of version property in hibernate?</h3>
+<p>Version property is used in hibernate to know whether an object is in transient state or in detached state.</p><div class="code-block code-block-6" style="margin: 8px 0; clear: both;">
+
+<h3>43. What is attribute oriented programming?</h3>
+<p>In Attribute oriented programming, a developer can add Meta data (attributes) in the java source code to add more significance in the code. For Java (hibernate), attribute oriented programming is enabled by an engine called XDoclet.</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>44. What is the use of session.lock() in hibernate?</h3>
+<p>session.lock() method of session class is used to reattach an object which has been detached earlier. This method of reattaching does not check for any data synchronization in database while reattaching the object and hence may lead to lack of synchronization in data.</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>45. Does hibernate support polymorphism?</h3>
+<p>Yes, hibernate fully supports polymorphism. Polymorphism queries and polymorphism associations are supported in all mapping strategies of hibernate.</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>46. What the three inheritance models are of hibernate?</h3>
+<p>Hibernate has following three inheritance models:</p>
+<ol>
+<li>Tables Per Concrete Class</li>
+<li>Table per class hierarchy</li>
+<li>Table per sub-class</li>
+</ol>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>47. How can we map the classes as immutable?</h3>
+<p>If we don’t want an application to update or delete objects of a class in hibernate, we can make the class as immutable by setting mutable=false</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>48. What is general hibernate flow using RDBMS?</h3>
+<p>General hibernate flow involving RDBMS is as follows:</p>
+<ul>
+<li>Load configuration file and create object of configuration class.</li>
+<li>Using configuration object, create sessionFactory object.</li>
+<li>From sessionFactory, get one session.</li>
+<li>Create HQL query.</li>
+<li>Execute HQL query and get the results. Results will be in the form of a list.</li>
+</ul>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>49. What is Light Object Mapping?</h3>
+<p>Light Object Mapping is one of the levels of ORM quality in which all entities are represented as classes and they are mapped manually.</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>50. What is difference between managed associations and hibernate associations?</h3>
+<p>Managed associations relate to container management persistence and are bi-directional while hibernate associations are unidirectional.</p>
+
+        </div>
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

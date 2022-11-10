@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Java Interview Q&A</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Sailor - v4.9.1
+  * Template URL: https://bootstrapmade.com/sailor-free-bootstrap-theme/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center">
+      <h1 class="logo me-auto"><a href="index.html">Java Interview Q&A</a></h1>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+
+          <li class="dropdown"><a href="java.html"><span>Java</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="java-oops.html">Oops</a></li>
+              <li><a href="java-multithreading.html">Multithreading</a></li>
+              <li><a href="java-exception.html">Exception handling</a></li>
+
+              <li class="dropdown"><a href="java-collection.html"><span>Collection framework</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="java-collection.html">Map</a></li>
+                  <li><a href="java-collection.html">List</a></li>
+                  <li><a href="java-collection.html">Queue</a></li>
+                </ul>
+              </li>
+              <li><a href="jdk8.html">JDK8 features</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>Framework</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="spring.html">Spring</a></li>
+              <li><a href="hibernate.html">Hibernate</a></li>
+              <li><a href="springboot.html">SpringBoot</a></li>
+              <li><a href="jsf.html">JSF</a></li>
+              <li><a href="struts.html">Struts</a></li>
+              <li class="dropdown"><a href="#"><span>Entity Framework</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="jpa.html">JPA</a></li>
+                  <li><a href="hibernate.html">Hibernate</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          
+          <li class="dropdown"><a href="cloud.html"><span>Cloud</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">AWS</a></li>
+              <li><a href="#">GCP</a></li>
+              <li><a href="#">Azure</a></li>
+              <li><a href="#">IBM Cloud</a></li>
+              <li><a href="#">Docker</a></li>
+              <li><a href="#">Kubernetes</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>UI</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Angular</a></li>
+              <li><a href="#">ReactJS</a></li>
+              <li><a href="#">Javascript</a></li>
+              <li><a href="#">css</a></li>
+              <li><a href="#">html</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>Other</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Company wise</a></li>
+              <li><a href="#">Design pattern</a></li>
+              <li><a href="#">Microservices</a></li>
+              <li><a href="#">Data Structure</a></li>
+              <li><a href="#">Architect</a></li>
+            </ul>
+          </li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+  </header>
+
+  </br>
+  <main id="main">
+
+    <section id="about" class="about">
+      <div class="container">
+        <div class="row-content">
+
+ 
+          <br><b style="font-size: 12pt;">1. What is JPA?</b><br><b style="font-size: 12pt;">Answer</b><span style="font-size: 12pt;">: JPA stands for <span class="vm-hook-outer vm-hook-default"><span class="vm-hook" style="color: rgb(0, 153, 0); border-color: transparent transparent rgb(0, 153, 0); cursor: pointer;">Java</span><svg class="vm-hook-icon" width="10px" height="10px" viewBox="0 0 338 301" style="display: inline-block;"><path d="M137.996535,223.44073 L301.3926,60.0435213 L302.601093,61.2514423 L301.008651,104.392132 C300.913093,109.117959 304.717673,113.000358 309.444643,113.000358 L328.959634,113.000358 C333.619657,113.000358 337.397343,109.222672 337.397343,104.562649 L337.499195,8.93833461 C337.499195,4.27831154 333.72151,0.500625849 329.061487,0.500625849 L233.437172,0.602478023 C228.777149,0.602478023 224.999464,4.38016372 224.999464,9.04018679 L224.999464,28.5546056 C224.999464,33.2815764 228.881862,37.0867279 233.607689,36.9905977 L276.747807,35.3981562 L277.955728,36.6066494 L114.559091,200.003286 C111.81366,202.749289 111.81366,207.20103 114.559091,209.947034 L128.052788,223.44073 C130.799363,226.186161 135.251104,226.186161 137.996535,223.44073 Z M234.374441,300.499911 C249.90747,300.499911 262.499374,287.908006 262.499374,272.374978 L262.499374,142.42877 C262.499374,136.164861 254.925692,133.027471 250.496267,137.457468 L236.433801,151.519934 C235.297405,152.65633 234.374441,154.883917 234.374441,156.491236 L234.374441,268.859361 C234.374441,270.799702 232.799166,272.374978 230.858825,272.374978 L31.6405496,272.374978 C29.7002084,272.374978 28.1249329,270.799702 28.1249329,268.859361 L28.1249329,69.641086 C28.1249329,67.7007449 29.7002084,66.1254694 31.6405496,66.1254694 L208.578948,66.1254694 C214.843429,66.1254694 217.980819,58.5517875 213.550821,54.1223623 L199.488355,40.0598959 C198.351387,38.9235002 196.124372,38.0005364 194.516481,38.0005364 L28.1249329,38.0005364 C12.5919042,38.0005364 0,50.5924406 0,66.1254694 L0,272.374978 C0,287.908006 12.5919042,300.499911 28.1249329,300.499911 L234.374441,300.499911 Z" style="fill: rgb(0, 153, 0);"></path></svg></span> Persistence API. This is a Java specification
+          used to persist data between the relational database and Java objects.
+          It is the bridge between object-oriented domain models and relational
+          databases.</span><br><br><b style="font-size: 12pt;">2. What are the advantages of JPA?</b><br><b style="font-size: 12pt;">Answer</b><span style="font-size: 12pt;">:</span><br>
+        <ul style="font-size: 12pt;">
+          <li>JPA is user-friendly</li>
+          <li>It helps to reduce the burden of interacting with <span class="vm-hook-outer vm-hook-default"><span class="vm-hook" style="color: rgb(0, 153, 0); border-color: transparent transparent rgb(0, 153, 0); cursor: pointer;">databases</span><svg class="vm-hook-icon" width="10px" height="10px" viewBox="0 0 338 301" style="display: inline-block;"><path d="M137.996535,223.44073 L301.3926,60.0435213 L302.601093,61.2514423 L301.008651,104.392132 C300.913093,109.117959 304.717673,113.000358 309.444643,113.000358 L328.959634,113.000358 C333.619657,113.000358 337.397343,109.222672 337.397343,104.562649 L337.499195,8.93833461 C337.499195,4.27831154 333.72151,0.500625849 329.061487,0.500625849 L233.437172,0.602478023 C228.777149,0.602478023 224.999464,4.38016372 224.999464,9.04018679 L224.999464,28.5546056 C224.999464,33.2815764 228.881862,37.0867279 233.607689,36.9905977 L276.747807,35.3981562 L277.955728,36.6066494 L114.559091,200.003286 C111.81366,202.749289 111.81366,207.20103 114.559091,209.947034 L128.052788,223.44073 C130.799363,226.186161 135.251104,226.186161 137.996535,223.44073 Z M234.374441,300.499911 C249.90747,300.499911 262.499374,287.908006 262.499374,272.374978 L262.499374,142.42877 C262.499374,136.164861 254.925692,133.027471 250.496267,137.457468 L236.433801,151.519934 C235.297405,152.65633 234.374441,154.883917 234.374441,156.491236 L234.374441,268.859361 C234.374441,270.799702 232.799166,272.374978 230.858825,272.374978 L31.6405496,272.374978 C29.7002084,272.374978 28.1249329,270.799702 28.1249329,268.859361 L28.1249329,69.641086 C28.1249329,67.7007449 29.7002084,66.1254694 31.6405496,66.1254694 L208.578948,66.1254694 C214.843429,66.1254694 217.980819,58.5517875 213.550821,54.1223623 L199.488355,40.0598959 C198.351387,38.9235002 196.124372,38.0005364 194.516481,38.0005364 L28.1249329,38.0005364 C12.5919042,38.0005364 0,50.5924406 0,66.1254694 L0,272.374978 C0,287.908006 12.5919042,300.499911 28.1249329,300.499911 L234.374441,300.499911 Z" style="fill: rgb(0, 153, 0);"></path></svg></span></li>
+          <li>
+            Through annotation, it helps in reducing the cost of creating a
+            definition <span class="vm-hook-outer vm-hook-default"><span class="vm-hook" style="color: rgb(0, 153, 0); border-color: transparent transparent rgb(0, 153, 0); cursor: pointer;">file</span><svg class="vm-hook-icon" width="10px" height="10px" viewBox="0 0 338 301" style="display: inline-block;"><path d="M137.996535,223.44073 L301.3926,60.0435213 L302.601093,61.2514423 L301.008651,104.392132 C300.913093,109.117959 304.717673,113.000358 309.444643,113.000358 L328.959634,113.000358 C333.619657,113.000358 337.397343,109.222672 337.397343,104.562649 L337.499195,8.93833461 C337.499195,4.27831154 333.72151,0.500625849 329.061487,0.500625849 L233.437172,0.602478023 C228.777149,0.602478023 224.999464,4.38016372 224.999464,9.04018679 L224.999464,28.5546056 C224.999464,33.2815764 228.881862,37.0867279 233.607689,36.9905977 L276.747807,35.3981562 L277.955728,36.6066494 L114.559091,200.003286 C111.81366,202.749289 111.81366,207.20103 114.559091,209.947034 L128.052788,223.44073 C130.799363,226.186161 135.251104,226.186161 137.996535,223.44073 Z M234.374441,300.499911 C249.90747,300.499911 262.499374,287.908006 262.499374,272.374978 L262.499374,142.42877 C262.499374,136.164861 254.925692,133.027471 250.496267,137.457468 L236.433801,151.519934 C235.297405,152.65633 234.374441,154.883917 234.374441,156.491236 L234.374441,268.859361 C234.374441,270.799702 232.799166,272.374978 230.858825,272.374978 L31.6405496,272.374978 C29.7002084,272.374978 28.1249329,270.799702 28.1249329,268.859361 L28.1249329,69.641086 C28.1249329,67.7007449 29.7002084,66.1254694 31.6405496,66.1254694 L208.578948,66.1254694 C214.843429,66.1254694 217.980819,58.5517875 213.550821,54.1223623 L199.488355,40.0598959 C198.351387,38.9235002 196.124372,38.0005364 194.516481,38.0005364 L28.1249329,38.0005364 C12.5919042,38.0005364 0,50.5924406 0,66.1254694 L0,272.374978 C0,287.908006 12.5919042,300.499911 28.1249329,300.499911 L234.374441,300.499911 Z" style="fill: rgb(0, 153, 0);"></path></svg></span>.
+          </li>
+          <li>Useful in merging applications</li>
+          <li>Makes user programming easy</li>
+        </ul>
+        <br><b style="font-size: 12pt;">3. What are the different types of entity mapping?</b><br><b style="font-size: 12pt;">Answer</b><span style="font-size: 12pt;">:</span><br>
+        <ul style="font-size: 12pt;">
+          <li>One-to-one mapping</li>
+          <li>One-to-many mapping</li>
+          <li>Many-to-one mapping</li>
+          <li>Many-to-many mapping</li>
+        </ul>
+        <br><b style="font-size: 12pt;">4. Why is an interface not a class?</b><br><b style="font-size: 12pt;">Answer</b><span style="font-size: 12pt;">: The reason why interface is not a class it is because it does not
+          contain concrete <span class="vm-hook-outer vm-hook-default"><span class="vm-hook" style="color: rgb(0, 153, 0); border-color: transparent transparent rgb(0, 153, 0); cursor: pointer;">methods</span><svg class="vm-hook-icon" width="10px" height="10px" viewBox="0 0 338 301" style="display: inline-block;"><path d="M137.996535,223.44073 L301.3926,60.0435213 L302.601093,61.2514423 L301.008651,104.392132 C300.913093,109.117959 304.717673,113.000358 309.444643,113.000358 L328.959634,113.000358 C333.619657,113.000358 337.397343,109.222672 337.397343,104.562649 L337.499195,8.93833461 C337.499195,4.27831154 333.72151,0.500625849 329.061487,0.500625849 L233.437172,0.602478023 C228.777149,0.602478023 224.999464,4.38016372 224.999464,9.04018679 L224.999464,28.5546056 C224.999464,33.2815764 228.881862,37.0867279 233.607689,36.9905977 L276.747807,35.3981562 L277.955728,36.6066494 L114.559091,200.003286 C111.81366,202.749289 111.81366,207.20103 114.559091,209.947034 L128.052788,223.44073 C130.799363,226.186161 135.251104,226.186161 137.996535,223.44073 Z M234.374441,300.499911 C249.90747,300.499911 262.499374,287.908006 262.499374,272.374978 L262.499374,142.42877 C262.499374,136.164861 254.925692,133.027471 250.496267,137.457468 L236.433801,151.519934 C235.297405,152.65633 234.374441,154.883917 234.374441,156.491236 L234.374441,268.859361 C234.374441,270.799702 232.799166,272.374978 230.858825,272.374978 L31.6405496,272.374978 C29.7002084,272.374978 28.1249329,270.799702 28.1249329,268.859361 L28.1249329,69.641086 C28.1249329,67.7007449 29.7002084,66.1254694 31.6405496,66.1254694 L208.578948,66.1254694 C214.843429,66.1254694 217.980819,58.5517875 213.550821,54.1223623 L199.488355,40.0598959 C198.351387,38.9235002 196.124372,38.0005364 194.516481,38.0005364 L28.1249329,38.0005364 C12.5919042,38.0005364 0,50.5924406 0,66.1254694 L0,272.374978 C0,287.908006 12.5919042,300.499911 28.1249329,300.499911 L234.374441,300.499911 Z" style="fill: rgb(0, 153, 0);"></path></svg></span>. The only thing it can contain is
+          <a href="https://javarevisited.blogspot.com/2022/08/can-we-declare-abstract-class-or-method.html" target="_blank">abstract method</a>s.&nbsp;</span>
+      </div>
+      <div dir="ltr" style="font-size: 12pt; line-height: 1.5; text-align: left;" trbidi="on">
+        <br><b>5. What is an entity?</b><br><b>Answer</b>: An entity refers to
+        a group of states associated together in a single unit. <br>
+        <br>
+
+  <br>
+        <br><b>6. Discuss the important predefined repository interfaces and classes
+          in Spring Data JPA</b><br><b>Answer</b>:<br>
+        <ul>
+          <li>
+            Repository – this is a top-level interface defined in Spring Data
+            Hierarchy
+          </li>
+          <li>
+            CrudRepository – CrudRepository interface extends Repository interface
+            and it also provides methods that help to perform CRUD <span class="vm-hook-outer vm-hook-default"><span class="vm-hook" style="color: rgb(0, 153, 0); border-color: transparent transparent rgb(0, 153, 0); cursor: pointer;">operation</span><svg class="vm-hook-icon" width="10px" height="10px" viewBox="0 0 338 301" style="display: inline-block;"><path d="M137.996535,223.44073 L301.3926,60.0435213 L302.601093,61.2514423 L301.008651,104.392132 C300.913093,109.117959 304.717673,113.000358 309.444643,113.000358 L328.959634,113.000358 C333.619657,113.000358 337.397343,109.222672 337.397343,104.562649 L337.499195,8.93833461 C337.499195,4.27831154 333.72151,0.500625849 329.061487,0.500625849 L233.437172,0.602478023 C228.777149,0.602478023 224.999464,4.38016372 224.999464,9.04018679 L224.999464,28.5546056 C224.999464,33.2815764 228.881862,37.0867279 233.607689,36.9905977 L276.747807,35.3981562 L277.955728,36.6066494 L114.559091,200.003286 C111.81366,202.749289 111.81366,207.20103 114.559091,209.947034 L128.052788,223.44073 C130.799363,226.186161 135.251104,226.186161 137.996535,223.44073 Z M234.374441,300.499911 C249.90747,300.499911 262.499374,287.908006 262.499374,272.374978 L262.499374,142.42877 C262.499374,136.164861 254.925692,133.027471 250.496267,137.457468 L236.433801,151.519934 C235.297405,152.65633 234.374441,154.883917 234.374441,156.491236 L234.374441,268.859361 C234.374441,270.799702 232.799166,272.374978 230.858825,272.374978 L31.6405496,272.374978 C29.7002084,272.374978 28.1249329,270.799702 28.1249329,268.859361 L28.1249329,69.641086 C28.1249329,67.7007449 29.7002084,66.1254694 31.6405496,66.1254694 L208.578948,66.1254694 C214.843429,66.1254694 217.980819,58.5517875 213.550821,54.1223623 L199.488355,40.0598959 C198.351387,38.9235002 196.124372,38.0005364 194.516481,38.0005364 L28.1249329,38.0005364 C12.5919042,38.0005364 0,50.5924406 0,66.1254694 L0,272.374978 C0,287.908006 12.5919042,300.499911 28.1249329,300.499911 L234.374441,300.499911 Z" style="fill: rgb(0, 153, 0);"></path></svg></span>.
+          </li>
+          <li>
+            PagingAndSortingRepository – this <span class="vm-hook-outer vm-hook-default"><span class="vm-hook" style="color: rgb(0, 153, 0); border-color: transparent transparent rgb(0, 153, 0); cursor: pointer;">interface</span><svg class="vm-hook-icon" width="10px" height="10px" viewBox="0 0 338 301" style="display: inline-block;"><path d="M137.996535,223.44073 L301.3926,60.0435213 L302.601093,61.2514423 L301.008651,104.392132 C300.913093,109.117959 304.717673,113.000358 309.444643,113.000358 L328.959634,113.000358 C333.619657,113.000358 337.397343,109.222672 337.397343,104.562649 L337.499195,8.93833461 C337.499195,4.27831154 333.72151,0.500625849 329.061487,0.500625849 L233.437172,0.602478023 C228.777149,0.602478023 224.999464,4.38016372 224.999464,9.04018679 L224.999464,28.5546056 C224.999464,33.2815764 228.881862,37.0867279 233.607689,36.9905977 L276.747807,35.3981562 L277.955728,36.6066494 L114.559091,200.003286 C111.81366,202.749289 111.81366,207.20103 114.559091,209.947034 L128.052788,223.44073 C130.799363,226.186161 135.251104,226.186161 137.996535,223.44073 Z M234.374441,300.499911 C249.90747,300.499911 262.499374,287.908006 262.499374,272.374978 L262.499374,142.42877 C262.499374,136.164861 254.925692,133.027471 250.496267,137.457468 L236.433801,151.519934 C235.297405,152.65633 234.374441,154.883917 234.374441,156.491236 L234.374441,268.859361 C234.374441,270.799702 232.799166,272.374978 230.858825,272.374978 L31.6405496,272.374978 C29.7002084,272.374978 28.1249329,270.799702 28.1249329,268.859361 L28.1249329,69.641086 C28.1249329,67.7007449 29.7002084,66.1254694 31.6405496,66.1254694 L208.578948,66.1254694 C214.843429,66.1254694 217.980819,58.5517875 213.550821,54.1223623 L199.488355,40.0598959 C198.351387,38.9235002 196.124372,38.0005364 194.516481,38.0005364 L28.1249329,38.0005364 C12.5919042,38.0005364 0,50.5924406 0,66.1254694 L0,272.374978 C0,287.908006 12.5919042,300.499911 28.1249329,300.499911 L234.374441,300.499911 Z" style="fill: rgb(0, 153, 0);"></path></svg></span> extends CrudRepository
+            interface and provides additional methods to retrieve entities using
+            the pagination and sorting.
+          </li>
+          <li>
+            QueryByExampleExecutor – this interface is used to execute Query by
+            example.
+          </li>
+          <li>
+            <a href="https://javarevisited.blogspot.com/2021/10/what-is-spring-data-repository.html" target="_blank">JpaRepository</a>
+            – JpaRepository interface extends PagingAndSortingRepository and
+            QueryByExampleExecutor interface. It also helps in providing some
+            additional batch methods.
+          </li>
+          <li>
+            SimpleJpaRepository – SimpleJpaRepository is basically the
+            implementation class of the CrudRepository interface.
+          </li>
+          <li>QueryDslRepository – this is a class.</li>
+        </ul>
+        <div dir="ltr" style="font-size: 12pt; line-height: 1.5; text-align: left;" trbidi="on">
+          <br>
+        </div>
+        <br><b>7. What is Object Relational Mapping (ORM)?</b><br><b>Answer</b>: Object Relational Mapping (ORM) is defined as a mechanism responsible
+        for maintaining the relationship between object oriented data structures
+        and relational tables in a <span class="vm-hook-outer vm-hook-default"><span class="vm-hook" style="color: rgb(0, 153, 0); border-color: transparent transparent rgb(0, 153, 0); cursor: pointer;">database</span><svg class="vm-hook-icon" width="10px" height="10px" viewBox="0 0 338 301" style="display: inline-block;"><path d="M137.996535,223.44073 L301.3926,60.0435213 L302.601093,61.2514423 L301.008651,104.392132 C300.913093,109.117959 304.717673,113.000358 309.444643,113.000358 L328.959634,113.000358 C333.619657,113.000358 337.397343,109.222672 337.397343,104.562649 L337.499195,8.93833461 C337.499195,4.27831154 333.72151,0.500625849 329.061487,0.500625849 L233.437172,0.602478023 C228.777149,0.602478023 224.999464,4.38016372 224.999464,9.04018679 L224.999464,28.5546056 C224.999464,33.2815764 228.881862,37.0867279 233.607689,36.9905977 L276.747807,35.3981562 L277.955728,36.6066494 L114.559091,200.003286 C111.81366,202.749289 111.81366,207.20103 114.559091,209.947034 L128.052788,223.44073 C130.799363,226.186161 135.251104,226.186161 137.996535,223.44073 Z M234.374441,300.499911 C249.90747,300.499911 262.499374,287.908006 262.499374,272.374978 L262.499374,142.42877 C262.499374,136.164861 254.925692,133.027471 250.496267,137.457468 L236.433801,151.519934 C235.297405,152.65633 234.374441,154.883917 234.374441,156.491236 L234.374441,268.859361 C234.374441,270.799702 232.799166,272.374978 230.858825,272.374978 L31.6405496,272.374978 C29.7002084,272.374978 28.1249329,270.799702 28.1249329,268.859361 L28.1249329,69.641086 C28.1249329,67.7007449 29.7002084,66.1254694 31.6405496,66.1254694 L208.578948,66.1254694 C214.843429,66.1254694 217.980819,58.5517875 213.550821,54.1223623 L199.488355,40.0598959 C198.351387,38.9235002 196.124372,38.0005364 194.516481,38.0005364 L28.1249329,38.0005364 C12.5919042,38.0005364 0,50.5924406 0,66.1254694 L0,272.374978 C0,287.908006 12.5919042,300.499911 28.1249329,300.499911 L234.374441,300.499911 Z" style="fill: rgb(0, 153, 0);"></path></svg></span>. Common ORM frameworks are JPOX,
+        ORMLite, Toplink,
+        <a href="https://javarevisited.blogspot.com/2018/01/top-5-hibernate-and-jpa-courses-for-java-programmers-learn-online.html" target="_blank">Hibernate </a>and iBatis.
+      </div>
+      <div dir="ltr" style="font-size: 12pt; line-height: 1.5; text-align: left;" trbidi="on">
+        &nbsp; <br><br><b>8. What are the differences between JpaRepository and
+          CrudRepository?</b><br><b>Answer</b>:<br>
+  
+        <table border="1" cellpadding="0" cellspacing="0" class="MsoTableGrid" style="border-collapse: collapse; border: medium none; mso-border-alt: solid windowtext .5pt; mso-padding-alt: 0in 5.4pt 0in 5.4pt; mso-yfti-tbllook: 1184;">
+          <tbody>
+            <tr style="mso-yfti-firstrow: yes; mso-yfti-irow: 0;">
+              <td style="border: 1pt solid windowtext; mso-border-alt: solid windowtext .5pt; padding: 0in 5.4pt; width: 233.75pt;" valign="top" width="312">
+                <p class="MsoNormal" style="line-height: normal; margin-bottom: 0in;">
+                  <b style="mso-bidi-font-weight: normal;">JpaRepository</b>
+                </p>
+              </td>
+              <td style="border-left: none; border: 1pt solid windowtext; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; padding: 0in 5.4pt; width: 233.75pt;" valign="top" width="312">
+                <p class="MsoNormal" style="line-height: normal; margin-bottom: 0in;">
+                  <b style="mso-bidi-font-weight: normal;">CrudRepository</b>
+                </p>
+              </td>
+            </tr>
+            <tr style="mso-yfti-irow: 1;">
+              <td style="border-top: none; border: 1pt solid windowtext; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt; width: 233.75pt;" valign="top" width="312">
+                <p class="MsoNormal" style="line-height: normal; margin-bottom: 0in;">
+                  It extends QueryByExampleExecutor and PagingAndSortingRepository
+                  interface
+                </p>
+              </td>
+              <td style="border-bottom-color: windowtext; border-color: currentcolor windowtext windowtext currentcolor; border-left-color: initial; border-right-color: windowtext; border-style: none solid solid none; border-top-color: initial; border-width: medium 1pt 1pt medium; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt; width: 233.75pt;" valign="top" width="312">
+                <p class="MsoNormal" style="line-height: normal; margin-bottom: 0in;">
+                  it extends Repository interface
+                </p>
+              </td>
+            </tr>
+            <tr style="mso-yfti-irow: 2;">
+              <td style="border-top: none; border: 1pt solid windowtext; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt; width: 233.75pt;" valign="top" width="312">
+                <p class="MsoNormal" style="line-height: normal; margin-bottom: 0in;">
+                  The saveAll method of JpaRepository returns list
+                </p>
+              </td>
+              <td style="border-bottom-color: windowtext; border-color: currentcolor windowtext windowtext currentcolor; border-left-color: initial; border-right-color: windowtext; border-style: none solid solid none; border-top-color: initial; border-width: medium 1pt 1pt medium; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt; width: 233.75pt;" valign="top" width="312">
+                <p class="MsoNormal" style="line-height: normal; margin-bottom: 0in;">
+                  The saveAll method of CrudRepository returns Iterable
+                </p>
+              </td>
+            </tr>
+            <tr style="mso-yfti-irow: 3; mso-yfti-lastrow: yes;">
+              <td style="border-top: none; border: 1pt solid windowtext; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt; width: 233.75pt;" valign="top" width="312">
+                <p class="MsoNormal" style="line-height: normal; margin-bottom: 0in;">
+                  Provides additional methods like deleteInBatch(), flush() and
+                  others
+                </p>
+              </td>
+              <td style="border-bottom-color: windowtext; border-color: currentcolor windowtext windowtext currentcolor; border-left-color: initial; border-right-color: windowtext; border-style: none solid solid none; border-top-color: initial; border-width: medium 1pt 1pt medium; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0in 5.4pt; width: 233.75pt;" valign="top" width="312">
+                <p class="MsoNormal" style="line-height: normal; margin-bottom: 0in;">
+                  Provides methods to perform CRUD operations
+                </p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+  
+        <br><br><b>9. What is the difference between getOne() and findById()?</b><br><b>Answer</b>: getOne() is available in JpaRepository while
+        findById() is available in CrudRepository. <br><br><br><b>10. What methods of CrudRepository apply in performing CRUD
+          operations?</b><br><b>Answer</b>:<br>
+        <ul>
+          <li>
+            existsById – used to check if an entity of a given id already exists
+            in the database.
+          </li>
+          <li>findAll() – find all entity of particular type.</li>
+          <li>save(S entity) – it is used to <span class="vm-hook-outer vm-hook-default"><span class="vm-hook" style="color: rgb(0, 153, 0); border-color: transparent transparent rgb(0, 153, 0); cursor: pointer;">save</span><svg class="vm-hook-icon" width="10px" height="10px" viewBox="0 0 338 301" style="display: inline-block;"><path d="M137.996535,223.44073 L301.3926,60.0435213 L302.601093,61.2514423 L301.008651,104.392132 C300.913093,109.117959 304.717673,113.000358 309.444643,113.000358 L328.959634,113.000358 C333.619657,113.000358 337.397343,109.222672 337.397343,104.562649 L337.499195,8.93833461 C337.499195,4.27831154 333.72151,0.500625849 329.061487,0.500625849 L233.437172,0.602478023 C228.777149,0.602478023 224.999464,4.38016372 224.999464,9.04018679 L224.999464,28.5546056 C224.999464,33.2815764 228.881862,37.0867279 233.607689,36.9905977 L276.747807,35.3981562 L277.955728,36.6066494 L114.559091,200.003286 C111.81366,202.749289 111.81366,207.20103 114.559091,209.947034 L128.052788,223.44073 C130.799363,226.186161 135.251104,226.186161 137.996535,223.44073 Z M234.374441,300.499911 C249.90747,300.499911 262.499374,287.908006 262.499374,272.374978 L262.499374,142.42877 C262.499374,136.164861 254.925692,133.027471 250.496267,137.457468 L236.433801,151.519934 C235.297405,152.65633 234.374441,154.883917 234.374441,156.491236 L234.374441,268.859361 C234.374441,270.799702 232.799166,272.374978 230.858825,272.374978 L31.6405496,272.374978 C29.7002084,272.374978 28.1249329,270.799702 28.1249329,268.859361 L28.1249329,69.641086 C28.1249329,67.7007449 29.7002084,66.1254694 31.6405496,66.1254694 L208.578948,66.1254694 C214.843429,66.1254694 217.980819,58.5517875 213.550821,54.1223623 L199.488355,40.0598959 C198.351387,38.9235002 196.124372,38.0005364 194.516481,38.0005364 L28.1249329,38.0005364 C12.5919042,38.0005364 0,50.5924406 0,66.1254694 L0,272.374978 C0,287.908006 12.5919042,300.499911 28.1249329,300.499911 L234.374441,300.499911 Z" style="fill: rgb(0, 153, 0);"></path></svg></span> a single entity at a time.</li>
+          <li>findById – used to get entity by id.</li>
+          <li>findAllById – returns al entities of given ids.</li>
+          <li>deleteById – used to delete the entity basing on id.</li>
+          <li>count() – it returns the given number of entities.</li>
+          <li>deleteAll() – delete all entities.</li>
+        </ul>
+        <br><b>11. What does the @Entity annotation do?</b><br><b>Answer</b>:
+        the @Entity annotation indicates a class represents a relational table in
+        the database. The JPA specification includes any class marked with @Entity
+        in the persistence setup.
+      </div>
+     
+      <div dir="ltr" style="font-size: 12pt; line-height: 1.5; text-align: left;" trbidi="on">
+        <br><br><b>12. What does the @EnableJpaRepositories annotation do?</b><br><b>Answer</b>: this annotation enables the automatic <span class="vm-hook-outer vm-hook-default"><span class="vm-hook" style="color: rgb(0, 153, 0); border-color: transparent transparent rgb(0, 153, 0); cursor: pointer;">generation</span><svg class="vm-hook-icon" width="10px" height="10px" viewBox="0 0 338 301" style="display: inline-block;"><path d="M137.996535,223.44073 L301.3926,60.0435213 L302.601093,61.2514423 L301.008651,104.392132 C300.913093,109.117959 304.717673,113.000358 309.444643,113.000358 L328.959634,113.000358 C333.619657,113.000358 337.397343,109.222672 337.397343,104.562649 L337.499195,8.93833461 C337.499195,4.27831154 333.72151,0.500625849 329.061487,0.500625849 L233.437172,0.602478023 C228.777149,0.602478023 224.999464,4.38016372 224.999464,9.04018679 L224.999464,28.5546056 C224.999464,33.2815764 228.881862,37.0867279 233.607689,36.9905977 L276.747807,35.3981562 L277.955728,36.6066494 L114.559091,200.003286 C111.81366,202.749289 111.81366,207.20103 114.559091,209.947034 L128.052788,223.44073 C130.799363,226.186161 135.251104,226.186161 137.996535,223.44073 Z M234.374441,300.499911 C249.90747,300.499911 262.499374,287.908006 262.499374,272.374978 L262.499374,142.42877 C262.499374,136.164861 254.925692,133.027471 250.496267,137.457468 L236.433801,151.519934 C235.297405,152.65633 234.374441,154.883917 234.374441,156.491236 L234.374441,268.859361 C234.374441,270.799702 232.799166,272.374978 230.858825,272.374978 L31.6405496,272.374978 C29.7002084,272.374978 28.1249329,270.799702 28.1249329,268.859361 L28.1249329,69.641086 C28.1249329,67.7007449 29.7002084,66.1254694 31.6405496,66.1254694 L208.578948,66.1254694 C214.843429,66.1254694 217.980819,58.5517875 213.550821,54.1223623 L199.488355,40.0598959 C198.351387,38.9235002 196.124372,38.0005364 194.516481,38.0005364 L28.1249329,38.0005364 C12.5919042,38.0005364 0,50.5924406 0,66.1254694 L0,272.374978 C0,287.908006 12.5919042,300.499911 28.1249329,300.499911 L234.374441,300.499911 Z" style="fill: rgb(0, 153, 0);"></path></svg></span> of
+        JPA repositories. Any class which implements CrudRepository interface will
+        generate a repository when this annotation is present. <br><br><b>13. What does the @Query annotation do? (answer)</b><br><b>Answer</b>: The @Query annotation allows you to define a Spring
+        Data Repository method with custom <span class="vm-hook-outer vm-hook-default"><span class="vm-hook" style="color: rgb(0, 153, 0); border-color: transparent transparent rgb(0, 153, 0); cursor: pointer;">SQL</span><svg class="vm-hook-icon" width="10px" height="10px" viewBox="0 0 338 301" style="display: inline-block;"><path d="M137.996535,223.44073 L301.3926,60.0435213 L302.601093,61.2514423 L301.008651,104.392132 C300.913093,109.117959 304.717673,113.000358 309.444643,113.000358 L328.959634,113.000358 C333.619657,113.000358 337.397343,109.222672 337.397343,104.562649 L337.499195,8.93833461 C337.499195,4.27831154 333.72151,0.500625849 329.061487,0.500625849 L233.437172,0.602478023 C228.777149,0.602478023 224.999464,4.38016372 224.999464,9.04018679 L224.999464,28.5546056 C224.999464,33.2815764 228.881862,37.0867279 233.607689,36.9905977 L276.747807,35.3981562 L277.955728,36.6066494 L114.559091,200.003286 C111.81366,202.749289 111.81366,207.20103 114.559091,209.947034 L128.052788,223.44073 C130.799363,226.186161 135.251104,226.186161 137.996535,223.44073 Z M234.374441,300.499911 C249.90747,300.499911 262.499374,287.908006 262.499374,272.374978 L262.499374,142.42877 C262.499374,136.164861 254.925692,133.027471 250.496267,137.457468 L236.433801,151.519934 C235.297405,152.65633 234.374441,154.883917 234.374441,156.491236 L234.374441,268.859361 C234.374441,270.799702 232.799166,272.374978 230.858825,272.374978 L31.6405496,272.374978 C29.7002084,272.374978 28.1249329,270.799702 28.1249329,268.859361 L28.1249329,69.641086 C28.1249329,67.7007449 29.7002084,66.1254694 31.6405496,66.1254694 L208.578948,66.1254694 C214.843429,66.1254694 217.980819,58.5517875 213.550821,54.1223623 L199.488355,40.0598959 C198.351387,38.9235002 196.124372,38.0005364 194.516481,38.0005364 L28.1249329,38.0005364 C12.5919042,38.0005364 0,50.5924406 0,66.1254694 L0,272.374978 C0,287.908006 12.5919042,300.499911 28.1249329,300.499911 L234.374441,300.499911 Z" style="fill: rgb(0, 153, 0);"></path></svg></span>. With the use of
+        <a href="https://javarevisited.blogspot.com/2021/09/spring-data-jpa-query-example-tutorial.html" target="_blank">@Query</a>, you can <span class="vm-hook-outer vm-hook-default"><span class="vm-hook" style="color: rgb(0, 153, 0); border-color: transparent transparent rgb(0, 153, 0); cursor: pointer;">map</span><svg class="vm-hook-icon" width="10px" height="10px" viewBox="0 0 338 301" style="display: inline-block;"><path d="M137.996535,223.44073 L301.3926,60.0435213 L302.601093,61.2514423 L301.008651,104.392132 C300.913093,109.117959 304.717673,113.000358 309.444643,113.000358 L328.959634,113.000358 C333.619657,113.000358 337.397343,109.222672 337.397343,104.562649 L337.499195,8.93833461 C337.499195,4.27831154 333.72151,0.500625849 329.061487,0.500625849 L233.437172,0.602478023 C228.777149,0.602478023 224.999464,4.38016372 224.999464,9.04018679 L224.999464,28.5546056 C224.999464,33.2815764 228.881862,37.0867279 233.607689,36.9905977 L276.747807,35.3981562 L277.955728,36.6066494 L114.559091,200.003286 C111.81366,202.749289 111.81366,207.20103 114.559091,209.947034 L128.052788,223.44073 C130.799363,226.186161 135.251104,226.186161 137.996535,223.44073 Z M234.374441,300.499911 C249.90747,300.499911 262.499374,287.908006 262.499374,272.374978 L262.499374,142.42877 C262.499374,136.164861 254.925692,133.027471 250.496267,137.457468 L236.433801,151.519934 C235.297405,152.65633 234.374441,154.883917 234.374441,156.491236 L234.374441,268.859361 C234.374441,270.799702 232.799166,272.374978 230.858825,272.374978 L31.6405496,272.374978 C29.7002084,272.374978 28.1249329,270.799702 28.1249329,268.859361 L28.1249329,69.641086 C28.1249329,67.7007449 29.7002084,66.1254694 31.6405496,66.1254694 L208.578948,66.1254694 C214.843429,66.1254694 217.980819,58.5517875 213.550821,54.1223623 L199.488355,40.0598959 C198.351387,38.9235002 196.124372,38.0005364 194.516481,38.0005364 L28.1249329,38.0005364 C12.5919042,38.0005364 0,50.5924406 0,66.1254694 L0,272.374978 C0,287.908006 12.5919042,300.499911 28.1249329,300.499911 L234.374441,300.499911 Z" style="fill: rgb(0, 153, 0);"></path></svg></span> Spring Data Repository methods to actual SQL statements.
+        <br><br><b>14. What does the @Id annotation do?</b><br><b>Answer</b>: The @Id annotation marks a field as the primary key for that particular
+        table. It is a unique identifier for each entry in the table. @Id
+        annotation is typically used with @GeneratedValue to automatically
+        <span class="vm-hook-outer vm-hook-default"><span class="vm-hook" style="color: rgb(0, 153, 0); border-color: transparent transparent rgb(0, 153, 0); cursor: pointer;">generate</span><svg class="vm-hook-icon" width="10px" height="10px" viewBox="0 0 338 301" style="display: inline-block;"><path d="M137.996535,223.44073 L301.3926,60.0435213 L302.601093,61.2514423 L301.008651,104.392132 C300.913093,109.117959 304.717673,113.000358 309.444643,113.000358 L328.959634,113.000358 C333.619657,113.000358 337.397343,109.222672 337.397343,104.562649 L337.499195,8.93833461 C337.499195,4.27831154 333.72151,0.500625849 329.061487,0.500625849 L233.437172,0.602478023 C228.777149,0.602478023 224.999464,4.38016372 224.999464,9.04018679 L224.999464,28.5546056 C224.999464,33.2815764 228.881862,37.0867279 233.607689,36.9905977 L276.747807,35.3981562 L277.955728,36.6066494 L114.559091,200.003286 C111.81366,202.749289 111.81366,207.20103 114.559091,209.947034 L128.052788,223.44073 C130.799363,226.186161 135.251104,226.186161 137.996535,223.44073 Z M234.374441,300.499911 C249.90747,300.499911 262.499374,287.908006 262.499374,272.374978 L262.499374,142.42877 C262.499374,136.164861 254.925692,133.027471 250.496267,137.457468 L236.433801,151.519934 C235.297405,152.65633 234.374441,154.883917 234.374441,156.491236 L234.374441,268.859361 C234.374441,270.799702 232.799166,272.374978 230.858825,272.374978 L31.6405496,272.374978 C29.7002084,272.374978 28.1249329,270.799702 28.1249329,268.859361 L28.1249329,69.641086 C28.1249329,67.7007449 29.7002084,66.1254694 31.6405496,66.1254694 L208.578948,66.1254694 C214.843429,66.1254694 217.980819,58.5517875 213.550821,54.1223623 L199.488355,40.0598959 C198.351387,38.9235002 196.124372,38.0005364 194.516481,38.0005364 L28.1249329,38.0005364 C12.5919042,38.0005364 0,50.5924406 0,66.1254694 L0,272.374978 C0,287.908006 12.5919042,300.499911 28.1249329,300.499911 L234.374441,300.499911 Z" style="fill: rgb(0, 153, 0);"></path></svg></span> a unique id for each entry in the table.
+      </div>
+      <div dir="ltr" style="font-size: 12pt; line-height: 1.5; text-align: left;" trbidi="on">
+        &nbsp; <br><br><b>15. What is the difference between Hibernate and Spring Data JPA?</b><br><b>Answer</b>: Hibernate is a JPA implementation while Spring Data
+        JPA is a JPA Data Access Abstraction. <br>
+        <br>
+
+  <br>
+        
+        <br><b>16. How is a custom repository created in Spring data JPA?</b><br><b>Answer</b>: A custom repository is created when it is extended
+        to any of the following interfaces: CrudRepository, JpaRepository,
+        Repository, QueryByExampleRepository and PagingAndSortingRepository.
+      </div>
+      <div dir="ltr" style="font-size: 12pt; line-height: 1.5; text-align: left;" trbidi="on">
+        &nbsp; <br><br><b>17. What does the @GeneratedValue annotation do?</b><br><b>Answer</b>: The @GeneratedValue annotation is used to specify
+        the primary <span class="vm-hook-outer vm-hook-default"><span class="vm-hook" style="color: rgb(0, 153, 0); border-color: transparent transparent rgb(0, 153, 0); cursor: pointer;">key</span><svg class="vm-hook-icon" width="10px" height="10px" viewBox="0 0 338 301" style="display: inline-block;"><path d="M137.996535,223.44073 L301.3926,60.0435213 L302.601093,61.2514423 L301.008651,104.392132 C300.913093,109.117959 304.717673,113.000358 309.444643,113.000358 L328.959634,113.000358 C333.619657,113.000358 337.397343,109.222672 337.397343,104.562649 L337.499195,8.93833461 C337.499195,4.27831154 333.72151,0.500625849 329.061487,0.500625849 L233.437172,0.602478023 C228.777149,0.602478023 224.999464,4.38016372 224.999464,9.04018679 L224.999464,28.5546056 C224.999464,33.2815764 228.881862,37.0867279 233.607689,36.9905977 L276.747807,35.3981562 L277.955728,36.6066494 L114.559091,200.003286 C111.81366,202.749289 111.81366,207.20103 114.559091,209.947034 L128.052788,223.44073 C130.799363,226.186161 135.251104,226.186161 137.996535,223.44073 Z M234.374441,300.499911 C249.90747,300.499911 262.499374,287.908006 262.499374,272.374978 L262.499374,142.42877 C262.499374,136.164861 254.925692,133.027471 250.496267,137.457468 L236.433801,151.519934 C235.297405,152.65633 234.374441,154.883917 234.374441,156.491236 L234.374441,268.859361 C234.374441,270.799702 232.799166,272.374978 230.858825,272.374978 L31.6405496,272.374978 C29.7002084,272.374978 28.1249329,270.799702 28.1249329,268.859361 L28.1249329,69.641086 C28.1249329,67.7007449 29.7002084,66.1254694 31.6405496,66.1254694 L208.578948,66.1254694 C214.843429,66.1254694 217.980819,58.5517875 213.550821,54.1223623 L199.488355,40.0598959 C198.351387,38.9235002 196.124372,38.0005364 194.516481,38.0005364 L28.1249329,38.0005364 C12.5919042,38.0005364 0,50.5924406 0,66.1254694 L0,272.374978 C0,287.908006 12.5919042,300.499911 28.1249329,300.499911 L234.374441,300.499911 Z" style="fill: rgb(0, 153, 0);"></path></svg></span> generation strategy to use. If by any chance the strategy
+        is not specified by default AUTO will be used.
+      </div>
+      <div dir="ltr" style="font-size: 12pt; line-height: 1.5; text-align: left;" trbidi="on">
+        &nbsp; <br><br><b>18. What is the difference between FetchType.Eager and
+          FetchType.Lazy?</b><br><b>Answer</b>: FetchType attribute indicates how whether records
+        will be eagerly or lazily loaded from the database. When the records are
+        eagerly loaded, JPA returns these objects regardless of whether they are
+        accessed by the client or not. When records are lazily loaded the actual
+        objects are only retrieved when directly accessed. This helps in saving
+        <span class="vm-hook-outer vm-hook-default"><span class="vm-hook" style="color: rgb(0, 153, 0); border-color: transparent transparent rgb(0, 153, 0); cursor: pointer;">memory</span><svg class="vm-hook-icon" width="10px" height="10px" viewBox="0 0 338 301" style="display: inline-block;"><path d="M137.996535,223.44073 L301.3926,60.0435213 L302.601093,61.2514423 L301.008651,104.392132 C300.913093,109.117959 304.717673,113.000358 309.444643,113.000358 L328.959634,113.000358 C333.619657,113.000358 337.397343,109.222672 337.397343,104.562649 L337.499195,8.93833461 C337.499195,4.27831154 333.72151,0.500625849 329.061487,0.500625849 L233.437172,0.602478023 C228.777149,0.602478023 224.999464,4.38016372 224.999464,9.04018679 L224.999464,28.5546056 C224.999464,33.2815764 228.881862,37.0867279 233.607689,36.9905977 L276.747807,35.3981562 L277.955728,36.6066494 L114.559091,200.003286 C111.81366,202.749289 111.81366,207.20103 114.559091,209.947034 L128.052788,223.44073 C130.799363,226.186161 135.251104,226.186161 137.996535,223.44073 Z M234.374441,300.499911 C249.90747,300.499911 262.499374,287.908006 262.499374,272.374978 L262.499374,142.42877 C262.499374,136.164861 254.925692,133.027471 250.496267,137.457468 L236.433801,151.519934 C235.297405,152.65633 234.374441,154.883917 234.374441,156.491236 L234.374441,268.859361 C234.374441,270.799702 232.799166,272.374978 230.858825,272.374978 L31.6405496,272.374978 C29.7002084,272.374978 28.1249329,270.799702 28.1249329,268.859361 L28.1249329,69.641086 C28.1249329,67.7007449 29.7002084,66.1254694 31.6405496,66.1254694 L208.578948,66.1254694 C214.843429,66.1254694 217.980819,58.5517875 213.550821,54.1223623 L199.488355,40.0598959 C198.351387,38.9235002 196.124372,38.0005364 194.516481,38.0005364 L28.1249329,38.0005364 C12.5919042,38.0005364 0,50.5924406 0,66.1254694 L0,272.374978 C0,287.908006 12.5919042,300.499911 28.1249329,300.499911 L234.374441,300.499911 Z" style="fill: rgb(0, 153, 0);"></path></svg></span> and processing when appropriate.
+      </div>
+      <div dir="ltr" style="font-size: 12pt; line-height: 1.5; text-align: left;" trbidi="on">
+        &nbsp; <br><br><b>19. What does @Column annotation do?</b><br><b>Answer</b>: The @Column annotation is utilized to designate the details of the
+        column to which a field or property will be mapped.
+      </div>
+      <div dir="ltr" style="font-size: 12pt; line-height: 1.5; text-align: left;" trbidi="on">
+        &nbsp; <br><br><b>20. What does the @EntityScan annotation do? </b><br><b>Answer</b>: If the entity classes are not placed in the main
+        application <span class="vm-hook-outer vm-hook-default"><span class="vm-hook" style="color: rgb(0, 153, 0); border-color: transparent transparent rgb(0, 153, 0); cursor: pointer;">package</span><svg class="vm-hook-icon" width="10px" height="10px" viewBox="0 0 338 301" style="display: inline-block;"><path d="M137.996535,223.44073 L301.3926,60.0435213 L302.601093,61.2514423 L301.008651,104.392132 C300.913093,109.117959 304.717673,113.000358 309.444643,113.000358 L328.959634,113.000358 C333.619657,113.000358 337.397343,109.222672 337.397343,104.562649 L337.499195,8.93833461 C337.499195,4.27831154 333.72151,0.500625849 329.061487,0.500625849 L233.437172,0.602478023 C228.777149,0.602478023 224.999464,4.38016372 224.999464,9.04018679 L224.999464,28.5546056 C224.999464,33.2815764 228.881862,37.0867279 233.607689,36.9905977 L276.747807,35.3981562 L277.955728,36.6066494 L114.559091,200.003286 C111.81366,202.749289 111.81366,207.20103 114.559091,209.947034 L128.052788,223.44073 C130.799363,226.186161 135.251104,226.186161 137.996535,223.44073 Z M234.374441,300.499911 C249.90747,300.499911 262.499374,287.908006 262.499374,272.374978 L262.499374,142.42877 C262.499374,136.164861 254.925692,133.027471 250.496267,137.457468 L236.433801,151.519934 C235.297405,152.65633 234.374441,154.883917 234.374441,156.491236 L234.374441,268.859361 C234.374441,270.799702 232.799166,272.374978 230.858825,272.374978 L31.6405496,272.374978 C29.7002084,272.374978 28.1249329,270.799702 28.1249329,268.859361 L28.1249329,69.641086 C28.1249329,67.7007449 29.7002084,66.1254694 31.6405496,66.1254694 L208.578948,66.1254694 C214.843429,66.1254694 217.980819,58.5517875 213.550821,54.1223623 L199.488355,40.0598959 C198.351387,38.9235002 196.124372,38.0005364 194.516481,38.0005364 L28.1249329,38.0005364 C12.5919042,38.0005364 0,50.5924406 0,66.1254694 L0,272.374978 C0,287.908006 12.5919042,300.499911 28.1249329,300.499911 L234.374441,300.499911 Z" style="fill: rgb(0, 153, 0);"></path></svg></span> or its sub package, then it is required to declare the
+        package in the main configuration class with @EntityScan annotation.
+        <br><br><br>
+      </div>
+      
+
+        </div>
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

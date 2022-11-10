@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Java Interview Q&A</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Sailor - v4.9.1
+  * Template URL: https://bootstrapmade.com/sailor-free-bootstrap-theme/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center">
+      <h1 class="logo me-auto"><a href="index.html">Java Interview Q&A</a></h1>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+
+          <li class="dropdown"><a href="java.html"><span>Java</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="java-oops.html">Oops</a></li>
+              <li><a href="java-multithreading.html">Multithreading</a></li>
+              <li><a href="java-exception.html">Exception handling</a></li>
+
+              <li class="dropdown"><a href="java-collection.html"><span>Collection framework</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="java-collection.html">Map</a></li>
+                  <li><a href="java-collection.html">List</a></li>
+                  <li><a href="java-collection.html">Queue</a></li>
+                </ul>
+              </li>
+              <li><a href="jdk8.html">JDK8 features</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>Framework</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="spring.html">Spring</a></li>
+              <li><a href="hibernate.html">Hibernate</a></li>
+              <li><a href="springboot.html">SpringBoot</a></li>
+              <li><a href="jsf.html">JSF</a></li>
+              <li><a href="struts.html">Struts</a></li>
+              <li class="dropdown"><a href="#"><span>Entity Framework</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="jpa.html">JPA</a></li>
+                  <li><a href="hibernate.html">Hibernate</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          
+          <li class="dropdown"><a href="cloud.html"><span>Cloud</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">AWS</a></li>
+              <li><a href="#">GCP</a></li>
+              <li><a href="#">Azure</a></li>
+              <li><a href="#">IBM Cloud</a></li>
+              <li><a href="#">Docker</a></li>
+              <li><a href="#">Kubernetes</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>UI</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Angular</a></li>
+              <li><a href="#">ReactJS</a></li>
+              <li><a href="#">Javascript</a></li>
+              <li><a href="#">css</a></li>
+              <li><a href="#">html</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>Other</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Company wise</a></li>
+              <li><a href="#">Design pattern</a></li>
+              <li><a href="#">Microservices</a></li>
+              <li><a href="#">Data Structure</a></li>
+              <li><a href="#">Architect</a></li>
+            </ul>
+          </li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+  </header>
+
+  </br>
+  <main id="main">
+
+    <section id="about" class="about">
+      <div class="container">
+        <div class="row-content">
+
+  
+<h2 style="font-size: 18px;"><span style="color: #000000;"><strong>Q1. What is JSF?</strong></span></h2>
+<p><span style="color: #000000;"><strong>Ans:</strong> Java Server Faces (JSF) technology is a front end framework which makes the creation of user interface components easier by reusing the UI components. JSF is designed based on the Model View Controller pattern (MVC) which segregates the presentation, controller and the business logic.</span></p>
+<span style="color: #000000;"><!--more--></span>
+<h2 style="font-size: 18px;"><span style="color: #000000;"><strong>Q2. What are JSF life cycle phases?</strong></span></h2>
+<p><span style="color: #000000;"><strong>Ans:</strong> There are six lifecycle phases namely;</span></p>
+<ol>
+<li><span style="color: #000000;">Restore view phase</span></li>
+<li><span style="color: #000000;">Apply request values phase</span></li>
+<li><span style="color: #000000;">Process validations phase</span></li>
+<li><span style="color: #000000;">Update model values phase</span></li>
+<li><span style="color: #000000;">Invoke application phase</span></li>
+<li><span style="color: #000000;">Render response phase</span></li>
+</ol>
+<h2><span style="color: #000000; font-size: 18px;"><strong>Q3. List&nbsp; some of the facelets tags?</strong></span><br><span style="color: #000000; font-size: 18px;"><strong>Ans:</strong> Some of the important facelets tags are;</span></h2>
+<ul>
+<li><span style="color: #000000;">&lt;ui:component&gt; tag</span></li>
+<li><span style="color: #000000;">&lt;ui:composition&gt; tag</span></li>
+<li><span style="color: #000000;">&lt;ui:decorate&gt; tag</span></li>
+<li><span style="color: #000000;">&lt;ui:define&gt; tag</span></li>
+<li><span style="color: #000000;">&lt;ui:fragment&gt; tag</span></li>
+<li><span style="color: #000000;">&lt;ui:include&gt; tag</span></li>
+</ul>
+<h2 style="font-size: 18px;"><span style="color: #000000;"><strong>Q4. What is the significance of @ManagedProperty annotation?</strong></span></h2>
+<p><span style="color: #000000;"><strong>Ans:</strong> The&nbsp;<code>@ManagedProperty</code>&nbsp;annotation enables us to inject a managed bean into another managed bean.</span></p>
+<h2 style="font-size: 18px;"><span style="color: #000000;"><strong>Q5. What does @ApplicationScoped annotation indicate?</strong></span></h2>
+<p><span style="color: #000000;"><strong>Ans:</strong> The&nbsp;<code>@ApplicationScoped</code>&nbsp;annotation indicates that the bean is valid as long as the web application is valid.</span></p>
+<h2 style="font-size: 18px;"><span style="color: #000000;"><strong>Q6.&nbsp; Different types of Page Navigation supported in JSF?</strong></span></h2>
+<p><span style="color: #000000;"><strong>Ans:</strong> The types of Page navigation supported in JSF are</span></p>
+<ul>
+<li><span style="color: #000000;">Implicit Navigation</span></li>
+<li><span style="color: #000000;">Navigation through Managed Bean</span></li>
+<li><span style="color: #000000;">Navigation through faces-config.xml</span></li>
+<li><span style="color: #000000;">Forward versus Redirect navigation</span></li>
+<li><span style="color: #000000;">Conditional Navigation</span></li>
+</ul>
+<h2 style="font-size: 18px;"><span style="color: #000000;"><strong>Q7. What is a Managed Bean?</strong></span></h2>
+<p><span style="color: #000000;"><strong>Ans:</strong> A managed bean is a java class registered to JSF which makes interaction between the UI and the business logic possible. Managed Beans can be created using @ManagedBean annotation.</span></p>
+<h2 style="font-size: 18px;"><span style="color: #000000;"><strong>Q8. What are the three types of text fields tags provided by JSF?</strong></span></h2>
+<p><span style="color: #000000;"><strong>Ans:</strong> The three types of text field tags are;</span></p>
+<ol>
+<li><span style="color: #000000;">&lt;h:inputText&gt; – This adds the text box next to the label field.</span></li>
+<li><span style="color: #000000;">&lt;h:inputSecret&gt; – This type is used for password fields where the entered data is hidden.</span></li>
+<li><span style="color: #000000;">&lt;h:inputTextarea&gt; – This type of fields is used while entering large number of characters.</span></li>
+</ol>
+<h2 style="font-size: 18px;"><span style="color: #000000;"><strong>Q9. What are immediate and deferred value expressions?</strong></span></h2>
+<p><span style="color: #000000;"><strong>Ans:</strong> Immediate expressions are evaluated and results are rendered as soon as the page is displayed initially. The syntax for immediate evaluation is&nbsp;<code>${}</code>.</span></p>
+<p><span style="color: #000000;">Deferred expressions are evaluated during the lifecycle phase whenever it is requested by the user. The syntax for deferred evaluation is&nbsp;<code>#{expression}</code>.</span></p>
+<h2 style="font-size: 18px;"><span style="color: #000000;"><strong>Q10. What is Resource bundling in JSF?</strong></span></h2>
+<p><span style="color: #000000;"><strong>Ans:</strong> The phenomenon of storing the UI labels, date, status messages and other UI textual elements in a separate properties file instead of hardcoding these in a page is called resource bundling.</span><br><span style="color: #000000;">We can use&nbsp;<code>h:outputLabel</code>&nbsp;element to pick these values from resource bundle properties file in JSF view pages.[teaserbox type="4" img="2803" title="Interested in Learning PYTHON" subtitle="Click Here to Join Now" link_url="https://www.mytectra.com/python-training-in-bangalore.html" target="blank"]</span></p>
+<h2 style="font-size: 18px;"><span style="color: #000000;"><strong>Q11. Explain the required and requiredMessage attribute of the &lt;h:inputText&gt; tag?</strong></span></h2>
+<p><span style="color: #000000;"><strong>Ans:</strong> Required attribute indicates that the field is mandatory when set to true. The requiredMessage attribute allows users to specify their own message for the ui components when the fields are mandatory. They are used for declarative validations in JSF view pages.</span></p>
+<h2 style="font-size: 18px;"><span style="color: #000000;"><strong>Q12. Explain value expression and method expressions?</strong></span></h2>
+<p><span style="color: #000000;"><strong>Ans:</strong> Value expressions usually fetch a value or set a value. These expressions can be further categorized into rvalue and lvalue expressions. lvalue expressions can both read and write data whereas rvalue expressions can only read data.</span><br><span style="color: #000000;">A method expression allows user to invoke a public method of the bean that returns the result necessary for validating the data component and handling events.</span></p>
+<h2 style="font-size: 18px;"><span style="color: #000000;"><strong>Q13. What are the different types of validations in JSF?</strong></span></h2>
+<p><span style="color: #000000;"><strong>Ans:</strong> There are two types of validations namely;</span></p>
+<ol>
+<li><span style="color: #000000;"><strong>Declarative Validations</strong>: The validations that are fired using JSF standard validators or Bean validators fall under declarative type.</span></li>
+<li><span style="color: #000000;"><strong>Imperative validation</strong>: The standard validation messages would not be sufficient in all the cases and sometimes may require complex validations that are declared by the user overriding the standard validations and these are called Imperative validations.</span></li>
+</ol>
+
+<p>&nbsp;</p>
+<h2 style="font-size: 18px;"><span style="color: #000000;"><strong>Q14. What are different types of expressions supported by JSF EL?</strong></span></h2>
+<p><span style="color: #000000;"><strong>Ans:</strong> JSF Expression Language supports following types of expressions.</span></p>
+<ol>
+<li><span style="color: #000000;">Immediate value expressions</span></li>
+<li><span style="color: #000000;">Deferred value expressions</span></li>
+<li><span style="color: #000000;">Value expression and method expression</span></li>
+</ol>
+<h2 style="font-size: 18px;"><span style="color: #000000;"><strong>Q15. What is an event?</strong></span></h2>
+<p><span style="color: #000000;"><strong>Ans:</strong> An event is defined as a signal triggered based upon the user actions such as click of button, hyperlink, changing the input value etc. JSF tells the component to invoke the appropriate listener class that process the event generated by the user.</span></p>
+<h2 style="font-size: 18px;"><span style="color: #000000;"><strong>Q16. How can we obtain the generated event?</strong></span></h2>
+<p><span style="color: #000000;"><strong>Ans:</strong> The generated event can be obtained by calling event.getComponent as</span><br><span style="color: #000000;"><span class="typ">UIComponent</span><span class="pln"> ui </span><span class="pun">=</span> <span class="kwd">new</span> <span class="typ">UIComponent</span><span class="pun">();</span> <span class="typ">MyFacesEvent</span><span class="pln"> ev1 </span><span class="pun">=</span> <span class="kwd">new</span> <span class="typ">MyFacesEvent</span><span class="pun">(</span><span class="pln">ui</span><span class="pun">);</span> <span class="typ">UIComponent</span><span class="pln"> sc1 </span><span class="pun">=</span><span class="pln"> ev1</span><span class="pun">.</span><span class="pln">getComponent</span><span class="pun">();</span></span></p>
+<h2 style="font-size: 18px;"><span style="color: #000000;"><strong>Q17. What are the different types of JSF events?</strong></span></h2>
+<p><span style="color: #000000;"><strong>Ans:</strong> There are three types of JSF events namely</span></p>
+<ol>
+<li><span style="color: #000000;"><strong>Action Events</strong>: Action events are the events that are generated for the ui components like command button or command hyperlink.</span></li>
+<li><span style="color: #000000;"><strong>Value Change Events</strong>: Value change events refers to the UI components textfield, radio button, list box etc. The value change event will get fired as soon as the value is changed in the UI component.</span></li>
+<li><span style="color: #000000;"><strong>Phase Events</strong>: This type of event involves the events to be fired in one of the six phases of JSF lifecycle either during start or towards the end of each phase.</span></li>
+</ol>
+<h2 style="font-size: 18px;"><span style="color: #000000;"><strong>Q18. What is a listener class?</strong></span></h2>
+<p><span style="color: #000000;"><strong>Ans:</strong> A class which is associated with an event is called a listener class. For example, if the event is a valueChange event then the corresponding listener class&nbsp;<code>ValueChangeListener</code>&nbsp;is associated with it.</span></p>
+<h2 style="font-size: 18px;"><span style="color: #000000;"><strong>Q19. What is the significance of facelets tag?</strong></span></h2>
+<p><span style="color: #000000;"><strong>Ans:</strong> JSF provides a special set of tags that gives the flexibility to manage common tags/parts in one place for more than one application. These tags allow us to create a common layout that can be used across applications. You can include facelets tags using below code;</span><br><span style="color: #000000;"><span class="tag">&lt;html</span> <span class="atn">xmlns</span><span class="pun">=</span><span class="atv">"http://www.w3.org/1999/xhtml"</span> <span class="atn">xmlns:ui</span><span class="pun">=</span><span class="atv">"http://java.sun.com/jsf/facelets"</span> <span class="tag">&gt;</span></span></p>
+<h2 style="font-size: 18px;"><span style="color: #000000;"><strong>Q20 . Explain @ViewScoped, @SessionScoped, @CustomScoped and @RequestScoped annotations?</strong></span></h2>
+<p><span style="color: #000000;"><strong>Ans:</strong></span></p>
+<p><span style="color: #000000;"><strong> @ViewScoped</strong>: annotation indicates that the bean is alive as long as the user interacts with the same JSF view page in the browser.</span><br><span style="color: #000000;"><strong>@SessionScoped</strong>: annotation indicates that the bean is valid as long as the HTTP session is alive.</span><br><span style="color: #000000;"><strong>@CustomScoped</strong>: annotation indicates that the bean lives as long as the bean’s entry in the custom Map which is created for this scope lives.</span><br><span style="color: #000000;"><strong>@RequestScoped</strong>: annotation indicates that the Bean lives as long as the HTTP request-response lives.</span></p>
+<h2 style="font-size: 18px;"><span style="color: #000000;"><strong>Q21. Mention some of the attributes of &lt;h:form&gt; tag?</strong></span></h2>
+<p><span style="color: #000000;"><strong>Ans:</strong> The important h:form tag attributes are;</span></p>
+<ul>
+<li><span style="color: #000000;">id: This is the unique identifier used to identify a component.</span></li>
+<li><span style="color: #000000;">title: A title for an element of the form used as tooltip.</span></li>
+<li><span style="color: #000000;">onclick: invokes the javascript function to be called when a button is clicked next to an element.</span></li>
+<li><span style="color: #000000;">onsubmit: invokes javascript function to be called on click of form by a submit button.</span></li>
+<li><span style="color: #000000;">onreset: Javascript to be invoked on the reset of the elements in a form.</span></li>
+<li><span style="color: #000000;">ondblclick: Javascript code to be executed when the mouse is double clicked over a field in a form.</span></li>
+<li><span style="color: #000000;">onmouseup: Javascript code to be executed when the mouse button is released over a component.</span></li>
+<li><span style="color: #000000;">onmousedown: Javascript code to be executed when the mouse pointer is clicked down over this element.</span></li>
+<li><span style="color: #000000;">binding: value of the expression linked to a property in a backing bean.</span></li>
+<li><span style="color: #000000;">target: Name of the frame where the resource retrieved is to be displayed.</span></li>
+<li><span style="color: #000000;">accept: the contents list that the form can handle.</span></li>
+<li><span style="color: #000000;">acceptCharSet: defines the list of character encoding that the form will accept.</span></li>
+<li><span style="color: #000000;">style: The CSS style definitions that can be applied for the form</span></li>
+<li><span style="color: #000000;">prependId: flag that indicates whether id should be prepended to the form</span></li>
+<li><span style="color: #000000;">dir: Overrides default text functionality for this component.</span></li>
+</ul>
+<h2 style="font-size: 18px;"><span style="color: #000000;"><strong>Q22. What are the command component tags used for action and navigation?</strong></span></h2>
+<p><span style="color: #000000;"><strong>Ans:</strong> The command component tags for performing action and navigation are</span></p>
+<ol>
+<li><span style="color: #000000;">&lt;h:commandButton&gt; tag – The h:commandButton tag renders a button to submit a form thereby paving a way for processing the data entered by the user.</span></li>
+<li><span style="color: #000000;">&lt;h:commandLink&gt; tag – The commandLink provides an hyperlink equivalent to anchor tag in HTML that acts like a submit button and can be associated with the backing beans or action class for event handling.</span></li>
+</ol>
+<h2 style="font-size: 18px;"><span style="color: #000000;"><strong>Q23. What are Data Bound table components?</strong></span></h2>
+<p><span style="color: #000000;"><strong>Ans:</strong> The components that are responsible for displaying the relational data in a tabular format are called data bound table components. The &lt;h:dataTable&gt; tag is used for displaying the data components. The &lt;h:column&gt; tag iterates over each record in the data source displayed in rows.</span><br><span style="color: #000000;">Some of the attributes of the h:dataTable tag are;</span></p>
+<ul>
+<li><span style="color: #000000;">bgcolor: background color for the table that is displayed.</span></li>
+<li><span style="color: #000000;">border: width in pixel to be drawn around the table.</span></li>
+<li><span style="color: #000000;">cellpadding: Space between border of each cell and its contents.</span></li>
+<li><span style="color: #000000;">cellspacing: Space between left side of the table and leftmost column and also amount of space between the cells.</span></li>
+<li><span style="color: #000000;">columnClasses: List of css styles separated by comma to be applied to the columns of this table.</span></li>
+<li><span style="color: #000000;">bodyrows: List of row indices separated by comma to be applied for the “tbody” element should be started.</span></li>
+</ul>
+<h2 style="font-size: 18px;"><span style="color: #000000;"><strong>Q24. Mention some of the validator tags used in JSF?f:validateLength: Validates length of a string</strong></span></h2>
+<p><span style="color: #000000;"><strong>Ans: </strong></span></p>
+<ul>
+<li><span style="color: #000000;">f:validateLongRange: Validates range of numeric value</span></li>
+<li><span style="color: #000000;">f:validateDoubleRange: Validates range of float value</span></li>
+<li><span style="color: #000000;">f:validateRegex: Validate JSF component with a given regular expression</span></li>
+</ul>
+<h2 style="font-size: 18px;"><span style="color: #000000;"><strong>Q25. What are the benefits of using JSF Framework?</strong></span></h2>
+<p><span style="color: #000000;"><strong>Ans:</strong> Some of the benefits of using JSF framework are;</span></p>
+<ul>
+<li><span style="color: #000000;">Clean separation between presentation and business logic.</span></li>
+<li><span style="color: #000000;">Manages UI state across multiple server requests.</span></li>
+<li><span style="color: #000000;">Implementation of custom components.</span></li>
+<li><span style="color: #000000;">Easier flow of data between the components.</span></li>
+<li><span style="color: #000000;">JSF specs that helps custom implementations such as PrimeFaces</span></li>
+</ul>
+<h2 style="font-size: 18px;"><span style="color: #000000;"><strong>Q26. Explain different ways of declaring a managed bean in JSF?</strong></span></h2>
+<p><span style="color: #000000;"><strong>Ans: </strong></span></p>
+<ol>
+<li><span style="color: #000000;">Use&nbsp;<code>@ManagedBean</code>&nbsp;annotation in the java class indicating that the class is a managed bean as;</span><br><span style="color: #000000;"><span class="lit">@ManagedBean</span><span class="pun">(</span><span class="pln">name</span><span class="pun">=</span><span class="str">"Greetings"</span><span class="pun">,</span><span class="pln"> eager</span><span class="pun">=</span><span class="str">"true"</span><span class="pun">)</span>If the name attribute is not specified the name is defaulted to the class name as java naming standards. For example class Car will be named “car” and CarDetails will be named “carDetails”.</span></li>
+<li><span style="color: #000000;">Declare the managed bean in faces-config.xml file as;</span><br><span style="color: #000000;"><span class="tag">&lt;managed-bean&gt;</span> <span class="tag">&lt;managed-bean-name&gt;</span><span class="pln">Greetings</span><span class="tag">&lt;/managed-bean-name&gt;</span> <span class="tag">&lt;managed-bean-class&gt;</span><span class="pln">com.Greetings.Greetings</span><span class="tag">&lt;/managed-bean-class&gt;</span> <span class="tag">&lt;managed-bean-scope&gt;</span><span class="pln">request</span><span class="tag">&lt;/managed-bean-scope&gt;</span> <span class="tag">&lt;/managed-bean&gt;</span></span></li>
+</ol>
+<h2 style="font-size: 18px;"><span style="color: #000000;"><strong>Q27. What is the significance of name and eager attributes in managed bean?</strong></span></h2>
+<p><span style="color: #000000;"><strong>Ans: </strong></span></p>
+<p><span style="color: #000000;"><strong>name</strong>: The name attribute indicates the managed bean with the name specified. If the name is not specified then the bean name is same as the class name.</span><br><span style="color: #000000;"><strong>eager</strong>: If eager is set to “true” then managed bean is created before it is requested for the first time and if set to false the bean is created when it is requested.</span></p>
+<h2 style="font-size: 18px;"><span style="color: #000000;"><strong>Q28. What is a backing bean?</strong></span></h2>
+<p><span style="color: #000000;"><strong>Ans:</strong> A JavaServer Faces application includes one or more backing beans, each of which is a type of managed bean that can be associated with the components used in a particular page.</span></p>
+<h2 style="font-size: 18px;"><span style="color: #000000;"><strong>Q29. List the benefits of Expression Language?</strong></span></h2>
+<p><span style="color: #000000;"><strong>Ans: </strong></span></p>
+<ul>
+<li><span style="color: #000000;">Arithmetic, logical, relational operations can be used in expression language.</span></li>
+<li><span style="color: #000000;">Automatic type conversion.</span></li>
+<li><span style="color: #000000;">Shows missing values as empty strings instead of NullPointerException.</span></li>
+<li><span style="color: #000000;">Provides easy access to predefined objects such as request.</span></li>
+</ul>
+<h2 style="font-size: 18px;"><span style="color: #000000;"><strong>Q30. What are different implementations of JSF API?</strong></span></h2>
+<p><span style="color: #000000;"><strong>Ans: </strong></span></p>
+<ul>
+<li><span style="color: #000000;">ADF Faces: Oracle’s implementation for the JSF standard.</span></li>
+<li><span style="color: #000000;">Reference Implementation (RI): by Sun Microsystems.</span></li>
+<li><span style="color: #000000;">Apache MyFaces: open source JavaServer Faces (JSF) implementation.</span></li>
+<li><span style="color: #000000;">Primefaces: JSF components with Ajax framework.</span></li>
+</ul>
+<h2 style="font-size: 18px;"><span style="color: #000000;"><strong>Q31. Mention some of the functions that the backing bean method performs?</strong></span></h2>
+<p><span style="color: #000000;"><strong>Ans: </strong></span></p>
+<ul>
+<li><span style="color: #000000;">Validating a component’s data</span></li>
+<li><span style="color: #000000;">Handling an event fired by a component</span></li>
+<li><span style="color: #000000;">Performs processing to determine the next page to which the application must navigate</span></li>
+</ul>
+<h2 style="font-size: 18px;"><span style="color: #000000;"><strong>Q32. What are standard JSF tag libraries?</strong></span></h2>
+<p><span style="color: #000000;"><strong>Ans: </strong></span></p>
+<ul>
+<li><span style="color: #000000;">JSF Core Tags library</span></li>
+<li><span style="color: #000000;">JSF HTML tags library</span></li>
+</ul>
+<p><span style="color: #000000;">Use below namespace configurations to use them in JSF xhtml pages.</span></p>
+<p><span style="color: #000000;"><span class="tag">&lt;html</span> <span class="atn">xmlns</span><span class="pun">=</span><span class="atv">"http://www.w3.org/1999/xhtml"</span> <span class="atn">xmlns:h</span><span class="pun">=</span><span class="atv">"http://java.sun.com/jsf/html"</span> <span class="atn">xmlns:ui</span><span class="pun">=</span><span class="atv">"http://java.sun.com/jsf/facelets"</span> <span class="atn">xmlns:c</span><span class="pun">=</span><span class="atv">"http://java.sun.com/jsf/core"</span><span class="tag">&gt;</span></span><br><span style="color: #000000;">The html tags can now be used as with the h prefix as &lt;h:head&gt;,&lt;h:form&gt; etc and core tags with c prefix as &lt;c:validateBean&gt;,&lt;c:validator&gt; etc.</span></p>
+<h2 style="font-size: 18px;"><span style="color: #000000;"><strong>Q33. What are different JSF Converter tags?</strong></span></h2>
+<p><span style="color: #000000;"><strong>Ans: </strong></span></p>
+<ul>
+<li><span style="color: #000000;">f:convertNumber: tag is used to convert a string value to a number of required format.</span></li>
+<li><span style="color: #000000;">f:convertDateTime: tag is used to convert a string value to a date of required format.</span></li>
+<li><span style="color: #000000;">CustomConverter: allows user to define their own convertor in JSF.</span></li>
+</ul>
+<h2 style="font-size: 18px;"><span style="color: #000000;"><strong>Q34. How different components are rendered in JSF page?</strong></span></h2>
+<p><span style="color: #000000;"><strong>Ans:</strong> </span><span style="color: #000000;">JSF components are rendered in the xhtml pages by the tag libraries included, such as JSF core, html and facelets tag libraries.</span></p></span>
+
+        </div>
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

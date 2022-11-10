@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Java Interview Q&A</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Sailor - v4.9.1
+  * Template URL: https://bootstrapmade.com/sailor-free-bootstrap-theme/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center">
+      <h1 class="logo me-auto"><a href="index.html">Java Interview Q&A</a></h1>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+
+          <li class="dropdown"><a href="java.html"><span>Java</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="java-oops.html">Oops</a></li>
+              <li><a href="java-multithreading.html">Multithreading</a></li>
+              <li><a href="java-exception.html">Exception handling</a></li>
+
+              <li class="dropdown"><a href="java-collection.html"><span>Collection framework</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="java-collection.html">Map</a></li>
+                  <li><a href="java-collection.html">List</a></li>
+                  <li><a href="java-collection.html">Queue</a></li>
+                </ul>
+              </li>
+              <li><a href="jdk8.html">JDK8 features</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>Framework</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="spring.html">Spring</a></li>
+              <li><a href="hibernate.html">Hibernate</a></li>
+              <li><a href="springboot.html">SpringBoot</a></li>
+              <li><a href="jsf.html">JSF</a></li>
+              <li><a href="struts.html">Struts</a></li>
+              <li class="dropdown"><a href="#"><span>Entity Framework</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="jpa.html">JPA</a></li>
+                  <li><a href="hibernate.html">Hibernate</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          
+          <li class="dropdown"><a href="cloud.html"><span>Cloud</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">AWS</a></li>
+              <li><a href="#">GCP</a></li>
+              <li><a href="#">Azure</a></li>
+              <li><a href="#">IBM Cloud</a></li>
+              <li><a href="#">Docker</a></li>
+              <li><a href="#">Kubernetes</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>UI</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Angular</a></li>
+              <li><a href="#">ReactJS</a></li>
+              <li><a href="#">Javascript</a></li>
+              <li><a href="#">css</a></li>
+              <li><a href="#">html</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>Other</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Company wise</a></li>
+              <li><a href="#">Design pattern</a></li>
+              <li><a href="#">Microservices</a></li>
+              <li><a href="#">Data Structure</a></li>
+              <li><a href="#">Architect</a></li>
+            </ul>
+          </li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+  </header>
+
+  </br>
+  <main id="main">
+
+    <section id="about" class="about">
+      <div class="container">
+        <div class="row-content">
+
+         
+<p style="text-align: justify;"><strong>1. What is Tight Coupling?</strong></p>
+<p style="text-align: justify;">When a class (ClassA) is dependent on another class’s object (ClassB), then we say ClassA is "tightly" Coupled with ClassB. Spring helps us to create classes in a way that Tight Coupling can be removed and Loose Coupling can be done.</p>
+<p style="text-align: justify;"><strong>2. What is a Loose Coupling?</strong></p>
+<p style="text-align: justify;">Loose Coupling removes the dependency of an object (ClassB) on a class (ClassA). Loose Coupling is approached by creating an interface and a setter &amp; getter method, or by using a constructor which takes the interface object.</p>
+<p style="text-align: justify;"><strong>3. What are Beans in Spring?</strong></p>
+<p style="text-align: justify;">When a class is annotated or decorated using the @Component, such a class is called a Bean in Spring. Beans are maintained by Application Context.</p>
+<div class="g-brd-around--dashed g-brd-gray-light-v3 g-line-height-2 g-rounded-3 g-pa-20 g-my-40" style="text-align: justify;">
+
+<p class="mb-0" style="text-align: center;">&nbsp;</p>
+</div>
+<p style="text-align: justify;"><strong>4. Explain the Bean creation process?</strong></p>
+<p style="text-align: justify;">The process of Bean creation has the following phases</p>
+<p style="text-align: justify;">(i) Starts with a class (c1) which has the annotation @Component.</p>
+<p style="text-align: justify;">(ii) Checks if the component annotated class (c1) is dependent.</p>
+<p style="text-align: justify;">(iii) If yes, then Spring will create a bean for that class (c2) too.</p>
+<p style="text-align: justify;">(iv) A connection or autowiring will occur between the two classes (c1 and c2) using @Autowired annotation and also through the constructor (c2) or the default case setClass Function (interface the Interface).</p>
+<p style="text-align: justify;"><strong>5. What is the importance of the annotation @Primary</strong></p>
+<p style="text-align: justify;">This annotation is used on a class that needs to be taken by spring on a primary basis. For instance, if ClassX is @Component annotated and is dependent on both Class1 and Class2 (both @Component annotated) then the compiler would report an error. To show the primary class between Class1 and Class2 we use @Primary.</p>
+<p style="text-align: justify;"><strong>6. What is Dependency Injection?</strong></p>
+<p style="text-align: justify;">Dependency Injection is where Spring searches for beans; once the appropriate bean is found, it autowires the bean to the dependent class. Dependency Injection is the process where the Spring framework looks for the beans and identifies the dependencies, creates the instances of beans and auto wires them.</p>
+<p style="text-align: justify;"><strong>7. Explain Inversion of Control (IOC).</strong></p>
+<p style="text-align: justify;">In Tight Coupling the dependent class takes the responsibility of creating its dependency. Whereas, in Loose Coupling, we use @Autowired annotation over the dependency class (or reference) and Spring takes control of creating the instance and injects the dependency.</p>
+<p style="text-align: justify;"><strong>8. What are the roles of an IOC (Inversion of Control) Container?</strong></p>
+<p style="text-align: justify;">IOC Container does the following things-</p>
+<p style="text-align: justify;">&nbsp;(i) Find Beans</p>
+<p style="text-align: justify;">(ii) Identify their dependencies and wire the dependencies</p>
+<p style="text-align: justify;">(iii) Manage Lifecycle of the Bean (creation, processing, and destruction)</p>
+<div class="g-brd-around--dashed g-brd-gray-light-v3 g-line-height-2 g-rounded-3 g-pa-20 g-my-40" style="text-align: justify;">
+
+<p class="mb-0" style="text-align: center;">&nbsp;</p>
+</div>
+<p style="text-align: justify;"><strong>9. What is Application Context?</strong></p>
+<p style="text-align: justify;">It is an advanced version of the IOC Container. It provides all the functionalities of Bean Factory and also provides things like AOP, Internationalization capabilities, and web application context (request, session, etc).</p>
+<p style="text-align: justify;"><strong>10. Explain the process of creating an ApplicationContext in Spring.</strong></p>
+<p style="text-align: justify;">The ApplicationContext can be defined in two ways (i) using XML, (ii) using @Configuration. Once the configuration is done in any of the ways defined above, the ApplicationContext is created using the new ClassPathXmlApplicationContext. The ClassPathXmlApplicationContext looks for the XML files; using this is one of the two ways. The other way is to use AnnotationConfigApplicationContext.</p>
+<p style="text-align: justify;"><strong>11. Explain Component Scan.</strong></p>
+<p style="text-align: justify;">Component Scan is one method of asking Spring to detect Spring-managed components, the input for this search is the packages. Two methods are available to define a Component Scan-</p>
+<p style="text-align: justify;">(i) Java Configuration, wherein we use the @Component annotation to which we specify all the packages for which Spring does the search.</p>
+<p style="text-align: justify;">(ii) XML Configuration- we use &lt;context:component-scan base-package=”com.demo.compscanex”/&gt;</p>
+<p style="text-align: justify;"><strong>12. How do you perform the same (above question) in Spring Boot?</strong></p>
+<p style="text-align: justify;">In Spring Boot the annotation used to perform the scan is @SpringBootApplication. This annotation on a class would automatically initiate the component scan on the package where they are in.</p>
+<p style="text-align: justify;"><strong>13. Differentiate @Component, @Repository and @Service and @Controller?</strong></p>
+<p style="text-align: justify;">Typically a web application is developed in layers like the controller (which is the initial point of client communication), business (where the actual code or logic of the application is written) and DAO (where the database connections and interaction happens). In such an architecture web application, @Component can be used in any of the layers. Whereas, the @Controller is used in the controller/web layer. @Service is used in the business layer and @Repository is used in the DAO layer.</p>
+<p style="text-align: justify;"><strong>14. List out the different scopes of Bean.</strong></p>
+<p style="text-align: justify;">(i) Singleton: throughout the spring context only one instance is created.</p>
+<p style="text-align: justify;">(ii) Prototype: a new bean is created whenever requested.</p>
+<p style="text-align: justify;">(iii) Request: Every HTTP Request creates a bean.</p>
+<p style="text-align: justify;">(iv) Session: A bean for every HTTP Session.</p>
+<p style="text-align: justify;"><strong>15. List out the types of Dependency Injection.</strong></p>
+<p style="text-align: justify;">The types of Dependency Injection-</p>
+<p style="text-align: justify;">(i) Setter Injection and (ii) Constructor Injection.</p>
+<p style="text-align: justify;"><strong>16. What is the difference between the Configuration types XML and Annotation?</strong></p>
+<p style="text-align: justify;">These are the two ways of setting up the configuration, and they perform in the say way. Though, when the annotation approach is taken very less amount of code is written and the result would be the same as compared to the XML approach.</p>
+<p style="text-align: justify;"><strong>17. List out the ways Autowiring is done.</strong></p>
+<p style="text-align: justify;">(i) byType<br>(ii) byName<br>(iii) Constructor (same as byType, but through constructor)</p>
+<div class="g-brd-around--dashed g-brd-gray-light-v3 g-line-height-2 g-rounded-3 g-pa-20 g-my-40" style="text-align: justify;">
+
+<p class="mb-0" style="text-align: center;">&nbsp;</p>
+</div>
+<p style="text-align: justify;"><strong>18. What is Dirty Read?</strong></p>
+<p style="text-align: justify;">When a transaction (t1) is meant to read the changes that are performed by another transaction (t2) and provided transaction t2 is not committed yet; then in such a situation, the transaction t1 is called Dirty Read transaction.</p>
+<p style="text-align: justify;"><strong>19. List out the new features available in Spring Framework 4.0 and Spring Framework 5.0?</strong></p>
+<p style="text-align: justify;">Spring 4.0 is the first to support Java features. Spring 5.0 has the support for Reactive Programming and Kotlin.</p>
+<p style="text-align: justify;"><strong>20. What is a FrontController?</strong></p>
+<p style="text-align: justify;">In FrontController, the Servlet will not get the first request; the first request would go to FrontController and the request is passed on to the right servlet. In other words, DispatcherServlet is the front controller which intercepts all the requests from the client and then dispatches to appropriate controllers.</p>
+<p style="text-align: justify;"><strong>21. What is a ViewResolver?</strong></p>
+<p style="text-align: justify;">ViewResolver enables a web application to select its view (such as JSP) dynamically. ViewResolver gets a name which is appended by /WEB-INF/views and a .jsp. All the display on the content is done in an HTML page.</p>
+<p style="text-align: justify;"><strong>22. List out all the concepts that are available in the MVC Architecture?</strong></p>
+<p style="text-align: justify;">(i) &nbsp;The browser sends a request to DispatcherServlet</p>
+<p style="text-align: justify;">(ii) DispatcherServlet knows the HanderMapping and can find the appropriate controllers</p>
+<p style="text-align: justify;">(iii) Controllers execute the request and put the data in the model and return back the view name to the DispatcherServlet.</p>
+<p style="text-align: justify;">(iv) DispatcherServlet uses the view name and ViewResolver to map to the view.</p>
+<p style="text-align: justify;"><strong>23. Explain Model Attribute?</strong></p>
+<p style="text-align: justify;">The annotation @ModelAttribute is decorated on a method typically present inside a Controller. This will help the method to be available in all other methods available in the controller.</p>
+<p style="text-align: justify;"><strong>24. What is a Session Attribute?</strong></p>
+<p style="text-align: justify;">The annotation @SessionAttributes (“argument”) is decorated on class (Controller). The attribute (argument) that is present in Model is available in the session.</p>
+<div class="g-brd-around--dashed g-brd-gray-light-v3 g-line-height-2 g-rounded-3 g-pa-20 g-my-40" style="text-align: justify;">
+
+<p class="mb-0" style="text-align: center;">&nbsp;</p>
+</div>
+<p style="text-align: justify;"><strong>25. Explain the @InitBinder?</strong></p>
+<p style="text-align: justify;">This annotation is decorated on a method in which a date format is declared, and throughout the class, the defined date format is used. Whenever the binding happens with a date field @InitBinder; annotation says to use the CustomDateEditor, which in return uses the date format mentioned in @InitBinder.</p>
+<p style="text-align: justify;"><strong>26. Define @ControllerAdvice?</strong></p>
+<p style="text-align: justify;">This annotation is used when logic needs to be implemented commonly in multiple classes (Controllers). For instance, if an Exception or its subclasses, or when an exception is raised in the classes, it will be handled by a method annotated with @ExceptionHandler. Whenever an exception occurs in any of the controllers, the exception is handled by the method annotated with @ExceptionHandler.</p>
+<p style="text-align: justify;"><strong>27. Why Spring Boot?</strong></p>
+<p style="text-align: justify;">Spring-based applications have a lot of configuration (boiler-plate code). In Spring MVC, a lot of configuration is required (like component scan, dispatcher servlet, view resolver, etc). Whereas, in Spring Boot the boiler-plate code is not required.</p>
+<p style="text-align: justify;"><strong>28. Spring vs Spring MVC vs Spring Boot?</strong></p>
+<p style="text-align: justify;">Spring: the most important feature of Spring is Dependency Injection or Inversion of Control.</p>
+<p style="text-align: justify;">Spring MVC: provides a decoupled approach in developing web applications. Concepts like DispatcherServlet, ModelAndView, ViewResolver makes web application development easy.</p>
+<p style="text-align: justify;">Spring Boot: makes the configuration very easy and automatic using a feature called Auto Configuration, in which the DispatcherServlet is done by Spring internally.</p>
+<p style="text-align: justify;"><strong>29. What is the role of @SpringBootApplication?</strong></p>
+<p style="text-align: justify;">This annotation is used to launch up the entire application. Internally, @SpringBootApplication does the following,</p>
+<p style="text-align: justify;">@SpringBootConfiguration: same as @Configuration in a Spring Application.</p>
+<p style="text-align: justify;">@EnableAutoConfiguration: auto-configures the classes available in the classpath.</p>
+<p style="text-align: justify;">@ComponentScan: all the classes available under a package will be scanned when this annotation is applied.</p>
+<p style="text-align: justify;"><strong>30. What does an Embedded Server mean in Spring Boot?</strong></p>
+<p style="text-align: justify;">To deploy any web application a server like Tomcat is required. In Spring Boot a server (like Tomcat) is available as part of the application in a jar. The concept of Embedded Server makes the deployment of application very easy and independent.</p>
+<p style="text-align: justify;"><strong>31. Why do we use application.properties?</strong></p>
+<p style="text-align: justify;">The file application.properties is used to configure things like database details, log generation, security (username/password), serialization, etc.</p>
+<p style="text-align: justify;"><strong>32. What is Spring JDBC?</strong></p>
+<p style="text-align: justify;">Spring JDBC uses methods like update (query), execute (query) and query (<a href="https://www.greycampus.com/blog/programming/six-ways-sql-and-nosql-databases-offer" target="_blank" rel="noopener">SQL</a>, resultSetExtractor) to interact with the database.</p>
+<p style="text-align: justify;"><strong>33. What is the difference between JDBC and Spring JDBC?</strong></p>
+<p style="text-align: justify;">In JDBC, the checked exceptions need to be written; whereas, in Spring JDBC those exceptions are made into Runtime Exceptions. Which means, exception handling is not manually done in Spring JDBC.</p>
+<p style="text-align: justify;"><strong>34. What is JPA?</strong></p>
+<p style="text-align: justify;">Java Persistence API (JPA) defines the mapping from Java Object to a Database Table. The procedure to map a Java object to a row in a database table is defined in JPA. JPA provides a lot of useful annotations, using which the relationship between classes and tables are defined.</p>
+<p style="text-align: justify;"><strong>35. What is Hibernate?</strong><br>Once the mapping is done, Hibernate (a JPA Implementation) will help us create query under the hood and interact with the database.</p>
+<p style="text-align: justify;"><strong>36. Describe the cases in which the Dependency Injection is done through Constructors and Setters?</strong></p>
+<p style="text-align: justify;">When the dependencies are required/mandatory, the Constructor approach is selected. And when the dependencies are optional, then the Setters approach is used.</p>
+<div class="g-brd-around--dashed g-brd-gray-light-v3 g-line-height-2 g-rounded-3 g-pa-20 g-my-40" style="text-align: justify;">
+
+<p class="mb-0" style="text-align: center;">&nbsp;</p>
+</div>
+<p style="text-align: justify;"><strong>37. What is the importance of POM.XML file?</strong></p>
+<p style="text-align: justify;">Project Object Model (POM) is an XML formatted file in which all the configuration for a maven project is defined. The most commonly used tags in POM.XML are &lt;groupid&gt;, &lt;artifactId&gt;, &lt;version&gt;, &lt;packaging&gt; and a few more.</p>
+<p style="text-align: justify;"><strong>38. What does the @RequestParam annotation do?</strong></p>
+<p style="text-align: justify;">This allows the server side to read from data and automatically bind it to a parameter coming into the method.</p>
+<p style="text-align: justify;"><strong>39. What is Spring Security?</strong></p>
+<p style="text-align: justify;">Spring Security provides security services to J2EE applications. Spring Security is implemented using Servlet Filters under the hood. Servlet Filters are used to pre-process or post-process web requests.</p>
+<p style="text-align: justify;"><strong>40. What is CSRF?</strong></p>
+<p style="text-align: justify;">Cross-Site Request Forgery (CSRF) is a security attack where a fraudulent website tricks the user into performing an event on the web application that he/she is logged into. For instance, if the user is logged into the online banking account, this attack tricks the user into transferring the money to an unknown person.</p>
+
+
+        </div>
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
