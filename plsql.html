@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Java Interview Q&A</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Sailor - v4.9.1
+  * Template URL: https://bootstrapmade.com/sailor-free-bootstrap-theme/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center">
+      <h1 class="logo me-auto"><a href="index.html">Java Interview Q&A</a></h1>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+
+          <li class="dropdown"><a href="#"><span>Framework</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="spring.html">Spring</a></li>
+              <li><a href="hibernate.html">Hibernate</a></li>
+              <li><a href="springboot.html">SpringBoot</a></li>
+              <li><a href="jsf.html">JSF</a></li>
+              <li><a href="struts.html">Struts</a></li>
+              <li class="dropdown"><a href="#"><span>Entity Framework</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="jpa.html">JPA</a></li>
+                  <li><a href="hibernate.html">Hibernate</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          
+          <li class="dropdown"><a href="database.html"><span>Database</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="sql.html">SQL</a></li>
+              <li><a href="plsql.html">PL-SQL</a></li>
+              <li class="dropdown"><a href="nosql.html"><span>NoSQL</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">Apache Cassandra</a></li>
+                  <li><a href="#">MongoDB</a></li>
+                  <li><a href="#">Redis</a></li>
+                  <li><a href="#">ArangoDB</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="cloud.html"><span>Cloud</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">AWS</a></li>
+              <li><a href="#">GCP</a></li>
+              <li><a href="#">Azure</a></li>
+              <li><a href="#">IBM Cloud</a></li>
+              <li><a href="#">Docker</a></li>
+              <li><a href="#">Kubernetes</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>UI</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Angular</a></li>
+              <li><a href="#">ReactJS</a></li>
+              <li><a href="#">Javascript</a></li>
+              <li><a href="#">css</a></li>
+              <li><a href="#">html</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>Other</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Company wise</a></li>
+              <li><a href="#">Design pattern</a></li>
+              <li><a href="#">Microservices</a></li>
+              <li><a href="#">Data Structure</a></li>
+              <li><a href="#">Architect</a></li>
+            </ul>
+          </li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+  </header>
+
+</br>
+  <main id="main">
+
+    <section id="about" class="about">
+      <div class="container">
+        <div class="row-content"> 
+          
+
+          
+          <article>
+            <p>PL/SQL stands for Procedural Language extensions to SQL (<a href="https://www.interviewbit.com/sql-interview-questions/" target="_blank" rel="noopener noreferrer">Structured Query Language</a>). It was created by Oracle in order to overcome the disadvantages of SQL for easier building and handling of critical applications in a comprehensive manner.<br>Following are the disadvantages of SQL:</p><ul>
+<li>There is no provision of decision-making, looping, and branching in <a href="https://www.scaler.com/topics/sql/" target="_blank" rel="noopener noreferrer nofollow"><strong>SQL</strong></a>.</li>
+<li>Since the SQL statements get passed to the Oracle engine all at the same time, the speed of execution decreases due to the nature of increased traffic.</li>
+<li>There is no feature of error checking while manipulating the data.</li>
+</ul><p>PL/SQL was introduced to overcome the above disadvantages by retaining the power of SQL and combining it with the procedural statements. It is developed as a block-structured language and the statements of the block are passed to the oracle engine which helps to increase the speed of processing due to the decrease in traffic.</p>
+          </article>
+        
+<div class="ibpage__ibanner">
+  <div class="ibpage__ibanner-top">
+    <div class="ibpage__ibanner-content">
+      <div class="ibpage__ibanner-header" style="font-size: 1.8rem">
+        Crack your next tech interview with confidence!
+      </div>
+      <div class="ibpage__ibanner-subheader">
+        Take a free mock interview, get instant⚡️ feedback and recommendation💡
+      </div>
+    </div>
+    <div class="ibpage__ibanner-action">
+      <div class="inline-banner__moco-general-test" data-gtm-sub-product="moco_banners" data-gtm-section="inline-ribbon">
+    <div data-slug="free-mock-coding-interview" data-title="SDE Interview" data-gtm-allowed-actions="click" data-gtm-type="cta" data-gtm-element="Attempt Now" onclick="window.trackGaEvent(
+        'inline_nudge',
+        'Inline_MOCO_Ribbon_Click',
+        '/pl-sql-interview-questions/'
+      )" class="register-now--general-landing moco-cta ibpage__ibanner-action-btn">
+      Attempt Now
+    </div>
+  </div>
+    </div>
+  </div>
+  <div class="ibpage__ibanner-sep"></div>
+  <div class="ibpage__ibanner-bottom">
+    <div class="ibpage__ibanner-companies">
+        <div class="ibpage__ibanner-company">
+          <span class="testimonial_companies half google"></span>
+        </div>
+        <div class="ibpage__ibanner-company">
+          <span class="testimonial_companies half microsoft"></span>
+        </div>
+        <div class="ibpage__ibanner-company">
+          <span class="testimonial_companies half amazon"></span>
+        </div>
+        <div class="ibpage__ibanner-company">
+          <span class="testimonial_companies half zomato"></span>
+        </div>
+        <div class="ibpage__ibanner-company">
+          <span class="testimonial_companies half visa"></span>
+        </div>
+        <div class="ibpage__ibanner-company">
+          <span class="testimonial_companies half makemytrip"></span>
+        </div>
+    </div>
+  </div>
+</div>
+
+          <div id="pl-sql-basic-questions">
+    <h2>PL/SQL Basic Interview Questions</h2>
+
+        <section class="ibpage-article-header" id="pl-sql-features">
+          <h3>1. What are the features of PL/SQL?</h3>
+          <article class="ibpage-article">
+            <p>Following are the features of PL/SQL:</p><ul>
+<li>PL/SQL provides the feature of decision making, looping, and branching by making use of its procedural nature.</li>
+<li>Multiple queries can be processed in one block by making use of a single command using PL/SQL.</li>
+<li>The PL/SQL code can be reused by applications as they can be grouped and stored in databases as PL/SQL units like functions, procedures, packages, triggers, and types.</li>
+<li>PL/SQL supports exception handling by making use of an exception handling block.</li>
+<li>Along with exception handling, PL/SQL also supports error checking and validation of data before data manipulation.</li>
+<li>Applications developed using PL/SQL are portable across computer hardware or operating system where there is an Oracle engine.</li>
+</ul>
+          </article>
+        </section>
+        <section class="ibpage-article-header" id="pl-sql-tables">
+          <h3>2. What do you understand by PL/SQL table?</h3>
+          <article class="ibpage-article">
+            <ul>
+<li>PL/SQL tables are nothing but objects of type tables that are modeled as database tables. They are a way to provide arrays that are nothing but temporary tables in memory for faster processing.</li>
+<li>These tables are useful for moving bulk data thereby simplifying the process.</li>
+</ul>
+          </article>
+        </section>
+        <section class="ibpage-article-header" id="plsql-basic-structure">
+          <h3>3. Explain the basic structure followed in PL/SQL?</h3>
+          <article class="ibpage-article">
+            <ul>
+<li>The basic structure of PL/SQL follows the BLOCK structure. Each PL/SQL code comprises SQL and PL/SQL statement that constitutes a PL/SQL block.</li>
+<li>Each PL/SQL block consists of 3 sections:<ul>
+<li>The optional Declaration Section</li>
+<li>The mandatory Execution Section</li>
+<li>The optional Exception handling Section</li>
+</ul>
+</li>
+</ul><pre><code class="language-plaintext hljs">[DECLARE]
+--declaration statements (optional)
+BEGIN
+--execution statements
+[EXCEPTION]
+--exception handling statements (optional)
+END;</code></pre>
+          </article>
+        </section>
+        
+
+        <section class="ibpage-article-header" id="pl-sql-cursor">
+          <h3>4. What is a PL/SQL cursor?</h3>
+          <article class="ibpage-article">
+            <ul>
+<li>A PL/SQL cursor is nothing but a pointer to an area of memory having SQL statements and the information of statement processing. This memory area is called a context area. This special area makes use of a special feature called cursor for the purpose of retrieving and processing more than one row.</li>
+<li>In short, the cursor selects multiple rows from the database and these selected rows are individually processed within a program.</li>
+<li>There are two types of cursors:<ul>
+<li>
+<strong>Implicit Cursor</strong>:<ul>
+<li>Oracle automatically creates a cursor while running any of the commands - SELECT INTO, INSERT, DELETE or UPDATE implicitly.</li>
+<li>The execution cycle of these cursors is internally handled by Oracle and returns the information and status of the cursor by making use of the cursor attributes- ROWCOUNT, ISOPEN, FOUND, NOTFOUND.</li>
+</ul>
+</li>
+<li>
+<strong>Explicit Cursor:</strong><ul>
+<li>This cursor is a SELECT statement that was declared explicitly in the declaration block.</li>
+<li>The programmer has to control the execution cycle of these cursors starting from OPEN to FETCH and close.</li>
+<li>The execution cycle while executing the SQL statement is defined by Oracle along with associating a cursor with it.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<strong>Explicit Cursor Execution Cycle:</strong><ul><li>Due to the flexibility of defining our own execution cycle, explicit cursors are used in many instances. The following diagram represents the execution flow of an explicit cursor:</li></ul>
+</li>
+</ul><figure class="image"><img data-src="https://s3.ap-south-1.amazonaws.com/myinterviewtrainer-domestic/public_assets/assets/000/000/260/original/Explicit_Cursor_Execution_Cycle.jpg?1617182013" class="" src="https://s3.ap-south-1.amazonaws.com/myinterviewtrainer-domestic/public_assets/assets/000/000/260/original/Explicit_Cursor_Execution_Cycle.jpg?1617182013"></figure><ul>
+<li>
+<strong>Cursor Declaration:</strong><ul>
+<li>The first step to use an explicit cursor is its declaration.</li>
+<li>Declaration can be done in a package or a block.</li>
+<li>
+<strong>Syntax:</strong> <code>CURSOR cursor_name IS query; </code>where cursor_name is the name of the cursor, the query is the query to fetch data from any table.</li>
+</ul>
+</li>
+<li>
+<strong>Open Cursor:</strong><ul>
+<li>Before the process of fetching rows from cursor, the cursor has to be opened.</li>
+<li>
+<strong>Syntax</strong> to open a cursor: <code>OPEN cursor_name;</code>
+</li>
+<li>When the cursor is opened, the query and the bind variables are parsed by Oracle and the SQL statements are executed.</li>
+<li>The execution plan is determined by Oracle and the result set is determined after associating the cursor parameters and host variables and post these, the cursor is set to point at the first row of the result set.</li>
+</ul>
+</li>
+<li>
+<strong>Fetch from cursor:</strong><ul>
+<li>FETCH statement is used to place the content of the current row into variables.</li>
+<li>
+<strong>Syntax:</strong> <code>FETCH cursor_name INTO variable_list;</code>
+</li>
+<li>In order to get all the rows of a result set, each row needs to be fetched.</li>
+</ul>
+</li>
+<li>
+<strong>Close Cursor:</strong><ul>
+<li>Once all the rows are fetched, the cursor needs to be closed using the CLOSE statement.</li>
+<li>
+<strong>Syntax</strong>: <code>CLOSE cursor_name;</code>
+</li>
+<li>The instructions tell Oracle to release the memory allocated to the cursor.<ul>
+<li>Cursors declared in procedures or anonymous blocks are by default closed post their execution.</li>
+<li>Cursors declared in packages need to be closed explicitly as the scope is global.</li>
+<li>Closing a cursor that is not opened will result in INVALID_CURSOR exception.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+          </article>
+        </section>
+        <section class="ibpage-article-header" id="where-current-of-clause">
+          <h3>5. What is the use of WHERE CURRENT OF in cursors?</h3>
+          <article class="ibpage-article">
+            <ul>
+<li>We use this clause while referencing the current row from an explicit cursor. This clause allows applying updates and deletion of the row currently under consideration without explicitly referencing the row ID.</li>
+<li>
+<strong>Syntax:</strong><br><code>UPDATE table_name SET field=new_value WHERE CURRENT OF cursor_name</code>
+</li>
+</ul>
+          </article>
+        </section>
+        <section class="ibpage-article-header" id="plsql-exception-block">
+          <h3>6. How can a name be assigned to an unnamed PL/SQL Exception Block?</h3>
+          <article class="ibpage-article">
+            <ul>
+<li>This can be done by using Pragma called <strong>EXCEPTION_INIT</strong>.</li>
+<li>This gives the flexibility to the programmer to instruct the compiler to provide custom error messages based on the business logic by overriding the pre-defined messages during the compilation time.</li>
+<li><strong>Syntax:</strong></li>
+</ul><pre><code class="language-plaintext hljs">DECLARE 
+  exception_name EXCEPTION; 
+  PRAGMA EXCEPTION_INIT (exception_name, error_code); 
+BEGIN 
+// PL/SQL Logic
+EXCEPTION
+ WHEN exception_name THEN
+    // Steps to handle exception
+END;</code></pre>
+          </article>
+        </section>
+        <section class="ibpage-article-header" id="plsql-triggers">
+          <h3>7. What is a Trigger? Name some instances when “Triggers” can be used.</h3>
+          <article class="ibpage-article">
+            <ul><li>As the name indicates, ‘<a href="https://www.scaler.com/topics/triggers-in-sql/" target="_blank" rel="noopener noreferrer nofollow"><strong>Trigger</strong></a>’ means to ‘activate’ something. In the case of PL/SQL, a trigger is a stored procedure that specifies what action has to be taken by the database when an event related to the database is performed.</li></ul><figure class="image"><img data-src="https://s3.ap-south-1.amazonaws.com/myinterviewtrainer-domestic/public_assets/assets/000/000/261/original/trigger.jpg?1617184814" class="" src="https://s3.ap-south-1.amazonaws.com/myinterviewtrainer-domestic/public_assets/assets/000/000/261/original/trigger.jpg?1617184814"></figure><ul><li><strong>Syntax:</strong></li></ul><pre><code class="language-plaintext hljs">TRIGGER trigger_name
+ trigger_event
+ [ restrictions ]
+BEGIN
+ actions_of_trigger;
+END;</code></pre><p>In the above syntax, if the <code>trigger_name</code> the trigger is in the enabled state, the <code>trigger_event</code> causes the database to fire <code>actions_of_trigger</code> if the <code>restrictions</code> are TRUE or unavailable.</p><ul>
+<li>They are mainly used in the following scenarios:<ul>
+<li>In order to maintain complex integrity constraints.</li>
+<li>For the purpose of auditing any table information.</li>
+<li>Whenever changes are done to a table, if we need to signal other actions upon completion of the change, then we use triggers.</li>
+<li>In order to enforce complex rules of business.</li>
+<li>It can also be used to prevent invalid transactions.</li>
+</ul>
+</li>
+
+</ul>
+          </article>
+        </section>
+        <section class="ibpage-article-header" id="plsql-declare-block">
+          <h3>8. When does a DECLARE block become mandatory?</h3>
+          <article class="ibpage-article">
+            <ul><li>This statement is used by anonymous blocks of PL/SQL such as non-stored and stand-alone procedures. When they are being used, the statement should come first in the stand-alone file.</li></ul>
+          </article>
+        </section>
+        <section class="ibpage-article-header" id="plsql-comments">
+          <h3>9. How do you write comments in a PL/SQL code?</h3>
+          <article class="ibpage-article">
+            <ul>
+<li>Comments are those sentences that have no effect on the functionality and are used for the purpose of enhancing the readability of the code. They are of two types:<ul>
+<li>
+<strong>Single Line Comment:</strong> This can be created by using the symbol <code>--</code> and writing what we want to mention as a comment next to it.</li>
+<li>
+<strong>Multi-Line comment:</strong> These are the comments that can be specified over multiple lines and the syntax goes like <code>/* comment information */</code>
+</li>
+</ul>
+</li>
+<li><strong>Example:</strong></li>
+</ul><pre><code class="language-plaintext hljs">SET SERVEROUTPUT ON; 
+DECLARE 
+ 
+-- Hi There! I am a single line comment.
+var_name varchar2(40) := 'I love PL/SQL' ;  
+BEGIN 
+ /* 
+ Hi! I am a multi line
+ comment. I span across
+ multiple lines
+ */
+dbms_output.put_line(var_name);
+END; 
+/
+Output:
+I love PL/SQL</code></pre>
+          </article>
+        </section>
+        <section class="ibpage-article-header" id="purpose-of-when-clause-in-trigger">
+          <h3>10. What is the purpose of WHEN clause in the trigger?</h3>
+          <article class="ibpage-article">
+            <ul><li>WHEN clause specifies for what condition the trigger has to be triggered.</li></ul>
+          </article>
+        </section>
+
+  </div>
+  <div id="pl-sql-intermediate-questions">
+    <h2>PL/SQL Intermediate Interview Questions</h2>
+
+        <section class="ibpage-article-header" id="plsql-execution-architecture">
+          <h3>11. Can you explain the PL/SQL execution architecture?</h3>
+          <article class="ibpage-article">
+            <p>The PL/SQL engine does the process of compilation and execution of the PL/SQL blocks and programs and can only work if it is installed on an Oracle server or any application tool that supports Oracle such as Oracle Forms.</p><ul>
+<li>PL/SQL is one of the parts of Oracle RDBMS, and it is important to know that most of the Oracle applications are developed using the client-server architecture. The Oracle database forms the server-side and requests to the database form a part of the client-side.</li>
+<li>So based on the above fact and the fact that PL/SQL is not a standalone programming language, we must realize that the PL/SQL engine can reside in either the client environment or the server environment. This makes it easy to move PL/SQL modules and sub-programs between server-side and client-side applications.</li>
+<li>Based on the architecture shown below, we can understand that PL/SQL engine plays an important role in the process and execute the PL/SQL statements and whenever it encounters the SQL statements, they are sent to the SQL Statement Processor.</li>
+</ul><figure class="image image_resized" style="width:75%;"><img data-src="https://s3.ap-south-1.amazonaws.com/myinterviewtrainer-domestic/public_assets/assets/000/000/262/original/pl-sql-architecture.jpg?1617185061" class="" src="https://s3.ap-south-1.amazonaws.com/myinterviewtrainer-domestic/public_assets/assets/000/000/262/original/pl-sql-architecture.jpg?1617185061"></figure><ul>
+<li>
+<strong>Case 1:</strong> <strong>PL/SQL engine is on the server:</strong> In this case, the whole PL/SQL block gets passed to the PL/SQL engine present on the Oracle server which is then processed and the response is sent.</li>
+<li>
+<strong>Case 2: PL/SQL engine is on the client:</strong> Here the engine lies within the Oracle Developer tools and the processing of the PL/SQL statements is done on the client-side.<ul>
+<li>In case, there are any SQL statements in the PL/SQL block, then they are sent to the Oracle server for SQL processing.</li>
+<li>When there are no SQL statements, then the whole block processing occurs at the client-side.</li>
+</ul>
+</li>
+</ul>
+          </article>
+        </section>
+        <section class="ibpage-article-header" id="sysdate-and-user-keywords">
+          <h3>12. Why is SYSDATE and USER keywords used?</h3>
+          <article class="ibpage-article">
+            <ul>
+<li>
+<strong>SYSDATE:</strong><ul>
+<li>This keyword returns the current time and date on the local database server.</li>
+<li>The syntax is SYSDATE.</li>
+<li>In order to extract part of the date, we use the TO_CHAR function on SYSDATE and specify the format we need.</li>
+<li>Usage:<ul>
+<li><code>SELECT SYSDATE FROM dual;</code></li>
+<li><code>SELECT id, TO_CHAR(SYSDATE, 'yyyy/mm/dd') from InterviewBitEmployeeTable where customer_id &lt; 200;</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<strong>USER:</strong><ul>
+<li>This keyword returns the user id of the current session.</li>
+<li>Usage:<ul><li><code>SELECT USER FROM dual;</code></li></ul>
+</li>
+</ul>
+</li>
+</ul>
+          </article>
+        </section>
+        <section class="ibpage-article-header" id="difference-between-implicit-and-explicit-cursors">
+          <h3>13. Differentiate between implicit cursor and explicit cursor.</h3>
+          <article class="ibpage-article">
+            <figure class="table"><table>
+<thead><tr>
+<th>Implicit Cursor&nbsp;</th>
+<th>Explicit Cursor</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>An implicit cursor is used when a query returns a single row value.</td>
+<td>When a subquery returns more than one row, an explicit cursor is used. These rows are called Active Set.</td>
+</tr>
+<tr>
+<td>This is used for all DML operations like DECLARE, OPEN, FETCH, CLOSE.</td>
+<td>This is used to process Multirow SELECT Statements.</td>
+</tr>
+<tr>
+<td>NO_DATA_FOUND Exception is handled here.</td>
+<td>NO_DATA_FOUND cannot be handled here.</td>
+</tr>
+</tbody>
+</table></figure>
+          </article>
+        </section>
+        <section class="ibpage-article-header" id="difference-between-sql-and-pl-sql">
+          <h3>14. Differentiate between SQL and PL/SQL.</h3>
+          <article class="ibpage-article">
+            <figure class="table"><table>
+<thead><tr>
+<th>SQL</th>
+<th>PL/SQL</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>SQL is a natural language meant for the interactive processing of data in the database.</td>
+<td>PL/SQL is a procedural extension of SQL.</td>
+</tr>
+<tr>
+<td>Decision-making and looping are not allowed in SQL.</td>
+<td>PL/SQL supports all features of procedural language such as conditional and looping statements.</td>
+</tr>
+<tr>
+<td>All SQL statements are executed at a time by the database server which is why it becomes a time-consuming process.</td>
+<td>PL/SQL statements are executed one block at a time thereby reducing the network traffic.</td>
+</tr>
+<tr>
+<td>There is no error handling mechanism in SQL.</td>
+<td>This supports an error handling mechanism.</td>
+</tr>
+</tbody>
+</table></figure>
+          </article>
+        </section>
+        <section class="ibpage-article-header" id="importance-of-type-and-rowtype-data-types-plsql">
+          <h3>15. What is the importance of %TYPE and %ROWTYPE data types in PL/SQL?</h3>
+          <article class="ibpage-article">
+            <ul>
+<li>
+<strong>%TYPE:</strong> This declaration is used for the purpose of anchoring by providing the data type of any variable, column, or constant. It is useful during the declaration of a variable that has the same data type as that of its table <strong>column</strong>.<ul><li>Consider the example of declaring a variable named <code>ib_employeeid</code> which has the data type and its size same as that of the column <code>employeeid</code> in table <code>ib_employee</code>.&nbsp;<br>The syntax would be : <code>ib_employeeid ib_employee.employeeid%TYPE;</code>
+</li></ul>
+</li>
+<li>
+<strong>%ROWTYPE: </strong>This is used for declaring a variable that has the same data type and size as that of a row in the table. The row of a table is called a record and its fields would have the same data types and names as the columns defined in the table.<ul><li>For example: In order to declare a record named <code>ib_emprecord</code> for storing an entire row in a table called <code>ib_employee</code>, the syntax is:<br><code>ib_emprecord ib_employee%ROWTYPE;</code>
+</li></ul>
+</li>
+</ul>
+          </article>
+        </section>
+        <section class="ibpage-article-header" id="manipulating-character-data-plsql">
+          <h3>16. What are the various functions available for manipulating the character data?</h3>
+          <article class="ibpage-article">
+            <ul><li>The functions that are used for manipulating the character data are called String Functions.<ul>
+<li>
+<strong>LEFT:</strong> This function returns the specified number of characters from the left part of a string.<ul>
+<li>Syntax: LEFT(string_value, numberOfCharacters).</li>
+<li>For example, LEFT(‘InterviewBit’, 9) will return ‘Interview’.</li>
+</ul>
+</li>
+<li>
+<strong>RIGHT: </strong>This function returns the defined number of characters from the right part of a string.<ul>
+<li>Syntax: RIGHT(string_value, numberOfCharacters)</li>
+<li>For example, RIGHT(‘InterviewBit’,3) would return ‘Bit’.</li>
+</ul>
+</li>
+<li>
+<strong>SUBSTRING:</strong> This function would select the data from a specified start position through the number of characters defined from any part of the string.<ul>
+<li>Syntax: SUBSTRING(string_value, start_position, numberOfCharacters)</li>
+<li>For example, SUBSTRING(‘InterviewBit’,2,4) would return ‘terv’.</li>
+</ul>
+</li>
+<li>
+<strong>LTRIM:</strong> This function would trim all the white spaces on the left part of the string.<ul>
+<li>Syntax: LTRIM(string_value)</li>
+<li>For example, LTRIM(’ InterviewBit’) will return ‘InterviewBit’.</li>
+</ul>
+</li>
+<li>
+<strong>RTRIM:</strong> This function would trim all the white spaces on the right part of the string.<ul>
+<li>Syntax: RTRIM(string_value)</li>
+<li>For example, RTRIM('InterviewBit ') will return ‘InterviewBit’.</li>
+</ul>
+</li>
+<li>
+<strong>UPPER: </strong>This function is used for converting all the characters to the upper case in a string.<ul>
+<li>Syntax: UPPER(string_variable)</li>
+<li>For example, UPPER(‘interviewBit’) would return ‘INTERVIEWBIT’.</li>
+</ul>
+</li>
+<li>
+<strong>LOWER:</strong> This function is used for converting all the characters of a string to lowercase.<ul>
+<li>Syntax: LOWER(string_variable)</li>
+<li>For example, LOWER(‘INterviewBit’) would return ‘interviewbit’.</li>
+</ul>
+</li>
+</ul>
+</li></ul>
+          </article>
+        </section>
+        <section class="ibpage-article-header" id="difference-between-rollback-and-rollback-to">
+          <h3>17. What is the difference between ROLLBACK and ROLLBACK TO statements in PL/SQL?</h3>
+          <article class="ibpage-article">
+            <ul>
+<li>
+<strong>ROLLBACK command</strong> is used for rolling back all the changes from the beginning of the transaction.</li>
+<li>
+<strong>ROLLBACK TO command</strong> is used for undoing the transaction only till a SAVEPOINT. The transactions cannot be rolled back before the SAVEPOINT and hence the transaction remains active even before the command is specified.</li>
+</ul>
+          </article>
+        </section>
+        <section class="ibpage-article-header" id="sys-all-dependencies">
+          <h3>18. What is the use of SYS.ALL_DEPENDENCIES?</h3>
+          <article class="ibpage-article">
+            <ul><li>SYS.ALL_DEPENDENCIES is used for describing all the dependencies between procedures, packages, triggers, functions that are accessible to the current user. It returns the columns like name, dependency_type, type, referenced_owner etc.</li></ul>
+          </article>
+        </section>
+        <section class="ibpage-article-header" id="virtual-tables-available-during-execution-of-database-trigger">
+          <h3>19. What are the virtual tables available during the execution of the database trigger?</h3>
+          <article class="ibpage-article">
+            <ul>
+<li>The THEN and NOW tables are the virtual tables that are available during the database trigger execution. The table columns are referred to as THEN.column and NOW.column respectively.</li>
+<li>Only the NOW.column is available for insert-related triggers.</li>
+<li>Only the THEN.column values are available for the DELETE-related triggers.</li>
+<li>Both the virtual table columns are available for UPDATE triggers.</li>
+</ul>
+          </article>
+        </section>
+        <section class="ibpage-article-header" id="cursors-declared-in-procedures-vs-cursors-declared-in-package-specifications">
+          <h3>20. Differentiate between the cursors declared in procedures and the cursors declared in the package specifications.</h3>
+          <article class="ibpage-article">
+            <ul>
+<li>The cursors that are declared in the procedures will have the local scope and hence they cannot be used by other procedures.</li>
+<li>The cursors that are declared in package specifications are treated with global scope and hence they can be used and accessed by other procedures.</li>
+</ul>
+          </article>
+        </section>
+
+  </div>
+  <div id="pl-sql-advanced-questions">
+    <h2>PL/SQL Advanced Interview Questions</h2>
+
+        <section class="ibpage-article-header" id="pl-sql-transactions">
+          <h3>21. What are COMMIT, ROLLBACK and SAVEPOINT statements in PL/SQL?</h3>
+          <article class="ibpage-article">
+            <ul>
+<li>These are the three transaction specifications that are available in PL/SQL.</li>
+<li>
+<strong>COMMIT: </strong>Whenever any DML operations are performed, the data gets manipulated only in the database buffer and not the actual database. In order to save these DML transactions to the database, there is a need to COMMIT these transactions.<ul>
+<li>COMMIT transaction action does saving of all the outstanding changes since the last commit and the below steps take place:<ul>
+<li>The release of affected rows.</li>
+<li>The transaction is marked as complete.</li>
+<li>The details of the transaction would be stored in the data dictionary.</li>
+</ul>
+</li>
+<li>
+<strong>Syntax:</strong> COMMIT;</li>
+</ul>
+</li>
+<li>
+<strong>ROLLBACK:</strong> In order to undo or erase the changes that were done in the current transaction, the changes need to be rolled back. ROLLBACK statement erases all the changes since the last COMMIT.<ul><li>
+<strong>Syntax:</strong> ROLLBACK;</li></ul>
+</li>
+<li>
+<strong>SAVEPOINT:</strong> This statement gives the name and defines a point in the current transaction process where any changes occurring before that SAVEPOINT would be preserved whereas all the changes after that point would be released.<ul><li>
+<strong>Syntax:</strong> SAVEPOINT &lt;savepoint_name&gt;;</li></ul>
+</li>
+</ul>
+          </article>
+        </section>
+        <section class="ibpage-article-header" id="debug-pl-sql-code">
+          <h3>22. How can you debug your PL/SQL code?</h3>
+          <article class="ibpage-article">
+            <ul><li>We can use DBMS_OUTPUT and DBMS_DEBUG statements for debugging our code:<ul>
+<li>DBMS_OUTPUT prints the output to the standard console.</li>
+<li>DBMS_DEBUG prints the output to the log file.</li>
+</ul>
+</li></ul>
+          </article>
+        </section>
+        <section class="ibpage-article-header" id="difference-between-mutating-table-and-constraining-table">
+          <h3>23. What is the difference between a mutating table and a constraining table?</h3>
+          <article class="ibpage-article">
+            <ul>
+<li>A table that is being modified by the usage of the DML statement currently is known as a mutating table. It can also be a table that has triggers defined on it.</li>
+<li>A table used for reading for the purpose of referential integrity constraint is called a constraining table.</li>
+</ul>
+          </article>
+        </section>
+        <section class="ibpage-article-header" id="where-are-the-outcomes-of-dml-statement-execution-saved">
+          <h3>24. In what cursor attributes the outcomes of DML statement execution are saved?</h3>
+          <article class="ibpage-article">
+            <ul><li>The outcomes of the execution of the DML statement is saved in the following 4 cursor attributes:<ul>
+<li>SQL%FOUND: This returns TRUE if at least one row has been processed.</li>
+<li>SQL%NOTFOUND: This returns TRUE if no rows were processed.</li>
+<li>SQL%ISOPEN: This checks whether the cursor is open or not and returns TRUE if open.</li>
+<li>SQL%ROWCOUNT: This returns the number of rows processed by the DML statement.</li>
+</ul>
+</li></ul>
+          </article>
+        </section>
+        <section class="ibpage-article-header" id="plsql-number-data-type-with-example">
+          <h3>25. Is it possible to declare column which has the number data type and its scale larger than the precision? For example defining columns like: column name NUMBER (10,100), column name NUMBER (10,-84)</h3>
+          <article class="ibpage-article">
+            <ul>
+<li>Yes, these type of declarations are possible.</li>
+<li>Number (9, 12) indicates that there are 12 digits after decimal point. But since the maximum precision is 9, the rest are 0 padded like 0.000999999999.</li>
+<li>Number (9, -12) indicates there are 21 digits before the decimal point and out of that there are 9 possible digits and the rest are 0 padded like 999999999000000000000.0</li>
+</ul>
+          </article>
+        </section>
+
+  </div>
+  <div id="PL SQL Programs">
+    <h2>PL/SQL Programs</h2>
+
+        <section class="ibpage-article-header" id="plsql-while-loop-program">
+          <h3>26.  Write a PL/SQL program using WHILE loop for calculating the average of the numbers entered by user. Stop the entry of numbers whenever the user enters the number 0.</h3>
+          <article class="ibpage-article">
+            <pre><code class="language-plaintext hljs">DECLARE
+   n NUMBER;
+   average NUMBER :=0 ;
+   sum NUMBER :=0 ;
+   count NUMBER :=0 ;
+BEGIN
+   -- Take input from user
+   n := &amp;input_number;
+   WHILE(n&lt;&gt;0)
+       LOOP
+           -- Increment count to find total elements
+           count := count+1;
+           -- Sum of elements entered
+           sum := sum+n;
+           -- Take input from user
+           n := &amp;input_number;
+       END LOOP;
+   -- Average calculation
+   average := sum/count;
+   DBMS_OUTPUT.PUT_LINE(‘Average of entered numbers is ’||average);
+END;</code></pre>
+          </article>
+        </section>
+        <section class="ibpage-article-header" id="select-some-records-from-database-using-some-parameters-as-filters">
+          <h3>27. Write a PL/SQL procedure for selecting some records from the database using some parameters as filters.</h3>
+          <article class="ibpage-article">
+            <ul><li>Consider that we are fetching details of employees from ib_employee table where salary is a parameter for filter.</li></ul><pre><code class="language-plaintext hljs">CREATE PROCEDURE get_employee_details @salary nvarchar(30)
+AS
+BEGIN
+   SELECT * FROM ib_employee WHERE salary = @salary;
+END;</code></pre>
+          </article>
+        </section>
+        <section class="ibpage-article-header" id="count-number-of-sundays-between-two-inputted-dates">
+          <h3>28. Write a PL/SQL code to count the number of Sundays between the two inputted dates.</h3>
+          <article class="ibpage-article">
+            <pre><code class="language-plaintext hljs">--declare 2 dates of type Date
+DECLARE
+   start_date Date; 
+   end_date Date; 
+   sundays_count Number:=0; 
+BEGIN
+   -- input 2 dates
+   start_date:='&amp;input_start_date'; 
+   end_date:='&amp;input_end_date';
+   /* 
+   Returns the date of the first day after the mentioned date 
+   and matching the day specified in second parameter.
+   */
+   start_date:=NEXT_DAY(start_date-1, 'SUNDAY');
+   --check the condition of dates by using while loop. 
+   while(start_date&lt;=end_date) 
+   LOOP 
+       sundays_count:=sundays_count+1; 
+       start_date:=start_date+7; 
+   END LOOP; 
+   
+   -- print the count of sundays
+   dbms_output.put_line('Total number of Sundays between the two dates:'||sundays_count); 
+END; 
+/ </code></pre><p><strong>Input:</strong><br>start_date = ‘01-SEP-19’<br>end_date = ‘29-SEP-19’</p><p><strong>Output:</strong><br>Total number of Sundays between the two dates: 5</p>
+          </article>
+        </section>
+        <section class="ibpage-article-header" id="increment-employees-salary-by-1000-whose-employee-id-is-102-from-the-given-table">
+          <h3>29. Write PL/SQL code block to increment the employee’s salary by 1000 whose employee_id is 102 from the given table below.</h3>
+          <article class="ibpage-article">
+            <figure class="table"><table>
+<thead><tr>
+<th>EMPLOYEE_ID</th>
+<th>FIRST_NAME</th>
+<th>LAST_NAME</th>
+<th>EMAIL_ID</th>
+<th>PHONE_NUMBER</th>
+<th>JOIN_DATE</th>
+<th>JOB_ID&nbsp;</th>
+<th>SALARY</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>100</td>
+<td>ABC</td>
+<td>DEF</td>
+<td>abef</td>
+<td>9876543210</td>
+<td>2020-06-06&nbsp;</td>
+<td>AD_PRES</td>
+<td>24000.00</td>
+</tr>
+<tr>
+<td>101</td>
+<td>GHI</td>
+<td>JKL</td>
+<td>ghkl</td>
+<td>9876543211&nbsp;</td>
+<td>2021-02-08</td>
+<td>AD_VP</td>
+<td>17000.00</td>
+</tr>
+<tr>
+<td>102</td>
+<td>MNO&nbsp;</td>
+<td>PQR</td>
+<td>mnqr</td>
+<td>9876543212</td>
+<td>2016-05-14</td>
+<td>AD_VP</td>
+<td>17000.00</td>
+</tr>
+<tr>
+<td>103</td>
+<td>STU</td>
+<td>VWX</td>
+<td>stwx</td>
+<td>9876543213</td>
+<td>2019-06-24</td>
+<td>IT_PROG</td>
+<td>9000.00</td>
+</tr>
+</tbody>
+</table></figure><pre><code class="language-plaintext hljs">DECLARE
+ employee_salary  NUMBER(8,2);
+
+ PROCEDURE update_salary (
+   emp        NUMBER, 
+   salary IN OUT NUMBER
+ ) IS
+ BEGIN
+   salary := salary + 1000;
+ END;
+
+BEGIN
+ SELECT salary INTO employee_salary
+ FROM ib_employee
+ WHERE employee_id = 102;
+
+ DBMS_OUTPUT.PUT_LINE
+  ('Before update_salary procedure, salary is: ' || employee_salary);
+
+ update_salary (100, employee_salary);
+
+ DBMS_OUTPUT.PUT_LINE
+  ('After update_salary procedure, salary is: ' || employee_salary);
+END;
+/</code></pre><p><strong>Result:</strong></p><pre><code class="language-plaintext hljs">Before update_salary procedure, salary is: 17000
+After update_salary procedure, salary is: 18000</code></pre>
+          </article>
+        </section>
+        <section class="ibpage-article-header" id="find-whether-given-string-is-palindrome-or-not">
+          <h3>30. Write a PL/SQL code to find whether a given string is palindrome or not.</h3>
+          <article class="ibpage-article">
+            <pre><code class="language-plaintext hljs">DECLARE
+-- Declared variables string, letter, reverse_string where string is the original string. 
+string VARCHAR2(10) := 'abccba'; 
+letter VARCHAR2(20); 
+reverse_string VARCHAR2(10); 
+BEGIN
+FOR i IN REVERSE 1..LENGTH(string) LOOP 
+ letter := SUBSTR(string, i, 1);
+ -- concatenate letter to reverse_string variable
+ reverse_string := reverse_string ||''||letter; 
+END LOOP;
+IF reverse_string = string THEN
+       dbms_output.Put_line(reverse_string||''||' is palindrome'); 
+ELSE
+       dbms_output.Put_line(reverse_string ||'' ||' is not palindrome'); 
+END IF; 
+END; </code></pre>
+          </article>
+        </section>
+        <section class="ibpage-article-header" id="convert-each-digit-of-given-number-into-its-corresponding-word-format">
+          <h3>31. Write PL/SQL program to convert each digit of a given number into its corresponding word format.</h3>
+          <article class="ibpage-article">
+            <pre><code class="language-plaintext hljs">DECLARE
+-- declare necessary variables 
+   -- num represents the given number
+   -- number_to_word represents the word format of the number
+   -- str, len and digit are the intermediate variables used for program execution
+num   INTEGER; 
+number_to_word VARCHAR2(100); 
+digit_str   VARCHAR2(100); 
+len   INTEGER; 
+digit   INTEGER; 
+BEGIN
+   num := 123456; 
+   len := LENGTH(num); 
+   dbms_output.PUT_LINE('Input: ' ||num);
+   -- Iterate through the number one by one
+   FOR i IN 1..len LOOP 
+       digit := SUBSTR(num, i, 1);
+       -- Using DECODE, get the str representation of the digit
+       SELECT Decode(digit, 0, 'Zero ', 
+                       1, 'One ', 
+                       2, 'Two ', 
+                       3, 'Three ', 
+                       4, 'Four ', 
+                       5, 'Five ', 
+                       6, 'Six ', 
+                       7, 'Seven ', 
+                       8, 'Eight ', 
+                       9, 'Nine ') 
+       INTO digit_str 
+       FROM dual;
+       -- Append the str representation of digit to final result.
+       number_to_word := number_to_word || digit_str; 
+   END LOOP;
+   dbms_output.PUT_LINE('Output: ' ||number_to_word); 
+END; </code></pre><p><strong>Input: </strong>12345<br><strong>Output: </strong>One Two Three Four Five</p>
+          </article>
+        </section>
+        <section class="ibpage-article-header" id="find-the-sum-of-digits-of-a-number">
+          <h3>32. Write PL/SQL program to find the sum of digits of a number.</h3>
+          <article class="ibpage-article">
+            <pre><code class="language-plaintext hljs">DECLARE
+--Declare variables num, sum_of_digits and remainder of datatype Integer 
+num  INTEGER; 
+sum_of_digits INTEGER; 
+remainder  INTEGER; 
+BEGIN
+num := 123456; 
+sum_of_digits := 0;
+-- Find the sum of digits until original number doesnt become null 
+WHILE num &lt;&gt; 0 LOOP 
+ remainder := MOD(num, 10); 
+ sum_of_digits := sum_of_digits + remainder; 
+ num := TRUNC(num / 10); 
+END LOOP; 
+dbms_output.PUT_LINE('Sum of digits is '|| sum_of_digits); 
+END; </code></pre><p><strong>Input: </strong>9874<br><strong>Output: </strong>28</p>
+          </article>
+        </section>
+
+  </div>
+  
+            
+
+
+        </div>	
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
