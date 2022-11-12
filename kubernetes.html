@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Java Interview Q&A</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Sailor - v4.9.1
+  * Template URL: https://bootstrapmade.com/sailor-free-bootstrap-theme/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center">
+      <h1 class="logo me-auto"><a href="index.html">Java Interview Q&A</a></h1>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+
+          <li class="dropdown"><a href="#"><span>Framework</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="spring.html">Spring</a></li>
+              <li><a href="hibernate.html">Hibernate</a></li>
+              <li><a href="springboot.html">SpringBoot</a></li>
+              <li><a href="jsf.html">JSF</a></li>
+              <li><a href="struts.html">Struts</a></li>
+              <li class="dropdown"><a href="#"><span>Entity Framework</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="jpa.html">JPA</a></li>
+                  <li><a href="hibernate.html">Hibernate</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          
+          <li class="dropdown"><a href="database.html"><span>Database</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="sql.html">SQL</a></li>
+              <li><a href="plsql.html">PL-SQL</a></li>
+              <li class="dropdown"><a href="nosql.html"><span>NoSQL</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">Apache Cassandra</a></li>
+                  <li><a href="#">MongoDB</a></li>
+                  <li><a href="#">Redis</a></li>
+                  <li><a href="#">ArangoDB</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="cloud.html"><span>Cloud</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="aws.html">AWS</a></li>
+              <li><a href="gcp.html">GCP</a></li>
+              <li><a href="azure.html">Azure</a></li>
+              <li><a href="ibm-cloud.html">IBM Cloud</a></li>
+              <li><a href="docker.html">Docker</a></li>
+              <li><a href="kubernetes.html">Kubernetes</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>UI</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Angular</a></li>
+              <li><a href="#">ReactJS</a></li>
+              <li><a href="#">Javascript</a></li>
+              <li><a href="#">css</a></li>
+              <li><a href="#">html</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>Other</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Company wise</a></li>
+              <li><a href="#">Design pattern</a></li>
+              <li><a href="#">Microservices</a></li>
+              <li><a href="#">Data Structure</a></li>
+              <li><a href="#">Architect</a></li>
+            </ul>
+          </li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+  </header>
+
+</br>
+  <main id="main">
+
+    <section id="about" class="about">
+      <div class="container">
+        <div class="row-content"> 
+          
+
+          
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>1) What is Kubernetes?</h3>
+<p>Kubernetes is a container management system developed in the Google platform. The purpose of <a href="/kubernetes-tutorial.html" data-lasso-id="286084">Kubernetes</a> is to manage a containerized application in various types of physical, virtual, and cloud environments. Google Kubernetes is a highly flexible container tool to deliver even complex applications, consistently. Applications run on clusters of hundreds to thousands of individual servers.</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>2) Define node in Kubernetes</h3>
+<p>A node the smallest unit of hardware. It defines a single machine in a cluster that can be a virtual machine from a cloud provider or physical machine in the data center. Every machine available in the Kubernetes cluster can substitute other machines.</p>
+
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>3) What is the work of a kube-scheduler?</h3>
+<p>Kube-scheduler is the default scheduler for Kubernetes. It assigns nodes to newly created pods.</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>4) Define daemon sets</h3>
+<p>Daemon sets are a set of pods that runs on a host. They are used for host layers attributes like monitoring network or simple network.<br>
+</p>
+<p></p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>5) Define Heapster in Kubernetes</h3>
+<p>A Heapster is a metrics collection and performance monitoring system for data that are collected by the Kublet.</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>6) What tasks are performed by Kubernetes?</h3>
+<p>Kubernetes is the Linux kernel which is used for distributed systems. It helps you to be abstract the underlying hardware of the nodes(servers) and offers a consistent interface for applications that consume the shared pool of resources.</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>7) Define Kubernetes controller manager</h3>
+<p>The controller manager is a daemon used for garbage collection, core control loops, and namespace creation. It enables the running of more than one process on the master node.<br>
+</p>
+<p></p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>8) Why use namespace in Kubernetes?</h3>
+<p>Namespaces in Kubernetes are used for dividing cluster resources between users. It helps the environment where more than one user spread projects or teams and provides a scope of resources.</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>9) Why use Kubernetes?</h3>
+<p>Kubernetes is used because:</p>
+<ul>
+<li>Kubernetes can run on-premises bare metal, OpenStack, public clouds Google, Azure, AWS, etc.</li>
+<li>It helps you to avoid vendor lock issues as it can use any vendor-specific APIs or services except where Kubernetes provides an abstraction, e.g., load balancer and storage.</li>
+<li>It will enable applications that need to be released and updated without any downtime.</li>
+<li>Kubernetes allows you to assure those containerized apps run where and when you want and help you to find resources and tools which you want to work.</li>
+</ul>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>10) What are the features of Kubernetes?</h3>
+<p>The features of Kubernetes are:</p>
+<ul>
+<li>Automated Scheduling</li>
+<li>Self-Healing Capabilities</li>
+<li>Automated rollouts &amp; rollback</li>
+<li>Horizontal Scaling &amp; Load Balancing</li>
+<li>Offers environment consistency for development, testing, and production</li>
+<li>Infrastructure is loosely coupled to each component can act as a separate unit</li>
+<li>Provides a higher density of resource utilization</li>
+<li>Offers enterprise-ready features</li>
+<li>Application-centric management</li>
+<li>Auto-scalable infrastructure</li>
+<li>You can create predictable infrastructure</li>
+</ul>
+
+
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>11) Mention the types of controller managers</h3>
+<p>Types of controller managers are: 1) endpoints controller, 2) service accounts controller, 3) node controller, 4) namespace controller, 5) replication controller, 6) token controller.</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>12) Explain Kubernetes Architecture</h3>
+<p></p><center><p></p>
+<figure>
+<img width="624" height="408" src="https://www.guru99.com/images/1/061419_0430_KubernetesT1.png" alt="" class="lazyloaded" data-ll-status="loaded"><noscript><img width="624" height="408" src="https://www.guru99.com/images/1/061419_0430_KubernetesT1.png" alt=""></noscript><figcaption style="display: table;">Kubernetes Architecture Diagram</figcaption></figure>
+<p></p></center><p></p>
+<ul>
+<li><strong>Master Node: </strong>The master node is the first and most vital component which is responsible for the management of Kubernetes cluster. It is the entry point for all kinds of administrative tasks. There may be more than one master node in the cluster to check for fault tolerance.</li>
+<li><strong>API Server:</strong> The API server acts as an entry point for all the REST commands used for controlling the cluster.</li>
+<li><strong>Scheduler:</strong> The scheduler schedules the tasks to the slave node. It stores the resource usage information for every slave node. It is responsible for distributing the workload.</li>
+<li><strong>Etcd: </strong>etcd components, store configuration detail, and wright values. It communicates with the most component to receive commands and work. It also manages network rules and port forwarding activity.</li>
+<li><strong>Worker/Slave nodes: </strong>Worker nodes are another essential component that contains all the required services to manage the networking between the containers, communicate with the master node, which allows you to assign resources to the scheduled containers.</li>
+<li><strong>Kubelet:</strong> It gets the configuration of a Pod from the API server and ensures that the described containers are up and running.</li>
+<li><strong>Docker Container:</strong> Docker container runs on each of the worker nodes, which runs the configured pods.</li>
+<li><strong>Pods:</strong> A pod is a combination of single or multiple containers that logically run together on nodes.</li>
+</ul>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>13) List various services available in Kubernetes</h3>
+<p>Various services available in Kubernetes are 1) Cluster IP service, 2) Load Balancer service, 3) Node Port service, 4) External Name Creation service.</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>14) Define Cluster IP</h3>
+<p>The Cluster IP is a Kubernetes service that offers a service inside the cluster that other apps inside cluster can access.<br>
+</p>
+<p></p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>15) Explain node port</h3>
+<p>The node port service is a fundamental way to get external traffic to your service. It opens a particular port on all nodes and forwards network traffic sent to this port.</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>16) Define kubelet</h3>
+<p>The kubelet is a service agent which controls and maintains group pf pods by checking pod specification using Kubernetes. The kubelet runs on each node and allows to communicate between a master node and a slave node.</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>17) What are the disadvantages of Kubernetes?</h3>
+<ul>
+<li>Kubernetes dashboard is not as helpful as it should be</li>
+<li>Security is not very effective.</li>
+<li>It is very complex and can reduce productivity</li>
+<li>Kubernetes is more costly than its alternatives.</li>
+</ul>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>18) What is Kube-proxy?</h3>
+<p>Kube-proxy is an implementation of both a network proxy and a load balancer. It is used to support service abstraction used with other networking operations. It is responsible for directing traffic to the container depend on IP and the port number.</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>19) What is the difference between Kubernetes and Docker Swarm?</h3>
+<p>The difference between Kubernetes and Docker Swarm is:</p>
+<table class="table table-striped">
+<thead>
+<tr>
+<th>Kubernetes</th>
+<th>Docker Swarm</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+Kubernetes Provides an auto-scaling feature.</td>
+<td>
+Docker Swarm does not provide an auto-scaling feature.</td>
+</tr>
+<tr>
+<td>
+Manually configure your load balancing settings.</td>
+<td>
+Does auto load balancing</td>
+</tr>
+<tr>
+<td>
+Installation is complicated &amp; time-consuming.</td>
+<td>
+Installation is easy &amp; fast.</td>
+</tr>
+<tr>
+<td>
+GUI is available.</td>
+<td>
+GUI not available.</td>
+</tr>
+<tr>
+<td>
+It provides a built-in load balancing technique.</td>
+<td>
+Process scheduling is done to maintain services while updating.</td>
+</tr>
+</tbody>
+</table>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>20) Define Ingress Network</h3>
+<p>Ingress network is defined as a collection of rules which allow permission for connections into the Kubernetes cluster.<br>
+</p>
+<p></p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>21) What is Kubectl used for?</h3>
+<p>Kubectl is a software for controlling Kubernetes clusters. Ctl stands for control, which is a command-line interface to pass the command to the cluster and manage the Kubernetes component.</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>22) What is GKE?</h3>
+<p>GKE or Google Container Engine is a management platform that supports clusters and Docker containers that run within public cloud services of Google.</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>23) Why load balancer is needed?</h3>
+<p>A load balancer is needed because it gives a standard way to distribute network traffic among different services, which runs in the backend.</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>24) How to run Kubernetes locally?</h3>
+<p>Kubernetes can be run locally using the Minikube tool. It runs a single-node cluster in a VM (virtual machine) on the computer. Therefore, it offers the ideal way for users who have just started learning Kubernetes.</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>25) What are the tools that are used for container monitoring?</h3>
+<p>Tools that are used for container monitoring are:</p>
+<ul>
+<li>Heapster</li>
+<li>cAdvisor</li>
+<li>Prometheus</li>
+<li>InfluxDB</li>
+<li>Grafana</li>
+</ul>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>26) List components of Kubernetes</h3>
+<p>There are three components of Kubernetes, they are:</p>
+<ul>
+<li>Addons</li>
+<li>Node components</li>
+<li>Master Components</li>
+</ul>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>27) Define headless service</h3>
+<p>Headless service is defined as a service that uses IP address, but instead of load balancing, it returns of associated pods.</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>28) What are the important components of node status?</h3>
+<p>The important component of node status are:</p>
+<ul>
+<li>Condition</li>
+<li>Capacity</li>
+<li>Info</li>
+<li>Address</li>
+</ul>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>29) What is minikube?</h3>
+<p>Minikube is a software that helps the user to run Kubernetes. It runs on the single nodes that are inside VM on your computer. This tool is also used by programmers who are developing an application using Kubernetes.</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>30) Mention the uses of GKE</h3>
+<p>The uses of the GKE (Google Kubernetes Engine) are:</p>
+<ul>
+<li>It can be used to create docker container clusters</li>
+<li>Resize application controllers</li>
+<li>Update and then upgrade the clusters of container</li>
+<li>Debug cluster of the container.</li>
+<li>GKE can be used to creates a replication controller, jobs, services, container pods, or load balancer.</li>
+</ul>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>31) Define orchestration in Kubernetes</h3>
+<p>Orchestration in Kubernetes defines as an automatic method of scheduling the work of every container. It is used for applications that are based on microservices within clusters.</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>32) Explain Prometheus in Kubernetes</h3>
+<p>Prometheus is an application that is used for monitoring and alerting. It can be called out to your systems, grab real-time metrics, compress it, and stores properly in a database.</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>33) List tools for container orchestration</h3>
+<p>The tools for container orchestration are 1) Docker swarm, 2) Apache Mesos, and 3) Kubernetes.</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>34) Mention the list of objects of Kubernetes?</h3>
+<p>Objects that are used in Kubernetes are: 1) Pods, 2) Replication sets and controllers, 3) Jobs and cron jobs, 4) Daemon sets, 5) Distinctive identities, 6) Deployments, 7) and Stateful sets.</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>35) Define Stateful sets in Kubernetes</h3>
+<p>The stateful set is a workload API object that is used to manage the stateful application. It can also be used to manage the deployments and scaling the sets of pods. The state information and other data of stateful pods are store in the disk storage, which connects with stateful set.</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>36) Why use Daemon sets?</h3>
+<p>Daemon sets are used because:</p>
+<ul>
+<li>It enables to runs storage platforms like ceph and glusterd on each node.</li>
+<li>Daemon sets run the logs collection on every node such as filebeat or fluentd.</li>
+<li>It performs node monitoring on each and every node.</li>
+</ul>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>37) Explain Replica set</h3>
+<p>A Replica set is used to keep replica pods stable. It enables us to specify the available number of identical pods. This can be considered a replacement for the replication .controller.</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>38) List out some important Kubectl commands:</h3>
+<p>The important Kubectl commands are:</p>
+<ul>
+<li>kubectl annotate</li>
+<li>kubectl cluster-info</li>
+<li>kubectl attach</li>
+<li>kubectl apply</li>
+<li>kubectl config</li>
+<li>kubectl autoscale</li>
+<li>kubectl config current-context</li>
+<li>kubectl config set.</li>
+</ul>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>39) Why uses Kube-apiserver?</h3>
+<p>Kube-apiserver is an API server of Kubernetes that is used to configure and validate API objects, which include services, controllers, etc. It provides the frontend to the cluster’s shared region using which components interact with each other.</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>40) Explain the types of Kubernetes pods</h3>
+<p>There are two types of pods in Kubernetes:</p>
+<ul>
+<li><strong>Single Container Pod:</strong> It can be created with the run command.</li>
+<li><strong>Multicontainer pods:</strong> It can be created using the “create” command in Kubernetes.</li>
+</ul>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>41) What are the labels in Kubernetes?</h3>
+<p>Labels are a collection of keys that contain some values. The key values are connected to pods, replication controllers, and associated services. Generally, labels are added to some object during its creation time. They can be modified by the users at run time.</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>42) What are the objectives of the replication controller?</h3>
+<p>The objectives of the replication controller are:</p>
+<ul>
+<li>It is responsible for controlling and administering the pod lifecycle.</li>
+<li>It monitors and verifies whether the allowed number of replicas are running or not.</li>
+<li>The replication controller helps the user to check the pod status.</li>
+<li>It enables to alter a pod. The user can drag its position the way interested in it.</li>
+</ul>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>43) What do you mean by persistent volume?</h3>
+<p>A persistent volume is a storage unit that is controlled by the administrator. It is used to manage an individual pod in a cluster.</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>44) What are Secrets in Kubernetes?</h3>
+<p>Secrets are sensitive information like login credentials of the user. They are objects in Kubernetes that stores sensitive information like username and password after performing encryption.</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>45) What is Sematext Docker Agent?</h3>
+<p>Sematext Docker agent is a log collection agent with events and metrics. It runs as a small container in each Docker host. These agents gather metrics, events, and logs for all cluster nodes and containers.</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>46) Define OpenShift</h3>
+<p>OpenShift is a public cloud application development and hosting platform developed by Red Hat. It offers automation for management so that developers can focus on writing the code.</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>47) Define K8s</h3>
+<p>K8s (K-eight characters-S) is a term for Kubernetes. It is an open-source orchestration framework for the containerized applications.</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>48) What are federated clusters?</h3>
+<p>Federated clusters multiple clusters that are managed as a single cluster.</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>49) Mention the difference between Docker volumes and Kubernetes Volumes</h3>
+<table class="table table-striped">
+<thead>
+<tr>
+<th>Kubernetes Volumes</th>
+<th>Docker Volumes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+Volumes are not limited to any container.</td>
+<td>
+Volumes are limited to a pod in the container.</td>
+</tr>
+<tr>
+<td>
+Kubernetes volumes support all containers deployed in a pod of Kubernetes.</td>
+<td>
+Docker volumes do not support all containers deployed in Docker.</td>
+</tr>
+</tbody>
+</table>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>50) What are the ways to provide API-Security on Kubernetes?</h3>
+<p>The ways to provide API-Security on Kubernetes are:</p>
+<ul>
+<li>Using correct auth mode with API server authentication mode= Node.</li>
+<li>Make kubeless that protects its API via authorization-mode=Webhook.</li>
+<li>Ensure the kube-dashboard uses a restrictive RBAC (Role-Based Access Control) policy</li>
+</ul>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>51) What is ContainerCreating pod?</h3>
+<p>A ContainerCreating pod is one that can be scheduled on a node but can’t start up properly.</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>52) What are the types of Kubernetes Volume?</h3>
+<p>The types of Kubernetes Volume are:</p>
+<ul>
+<li>EmptyDir</li>
+<li>GCE persistent disk</li>
+<li>Flocker</li>
+<li>HostPath</li>
+<li>NFS</li>
+<li>ISCSI</li>
+<li>rbd</li>
+<li>PersistentVolumeClaim</li>
+<li>downwardAPI</li>
+</ul>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>53) Explain PVC</h3>
+<p>The full form of PVC stands for Persistent Volume Claim. It is storage requested by Kubernetes for pods. The user does not require to know the underlying provisioning. This claim should be created in the same namespace where the pod is created.</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>54) What is the Kubernetes Network Policy?</h3>
+<p>Network Policy defines how the pods in the same namespace would communicate with each other and the network endpoint.</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>55) What is Kubernetes proxy service?</h3>
+<p>Kubernetes proxy service is a service which runs on the node and helps in making it available to an external host.</p>
+
+
+
+        </div>	
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
