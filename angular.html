@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Java Interview Q&A</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Sailor - v4.9.1
+  * Template URL: https://bootstrapmade.com/sailor-free-bootstrap-theme/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center">
+      <h1 class="logo me-auto"><a href="index.html">Java Interview Q&A</a></h1>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+
+          <li class="dropdown"><a href="#"><span>Framework</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="spring.html">Spring</a></li>
+              <li><a href="hibernate.html">Hibernate</a></li>
+              <li><a href="springboot.html">SpringBoot</a></li>
+              <li><a href="jsf.html">JSF</a></li>
+              <li><a href="struts.html">Struts</a></li>
+              <li class="dropdown"><a href="#"><span>Entity Framework</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="jpa.html">JPA</a></li>
+                  <li><a href="hibernate.html">Hibernate</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          
+          <li class="dropdown"><a href="database.html"><span>Database</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="sql.html">SQL</a></li>
+              <li><a href="plsql.html">PL-SQL</a></li>
+              <li class="dropdown"><a href="nosql.html"><span>NoSQL</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">Apache Cassandra</a></li>
+                  <li><a href="#">MongoDB</a></li>
+                  <li><a href="#">Redis</a></li>
+                  <li><a href="#">ArangoDB</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="cloud.html"><span>Cloud</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="aws.html">AWS</a></li>
+              <li><a href="gcp.html">GCP</a></li>
+              <li><a href="azure.html">Azure</a></li>
+              <li><a href="ibm-cloud.html">IBM Cloud</a></li>
+              <li><a href="docker.html">Docker</a></li>
+              <li><a href="kubernetes.html">Kubernetes</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>UI</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="angular.html">Angular</a></li>
+              <li><a href="#">ReactJS</a></li>
+              <li><a href="#">Javascript</a></li>
+              <li><a href="#">css</a></li>
+              <li><a href="#">html</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>Other</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Company wise</a></li>
+              <li><a href="#">Design pattern</a></li>
+              <li><a href="#">Microservices</a></li>
+              <li><a href="#">Data Structure</a></li>
+              <li><a href="#">Architect</a></li>
+            </ul>
+          </li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+  </header>
+
+</br>
+  <main id="main">
+
+    <section id="about" class="about">
+      <div class="container">
+        <div class="row-content"> 
+          
+
+          
+<h3>1) What is AngularJS?</h3>
+<p>AngularJS is a JavaScript framework used for creating single web page applications. It allows you to use HTML as your template language and enables you to extend HTML’s syntax to express your application’s components clearly.</p>
+
+<h3>2) What are the key features of AngularJS?</h3>
+<p>The key features of AngularJS are:</p>
+<ul>
+<li>Scope</li>
+<li>Controller</li>
+<li>Model</li>
+<li>View</li>
+<li>Services</li>
+<li>Data Binding</li>
+<li>Directives</li>
+<li>Filters</li>
+<li>Testable</li>
+</ul>
+
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>3) Explain function scope in AngularJS</h3>
+<p><a href="/angularjs-scope.html" data-lasso-id="368936">Scope</a> refers to the application model. It acts like a glue between the application controller and the view. Scopes are arranged in a hierarchical structure and impersonate the DOM (Document Object Model) structure of the application. It can watch expressions and propagate events.</p>
+
+<h3>4) Explain services in AngularJS</h3>
+<p>AngularJS services are the singleton objects or functions that are used for carrying out specific tasks. It holds some business logic.</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>5) What is Angular Expression? Explain the key difference between angular expressions and JavaScript expressions</h3>
+<p>Like JavaScript,  Angular expressions are code snippets that are usually placed in binding such as {{ expression }}</p>
+<p>The key difference between the JavaScript expressions and Angular expressions is:</p>
+<ul>
+<li><strong>Context:</strong> In Angular, the expressions are evaluated against a scope object, while the JavaScript expressions are evaluated against the global window</li>
+<li><strong>Forgiving:</strong> In Angular expression, evaluation is forgiving to null and undefined, while in JavaScript undefined properties generate TypeError or ReferenceError</li>
+<li><strong>No Control Flow Statements:</strong> Loops, conditionals or exceptions cannot be used in an angular expression</li>
+<li><strong>Filters:</strong> You can use filters to format data before displaying it.</li>
+</ul>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>6) How can you initialize a select box with options on page load?</h3>
+<p>You can initialize a select box with options on page load by using ng-init directive.</p>
+<ul>
+<li>&lt;div ng-controller = ” apps/dashboard/account ” ng-switch</li>
+<li>On = “! ! accounts” ng-init = ” loadData ( ) “&gt;</li>
+</ul>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>7) What are directives? Name some of the most commonly used directives in AngularJS application</h3>
+<p>A directive is something that introduces new syntax. They are like markers on the DOM element, which attaches a special behavior to it. In any AngularJS application, directives are the most important components.</p>
+<p>Some of the commonly used directives are:</p>
+<p>1) ng-model</p>
+<p>2) ng-App</p>
+<p>3) ng-bind</p>
+<p>4) ng-repeat</p>
+<p>5) ng-show</p>
+
+
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>8) How Angular JS routes work?</h3>
+<p>AngularJS routes enable you to create different URLs for different content in your application.  Different URLs for different content enable the user to bookmark URLs to specific content. Each such bookmarkable URL in AngularJS is called a route</p>
+<p>A value in Angular JS is a simple object.  It can be a number, string, or JavaScript object. Values are typically used as configuration injected into factories, services, or controllers. A value should belong to an AngularJS module.</p>
+<p>Injecting a value into an AngularJS controller function is done by adding a parameter with the same name as the value</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>9)  What is data binding in AngularJS?</h3>
+<p>Automatic synchronization of data between the model and view components is referred to as data binding in AngularJS.  There are two ways for data binding</p>
+<ol>
+<li>Data mining in classical template systems</li>
+<li>Data binding in angular templates</li>
+</ol>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>10)  What are the benefits of AngularJS?</h3>
+<p>Benefits of AngularJS are:</p>
+<ul>
+<li><strong>Registering Callbacks:</strong> There is no need to register callbacks. This makes your code simple and easy to debug.</li>
+<li><strong>Control HTML DOM programmatically: </strong>Applications which are created using Angular are not required to manipulate the DOM.</li>
+<li><strong>Transfer data to and from the UI: </strong>AngularJS helps to eliminate almost all of the boilerplate.  It can validate the form, display errors, return to an internal model, and so on.</li>
+<li><strong>No initialization code: </strong>With AngularJS, you can bootstrap your app easily. You can use auto injected services into your application in Guice.</li>
+</ul>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>11)  What is string interpolation in Angular.JS ?</h3>
+<p>In Angular.js, the compiler during the compilation process matches text and attributes. It uses interpolate service to see if they contain embedded expressions.  As part of the normal digest cycle, these expressions are updated and registered as watches.</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>12) What are the steps for the compilation process of HTML?</h3>
+<p>Compilation of HTML process occurs in the following ways</p>
+<ul>
+<li>Using the standard browser API, first, the HTML is parsed into DOM</li>
+<li>By using the call to the <code>$compile ()</code> method, a compilation of the DOM is performed.  The method traverses the DOM and matches the directives.</li>
+<li>Link the template with a scope by calling the linking function returned from the previous step</li>
+</ul>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>13) Explain directives and their types</h3>
+<p>During compilation process, when specific HTML function is triggered, it is referred to as directive.  It is executed when the compiler encounters it in the DOM.</p>
+<p>Different types of directives are:</p>
+<p>1) Element directives</p>
+<p>2) Attribute directives</p>
+<p>3) CSS class directives</p>
+<p>4) Comment directives.<br>
+</p>
+<p></p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>14)  Explain the linking function and its types</h3>
+<p>Link combines the directives with a scope and produces a live view. For registering DOM listeners as well as for updating the DOM, link function is responsible. After the template is cloned, it is executed.</p>
+<ul>
+<li><strong>Pre-linking function: </strong>Pre-linking function is executed before the child elements are linked.  It is not considered as a safe way for DOM transformation.</li>
+<li><strong>Post linking function:</strong> Post linking function is executed after the child elements are linked. It is safe to do DOM transformation by post-linking function</li>
+</ul>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>15)  Explain injector in AngularJS</h3>
+<p>An injector is a service locator. It is used to retrieve object instances as defined by provider, instantiate types, invoke methods, and load modules.  There is a single injector per Angular application, it helps to lookup an object instance by its name.</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>16)  What is the main difference between a link and compile in Angular.js?</h3>
+<ul>
+<li><strong>Compile function:</strong> It is used for template DOM manipulation and collects all of the directives.</li>
+<li><strong>Link function:</strong> It is used for registering DOM listeners as well as for instance, DOM manipulation. It is executed once the template has been cloned.</li>
+</ul>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>17)  What is the factory function in AngularJS?</h3>
+<p>For creating the directive, factory method is used. It is invoked only once when the compiler matches the directive for the first time.  By using $injector.invoke the factory method is invoked.</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>18)  Explain the styling form that ngModel adds to CSS classes</h3>
+<p>NgModel adds these CSS classes to allow styling of form. Validation classes of AngularJS are:</p>
+<ol>
+<li>ng- valid</li>
+<li>ng- invalid</li>
+<li>ng-pristine</li>
+<li>ng-dirty</li>
+</ol>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>19)  What are the characteristics of “Scope”?</h3>
+<ul>
+<li>To observer model mutations scopes provide APIs ($watch)</li>
+<li>To propagate any model changes through the system into the view from outside of the Angular realm</li>
+<li>A scope inherits properties from its parent scope, while providing access to shared model properties, scopes can be nested to isolate application components</li>
+<li>Scope provides context against which expressions are evaluated</li>
+</ul>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>20)  What is DI (Dependency Injection) and how an object or function can get a hold of its dependencies?</h3>
+<p>DI or Dependency Injection is a software design pattern that deals with how code gets hold of its dependencies.  In order to retrieve elements of the application which is required to be configured when the module gets loaded, the operation “config” uses dependency injection.</p>
+<p>These are the ways that object uses to hold of its dependencies</p>
+<ul>
+<li>Typically using the new operator, dependency can be created</li>
+<li>By referring to a global variable, dependency can be looked up</li>
+<li>Dependency can be passed into where it is required</li>
+</ul>
+
+
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>21)  Explain the concept of scope hierarchy</h3>
+<p>Each angular application consists of one root scope but may have several child scopes. As child controllers and some directives create new child scopes, an application can have multiple scopes. When new scopes are formed or created, they are added as a children of their parent scope. They also create a hierarchical structure similar to DOM.</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>22)  Explain the main difference between AngularJS and backbone.js</h3>
+<table class="table table-striped">
+<tbody>
+<tr>
+<td><strong>AngularJS</strong></td>
+<td><strong>Backbone.js</strong></td>
+</tr>
+<tr>
+<td><a href="/angularjs-introduction.html" data-lasso-id="368937">AngularJS</a> is a JavaScript-based open-source framework which is designed to support dynamic web applications.</td>
+<td>backbone.js is a framework which abstracts DOM into views and data into models and then binds both using events.</td>
+</tr>
+<tr>
+<td>It’s performance is good as it provides two-way data binding process</td>
+<td>Backbone.js technology offers faster performance than AngularJS if the data sets are small</td>
+</tr>
+<tr>
+<td>It works on MVS (Multiple Virtual Storage).</td>
+<td>It works on MVP architecture.</td>
+</tr>
+<tr>
+<td>AngularJS uses dynamic HTML attribute to make an easy to understand the application.</td>
+<td>Backbone.js uses underscore templates to understand the application.</td>
+</tr>
+<tr>
+<td>It has large community support.</td>
+<td>Community support is restricted to the underscore template.</td>
+</tr>
+</tbody>
+</table>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>23)  Who created Angular JS?</h3>
+<p>AngularJS was developed by Adam Abrons and Misko Hevery. Currently, it is developed by Google.</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>24) How can you integrate AngularJS with HTML?</h3>
+<p>Developers can follow the following steps to integrate AngularJS with HTML:</p>
+<p><strong>Step 1:</strong> including AngularJS JavaScript in html page.</p>
+<pre>&lt;head&gt;
+   &lt;script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"&gt;&lt;/script&gt;
+&lt;/head&gt;
+</pre>
+<p><strong>Step 2:</strong> Point out AngularJS application.</p>
+<p>You have to add ng-app attribute inside HTML body tag to tell what part of HTML AngularJS app has as shown in the following example:</p>
+<pre>&lt;body ng-app = "testapp"&gt;
+&lt;/body&gt;
+</pre>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>25) What is orderby filter in AngularJS?</h3>
+<p>Orderby filter in AngularJS orders the array based on specified criteria. Following example states how you can order product by price.</p>
+<pre>&lt;ul&gt;
+&lt;li ng-repeat = "company in product.products | orderBy:'price"&gt;
+      {{ company.product + ', price:' + product.price }}
+   &lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>26) What is ng-non-bindable in AngularJS?</h3>
+<p>Ng-non-bindable specifies AngularJs to not compile the HTML element and its child nodes. For example:</p>
+<p><code>&lt;title ng-non-bindable &gt; &lt;/title&gt;</code></p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>27) Explain the use of double click event in AngularJS</h3>
+<p>double click event of AgularJS let you to specify custom behavior on double click event of mouse on a web page like:</p>
+<pre>&lt;ELEMENT ng-dblclick="{expression}"&gt; 
+... 
+&lt;/ELEMENT&gt;
+</pre>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>28) Explain ng-click directives in AngularJS with example</h3>
+<p>Ng-click directives can be used in a scenario when you have to click on the button or want to perform any operation.</p>
+<p>Example:</p>
+<pre>&lt;button ng-click="count = count ++"&gt;Click&lt;/button&gt;
+</pre>
+
+
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>29) Why use ng-include in AngularJS?</h3>
+<p>Ng-include in AngularJS helps you to embed HTML pages within a single HTML page. Example:</p>
+<pre>&lt;div ng-app = "" ng-controller = "interviewController"&gt;
+   &lt;div ng-include = "'first.htm'"&gt;&lt;/div&gt;
+   &lt;div ng-include = "'phases.htm'"&gt;&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>30) How can you make an ajax call using Angular JS?</h3>
+<p>AngularJS offers $https: control that helps you to make ajax call to read server data. The server makes a database call in order to get the required records. Once your data in JSON format is ready, you can use $https: to retrieve data from the server in the following manner:</p>
+<pre>function employeeController($scope,$https:) {
+   var url = "tasks.txt";
+   $https.get(url).success( function(response) {
+      $scope.employee = response; 
+   });
+}
+</pre>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>31) Explain the use of $routeProvider</h3>
+<p>In Angular JS $routeProvider sets the URL configuration. It maps with the related ng-template or HTML page and attaches a controller with the same.</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>32) How can you set, get, and clear cookies in AngularJS?</h3>
+<p>You can use:</p>
+<ul>
+<li>$cookies.put() method to set the cookies.</li>
+<li>$cookies.get() method to get the cookies.</li>
+<li>$cookies.remove to remove cookies in AngularJS.</li>
+</ul>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>33) What is service method?</h3>
+<p>Service method in AngularJS helps you to define service and method to it. In the following example, we have injected a simple addition service, which adds two numbers.</p>
+<pre>&lt;! DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Event Registration&lt;/title&gt;
+&lt;/head&gt;
+&lt;script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"&gt;&lt;/script&gt;
+&lt;body&gt;
+&lt;h3&gt; Guru99 Global Event&lt;/h3&gt;
+&lt;div ng-app = "mainApp" ng-controller = "DemoController"&gt;
+    &lt;p&gt;Result: {{result}}&lt;/p&gt;
+&lt;/div&gt;
+&lt;script&gt;
+    var mainApp = angular.module("mainApp", []);
+    mainApp.service('AdditionService', function(){
+        this.ADDITION = function(a,b) {
+            return a+b;
+        }
+    });
+
+    mainApp.controller('DemoController', function($scope, AdditionService) {
+
+            $scope.result = AdditionService.ADDITION(5,6);
+    });
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>34) Name the AngularJS components that can be injected as dependency</h3>
+<p>AngularJS components that can be injected as a dependency are: 1) value, 2) factory, 3) service,  4) provider, 5) constant.</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>35) What are the common Angular Global API functions</h3>
+<p>Some commonly used Angular Global API functions are:</p>
+<ul>
+<li><strong>Angular.isString:</strong> It will return true only if the given reference is of type string.</li>
+<li><strong>Angular.lowercase:</strong> It converts any string to lowercase</li>
+<li><strong>Angular.uppercase:</strong> It converts any string to uppercase.</li>
+<li><strong>Angular.isNumber:</strong> It returns true only if the reference is a numeric value or number.</li>
+</ul>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>36) Write a program to hide an HTML tag just by one button click in angular</h3>
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;meta chrset="UTF 8"&gt;
+    &lt;title&gt;Event Registration&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;script src="https://code.angularjs.org/1.6.9/angular.js"&gt;&lt;/script&gt;
+&lt;script src="https://code.jquery.com/jquery-3.3.1.min.js"&gt;&lt;/script&gt;
+
+&lt;h1&gt; Guru99 Global Event&lt;/h1&gt;
+&lt;div ng-app="DemoApp" ng-controller="DemoController"&gt;
+    &lt;input type="button" value="Hide Angular" ng-click="ShowHide()"/&gt;
+    &lt;br&gt;&lt;br&gt;&lt;div ng-hide="IsVisible"&gt;Angular&lt;/div&gt;
+&lt;/div&gt;
+&lt;script type="text/javascript"&gt;
+    var app = angular.module('DemoApp',[]);
+    app.controller('DemoController',function($scope){
+        $scope.IsVisible = false;
+        $scope.ShowHide = function(){
+            $scope.IsVisible = $scope.IsVisible = true;
+        }
+        });
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>37) What is BOM(Browser Object Model)?</h3>
+<p>BOM or Browser Object Model consists of history, object navigator, screen location, etc. It specifies the global browser objects like console, local storage, and window.</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>38) Explain “$rootScope” in AngularJS</h3>
+<p>“$rootScope” is a scope that is created on the DOM (Document Object Model) element.</p>
+<p>An application can have only one $rootScope that shares, among other components. It has the ng-app directive. Other scopes are called as its child scope. It can watch expressions as well as propagate events.</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>39) Give an example of ng-view in Angular</h3>
+<p>Consider the following example:</p>
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;meta chrset="UTF 8"&gt;
+    &lt;title&gt;Event Registration&lt;/title&gt;
+    &lt;script src="https://code.angularjs.org/1.5.9/angular-route.js"&gt;&lt;/script&gt;
+    &lt;script src="https://code.angularjs.org/1.5.9/angular.min.js"&gt;&lt;/script&gt;
+    &lt;script src="lib/bootstrap.js"&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body ng-app="sampleApp"&gt;
+&lt;h1&gt; Global Event&lt;/h1&gt;
+&lt;div class="container"&gt;
+    &lt;ul&gt;&lt;li&gt;&lt;a href="#!NewEvent"&gt; Add New Event&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#!DisplayEvent"&gt; Display Event&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;div ng-view&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;script&gt;
+    var app = angular.module('sampleApp',["ngRoute"]);
+    app.config(function($routeProvider){
+        $routeProvider.
+        when("/NewEvent",{
+            templateUrl : "add_event.html",
+            controller: "AddEventController"
+        }).
+        when("/DisplayEvent", {
+            templateUrl: "show_event.html",
+            controller: "ShowDisplayController"
+        }).
+        otherwise ({
+            redirectTo: '/DisplayEvent'
+        });
+    });
+    app.controller("AddEventController", function($scope) {
+        $scope.message = "This is to Add a new Event";
+    });
+    app.controller("ShowDisplayController",function($scope){
+        $scope.message = "This is display an Event";
+    });
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>40) What is the syntax of factory method in AngularJS?</h3>
+<p>The syntax of Factory is as follows:</p>
+<p>app.factory(‘serviceName’,function(){ return serviceObj;})</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>41) Name different phases of the AngularJS Scope lifecycle.</h3>
+<p>Here, are different phases of AngularJS Scope lifecycle:</p>
+<ul>
+<li>Creation</li>
+<li>Model mutation</li>
+<li>Watcher registration</li>
+<li>Mutation observation</li>
+<li>Scope destruction</li>
+</ul>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>42) Write a program for to bootstrap process in Angular</h3>
+<p>program for to bootstrap process in Angular is:</p>
+<pre>&lt;html&gt;
+    &lt;body ng-app="TestApp"&gt;
+        &lt;div ng-controller="Ctrl"&gt;Hi{{msg}}!&lt;/div&gt;
+        &lt;script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"&gt; 
+&lt;/script&gt;
+        &lt;script&gt;
+            var test = angular.module('TestApp', []);
+            test.controller('Ctrl', function($scope) {
+                $scope.msg = 'Good Morning';
+            });
+        &lt;/script&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+</pre>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>43) What is a single page application in AngularJS?</h3>
+<p>SPA or single page application is a website or web application which interacts with the users dynamically. In AngularJS, JavaScript, HTML, and CSS fit on a single page. It performs navigation without refreshing the whole HTML page.</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>44) Explain the concept of webpack</h3>
+<p>Webpack is a module bundler for Angular2 or above. It bundles, transpiles, and minifies AngularJS application.</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>45) What do you mean by NPM?</h3>
+<p>NPM stands for Node Package Manager. It consists of a command line tool client for interacting with the repository of Node.js project.</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>46) How can you create a new project in angularJS using Command Line Interface?</h3>
+<p>Once you install the Angular command-line interface, you have to run ng new project-name command in order to create a new project in Angular.</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>47) Explain the auto bootstrap process in AngularJS</h3>
+<p>Angular initializes automatically DOMContentLoaded event or when you download angular.js script is to the browser.</p>
+<p>After this, AngularJS find the ng-app directive that is the root of angular app compilation. When ng-app directive is found, AngularJS do the following steps:</p>
+<p>1) load the module, which is associated with the directive,</p>
+<p>2) Create application injector,</p>
+<p>3) Compile the DOM from the ng-app root element. This process is known as auto bootstrapping.</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>48) What is immediately invoked function expressions?</h3>
+<p>IIFEs or Immediately Invoked Function Expressions is a function that executes as soon as it is created. It offers a simple way to isolate the variable declaration. IIFEs contains two major functions:</p>
+<p>1) operator()</p>
+<p>2) expression()</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>49) What is the digest cycle in AngularJS?</h3>
+<p>Digest cycle is important part of the data binding in AngularJS, which<strong>			</strong>compares the old and new version of the scope model. Digest cycle triggered automatically or manually by using $apply() function. <strong>			</strong></p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>50) What is the basic requirement to work with AngularJS?</h3>
+<p>You have to download the latest version of AngularJS from AngularJS.com to learn or work with AngularJS. You can either need JS file and host it locally, or you can also use google CDN (Content Delivery Network) for referencing it.</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>51) Can we create nested controllers in AngularJS?</h3>
+<p>Yes, we can create a nested controller in AngularJS.</p>
+<p>Example of nested controller is as follows:</p>
+<pre>&lt;div ng-controller="MainCtrl"&gt;
+ &lt;p&gt;{{msg}} {{name}}!&lt;/p&gt;
+&lt;div ng-controller="SubCtrl1"&gt;
+&lt;p&gt;Hi {{name}}!&lt;/p&gt;
+   &lt;div ng-controller="SubCtrl2"&gt;
+     &lt;p&gt;{{msg}} {{name}}! Your name is {{name}}.&lt;/p&gt;
+   &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>52) What is Authentication?</h3>
+<p>The authentication is a service that is used to login and logout of Angular application. The credentials of users pass to API on the server. Then post server-side validation these credentials, JSON Web Token is returned, which as detail about the current user.</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>53) Define AngularJS Material</h3>
+<p>AngularJS Material is an implementation of the Material Design Specification of Google. It offers a set of well-tested, reusable UI components for AngularJS programmer.</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>54) What are the important differences between Angular 7 and Angular 8</h3>
+<table class="table table-striped">
+<tbody>
+<tr>
+<td width="50%"><strong>Angular 7</strong></td>
+<td><strong>Angular 8</strong></td>
+</tr>
+<tr>
+<td>Angular 7 is hard to use</td>
+<td>Angular 8 is very easy to use</td>
+</tr>
+<tr>
+<td>It provides supports for the lower version of Typescript 3.4 programming language</td>
+<td>It does not provide support for the lower version of Typescript 3.4 programming language</td>
+</tr>
+<tr>
+<td>Supports all versions of Node.js</td>
+<td>Supports only Node.js 12 version.</td>
+</tr>
+</tbody>
+</table>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>55) What is ngzone?</h3>
+<p>The ngzone is a JavaScrip wrapper class which is denoted by Zone.js. It enables developers to explicitly run certain code outside Angular’s zone, which inhibits angular to run any change detection.</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>56) List out the difference between Angular Component and Directive</h3>
+<table class="table table-striped">
+<tbody>
+<tr>
+<td width="50%"><strong>Component </strong></td>
+<td><strong>Directive</strong></td>
+</tr>
+<tr>
+<td>Angular component is a directive that enables you to utilize the web component functionality throughout the application.</td>
+<td>Angular directive is a technique by which we attach behavior to the elements.</td>
+</tr>
+<tr>
+<td>It helps you to divides your application into smaller components.</td>
+<td>It helps you to design the reusable components.</td>
+</tr>
+<tr>
+<td>It can define pipes</td>
+<td>It cannot define pipes.</td>
+</tr>
+</tbody>
+</table>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>57) Define ECMAScript</h3>
+<p>ECMAScript (European Computer Manufacturer’s Association) is a standard for scripting languages. JavaScript uses ECMAScript as a core language. Developers can take help of it for writing client-side scripting on the world wide web and or server applications and services. ECMAScript has numerous features like functional, prototype, dynamic, and structured features.</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>58) What is a Traceur Compiler?</h3>
+<p>Traceur is a JavaScript compiler that uses classes, generators, and other features from ECMAScript.</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>59) How to convert a string into currency?</h3>
+<p>You can convert string input into the currency type currency filter in Angular.</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>60) What are templates in AngularJS?</h3>
+<p>A template is HTML file that is used with AngularJs directives and attributes.</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>61) Explain the differences between Angular and jQuery</h3>
+<table class="table table-striped">
+<tbody>
+<tr>
+<td width="50%"><strong>AngularJS</strong></td>
+<td><strong>JQuery</strong></td>
+</tr>
+<tr>
+<td>AngularJs is difficult to understand</td>
+<td>Jquery is very easy to understand.</td>
+</tr>
+<tr>
+<td>It supports two-way binding process</td>
+<td>It does not support data binding process</td>
+</tr>
+<tr>
+<td>It provides support for deep linking routing</td>
+<td>It does not provide support for deep linking routing</td>
+</tr>
+</tbody>
+</table>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>62) What is the Ahead of Time Compilation?</h3>
+<p>Angular AOT (Ahead of Time) is a compiler that converts your angular HTML and typescript code into the JavaScript code.</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>63) List types of filters in AngularJS</h3>
+<p>Types of filters used in AngularJS are: 1) Currency, 2) Uppercase, 3) Lowercase, 4) orderBy, 5) JSON, and 6) limitTo.</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>64) Explain ngOnInit () function</h3>
+<p>ngOnInit () function is a lifecycle hook which is called after completion of data-bound properties of the directive.</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>65)  What is transclusion in AngularJS?</h3>
+<p>The transclusion in AngulaJS enables developers to reallocate the original directive children into a specific location within a template. The directive ng shows the insertion point for a transcluded DOM of the nearest parent directive, which is using transclusion. Ng-transclude-slot or ng-transclude directives are mainly used for transclusion.</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>66) Lit out hooks are available in AngularJS</h3>
+<p>Various hooks in AngularJS are:</p>
+<p>1) ngOnInit()</p>
+<p>2) ngOnChanges(),</p>
+<p>3) ngDoCheck(),</p>
+<p>4) ngAfterContentInit(),</p>
+<p>5) ngAfterContentChecked(),</p>
+<p>6) ngOnDestroy(),</p>
+<p>7) ngAfterViewChecked(), and</p>
+<p>8) ngAfterViewInit()</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>67) What are the important parts of AngularJS metadata?</h3>
+<p>AngularJS metadata is used to decorate a class that depicts the expected behavior of a particular class. Various parts of metadata are: 1) class decorator, 2) Method decorators, Parameter decorators, and 4) Property decorators.</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>68) What is Angular CLI?</h3>
+<p>Angular CLI is also called as the command line interface tool. It is used to build, initialize, and maintain Angular apps. CLI software can be used through very interactive UI like a command shell or Angular Console.</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>69) Explain parameterized pipe in AngularJS</h3>
+<p>In angularJS, pipes can have more than one parameter in order to tune the fine output.  You can create a parameterized pipe by declaring the pipe with colon(:) and values of parameter. Developer can separate multiple parameter values with colon(:).</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>70) What is Routing?</h3>
+<p>Routing is a method of merging various views. The controller takes the decision to combine these views depend on logical needs.</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>71) What do you mean by isolated unit tests?</h3>
+<p>Isolated test is a process of checking instance of class without using any injected values or Angular dependence. It helps you to implement program very easily.</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>72) Name DSL animation functions in AngularJS</h3>
+<p>DSL animation functions in AngularJS are: 1) group(), 2) state(), 3) transition(), 4) style(), 5) keyframes(), 6) trigger(), 7) sequence(), and 8) animate().</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>73) What is AngularJS module?</h3>
+<p>In angularJS, a module is a process to group directives, and services components that are related. It arranges them in a way that they can mix with other modules to create an application.</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>74) What are pipes in AngularJs?</h3>
+<p>In angular, pipes provide a simple method to transform the data. It takes the values like arrays, integers, data, and strings as input and divided with pipe (|) symbol. It converts the data in the required format. Pipes displays the same thing in the browser. In angularJS, it provides some in-built pipes, but developers can also develop their own pipes.</p>
+<hr style="border-top: 1px dashed #8c8b8b;">
+<h3>75) Explain ViewEncapsulation in AngularJS</h3>
+<p>ViewEncapsulation determines whether the styles defined in the AngularJS component will affect the entire app or not.</p>
+
+
+
+        </div>	
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
