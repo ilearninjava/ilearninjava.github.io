@@ -344,6 +344,7 @@ h6 {
 .navbar-mobile .dropdown ul .active:hover,
 .navbar-mobile .dropdown ul li:hover>a {
   color: #d9232d;
+  color: yellow;
 }
 
 .navbar-mobile .dropdown>.dropdown-active {
