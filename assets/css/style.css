@@ -301,12 +301,14 @@ h6 {
   padding: 10px 20px;
   font-size: 15px;
   color: #556270;
+  color: rgb(123, 180, 7);
 }
 
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover>a {
   color: #d9232d;
+  color:yellow;
 }
 
 .navbar-mobile .getstarted,
