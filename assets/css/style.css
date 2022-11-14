@@ -10,7 +10,8 @@
 --------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
-  color: #444444;
+  color: #a59999;
+  background-color: #111;
 }
 
 a {
@@ -74,7 +75,7 @@ h6 {
 # Header
 --------------------------------------------------------------*/
 #header {
-  background: white;
+  background: rgb(0, 1, 15);
   transition: all 0.5s;
   z-index: 997;
   padding: 20px 0;
