@@ -14,9 +14,14 @@ body {
   background-color: #111;
 }
 
+div div a img{
+  background-color: rgb(141, 163, 96);
+  border: solid yellowgreen;
+}
+
 a {
   text-decoration: none;
-  color: #d9232d;
+  color: yellow;
 }
 
 a.title {
@@ -25,7 +30,7 @@ a.title {
 }
 
 a:hover {
-  color: #e24d55;
+  color: yellow;
   text-decoration: none;
 }
 
