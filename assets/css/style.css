@@ -17,6 +17,9 @@ body {
 div div a img{
   background-color: rgb(141, 163, 96);
   border: solid yellowgreen;
+  width: 175px !important;
+  height: 175px !important;
+  padding: 5px !important;
 }
 
 a {
