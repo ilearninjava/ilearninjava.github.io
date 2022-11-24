@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Java Interview Q&A</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Sailor - v4.9.1
+  * Template URL: https://bootstrapmade.com/sailor-free-bootstrap-theme/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center">
+      <h1 class="logo me-auto"><a href="index.html">Java Interview Q&A</a></h1>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+
+          <li class="dropdown"><a href="java.html"><span>Java</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="java-oops.html">Oops</a></li>
+              <li><a href="java-multithreading.html">Multithreading</a></li>
+              <li><a href="java-exception.html">Exception handling</a></li>
+
+              <li class="dropdown"><a href="java-collection.html"><span>Collection framework</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="java-collection.html">Map</a></li>
+                  <li><a href="java-collection.html">List</a></li>
+                  <li><a href="java-collection.html">Queue</a></li>
+                </ul>
+              </li>
+              <li><a href="jdk8.html">JDK8 features</a></li>
+              <li class="dropdown"><a href="design-pattern.html"><span>Design Patterns</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="creational-design-pattern.html">Creational Design Patterns</a></li>
+                  <li><a href="structural-design-pattern.html">Structural Design Patterns</a></li>
+                  <li><a href="behavioral-design-pattern.html">Behavioral Design Patterns</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="framework.html"><span>Framework</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="spring.html">Spring</a></li>
+              <li><a href="hibernate.html">Hibernate</a></li>
+              <li><a href="springboot.html">SpringBoot</a></li>
+              <li><a href="jsf.html">JSF</a></li>
+              <li><a href="struts.html">Struts</a></li>
+              <li class="dropdown"><a href="#"><span>Entity Framework</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="jpa.html">JPA</a></li>
+                  <li><a href="hibernate.html">Hibernate</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>Coding</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="index.html">Java</a></li>
+              <li><a href="spring.html">Spring</a></li>
+              <li><a href="hibernate.html">Hibernate</a></li>
+              <li><a href="springboot.html">SpringBoot</a></li>
+              <li><a href="jsf.html">JSF</a></li>
+              <li><a href="struts.html">Struts</a></li>
+              <li class="dropdown"><a href="#"><span>Entity Framework</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="jpa.html">JPA</a></li>
+                  <li><a href="hibernate.html">Hibernate</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="database.html"><span>Database</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="sql.html">SQL</a></li>
+              <li><a href="plsql.html">PL-SQL</a></li>
+              <li class="dropdown"><a href="nosql.html"><span>NoSQL</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">Apache Cassandra</a></li>
+                  <li><a href="#">MongoDB</a></li>
+                  <li><a href="#">Redis</a></li>
+                  <li><a href="#">ArangoDB</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="cloud.html"><span>Cloud</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="aws.html">AWS</a></li>
+              <li><a href="gcp.html">GCP</a></li>
+              <li><a href="azure.html">Azure</a></li>
+              <li><a href="ibm-cloud.html">IBM Cloud</a></li>
+              <li><a href="docker.html">Docker</a></li>
+              <li><a href="kubernetes.html">Kubernetes</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="ui.html"><span>UI</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="angular.html">Angular</a></li>
+              <li><a href="react.html">ReactJS</a></li>
+              <li><a href="javascript.html">Javascript</a></li>
+              <li><a href="css.html">css</a></li>
+              <li><a href="html.html">html</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>Other</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Company wise</a></li>
+              <li><a href="#">Design pattern</a></li>
+              <li><a href="microservices.html">Microservices</a></li>
+              <li><a href="#">Data Structure</a></li>
+              <li><a href="#">Architect</a></li>
+            </ul>
+          </li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+  </header>
+
+</br>
+  <main id="main">
+
+    <section id="about" class="about">
+      <div class="container">
+        <div class="row-content"> 
+          
+
+          <div id="main-content-wrap" class="main-content-wrap"> 
+<details open=""> <summary class="text-delta"> Table of contents </summary> <ol id="markdown-toc"> <li><a href="#-chain-of-responsibility" id="markdown-toc--chain-of-responsibility">🔗 Chain of Responsibility</a></li> <li><a href="#-command" id="markdown-toc--command">👮 Command</a></li> <li><a href="#-iterator" id="markdown-toc--iterator">➿ Iterator</a></li> <li><a href="#-mediator" id="markdown-toc--mediator">👽 Mediator</a></li> <li><a href="#-memento" id="markdown-toc--memento">💾 Memento</a></li> <li><a href="#-observer" id="markdown-toc--observer">😎 Observer</a></li> <li><a href="#-visitor" id="markdown-toc--visitor">🏃 Visitor</a></li> <li><a href="#-strategy" id="markdown-toc--strategy">💡 Strategy</a></li> <li><a href="#-state" id="markdown-toc--state">💢 State</a></li> <li><a href="#-template-method" id="markdown-toc--template-method">📒 Template Method</a></li> </ol> </details><hr> <p>In plain words</p> <blockquote> <p>It is concerned with assignment of responsibilities between the objects. What makes them different from structural patterns is they don’t just specify the structure but also outline the patterns for message passing/communication between them. Or in other words, they assist in answering “How to run a behavior in software component?”</p> </blockquote> <p>Wikipedia says</p> <blockquote> <p>In software engineering, behavioral design patterns are design patterns that identify common communication patterns between objects and realize these patterns. By doing so, these patterns increase flexibility in carrying out this communication.</p> </blockquote><hr> <h2 id="-chain-of-responsibility"> <a href="#-chain-of-responsibility" class="anchor-heading" aria-labelledby="-chain-of-responsibility"></a> 🔗 Chain of Responsibility </h2> <p>Real world example</p> <blockquote> <p>For example, you have three payment methods (<code class="language-plaintext highlighter-rouge">A</code>, <code class="language-plaintext highlighter-rouge">B</code> and <code class="language-plaintext highlighter-rouge">C</code>) setup in your account; each having a different amount in it. <code class="language-plaintext highlighter-rouge">A</code> has 100 USD, <code class="language-plaintext highlighter-rouge">B</code> has 300 USD and <code class="language-plaintext highlighter-rouge">C</code> having 1000 USD and the preference for payments is chosen as <code class="language-plaintext highlighter-rouge">A</code> then <code class="language-plaintext highlighter-rouge">B</code> then <code class="language-plaintext highlighter-rouge">C</code>. You try to purchase something that is worth 210 USD. Using Chain of Responsibility, first of all account <code class="language-plaintext highlighter-rouge">A</code> will be checked if it can make the purchase, if yes purchase will be made and the chain will be broken. If not, request will move forward to account <code class="language-plaintext highlighter-rouge">B</code> checking for amount if yes chain will be broken otherwise the request will keep forwarding till it finds the suitable handler. Here <code class="language-plaintext highlighter-rouge">A</code>, <code class="language-plaintext highlighter-rouge">B</code> and <code class="language-plaintext highlighter-rouge">C</code> are links of the chain and the whole phenomenon is Chain of Responsibility.</p> </blockquote> <p>In plain words</p> <blockquote> <p>It helps building a chain of objects. Request enters from one end and keeps going from object to object till it finds the suitable handler.</p> </blockquote> <p>Wikipedia says</p> <blockquote> <p>In object-oriented design, the chain-of-responsibility pattern is a design pattern consisting of a source of command objects and a series of processing objects. Each processing object contains logic that defines the types of command objects that it can handle; the rest are passed to the next processing object in the chain.</p> </blockquote> <p><strong>Programmatic Example</strong></p> <p>Translating our account example above. First of all we have a base account having the logic for chaining the accounts together and some accounts</p> <div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">abstract</span> <span class="kd">class</span> <span class="nc">Account</span>
+<span class="o">{</span>
+    <span class="kd">protected</span> <span class="n">$successor</span><span class="o">;</span>
+    <span class="kd">protected</span> <span class="n">$balance</span><span class="o">;</span>
+
+    <span class="kd">public</span> <span class="n">function</span> <span class="nf">setNext</span><span class="o">(</span><span class="nc">Account</span> <span class="n">$account</span><span class="o">)</span>
+    <span class="o">{</span>
+        <span class="n">$this</span><span class="o">-&gt;</span><span class="n">successor</span> <span class="o">=</span> <span class="n">$account</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="n">function</span> <span class="nf">pay</span><span class="o">(</span><span class="kt">float</span> <span class="n">$amountToPay</span><span class="o">)</span>
+    <span class="o">{</span>
+        <span class="k">if</span> <span class="o">(</span><span class="n">$this</span><span class="o">-&gt;</span><span class="n">canPay</span><span class="o">(</span><span class="n">$amountToPay</span><span class="o">))</span> <span class="o">{</span>
+            <span class="n">echo</span> <span class="nf">sprintf</span><span class="o">(</span><span class="err">'</span><span class="nc">Paid</span> <span class="o">%</span><span class="n">s</span> <span class="n">using</span> <span class="o">%</span><span class="n">s</span><span class="err">'</span> <span class="o">.</span> <span class="no">PHP_EOL</span><span class="o">,</span> <span class="n">$amountToPay</span><span class="o">,</span> <span class="n">get_called_class</span><span class="o">());</span>
+        <span class="o">}</span> <span class="n">elseif</span> <span class="o">(</span><span class="n">$this</span><span class="o">-&gt;</span><span class="n">successor</span><span class="o">)</span> <span class="o">{</span>
+            <span class="n">echo</span> <span class="nf">sprintf</span><span class="o">(</span><span class="err">'</span><span class="nc">Cannot</span> <span class="n">pay</span> <span class="n">using</span> <span class="o">%</span><span class="n">s</span><span class="o">.</span> <span class="nc">Proceeding</span> <span class="o">..</span><span class="err">'</span> <span class="o">.</span> <span class="no">PHP_EOL</span><span class="o">,</span> <span class="n">get_called_class</span><span class="o">());</span>
+            <span class="n">$this</span><span class="o">-&gt;</span><span class="n">successor</span><span class="o">-&gt;</span><span class="n">pay</span><span class="o">(</span><span class="n">$amountToPay</span><span class="o">);</span>
+        <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+            <span class="k">throw</span> <span class="k">new</span> <span class="nf">Exception</span><span class="o">(</span><span class="err">'</span><span class="nc">None</span> <span class="n">of</span> <span class="n">the</span> <span class="n">accounts</span> <span class="n">have</span> <span class="n">enough</span> <span class="n">balance</span><span class="err">'</span><span class="o">);</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="n">function</span> <span class="nf">canPay</span><span class="o">(</span><span class="n">$amount</span><span class="o">):</span> <span class="n">bool</span>
+    <span class="o">{</span>
+        <span class="k">return</span> <span class="n">$this</span><span class="o">-&gt;</span><span class="n">balance</span> <span class="o">&gt;=</span> <span class="n">$amount</span><span class="o">;</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+
+<span class="kd">class</span> <span class="nc">Bank</span> <span class="kd">extends</span> <span class="nc">Account</span>
+<span class="o">{</span>
+    <span class="kd">protected</span> <span class="n">$balance</span><span class="o">;</span>
+
+    <span class="kd">public</span> <span class="n">function</span> <span class="nf">__construct</span><span class="o">(</span><span class="kt">float</span> <span class="n">$balance</span><span class="o">)</span>
+    <span class="o">{</span>
+        <span class="n">$this</span><span class="o">-&gt;</span><span class="n">balance</span> <span class="o">=</span> <span class="n">$balance</span><span class="o">;</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+
+<span class="kd">class</span> <span class="nc">Paypal</span> <span class="kd">extends</span> <span class="nc">Account</span>
+<span class="o">{</span>
+    <span class="kd">protected</span> <span class="n">$balance</span><span class="o">;</span>
+
+    <span class="kd">public</span> <span class="n">function</span> <span class="nf">__construct</span><span class="o">(</span><span class="kt">float</span> <span class="n">$balance</span><span class="o">)</span>
+    <span class="o">{</span>
+        <span class="n">$this</span><span class="o">-&gt;</span><span class="n">balance</span> <span class="o">=</span> <span class="n">$balance</span><span class="o">;</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+
+<span class="kd">class</span> <span class="nc">Bitcoin</span> <span class="kd">extends</span> <span class="nc">Account</span>
+<span class="o">{</span>
+    <span class="kd">protected</span> <span class="n">$balance</span><span class="o">;</span>
+
+    <span class="kd">public</span> <span class="n">function</span> <span class="nf">__construct</span><span class="o">(</span><span class="kt">float</span> <span class="n">$balance</span><span class="o">)</span>
+    <span class="o">{</span>
+        <span class="n">$this</span><span class="o">-&gt;</span><span class="n">balance</span> <span class="o">=</span> <span class="n">$balance</span><span class="o">;</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div> <p>Now let’s prepare the chain using the links defined above (i.e. Bank, Paypal, Bitcoin)</p> <div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Let's prepare a chain like below</span>
+<span class="c1">//      $bank-&gt;$paypal-&gt;$bitcoin</span>
+<span class="c1">//</span>
+<span class="c1">// First priority bank</span>
+<span class="c1">//      If bank can't pay then paypal</span>
+<span class="c1">//      If paypal can't pay then bit coin</span>
+
+<span class="n">$bank</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Bank</span><span class="o">(</span><span class="mi">100</span><span class="o">);</span>          <span class="c1">// Bank with balance 100</span>
+<span class="n">$paypal</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Paypal</span><span class="o">(</span><span class="mi">200</span><span class="o">);</span>      <span class="c1">// Paypal with balance 200</span>
+<span class="n">$bitcoin</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Bitcoin</span><span class="o">(</span><span class="mi">300</span><span class="o">);</span>    <span class="c1">// Bitcoin with balance 300</span>
+
+<span class="n">$bank</span><span class="o">-&gt;</span><span class="n">setNext</span><span class="o">(</span><span class="n">$paypal</span><span class="o">);</span>
+<span class="n">$paypal</span><span class="o">-&gt;</span><span class="n">setNext</span><span class="o">(</span><span class="n">$bitcoin</span><span class="o">);</span>
+
+<span class="c1">// Let's try to pay using the first priority i.e. bank</span>
+<span class="n">$bank</span><span class="o">-&gt;</span><span class="n">pay</span><span class="o">(</span><span class="mi">259</span><span class="o">);</span>
+
+<span class="c1">// Output will be</span>
+<span class="c1">// ==============</span>
+<span class="c1">// Cannot pay using bank. Proceeding ..</span>
+<span class="c1">// Cannot pay using paypal. Proceeding ..:</span>
+<span class="c1">// Paid 259 using Bitcoin!</span>
+</code></pre></div></div><hr> <h2 id="-command"> <a href="#-command" class="anchor-heading" aria-labelledby="-command"></a> 👮 Command </h2> <p>Real world example</p> <blockquote> <p>A generic example would be you ordering food at a restaurant. You (i.e. <code class="language-plaintext highlighter-rouge">Client</code>) ask the waiter (i.e. <code class="language-plaintext highlighter-rouge">Invoker</code>) to bring some food (i.e. <code class="language-plaintext highlighter-rouge">Command</code>) and waiter simply forwards the request to Chef (i.e. <code class="language-plaintext highlighter-rouge">Receiver</code>) who has the knowledge of what and how to cook. Another example would be you (i.e. <code class="language-plaintext highlighter-rouge">Client</code>) switching on (i.e. <code class="language-plaintext highlighter-rouge">Command</code>) the television (i.e. <code class="language-plaintext highlighter-rouge">Receiver</code>) using a remote control (<code class="language-plaintext highlighter-rouge">Invoker</code>).</p> </blockquote> <p>In plain words</p> <blockquote> <p>Allows you to encapsulate actions in objects. The key idea behind this pattern is to provide the means to decouple client from receiver.</p> </blockquote> <p>Wikipedia says</p> <blockquote> <p>In object-oriented programming, the command pattern is a behavioral design pattern in which an object is used to encapsulate all information needed to perform an action or trigger an event at a later time. This information includes the method name, the object that owns the method and values for the method parameters.</p> </blockquote> <p><strong>Programmatic Example</strong></p> <p>First of all we have the receiver that has the implementation of every action that could be performed</p> <div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Receiver</span>
+<span class="kd">class</span> <span class="nc">Bulb</span>
+<span class="o">{</span>
+    <span class="kd">public</span> <span class="n">function</span> <span class="nf">turnOn</span><span class="o">()</span>
+    <span class="o">{</span>
+        <span class="n">echo</span> <span class="s">"Bulb has been lit"</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="n">function</span> <span class="nf">turnOff</span><span class="o">()</span>
+    <span class="o">{</span>
+        <span class="n">echo</span> <span class="s">"Darkness!"</span><span class="o">;</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div> <p>then we have an interface that each of the commands are going to implement and then we have a set of commands</p> <div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">interface</span> <span class="nc">Command</span>
+<span class="o">{</span>
+    <span class="kd">public</span> <span class="n">function</span> <span class="nf">execute</span><span class="o">();</span>
+    <span class="kd">public</span> <span class="n">function</span> <span class="nf">undo</span><span class="o">();</span>
+    <span class="kd">public</span> <span class="n">function</span> <span class="nf">redo</span><span class="o">();</span>
+<span class="o">}</span>
+
+<span class="c1">// Command</span>
+<span class="kd">class</span> <span class="nc">TurnOn</span> <span class="kd">implements</span> <span class="nc">Command</span>
+<span class="o">{</span>
+    <span class="kd">protected</span> <span class="n">$bulb</span><span class="o">;</span>
+
+    <span class="kd">public</span> <span class="n">function</span> <span class="nf">__construct</span><span class="o">(</span><span class="nc">Bulb</span> <span class="n">$bulb</span><span class="o">)</span>
+    <span class="o">{</span>
+        <span class="n">$this</span><span class="o">-&gt;</span><span class="n">bulb</span> <span class="o">=</span> <span class="n">$bulb</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="n">function</span> <span class="nf">execute</span><span class="o">()</span>
+    <span class="o">{</span>
+        <span class="n">$this</span><span class="o">-&gt;</span><span class="n">bulb</span><span class="o">-&gt;</span><span class="n">turnOn</span><span class="o">();</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="n">function</span> <span class="nf">undo</span><span class="o">()</span>
+    <span class="o">{</span>
+        <span class="n">$this</span><span class="o">-&gt;</span><span class="n">bulb</span><span class="o">-&gt;</span><span class="n">turnOff</span><span class="o">();</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="n">function</span> <span class="nf">redo</span><span class="o">()</span>
+    <span class="o">{</span>
+        <span class="n">$this</span><span class="o">-&gt;</span><span class="n">execute</span><span class="o">();</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+
+<span class="kd">class</span> <span class="nc">TurnOff</span> <span class="kd">implements</span> <span class="nc">Command</span>
+<span class="o">{</span>
+    <span class="kd">protected</span> <span class="n">$bulb</span><span class="o">;</span>
+
+    <span class="kd">public</span> <span class="n">function</span> <span class="nf">__construct</span><span class="o">(</span><span class="nc">Bulb</span> <span class="n">$bulb</span><span class="o">)</span>
+    <span class="o">{</span>
+        <span class="n">$this</span><span class="o">-&gt;</span><span class="n">bulb</span> <span class="o">=</span> <span class="n">$bulb</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="n">function</span> <span class="nf">execute</span><span class="o">()</span>
+    <span class="o">{</span>
+        <span class="n">$this</span><span class="o">-&gt;</span><span class="n">bulb</span><span class="o">-&gt;</span><span class="n">turnOff</span><span class="o">();</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="n">function</span> <span class="nf">undo</span><span class="o">()</span>
+    <span class="o">{</span>
+        <span class="n">$this</span><span class="o">-&gt;</span><span class="n">bulb</span><span class="o">-&gt;</span><span class="n">turnOn</span><span class="o">();</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="n">function</span> <span class="nf">redo</span><span class="o">()</span>
+    <span class="o">{</span>
+        <span class="n">$this</span><span class="o">-&gt;</span><span class="n">execute</span><span class="o">();</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div> <p>Then we have an <code class="language-plaintext highlighter-rouge">Invoker</code> with whom the client will interact to process any commands</p> <div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Invoker</span>
+<span class="kd">class</span> <span class="nc">RemoteControl</span>
+<span class="o">{</span>
+    <span class="kd">public</span> <span class="n">function</span> <span class="nf">submit</span><span class="o">(</span><span class="nc">Command</span> <span class="n">$command</span><span class="o">)</span>
+    <span class="o">{</span>
+        <span class="n">$command</span><span class="o">-&gt;</span><span class="n">execute</span><span class="o">();</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div> <p>Finally let’s see how we can use it in our client</p> <div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">$bulb</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Bulb</span><span class="o">();</span>
+
+<span class="n">$turnOn</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">TurnOn</span><span class="o">(</span><span class="n">$bulb</span><span class="o">);</span>
+<span class="n">$turnOff</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">TurnOff</span><span class="o">(</span><span class="n">$bulb</span><span class="o">);</span>
+
+<span class="n">$remote</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">RemoteControl</span><span class="o">();</span>
+<span class="n">$remote</span><span class="o">-&gt;</span><span class="n">submit</span><span class="o">(</span><span class="n">$turnOn</span><span class="o">);</span> <span class="c1">// Bulb has been lit!</span>
+<span class="n">$remote</span><span class="o">-&gt;</span><span class="n">submit</span><span class="o">(</span><span class="n">$turnOff</span><span class="o">);</span> <span class="c1">// Darkness!</span>
+</code></pre></div></div> <p>Command pattern can also be used to implement a transaction based system. Where you keep maintaining the history of commands as soon as you execute them. If the final command is successfully executed, all good otherwise just iterate through the history and keep executing the <code class="language-plaintext highlighter-rouge">undo</code> on all the executed commands.</p><hr> <h2 id="-iterator"> <a href="#-iterator" class="anchor-heading" aria-labelledby="-iterator"></a> ➿ Iterator </h2> <p>Real world example</p> <blockquote> <p>An old radio set will be a good example of iterator, where user could start at some channel and then use next or previous buttons to go through the respective channels. Or take an example of MP3 player or a TV set where you could press the next and previous buttons to go through the consecutive channels or in other words they all provide an interface to iterate through the respective channels, songs or radio stations.</p> </blockquote> <p>In plain words</p> <blockquote> <p>It presents a way to access the elements of an object without exposing the underlying presentation.</p> </blockquote> <p>Wikipedia says</p> <blockquote> <p>In object-oriented programming, the iterator pattern is a design pattern in which an iterator is used to traverse a container and access the container’s elements. The iterator pattern decouples algorithms from containers; in some cases, algorithms are necessarily container-specific and thus cannot be decoupled.</p> </blockquote> <p><strong>Programmatic example</strong></p> <p>In PHP it is quite easy to implement using SPL (Standard PHP Library). Translating our radio stations example from above. First of all we have <code class="language-plaintext highlighter-rouge">RadioStation</code></p> <div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nc">RadioStation</span>
+<span class="o">{</span>
+    <span class="kd">protected</span> <span class="n">$frequency</span><span class="o">;</span>
+
+    <span class="kd">public</span> <span class="n">function</span> <span class="nf">__construct</span><span class="o">(</span><span class="kt">float</span> <span class="n">$frequency</span><span class="o">)</span>
+    <span class="o">{</span>
+        <span class="n">$this</span><span class="o">-&gt;</span><span class="n">frequency</span> <span class="o">=</span> <span class="n">$frequency</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="n">function</span> <span class="nf">getFrequency</span><span class="o">():</span> <span class="kt">float</span>
+    <span class="o">{</span>
+        <span class="k">return</span> <span class="n">$this</span><span class="o">-&gt;</span><span class="n">frequency</span><span class="o">;</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div> <p>Then we have our iterator</p> <div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">use</span> <span class="nc">Countable</span><span class="o">;</span>
+<span class="n">use</span> <span class="nc">Iterator</span><span class="o">;</span>
+
+<span class="kd">class</span> <span class="nc">StationList</span> <span class="kd">implements</span> <span class="nc">Countable</span><span class="o">,</span> <span class="nc">Iterator</span>
+<span class="o">{</span>
+    <span class="cm">/** @var RadioStation[] $stations */</span>
+    <span class="kd">protected</span> <span class="n">$stations</span> <span class="o">=</span> <span class="o">[];</span>
+
+    <span class="cm">/** @var int $counter */</span>
+    <span class="kd">protected</span> <span class="n">$counter</span><span class="o">;</span>
+
+    <span class="kd">public</span> <span class="n">function</span> <span class="nf">addStation</span><span class="o">(</span><span class="nc">RadioStation</span> <span class="n">$station</span><span class="o">)</span>
+    <span class="o">{</span>
+        <span class="n">$this</span><span class="o">-&gt;</span><span class="n">stations</span><span class="o">[]</span> <span class="o">=</span> <span class="n">$station</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="n">function</span> <span class="nf">removeStation</span><span class="o">(</span><span class="nc">RadioStation</span> <span class="n">$toRemove</span><span class="o">)</span>
+    <span class="o">{</span>
+        <span class="n">$toRemoveFrequency</span> <span class="o">=</span> <span class="n">$toRemove</span><span class="o">-&gt;</span><span class="n">getFrequency</span><span class="o">();</span>
+        <span class="n">$this</span><span class="o">-&gt;</span><span class="n">stations</span> <span class="o">=</span> <span class="n">array_filter</span><span class="o">(</span><span class="n">$this</span><span class="o">-&gt;</span><span class="n">stations</span><span class="o">,</span> <span class="n">function</span> <span class="o">(</span><span class="nc">RadioStation</span> <span class="n">$station</span><span class="o">)</span> <span class="n">use</span> <span class="o">(</span><span class="n">$toRemoveFrequency</span><span class="o">)</span> <span class="o">{</span>
+            <span class="k">return</span> <span class="n">$station</span><span class="o">-&gt;</span><span class="n">getFrequency</span><span class="o">()</span> <span class="o">!==</span> <span class="n">$toRemoveFrequency</span><span class="o">;</span>
+        <span class="o">});</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="n">function</span> <span class="nf">count</span><span class="o">():</span> <span class="kt">int</span>
+    <span class="o">{</span>
+        <span class="k">return</span> <span class="nf">count</span><span class="o">(</span><span class="n">$this</span><span class="o">-&gt;</span><span class="n">stations</span><span class="o">);</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="n">function</span> <span class="nf">current</span><span class="o">():</span> <span class="nc">RadioStation</span>
+    <span class="o">{</span>
+        <span class="k">return</span> <span class="n">$this</span><span class="o">-&gt;</span><span class="n">stations</span><span class="o">[</span><span class="n">$this</span><span class="o">-&gt;</span><span class="n">counter</span><span class="o">];</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="n">function</span> <span class="nf">key</span><span class="o">()</span>
+    <span class="o">{</span>
+        <span class="k">return</span> <span class="n">$this</span><span class="o">-&gt;</span><span class="n">counter</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="n">function</span> <span class="nf">next</span><span class="o">()</span>
+    <span class="o">{</span>
+        <span class="n">$this</span><span class="o">-&gt;</span><span class="n">counter</span><span class="o">++;</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="n">function</span> <span class="nf">rewind</span><span class="o">()</span>
+    <span class="o">{</span>
+        <span class="n">$this</span><span class="o">-&gt;</span><span class="n">counter</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="n">function</span> <span class="nf">valid</span><span class="o">():</span> <span class="n">bool</span>
+    <span class="o">{</span>
+        <span class="k">return</span> <span class="nf">isset</span><span class="o">(</span><span class="n">$this</span><span class="o">-&gt;</span><span class="n">stations</span><span class="o">[</span><span class="n">$this</span><span class="o">-&gt;</span><span class="n">counter</span><span class="o">]);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div> <p>And then it can be used as</p> <div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">$stationList</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">StationList</span><span class="o">();</span>
+
+<span class="n">$stationList</span><span class="o">-&gt;</span><span class="n">addStation</span><span class="o">(</span><span class="k">new</span> <span class="nc">RadioStation</span><span class="o">(</span><span class="mi">89</span><span class="o">));</span>
+<span class="n">$stationList</span><span class="o">-&gt;</span><span class="n">addStation</span><span class="o">(</span><span class="k">new</span> <span class="nc">RadioStation</span><span class="o">(</span><span class="mi">101</span><span class="o">));</span>
+<span class="n">$stationList</span><span class="o">-&gt;</span><span class="n">addStation</span><span class="o">(</span><span class="k">new</span> <span class="nc">RadioStation</span><span class="o">(</span><span class="mi">102</span><span class="o">));</span>
+<span class="n">$stationList</span><span class="o">-&gt;</span><span class="n">addStation</span><span class="o">(</span><span class="k">new</span> <span class="nc">RadioStation</span><span class="o">(</span><span class="mf">103.2</span><span class="o">));</span>
+
+<span class="n">foreach</span><span class="o">(</span><span class="n">$stationList</span> <span class="n">as</span> <span class="n">$station</span><span class="o">)</span> <span class="o">{</span>
+    <span class="n">echo</span> <span class="n">$station</span><span class="o">-&gt;</span><span class="n">getFrequency</span><span class="o">()</span> <span class="o">.</span> <span class="no">PHP_EOL</span><span class="o">;</span>
+<span class="o">}</span>
+
+<span class="n">$stationList</span><span class="o">-&gt;</span><span class="n">removeStation</span><span class="o">(</span><span class="k">new</span> <span class="nc">RadioStation</span><span class="o">(</span><span class="mi">89</span><span class="o">));</span> <span class="c1">// Will remove station 89</span>
+</code></pre></div></div><hr> <h2 id="-mediator"> <a href="#-mediator" class="anchor-heading" aria-labelledby="-mediator"></a> 👽 Mediator </h2> <p>Real world example</p> <blockquote> <p>A general example would be when you talk to someone on your mobile phone, there is a network provider sitting between you and them and your conversation goes through it instead of being directly sent. In this case network provider is mediator.</p> </blockquote> <p>In plain words</p> <blockquote> <p>Mediator pattern adds a third party object (called mediator) to control the interaction between two objects (called colleagues). It helps reduce the coupling between the classes communicating with each other. Because now they don’t need to have the knowledge of each other’s implementation.</p> </blockquote> <p>Wikipedia says</p> <blockquote> <p>In software engineering, the mediator pattern defines an object that encapsulates how a set of objects interact. This pattern is considered to be a behavioral pattern due to the way it can alter the program’s running behavior.</p> </blockquote> <p><strong>Programmatic Example</strong></p> <p>Here is the simplest example of a chat room (i.e. mediator) with users (i.e. colleagues) sending messages to each other.</p> <p>First of all, we have the mediator i.e. the chat room</p> <div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">interface</span> <span class="nc">ChatRoomMediator</span> 
+<span class="o">{</span>
+    <span class="kd">public</span> <span class="n">function</span> <span class="nf">showMessage</span><span class="o">(</span><span class="nc">User</span> <span class="n">$user</span><span class="o">,</span> <span class="n">string</span> <span class="n">$message</span><span class="o">);</span>
+<span class="o">}</span>
+
+<span class="c1">// Mediator</span>
+<span class="kd">class</span> <span class="nc">ChatRoom</span> <span class="kd">implements</span> <span class="nc">ChatRoomMediator</span>
+<span class="o">{</span>
+    <span class="kd">public</span> <span class="n">function</span> <span class="nf">showMessage</span><span class="o">(</span><span class="nc">User</span> <span class="n">$user</span><span class="o">,</span> <span class="n">string</span> <span class="n">$message</span><span class="o">)</span>
+    <span class="o">{</span>
+        <span class="n">$time</span> <span class="o">=</span> <span class="n">date</span><span class="o">(</span><span class="err">'</span><span class="no">M</span> <span class="n">d</span><span class="o">,</span> <span class="n">y</span> <span class="nl">H:</span><span class="n">i</span><span class="err">'</span><span class="o">);</span>
+        <span class="n">$sender</span> <span class="o">=</span> <span class="n">$user</span><span class="o">-&gt;</span><span class="n">getName</span><span class="o">();</span>
+
+        <span class="n">echo</span> <span class="n">$time</span> <span class="o">.</span> <span class="sc">'['</span> <span class="o">.</span> <span class="n">$sender</span> <span class="o">.</span> <span class="err">'</span><span class="o">]:</span><span class="err">'</span> <span class="o">.</span> <span class="n">$message</span><span class="o">;</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div> <p>Then we have our users i.e. colleagues</p> <div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nc">User</span> <span class="o">{</span>
+    <span class="kd">protected</span> <span class="n">$name</span><span class="o">;</span>
+    <span class="kd">protected</span> <span class="n">$chatMediator</span><span class="o">;</span>
+
+    <span class="kd">public</span> <span class="n">function</span> <span class="nf">__construct</span><span class="o">(</span><span class="n">string</span> <span class="n">$name</span><span class="o">,</span> <span class="nc">ChatRoomMediator</span> <span class="n">$chatMediator</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">$this</span><span class="o">-&gt;</span><span class="n">name</span> <span class="o">=</span> <span class="n">$name</span><span class="o">;</span>
+        <span class="n">$this</span><span class="o">-&gt;</span><span class="n">chatMediator</span> <span class="o">=</span> <span class="n">$chatMediator</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="n">function</span> <span class="nf">getName</span><span class="o">()</span> <span class="o">{</span>
+        <span class="k">return</span> <span class="n">$this</span><span class="o">-&gt;</span><span class="n">name</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="n">function</span> <span class="nf">send</span><span class="o">(</span><span class="n">$message</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">$this</span><span class="o">-&gt;</span><span class="n">chatMediator</span><span class="o">-&gt;</span><span class="n">showMessage</span><span class="o">(</span><span class="n">$this</span><span class="o">,</span> <span class="n">$message</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div> <p>And the usage</p> <div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">$mediator</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">ChatRoom</span><span class="o">();</span>
+
+<span class="n">$john</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">User</span><span class="o">(</span><span class="err">'</span><span class="nc">John</span> <span class="nc">Doe</span><span class="err">'</span><span class="o">,</span> <span class="n">$mediator</span><span class="o">);</span>
+<span class="n">$jane</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">User</span><span class="o">(</span><span class="err">'</span><span class="nc">Jane</span> <span class="nc">Doe</span><span class="err">'</span><span class="o">,</span> <span class="n">$mediator</span><span class="o">);</span>
+
+<span class="n">$john</span><span class="o">-&gt;</span><span class="n">send</span><span class="o">(</span><span class="err">'</span><span class="nc">Hi</span> <span class="n">there</span><span class="o">!</span><span class="err">'</span><span class="o">);</span>
+<span class="n">$jane</span><span class="o">-&gt;</span><span class="n">send</span><span class="o">(</span><span class="err">'</span><span class="nc">Hey</span><span class="o">!</span><span class="err">'</span><span class="o">);</span>
+
+<span class="c1">// Output will be</span>
+<span class="c1">// Feb 14, 10:58 [John]: Hi there!</span>
+<span class="c1">// Feb 14, 10:58 [Jane]: Hey!</span>
+</code></pre></div></div><hr> <h2 id="-memento"> <a href="#-memento" class="anchor-heading" aria-labelledby="-memento"></a> 💾 Memento </h2> <p>Real world example</p> <blockquote> <p>Take the example of calculator (i.e. originator), where whenever you perform some calculation the last calculation is saved in memory (i.e. memento) so that you can get back to it and maybe get it restored using some action buttons (i.e. caretaker).</p> </blockquote> <p>In plain words</p> <blockquote> <p>Memento pattern is about capturing and storing the current state of an object in a manner that it can be restored later on in a smooth manner.</p> </blockquote> <p>Wikipedia says</p> <blockquote> <p>The memento pattern is a software design pattern that provides the ability to restore an object to its previous state (undo via rollback).</p> </blockquote> <p>Usually useful when you need to provide some sort of undo functionality.</p> <p><strong>Programmatic Example</strong></p> <p>Lets take an example of text editor which keeps saving the state from time to time and that you can restore if you want.</p> <p>First of all we have our memento object that will be able to hold the editor state</p> <div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nc">EditorMemento</span>
+<span class="o">{</span>
+    <span class="kd">protected</span> <span class="n">$content</span><span class="o">;</span>
+
+    <span class="kd">public</span> <span class="n">function</span> <span class="nf">__construct</span><span class="o">(</span><span class="n">string</span> <span class="n">$content</span><span class="o">)</span>
+    <span class="o">{</span>
+        <span class="n">$this</span><span class="o">-&gt;</span><span class="n">content</span> <span class="o">=</span> <span class="n">$content</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="n">function</span> <span class="nf">getContent</span><span class="o">()</span>
+    <span class="o">{</span>
+        <span class="k">return</span> <span class="n">$this</span><span class="o">-&gt;</span><span class="n">content</span><span class="o">;</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div> <p>Then we have our editor i.e. originator that is going to use memento object</p> <div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nc">Editor</span>
+<span class="o">{</span>
+    <span class="kd">protected</span> <span class="n">$content</span> <span class="o">=</span> <span class="err">''</span><span class="o">;</span>
+
+    <span class="kd">public</span> <span class="n">function</span> <span class="nf">type</span><span class="o">(</span><span class="n">string</span> <span class="n">$words</span><span class="o">)</span>
+    <span class="o">{</span>
+        <span class="n">$this</span><span class="o">-&gt;</span><span class="n">content</span> <span class="o">=</span> <span class="n">$this</span><span class="o">-&gt;</span><span class="n">content</span> <span class="o">.</span> <span class="sc">' '</span> <span class="o">.</span> <span class="n">$words</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="n">function</span> <span class="nf">getContent</span><span class="o">()</span>
+    <span class="o">{</span>
+        <span class="k">return</span> <span class="n">$this</span><span class="o">-&gt;</span><span class="n">content</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="n">function</span> <span class="nf">save</span><span class="o">()</span>
+    <span class="o">{</span>
+        <span class="k">return</span> <span class="k">new</span> <span class="nf">EditorMemento</span><span class="o">(</span><span class="n">$this</span><span class="o">-&gt;</span><span class="n">content</span><span class="o">);</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="n">function</span> <span class="nf">restore</span><span class="o">(</span><span class="nc">EditorMemento</span> <span class="n">$memento</span><span class="o">)</span>
+    <span class="o">{</span>
+        <span class="n">$this</span><span class="o">-&gt;</span><span class="n">content</span> <span class="o">=</span> <span class="n">$memento</span><span class="o">-&gt;</span><span class="n">getContent</span><span class="o">();</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div> <p>And then it can be used as</p> <div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">$editor</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Editor</span><span class="o">();</span>
+
+<span class="c1">// Type some stuff</span>
+<span class="n">$editor</span><span class="o">-&gt;</span><span class="n">type</span><span class="o">(</span><span class="err">'</span><span class="nc">This</span> <span class="n">is</span> <span class="n">the</span> <span class="n">first</span> <span class="n">sentence</span><span class="o">.</span><span class="err">'</span><span class="o">);</span>
+<span class="n">$editor</span><span class="o">-&gt;</span><span class="n">type</span><span class="o">(</span><span class="err">'</span><span class="nc">This</span> <span class="n">is</span> <span class="n">second</span><span class="o">.</span><span class="err">'</span><span class="o">);</span>
+
+<span class="c1">// Save the state to restore to : This is the first sentence. This is second.</span>
+<span class="n">$saved</span> <span class="o">=</span> <span class="n">$editor</span><span class="o">-&gt;</span><span class="n">save</span><span class="o">();</span>
+
+<span class="c1">// Type some more</span>
+<span class="n">$editor</span><span class="o">-&gt;</span><span class="n">type</span><span class="o">(</span><span class="err">'</span><span class="nc">And</span> <span class="k">this</span> <span class="n">is</span> <span class="n">third</span><span class="o">.</span><span class="err">'</span><span class="o">);</span>
+
+<span class="c1">// Output: Content before Saving</span>
+<span class="n">echo</span> <span class="n">$editor</span><span class="o">-&gt;</span><span class="n">getContent</span><span class="o">();</span> <span class="c1">// This is the first sentence. This is second. And this is third.</span>
+
+<span class="c1">// Restoring to last saved state</span>
+<span class="n">$editor</span><span class="o">-&gt;</span><span class="n">restore</span><span class="o">(</span><span class="n">$saved</span><span class="o">);</span>
+
+<span class="n">$editor</span><span class="o">-&gt;</span><span class="n">getContent</span><span class="o">();</span> <span class="c1">// This is the first sentence. This is second.</span>
+</code></pre></div></div><hr> <h2 id="-observer"> <a href="#-observer" class="anchor-heading" aria-labelledby="-observer"></a> 😎 Observer </h2> <p>Real world example</p> <blockquote> <p>A good example would be the job seekers where they subscribe to some job posting site and they are notified whenever there is a matching job opportunity.</p> </blockquote> <p>In plain words</p> <blockquote> <p>Defines a dependency between objects so that whenever an object changes its state, all its dependents are notified.</p> </blockquote> <p>Wikipedia says</p> <blockquote> <p>The observer pattern is a software design pattern in which an object, called the subject, maintains a list of its dependents, called observers, and notifies them automatically of any state changes, usually by calling one of their methods.</p> </blockquote> <p><strong>Programmatic example</strong></p> <p>Translating our example from above. First of all we have job seekers that need to be notified for a job posting</p> <div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nc">JobPost</span>
+<span class="o">{</span>
+    <span class="kd">protected</span> <span class="n">$title</span><span class="o">;</span>
+
+    <span class="kd">public</span> <span class="n">function</span> <span class="nf">__construct</span><span class="o">(</span><span class="n">string</span> <span class="n">$title</span><span class="o">)</span>
+    <span class="o">{</span>
+        <span class="n">$this</span><span class="o">-&gt;</span><span class="n">title</span> <span class="o">=</span> <span class="n">$title</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="n">function</span> <span class="nf">getTitle</span><span class="o">()</span>
+    <span class="o">{</span>
+        <span class="k">return</span> <span class="n">$this</span><span class="o">-&gt;</span><span class="n">title</span><span class="o">;</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+
+<span class="kd">class</span> <span class="nc">JobSeeker</span> <span class="kd">implements</span> <span class="nc">Observer</span>
+<span class="o">{</span>
+    <span class="kd">protected</span> <span class="n">$name</span><span class="o">;</span>
+
+    <span class="kd">public</span> <span class="n">function</span> <span class="nf">__construct</span><span class="o">(</span><span class="n">string</span> <span class="n">$name</span><span class="o">)</span>
+    <span class="o">{</span>
+        <span class="n">$this</span><span class="o">-&gt;</span><span class="n">name</span> <span class="o">=</span> <span class="n">$name</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="n">function</span> <span class="nf">onJobPosted</span><span class="o">(</span><span class="nc">JobPost</span> <span class="n">$job</span><span class="o">)</span>
+    <span class="o">{</span>
+        <span class="c1">// Do something with the job posting</span>
+        <span class="n">echo</span> <span class="err">'</span><span class="nc">Hi</span> <span class="err">'</span> <span class="o">.</span> <span class="n">$this</span><span class="o">-&gt;</span><span class="n">name</span> <span class="o">.</span> <span class="err">'</span><span class="o">!</span> <span class="nc">New</span> <span class="n">job</span> <span class="nl">posted:</span> <span class="err">'</span><span class="o">.</span> <span class="n">$job</span><span class="o">-&gt;</span><span class="n">getTitle</span><span class="o">();</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div> <p>Then we have our job postings to which the job seekers will subscribe</p> <div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nc">EmploymentAgency</span> <span class="kd">implements</span> <span class="nc">Observable</span>
+<span class="o">{</span>
+    <span class="kd">protected</span> <span class="n">$observers</span> <span class="o">=</span> <span class="o">[];</span>
+
+    <span class="kd">protected</span> <span class="n">function</span> <span class="nf">notify</span><span class="o">(</span><span class="nc">JobPost</span> <span class="n">$jobPosting</span><span class="o">)</span>
+    <span class="o">{</span>
+        <span class="n">foreach</span> <span class="o">(</span><span class="n">$this</span><span class="o">-&gt;</span><span class="n">observers</span> <span class="n">as</span> <span class="n">$observer</span><span class="o">)</span> <span class="o">{</span>
+            <span class="n">$observer</span><span class="o">-&gt;</span><span class="n">onJobPosted</span><span class="o">(</span><span class="n">$jobPosting</span><span class="o">);</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="n">function</span> <span class="nf">attach</span><span class="o">(</span><span class="nc">Observer</span> <span class="n">$observer</span><span class="o">)</span>
+    <span class="o">{</span>
+        <span class="n">$this</span><span class="o">-&gt;</span><span class="n">observers</span><span class="o">[]</span> <span class="o">=</span> <span class="n">$observer</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="n">function</span> <span class="nf">addJob</span><span class="o">(</span><span class="nc">JobPost</span> <span class="n">$jobPosting</span><span class="o">)</span>
+    <span class="o">{</span>
+        <span class="n">$this</span><span class="o">-&gt;</span><span class="n">notify</span><span class="o">(</span><span class="n">$jobPosting</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div> <p>Then it can be used as</p> <div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Create subscribers</span>
+<span class="n">$johnDoe</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">JobSeeker</span><span class="o">(</span><span class="err">'</span><span class="nc">John</span> <span class="nc">Doe</span><span class="err">'</span><span class="o">);</span>
+<span class="n">$janeDoe</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">JobSeeker</span><span class="o">(</span><span class="err">'</span><span class="nc">Jane</span> <span class="nc">Doe</span><span class="err">'</span><span class="o">);</span>
+
+<span class="c1">// Create publisher and attach subscribers</span>
+<span class="n">$jobPostings</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">EmploymentAgency</span><span class="o">();</span>
+<span class="n">$jobPostings</span><span class="o">-&gt;</span><span class="n">attach</span><span class="o">(</span><span class="n">$johnDoe</span><span class="o">);</span>
+<span class="n">$jobPostings</span><span class="o">-&gt;</span><span class="n">attach</span><span class="o">(</span><span class="n">$janeDoe</span><span class="o">);</span>
+
+<span class="c1">// Add a new job and see if subscribers get notified</span>
+<span class="n">$jobPostings</span><span class="o">-&gt;</span><span class="n">addJob</span><span class="o">(</span><span class="k">new</span> <span class="nc">JobPost</span><span class="o">(</span><span class="err">'</span><span class="nc">Software</span> <span class="nc">Engineer</span><span class="err">'</span><span class="o">));</span>
+
+<span class="c1">// Output</span>
+<span class="c1">// Hi John Doe! New job posted: Software Engineer</span>
+<span class="c1">// Hi Jane Doe! New job posted: Software Engineer</span>
+</code></pre></div></div><hr> <h2 id="-visitor"> <a href="#-visitor" class="anchor-heading" aria-labelledby="-visitor"></a> 🏃 Visitor </h2> <p>Real world example</p> <blockquote> <p>Consider someone visiting Dubai. They just need a way (i.e. visa) to enter Dubai. After arrival, they can come and visit any place in Dubai on their own without having to ask for permission or to do some leg work in order to visit any place here; just let them know of a place and they can visit it. Visitor pattern lets you do just that, it helps you add places to visit so that they can visit as much as they can without having to do any legwork.</p> </blockquote> <p>In plain words</p> <blockquote> <p>Visitor pattern lets you add further operations to objects without having to modify them.</p> </blockquote> <p>Wikipedia says</p> <blockquote> <p>In object-oriented programming and software engineering, the visitor design pattern is a way of separating an algorithm from an object structure on which it operates. A practical result of this separation is the ability to add new operations to existing object structures without modifying those structures. It is one way to follow the open/closed principle.</p> </blockquote> <p><strong>Programmatic example</strong></p> <p>Let’s take an example of a zoo simulation where we have several different kinds of animals and we have to make them Sound. Let’s translate this using visitor pattern</p> <div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Visitee</span>
+<span class="kd">interface</span> <span class="nc">Animal</span>
+<span class="o">{</span>
+    <span class="kd">public</span> <span class="n">function</span> <span class="nf">accept</span><span class="o">(</span><span class="nc">AnimalOperation</span> <span class="n">$operation</span><span class="o">);</span>
+<span class="o">}</span>
+
+<span class="c1">// Visitor</span>
+<span class="kd">interface</span> <span class="nc">AnimalOperation</span>
+<span class="o">{</span>
+    <span class="kd">public</span> <span class="n">function</span> <span class="nf">visitMonkey</span><span class="o">(</span><span class="nc">Monkey</span> <span class="n">$monkey</span><span class="o">);</span>
+    <span class="kd">public</span> <span class="n">function</span> <span class="nf">visitLion</span><span class="o">(</span><span class="nc">Lion</span> <span class="n">$lion</span><span class="o">);</span>
+    <span class="kd">public</span> <span class="n">function</span> <span class="nf">visitDolphin</span><span class="o">(</span><span class="nc">Dolphin</span> <span class="n">$dolphin</span><span class="o">);</span>
+<span class="o">}</span>
+</code></pre></div></div> <p>Then we have our implementations for the animals</p> <div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nc">Monkey</span> <span class="kd">implements</span> <span class="nc">Animal</span>
+<span class="o">{</span>
+    <span class="kd">public</span> <span class="n">function</span> <span class="nf">shout</span><span class="o">()</span>
+    <span class="o">{</span>
+        <span class="n">echo</span> <span class="err">'</span><span class="nc">Ooh</span> <span class="n">oo</span> <span class="n">aa</span> <span class="n">aa</span><span class="o">!</span><span class="err">'</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="n">function</span> <span class="nf">accept</span><span class="o">(</span><span class="nc">AnimalOperation</span> <span class="n">$operation</span><span class="o">)</span>
+    <span class="o">{</span>
+        <span class="n">$operation</span><span class="o">-&gt;</span><span class="n">visitMonkey</span><span class="o">(</span><span class="n">$this</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+
+<span class="kd">class</span> <span class="nc">Lion</span> <span class="kd">implements</span> <span class="nc">Animal</span>
+<span class="o">{</span>
+    <span class="kd">public</span> <span class="n">function</span> <span class="nf">roar</span><span class="o">()</span>
+    <span class="o">{</span>
+        <span class="n">echo</span> <span class="err">'</span><span class="nc">Roaaar</span><span class="o">!</span><span class="err">'</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="n">function</span> <span class="nf">accept</span><span class="o">(</span><span class="nc">AnimalOperation</span> <span class="n">$operation</span><span class="o">)</span>
+    <span class="o">{</span>
+        <span class="n">$operation</span><span class="o">-&gt;</span><span class="n">visitLion</span><span class="o">(</span><span class="n">$this</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+
+<span class="kd">class</span> <span class="nc">Dolphin</span> <span class="kd">implements</span> <span class="nc">Animal</span>
+<span class="o">{</span>
+    <span class="kd">public</span> <span class="n">function</span> <span class="nf">speak</span><span class="o">()</span>
+    <span class="o">{</span>
+        <span class="n">echo</span> <span class="err">'</span><span class="nc">Tuut</span> <span class="n">tuttu</span> <span class="n">tuutt</span><span class="o">!</span><span class="err">'</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="n">function</span> <span class="nf">accept</span><span class="o">(</span><span class="nc">AnimalOperation</span> <span class="n">$operation</span><span class="o">)</span>
+    <span class="o">{</span>
+        <span class="n">$operation</span><span class="o">-&gt;</span><span class="n">visitDolphin</span><span class="o">(</span><span class="n">$this</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div> <p>Let’s implement our visitor</p> <div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nc">Speak</span> <span class="kd">implements</span> <span class="nc">AnimalOperation</span>
+<span class="o">{</span>
+    <span class="kd">public</span> <span class="n">function</span> <span class="nf">visitMonkey</span><span class="o">(</span><span class="nc">Monkey</span> <span class="n">$monkey</span><span class="o">)</span>
+    <span class="o">{</span>
+        <span class="n">$monkey</span><span class="o">-&gt;</span><span class="n">shout</span><span class="o">();</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="n">function</span> <span class="nf">visitLion</span><span class="o">(</span><span class="nc">Lion</span> <span class="n">$lion</span><span class="o">)</span>
+    <span class="o">{</span>
+        <span class="n">$lion</span><span class="o">-&gt;</span><span class="n">roar</span><span class="o">();</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="n">function</span> <span class="nf">visitDolphin</span><span class="o">(</span><span class="nc">Dolphin</span> <span class="n">$dolphin</span><span class="o">)</span>
+    <span class="o">{</span>
+        <span class="n">$dolphin</span><span class="o">-&gt;</span><span class="n">speak</span><span class="o">();</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div> <p>And then it can be used as</p> <div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">$monkey</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Monkey</span><span class="o">();</span>
+<span class="n">$lion</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Lion</span><span class="o">();</span>
+<span class="n">$dolphin</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Dolphin</span><span class="o">();</span>
+
+<span class="n">$speak</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Speak</span><span class="o">();</span>
+
+<span class="n">$monkey</span><span class="o">-&gt;</span><span class="n">accept</span><span class="o">(</span><span class="n">$speak</span><span class="o">);</span>    <span class="c1">// Ooh oo aa aa!    </span>
+<span class="n">$lion</span><span class="o">-&gt;</span><span class="n">accept</span><span class="o">(</span><span class="n">$speak</span><span class="o">);</span>      <span class="c1">// Roaaar!</span>
+<span class="n">$dolphin</span><span class="o">-&gt;</span><span class="n">accept</span><span class="o">(</span><span class="n">$speak</span><span class="o">);</span>   <span class="c1">// Tuut tutt tuutt!</span>
+</code></pre></div></div> <p>We could have done this simply by having an inheritance hierarchy for the animals but then we would have to modify the animals whenever we would have to add new actions to animals. But now we will not have to change them. For example, let’s say we are asked to add the jump behavior to the animals, we can simply add that by creating a new visitor i.e.</p> <div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nc">Jump</span> <span class="kd">implements</span> <span class="nc">AnimalOperation</span>
+<span class="o">{</span>
+    <span class="kd">public</span> <span class="n">function</span> <span class="nf">visitMonkey</span><span class="o">(</span><span class="nc">Monkey</span> <span class="n">$monkey</span><span class="o">)</span>
+    <span class="o">{</span>
+        <span class="n">echo</span> <span class="err">'</span><span class="nc">Jumped</span> <span class="mi">20</span> <span class="n">feet</span> <span class="n">high</span><span class="o">!</span> <span class="n">on</span> <span class="n">to</span> <span class="n">the</span> <span class="n">tree</span><span class="o">!</span><span class="err">'</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="n">function</span> <span class="nf">visitLion</span><span class="o">(</span><span class="nc">Lion</span> <span class="n">$lion</span><span class="o">)</span>
+    <span class="o">{</span>
+        <span class="n">echo</span> <span class="err">'</span><span class="nc">Jumped</span> <span class="mi">7</span> <span class="n">feet</span><span class="o">!</span> <span class="nc">Back</span> <span class="n">on</span> <span class="n">the</span> <span class="n">ground</span><span class="o">!</span><span class="err">'</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="n">function</span> <span class="nf">visitDolphin</span><span class="o">(</span><span class="nc">Dolphin</span> <span class="n">$dolphin</span><span class="o">)</span>
+    <span class="o">{</span>
+        <span class="n">echo</span> <span class="err">'</span><span class="nc">Walked</span> <span class="n">on</span> <span class="n">water</span> <span class="n">a</span> <span class="n">little</span> <span class="n">and</span> <span class="n">disappeared</span><span class="err">'</span><span class="o">;</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div> <p>And for the usage</p> <div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">$jump</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Jump</span><span class="o">();</span>
+
+<span class="n">$monkey</span><span class="o">-&gt;</span><span class="n">accept</span><span class="o">(</span><span class="n">$speak</span><span class="o">);</span>   <span class="c1">// Ooh oo aa aa!</span>
+<span class="n">$monkey</span><span class="o">-&gt;</span><span class="n">accept</span><span class="o">(</span><span class="n">$jump</span><span class="o">);</span>    <span class="c1">// Jumped 20 feet high! on to the tree!</span>
+
+<span class="n">$lion</span><span class="o">-&gt;</span><span class="n">accept</span><span class="o">(</span><span class="n">$speak</span><span class="o">);</span>     <span class="c1">// Roaaar!</span>
+<span class="n">$lion</span><span class="o">-&gt;</span><span class="n">accept</span><span class="o">(</span><span class="n">$jump</span><span class="o">);</span>      <span class="c1">// Jumped 7 feet! Back on the ground!</span>
+
+<span class="n">$dolphin</span><span class="o">-&gt;</span><span class="n">accept</span><span class="o">(</span><span class="n">$speak</span><span class="o">);</span>  <span class="c1">// Tuut tutt tuutt!</span>
+<span class="n">$dolphin</span><span class="o">-&gt;</span><span class="n">accept</span><span class="o">(</span><span class="n">$jump</span><span class="o">);</span>   <span class="c1">// Walked on water a little and disappeared</span>
+</code></pre></div></div><hr> <h2 id="-strategy"> <a href="#-strategy" class="anchor-heading" aria-labelledby="-strategy"></a> 💡 Strategy </h2> <p>Real world example</p> <blockquote> <p>Consider the example of sorting, we implemented bubble sort but the data started to grow and bubble sort started getting very slow. In order to tackle this we implemented Quick sort. But now although the quick sort algorithm was doing better for large datasets, it was very slow for smaller datasets. In order to handle this we implemented a strategy where for small datasets, bubble sort will be used and for larger, quick sort.</p> </blockquote> <p>In plain words</p> <blockquote> <p>Strategy pattern allows you to switch the algorithm or strategy based upon the situation.</p> </blockquote> <p>Wikipedia says</p> <blockquote> <p>In computer programming, the strategy pattern (also known as the policy pattern) is a behavioural software design pattern that enables an algorithm’s behavior to be selected at runtime.</p> </blockquote> <p><strong>Programmatic example</strong></p> <p>Translating our example from above. First of all we have our strategy interface and different strategy implementations</p> <div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">interface</span> <span class="nc">SortStrategy</span>
+<span class="o">{</span>
+    <span class="kd">public</span> <span class="n">function</span> <span class="nf">sort</span><span class="o">(</span><span class="n">array</span> <span class="n">$dataset</span><span class="o">):</span> <span class="n">array</span><span class="o">;</span>
+<span class="o">}</span>
+
+<span class="kd">class</span> <span class="nc">BubbleSortStrategy</span> <span class="kd">implements</span> <span class="nc">SortStrategy</span>
+<span class="o">{</span>
+    <span class="kd">public</span> <span class="n">function</span> <span class="nf">sort</span><span class="o">(</span><span class="n">array</span> <span class="n">$dataset</span><span class="o">):</span> <span class="n">array</span>
+    <span class="o">{</span>
+        <span class="n">echo</span> <span class="s">"Sorting using bubble sort"</span><span class="o">;</span>
+
+        <span class="c1">// Do sorting</span>
+        <span class="k">return</span> <span class="n">$dataset</span><span class="o">;</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+
+<span class="kd">class</span> <span class="nc">QuickSortStrategy</span> <span class="kd">implements</span> <span class="nc">SortStrategy</span>
+<span class="o">{</span>
+    <span class="kd">public</span> <span class="n">function</span> <span class="nf">sort</span><span class="o">(</span><span class="n">array</span> <span class="n">$dataset</span><span class="o">):</span> <span class="n">array</span>
+    <span class="o">{</span>
+        <span class="n">echo</span> <span class="s">"Sorting using quick sort"</span><span class="o">;</span>
+
+        <span class="c1">// Do sorting</span>
+        <span class="k">return</span> <span class="n">$dataset</span><span class="o">;</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div> <p>And then we have our client that is going to use any strategy</p> <div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nc">Sorter</span>
+<span class="o">{</span>
+    <span class="kd">protected</span> <span class="n">$sorter</span><span class="o">;</span>
+
+    <span class="kd">public</span> <span class="n">function</span> <span class="nf">__construct</span><span class="o">(</span><span class="nc">SortStrategy</span> <span class="n">$sorter</span><span class="o">)</span>
+    <span class="o">{</span>
+        <span class="n">$this</span><span class="o">-&gt;</span><span class="n">sorter</span> <span class="o">=</span> <span class="n">$sorter</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="n">function</span> <span class="nf">sort</span><span class="o">(</span><span class="n">array</span> <span class="n">$dataset</span><span class="o">):</span> <span class="n">array</span>
+    <span class="o">{</span>
+        <span class="k">return</span> <span class="n">$this</span><span class="o">-&gt;</span><span class="n">sorter</span><span class="o">-&gt;</span><span class="n">sort</span><span class="o">(</span><span class="n">$dataset</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div> <p>And it can be used as</p> <div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">$dataset</span> <span class="o">=</span> <span class="o">[</span><span class="mi">1</span><span class="o">,</span> <span class="mi">5</span><span class="o">,</span> <span class="mi">4</span><span class="o">,</span> <span class="mi">3</span><span class="o">,</span> <span class="mi">2</span><span class="o">,</span> <span class="mi">8</span><span class="o">];</span>
+
+<span class="n">$sorter</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Sorter</span><span class="o">(</span><span class="k">new</span> <span class="nc">BubbleSortStrategy</span><span class="o">());</span>
+<span class="n">$sorter</span><span class="o">-&gt;</span><span class="n">sort</span><span class="o">(</span><span class="n">$dataset</span><span class="o">);</span> <span class="c1">// Output : Sorting using bubble sort</span>
+
+<span class="n">$sorter</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Sorter</span><span class="o">(</span><span class="k">new</span> <span class="nc">QuickSortStrategy</span><span class="o">());</span>
+<span class="n">$sorter</span><span class="o">-&gt;</span><span class="n">sort</span><span class="o">(</span><span class="n">$dataset</span><span class="o">);</span> <span class="c1">// Output : Sorting using quick sort</span>
+</code></pre></div></div><hr> <h2 id="-state"> <a href="#-state" class="anchor-heading" aria-labelledby="-state"></a> 💢 State </h2> <p>Real world example</p> <blockquote> <p>Imagine you are using some drawing application, you choose the paint brush to draw. Now the brush changes its behavior based on the selected color i.e. if you have chosen red color it will draw in red, if blue then it will be in blue etc.</p> </blockquote> <p>In plain words</p> <blockquote> <p>It lets you change the behavior of a class when the state changes.</p> </blockquote> <p>Wikipedia says</p> <blockquote> <p>The state pattern is a behavioral software design pattern that implements a state machine in an object-oriented way. With the state pattern, a state machine is implemented by implementing each individual state as a derived class of the state pattern interface, and implementing state transitions by invoking methods defined by the pattern’s superclass. The state pattern can be interpreted as a strategy pattern which is able to switch the current strategy through invocations of methods defined in the pattern’s interface.</p> </blockquote> <p><strong>Programmatic example</strong></p> <p>Let’s take an example of text editor, it lets you change the state of text that is typed i.e. if you have selected bold, it starts writing in bold, if italic then in italics etc.</p> <p>First of all we have our state interface and some state implementations</p> <div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">interface</span> <span class="nc">WritingState</span>
+<span class="o">{</span>
+    <span class="kd">public</span> <span class="n">function</span> <span class="nf">write</span><span class="o">(</span><span class="n">string</span> <span class="n">$words</span><span class="o">);</span>
+<span class="o">}</span>
+
+<span class="kd">class</span> <span class="nc">UpperCase</span> <span class="kd">implements</span> <span class="nc">WritingState</span>
+<span class="o">{</span>
+    <span class="kd">public</span> <span class="n">function</span> <span class="nf">write</span><span class="o">(</span><span class="n">string</span> <span class="n">$words</span><span class="o">)</span>
+    <span class="o">{</span>
+        <span class="n">echo</span> <span class="nf">strtoupper</span><span class="o">(</span><span class="n">$words</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+
+<span class="kd">class</span> <span class="nc">LowerCase</span> <span class="kd">implements</span> <span class="nc">WritingState</span>
+<span class="o">{</span>
+    <span class="kd">public</span> <span class="n">function</span> <span class="nf">write</span><span class="o">(</span><span class="n">string</span> <span class="n">$words</span><span class="o">)</span>
+    <span class="o">{</span>
+        <span class="n">echo</span> <span class="nf">strtolower</span><span class="o">(</span><span class="n">$words</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+
+<span class="kd">class</span> <span class="nc">DefaultText</span> <span class="kd">implements</span> <span class="nc">WritingState</span>
+<span class="o">{</span>
+    <span class="kd">public</span> <span class="n">function</span> <span class="nf">write</span><span class="o">(</span><span class="n">string</span> <span class="n">$words</span><span class="o">)</span>
+    <span class="o">{</span>
+        <span class="n">echo</span> <span class="n">$words</span><span class="o">;</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div> <p>Then we have our editor</p> <div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nc">TextEditor</span>
+<span class="o">{</span>
+    <span class="kd">protected</span> <span class="n">$state</span><span class="o">;</span>
+
+    <span class="kd">public</span> <span class="n">function</span> <span class="nf">__construct</span><span class="o">(</span><span class="nc">WritingState</span> <span class="n">$state</span><span class="o">)</span>
+    <span class="o">{</span>
+        <span class="n">$this</span><span class="o">-&gt;</span><span class="n">state</span> <span class="o">=</span> <span class="n">$state</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="n">function</span> <span class="nf">setState</span><span class="o">(</span><span class="nc">WritingState</span> <span class="n">$state</span><span class="o">)</span>
+    <span class="o">{</span>
+        <span class="n">$this</span><span class="o">-&gt;</span><span class="n">state</span> <span class="o">=</span> <span class="n">$state</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="n">function</span> <span class="nf">type</span><span class="o">(</span><span class="n">string</span> <span class="n">$words</span><span class="o">)</span>
+    <span class="o">{</span>
+        <span class="n">$this</span><span class="o">-&gt;</span><span class="n">state</span><span class="o">-&gt;</span><span class="n">write</span><span class="o">(</span><span class="n">$words</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div> <p>And then it can be used as</p> <div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">$editor</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">TextEditor</span><span class="o">(</span><span class="k">new</span> <span class="nc">DefaultText</span><span class="o">());</span>
+
+<span class="n">$editor</span><span class="o">-&gt;</span><span class="n">type</span><span class="o">(</span><span class="err">'</span><span class="nc">First</span> <span class="n">line</span><span class="err">'</span><span class="o">);</span>
+
+<span class="n">$editor</span><span class="o">-&gt;</span><span class="n">setState</span><span class="o">(</span><span class="k">new</span> <span class="nc">UpperCase</span><span class="o">());</span>
+
+<span class="n">$editor</span><span class="o">-&gt;</span><span class="n">type</span><span class="o">(</span><span class="err">'</span><span class="nc">Second</span> <span class="n">line</span><span class="err">'</span><span class="o">);</span>
+<span class="n">$editor</span><span class="o">-&gt;</span><span class="n">type</span><span class="o">(</span><span class="err">'</span><span class="nc">Third</span> <span class="n">line</span><span class="err">'</span><span class="o">);</span>
+
+<span class="n">$editor</span><span class="o">-&gt;</span><span class="n">setState</span><span class="o">(</span><span class="k">new</span> <span class="nc">LowerCase</span><span class="o">());</span>
+
+<span class="n">$editor</span><span class="o">-&gt;</span><span class="n">type</span><span class="o">(</span><span class="err">'</span><span class="nc">Fourth</span> <span class="n">line</span><span class="err">'</span><span class="o">);</span>
+<span class="n">$editor</span><span class="o">-&gt;</span><span class="n">type</span><span class="o">(</span><span class="err">'</span><span class="nc">Fifth</span> <span class="n">line</span><span class="err">'</span><span class="o">);</span>
+
+<span class="c1">// Output:</span>
+<span class="c1">// First line</span>
+<span class="c1">// SECOND LINE</span>
+<span class="c1">// THIRD LINE</span>
+<span class="c1">// fourth line</span>
+<span class="c1">// fifth line</span>
+</code></pre></div></div><hr> <h2 id="-template-method"> <a href="#-template-method" class="anchor-heading" aria-labelledby="-template-method"></a> 📒 Template Method </h2> <p>Real world example</p> <blockquote> <p>Suppose we are getting some house built. The steps for building might look like</p> <ul> <li>Prepare the base of house</li> <li>Build the walls</li> <li>Add roof</li> <li>Add other floors</li> </ul> </blockquote> <blockquote> <p>The order of these steps could never be changed i.e. you can’t build the roof before building the walls etc but each of the steps could be modified for example walls can be made of wood or polyester or stone.</p> </blockquote> <p>In plain words</p> <blockquote> <p>Template method defines the skeleton of how a certain algorithm could be performed, but defers the implementation of those steps to the children classes.</p> </blockquote> <p>Wikipedia says</p> <blockquote> <p>In software engineering, the template method pattern is a behavioral design pattern that defines the program skeleton of an algorithm in an operation, deferring some steps to subclasses. It lets one redefine certain steps of an algorithm without changing the algorithm’s structure.</p> </blockquote> <p><strong>Programmatic Example</strong></p> <p>Imagine we have a build tool that helps us test, lint, build, generate build reports (i.e. code coverage reports, linting report etc) and deploy our app on the test server.</p> <p>First of all we have our base class that specifies the skeleton for the build algorithm</p> <div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">abstract</span> <span class="kd">class</span> <span class="nc">Builder</span>
+<span class="o">{</span>
+
+    <span class="c1">// Template method</span>
+    <span class="kd">final</span> <span class="kd">public</span> <span class="n">function</span> <span class="nf">build</span><span class="o">()</span>
+    <span class="o">{</span>
+        <span class="n">$this</span><span class="o">-&gt;</span><span class="n">test</span><span class="o">();</span>
+        <span class="n">$this</span><span class="o">-&gt;</span><span class="n">lint</span><span class="o">();</span>
+        <span class="n">$this</span><span class="o">-&gt;</span><span class="n">assemble</span><span class="o">();</span>
+        <span class="n">$this</span><span class="o">-&gt;</span><span class="n">deploy</span><span class="o">();</span>
+    <span class="o">}</span>
+
+    <span class="kd">abstract</span> <span class="kd">public</span> <span class="n">function</span> <span class="nf">test</span><span class="o">();</span>
+    <span class="kd">abstract</span> <span class="kd">public</span> <span class="n">function</span> <span class="nf">lint</span><span class="o">();</span>
+    <span class="kd">abstract</span> <span class="kd">public</span> <span class="n">function</span> <span class="nf">assemble</span><span class="o">();</span>
+    <span class="kd">abstract</span> <span class="kd">public</span> <span class="n">function</span> <span class="nf">deploy</span><span class="o">();</span>
+<span class="o">}</span>
+</code></pre></div></div> <p>Then we can have our implementations</p> <div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nc">AndroidBuilder</span> <span class="kd">extends</span> <span class="nc">Builder</span>
+<span class="o">{</span>
+    <span class="kd">public</span> <span class="n">function</span> <span class="nf">test</span><span class="o">()</span>
+    <span class="o">{</span>
+        <span class="n">echo</span> <span class="err">'</span><span class="nc">Running</span> <span class="n">android</span> <span class="n">tests</span><span class="err">'</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="n">function</span> <span class="nf">lint</span><span class="o">()</span>
+    <span class="o">{</span>
+        <span class="n">echo</span> <span class="err">'</span><span class="nc">Linting</span> <span class="n">the</span> <span class="n">android</span> <span class="n">code</span><span class="err">'</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="n">function</span> <span class="nf">assemble</span><span class="o">()</span>
+    <span class="o">{</span>
+        <span class="n">echo</span> <span class="err">'</span><span class="nc">Assembling</span> <span class="n">the</span> <span class="n">android</span> <span class="n">build</span><span class="err">'</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="n">function</span> <span class="nf">deploy</span><span class="o">()</span>
+    <span class="o">{</span>
+        <span class="n">echo</span> <span class="err">'</span><span class="nc">Deploying</span> <span class="n">android</span> <span class="n">build</span> <span class="n">to</span> <span class="n">server</span><span class="err">'</span><span class="o">;</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+
+<span class="kd">class</span> <span class="nc">IosBuilder</span> <span class="kd">extends</span> <span class="nc">Builder</span>
+<span class="o">{</span>
+    <span class="kd">public</span> <span class="n">function</span> <span class="nf">test</span><span class="o">()</span>
+    <span class="o">{</span>
+        <span class="n">echo</span> <span class="err">'</span><span class="nc">Running</span> <span class="n">ios</span> <span class="n">tests</span><span class="err">'</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="n">function</span> <span class="nf">lint</span><span class="o">()</span>
+    <span class="o">{</span>
+        <span class="n">echo</span> <span class="err">'</span><span class="nc">Linting</span> <span class="n">the</span> <span class="n">ios</span> <span class="n">code</span><span class="err">'</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="n">function</span> <span class="nf">assemble</span><span class="o">()</span>
+    <span class="o">{</span>
+        <span class="n">echo</span> <span class="err">'</span><span class="nc">Assembling</span> <span class="n">the</span> <span class="n">ios</span> <span class="n">build</span><span class="err">'</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="n">function</span> <span class="nf">deploy</span><span class="o">()</span>
+    <span class="o">{</span>
+        <span class="n">echo</span> <span class="err">'</span><span class="nc">Deploying</span> <span class="n">ios</span> <span class="n">build</span> <span class="n">to</span> <span class="n">server</span><span class="err">'</span><span class="o">;</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div> <p>And then it can be used as</p> <div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">$androidBuilder</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">AndroidBuilder</span><span class="o">();</span>
+<span class="n">$androidBuilder</span><span class="o">-&gt;</span><span class="n">build</span><span class="o">();</span>
+
+<span class="c1">// Output:</span>
+<span class="c1">// Running android tests</span>
+<span class="c1">// Linting the android code</span>
+<span class="c1">// Assembling the android build</span>
+<span class="c1">// Deploying android build to server</span>
+
+<span class="n">$iosBuilder</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">IosBuilder</span><span class="o">();</span>
+<span class="n">$iosBuilder</span><span class="o">-&gt;</span><span class="n">build</span><span class="o">();</span>
+
+<span class="c1">// Output:</span>
+<span class="c1">// Running ios tests</span>
+<span class="c1">// Linting the ios code</span>
+<span class="c1">// Assembling the ios build</span>
+<span class="c1">// Deploying ios build to server</span>
+</code></pre></div></div>
+        </div>	
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

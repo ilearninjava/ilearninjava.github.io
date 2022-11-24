@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Java Interview Q&A</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Sailor - v4.9.1
+  * Template URL: https://bootstrapmade.com/sailor-free-bootstrap-theme/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center">
+      <h1 class="logo me-auto"><a href="index.html">Java Interview Q&A</a></h1>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+
+          <li class="dropdown"><a href="framework.html"><span>Framework</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="spring.html">Spring</a></li>
+              <li><a href="hibernate.html">Hibernate</a></li>
+              <li><a href="springboot.html">SpringBoot</a></li>
+              <li><a href="jsf.html">JSF</a></li>
+              <li><a href="struts.html">Struts</a></li>
+              <li class="dropdown"><a href="#"><span>Entity Framework</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="jpa.html">JPA</a></li>
+                  <li><a href="hibernate.html">Hibernate</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          
+          <li class="dropdown"><a href="database.html"><span>Database</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="sql.html">SQL</a></li>
+              <li><a href="plsql.html">PL-SQL</a></li>
+              <li class="dropdown"><a href="nosql.html"><span>NoSQL</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">Apache Cassandra</a></li>
+                  <li><a href="#">MongoDB</a></li>
+                  <li><a href="#">Redis</a></li>
+                  <li><a href="#">ArangoDB</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="cloud.html"><span>Cloud</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="aws.html">AWS</a></li>
+              <li><a href="gcp.html">GCP</a></li>
+              <li><a href="azure.html">Azure</a></li>
+              <li><a href="ibm-cloud.html">IBM Cloud</a></li>
+              <li><a href="docker.html">Docker</a></li>
+              <li><a href="kubernetes.html">Kubernetes</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="ui.html"><span>UI</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="angular.html">Angular</a></li>
+              <li><a href="react.html">ReactJS</a></li>
+              <li><a href="javascript.html">Javascript</a></li>
+              <li><a href="css.html">css</a></li>
+              <li><a href="html.html">html</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>Other</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Company wise</a></li>
+              <li><a href="#">Design pattern</a></li>
+              <li><a href="microservices.html">Microservices</a></li>
+              <li><a href="#">Data Structure</a></li>
+              <li><a href="#">Architect</a></li>
+            </ul>
+          </li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+  </header>
+
+</br>
+  <main id="main">
+
+    <section id="about" class="about">
+      <div class="container">
+        <div class="row-content"> 
+
+          <div class="post-content-div">
+            <div class="content">
+
+      <ul class="menu_level_2">
+        <li class="first">
+          <a href="#question-what-do-you-understand-by-microservices">Question: What do you understand by Microservices?</a>
+        </li>
+        <li>
+          <a href="#question-what-are-the-main-features-of-microservices">Question: What are the main features of Microservices?</a>
+        </li>
+        <li>
+          <a href="#question-what-are-the-main-components-of-microservices">Question: What are the main components of Microservices?</a>
+        </li>
+        <li>
+          <a href="#question-how-does-a-microservice-architecture-work">Question: How does a Microservice Architecture work?</a>
+        </li>
+        <li>
+          <a href="#question-what-are-the-fundamental-characteristics-of-a-microservices-design">Question: What are the fundamental characteristics of a Microservices Design?</a>
+        </li>
+        <li>
+          <a href="#question-what-are-the-main-challenges-in-microservice-deployment">Question: What are the main challenges in Microservice Deployment?</a>
+        </li>
+        <li>
+          <a href="#question-what-are-the-advantages-and-disadvantages-of-microservices">Question: What are the advantages and disadvantages of Microservices?</a>
+        </li>
+        <li>
+          <a href="#question-what-are-the-different-strategies-of-microservices-deployment">Question: What are the different strategies of Microservices Deployment?</a>
+        </li>
+        <li>
+          <a href="#question-list-the-differences-between-monolithic-soa-and-microservices-architecture-with-an-example-for-each">Question: List the differences between Monolithic, SOA, and Microservices Architecture with an example for each.</a>
+        </li>
+        <li>
+          <a href="#question-what-is-domain-driven-design">Question: What is Domain Driven Design?</a>
+        </li>
+        <li>
+          <a href="#question-what-is-the-spring-boot">Question: What is the Spring Boot?</a>
+        </li>
+        <li>
+          <a href="#question-how-do-you-override-a-spring-boot-project-s-default-properties">Question: How do you override a Spring Boot Project’s Default Properties?</a>
+        </li>
+        <li>
+          <a href="#question-what-is-the-difference-between-monolithic-soa-and-microservices-architecture">Question: What is the difference between Monolithic, SOA and Microservices Architecture?</a>
+        </li>
+        <li>
+          <a href="#question-difference-between-cohesion-and-coupling">Question: Difference between Cohesion and Coupling?</a>
+        </li>
+        <li>
+          <a href="#question-mention-the-problems-that-are-solved-by-spring-cloud">Question: Mention the problems that are solved by Spring Cloud?</a>
+        </li>
+        <li>
+          <a href="#question-what-is-distributed-transaction">Question: What is Distributed Transaction?</a>
+        </li>
+        <li>
+          <a href="#question-explain-end-to-end-microservices-testing">Question: Explain end to end Microservices Testing?</a>
+        </li>
+        <li>
+          <a href="#question-what-is-mike-cohn-s-test-pyramid">Question: What is Mike Cohn’s Test Pyramid?</a>
+        </li>
+        <li>
+          <a href="#question-how-do-you-implement-a-spring-security-in-a-spring-boot-application">Question: How do you implement a Spring Security in a Spring Boot Application?</a>
+        </li>
+        <li>
+          <a href="#question-how-will-you-configure-spring-boot-application-login">Question: How will you Configure Spring Boot Application Login?</a>
+        </li>
+        <li>
+          <a href="#question-what-is-spring-cloud">Question: What is Spring Cloud?</a>
+        </li>
+        <li>
+          <a href="#question-what-is-an-actuator">Question: What is an Actuator?</a>
+        </li>
+        <li>
+          <a href="#question-what-is-a-container">Question: What is a Container?</a>
+        </li>
+        <li>
+          <a href="#question-what-are-coupling-and-cohesion">Question: What are Coupling and Cohesion?</a>
+        </li>
+        <li>
+          <a href="#question-what-is-pact-in-microservices-architecture">Question: What is PACT in Microservices Architecture?</a>
+        </li>
+        <li>
+          <a href="#question-what-is-contract-testing">Question: What is Contract Testing?</a>
+        </li>
+        <li>
+          <a href="#question-what-is-oauth">Question: What is OAuth?</a>
+        </li>
+        <li>
+          <a href="#question-what-can-you-derive-understand-from-conway-s-law">Question: What can you derive/understand from Conway’s Law?</a>
+        </li>
+        <li>
+          <a href="#question-what-are-the-steps-in-an-end-to-end-microservices-testing">Question: What are the steps in an End-to-End Microservices Testing?</a>
+        </li>
+        <li>
+          <a href="#question-what-is-the-difference-between-mock-stub">Question: What is the difference between Mock &amp; Stub?</a>
+        </li>
+        <li>
+          <a href="#question-what-can-we-derive-from-mike-cohn-s-test-pyramid">Question: What can we derive from Mike Cohn’s Test Pyramid?</a>
+        </li>
+        <li>
+          <a href="#question-how-does-docker-help-in-microservices">Question: How does Docker help in Microservices?</a>
+        </li>
+        <li>
+          <a href="#question-what-is-canary-releasing">Question: What is Canary Releasing?</a>
+        </li>
+        <li>
+          <a href="#question-what-are-the-different-types-of-credentials-of-a-two-factor-authentication">Question: What are the different types of credentials of a two-factor Authentication?</a>
+        </li>
+        <li>
+          <a href="#question-what-is-a-client-certificate">Question: What is a Client Certificate?</a>
+        </li>
+        <li>
+          <a href="#question-what-is-a-cdc-consumer-driven-contract">Question: What is a CDC [Consumer Driven Contract]?</a>
+        </li>
+        <li>
+          <a href="#question-what-are-non-deterministic-tests-and-how-will-you-eliminate-them">Question: What are non-deterministic tests, and how will you eliminate them?</a>
+        </li>
+        <li>
+          <a href="#question-what-are-reactive-extensions-in-microservices">Question: What are Reactive Extensions in Microservices?</a>
+        </li>
+        <li>
+          <a href="#question-what-is-the-role-of-restful-apis-in-microservices">Question: What is the role of RESTful APIs in Microservices?</a>
+        </li>
+        <li>
+          <a href="#question-what-is-eureka-in-microservices">Question: What is Eureka in Microservices?</a>
+        </li>
+        <li>
+          <a href="#question-how-will-you-balance-the-server-side-load-by-utilizing-spring-cloud">Question: How will you balance the server-side load by utilizing Spring Cloud?</a>
+        </li>
+        <li>
+          <a href="#question-when-will-you-see-fit-to-use-the-netflix-hystrix">Question: When will you see fit to use the Netflix Hystrix?</a>
+        </li>
+        <li>
+          <a href="#question-what-is-spring-batch-framework">Question: What is Spring Batch Framework?</a>
+        </li>
+        <li>
+          <a href="#question-what-is-tasklet-and-what-is-a-chunk">Question: What is Tasklet, and what is a Chunk?</a>
+        </li>
+        <li>
+          <a href="#question-how-will-you-deploy-exception-handling-in-microservices">Question: How will you deploy Exception Handling in Microservices?</a>
+        </li>
+        <li>
+          <a href="#question-how-do-you-create-state-machines-out-of-microservices">Question: How do you create State Machines out of Microservices?</a>
+        </li>
+        <li>
+          <a href="#question-what-are-the-most-common-mistakes-while-transitioning-to-microservices">Question: What are the most common mistakes while transitioning to Microservices?</a>
+        </li>
+        <li>
+          <a href="#question-where-is-the-webmvc-test-annotation-used">Question: Where is the WebMVC Test Annotation used?</a>
+        </li>
+        <li class="last">
+          <a href="#question-give-one-a-few-examples-of-microservices-implementation">Question: Give one/a few examples of microservices implementation.</a>
+        </li>
+      </ul>
+   
+</div></div><p>Microservices architecture is a method of developing a large-scale application in the form of discrete modules that work independently of each other but as a whole account for the entire business application under consideration. Organizations are increasingly adopting this service for developing enterprise solutions. As this operates on simple, modular services, there is now an increasing demand for cloud solutions.<span id="ezoic-pub-ad-placeholder-124" class="ezoic-adpicker-ad"></span></p>
+<p>Microservices deployment can be Cloud-Based or On-Premise. It's market spans across Healthcare, Banking, Government, Manufacturing, Retail, IT &amp; Telecommunication, Media &amp; Entertainment, Manufacturing, etc. Its intended audience includes Investors and Consultants, System Integrators, Government Organizations, IT &amp; Technology Solution Providers. To name a few, prominent players in this field of expertise are Cognizant, IBM, Microsoft, Salesforce, and Software AG. The microservices architecture market is expected to take a massive leap by the year 2023.</p>
+<p>If you are looking into a career in this field and are getting yourself interview ready, here are a few quick microservices interview questions and answers you can expect.</p>
+<h2 id="microservices-interview-questions-and-answers"><strong>Microservices Interview Questions and Answers</strong></h2>
+<p>The questions and answers listed here have been compiled from many resources off the internet. This should not be considered as the ultimate guide for microservices interview. Please acquire in-depth knowledge in this field and consult more books and resource guides for connecting questions in this regard.</p><div class="text-center" style="display: flex;justify-content: space-between;">
+<!-- /22535388737/Hackr.io/Blog_Blog_Top_2_Left-->
+<div id="unit-1627658683864" class="tmsads"></div>
+
+<!-- /22535388737/Hackr.io/Blog_Blog_Top_2_Right-->
+<div id="unit-1627658723010" class="tmsads"></div>
+
+</div>
+
+<h4 id="question-what-do-you-understand-by-microservices">
+  <strong>Question: What do you understand by Microservices?</strong></h4>
+<p><strong>Answer:</strong> Microservices or more appropriately Microservices Architecture is an SDLC approach based on which large applications are built as a collection of small functional modules. These functional modules are independently deployable, scalable, target specific business goals, and communicate with each other over standard protocols. Such modules can also be implemented using different programming languages, have their databases, and deployed on different software environments. Each module here is minimal and complete.</p>
+
+<h4 id="question-what-are-the-main-features-of-microservices"><strong>Question: What are the main features of Microservices?</strong></h4>
+<p><strong>Answer:</strong> Microservices have the following main features:<span id="ezoic-pub-ad-placeholder-125" class="ezoic-adpicker-ad"></span></p>
+<ul>
+<li>Multiple Individually Deployable Components.</li>
+<li>Service Distribution based on Business Capabilities.</li>
+<li>Decentralized Data Management.</li>
+<li>DevOps Implementation.</li>
+<li>Technical Independence.</li>
+<li>Hidden Component Complexity to avoid unnecessary microservices dependencies.</li>
+</ul>
+
+<h4 id="question-what-are-the-main-components-of-microservices"><strong>Question: What are the main components of Microservices?</strong></h4>
+<p><strong>Answer:</strong> The main components for a Microservice Architecture are:</p>
+<ul>
+<li>Containers, Clustering, and Orchestration</li>
+<li>IaC [Infrastructure as Code Conception]</li>
+<li>Cloud Infrastructure</li>
+<li>API Gateway</li>
+<li>Enterprise Service Bus</li>
+<li>Service Delivery</li>
+</ul>
+<h4 id="question-how-does-a-microservice-architecture-work"><strong>Question: How does a Microservice Architecture work?</strong></h4>
+<p><strong>Answer:</strong> Under a microservice architecture, an application is simplified into multiple modules that independently perform the single precise standalone task:</p>
+<ul>
+<li>Are fragmented into loosely coupled various modules, each of which performs a distinct function.</li>
+<li>It can be or are distributed across clouds and data centers.</li>
+<li>Implement each module as an independent service/process which can be replaced, updated, or deleted without disrupting the rest of the application.</li>
+</ul>
+<p>Under microservice architecture, an application can grow along with its requirements.<span id="ezoic-pub-ad-placeholder-126" class="ezoic-adpicker-ad"></span><span class="ezoic-ad ezoic-at-0 box-4 box-4126 adtester-container adtester-container-126" data-ez-name="hackr_io-box-4" style="min-height: 400px;"><span id="div-gpt-ad-hackr_io-box-4-0" ezaw="580" ezah="400" style="position: relative; z-index: 0; padding: 0px; width: 100%; max-width: 1200px; min-height: 400px; min-width: 580px; margin-left: auto !important; margin-right: auto !important;" class="ezoic-ad" data-google-query-id="CPCavv2Ox_sCFbqGZgIdFs8J3w"><div id="google_ads_iframe_/1254144,22535388737/hackr_io-box-4_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/1254144,22535388737/hackr_io-box-4_0" name="google_ads_iframe_/1254144,22535388737/hackr_io-box-4_0" title="3rd party ad content" width="580" height="400" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" role="region" aria-label="Advertisement" tabindex="0" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" style="border: 0px; vertical-align: bottom;" data-load-complete="true" data-google-container-id="7"></iframe></div></span></span></p><div class="text-center">
+<!-- /22535388737/Hackr.io/Blog_Blog_Middle-->
+<div id="unit-1627658840059" class="tmsads"></div>
+</div>
+
+<h4 id="question-what-are-the-fundamental-characteristics-of-a-microservices-design"><strong>Question: What are the fundamental characteristics of a Microservices Design?</strong></h4>
+<p><strong>Answer:</strong></p>
+<ul>
+<li>Services split up and organized around business functionality.</li>
+<li>Separate modules handled and owned by different development teams.</li>
+<li>Decentralized Framework.</li>
+<li>Maintenance of respective modules by respective development teams.</li>
+<li>Separate modules may be maintained by different databases.</li>
+<li>Modules in a Microservice Architecture are separately deployable. They can be updated, enhanced, or deleted without disrupting the entire architecture.</li>
+<li>Real-time monitoring of the application.</li>
+</ul>
+<h4 id="question-what-are-the-main-challenges-in-microservice-deployment"><strong>Question: What are the main challenges in Microservice Deployment?</strong></h4>
+<p><strong>Answer:</strong> The challenges in Microservice can be both technical as well as functional.</p>
+<p>From the point of business, the main challenges are:</p>
+<ul>
+<li>Require heavy investment</li><span class="ezoic-autoinsert-ad ezoic-under_first_paragraph"></span><span style="clear:both; display:block" id="ez-clearholder-medrectangle-3"></span><span class="ezoic-ad ezoic-at-0 medrectangle-3 medrectangle-3320 adtester-container adtester-container-320 ezoic-ad-adaptive" data-ez-name="hackr_io-medrectangle-3"><span class="ezoic-ad medrectangle-3 medrectangle-3-multi-320 adtester-container adtester-container-320" data-ez-name="hackr_io-medrectangle-3" style="display: none !important;"><span id="div-gpt-ad-hackr_io-medrectangle-3-0" ezaw="290" ezah="250" style="position:relative;z-index:0;display:inline-block;padding:0;min-height:250px;min-width:290px;" class="ezoic-ad" data-google-query-id="CPGN6eeOx_sCFTqfZgId9lUFbg"><script data-ezscrex="false" data-cfasync="false" type="text/javascript" style="display:none;">if(typeof ez_ad_units != 'undefined'){ez_ad_units.push([[250,250],'hackr_io-medrectangle-3','ezslot_11',320,'0','0'])};__ez_fad_position('div-gpt-ad-hackr_io-medrectangle-3-0');</script><div id="google_ads_iframe_/1254144,22535388737/hackr_io-medrectangle-3_0__container__" style="border: 0pt none; width: 250px; height: 0px;"></div></span></span><span class="ezoic-ad medrectangle-3 medrectangle-3-multi-320 adtester-container adtester-container-320" data-ez-name="hackr_io-medrectangle-3" style="display: none !important;"><span id="div-gpt-ad-hackr_io-medrectangle-3-0_1" ezaw="290" ezah="250" style="position:relative;z-index:0;display:inline-block;padding:0;min-height:250px;min-width:290px;" class="ezoic-ad" data-google-query-id="CIKQnOiOx_sCFaeXZgIdYVMFtw"><script data-ezscrex="false" data-cfasync="false" type="text/javascript" style="display:none;">if(typeof ez_ad_units != 'undefined'){ez_ad_units.push([[250,250],'hackr_io-medrectangle-3','ezslot_12',320,'0','1'])};__ez_fad_position('div-gpt-ad-hackr_io-medrectangle-3-0_1');</script><div id="google_ads_iframe_/1254144,22535388737/hackr_io-medrectangle-3_1__container__" style="border: 0pt none; width: 250px; height: 0px;"></div></span></span><style> .medrectangle-3-multi-320{border:none !important;display:block !important;float:none !important;line-height:0px;margin-bottom:15px !important;margin-left:auto !important;margin-right:auto !important;margin-top:15px !important;max-width:100% !important;min-height:250px;min-width:250px;padding:0;text-align:center !important;width:100%;}</style></span>
+<li>Heavy Infrastructure Setup</li>
+<li>Excessive Planning for managing operations overhead</li>
+<li>Staff Selection and maintenance.</li>
+</ul>
+<p>From a technical standpoint –</p>
+<ul>
+<li>Communication between different microservices in the application.</li>
+<li>Component automation</li>
+<li>Application maintenance</li>
+<li>Configuration Management</li>
+<li>Heavy Operations Overhead</li>
+<li>Deployment Challenges</li>
+<li>Testing and Debugging Challenges</li>
+</ul>
+<h4 id="question-what-are-the-advantages-and-disadvantages-of-microservices"><strong>Question: What are the advantages and disadvantages of Microservices?</strong></h4>
+<p><strong>Answer:</strong></p>
+<p><strong>Advantages</strong>:</p>
+<ul>
+<li>Improved Scalability</li>
+<li>Fault Isolation</li>
+<li>Localized Complexity</li>
+<li>Increased Agility</li><span class="ezoic-autoinsert-ad ezoic-under_second_paragraph"></span><span style="clear:both; display:block" id="ez-clearholder-medrectangle-4"></span><span class="ezoic-ad ezoic-at-0 medrectangle-4 medrectangle-4340 adtester-container adtester-container-340" data-ez-name="hackr_io-medrectangle-4" style="min-height: 400px; width: 100%; height: auto;"><span id="div-gpt-ad-hackr_io-medrectangle-4-0" ezaw="580" ezah="400" style="position: relative; z-index: 0; padding: 0px; width: 100%; max-width: 1200px; min-height: 400px; min-width: 580px; margin-left: auto !important; margin-right: auto !important; height: auto;" class="ezoic-ad" data-google-query-id="COnvyeWUx_sCFZ6iZgIdpTABrw"><div id="google_ads_iframe_/1254144,22535388737/hackr_io-medrectangle-4_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/1254144,22535388737/hackr_io-medrectangle-4_0" name="google_ads_iframe_/1254144,22535388737/hackr_io-medrectangle-4_0" title="3rd party ad content" width="1" height="1" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" role="region" aria-label="Advertisement" tabindex="0" style="border: 0px; vertical-align: bottom;" data-load-complete="true" data-google-container-id="a"></iframe></div></span></span>
+<li>Simplified Debugging &amp; Maintenance</li>
+<li>Better correspondence of developers with business users.</li>
+<li>Smaller development teams</li>
+<li>Better scope for technology upgradation.</li>
+</ul>
+<p><strong>Disadvantages:</strong></p>
+<ul>
+<li>Complicated as a whole.</li>
+<li>Requires accurate pre-planning</li>
+<li>Modular dependencies are hard to calculate.</li>
+<li>Less control over third party applications</li>
+<li>Modular Interdependencies are challenging to track.</li>
+<li>More opportunities for malicious intrusions.</li>
+<li>Complete end-to-end testing is difficult.</li>
+<li>Deployment Challenges.</li>
+</ul>
+<h4 id="question-what-are-the-different-strategies-of-microservices-deployment"><strong>Question: </strong><strong>What are the different strategies of Microservices Deployment?</strong></h4>
+<p><strong>Answer:</strong></p>
+<ul>
+<li><strong>Multiple Service Instance per Host:</strong> Run single or multiple service instances of the application on single/multiple physical/virtual hosts.</li>
+<li><strong>Service Instance per Host:</strong> Run a service instance per host.</li><span class="ezoic-autoinsert-ad ezoic-mid_content"></span>
+<li><strong>Service Instance per Container:</strong> Run each service instance in its respective container.</li>
+<li><strong>Serverless Deployment:</strong> Package the service as a ZIP file and upload it to the Lambda function. The Lambda function is a stateless service that automatically runs enough micro-services to handle all requests.</li>
+</ul>
+<h4 id="question-list-the-differences-between-monolithic-soa-and-microservices-architecture-with-an-example-for-each"><strong>Question: List the differences between Monolithic, SOA, and Microservices Architecture with an example for each.</strong></h4>
+<p><strong>Answer:</strong></p>
+<table>
+<tbody>
+<tr>
+<td>In Monolithic Architecture, all software components of the application are assembled and packed tightly.</td>
+<td>SOA [Service Oriented Architecture] is a collection of services that communicate with each other through simple data passing or activity coordination.</td>
+<td>Microservices Architecture is a collection of small functional modules. These functional modules are independently deployable, scalable, target specific business goals, and communicate with each other over standard protocols.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="question-what-is-domain-driven-design"><strong>Question: What is Domain Driven Design?</strong></h4>
+<p><strong>Answer:</strong> Domain-Driven Design is an architectural style based on Object-Oriented Analysis Design concepts and principles. It helps in developing a complex system by connecting the related components of the software system into a continuously evolving system. Domain-Driven Design is based on three core principles:</p>
+<ul>
+<li>Focus on the core domain and domain logic.</li>
+<li>Base complex designs on models of the domain.</li>
+<li>Regularly collaborate with the domain experts to improve the application model and resolve any emerging domain-related issues.</li>
+</ul>
+<h4 id="question-what-is-the-spring-boot"><strong>Question: What is the Spring Boot?</strong></h4>
+<p><strong>Answer:</strong> Spring Boot is an open-sourced, <a href="https://hackr.io/blog/java-frameworks">Java-based framework</a> that provides its developers with an excellent platform for developing a stand-alone and production-grade spring application. It is easy to understand, increases productivity, and reduces development time. It automatically configures a claim based on the added dependencies of an application.</p>
+<h4 id="question-how-do-you-override-a-spring-boot-project-s-default-properties"><strong>Question: How do you override a Spring Boot Project’s Default Properties?</strong></h4>
+<p><strong>Answer:</strong> Specify the properties in application.properties.<span id="ezoic-pub-ad-placeholder-128" class="ezoic-adpicker-ad"></span></p>
+<p>Spring MVC applications need the suffix and the prefix to be specified. This can be done by:</p>
+<ul>
+<li><strong>For suffix –</strong> spring.mvc.view.suffix: .jsp</li>
+<li><strong>For prefix –</strong> spring.mvc.view.prefix: /WEB-INF/</li>
+</ul>
+<h4 id="question-what-is-the-difference-between-monolithic-soa-and-microservices-architecture"><strong>Question: What is the difference between Monolithic, SOA and Microservices Architecture?</strong></h4>
+<p><strong>Answer:</strong></p>
+<ul>
+<li><strong>Monolithic Architecture: </strong>In this type of architecture, different components of an application like UI, business logic, data access layer are combined into a single platform or program.</li>
+<li><strong>SOA (Service Oriented Architecture):</strong> In this architecture, individual components are loosely coupled and perform a discrete function. There are two main roles – service provider and service consumer. In SOA type, modules can be integrated and reused, making it flexible and reliable.</li>
+<li><strong>Microservices Architecture: </strong>It is a type of SOA in which a series of autonomous components are built and combined to make an app. These components are integrated using APIs. This approach focuses on business priorities and capabilities and offers high agility, i.e. each component of the app can be built independently of the other.</li><span class="ezoic-autoinsert-ad ezoic-long_content"></span><span style="clear:both; display:block" id="ez-clearholder-banner-1"></span><span class="ezoic-ad ezoic-at-0 banner-1 banner-1360 adtester-container adtester-container-360" data-ez-name="hackr_io-banner-1" style="min-height: 400px;"><span id="div-gpt-ad-hackr_io-banner-1-0" ezaw="336" ezah="280" style="position: relative; z-index: 0; padding: 0px; width: 100%; max-width: 1200px; min-height: 400px; min-width: 580px; margin-left: auto !important; margin-right: auto !important;" class="ezoic-ad" data-google-query-id="CIat_P6Ox_sCFZyNZgIdypoEfw"><div id="google_ads_iframe_/1254144,22535388737/hackr_io-banner-1_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/1254144,22535388737/hackr_io-banner-1_0" name="google_ads_iframe_/1254144,22535388737/hackr_io-banner-1_0" title="3rd party ad content" width="580" height="400" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" role="region" aria-label="Advertisement" tabindex="0" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" style="border: 0px; vertical-align: bottom;" data-load-complete="true" data-google-container-id="b"></iframe></div></span></span>
+</ul>
+<h4 id="question-difference-between-cohesion-and-coupling"><strong>Question: Difference between Cohesion and Coupling?</strong></h4>
+<p><strong>Answer: Coupling: </strong>it is the relationship between module A and another module B. Any module can be highly coupled (highly dependent), loosely coupled and uncoupled with other modules. The best coupling is loose coupling achieved through interfaces.</p>
+<p><strong>Cohesion:</strong> it is the relationship between 2 or more parts within a module. If a module has high cohesion, it means the module can perform a certain task with utmost efficiency on its own, without communication with other modules. High cohesion enhances the functional strength of a module.<img style="display: block; margin-left: auto; margin-right: auto;" src="https://hackr.io/blog/media/cohesion-and-coupling.png" alt="Cohesion and Coupling" width="426" height="130"></p>
+<h4 id="question-mention-the-problems-that-are-solved-by-spring-cloud"><strong>Question: Mention the problems that are solved by Spring Cloud?</strong></h4>
+<p><strong>Answer: </strong>Spring cloud can solve the following problems:</p>
+<ul>
+<li>Network issues, latency overhead, bandwidth issues, security issues and other issues with distributed systems</li>
+<li>Redundancy issues that occur in distributed systems.</li>
+<li>Balancing the distribution of load between resources like network links, CPU, clusters etc.</li><span class="ezoic-autoinsert-ad ezoic-longer_content"></span><span style="clear:both; display:block" id="ez-clearholder-large-leaderboard-2"></span><span class="ezoic-ad ezoic-at-0 large-leaderboard-2 large-leaderboard-2550 adtester-container adtester-container-550" data-ez-name="hackr_io-large-leaderboard-2" style="width: 100%; height: auto; min-height: 250px;"><span id="div-gpt-ad-hackr_io-large-leaderboard-2-0" ezaw="300" ezah="250" style="position: relative; z-index: 0; padding: 0px; min-height: 250px; min-width: 300px; width: 100%; height: auto;" class="ezoic-ad" data-google-query-id="CO7QnOWUx_sCFVSlZgIdjcANFQ"><div id="google_ads_iframe_/1254144,22535388737/hackr_io-large-leaderboard-2_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/1254144,22535388737/hackr_io-large-leaderboard-2_0" name="google_ads_iframe_/1254144,22535388737/hackr_io-large-leaderboard-2_0" title="3rd party ad content" width="1" height="1" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" role="region" aria-label="Advertisement" tabindex="0" style="border: 0px; vertical-align: bottom;" data-load-complete="true" data-google-container-id="c"></iframe></div></span></span>
+<li>Performance issues because of operational overheads.</li>
+<li>Service discovery issues to ensure smooth communication between services in a cluster.</li>
+</ul>
+<h4 id="question-what-is-distributed-transaction"><strong>Question: What is Distributed Transaction?</strong></h4>
+<p><strong>Answer: </strong>Distribution transaction has two or more network hosts that are engaged. Transactions are handled by a transaction manager that takes care of developing and handling transactions. If the transaction involves more than one peer, transaction managers of each peer communicate with each other using subordinate or superior relationships.</p>
+<p>Same way, resources are handled by the resource manager that also coordinates with the distributed transaction coordinator for transaction atomicity and isolation.</p>
+<h4 id="question-explain-end-to-end-microservices-testing"><strong>Question: Explain end to end Microservices Testing?</strong></h4>
+<p><strong>Answer: </strong>It is a testing technique used to test the entire flow of an application using a business transaction. Since several components are involved in microservices architecture, these tests can cover the gaps during a unit or integration testing. It also gives end to end confidence, ensures that the network parameters are appropriately configured and helps microservices to evolve.</p><div class="text-center" style="display: flex;justify-content: space-between;">
+<!-- /22535388737/Hackr.io/Blog_Blog_Middle_2_Left-->
+<div id="unit-1627659005278" class="tmsads"></div>
+<!-- /22535388737/Hackr.io/Blog_Blog_Middle_2_Right-->
+<div id="unit-1627659049667" class="tmsads"></div>
+</div>
+<h4 id="question-what-is-mike-cohn-s-test-pyramid"><strong>Question: What is Mike Cohn’s Test Pyramid?</strong></h4>
+<p><strong>Answer: </strong>The pyramid helps maximize automation at all levels of testing, i.e. unit testing, service level testing, UI testing. The pyramid indicates that while unit tests are faster and more isolated, UI tests, which are at the highest level, take time and focus on integration.<img src="https://hackr.io/blog/media/mike-cohn-s-test-pyramid.png" alt="Mike Cohn’s Test Pyramid" width="495" height="143"></p>
+
+<h4 id="question-how-do-you-implement-a-spring-security-in-a-spring-boot-application"><strong>Question: How do you implement a Spring Security in a Spring Boot Application?</strong></h4>
+<p><strong>Answer:</strong></p>
+<ul>
+<li>Add spring-boot-starter-security in the file pom.xml.</li>
+<li>Create a Spring config class that will override the required method while extending the WebSecurityConfigurerAdapter to achieve security in the application.</li>
+</ul>
+<h4 id="question-how-will-you-configure-spring-boot-application-login"><strong>Question: How will you Configure Spring Boot Application Login?</strong></h4>
+<p><strong>Answer:</strong> Spring Boot Application Login can be configured by specifying the logging.level in the application. Properties file. It is usually pre-configured as console output.</p>
+<h4 id="question-what-is-spring-cloud"><strong>Question: What is Spring Cloud?</strong></h4>
+<p><strong>Answer:</strong> While building a distributed system, there are a few problems that are encountered. They are Configuration Management, Service Discovery, Circuit breakers, and distributed sessions. Spring Boot is a collection of tools that provides solutions to such commonly encountered problems.</p>
+<h4 id="question-what-is-an-actuator"><strong>Question: What is an Actuator?</strong></h4>
+<p><strong>Answer:</strong> The actuator brings in production-ready features into an application. It is mainly used to expose operational information about the running application’s health, metrics, info, dump, env, etc. It uses HTTP endpoints or JMX beans to interact with it.</p><div class="text-center" style="display: flex;justify-content: space-between;">
+<!-- /22535388737/Hackr.io/Blog_Blog_Middle_3_Left-->
+<div id="unit-1629219379283" class="tmsads"></div>
+
+<!-- /22535388737/Hackr.io/Blog_Blog_Middle_3_Right-->
+<div id="unit-1629219416507" class="tmsads"></div>
+
+</div>
+<h4 id="question-what-is-a-container"><strong>Question: What is a Container?</strong></h4>
+<p><strong>Answer:</strong> Containers are isolated workload environments in a virtualized operating system. It consists of an application and all the features and files required to run it. Each box is an independent environment and is not tied to the software on a physical environment, thus providing a solution for application portability.</p>
+
+
+</div>
+
+
+<h4 id="question-what-are-coupling-and-cohesion"><strong>Question: What are Coupling and Cohesion?</strong></h4>
+<p><strong>Answer:</strong> The strength of dependencies between services in a microservice architecture is said to be coupling. Cohesion refers to the related logic between two or more services. The entire concept of microservices is based on the ability to deploy and update service while keeping other services intact. Hence, loose coupling and high cohesion is the key to a microservice design.<span id="ezoic-pub-ad-placeholder-129" class="ezoic-adpicker-ad"></span></p>
+<h4 id="question-what-is-pact-in-microservices-architecture"><strong>Question: What is PACT in Microservices Architecture?</strong></h4>
+<p><strong>Answer:</strong> A contract between a consumer application and a provider application is called a PACT. Each pact is a collection of interactions. It is an open-source tool that can be used to implement the Consumer-Driven Contract in Microservices.</p>
+<h4 id="question-what-is-contract-testing"><strong>Question: What is Contract Testing?</strong></h4>
+<p><strong>Answer:</strong> Contract Testing ensures that the explicit and implicit contracts of a microservice architecture work as expected. There are two perspectives to contract to test – Consumer and Provider. The consumer is the [application] entity using the microservice, and the provider is the [application] entity providing the service. Such services work under predefined specifications, and contract testing ensures so.</p>
+<h4 id="question-what-is-oauth"><strong>Question: What is OAuth?</strong></h4>
+<p><strong>Answer:</strong> OAuth stands for Open-standard Authorization Protocol or framework that describes how unrelated servers and services can safely allow authenticated access to their assets without sharing the initial related, single login credential. This is also known as secure, third-party, user-agent, delegated authorization.</p>
+<h4 id="question-what-can-you-derive-understand-from-conway-s-law"><strong>Question: What can you derive/understand from Conway’s Law?</strong></h4>
+<p><strong>Answer:</strong> Melvin Conway stated this idea in the late 1960s. This law implies that ‘organizations which design systems are constrained to produce designs which are copies of the communication structures of these organizations.” In simpler words, the team of people who design a piece of software will eventually make the design as per their perspective.</p>
+
+<h4 id="question-what-are-the-steps-in-an-end-to-end-microservices-testing"><strong>Question: What are the steps in an End-to-End Microservices Testing?</strong></h4>
+<p><strong>Answer:</strong> End-To-End testing of a microservice application ensures that every process in the form is running properly. This validates that the system as a whole is working properly. As the microservices application is built with multiple modules orchestrated dynamically, an end to end testing covers all the gaps between the services.</p>
+<p>The steps to an end-to-end microservices testing are:</p>
+<ul>
+<li>Define what you expect from an e2e testing.</li>
+<li>Define the scope of the system to be tested.</li>
+<li>Perform authentication in a test environment.</li>
+<li>Choose a testing framework that addresses most of the issues.</li>
+<li>Test Asynchronous flows</li>
+<li>Automate Testing</li>
+</ul>
+<h4 id="question-what-is-the-difference-between-mock-stub"><strong>Question: What is the difference between Mock &amp; Stub?</strong></h4>
+<p><strong>Answer:</strong> A Mock is generally a dummy object where certain features are set into it initially. Its behavior mainly depends on these features, which are then tested.</p>
+<p>A Stub is an object that helps in running the test. It functions in a fixed manner under certain conditions. This hard-coded behavior helps the stub to run the test.</p><div class="text-center" style="display: flex;justify-content: space-between;">
+<!-- /22535388737/Hackr.io/Blog_Blog_Middle_4_Left-->
+<div id="unit-1629219446032" class="tmsads"></div>
+<!-- /22535388737/Hackr.io/Blog_Blog_Middle_4_Right-->
+<div id="unit-1629219474265" class="tmsads"></div>
+
+</div>
+
+<h4 id="question-what-can-we-derive-from-mike-cohn-s-test-pyramid"><strong>Question: What can we derive from Mike Cohn’s Test Pyramid?</strong></h4>
+<p><strong>Answer: </strong>Mike Cohn’s Test Pyramid describes the type of automated tests required for software development. The Test Pyramid is only a metaphor that implies a grouping of tests based on their granularity. This Pyramid tells which kind of tests should be applied to different levels of the pyramid.</p><span class="ezoic-autoinsert-ad ezoic-incontent_7"></span><span style="clear:both; display:block" id="ez-clearholder-leader-2"></span><span class="ezoic-ad ezoic-at-0 leader-2 leader-2702 adtester-container adtester-container-702" data-ez-name="hackr_io-leader-2" style="width: 100%; height: auto; min-height: 250px;"><span id="div-gpt-ad-hackr_io-leader-2-0" ezaw="300" ezah="250" style="position: relative; z-index: 0; padding: 0px; min-height: 250px; min-width: 300px; width: 100%; height: auto;" class="ezoic-ad" data-google-query-id="COzEurSWx_sCFdCIZgIdBdcAkw"><div id="google_ads_iframe_/1254144,22535388737/hackr_io-leader-2_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/1254144,22535388737/hackr_io-leader-2_0" name="google_ads_iframe_/1254144,22535388737/hackr_io-leader-2_0" title="3rd party ad content" width="1" height="1" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" role="region" aria-label="Advertisement" tabindex="0" style="border: 0px; vertical-align: bottom;" data-load-complete="true" data-google-container-id="g"></iframe></div></span></span><div class="text-center">
+<!-- /22535388737/Hackr.io/Blog_Blog_Middle_3_Left-->
+<div id="unit-1629219379283" class="tmsads"></div>
+</div>
+
+<p>Mike Cohn’s test pyramid consists of three layers that a test suite should consist:</p>
+<ul>
+<li>Unit Testing</li>
+<li>Service Testing</li>
+<li>User Interface Testing.</li>
+</ul>
+<p>Two points to be derived from Cohn’s pyramid is that:</p>
+<ul>
+<li>Define tests with different granularity</li>
+<li>The higher in the level you get, the fewer tests you should have.</li>
+</ul>
+<h4 id="question-how-does-docker-help-in-microservices"><strong>Question: How does Docker help in Microservices?</strong></h4>
+<p><strong>Answer: </strong>Microservices, as we know, are self-contained, individual units that perform only one business function, so much so that each unit can be considered an application on its own. The application development environment and application deployment environment are bound to vary in many aspects. This gives rise to deployment issues. Docker provides a static background for the application to run, thus avoiding deployment issues. It is, in fact, a containerization tool. It reduces overhead and deploys thousands of microservices on the same server. Docker ensures that an application microservices will run on their own environments and are entirely separate from their operating system.</p>
+<h4 id="question-what-is-canary-releasing"><strong>Question: What is Canary Releasing?</strong></h4>
+<p><strong>Answer: </strong>Canary releasing is a technique by which new software versions are introduced by rolling out the updated version to a small subset of users before rolling it out to the entire infrastructure and making it available to everybody. This technique is so-called because it is based on canary releases in coal mines to alert miners when the toxic gases reach dangerous levels.</p>
+
+<h4 id="question-what-are-the-different-types-of-credentials-of-a-two-factor-authentication"><strong>Question: What are the different types of credentials of a two-factor Authentication?</strong></h4>
+<p><strong>Answer: </strong>Two-factor authentication calls for a second round of authentication to an account login process. Entering a username – password is a one-factor authentication. Username – Password authentication and then say mobile number or a secret key authentication can be considered as a two - factor authentication.</p>
+<p>The different types of credentials for two-factor authentication can be:</p>
+<ul>
+<li>Something you know - A PIN, password or a pattern</li>
+<li>Something you have – ID, ATM No., Phone No, or an OTP</li>
+<li>Something you are – Your Biometrics.</li>
+</ul>
+
+<h4 id="question-what-is-a-client-certificate"><strong>Question: What is a Client Certificate?</strong></h4>
+<p><strong>Answer: </strong>A Client Certificate is a digital certificate that is used by client systems to make authenticated requests to a remote server. It plays a key role in many mutual authentication designs, providing strong assurances of a requester’s identity.</p><span class="ezoic-autoinsert-ad ezoic-incontent_9"></span><span style="clear:both; display:block" id="ez-clearholder-leader-4"></span><span class="ezoic-ad ezoic-at-0 leader-4 leader-4704 adtester-container adtester-container-704" data-ez-name="hackr_io-leader-4" style="min-height: 280px; width: 100%; height: auto;"><span id="div-gpt-ad-hackr_io-leader-4-0" ezaw="336" ezah="280" style="position: relative; z-index: 0; padding: 0px; width: 100%; max-width: 1200px; min-height: 280px; min-width: 336px; margin-left: auto !important; margin-right: auto !important; height: auto;" class="ezoic-ad" data-google-query-id="CJOfyaWWx_sCFVKkZgId3RYJcw"><div id="google_ads_iframe_/1254144,22535388737/hackr_io-leader-4_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/1254144,22535388737/hackr_io-leader-4_0" name="google_ads_iframe_/1254144,22535388737/hackr_io-leader-4_0" title="3rd party ad content" width="1" height="1" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" role="region" aria-label="Advertisement" tabindex="0" style="border: 0px; vertical-align: bottom;" data-load-complete="true" data-google-container-id="i"></iframe></div></span></span>
+<h4 id="question-what-is-a-cdc-consumer-driven-contract"><strong>Question: What is a CDC [Consumer Driven Contract]?</strong></h4>
+<p><strong>Answer: </strong>Consumer-Driven Contracts are patterns for evolving services. Here, each consumer captures their provider in a separate contract. All these contracts are then shared with the provider, which helps them to gain an insight into the obligations they must fulfill for each individual client.</p>
+<h4 id="question-what-are-non-deterministic-tests-and-how-will-you-eliminate-them"><strong>Question: What are non-deterministic tests, and how will you eliminate them?</strong></h4>
+<p><strong>Answer: </strong>NDT or Non-Deterministic are unreliable tests. Such tests sometimes pass and sometimes fail. When these tests fail, they are re-run to give. Non-Determinism from tests can be eliminated in the following ways:</p><div class="text-center" style="display: flex;justify-content: space-between;">
+<!-- /22535388737/Hackr.io/Blog_Blog_Bottom_2_Left-->
+<div id="unit-1627659287299" class="tmsads"></div>
+
+<!-- /22535388737/Hackr.io/Blog_Blog_Bottom_2_Right-->
+<div id="unit-1627659317863" class="tmsads"></div>
+
+</div>
+
+<ul>
+<li>Quarantine</li>
+<li>Asynchronous</li>
+<li>Remote Services</li>
+<li>Isolation</li>
+<li>Time</li>
+<li>Resource Leaks</li>
+</ul>
+<h4 id="question-what-are-reactive-extensions-in-microservices"><strong>Question: What are Reactive Extensions in Microservices?</strong></h4>
+<p><strong>Answer: </strong>Reactive Extensions is a design approach through which results are collected by calling multiple services in order to compile a combined response. Also known as Rx, these calls can be synchronous or asynchronous.</p><div class="text-center">
+<!-- /22535388737/Hackr.io/Blog_Blog_Middle_3_Right-->
+<div id="unit-1629219416507" class="tmsads"></div>
+
+</div>
+
+<h4 id="question-what-is-the-role-of-restful-apis-in-microservices"><strong>Question: What is the role of RESTful APIs in Microservices?</strong></h4>
+<p><strong>Answer: </strong>A microservice is based on the concept where all it's component services require to interact with one another to complete the business functionality. This requires each microservice to have an interface. RESTful APIs provide a logical model for building these interfaces. It is based on the open networking principles of the Web. Thus, it serves as the most critical enabler of microservices.</p><span class="ezoic-autoinsert-ad ezoic-incontent_10"></span><span style="clear:both; display:block" id="ez-clearholder-mobile-leaderboard-2"></span><span class="ezoic-ad ezoic-at-0 mobile-leaderboard-2 mobile-leaderboard-2705 adtester-container adtester-container-705" data-ez-name="hackr_io-mobile-leaderboard-2" style="min-height: 400px;"><span id="div-gpt-ad-hackr_io-mobile-leaderboard-2-0" ezaw="336" ezah="280" style="position: relative; z-index: 0; padding: 0px; width: 100%; max-width: 1200px; min-height: 400px; min-width: 580px; margin-left: auto !important; margin-right: auto !important;" class="ezoic-ad"><div id="google_ads_iframe_/1254144,22535388737/hackr_io-mobile-leaderboard-2_0__container__" style="border: 0pt none;"></div></span></span>
+<h4 id="question-what-is-eureka-in-microservices"><strong>Question: What is Eureka in Microservices?</strong></h4>
+<p><strong>Answer: </strong>Eureka is alternatively known as the Netflix Service Discovery Server. It uses Spring Cloud and is not heavy on the application development process.</p>
+<h4 id="question-how-will-you-balance-the-server-side-load-by-utilizing-spring-cloud"><strong>Question: How will you balance the server-side load by utilizing Spring Cloud?</strong></h4>
+<p><strong>Answer: </strong>The server-side load balancing can be done by using Netflix Zuul. It is also known as a JVM based router.</p>
+<h4 id="question-when-will-you-see-fit-to-use-the-netflix-hystrix"><strong>Question: When will you see fit to use the Netflix Hystrix?</strong></h4>
+<p><strong>Answer: </strong>Hystrix is an error tolerance and latency library. Hystrix mainly isolates the access points. It also makes sure that all 3rd Party libraries and services are restricted. Thus, we can use Hystrix to ensure that an application runs efficiently and avoids the kind of failures that occur in distributed systems.</p>
+<h4 id="question-what-is-spring-batch-framework"><strong>Question: What is Spring Batch Framework?</strong></h4>
+<p><strong>Answer: </strong>Spring Batch is an open-source web framework for batch processing – execution of a series of jobs. Spring Batch provides classes and APIs to read/write resources, transaction management, job processing statistics, job restart, and partitioning techniques to process high volume data.</p>
+<h4 id="question-what-is-tasklet-and-what-is-a-chunk"><strong>Question: What is Tasklet, and what is a Chunk?</strong></h4>
+<p><strong>Answer: </strong>The Tasklet is a simple interface with one method to execute. A tasklet can be used to perform single tasks like running queries, deleting files, etc. In Spring Batch, the tasklet is an interface that can be used to perform unique tasks like clean or set up resources before or after any step execution.</p>
+
+<p>Spring Batch uses a ‘Chunk Oriented’ processing style within its most common implementation. Chunk Oriented Processing refers to reading the data one at a time and creating chunks that will be written out, within a transaction boundary.</p>
+<h4 id="question-how-will-you-deploy-exception-handling-in-microservices"><strong>Question: How will you deploy Exception Handling in Microservices?</strong></h4>
+<p><strong>Answer: </strong>If an exception occurs while processing an HTTP request, you need to catch the exception in your controller or service and return an appropriate ResponseEntity manually. Here are some thumb rules for exception handling.</p>
+<ul>
+<li>Add @ResponseStatus for exceptions that you write.</li>
+<li>For all other exceptions, implement an @ExceptionHandler method on a @ControllerAdvice class or use an instance of SimpleMappingExceptionResolver.</li>
+<li>For Controller specific exceptions, add @ExceptionHandler methods to your controller.</li>
+</ul>
+<p>Point to be noted is that @ExceptionHandler methods on the controller are always selected before those on any @ControllerAdvice instance. It is undefined in what order ControllerAdvices are processed.</p>
+<p><strong>Question: How can you access RESTful Microservices?</strong></p>
+<p><strong>Answer: </strong>Considering the microservice architecture concept, each microservice needs to have an interface. Based on the principles of open networking of the Web, RESTful APIs provide the most logical model for building interfaces between the various components of the microservices architecture. RESTful APIs can be accessed in two ways:</p><span class="ezoic-autoinsert-ad ezoic-incontent_12"></span><span style="clear:both; display:block" id="ez-clearholder-narrow-sky-2"></span><span class="ezoic-ad ezoic-at-0 narrow-sky-2 narrow-sky-2707 adtester-container adtester-container-707" data-ez-name="hackr_io-narrow-sky-2" style="width: 100%; height: auto; min-height: 250px;"><span id="div-gpt-ad-hackr_io-narrow-sky-2-0" ezaw="300" ezah="250" style="position: relative; z-index: 0; padding: 0px; min-height: 250px; min-width: 300px; width: 100%; height: auto;" class="ezoic-ad" data-google-query-id="CKrWlJOPx_sCFXGgZgIdLdYLDQ"><div id="google_ads_iframe_/1254144,22535388737/hackr_io-narrow-sky-2_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/1254144,22535388737/hackr_io-narrow-sky-2_0" name="google_ads_iframe_/1254144,22535388737/hackr_io-narrow-sky-2_0" title="3rd party ad content" width="1" height="1" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" role="region" aria-label="Advertisement" tabindex="0" style="border: 0px; vertical-align: bottom;" data-load-complete="true" data-google-container-id="l"></iframe></div></span></span>
+<ul>
+<li>Using a REST Template that is load balanced.</li>
+<li>I am using multiple microservices.</li>
+</ul>
+<p><strong>Question: How do independent Microservices communicate with each other?</strong></p>
+<p><strong>Answer: </strong>Microservices can communicate with each other through:</p>
+<ul>
+<li>HTTP for traditional Request-Response.</li>
+<li>Websockets for streaming.</li>
+<li>Brokers or Server Programs running Advanced Routing Algorithms.</li>
+</ul>
+<p>For message brokers, <a href="https://www.rabbitmq.com/" target="_blank" rel="noopener">RabbitMQ</a>, Nats, Kafka, etc., can be used, each built for a particular message semantic. Another way is to use Backend As A Service like Space Cloud, which automates the entire backend.</p>
+<p><strong>Question: What is Semantic Monitoring?</strong></p>
+<p><strong>Answer: </strong>Semantic Monitoring or Synthetic Monitoring is running a subset of the application’s automated tests against the live production system. These results are monitored, and alerts are generated in case of failures. Semantic Monitoring approaches microservice monitoring from the business transaction perspective. Instead of monitoring each component, its semantic monitoring ascertains how well the transaction performs for business and the users. It also detects the faulty service layer and the corresponding microservice instance, all at the same flow. This approach allows for faster triaging and reduces the meantime to repair.</p>
+<p><strong>Question: How do you perform security testing of Microservices?</strong></p><span class="ezoic-autoinsert-ad ezoic-incontent_13"></span><span style="clear:both; display:block" id="ez-clearholder-narrow-sky-1"></span><span class="ezoic-ad ezoic-at-0 narrow-sky-1 narrow-sky-1708 adtester-container adtester-container-708" data-ez-name="hackr_io-narrow-sky-1" style="min-height: 400px;"><span id="div-gpt-ad-hackr_io-narrow-sky-1-0" ezaw="336" ezah="280" style="position: relative; z-index: 0; padding: 0px; width: 100%; max-width: 1200px; min-height: 400px; min-width: 580px; margin-left: auto !important; margin-right: auto !important;" class="ezoic-ad"><div id="google_ads_iframe_/1254144,22535388737/hackr_io-narrow-sky-1_0__container__" style="border: 0pt none;"></div></span></span>
+<p><strong>Answer: </strong>Microservices Application is a collection of smaller, independent, functional modules that may be developed in different programming languages, have different data sources, and run on different operating systems. This makes testing of the microservices as a whole a very tough task. The different pieces/modules need to be tested independently. There are three common procedures for this.</p>
+<ul>
+<li>Code Scanning: In order to ensure that every line of code is bug-free and can be replicated.</li>
+<li>Flexibility: The security protocols should be flexible as per the requirements of the system.</li>
+<li>Adaptability: The security protocols should be adaptable to the malicious intrusions.</li>
+</ul>
+<p><strong>Question: What do you understand by Idempotence, and how is it used?</strong></p>
+<p><strong>Answer: </strong>Idempotence refers to the repeated performing of a task even though the end result remains the same. It is used mostly as a data source or a remote service in a way that when it receives the instruction more than once, it processes the instruction only once.</p>
+<p><strong>Question: What are the uses of Reports and Dashboards in Microservices environments?</strong></p>
+<p><strong>Answer: </strong>Reports and Dashboards are generally used to monitor a system. For microservices Reports and Dashboards help to:</p>
+<ul>
+<li>Find which microservice support which resource.</li>
+<li>Find out the services that are impacted whenever changes in components are made/occur.</li>
+<li>Provide an easy point of access for documentation purposes.</li>
+<li>Review versions of the deployed components.</li>
+<li>Obtain compliance from the components.</li>
+</ul>
+<p><strong>Question: What are the tools that can be considered for managing a microservice architecture?</strong></p>
+<p><strong>Answer: </strong>The main tools that can be used to build/manage a microservice architecture are:</p>
+<ol>
+<li><strong>MongoDB:</strong> It is a document-based open-source distributed database. Here data is stored in JSON format with a different structure for different documents. It also supports a lot of programming languages like C, C++, C#, PERL, PHP, Python, Java, Ruby, Scala, etc.</li><span class="ezoic-autoinsert-ad ezoic-incontent_14"></span><span style="clear:both; display:block" id="ez-clearholder-netboard-1"></span><span class="ezoic-ad ezoic-at-0 netboard-1 netboard-1709 adtester-container adtester-container-709" data-ez-name="hackr_io-netboard-1" style="min-height: 400px;"><span id="div-gpt-ad-hackr_io-netboard-1-0" ezaw="250" ezah="250" style="position: relative; z-index: 0; padding: 0px; width: 100%; max-width: 1200px; min-height: 400px; min-width: 580px; margin-left: auto !important; margin-right: auto !important;" class="ezoic-ad"><div id="google_ads_iframe_/1254144,22535388737/hackr_io-netboard-1_0__container__" style="border: 0pt none;"></div></span></span>
+<li><strong>Elasticsearch:</strong> It is a full-text search engine.</li>
+<li><strong>KAFKA:</strong> It is an event queue system. All transactions are processed via the event queue, thus avoiding the web like random interactions between different services. Kafka renders a microservice architecture robust and clean.</li>
+<li><strong>JENKINS:</strong> It is an automation tool that enables Continuous Integration and Continuous Development. It supports many plugins and easily integrates with almost every tool.</li>
+<li><strong>DOCKER:</strong> The application development environment and application deployment environment are bound to vary in many aspects. This gives rise to deployment issues. Docker provides a static background for the application to run, thus avoiding deployment issues.</li>
+<li><strong>KUBERNETES:</strong> With thousands of services running in an application, Kubernetes, as an engine orchestrates the entire process.</li>
+<li><strong>JAEGER:</strong> It is an open-source end to end distributed tracing tool. Jaeger monitors distributed transactions, helps in performance optimization, and finds the dependencies between services. It also gives the root cause analysis.</li>
+<li><strong>FLUENT:</strong> In a multiservice architecture, where all the different systems are managed via different programming languages, different databases, and run in different operating systems, logging in, and keeping track of it is a significant issue. Fluentd provides a single logging layer and simplifies this issue. Logs can be also be collected and aggregated onto a data source.</li>
+<li><strong>PROMETHEUS:</strong> It is a monitoring tool, which helps to check if all services are working fine when the application is deployed. It is a time-series data store. It collects metrics from an application and displays it in a graphical format.</li>
+<li><strong>grafana:</strong> Grafana provides analytics and monitoring into different visualization formats like graphs, charts, tables, etc.</li>
+<li><strong>NGINX:</strong> It acts as a reverse proxy. It acts as a single point entry through which all the API calls are made.</li>
+</ol>
+<h4 id="question-how-do-you-create-state-machines-out-of-microservices"><strong>Question: How do you create State Machines out of Microservices?</strong></h4>
+<p><strong>Answer:</strong> Each microservice owning its database is an independently deployable program. This enables the creation of State Machines by which we can specify different states and events for a particular microservice.</p>
+<h4 id="question-what-are-the-most-common-mistakes-while-transitioning-to-microservices"><strong>Question: What are the most common mistakes while transitioning to Microservices?</strong></h4>
+<p><strong>Answer:</strong></p>
+<ul>
+<li>Failure to outline the main challenges.</li>
+<li>I am rewriting already existing programs.</li>
+
+<li>Vague definitions of responsibilities, timeline, and boundaries.</li>
+<li>Failure to identify and implement automation.</li>
+</ul>
+<h4 id="question-where-is-the-webmvc-test-annotation-used"><strong>Question: Where is the WebMVC Test Annotation used?</strong></h4>
+<p><strong>Answer:</strong> WebMvcTest Annotation is used for unit testing Spring MVC Applications, where the test objective is to focus on Spring MVC Components.</p>
+<p>Ex: @WebMvcTest(value = ToTestController.class, secure = false)</p>
+<p>In the above example, the intention is to launch the ToTestController. All other controllers and mappings will not be launched when this unit test is executed.</p>
+<h4 id="question-give-one-a-few-examples-of-microservices-implementation"><strong>Question: Give one/a few examples of microservices implementation.</strong></h4>
+<p><strong>Answer:</strong> Netflix, Paypal, Amazon, eBay, Twitter, and many other large-scale websites have started as monolithic and evolved into a microservices architecture.</p>
+            
+</div>
+</div>
+
+        </div>	
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+
+</body>
+
+</html>
