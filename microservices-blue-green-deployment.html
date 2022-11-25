@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Java Interview Q&A</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Sailor - v4.9.1
+  * Template URL: https://bootstrapmade.com/sailor-free-bootstrap-theme/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center">
+      <h1 class="logo me-auto"><a href="index.html">Java Interview Q&A</a></h1>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+
+          <li class="dropdown"><a href="framework.html"><span>Framework</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="spring.html">Spring</a></li>
+              <li><a href="hibernate.html">Hibernate</a></li>
+              <li><a href="springboot.html">SpringBoot</a></li>
+              <li><a href="jsf.html">JSF</a></li>
+              <li><a href="struts.html">Struts</a></li>
+              <li class="dropdown"><a href="#"><span>Entity Framework</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="jpa.html">JPA</a></li>
+                  <li><a href="hibernate.html">Hibernate</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          
+          <li class="dropdown"><a href="database.html"><span>Database</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="sql.html">SQL</a></li>
+              <li><a href="plsql.html">PL-SQL</a></li>
+              <li class="dropdown"><a href="nosql.html"><span>NoSQL</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">Apache Cassandra</a></li>
+                  <li><a href="#">MongoDB</a></li>
+                  <li><a href="#">Redis</a></li>
+                  <li><a href="#">ArangoDB</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="cloud.html"><span>Cloud</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="aws.html">AWS</a></li>
+              <li><a href="gcp.html">GCP</a></li>
+              <li><a href="azure.html">Azure</a></li>
+              <li><a href="ibm-cloud.html">IBM Cloud</a></li>
+              <li><a href="docker.html">Docker</a></li>
+              <li><a href="kubernetes.html">Kubernetes</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="ui.html"><span>UI</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="angular.html">Angular</a></li>
+              <li><a href="react.html">ReactJS</a></li>
+              <li><a href="javascript.html">Javascript</a></li>
+              <li><a href="css.html">css</a></li>
+              <li><a href="html.html">html</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="microservices.html"><span>Microservices</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="microservices-12-factor-app.html">The Twelve-Factor App</a></li>
+              <li><a href="microservices-saga-pattern.html">Saga Pattern</a></li>
+              <li><a href="microservices-blue-green-deployment.html">Blue Green Deployment</a></li>              
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>Other</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Company wise</a></li>
+              <li><a href="#">Design pattern</a></li>
+              <li><a href="microservices.html">Microservices</a></li>
+              <li><a href="#">Data Structure</a></li>
+              <li><a href="#">Architect</a></li>
+            </ul>
+          </li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+  </header>
+
+</br>
+  <main id="main">
+
+    <section id="about" class="about">
+      <div class="container">
+        <div class="row-content"> 
+
+          
+            <h2>History of Blue-Green Deployment</h2>
+            <p>In 2005, two developers named <a title="LinkedIn" href="https://www.linkedin.com/in/dannorth/" target="_blank" rel="noopener noreferrer external" data-wpel-link="external">Daniel North</a> and <a title="LinkedIn" href="https://www.linkedin.com/in/jez-humble" target="_blank" rel="noopener noreferrer external" data-wpel-link="external">Jez Humble</a> were tackling problems with their e-commerce website. Even with a good testing system in place, errors were still being detected in production, much later than they desired.</p>
+            <p>A detailed root cause analysis showed that there was a significant difference between testing and production environment, and this difference resulted in frequent failures.</p>
+            <p>What they did next was very unconventional for their time. Rather than overwriting over the older version of the application, they made the new version run parallel to production.</p>
+            <p>As they did not have load balancers to divert traffic to the new version they had to improvise. With the help of a new domain, North and Humble smoke tested the new version on the production environment. Once they were satisfied with the results of the tests they would just point the Apache Web Server to the new application folder. In case users later found issues with the new version they would run a single command and point the Apache Web Server back to the older application. This would act like an instant rollback and restore user services immediately.</p>
+            <p>This strategy greatly improved error detection because test and production applications were now running in similar environments. After achieving great success with this strategy, they coined the term Blue-Green deployment strategy to give it a name.</p>
+            <p><img src="https://www.opsmx.com/blog/wp-content/uploads/2021/04/Blue-Green-Deployment-1024x752.png" alt="Blue Green Deployment" width="100%" height="100%" /></p>
+            <h2>How the Blue Green Deployment Strategy Works?</h2>
+            <p>Before an organization plans to use a Blue-Green deployment strategy for its application releases, they need to be certain that</p>
+            <ul>
+            <li style="list-style-type: none;">
+            <ul>
+            <li>Two identical environments are available.</li>
+            <li>The development team needs to be certain that their new code can run alongside the old code because both of them will be running at the same time in production, side by side.</li>
+            <li>There is also a need for a router or a load balancer so that users can be switched from one version to the other.</li>
+            </ul>
+            </li>
+            </ul>
+            <p>As shown in the image, let us assume that version 1 is the current version of the application and we want to move to the new update, version 1.1.&nbsp; Version 1 will be called a blue environment and version 1.1 will be called the green environment. (Some blogs across the internet may define the currently running version as a green instance, but that is hardly a problem as it is just a naming convention. Similarly, some people use “Red Black” – the concepts are identical.)</p>
+            
+            <h2 style="background-color: #ffffff; font-weight: var( --e-global-typography-primary-font-weight ); font-family: var( --e-global-typography-primary-font-family ), Sans-serif;" data-elementor-setting-key="title" data-pen-placeholder="Type Here...">The Blue-Green deployment process can be broken down into 4 phases</h2>
+            <h3>1. Setting up a load balancer to route users</h3>
+            <p>Now that we have two instances named Blue and Green, we want users to be able to access the new green (v 1.1) instance rather than the older Blue instance. For this to happen, we normally use a load balancer instead of a DNS record exchange because DNS propagation is not instantaneous.</p>
+            <p>This is where load balancers and routers help in switching users from the Blue instance to the Green one. There is no need to change DNS records as the load balancer will still reference the same DNS record but routes new traffic to the Green environment. This allows us to be in full control of the users. Full control is desired because it will be necessary to quickly switch them back to version 1 (the blue instance) in case of a failure in a green instance.</p>
+            <h3>2. Executing the update</h3>
+            <p>Once our green instance (v1.1) is ready we move that into production and run it parallelly with the older version. With the help of their load balancer, traffic is switched from blue to green. Most users won’t even notice that they are now accessing a newer version of the service or application.</p>
+            <h3>3. Monitoring the environments</h3>
+            <p>Once the traffic is switched from the blue to green instance, the DevOps engineers get a small duration of time to run smoke tests on the green instance. This is crucial as they need to figure out if there is an issue with the new version before users are impacted on a wide scale. This ensures that all aspects of the new versions are running as they should be.</p>
+            <h3>4. Deployment or rollback</h3>
+            <p>During the smoke tests, if any bugs are detected or there is a performance issue, the users can be quickly diverted back to the stable Blue version without any substantial interruptions.</p>
+            <p>After an initial smoke test, the new version is monitored closely, as some errors may be discovered only after the new (green) version has been live for some time. During all this time the older blue version is always on standby.&nbsp; After an appropriate monitoring period, the green instance becomes the blue instance for the next release.</p>
+            <h2>Benefits of Using Blue-Green Deployment Strategy</h2>
+            <ul>
+            <li style="font-weight: 400;" aria-level="1"><b>Seamless customer experience</b>: users don’t experience any downtime.</li>
+            <li style="font-weight: 400;" aria-level="1"><b>Instant rollbacks</b>: we can undo the change without adverse effects.</li>
+            <li style="font-weight: 400;" aria-level="1"><b>No upgrade-time schedules for developers</b>: no need to wait for maintenance windows</li>
+            <li style="font-weight: 400;" aria-level="1"><b>Testing parity</b>: the newer versions can be accurately tested in real-world scenarios</li>
+            </ul>
+            <p>The Blue-Green strategy is a perfect practice for simulating and running disaster recovery practices. This is because of the inherent equivalence of the Blue and Green instances and a quick recovery mechanism in case of an issue with the new release.</p>
+            <p>As we have seen in the case of Canary deployment, the testing environment may not be identical to the final production environment. In canary, we use a small portion of the production environment and move a small amount of traffic to the new system. But to simulate an actual production scenario a similar baseline instance is created that then is compared with the canary release. Read more about&nbsp;<a href="https://opsmx.com/blog/what-is-canary-analysis/" target="_blank" rel="noopener" data-wpel-link="internal">Canary Analysis here</a>.</p>
+            <p>Gone are the days when DevOps engineers had to wait for low traffic windows to deploy the updates. This eliminates the need for maintaining downtime schedules and developers can quickly move their updates into production through the Blue-Green strategy, as soon as they are ready with their code.</p>
+            <h2>Challenges of Adopting a Blue Green Deployment Strategy</h2>
+            <ul>
+            <li><b>User routing:</b> Failed or stuck user transactions/sessions when reverted instantly</li>
+            <li><b>Costs:&nbsp; </b>High infrastructure costs</li>
+            <li><b>Code compatibility: </b>running two versions of the applications in parallel.</li>
+            </ul>
+            <h3>1. Errors when changing user routing</h3>
+            <p>Blue Green is the best choice of deployment strategy in many cases, but it comes with some challenges. One issue is that during the initial switch to the new (green) environment, some sessions may fail, or users may be forced to log back into the application. Similarly, when rolling back to the blue environment in case of an error, users logged in to the green instance may face service issues.</p>
+            <p>With more advanced load balancers these issues can be overcome by slowing moving new traffic from one instance to another. The load balancer can either be programmed to wait for a fixed duration before users are inactive or force close sessions for the users still connected to the blue instance post the specified time limit. This might slow down the deployment process and may result in some failed and stuck transactions for a very small fraction of the users. But this will provide an overall seamless and uninterrupted service quality as compared to the method where routers force the exit of all users and divert traffic.</p>
+            <h5>Seamless Blue Green Deployment</h5>
+            <p><img src="https://www.opsmx.com/blog/wp-content/uploads/2021/04/Blue-Green-Deployment-seamless.gif" alt="Blue Green Deployment seamless" width="100%" height="100%" class="lazyloaded" data-ll-status="loaded"><noscript><img src="https://www.opsmx.com/blog/wp-content/uploads/2021/04/Blue-Green-Deployment-seamless.gif" alt="Blue Green Deployment seamless" width="1920" height="1080" /></noscript></p>
+            <h5>Instantaneous Blue-Green Deployment</h5>
+            <p><img src="https://www.opsmx.com/blog/wp-content/uploads/2021/04/Blue-Green-Deployment-Instantaneous.gif" alt="Blue Green Deployment Instantaneous" width="100%" height="100%" class="lazyloaded" data-ll-status="loaded"><noscript><img src="https://www.opsmx.com/blog/wp-content/uploads/2021/04/Blue-Green-Deployment-Instantaneous.gif" alt="Blue Green Deployment Instantaneous" width="1920" height="1080" /></noscript></p>
+            <h3>2. High infrastructure costs</h3>
+            <p>The elephant in the room with Blue-Green deployments is the infrastructure costs. Organizations that have adopted a Blue-Green strategy need to maintain an infrastructure that doubles the size required by their application. If you utilize elastic infrastructure, the cost can be absorbed more easily. Similarly, Blue-Green deployments can be a good choice for applications that are less hardware intensive.</p>
+            <h3>3. Code compatibility</h3>
+            <p>Lastly, the Blue and Green instances live in the production environment so developers need to ensure that each new update is compatible with the previous environment. For example, if a software update requires changes to a database (adding a new field or column for example,) the Blue Green strategy is difficult to implement because at times traffic is switched back and forth between the blue and green instance. It should be a mandate to use a database that is compatible across all software updates (as some NoSQL databases are).</p>
+            <h2>Common Practices</h2>
+            <h3>1. Choose load balancing over DNS switching</h3>
+            <p>Do not use multiple domains to switch between servers. This was a very old way of diverting traffic. DNS propagation takes from hours to days. It can take browsers a long time to get the new IP address. Some of your users may still be served by the old environment.</p>
+            <p>Instead, use load balancing. Load balancers enable you to set your new servers immediately without depending on the DNS. This way, you can ensure that all traffic is served to the new production environment.</p>
+            <h3>2. Keeping databases in sync</h3>
+            <p>One of the biggest challenges of blue-green deployments is keeping databases in sync. Depending on your design, you may be able to feed transactions to both instances to keep the blue instance as a backup when the green is live. Or you may be able to put the application in read-only mode before cut-over, run it for a while in read-only mode, and then switch it to read-write mode. That may be enough to flush out many outstanding issues.</p>
+            <p>Backward compatibility is of utmost importance when business is very critical. Any new users or data on the new version must have access in the event of a rollback. Otherwise, the business might stand a chance to lose out on new customers</p>
+            <h3>3. Execute a rolling update</h3>
+            <p>The container architecture has enabled the use of a rolling or a seamless blue-green update. Containers enable DevOps engineers to perform a Blue-green update only on the required pod. This decentralized architecture ensures that other parts of the application do not get affected.</p>
+            <h2>Conclusion</h2>
+            <p>We want to conclude that the Blue-Green Strategy, although involves cost, is one of the most widely used deployment strategies. Blue-green deployment is great particularly when environments are consistent between releases, and user sessions are reliable even across new releases.</p>
+            
+
+        </div>	
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+<!-- Vendor JS Files -->
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+<script src="assets/vendor/php-email-form/validate.js"></script>
+
+<!-- Template Main JS File -->
+<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Java Interview Q&A</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Sailor - v4.9.1
+  * Template URL: https://bootstrapmade.com/sailor-free-bootstrap-theme/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center">
+      <h1 class="logo me-auto"><a href="index.html">Java Interview Q&A</a></h1>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+
+          <li class="dropdown"><a href="framework.html"><span>Framework</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="spring.html">Spring</a></li>
+              <li><a href="hibernate.html">Hibernate</a></li>
+              <li><a href="springboot.html">SpringBoot</a></li>
+              <li><a href="jsf.html">JSF</a></li>
+              <li><a href="struts.html">Struts</a></li>
+              <li class="dropdown"><a href="#"><span>Entity Framework</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="jpa.html">JPA</a></li>
+                  <li><a href="hibernate.html">Hibernate</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          
+          <li class="dropdown"><a href="database.html"><span>Database</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="sql.html">SQL</a></li>
+              <li><a href="plsql.html">PL-SQL</a></li>
+              <li class="dropdown"><a href="nosql.html"><span>NoSQL</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">Apache Cassandra</a></li>
+                  <li><a href="#">MongoDB</a></li>
+                  <li><a href="#">Redis</a></li>
+                  <li><a href="#">ArangoDB</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="cloud.html"><span>Cloud</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="aws.html">AWS</a></li>
+              <li><a href="gcp.html">GCP</a></li>
+              <li><a href="azure.html">Azure</a></li>
+              <li><a href="ibm-cloud.html">IBM Cloud</a></li>
+              <li><a href="docker.html">Docker</a></li>
+              <li><a href="kubernetes.html">Kubernetes</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="ui.html"><span>UI</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="angular.html">Angular</a></li>
+              <li><a href="react.html">ReactJS</a></li>
+              <li><a href="javascript.html">Javascript</a></li>
+              <li><a href="css.html">css</a></li>
+              <li><a href="html.html">html</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="microservices.html"><span>Microservices</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="microservices-12-factor-app.html">The Twelve-Factor App</a></li>
+              <li><a href="microservices-saga-pattern.html">Saga Pattern</a></li>
+              <li><a href="microservices-blue-green-deployment.html">Blue Green Deployment</a></li>              
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>Other</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Company wise</a></li>
+              <li><a href="#">Design pattern</a></li>
+              <li><a href="microservices.html">Microservices</a></li>
+              <li><a href="#">Data Structure</a></li>
+              <li><a href="#">Architect</a></li>
+            </ul>
+          </li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+  </header>
+
+</br>
+  <main id="main">
+
+    <section id="about" class="about">
+      <div class="container">
+        <div class="row-content"> 
+
+          
+<h2 style="line-height:70px" class="heading-anchor" id="The-Twelve-Factors-Applied-to-Microservices">The Twelve Factors Applied to Microservices<a class="anchor clean-scroll" href="#The-Twelve-Factors-Applied-to-Microservices"> </a></h2>
+<h3>1&nbsp;– Codebase</h3>
+<h4><em>One codebase per service, tracked in revision control; many deploys</em></h4>
+<p>The Twelve‑Factor&nbsp;App recommends <a target="_blank" href="https://12factor.net/codebase">one codebase per app</a>. In a microservices architecture, the correct approach is actually one codebase per service. Additionally, we strongly recommend the use of Git as a repository, because of its rich feature set and enormous ecosystem. GitHub has become the default Git hosting platform in the open source community, but there are many other excellent Git hosting options, depending on the needs of your organization. </p>
+<h3>2&nbsp;– Dependencies</h3>
+<h4><em>Explicitly declare and isolate dependencies</em></h4>
+<p>As suggested in The Twelve‑Factor&nbsp;App, regardless of what platform your application is running on, <a target="_blank" href="https://12factor.net/dependencies">use the dependency manager</a> included with your language or framework. How you install operating system or platform dependencies depends on the platform:</p>
+<ul>
+<li>In noncontainerized environments, use a configuration management tool (Chef, Puppet, Ansible) to install system dependencies.</li>
+<li>In a containerized environment, do this in the Dockerfile.</li>
+</ul>
+<p><strong>Note:</strong> We recommend that you choose a dependency management mechanism in the context of your comprehensive Infrastructure‑as‑Code strategy, not as an isolated decision. See Martin&nbsp;Fowler’s writings on <a target="_blank" href="https://martinfowler.com/bliki/InfrastructureAsCode.html">Infrastructure‑as‑Code</a> and download the O’Reilly report <a href="https://www.nginx.com/resources/library/infrastructure-as-code/"><em>Infrastructure as Code</em></a> by Kief&nbsp;Morris. </p>
+<h3>3&nbsp;– Config</h3>
+<h4><em>Store configuration in the environment</em></h4>
+<p>Anything that varies between deployments can be considered configuration. The Twelve‑Factor&nbsp;App guidelines recommend <a target="_blank" href="https://12factor.net/config">storing all configuration in the environment</a>, rather than committing it to the repository. We recommend the following specific practices:</p>
+<ul>
+<li>Use non‑version controlled <strong>.env</strong> files for local development. Docker supports the loading of these files at runtime.</li>
+<li>Keep all <strong>.env</strong> files in a secure storage system, such as <a target="_blank" href="https://www.vaultproject.io/">Vault</a>, to keep the files available to the development teams, but not commited to Git.</li>
+<li>Use an environment variable for anything that can change at runtime, and for any secrets that should not be committed to the shared repository.</li>
+<li>Once you have deployed your application to a delivery platform, use the delivery platform’s mechanism for managing environment variables.</li>
+</ul>
+<h3>4&nbsp;– Backing Services</h3>
+<h4><em>Treat backing services as attached resources</em></h4>
+<p>The Twelve‑Factor&nbsp;App guidelines define a <a target="_blank" href="https://12factor.net/backing-services">backing service</a> as “any service the app consumes over the network as part of its normal operation.” The implication for microservices is that anything external to a service is treated as an attached resource, including other services. This ensures that every service is completely portable and loosely coupled to the other resources in the system. Additionally, the strict separation increases flexibility during development – developers only need to run the service(s) they are modifying, not others. </p>
+<h3>5&nbsp;– Build, Release, Run</h3>
+<h4><em>Strictly separate build and run stages</em></h4>
+<p>To support <a target="_blank" href="https://12factor.net/build-release-run">strict separation of build, release, and run stages</a>, as recommended by The Twelve‑Factor&nbsp;App, we recommend the use of a continuous integration/continuous delivery (CI/CD) tool to automate builds. Docker images make it easy to separate the build and run stages. Ideally, images are created from every commit and treated as deployment artifacts.</p>
+<h3>6&nbsp;– Processes</h3>
+<h4><em>Execute the app in one or more stateless processes</em></h4>
+<p>For microservices, the important point in the <a target="_blank" href="https://12factor.net/processes">Processes factor</a> is that your application needs to be stateless. This makes it easy to scale a service horizontally by simply adding more instances of that service. Store any stateful data, or data that needs to be shared between instances, in a backing service.</p>
+<h3>7&nbsp;– Data Isolation</h3>
+<h4><em>Each service manages its own data</em></h4>
+<p>As a modification to make the <a target="_blank" href="https://12factor.net/port-binding">Port binding factor</a> more useful for microservices, we recommend that you allow access to thepersistent data owned by a service only via the service’s API. This prevents implicit service contracts between microservices and ensures that microservices can’t become tightly coupled. Data isolation also allows the developer to choose, for each service, the type of data store that best suits its needs.</p>
+<h3>8&nbsp;– Concurrency</h3>
+<h4><em>Scale out via the process model</em></h4>
+<p>The <a target="_blank" href="https://devcenter.heroku.com/articles/process-model">Unix process model</a> is largely a predecessor to a true microservices architecture, insofar as it allows specialization and resource sharing for different tasks within a monolithic application. In a microservices architecture, you can horizontally scale each service independently, to the extent supported by the underlying infrastructure. With containerized services, you further get the <a target="_blank" href="https://12factor.net/concurrency">concurrency</a> recommended in the Twelve‑Factor&nbsp;App, for free. </p>
+<h3>9&nbsp;– Disposability</h3>
+<h4><em>Maximize robustness with fast startup and graceful shutdown</em></h4>
+<p>Instances of a service need <a target="_blank" href="https://12factor.net/disposability">to be disposable</a> so they can be started, stopped, and redeployed quickly, and with no loss of data. Services deployed in Docker containers satisfy this requirement automatically, as it’s an inherent feature of containers that they can be stopped and started instantly. Storing state or session data in queues or other backing services ensures that a request is handled seamlessly in the event of a container crash. We are also proponents of using a backing store to support <a target="_blank" href="https://lwn.net/Articles/191059/">crash‑only design</a>.</p>
+<h3>10&nbsp;– Dev/Prod Parity</h3>
+<h4><em>Keep development, staging, and production as similar as possible</em></h4>
+<p>Keep all of your environments&nbsp;– development, staging, production, and so on&nbsp;– <a target="_blank" href="https://12factor.net/dev-prod-parity">as identical as possible</a>, to reduce the risk that bugs show up only in some environments. To support this principle, we recommend, again, the use of containers&nbsp;– a very powerful tool here, as they enable you to run exactly the same execution environment all the way from local development through production. Keep in mind, however, that differences in the underlying data can still cause differences at runtime.</p>
+<h3>11&nbsp;– Logs</h3>
+<h4><em>Treat logs as event streams</em></h4>
+<p>Instead of including code in a microservice for routing or storing logs, use one of the many good log‑management solutions on the market, several of which are listed in the <a target="_blank" href="https://12factor.net/logs">Twelve‑Factor&nbsp;App</a>. Further, deciding how you work with logs needs to be part of a larger APM and/or PaaS strategy. </p>
+<h3>12&nbsp;– Admin Processes</h3>
+<h4><em>Run admin and management tasks as one‑off processes</em></h4>
+<p>In a production environment, run <a target="_blank" href="https://12factor.net/admin-processes">administrative and maintenance tasks</a> separately from the app. Containers make this very easy, as you can spin up a container just to run a task and then shut it down.</p>
+<h2 class="heading-anchor" id="Conclusion">Conclusion<a class="anchor clean-scroll" href="#Conclusion"> </a></h2>
+<p>Use the Twelve‑Factor&nbsp;App and these additional principles to help you create robust microservices‑based apps that are optimized for continuous delivery.</p>
+
+
+        </div>	
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+<!-- Vendor JS Files -->
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+<script src="assets/vendor/php-email-form/validate.js"></script>
+
+<!-- Template Main JS File -->
+<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

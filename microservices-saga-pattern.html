@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Java Interview Q&A</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Sailor - v4.9.1
+  * Template URL: https://bootstrapmade.com/sailor-free-bootstrap-theme/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center">
+      <h1 class="logo me-auto"><a href="index.html">Java Interview Q&A</a></h1>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+
+          <li class="dropdown"><a href="framework.html"><span>Framework</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="spring.html">Spring</a></li>
+              <li><a href="hibernate.html">Hibernate</a></li>
+              <li><a href="springboot.html">SpringBoot</a></li>
+              <li><a href="jsf.html">JSF</a></li>
+              <li><a href="struts.html">Struts</a></li>
+              <li class="dropdown"><a href="#"><span>Entity Framework</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="jpa.html">JPA</a></li>
+                  <li><a href="hibernate.html">Hibernate</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          
+          <li class="dropdown"><a href="database.html"><span>Database</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="sql.html">SQL</a></li>
+              <li><a href="plsql.html">PL-SQL</a></li>
+              <li class="dropdown"><a href="nosql.html"><span>NoSQL</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">Apache Cassandra</a></li>
+                  <li><a href="#">MongoDB</a></li>
+                  <li><a href="#">Redis</a></li>
+                  <li><a href="#">ArangoDB</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="cloud.html"><span>Cloud</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="aws.html">AWS</a></li>
+              <li><a href="gcp.html">GCP</a></li>
+              <li><a href="azure.html">Azure</a></li>
+              <li><a href="ibm-cloud.html">IBM Cloud</a></li>
+              <li><a href="docker.html">Docker</a></li>
+              <li><a href="kubernetes.html">Kubernetes</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="ui.html"><span>UI</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="angular.html">Angular</a></li>
+              <li><a href="react.html">ReactJS</a></li>
+              <li><a href="javascript.html">Javascript</a></li>
+              <li><a href="css.html">css</a></li>
+              <li><a href="html.html">html</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="microservices.html"><span>Microservices</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="microservices-12-factor-app.html">The Twelve-Factor App</a></li>
+              <li><a href="microservices-saga-pattern.html">Saga Pattern</a></li>
+              <li><a href="microservices-blue-green-deployment.html">Blue Green Deployment</a></li>              
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>Other</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Company wise</a></li>
+              <li><a href="#">Design pattern</a></li>
+              <li><a href="microservices.html">Microservices</a></li>
+              <li><a href="#">Data Structure</a></li>
+              <li><a href="#">Architect</a></li>
+            </ul>
+          </li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+  </header>
+
+</br>
+  <main id="main">
+
+    <section id="about" class="about">
+      <div class="container">
+        <div class="row-content"> 
+
+          <div>
+            <h1 id="pattern-saga">Pattern: Saga</h1>
+
+
+<h2 id="context">Context</h2>
+
+<p>You have applied the <a href="database-per-service.html">Database per Service</a> pattern.
+Each service has its own database.
+Some business transactions, however, span multiple service so you need a mechanism to implement transactions that span services.
+For example, let’s imagine that you are building an e-commerce store where customers have a credit limit.
+The application must ensure that a new order will not exceed the customer’s credit limit.
+Since Orders and Customers are in different databases owned by different services the application cannot simply use a local ACID transaction.</p>
+
+<h2 id="problem">Problem</h2>
+
+<p>How to implement transactions that span services?</p>
+
+<h2 id="forces">Forces</h2>
+
+<ul>
+<li>2PC is not an option</li>
+</ul>
+
+<h2 id="solution">Solution</h2>
+
+<p>Implement each business transaction that spans multiple services is a saga.
+A saga is a sequence of local transactions.
+Each local transaction updates the database and publishes a message or event to trigger the next local transaction in the saga.
+If a local transaction fails because it violates a business rule then the saga executes a series of compensating transactions that undo the changes that were made by the preceding local transactions.</p>
+
+<p><img src="https://chrisrichardson.net/i/sagas/From_2PC_To_Saga.png" width="100%" height="100%"></p>
+
+<p>There are two ways of coordination sagas:</p>
+
+<ul>
+<li>Choreography - each local transaction publishes domain events that trigger local transactions in other services</li>
+<li>Orchestration - an orchestrator (object) tells the participants what local transactions to execute</li>
+</ul>
+
+<h2 id="example-choreography-based-saga">Example: Choreography-based saga</h2>
+
+<p><img src="https://chrisrichardson.net/i/sagas/Create_Order_Saga.png"  width="100%" height="100%"></p>
+
+<p>An e-commerce application that uses this approach would create an order using a choreography-based saga that consists of the following steps:</p>
+
+<ol>
+<li>The <code class="language-plaintext highlighter-rouge">Order Service</code> receives the <code class="language-plaintext highlighter-rouge">POST /orders</code> request and creates an <code class="language-plaintext highlighter-rouge">Order</code> in a <code class="language-plaintext highlighter-rouge">PENDING</code> state</li>
+<li>It then emits an <code class="language-plaintext highlighter-rouge">Order Created</code> event</li>
+<li>The <code class="language-plaintext highlighter-rouge">Customer Service</code>’s event handler attempts to reserve credit</li>
+<li>It then emits an event indicating the outcome</li>
+<li>The <code class="language-plaintext highlighter-rouge">OrderService</code>’s event handler either approves or rejects the <code class="language-plaintext highlighter-rouge">Order</code></li>
+</ol>
+
+<h2 id="example-orchestration-based-saga">Example: Orchestration-based saga</h2>
+
+<p><img src="https://chrisrichardson.net/i/sagas/Create_Order_Saga_Orchestration.png"  width="100%" height="100%"></p>
+
+<p>An e-commerce application that uses this approach would create an order using an orchestration-based saga that consists of the following steps:</p>
+
+<ol>
+<li>The <code class="language-plaintext highlighter-rouge">Order Service</code> receives the <code class="language-plaintext highlighter-rouge">POST /orders</code> request and creates the <code class="language-plaintext highlighter-rouge">Create Order</code> saga orchestrator</li>
+<li>The saga orchestrator creates an <code class="language-plaintext highlighter-rouge">Order</code> in the <code class="language-plaintext highlighter-rouge">PENDING</code> state</li>
+<li>It then sends a <code class="language-plaintext highlighter-rouge">Reserve Credit</code> command to the <code class="language-plaintext highlighter-rouge">Customer Service</code></li>
+<li>The <code class="language-plaintext highlighter-rouge">Customer Service</code> attempts to reserve credit</li>
+<li>It then sends back a reply message indicating the outcome</li>
+<li>The saga orchestrator either approves or rejects the <code class="language-plaintext highlighter-rouge">Order</code></li>
+</ol>
+
+<h2 id="resulting-context">Resulting context</h2>
+
+<p>This pattern has the following benefits:</p>
+
+<ul>
+<li>It enables an application to maintain data consistency across multiple services without using distributed transactions</li>
+</ul>
+
+<p>This solution has the following drawbacks:</p>
+
+<ul>
+<li>The programming model is more complex.
+For example, a developer must design compensating transactions that explicitly undo changes made earlier in a saga.</li>
+</ul>
+
+<p>There are also the following issues to address:</p>
+
+<ul>
+<li>
+<p>In order to be reliable, a service must atomically update its database <em>and</em> publish a message/event.
+It cannot use the traditional mechanism of a distributed transaction that spans the database and the message broker.
+Instead, it must use one of the patterns listed below.</p>
+</li>
+<li>
+<p>A client that initiates the saga, which an asynchronous flow, using a synchronous request (e.g. HTTP <code class="language-plaintext highlighter-rouge">POST /orders</code>) needs to be able to determine its outcome.
+There are several options, each with different trade-offs:</p>
+<ul>
+  <li>The service sends back a response once the saga completes, e.g. once it receives an <code class="language-plaintext highlighter-rouge">OrderApproved</code> or <code class="language-plaintext highlighter-rouge">OrderRejected</code> event.</li>
+  <li>The service sends back a response (e.g. containing the <code class="language-plaintext highlighter-rouge">orderID</code>) after initiating the saga and the client periodically polls (e.g. <code class="language-plaintext highlighter-rouge">GET /orders/{orderID}</code>) to determine the outcome</li>
+  <li>The service sends back a response (e.g. containing the <code class="language-plaintext highlighter-rouge">orderID</code>) after initiating the saga, and then sends an event (e.g. websocket, web hook, etc) to the client once the saga completes.</li>
+</ul>
+</li>
+</ul>
+
+<h2 id="related-patterns">Related patterns</h2>
+
+<ul>
+<li>The <a href="database-per-service.html">Database per Service pattern</a> creates the need for this pattern</li>
+<li>The following patterns are ways to <em>atomically</em> update state <em>and</em> publish messages/events:
+<ul>
+  <li><a href="event-sourcing.html">Event sourcing</a></li>
+  <li><a href="transactional-outbox.html">Transactional Outbox</a></li>
+</ul>
+</li>
+<li>A choreography-based saga can publish events using <a href="aggregate.html">Aggregates</a> and <a href="domain-event.html">Domain Events</a></li>
+</ul>
+
+<h2 id="learn-more">Learn more</h2>
+
+<ul>
+<li>My book <a href="/book">Microservices patterns</a> describes this pattern in a lot more detail. The book’s <a href="https://github.com/microservice-patterns/ftgo-application">example application</a> implements orchestration-based sagas using the <a href="https://github.com/eventuate-tram/eventuate-tram-sagas">Eventuate Tram Sagas framework</a></li>
+<li>
+<p>Take a look at my <a href="https://chrisrichardson.net/virtual-bootcamp-distributed-data-management.html">self-paced, online bootcamp</a> that teaches you how to use the Saga, API Composition, and CQRS patterns to design operations that span multiple services.</p>
+</li>
+<li>Read these blog posts on the Saga pattern:
+<ul>
+  <li><a href="https://chrisrichardson.net/post/antipatterns/2019/07/09/developing-sagas-part-1.html">overview of sagas</a></li>
+  <li><a href="https://chrisrichardson.net/post/sagas/2019/08/04/developing-sagas-part-2.html">saga coordination mechanisms: choreography and orchestration</a></li>
+  <li><a href="https://chrisrichardson.net/post/sagas/2019/08/15/developing-sagas-part-3.html">implementing choreography-based sagas</a></li>
+  <li><a href="https://chrisrichardson.net/post/sagas/2019/12/12/developing-sagas-part-4.html">implementing orchestration-based sagas</a></li>
+</ul>
+</li>
+<li>My <a href="/presentations">presentations</a> on sagas and asynchronous microservices.</li>
+</ul>
+
+<h2 id="example-code">Example code</h2>
+
+<p>The following examples implement the customers and orders example in different ways:</p>
+
+<ul>
+<li><a href="https://github.com/eventuate-tram/eventuate-tram-examples-customers-and-orders">Choreography-based saga</a> where the services publish domain events using the <a href="https://github.com/eventuate-tram/eventuate-tram-core">Eventuate Tram framework</a></li>
+<li><a href="https://github.com/eventuate-tram/eventuate-tram-sagas-examples-customers-and-orders">Orchestration-based saga</a> where the <code class="language-plaintext highlighter-rouge">Order Service</code> uses a saga orchestrator implemented using the <a href="https://github.com/eventuate-tram/eventuate-tram-sagas">Eventuate Tram Sagas framework</a></li>
+<li><a href="https://github.com/eventuate-examples/eventuate-examples-java-customers-and-orders">Choreography and event sourcing-based saga</a> where the services publish domain events using the <a href="http://eventuate.io/">Eventuate event sourcing framework</a></li>
+</ul>
+
+        </div>
+
+        </div>	
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+<!-- Vendor JS Files -->
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+<script src="assets/vendor/php-email-form/validate.js"></script>
+
+<!-- Template Main JS File -->
+<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
