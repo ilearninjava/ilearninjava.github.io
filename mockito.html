@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Java Interview Q&A</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Sailor - v4.9.1
+  * Template URL: https://bootstrapmade.com/sailor-free-bootstrap-theme/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center">
+      <h1 class="logo me-auto"><a href="index.html">Java Interview Q&A</a></h1>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+
+          <li class="dropdown"><a href="framework.html"><span>Framework</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="spring.html">Spring</a></li>
+              <li><a href="hibernate.html">Hibernate</a></li>
+              <li><a href="springboot.html">SpringBoot</a></li>
+              <li><a href="cucumber.html">Cucumber</a></li>
+              <li><a href="jsf.html">JSF</a></li>
+              <li><a href="struts.html">Struts</a></li>
+              <li class="dropdown"><a href="#"><span>Entity Framework</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="jpa.html">JPA</a></li>
+                  <li><a href="hibernate.html">Hibernate</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="testing.html"><span>Testing</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="junit.html">Junit</a></li>
+                  <li><a href="mockito.html">Mockito</a></li>
+                  <li><a href="power-mockito.html">Power Mockito</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          
+          <li class="dropdown"><a href="database.html"><span>Database</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="sql.html">SQL</a></li>
+              <li><a href="plsql.html">PL-SQL</a></li>
+              <li class="dropdown"><a href="nosql.html"><span>NoSQL</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">Apache Cassandra</a></li>
+                  <li><a href="#">MongoDB</a></li>
+                  <li><a href="#">Redis</a></li>
+                  <li><a href="#">ArangoDB</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="cloud.html"><span>Cloud</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="aws.html">AWS</a></li>
+              <li><a href="gcp.html">GCP</a></li>
+              <li><a href="azure.html">Azure</a></li>
+              <li><a href="ibm-cloud.html">IBM Cloud</a></li>
+              <li><a href="docker.html">Docker</a></li>
+              <li><a href="kubernetes.html">Kubernetes</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="ui.html"><span>UI</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="angular.html">Angular</a></li>
+              <li><a href="react.html">ReactJS</a></li>
+              <li><a href="javascript.html">Javascript</a></li>
+              <li><a href="css.html">css</a></li>
+              <li><a href="html.html">html</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>Other</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Company wise</a></li>
+              <li><a href="#">Design pattern</a></li>
+              <li><a href="microservices.html">Microservices</a></li>
+              <li><a href="#">Data Structure</a></li>
+              <li><a href="#">Architect</a></li>
+            </ul>
+          </li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+  </header>
+
+</br>
+  <main id="main">
+
+    <section id="about" class="about">
+      <div class="container">
+        <div class="row-content"> 
+          
+          
+            <p><span style="color: #ff6600;"><strong>Q #1) Why do we need mocking?</strong></span></p>
+            <p><strong>Answer:&nbsp;</strong>There are a lot of use cases of mocking that aid in unit testing of the code under isolation and make the test highly repeatable and predictable.</p>
+            <p><strong>Mocking is generally required when :</strong></p>
+            <p><strong>a)</strong> The component under test has dependencies that are not yet implemented or the implementation is in progress.</p>
+            <p>A good example can be a REST API endpoint which will be available later at some point in time, but you have consumed it in the code via a dependency.</p>
+            <p>Now as the real implementation is still not available,&nbsp; you really know most of the time what is the expected response of that API. Mocks allow you to test those kinds of integration.</p>
+            <p><strong>b)</strong> Component updates the state in the system.</p>
+            <p><span style="text-decoration: underline;"><strong>Example:</strong></span> DB calls – you would not want to update your DB with data that is just for testing purposes. This might result in corrupting the data, moreover, the availability of DB is another challenge when the test is executed.</p>
+            <p>Thus to avoid such behavior, DB calls could be mocked in the component under test. Hence there is no direct coupling of DB and the component under test.</p>
+            <p><strong><span style="color: #ff6600;">Q #2) Difference between doReturn and thenReturn.</span></strong></p>
+            <p><strong>Answer: </strong><strong>Mockito provides two different syntaxes for creating stubs like:</strong></p>
+            <ul>
+            <li>doReturn and thenReturn</li>
+            <li>doNothing (no thenNothing)</li>
+            <li>doThrow and thenThrow</li>
+            </ul>
+            <p>Both these methods setup stubs and can be used to create/setup stubs and could be used interchangeably at times.</p>
+            <p><strong>So how do both of these differ?</strong></p>
+            <p><strong>a)</strong> The thenReturn way of stubbing is a type-safe way of setting up stubs. What this essentially means is that it does a compile-time check against the return types that you want to stub too.</p>
+            <p><span style="text-decoration: underline;"><strong>Let’s understand this with an example:</strong></span></p>
+            <p>Assume a method <strong>getItemDetails</strong> on <strong>mockedItemService </strong>which returns an object of type<strong> ItemSku. </strong>So with <strong>thenReturn, </strong>you will not be able to return anything other than of type ItemSku but with doReturn, you can set up the stub to return anything and the test will fail (or throw an exception) during execution.</p>
+            <p><strong>// works</strong></p>
+            <pre><em>when</em>(mockedItemService.getItemDetails(123)).thenReturn(new ItemSku());</pre>
+            <p><strong>// throws compile time exception</strong></p>
+            <pre><em>when</em>(mockedItemService.getItemDetails(123)).thenReturn(expectedPrice);</pre>
+            <p>// with doReturn,&nbsp; both the stub setup works as it’s not compile safe.</p>
+            <p>// here we are trying to return an object of type double which still works and does not throw any compile time warning.</p>
+            <pre><em>doReturn</em>(expectedPrice).when(mockedItemService.getItemDetails(123));
+            <em>doReturn</em>(new ItemSku()).when(mockedItemService.getItemDetails(123));</pre>
+            <p><strong>b)</strong> Another important difference between these 2 ways to the stub is for Mocked objects, apart from compile safety there is not much difference.</p>
+            <p>However for Spied objects, “thenReturn” kind of stub setup will not work, as it will result in calling the real method before the stubbed response is return as the call and not on a Mock, but on Spy which is wrapping a real object instance.</p>
+            <p>So suppose, there is a spy named <strong>spiedObject and it has a method testMethod which returns an integer, then to setup a stub on this you will need to use doReturn instead of thenReturn.</strong></p>
+            <pre><em>doReturn</em>(10).when(spiedObject.testMethod());</pre>
+            <p><strong><span style="color: #ff6600;">Q #3) When and why should a spy be used?</span></strong></p>
+            <p><strong>Answer:&nbsp;</strong>Spy is a type of partial mock supported by Mockito.</p>
+            <p><strong>This essentially means is a type of instance where:</strong></p>
+            <p><strong>a)</strong> When no mock is setup, any interaction on spy results in calling the real methods. But it still allows you to verify the interactions with the spied object like – was a method actually called, how many times the method was called, what were the arguments using which the method was called etc.</p>
+            <p><strong>b)</strong> It gives you the flexibility to set up partial mocks.</p>
+            <p><span style="text-decoration: underline;"><strong>For Example,</strong></span> if you have an object with 2 methods – method1 and method2 and you want method1 to be called and method2 to be mocked. Spies provide this kind of setup.</p>
+            <p>So, the difference between a mock and a stub in simple terms is – a mock is created from a type and not from an instance whereas a stub wraps an actual instance of the class object.</p>
+            <p><strong><span style="color: #ff6600;">Q #4) Why can’t static methods be mocked using Mockito?</span></strong></p>
+            <p><strong>Answer:&nbsp;</strong>Static methods are associated with the class itself and not any particular instance of the class. This means that all instances/objects of the class use the same instance of the static method.</p>
+            <p>Static methods are more like procedural code and are mostly used in legacy systems in general.</p>
+            <p>Mock libraries typically create mocks by dynamical instance creation at runtime, either through interfaces or through inheritance and as the static method is not associated with any particular instance it’s not possible for mocking frameworks (like mockito, easy mock, etc) to mock Static methods.</p>
+            <p>Frameworks like PowerMock which do have support for static methods perform bytecode manipulation at runtime in order to mock static methods.</p>
+            <p><strong><span style="color: #ff6600;">Q #5) What’s the need to verify that the mock was called?</span></strong></p>
+            <p><strong>Answer:&nbsp;</strong>Setting up a stub on a mocked object (or a spied instance) does not guarantee whether the stubbed setup was even invoked.</p>
+            <p>“verification” matchers, give a facility to validate whether the stub that was set up was actually invoked or not, how many times was the call made, what arguments were the stubbed method called with, etc.</p>
+            <p>In essence, it allows us to verify the test setup and expected outcome in a more robust manner.</p>
+            <p><strong><span style="color: #ff6600;">Q #6) What is a good testable code?</span></strong></p>
+            <p><strong>Answer:</strong></p>
+            <p><strong>Few points about testable code (meaning which could be easily unit tested) include:<br>
+            </strong></p>
+            
+            <div class="quads-location quads-ad2" id="quads-ad2" style="float:none;margin:10px 0 10px 0;text-align:center;">
+            
+            <div align="center" data-freestar-ad="__300x250 __336x280" id="softwaretestinghelp_midcontent" name="softwaretestinghelp_midcontent" data-google-query-id="CI6NwL-6zPsCFaUj1Qod-PEHsA">
+            
+            <div id="google_ads_iframe_/15184186,1018030/softwaretestinghelp_midcontent_0__container__" style="border: 0pt none; display: inline-block; width: 300px; height: 250px;"><iframe frameborder="0" src="https://c421c1e4ed06a83c8b643efba50c4776.safeframe.googlesyndication.com/safeframe/1-0-40/html/container.html" id="google_ads_iframe_/15184186,1018030/softwaretestinghelp_midcontent_0" title="3rd party ad content" name="" scrolling="no" marginwidth="0" marginheight="0" width="300" height="250" data-is-safeframe="true" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" role="region" aria-label="Advertisement" tabindex="0" data-google-container-id="2" style="border: 0px; vertical-align: bottom;" data-load-complete="true"></iframe></div></div>
+            </div>
+            <ul>
+            <li><strong>Reduced no of dependencies or tight coupling –</strong> <span style="text-decoration: underline;"><strong>Example:</strong></span> Dependencies should be injected rather than instantiated directly.</li>
+            <li><strong>Code that adheres to SRP (Single Responsibility Principle)</strong> – This essentially means that the class should not have multiple reasons to change. Adherence to SRP avoids classes creating dependency on itself and keeps the code cohesive and clean.</li>
+            <li><strong>Less / Minimal usage of static methods and final classes –</strong> These generally indicate code smells and were mostly associated with the legacy code.</li>
+            </ul>
+            <p><strong><span style="color: #ff6600;">Q #7) What are the limitations of Mockito?</span></strong></p>
+            <p><strong>Answer:&nbsp;</strong>Mockito is a framework of choice for most of the java based projects. It is easy to implement, read and understand.</p>
+            <p><strong>Some of the drawbacks or limitations in terms of functionality are:</strong></p>
+            <ul>
+            <li>Its inability to mock static methods.</li>
+            <li>Constructors, private methods and final classes cannot be mocked.</li>
+            </ul>
+            <p><strong><span style="color: #ff6600;">Q #8) Which frameworks can support mocking Private and Static methods?</span></strong></p>
+            <p><strong>Answer:&nbsp;</strong>Frameworks like PowerMockito (extensions of Mockito framework), JMockit, etc. do provide means to mock private and static methods.</p>
+            <p><strong><span style="color: #ff6600;">Q #9) Mocking/Stubbing default methods in Interface in Java 8.</span></strong></p>
+            <p><strong>Answer:&nbsp;</strong>With Java 8’s implementation of default methods in Interface, Mockito provides out of box support to mock such default methods. (Please note that this support was introduced from Mockito 2 onwards).</p>
+            <p>These methods can be mocked/stubbed like any other methods of a class or interface.</p>
+            <p><strong><span style="color: #ff6600;">Q #10) How can order of stub invocations be verified in Mockito?</span></strong></p>
+            <p><strong>Answer:&nbsp;</strong>When you want to verify the order in which mocks were called, Mockito’s “<strong>InOrder</strong>” interface can be used.</p>
+            <p>During the test, you simply have to setup / create an Inorder object, listing down a list of mock objects on which the order of mocks needs to be ascertained (if there are multiple methods on the same mock and there is no other mock that needs to be verified then it’s sufficient to mention the mocked class only once).</p>
+            <p><strong>Consider the test given below which defines an object of InOrder and mentions 2 occurrences of mockDatabaseImpl</strong></p>
+            <div><div id="highlighter_733344" class="syntaxhighlighter nogutter  java"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="java color1">@Test</code></div><div class="line number2 index1 alt1"><code class="java keyword">public</code> <code class="java keyword">void</code> <code class="java plain">calculateSumAndStore_withValidInput_verifyMockOrder()</code></div><div class="line number3 index2 alt2"><code class="java plain">{</code></div><div class="line number4 index3 alt1"><code class="java comments">// Arrange</code></div><div class="line number5 index4 alt2"><code class="java plain">studentScores = </code><code class="java keyword">new</code> <code class="java plain">StudentScoreUpdates(mockDatabaseImpl);</code></div><div class="line number6 index5 alt1"><code class="java keyword">int</code><code class="java plain">[] scores = {</code><code class="java value">60</code><code class="java plain">,</code><code class="java value">70</code><code class="java plain">,</code><code class="java value">90</code><code class="java plain">};</code></div><div class="line number7 index6 alt2">&nbsp;</div><div class="line number8 index7 alt1"><code class="java plain">Mockito.doNothing().when(mockDatabaseImpl).updateScores(anyString(), anyInt());</code></div><div class="line number9 index8 alt2"><code class="java plain">Mockito.doReturn(</code><code class="java string">"A"</code><code class="java plain">).when(mockDatabaseImpl).getGrade(anyInt());</code></div><div class="line number10 index9 alt1">&nbsp;</div><div class="line number11 index10 alt2"><code class="java plain">InOrder inorder = inOrder(mockDatabaseImpl);</code></div><div class="line number12 index11 alt1">&nbsp;</div><div class="line number13 index12 alt2"><code class="java comments">// Act</code></div><div class="line number14 index13 alt1"><code class="java plain">studentScores.calculateSumAndStore(</code><code class="java string">"Student1"</code><code class="java plain">, scores);</code></div><div class="line number15 index14 alt2">&nbsp;</div><div class="line number16 index15 alt1"><code class="java comments">// Assert</code></div><div class="line number17 index16 alt2"><code class="java plain">inorder.verify(mockDatabaseImpl).updateScores(anyString(),anyInt());</code></div><div class="line number18 index17 alt1"><code class="java plain">inorder.verify(mockDatabaseImpl).getGrade(anyInt());</code></div><div class="line number19 index18 alt2"><code class="java plain">}</code></div></div></td></tr></tbody></table></div></div>
+            <p><strong>Also, for reference, listing down the code of method under test will be helpful to understand the order of test execution:</strong></p>
+            <div><div id="highlighter_453324" class="syntaxhighlighter nogutter  java"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="java keyword">public</code> <code class="java keyword">void</code> <code class="java plain">calculateSumAndStore(String studentId, </code><code class="java keyword">int</code><code class="java plain">[] scores)</code></div><div class="line number2 index1 alt1"><code class="java plain">{</code></div><div class="line number3 index2 alt2"><code class="java keyword">int</code> <code class="java plain">total = </code><code class="java value">0</code><code class="java plain">;</code></div><div class="line number4 index3 alt1"><code class="java keyword">for</code><code class="java plain">(</code><code class="java keyword">int</code> <code class="java plain">score : scores)</code></div><div class="line number5 index4 alt2"><code class="java plain">{</code></div><div class="line number6 index5 alt1"><code class="java plain">total = total + score;</code></div><div class="line number7 index6 alt2"><code class="java plain">}</code></div><div class="line number8 index7 alt1"><code class="java comments">// write total to DB</code></div><div class="line number9 index8 alt2"><code class="java plain">databaseImpl.updateScores(studentId, total);</code></div><div class="line number10 index9 alt1">&nbsp;</div><div class="line number11 index10 alt2"><code class="java plain">databaseImpl.getGrade(total);</code></div><div class="line number12 index11 alt1">&nbsp;</div><div class="line number13 index12 alt2"><code class="java plain">}</code></div></div></td></tr></tbody></table></div></div>
+            <p>As seen above, databaseImpl first calls updateScores and then calls getGrade.</p>
+            <p>So, if you are writing a unit test using Mockito, for this and you need to ensure the order of the calls on databaseImpl, refer to the test code and ensure that the asserts are made as per the expected order.</p>
+            <p>In the above example if I change the order of asserts, then it will cause the test to fail with an exception of “VerificationInOrderFailure”.</p>
+            <p><strong>After changing the assert order, the code looks as shown below:</strong></p>
+            <div><div id="highlighter_248359" class="syntaxhighlighter nogutter  java"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="java color1">@Test</code></div><div class="line number2 index1 alt1"><code class="java keyword">public</code> <code class="java keyword">void</code> <code class="java plain">calculateSumAndStore_withValidInput_verifyMockOrder()</code></div><div class="line number3 index2 alt2"><code class="java plain">{</code></div><div class="line number4 index3 alt1"><code class="java comments">// Arrange</code></div><div class="line number5 index4 alt2"><code class="java plain">studentScores = </code><code class="java keyword">new</code> <code class="java plain">StudentScoreUpdates(mockDatabaseImpl);</code></div><div class="line number6 index5 alt1"><code class="java keyword">int</code><code class="java plain">[] scores = {</code><code class="java value">60</code><code class="java plain">,</code><code class="java value">70</code><code class="java plain">,</code><code class="java value">90</code><code class="java plain">};</code></div><div class="line number7 index6 alt2">&nbsp;</div><div class="line number8 index7 alt1"><code class="java plain">Mockito.doNothing().when(mockDatabaseImpl).updateScores(anyString(), anyInt());</code></div><div class="line number9 index8 alt2"><code class="java plain">Mockito.doReturn(</code><code class="java string">"A"</code><code class="java plain">).when(mockDatabaseImpl).getGrade(anyInt());</code></div><div class="line number10 index9 alt1">&nbsp;</div><div class="line number11 index10 alt2"><code class="java plain">InOrder inorder = inOrder(mockDatabaseImpl);</code></div><div class="line number12 index11 alt1">&nbsp;</div><div class="line number13 index12 alt2"><code class="java comments">// Act</code></div><div class="line number14 index13 alt1"><code class="java plain">studentScores.calculateSumAndStore(</code><code class="java string">"Student1"</code><code class="java plain">, scores);</code></div><div class="line number15 index14 alt2">&nbsp;</div><div class="line number16 index15 alt1"><code class="java comments">// Assert</code></div><div class="line number17 index16 alt2"><code class="java plain">inorder.verify(mockDatabaseImpl).updateScores(anyString(),anyInt());</code></div><div class="line number18 index17 alt1"><code class="java plain">inorder.verify(mockDatabaseImpl).getGrade(anyInt());</code></div><div class="line number19 index18 alt2"><code class="java plain">}</code></div></div></td></tr></tbody></table></div></div>
+            <p>The above test execution throws an exception with type:</p>
+            <p><strong>“VerificationInOrderFailure” org.mockito.exceptions.verification.VerificationInOrderFailure: </strong><br>
+            <strong>Verification in order failure</strong><br>
+            <strong>Wanted but not invoked:</strong><br>
+            <strong>mockDatabaseImpl.updateScores(</strong><br>
+            <strong>&nbsp;&nbsp; isA(java.lang.String),</strong><br>
+            <strong>&nbsp;&nbsp; isA(java.lang.Integer)</strong></p>
+            <p><span style="color: #ff6600;"><strong>Q #11) Returning multiple values against consecutive method calls</strong></span></p>
+            <p><strong>Answer:&nbsp;</strong>To return different values for multiple invocations of the same stubbed method, Mockito provides 3 approaches as given below:</p>
+            <p><strong>a)</strong> <strong>Using comma separated:</strong> This works with thenReturn.</p>
+            <p><span style="text-decoration: underline;"><strong>For Example</strong></span>, taking the above code sample, let us try to setup consecutive stub for method – getGrade which will return different values depending on the sequence of iterations:</p>
+            <pre><em>when</em>(mockDatabaseImpl.getGrade(<em>anyInt</em>())).thenReturn("A","B", "C");</pre>
+            <p>This means that when getGrade methods get called in the method under test, the first invocation will return “A”, the second invocation will return “B” and so on.</p>
+            <p><strong>b)</strong> <strong>Consecutive thenReturn:</strong> This is an approach that is chained with thenReturn statements. Applying chained calls to the same example will look as shown below.</p>
+            <pre><em>when</em>(mockDatabaseImpl.getGrade(<em>anyInt</em>())).thenReturn("A").thenReturn("B").thenReturn("C");</pre>
+            <p><strong>c) Consecutive doReturn:</strong> The last approach is using doReturn in the chained format as above.</p>
+            <pre><em>doReturn</em>("A").doReturn("B").doReturn("C").when(mockDatabaseImpl).getGrade(<em>anyInt</em>())</pre>
+            <p><span style="color: #ff6600;"><strong>Q #12) What are the different types of mocking frameworks and how do they work?</strong></span></p>
+            <p><strong>Answer:&nbsp;</strong>Types of the Mocking framework and how do they work are explained below.</p>
+            <p><strong>There are broadly 2 categories of mocking frameworks:</strong></p>
+            <ol>
+            <li><strong>Proxy-based</strong> – <span style="text-decoration: underline;"><strong>Example,</strong></span>&nbsp;Mockito, EasyMock, etc.</li>
+            <li><strong>Bytecode based</strong> – <span style="text-decoration: underline;"><strong>Example,</strong></span><span style="text-decoration: underline;"><strong>&nbsp;</strong></span>PowerMock, JMockit, etc.</li>
+            </ol>
+            <p><strong>Let’s compare both these frameworks on different parameters.</strong></p>
+            <div id="tablepress-491-scroll-wrapper" class="tablepress-scroll-wrapper">
+            <table id="tablepress-491" class="tablepress tablepress-id-491 tablepress-responsive">
+            <thead>
+            <tr class="row-1 odd">
+            <th class="column-1">&nbsp;</th><th class="column-2">Proxy based</th><th class="column-3">Bytecode based</th>
+            </tr>
+            </thead>
+            <tbody class="row-hover">
+            <tr class="row-2 even">
+            <td class="column-1">Simplicitly</td><td class="column-2">More simple and easy to use</td><td class="column-3">Might involve complex mock setup logic</td>
+            </tr>
+            <tr class="row-3 odd">
+            <td class="column-1">Mode of creation</td><td class="column-2">A proxy or fake object which does not actually require instance of class / interface is created</td><td class="column-3">It essentially involves creating objects and at runtime manipulates the instances for the mocked/stubbed behavior</td>
+            </tr>
+            <tr class="row-4 even">
+            <td class="column-1">Functionality</td><td class="column-2">Mocking classes and interfaces</td><td class="column-3">In addition to classes and interfaces, allows mocking static methods, final classes etc</td>
+            </tr>
+            <tr class="row-5 odd">
+            <td class="column-1">Java dependency</td><td class="column-2">Not very tightly coupled to java versions</td><td class="column-3">Since these frameworks involve bytecode manipulation they are tightly coupled and might not be backward/forward compatible across java versions.</td>
+            </tr>
+            <tr class="row-6 even">
+            <td class="column-1">Examples</td><td class="column-2">Mockito, EasyMock etc.</td><td class="column-3">PowerMock, JMockit etc.</td>
+            </tr>
+            </tbody>
+            </table>
+            </div>
+            
+            
+
+
+        </div>	
+      </div>
+    
+
+  </main><!-- End #main -->
+
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

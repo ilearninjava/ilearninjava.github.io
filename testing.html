@@ -1,0 +1,1717 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Java Interview Q&A</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Sailor - v4.9.1
+  * Template URL: https://bootstrapmade.com/sailor-free-bootstrap-theme/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center">
+      <h1 class="logo me-auto"><a href="index.html">Java Interview Q&A</a></h1>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+
+          <li class="dropdown"><a href="framework.html"><span>Framework</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="spring.html">Spring</a></li>
+              <li><a href="hibernate.html">Hibernate</a></li>
+              <li><a href="springboot.html">SpringBoot</a></li>
+              <li><a href="cucumber.html">Cucumber</a></li>
+              <li><a href="jsf.html">JSF</a></li>
+              <li><a href="struts.html">Struts</a></li>
+              <li class="dropdown"><a href="#"><span>Entity Framework</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="jpa.html">JPA</a></li>
+                  <li><a href="hibernate.html">Hibernate</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="testing.html"><span>Testing</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="junit.html">Junit</a></li>
+                  <li><a href="mockito.html">Mockito</a></li>
+                  <li><a href="power-mockito.html">Power Mockito</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          
+          <li class="dropdown"><a href="database.html"><span>Database</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="sql.html">SQL</a></li>
+              <li><a href="plsql.html">PL-SQL</a></li>
+              <li class="dropdown"><a href="nosql.html"><span>NoSQL</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">Apache Cassandra</a></li>
+                  <li><a href="#">MongoDB</a></li>
+                  <li><a href="#">Redis</a></li>
+                  <li><a href="#">ArangoDB</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="cloud.html"><span>Cloud</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="aws.html">AWS</a></li>
+              <li><a href="gcp.html">GCP</a></li>
+              <li><a href="azure.html">Azure</a></li>
+              <li><a href="ibm-cloud.html">IBM Cloud</a></li>
+              <li><a href="docker.html">Docker</a></li>
+              <li><a href="kubernetes.html">Kubernetes</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="ui.html"><span>UI</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="angular.html">Angular</a></li>
+              <li><a href="react.html">ReactJS</a></li>
+              <li><a href="javascript.html">Javascript</a></li>
+              <li><a href="css.html">css</a></li>
+              <li><a href="html.html">html</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>Other</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Company wise</a></li>
+              <li><a href="#">Design pattern</a></li>
+              <li><a href="microservices.html">Microservices</a></li>
+              <li><a href="#">Data Structure</a></li>
+              <li><a href="#">Architect</a></li>
+            </ul>
+          </li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+  </header>
+
+</br>
+  <main id="main">
+
+    <section id="about" class="about">
+      <div class="container">
+        <div class="row-content"> 
+          
+
+            
+            
+            <ul><li><a href="#basic"><span style="font-weight: 400;">Basic Level Software Testing Interview Questions</span></a></li><li><a href="#intermediate"><span style="font-weight: 400;">Intermediate Level Software Testing Interview Questions</span></a></li><li><a href="#advanced"><span style="font-weight: 400;">Software Testing Interview Question </span>For Experienced Candidates</a></li></ul>
+            
+            
+            
+            <p><span style="font-weight: 400;">But before we move on to the questions, let’s understand why Software Testing is important.&nbsp;</span></p>
+            
+            
+            
+            <h2><b>Why is Software Testing Important?</b></h2>
+            
+            
+            
+            <p><span style="font-weight: 400;"><a href="https://www.naukri.com/learning/what-is-software-testing-st621-tg499" target="_blank" rel="noreferrer noopener">Software testing</a> is the process of running or executing the software to find software bugs, and verify that the system meets the different requirements including functional, performance, reliability, security, usability, and so on.&nbsp;</span></p>
+            
+            
+            
+            <p><span style="font-weight: 400;">That’s what software testing does. But how does it help us?&nbsp;</span></p>
+            
+            
+            
+            <p><span style="font-weight: 400;">Well… It helps the stakeholders to understand the risks involved in the implementation of the software and check whether it meets the business and technical requirements that guided its design and development.</span></p>
+            
+            
+            
+            <p><span style="font-weight: 400;">Software testing has become an integral part of IT companies to maintain the customer’s reliability and ensure satisfaction. According to Global Market Insights, “Software Testing market size exceeded USD 40 billion in 2019 and is expected to grow at a CAGR of over 6% from 2020 to 2026.”</span></p>
+            
+            
+            
+            <p><span style="font-weight: 400;">Now, let us move on to the most frequently asked Software Testing interview questions that can be asked in your Software Testing interview.</span></p>
+            
+     
+            
+            
+            <h2 id="basic"><b>Basic Level Software Testing Interview Questions</b></h2>
+            
+            
+            
+            <h2><b>Q1. What do you mean by software testing?</b></h2>
+            
+            
+            
+            <p><b>Ans.</b> <a href="https://www.naukri.com/learning/what-is-software-testing-st621-tg499#description" target="_blank" rel="noopener noreferrer"><span style="font-weight: 400;">Software testing</span></a><span style="font-weight: 400;"> is a process used to find any existing bugs in the software with the help of executing a program or application. Testers use it to validate and verify software programs, applications, and products. Unlike other steps, testing is an ongoing stage in the software development life cycle (SDLC). Several test designs are used to verify the software codes.</span></p>
+            
+          
+            
+            
+            <h2><b>Q2. What is the purpose of risk-based testing?</b></h2>
+            
+            
+            
+            <p><b>Ans.</b><span style="font-weight: 400;"> Risk-based testing is done for projects and applications based on risks. It uses risk to prioritize and emphasize the appropriate tests during test execution.</span></p>
+            
+            
+            
+            <figure class="wp-block-image"><img loading="lazy" width="455" height="359" src="https://www.naukri.com/learning/articles/wp-content/uploads/sites/11/2020/08/Risk-Based-Testing.png" alt="Risk Based Testing" class="wp-image-22205" srcset="https://www.naukri.com/learning/articles/wp-content/uploads/sites/11/2020/08/Risk-Based-Testing.png 455w, https://www.naukri.com/learning/articles/wp-content/uploads/sites/11/2020/08/Risk-Based-Testing-300x237.png 300w, https://www.naukri.com/learning/articles/wp-content/uploads/sites/11/2020/08/Risk-Based-Testing-418x330.png 418w" sizes="(max-width: 455px) 100vw, 455px"></figure>
+            
+            
+            
+            <h2><strong><b>Q3. </b>Explain the phases of the Software Testing Life Cycle (STLC)?</strong></h2>
+            
+            
+            
+            <p><strong>Ans. </strong>STLC is the process used for testing software to ensure that quality standards have been achieved. It consists of the following six phases:</p>
+            
+            
+            
+            <ol><li><strong>Requirement analysis: </strong>During this phase, feature requirements are evaluated to identify testable aspects. The testing team consults with the client to clarify these requirements. During this phase, the testing team also evaluates the ability to automate testing. For this phase, documents and intended product architecture are required.</li><li><strong>Test planning: </strong>After requirement analysis, the team outlines the test strategy in a test plan document. Required tools, roles and responsibilities, and testing steps are decided and included in the strategy. A timeline for the testing is also estimated.</li><li><strong>Test Case Creation: </strong>In this phase, the team works on creating test cases by defining test inputs, executed conditions, procedures, and anticipated results. Automation scripts are also created in this phase.</li><li><strong>Setting up the test environment:</strong> In the phase, configuration and deployment of the testing environment are done. After the deployment of the environment, smoke tests are performed to ensure that environment is working with full functionality.</li><li><strong>Features testing:</strong> Features are tested in a deployed environment with the help of established test cases. Results of the comparison between expected and actual tests are gathered in the form of report. This report is forwarded to the development team.</li><li><strong>Test Result Report: </strong>In this phase, the test result report consisting of the details of the testing process is prepared. The result includes the comparison between actual and expected test result in terms of meeting objectives, time consumed, costing, test coverage and defects</li></ol>
+            
+            
+            
+            <h2><strong>Q4. </strong><b>How is static software testing different from dynamic testing?</b></h2>
+            
+            
+            
+            <p><b>Ans.</b><span style="font-weight: 400;"> Below highlighted are the key differences between static and dynamic testing:&nbsp;</span></p>
+            
+            
+            
+            <figure class="wp-block-table"><div class="web-tables"><table><tbody><tr><td class="long"><b>Static Testing</b></td><td class="long"><b>Dynamic Testing</b></td></tr><tr><td class="long"><span style="font-weight: 400;">Helps in finding bugs without executing any code</span></td><td class="long"><span style="font-weight: 400;">Execution of code is required to find results of running tests</span></td></tr><tr><td class="long"><span style="font-weight: 400;">Done at the time of the verification process</span></td><td class="long"><span style="font-weight: 400;">Executed during the validation process</span></td></tr><tr><td class="long"><span style="font-weight: 400;">A cost-effective way of testing</span></td><td class="long"><span style="font-weight: 400;">Little expensive</span></td></tr><tr><td class="long"><span style="font-weight: 400;">Example – Reviewing, Walkthrough, Inspection</span></td><td class="long"><span style="font-weight: 400;">Example – Unit testing, system testing, integration testing</span></td></tr></tbody></table></div></figure>
+            
+            
+            
+            <h2><b>Q5. What do you think, how much testing will be sufficient?</b></h2>
+            
+            
+            
+            <p><b>Ans. </b><span style="font-weight: 400;">This is one of the most frequently asked questions in a <a href="https://www.naukri.com/learning/software-testing-courses-certification-training-st621-tg499" target="_blank" rel="noopener noreferrer">software testing</a> interview. There is no one answer to how much software testing is enough. You can frame your own answer to this question. As per BCS/ISTQB, which is a well-known Software Testing Foundation, it is not possible to test software for every possible situation. A tester should examine factors like quality, the risk involved, budget, and time constraints.</span></p>
+            
+            
+            
+            <h2><b>Q6. What are the common problems in the software development process?</b></h2>
+            
+            
+            
+            <p><b>Ans. </b><span style="font-weight: 400;">&nbsp;Following are some common problems in the software development process:</span></p>
+            
+            
+            
+            <ul><li style="font-weight: 400;"><span style="font-weight: 400;">Bad requirements</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Unrealistic schedules</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Inadequate testing</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Adding new features</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Poor communication</span></li></ul>
+            
+            
+            
+          
+            
+            <h2><b>Q7. What are the different types of functional testing?</b></h2>
+            
+            
+            
+            <p><b>Ans.</b><span style="font-weight: 400;"> Below are some types of functional testing:</span></p>
+            
+            
+            
+            <ul><li style="font-weight: 400;"><span style="font-weight: 400;">Smoke testing</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Sanity testing</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Integration testing</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Regression testing</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Localization testing</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">User acceptance testing</span></li></ul>
+            
+            
+            
+            <h2><b>Q8. What are the different types of non-functional testing?</b></h2>
+            
+            
+            
+            <p><b>Ans.</b><span style="font-weight: 400;"> Below are some types of non-functional testing:</span></p>
+            
+            
+            
+            <ul><li style="font-weight: 400;"><span style="font-weight: 400;">Performance testing Usability Testing</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Security Testing</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Installation testing</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Recovery testing</span></li></ul>
+            
+            
+            
+            <h2><strong>Q9. Define Testware.</strong></h2>
+            
+            
+            
+            <p><strong>Ans.</strong> Testware is a subset of software that encompasses artifacts produced in the test process to execute, plan, and design texts like expected results, scripts, databases, and inputs. It is used to explain the materials required in the test.</p>
+            
+            
+            
+            <h2><strong>Q10. Explain branch testing.</strong></h2>
+            
+            
+            
+            <p><strong>Ans. </strong>Branch testing is a testing method that ensures that each one of the possible branches from each decision point is executed at least once. It ensures that all reachable code is executed.</p>
+            
+            
+            
+            <h2><strong>Q11. What do you mean by the term QA (Quality Assurance)?</strong></h2>
+            
+            
+            
+            <p><strong>Ans.</strong> Quality assurance is used to boost customer confidence, the organization’s ability, and work efficiency. It is a methodology used in the development of products that make sure a certain level of quality.</p>
+            
+            
+            
+            <p>QA monitors the process to be done for project development. It also tracks the results of the process to meet the expectations. It helps in preventing mistakes and defects in manufactured products and avoiding problems when delivering products or services to customers.</p>
+            
+            
+            
+            <h2><strong>Q12. Name some automation challenges that the SQA team faces while testing?</strong></h2>
+            
+            
+            
+            <p><strong>Ans.</strong> The SQA team faces the following challenges:</p>
+            
+            
+            
+            <ul><li>The adaptability of the test case for automation</li><li>Mastering the automation tool</li><li>Reusability of automation script</li><li>Automating complex test cases</li></ul>
+            
+            
+            
+            <h2><strong>Q13. What are the advantages of destructive testing?</strong></h2>
+            
+            
+            
+            <p><strong>Ans. </strong>Destructive testing has the following advantages:</p>
+            
+            
+            
+            <ul><li>Determines the quality of welds</li><li>Entertains compliance with regulations</li><li>Verifies properties of a material</li><li>Helps you to reduce costs, failures, and accidents</li></ul>
+            
+            
+            
+            <h2><strong>Q14. What are the various types of software testing?</strong></h2>
+            
+            
+            
+            <p><strong>Ans.</strong>&nbsp; The following are various types of software testing:</p>
+            
+            
+            
+            <ul><li><a href="https://www.naukri.com/learning/articles/smoke-testing/" target="_blank" rel="noreferrer noopener">Smoke testing</a></li><li><a href="https://www.naukri.com/learning/articles/system-testing-with-real-life-example/" target="_blank" rel="noreferrer noopener">System testing</a></li><li><a href="https://www.naukri.com/learning/articles/unit-testing-in-software-engineering/" target="_blank" rel="noreferrer noopener">Unit testing</a></li><li><a href="https://www.naukri.com/learning/articles/functional-testing-and-its-types/" target="_blank" rel="noreferrer noopener">Functional testing</a></li><li>Performance testing</li><li>Shakeout testing</li><li>Alpha and Beta testing</li><li>Load testing and stress testing</li><li>White box and <a href="https://www.naukri.com/learning/articles/black-box-testing-its-types-and-how-to-do-it/" target="_blank" rel="noreferrer noopener">Black box testing</a></li><li><a href="https://www.naukri.com/learning/articles/integration-testingreal-life-example/" target="_blank" rel="noreferrer noopener">Integration testing</a> and regression testing</li></ul>
+            
+            
+            
+            <h2><strong>Q15. Define how QA is defined in the ISO 9000, Clause 3.2.11?</strong></h2>
+            
+            
+            
+            <p><strong>Ans.</strong> Quality assurance is explained as that aspect of quality management that deals with convincing the customers according to their set necessities for the software’s quality will be fulfilled.</p>
+            
+            
+            
+            <h2><strong>Q16. Explain what is MR and why we are using it in testing?</strong></h2>
+            
+            
+            
+            <p><strong>Ans.</strong> MR is termed as Modification Request also known as a Defect report. It is useful for testing for reporting errors/suggestions/problems in the software.</p>
+            
+            
+            
+            <h2><strong>Q17. What is the rule of a “Test Driven Development”?</strong></h2>
+            
+            
+            
+            <p><strong>Ans.</strong> Test-Driven Development focused on creating test cases before writing the actual code which indicates that you are writing the code for the tests before writing it for the application.</p>
+            
+            
+            
+            <h2><b>Q18. What are the different types of test levels?</b></h2>
+            
+            
+            
+            <p><b>Ans.</b><span style="font-weight: 400;"> Following are the different types of test levels:</span></p>
+            
+            
+            
+            <ul><li style="font-weight: 400;"><span style="font-weight: 400;">Integration testing</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">System testing</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Acceptance testing</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Unit/component/program/module testing</span></li></ul>
+            
+            
+            
+            <h2><b>Q19. What is the procedure to resolve issues during software testing?</b></h2>
+            
+            
+            
+            <p><b>Ans.</b><span style="font-weight: 400;"> We can resolve&nbsp; issues during software testing by using:</span></p>
+            
+            
+            
+            <ul><li style="font-weight: 400;"><span style="font-weight: 400;">Record: the defects are logged and recorded</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Control: issue management process is identified.</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Report: The defects are described to the development team</span></li></ul>
+            
+            
+         
+            
+            <h2><b>Q20. Mention the things you consider before choosing automation tools for the AUT?</b></h2>
+            
+            
+            
+            <p><b>Ans.</b><span style="font-weight: 400;"> Following are the things to be considered before choosing automation tools for the AUT:</span></p>
+            
+            
+            
+            <ul><li style="font-weight: 400;"><span style="font-weight: 400;">Test data</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Application size</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Complexity level</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Application stability</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Technical Feasibility</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Execution across environment</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Re-usability of automated scripts</span></li></ul>
+            
+            
+            
+            <h2><b>Q21. Mention what are the debugging categories?</b></h2>
+            
+            
+            
+            <p><b>Ans.</b><span style="font-weight: 400;"> Following are the debugging categories:</span></p>
+            
+            
+            
+            <ul><li style="font-weight: 400;"><span style="font-weight: 400;">Backtracking</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Cause elimination</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Program Slicing</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Fault tree analysis</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Brute force debugging</span></li></ul>
+            
+            
+            
+            <h2><b>Q22. Mention some of the risks that can occur in project failure?</b></h2>
+            
+            
+            
+            <p><b>Ans.</b><span style="font-weight: 400;"> Following are the few risks that can occur in project failure:</span></p>
+            
+            
+            
+            <ul><li style="font-weight: 400;"><span style="font-weight: 400;">Strict timelines</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Budget constraints</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Improper testing environment</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Insufficient resource for the project</span></li></ul>
+            
+            
+            
+            <h2><b>Q23. What information should a test plan include?</b></h2>
+            
+            
+            
+            <p><b>Ans.</b><span style="font-weight: 400;"> Information that a test plan include are:</span></p>
+            
+            
+            
+            <ul><li style="font-weight: 400;"><span style="font-weight: 400;">Test Objective</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Test Strategy</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Resource Planning</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Test Deliverables</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Exit/Suspension Criteria</span></li></ul>
+            
+            
+            
+            <h2><b>Q24. Write a few common mistakes that lead to issues?</b></h2>
+            
+            
+            
+            <p><b>Ans.</b><span style="font-weight: 400;"> Following are some common mistakes that lead to issues:</span></p>
+            
+            
+            
+            <ul><li style="font-weight: 400;"><span style="font-weight: 400;">Poor Scheduling</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Underestimating</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Ignoring the small problems</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Not following the process</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Improper resource allocation</span></li></ul>
+            
+            
+            
+            <h2><b>Q25. What are the steps you should follow after you detect any defect?</b></h2>
+            
+            
+            
+            <p><b>Ans.</b><span style="font-weight: 400;"> Following are the steps you should follow after you detect any defect:</span></p>
+            
+            
+            
+            <ul><li style="font-weight: 400;"><span style="font-weight: 400;">Log the defect</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Recreate the defect</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Attach the screenshot</span></li></ul>
+            
+            
+            
+            <h2><b>Q26. What is an emulator?</b></h2>
+            
+            
+            
+            <p><b>Ans.</b><span style="font-weight: 400;"> An emulator is a computer program, device, or system that behaves like any other system, program, or device; taking the same type of input and producing the same output.</span></p>
+            
+            
+            
+            <h2><b>Q27. What is a test log?</b></h2>
+            
+            
+            
+            <p><b>Ans.</b><span style="font-weight: 400;"> A test log is a chronological record of relevant details about the execution of test cases. It provides detailed information about the success of each test performed to validate the quality, performance, and functionality of the software.</span></p>
+            
+            
+            
+            <h2><b>Q28. What is quality assurance?</b></h2>
+            
+            
+            
+            <p><b>Ans.</b><span style="font-weight: 400;"> It is a process-oriented activity that ensures the prevention of defects/bugs during the development process of software applications. The objective of measuring quality assurance is to avoid any hindrances once the software is ready.</span></p>
+           
+            
+            
+            <h2><b>Q29. What is the difference between software testing and quality assurance?</b></h2>
+            
+            
+            
+            <p><b>Ans.</b><span style="font-weight: 400;"> The differences between software testing and quality assurance are:&nbsp;</span></p>
+            
+            
+            
+            <figure class="wp-block-table"><div class="web-tables"><table><tbody><tr><td><b>Software Testing</b></td><td class="long"><b>Quality Assurance</b></td></tr><tr><td><span style="font-weight: 400;">A process&nbsp; for finding bugs in software</span></td><td class="long"><span style="font-weight: 400;">A process&nbsp; for ensuring that the software is designed as per the required specifications</span></td></tr><tr><td><span style="font-weight: 400;">Product-oriented</span></td><td class="long"><span style="font-weight: 400;">Process-oriented</span></td></tr><tr><td><span style="font-weight: 400;">Focused more on corrections</span></td><td class="long"><span style="font-weight: 400;">Works on the preventive approach</span></td></tr><tr><td><span style="font-weight: 400;">Aims at controlling the quality</span></td><td class="long"><span style="font-weight: 400;">Aims at ensuring quality</span></td></tr></tbody></table></div></figure>
+            
+            
+            
+            <h2><b>Q30. What do you mean by Quality Control?</b></h2>
+            
+            
+            
+            <p><b>Ans.</b><span style="font-weight: 400;"> Quality control is an activity based on product orientation. It is used to define the error in a particular software application. Quality Control is a systematic set of processes used to ensure the quality of software products or services. It aims to ensure that the software product meets the actual requirements by testing and reviewing its functional and non-functional requirements.&nbsp;</span></p>
+            
+            
+            
+            <h2><b>Q31. What do you mean by Positive and Negative Testing?</b></h2>
+            
+            
+            
+            <p><b>Ans.</b><span style="font-weight: 400;"> Positive testing is used to determine what a system is supposed to do and is it justifying the planned requirement.</span></p>
+            
+            
+            
+            <p><span style="font-weight: 400;">Whereas negative testing helps in determining what the system should not perform, leading to finding the possible defects in the software.</span></p>
+            
+            
+            
+            <h2><b>Q32. What is baseline testing?</b></h2>
+            
+            
+            
+            <p><b>Ans.</b><span style="font-weight: 400;"> Baseline testing is the process of running a set of tests to capture performance information. It is to compare the performance of software with its own previous version. Baseline testing aims to improve the performance and capabilities of the application.</span></p>
+            
+            
+            
+            <h2><b>Q33. What is benchmark testing?</b></h2>
+            
+            
+            
+            <p><b>Ans.</b><span style="font-weight: 400;"> Benchmark testing is the process of testing a software’s performance with respect to industry guidelines (given by some other organization). It compares our application performance with other company’s application’s performance and helps to identify where the application stands compared to others.&nbsp;</span></p>
+            
+            
+            
+            
+            <h2><b>Q34. What are the white box and black box testing?</b></h2>
+            
+            
+            
+            <p><b>Ans.</b> <b>White box testing</b><span style="font-weight: 400;"> is a software testing method that tests the internal structures or workings of an application. In this, the internal structure/ design/ implementation of the item being tested is known to the tester.</span></p>
+            
+            
+            
+            <p><b>Black box (behavioral testing)</b><span style="font-weight: 400;"> is a method in which the internal structure/ design/ implementation of the item being tested is not known to the tester. It is the least time consuming and focuses on the functional test of the software. There are three types of Black Box Testing:&nbsp;</span></p>
+            
+            
+            
+            <ol><li style="font-weight: 400;"><span style="font-weight: 400;">Functional Testing&nbsp;</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Non-functional testing&nbsp;</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Regression Testing</span></li></ol>
+            
+            
+            
+            <h2><b>Q35. Define some advantages and disadvantages of black-box testing.</b></h2>
+            
+            
+            
+            <p><b>Ans.</b><span style="font-weight: 400;"> Below are some advantages and disadvantages:</span></p>
+            
+            
+            
+            <figure class="wp-block-table"><div class="web-tables"><table><tbody><tr><td><b>Advantages of Black Box Testing</b></td><td class="long"><b>Disadvantages of Black Box Testing</b></td></tr><tr><td><span style="font-weight: 400;">It simplifies the testing process.</span></td><td class="long"><span style="font-weight: 400;">It doesn’t highlight the reasons for errors.</span></td></tr><tr><td><span style="font-weight: 400;">Efficient for large code segments.</span></td><td class="long"><span style="font-weight: 400;">Coverage is limited as only a selected number of test scenarios are performed.</span></td></tr><tr><td><span style="font-weight: 400;">Even a non-tester person can work on this.</span></td><td class="long"><span style="font-weight: 400;">It is difficult to design test cases.</span></td></tr></tbody></table></div></figure>
+            
+            
+            
+            <h2><b>Q36. What is random testing?</b></h2>
+            
+            
+            
+            <p><b>Ans.</b><span style="font-weight: 400;"> Random testing is a black-box software testing technique where programs are tested by generating random and independent inputs. The results of the output are compared with the software specifications to check whether the test output is pass or fail. Random testing is also used to avoid biased testing.</span></p>
+            
+            
+            
+            <h2><b>Q37. What is the difference between a defect and a failure?</b></h2>
+            
+            
+            
+            <p><b>Ans.</b><span style="font-weight: 400;"> Defect refers to any deviation from the specifications mentioned in the product functional specification document. A defect results in a deviation in the actual and expected result of the application.&nbsp;</span></p>
+            
+            
+            
+            <p><span style="font-weight: 400;">Failure is when a product is completed and is delivered to the customers and the customer finds an issue in the product or software.</span></p>
+            
+            
+            
+            <h2><b>Q38. How is error different from failure?</b></h2>
+            
+            
+            
+            <p><b>Ans.</b><span style="font-weight: 400;">&nbsp;</span></p>
+            
+            
+            
+            <ul><li style="font-weight: 400;"><span style="font-weight: 400;">Error – When a program is unable to compile or run due to coding mistakes it is termed as an error.</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Failure- If the end-user is unable to program due to any issue, it is termed as a failure.</span></li></ul>
+            
+            
+            
+            <h2><b>Q39. Define latent bugs and golden bugs.</b></h2>
+            
+            
+            
+            <p><b>Ans.</b><span style="font-weight: 400;"> A latent bug is a bug that is present in the system from previous iterations or releases. It is a low priority bug. It includes those bugs that remain dormant or unhidden.</span></p>
+            
+            
+            
+            <p><span style="font-weight: 400;">A golden bug is a bug that appears in every iteration or release, affecting the major module. It is a high priority bug as it may affect the critical functionality of the system.</span></p>
+            
+            
+            
+            <h2><b>Q40. What are the differences between Verification and Validation?</b></h2>
+            
+            
+            
+            <p><b>Ans.</b><span style="font-weight: 400;"> The differences between Verification and Validation are:&nbsp;</span></p>
+            
+            
+            
+            <figure class="wp-block-table"><div class="web-tables"><table><tbody><tr><td class="long"><b>Verification&nbsp;</b></td><td class="long"><b>Validation</b></td></tr><tr><td class="long"><span style="font-weight: 400;">Verification is the process of checking that the software meets the specification or not.</span></td><td class="long"><span style="font-weight: 400;">Validation is the process of checking whether the software meets the customer’s expectations and requirements or not.</span></td></tr><tr><td class="long"><span style="font-weight: 400;">It involves checking documents, design, codes, and programs.</span></td><td class="long"><span style="font-weight: 400;">It is concerned with testing and validating the actual product.</span></td></tr><tr><td class="long"><span style="font-weight: 400;">Static testing.</span></td><td class="long"><span style="font-weight: 400;">Dynamic testing.</span></td></tr><tr><td class="long"><span style="font-weight: 400;">Verification methods include reviews, inspections, and desk-checking.</span></td><td class="long"><span style="font-weight: 400;">Validation methods include Black Box Testing, White Box Testing.</span></td></tr></tbody></table></div></figure>
+            
+            
+            
+            <h2><b>Q41. What are alpha and beta testing?</b></h2>
+            
+            
+            
+            <p><b>Ans.</b> <b>Alpha testing</b><span style="font-weight: 400;"> is conducted to identify bugs before releasing the product to real users. It is performed within the organization and tested by a representative group of end-users at the developer’s side and sometimes by an independent team of testing. It involves both the white box and black box testing.</span></p>
+            
+            
+            
+            <p><b>Beta testing</b><span style="font-weight: 400;"> is conducted by the end-users who are not part of the organization, and they are not programmers, software engineers, or testers. It is done to check reliability, security, and robustness. It generally uses black-box testing.</span></p>
+            
+            
+            
+            <h2><b>Q42. What is concurrency testing?</b></h2>
+            
+            
+            
+            <p><b>Ans.</b><span style="font-weight: 400;"> Concurrency Testing is defined as a testing technique to detect the defects in an application when multiple users are logged in.</span></p>
+            
+            
+            
+            <p><span style="font-weight: 400;">It helps to identify the problems in system parameters, such as response time, throughput, deadlocks, and more.</span></p>
+            
+            
+            
+            <h2><b>Q43. What are the phases of a formal review?</b></h2>
+            
+            
+            
+            <p><b>Ans.</b><span style="font-weight: 400;"> There are six phases of a formal review:&nbsp;</span></p>
+            
+            
+            
+            <ol><li style="font-weight: 400;"><span style="font-weight: 400;">Planning</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Kick-Off</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Preparation</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Review Meeting</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Rework</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Follow-Up</span></li></ol>
+            
+            
+            
+            
+            
+            <h2><b>Q44. What is the traceability matrix?</b></h2>
+            
+            
+            
+            <p><b>Ans.</b><span style="font-weight: 400;"> Traceability matrix is the document with the help of which the relationship between test cases and requirement specifications is shown. It helps to ensure transparency and completeness of the software testing products.</span></p>
+            
+            
+            
+            <h2><b>Q45. When is the decision testing table used?</b></h2>
+            
+            
+            
+            <p><b>Ans.</b><span style="font-weight: 400;"> A Decision Table is a tabular representation of inputs versus rules/cases/test conditions. It is used for complex software testing and requirements management. Decision table testing is used for testing systems for which the specification takes the form of rules or cause-effect combinations.</span></p>
+            
+         
+            
+            <h2><b>Q46. What is the purpose of the test design technique?</b></h2>
+            
+            
+            
+            <p><b>Ans.</b><span style="font-weight: 400;"> The purpose of the test design technique is to identify test conditions and test cases. A test design technique helps to select a set of tests from the total number of all possible tests for a given system.&nbsp;</span></p>
+            
+            
+            
+            <h2><b>Q47. Name some tools that are involved in the automation of regression tests?</b></h2>
+            
+            
+            
+            <p><b>Ans.</b><span style="font-weight: 400;"> Below are some tools that help in the automation of regression test:</span></p>
+            
+            
+            
+            <ul><li style="font-weight: 400;"><span style="font-weight: 400;">Data tester</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Boundary tester</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Capture/Playback</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Output comparator</span></li></ul>
+            
+            
+            
+            <h2 id="intermediate"><b>Intermediate Level Software Testing Interview Questions</b></h2>
+            
+            
+            
+            <h2><b>Q48. Name the technique used in the script that has no frame id and frame name?</b></h2>
+            
+            
+            
+            <p><b>Ans.</b><span style="font-weight: 400;"> For such scripts, we can use the technique frame by index.</span></p>
+            
+            
+            
+            <h2><b>Q49. Define RTM.</b></h2>
+            
+            
+            
+            <p><b>Ans.</b><span style="font-weight: 400;"> Requirements Traceability Matrix or RTM or traceability matrix, or Cross-reference matrix is the term used check is the testing requirements are satisfied.</span></p>
+            
+            
+            
+            <h2><b>Q50. What is Integration testing?</b></h2>
+            
+            
+            
+            <p><b>Ans.</b><span style="font-weight: 400;"> Integration testing, which is also known as I&amp;T, String Testing, or Thread Testing, is a process of testing through which several software modules are logically integrated as a group and each group is tested. The prominent role of integration testing is to check the data communication between different software modules.</span></p>
+            
+            
+            
+            <h2><b>Q51. What is a Bottom-Up Testing?</b></h2>
+            
+            
+            
+            <p><b>Ans. </b><span style="font-weight: 400;">Bottom-up testing is a type of testing approach where the lowest level components are tested first with the higher modules with the help of drivers. This approach is highly convenient for fault localization and is time-efficient when compared to the big bang testing approach.</span></p>
+            
+            
+            
+            <h2><b>Q52. What is Top-Down Integration Testing?</b></h2>
+            
+            
+            
+            <p><b>Ans.</b><span style="font-weight: 400;"> In this method, testing starts from the top and move to the bottom by seeking help from stubs. It follows the software system’s control flow. In top-down testing, fault localization is easy and the possibility of obtaining an early prototype is high.</span></p>
+            
+            
+            
+            <p><span style="font-weight: 400;">It works on the concept of priority testing and resolves major design defects on the highest priority. The only disadvantage of this approach is that it requires too many stubs and gives the least importance to modules that are present at the lower level.</span></p>
+            
+            
+            
+            <h2><b>Q53. What do you mean by crowd testing or CrowdSource?</b></h2>
+            
+            
+            
+            <p><b>Ans.</b><span style="font-weight: 400;"> In this type of testing, the software product is shared with expert software testers for finding bugs and defects. Nowadays it is a modern way of testing.</span></p>
+            
+            
+            
+            <h2><strong>Q54. What do you mean by CRUD testing?</strong></h2>
+            
+            
+            
+            <p><strong>Ans.</strong> CRUD is a black box testing of the database functionality. It stands for Create, Read, Update, and Delete, which are the four major and basic functions of persistent storage.</p>
+            
+            
+            
+            <ul><li><strong>Create</strong> – INSERT an entry in the database</li><li><strong>Read</strong> – SELECT the entry from the database and view it.</li><li><strong>Update</strong> – UPDATE the entry completely or partially.</li><li><strong>Delete</strong> – DELETE the entry.</li></ul>
+            
+            
+            
+            <h2><strong>Q55. Define the cause-effect graph.</strong></h2>
+            
+            
+            
+            <p><strong>Ans.</strong> A cause-effect graph comes under the black box testing technique and describes a relationship between a given outcome and all the aspects that affect the outcome. Cause-effect graph testing reduces the time of test execution and cost.</p>
+            
+            
+            
+            <p>The cause-Effect graph technique is based on a collection of requirements and is used to determine minimum possible test cases that can cover a maximum test area of the software.</p>
+            
+            
+            
+            <h2><strong>Q56. What kind of test do you do on the web-based application?</strong></h2>
+            
+            
+            
+            <p><strong>Ans.</strong> Here are the tests we do on the web-based application:</p>
+            
+            
+            
+            <ul><li>Usability testing</li><li>Load and stress testing</li><li>Security testing</li><li>Functionality testing</li><li>Configuration testing</li></ul>
+            
+            
+            
+            <h2><strong>Q57. What is volume testing?</strong></h2>
+            
+            
+            
+            <p><strong>Ans.</strong> Also known as flood testing, Volume testing is a type of software testing, which is done to identify whether the system can handle a large amount of data. In Volume testing, the software is subjected to a huge volume of data and the system performance is analyzed by increasing the volume of data in the database. It helps in identifying the impact on response time and system behavior.</p>
+            
+            
+            
+            <h2><strong>Q58. Explain what is a Test Metric in software testing and what information does it consist of?</strong></h2>
+            
+            
+            
+            <p><strong>Ans.</strong> Test Metric is used as the standard of test measurement in software testing. They are the statistics describing the structure or content of testing. It consists of information like:</p>
+            
+            
+            
+            <ul><li>Test run</li><li>Total test</li><li>Test failed</li><li>Test passed</li><li>Tests deferred</li><li>Test passed the first time</li></ul>
+            
+            
+            
+            <h2><strong>Q59. Explain what is Entry and Exit criteria?</strong></h2>
+            
+            
+            
+            <p><strong>Ans.</strong> <strong>Entry Criteria-</strong> It is defined as the process which requires to be run when the testing begins. It involves:</p>
+            
+            
+            
+            <ul><li>Test plans</li><li>Test cases</li><li>Use cases</li><li>Software Requirement Specification (SRS)</li><li>Functional Requirement Specification (FRS)</li></ul>
+            
+            
+            
+            <p><strong>Exit Criteria-</strong> It is used when a product is completely testing and when it is ready to be released. It involves:</p>
+            
+            
+            
+            <ul><li>Metrics</li><li>Defect Analysis Report</li><li>Test Summary Reports</li></ul>
+            
+            
+            
+            <h2><strong>Q60. Mention what two levels are commonly used under Quality Certification?</strong></h2>
+            
+            
+            
+            <p><strong>Ans.</strong>&nbsp; Following are the two levels used under Quality Certification:</p>
+            
+            
+            
+            <ul><li>Optimization</li><li>Repeatable sequences</li></ul>
+            
+            
+            
+            <h2><strong>Q61. What is the possible way to deal with un-reproducible bugs?</strong></h2>
+            
+            
+            
+            <p><strong>Ans.</strong> To deal with un-reproducible bugs, a tester can follow the given steps:</p>
+            
+            
+            
+            <ul><li>Applying test steps that are as close to the bug description as possible.</li><li>Processing the environment of that test.</li><li>Analyzing and calculating the results created by the test execution.</li><li>Keeping the time and resource constraints under examination.</li></ul>
+            
+            
+            
+            <h2><b>Q62. Which are some of the popular crowdsource testing services?</b></h2>
+            
+            
+            
+            <p><b>Ans.</b><span style="font-weight: 400;"> Below is the list:</span></p>
+            
+            
+            
+            <ul><li style="font-weight: 400;"><span style="font-weight: 400;">test IO</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Global App Testing</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Cobalt</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Crowdprint</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Testbirds</span></li></ul>
+            
+            
+            
+            <h2><b>Q63. Are there more defects in the design phase or the coding phase?</b></h2>
+            
+            
+            
+            <p><b>Ans.</b><span style="font-weight: 400;"> The design phase is more error-prone than the coding phase. The most common errors that occur during the design phase include:&nbsp;</span></p>
+            
+            
+            
+            <ul><li style="font-weight: 400;"><span style="font-weight: 400;">the product does not meet the complete requirements of the customer.&nbsp;</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Bad architecture makes the next phase, execution, more prone to defects.&nbsp;</span></li></ul>
+            
+            
+            
+            <p><span style="font-weight: 400;">On average, 60 percent of defects occur during design while 40 percent occur during the coding phase.&nbsp;</span></p>
+            
+            
+          
+            
+            <h2><b>Q64. What is the difference between Retesting and Regression testing?</b></h2>
+            
+            
+            
+            <p><b>Ans.</b><span style="font-weight: 400;"> The differences between Retesting and Regression Testing are:&nbsp;</span></p>
+            
+            
+            
+            <figure class="wp-block-table"><div class="web-tables"><table><tbody><tr><td class="long"><b>Retesting</b></td><td class="long"><b>Regression testing</b></td></tr><tr><td class="long"><span style="font-weight: 400;">Retesting is a type of testing performed to check the test cases that were unsuccessful in the final execution are successfully passed after the defects are repaired.</span></td><td class="long"><span style="font-weight: 400;">Regression testing is a type of software testing executed to check whether a code change has not unfavorably disturbed the current features and functions of an application.</span></td></tr><tr><td class="long"><span style="font-weight: 400;">It is specific and is performed on the bug which is fixed</span></td><td class="long"><span style="font-weight: 400;">It is not always specific to any defect fix it is performed when any bug is fixed.</span></td></tr><tr><td class="long"><span style="font-weight: 400;">Retesting is concerned with executing those test cases that are failed earlier</span></td><td class="long"><span style="font-weight: 400;">It focuses on those executing test cases that were passed in earlier builds.</span></td></tr></tbody></table></div></figure>
+            
+            
+            
+            <h2><b>Q65. What are bug releases and bug leakage?</b></h2>
+            
+            
+            
+            <p><b>Ans.</b> <b>Bug Leakage</b><span style="font-weight: 400;"> occurs when a bug is detected and that should have been detected in the previous versions/builds of the application. It is when a customer or end-user discovers a bug that can be detected by the testing team.</span></p>
+            
+            
+            
+            <p><span style="font-weight: 400;">A </span><b>bug release</b><span style="font-weight: 400;"> is when a particular version of the software is released with a set of known bug(s). In bug release, the build is handed to the testing team knowing that a defect is present in the release. The priority and severity of the bug are low. It is done when the customer wants the application on the time. These bugs are mentioned in the Release Notes handed to the customer for future improvement.</span></p>
+            
+            
+            
+            <h2><b>Q66. Which contents are available in a test plan?</b></h2>
+            
+            
+            
+            <p><b>Ans.</b><span style="font-weight: 400;"> The test plan document is acquired from the Product description, SRS, or Use Case Document. It defines the testing plan and incorporates activities that help deliver quality software. Generally in a test plan, a testing manager should include things like:</span></p>
+            
+            
+            
+            <ul><li style="font-weight: 400;"><span style="font-weight: 400;">Identifiers</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">References</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Introduction</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Test functions</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Pass and fail criteria</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Test deliverables</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Planned risks and risk probabilities</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Supervision criteria</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Detailed schedule</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Approvals</span></li></ul>
+            
+            
+            
+            <h2><b>Q67. Define some of the common software testing approaches.</b></h2>
+            
+            
+            
+            <p><b>Ans. </b><span style="font-weight: 400;">Some of the common testing approaches are:</span></p>
+            
+            
+            
+            <figure class="wp-block-table"><div class="web-tables"><table><tbody><tr><td><b>Common Software Testing Approaches</b></td></tr><tr><td><span style="font-weight: 400;">Black box testing</span></td><td class="long"><span style="font-weight: 400;">For a given input, the output is tested</span></td></tr><tr><td><span style="font-weight: 400;">White-box testing</span></td><td class="long"><span style="font-weight: 400;">Testing of source code is done</span></td></tr><tr><td><span style="font-weight: 400;">Acceptance testing</span></td><td class="long"><span style="font-weight: 400;">Expectations vs reality testing</span></td></tr><tr><td><span style="font-weight: 400;">Automated testing</span></td><td class="long"><span style="font-weight: 400;">The test is done with recurring scripts</span></td></tr><tr><td><span style="font-weight: 400;">Regression testing</span></td><td class="long"><span style="font-weight: 400;">The test verifies the existing working of a system and compares with the way it used to work previously</span></td></tr><tr><td><span style="font-weight: 400;">Functional testing</span></td><td class="long"><span style="font-weight: 400;">Helpful in testing functionalities</span></td></tr><tr><td><span style="font-weight: 400;">Exploratory testing</span></td><td class="long"><span style="font-weight: 400;">The test is done within certain areas only and no specified test cases are done</span></td></tr></tbody></table></div></figure>
+            
+            
+            
+            <h2><b>Q68. Name the steps involved in the process of the bug cycle?</b></h2>
+            
+            
+            
+            <p><b>Ans.</b><span style="font-weight: 400;"> Below is the bug life cycle:</span></p>
+            
+            
+            
+            <ul><li style="font-weight: 400;"><span style="font-weight: 400;">Bug investigation</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Bug assignment</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Bug fixing</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Bug retesting</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Bug closing and reopening</span></li></ul>
+            
+        
+            
+            <h2><b>Q69. What are the three types of defects in Software Testing?</b></h2>
+            
+            
+            
+            <p><b>Ans.</b><span style="font-weight: 400;"> The three types of defects in Software Testing are:&nbsp;</span></p>
+            
+            
+            
+            <ol><li style="font-weight: 400;"><b>Minor Defects</b><span style="font-weight: 400;"> – These defects are usually small and insignificant and don’t affect the function of the item. In this, the product deviates slightly from the customer’s specifications. Typically, minor defects are not even noticed by customers.</span></li><li style="font-weight: 400;"><b>Major Defects</b><span style="font-weight: 400;"> – These are more serious than minor defects. Major defects can adversely affect the function, performance, or appearance of a product. These defects are very noticeable.</span></li><li style="font-weight: 400;"><b>Critical</b> <b>Defects</b><span style="font-weight: 400;"> – It is the most serious of the three defect types. It either makes an item completely unusable or could even harm the user or someone in the vicinity of the product.</span></li></ol>
+            
+            
+            
+            <h2><b>Q70. What is the Rapid Application Development (RAD) model?</b></h2>
+            
+            
+            
+            <p><b>Ans.</b><span style="font-weight: 400;"> RAD is a software development methodology that uses minimal planning in favor of rapid prototyping. In the RAD model, the functional modules are developed in parallel as prototypes and are integrated to make the complete product for faster product delivery. RAD follows the following four main phases:&nbsp;</span></p>
+            
+         
+            
+            <h2><b>Q71. What are the two types of recording methods?</b></h2>
+            
+            
+            
+            <p><b>Ans.</b><span style="font-weight: 400;"> The two types of recording methods are:&nbsp;</span></p>
+            
+            
+            
+            <p><b>Context-sensitive</b><span style="font-weight: 400;"> – It is the default mode of recording that recognizes objects in the application regardless of their location on the screen. The objects are recorded in the application and the operations performed on them.&nbsp;</span></p>
+            
+            
+            
+            <p><b>Analog</b><span style="font-weight: 400;"> – This method is used for recording operations that cannot be recorded at the level of an object.&nbsp;</span></p>
+            
+            
+            
+            <h2><b>Q72. When planning to execute integration testing what guidelines do you consider?</b></h2>
+            
+            
+            
+            <p><b>Ans.</b><span style="font-weight: 400;"> You can frame your answer like this:&nbsp;</span></p>
+            
+            
+            
+            <p><span style="font-weight: 400;">I keep in mind things like:</span></p>
+            
+            
+            
+            <ul><li style="font-weight: 400;"><span style="font-weight: 400;">Formulate an effective test strategy and accordingly prepare the test cases.</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Identify modules that are on high priority as per the application’s architecture design and test these modules first.</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Verify each module’s interface details.</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Keep mock data ready.</span></li></ul>
+            
+            
+            
+            <h2><b>Q73. What do you mean by CAST?</b></h2>
+            
+            
+            
+            <p><b>Ans.</b><span style="font-weight: 400;"> CAST stands for Computer-aided software testing which is an automated process, technique, and tool used by a computer to test software apps and programs. CAST’s performance is equivalent to thousands of users working at a time as the CAST-based tools evaluate the code using the testing tools and built-in software testing solutions.</span></p>
+            
+            
+            
+            <h2><b>Q74. Which groups are involved in test closure activities?</b></h2>
+            
+            
+            
+            <p><b>Ans.</b><span style="font-weight: 400;"> When the testing process ends, test closure activities are performed including tasks like test generation. It involves 4 different groups which are mentioned below:</span></p>
+            
+            
+            
+            <ul><li style="font-weight: 400;"><span style="font-weight: 400;">Check the completion of tests</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Hand over test objects</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Share learning experience</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Archive essential reports</span></li></ul>
+            
+            
+            
+            <h2><b>Q75. Which are the most popular integration testing tools?</b></h2>
+            
+            
+            
+            <p><b>Ans. </b><span style="font-weight: 400;">Below is the list of integration testing tools:</span></p>
+            
+            
+            
+            <ul><li style="font-weight: 400;"><span style="font-weight: 400;">VectorCAST/C++</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Citrus</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">LDRA</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">SITA</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Relational Integration Tester</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Steam</span></li></ul>
+            
+          
+            
+            
+            <h2><b>Q76. Define the steps to writing software testing weekly reports.</b></h2>
+            
+            
+            
+            <p><b>Ans.</b><span style="font-weight: 400;"> There are a few aspects that you must cover in weekly reports:</span></p>
+            
+            
+            
+            <p><b>Talk about the issues you have found in the solution. The below format could be of help:</b></p>
+            
+            
+            
+            <ul><li><span style="font-weight: 400;">Project Name:</span></li><li><span style="font-weight: 400;">Description of Issue:</span></li><li><span style="font-weight: 400;">Possible Solutions:</span></li><li><span style="font-weight: 400;">Resources Required to Resolve(if any):</span></li><li><span style="font-weight: 400;">Resolution Date:</span></li></ul>
+            
+            
+            
+            <p><b>Set Priorities for the coming week. The helpful format can be:</b></p>
+            
+            
+            
+            <ul><li><span style="font-weight: 400;">Project Name:</span></li><li><span style="font-weight: 400;">Completed Work:</span></li><li><span style="font-weight: 400;">Scheduled Tasks:</span></li><li><span style="font-weight: 400;">Completion Date:</span></li><li><span style="font-weight: 400;">Reason for extending (if any):</span></li></ul>
+            
+            
+            
+            <p><b>Status Report:</b></p>
+            
+            
+            
+            <ul><li><span style="font-weight: 400;">Active defects:</span></li><li><span style="font-weight: 400;">Resolved Bugs:</span></li><li><span style="font-weight: 400;">Test Cases:</span></li></ul>
+            
+            
+            
+            <h2><b>Q77. Define Defect Triage?</b></h2>
+            
+            
+            
+            <p><b>Ans.</b><span style="font-weight: 400;"> This is a way to prioritize defects or bugs based on factors like the risk involved, defect severity, and frequency of occurrence. Triage means the degree of urgency and the role of a tester is to prioritize and resolve the bug based on its priority.</span></p>
+            
+            
+            
+            <h2><b>Q78. What is the importance of defect triage in software testing?</b></h2>
+            
+            
+            
+            <p><b>Ans.</b><span style="font-weight: 400;"> It is essential for bringing in the agile project management approach and as per the project schedule, if a tester has defined priority, the project delivery date will not get affected.</span></p>
+            
+            
+            
+            <h2><b>Q79. Which are some tools that you use for automation testing?</b></h2>
+            
+            
+            
+            <p><b>Ans.</b><span style="font-weight: 400;"> Below is the list of best automation tools that are helpful for every software tester:</span></p>
+            
+            
+            
+            <ul><li style="font-weight: 400;"><span style="font-weight: 400;">mabl</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Ranorex</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">TestCraft</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Squish</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">LeapWork</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">TestArchitect</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Percy</span></li></ul>
+            
+            
+            
+            <h2><b>Q80. What is the Waterfall Model in the software development lifecycle (SDLC)?</b></h2>
+            
+            
+            
+            <p><b>Ans.</b><span style="font-weight: 400;"> Waterfall Model is a sequential model that divides software development into pre-defined phases. It is the initial approach that works on the concept of finishing each phase of testing before commencing the next phase. This process avoids overlapping between any phases as the output of the current phase will be the input of the next phase.</span></p>
+            
+            
+            
+         
+            
+            <p><span style="font-weight: 400;">&nbsp;</span></p>
+            
+            
+            
+            <h2><b>Q81. What do you mean by V-Model in software testing?</b></h2>
+            
+            
+            
+            <p><b>Ans.</b><span style="font-weight: 400;"> This is an add-on/extension version of the waterfall model. It has an additional feature where there is a specific corresponding testing phase for SDLC. It is an SDLC model where the execution of processes happens sequentially in a V-shape.</span></p>
+            
+            
+            
+            <h2><b>Q82. In software testing, what do you mean by embedded testing?</b></h2>
+            
+            
+            
+            <p><b>Ans.</b><span style="font-weight: 400;"> It is a system in which both the software and hardware devices joined to ease the testing of embedded software. The following activities are performed in embedded testing:</span></p>
+            
+            
+            
+            <ul><li style="font-weight: 400;"><span style="font-weight: 400;">Some inputs are provided</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">A division of software is executed</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Software state is observed to check the quality</span></li></ul>
+            
+            
+            
+            <h2><b>Q83. What are the different types of embedded software testing?</b></h2>
+            
+            
+            
+            <p><b>Ans.</b><span style="font-weight: 400;"> Below are the types:</span></p>
+            
+            
+            
+            <ul><li style="font-weight: 400;"><span style="font-weight: 400;">Software unit testing</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">System unit testing</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Software Integration testing</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">System integration testing</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">System validation testing</span></li></ul>
+            
+            
+            
+            <h2><b>Q84. State difference between Verification and Validation Function?</b></h2>
+            
+            
+            
+            <p><b>Ans.</b><span style="font-weight: 400;"> Both verification and validation functions are different and below are some of the major differences in verification and validation:</span></p>
+            
+            
+            
+            <figure class="wp-block-table"><div class="web-tables"><table><tbody><tr><td class="long"><b>Verification Function</b></td><td class="long"><b>Validation Function</b></td></tr><tr><td class="long"><span style="font-weight: 400;">It checks programs, documents, and designs</span></td><td class="long"><span style="font-weight: 400;">Tests and validates software</span></td></tr><tr><td class="long"><span style="font-weight: 400;">It uses methods like reviews, desk-checking, walkthroughs, and inspection</span></td><td class="long"><span style="font-weight: 400;">It is used for non-functional testing, black box testing, white box testing</span></td></tr></tbody></table></div></figure>
+            
+            
+            
+            <h2><b>Q85. How will you involve a novice tester in your project workflow?</b></h2>
+            
+            
+            
+            <p><b>Ans.</b><span style="font-weight: 400;"> You can frame your own answer for this software testing interview question using the following:&nbsp;</span></p>
+            
+            
+            
+            <p><span style="font-weight: 400;">If someone is passionate about testing and holds the right knowledge and skills testing, it is easy to involve such a candidate in the existing project workflow. I will start with the below steps:</span></p>
+            
+            
+            
+            <ul><li style="font-weight: 400;"><span style="font-weight: 400;">Brief him about the project</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Involve in testing activities</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Communicate the progress</span></li></ul>
+            
+            
+            
+            <h2><b>Q86. How do you enhance the work efficiency of your test team?</b></h2>
+            
+            
+            
+            <p><b>Ans.</b><span style="font-weight: 400;"> Increasing the efficiency of the test team requires improvement on a few things like:</span></p>
+            
+            
+            
+            <ul><li style="font-weight: 400;"><span style="font-weight: 400;">Good management</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Testing strategy</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Research about the product and project</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Deep understanding of risk and how to eliminate it</span></li></ul>
+            
+            
+          
+            
+            <h2><b>Q87. What do you mean by code coverage?</b></h2>
+            
+            
+            
+            <p><b>Ans.</b><span style="font-weight: 400;"> Code coverage is a form of white box testing which is used to discover the areas of the program that are not implemented by set cases. The main task of code coverage is to find detailed information about the running program.</span></p>
+            
+            
+            
+            <h2><b>Q88. Which methods are used in code coverage?</b></h2>
+            
+            
+            
+            <p><b>Ans.</b><span style="font-weight: 400;"> Some of the methods used in code coverage are:</span></p>
+            
+            
+            
+            <ul><li style="font-weight: 400;"><span style="font-weight: 400;">Statement coverage</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Decision coverage</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Branch coverage</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Toggle coverage</span></li></ul>
+            
+            
+            
+            <h2><b>Q89. What is covered under statement coverage?</b></h2>
+            
+            
+            
+            <p><b>Ans.</b><span style="font-weight: 400;"> Below things are covered under statement coverage:</span></p>
+            
+            
+            
+            <ul><li style="font-weight: 400;"><span style="font-weight: 400;">Unused Statements</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Dead Code</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Unused Branches</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Missing Statements</span></li></ul>
+            
+            
+            
+            <h2><b>Q90. What is the formula applied for statement coverage?</b></h2>
+            
+            
+            
+            <p><b>Ans.</b><span style="font-weight: 400;"> The below formula is used for statement coverage:</span></p>
+            
+            
+            
+            <figure class="wp-block-image"><img loading="lazy" width="500" height="84" src="https://www.naukri.com/learning/articles/wp-content/uploads/sites/11/2020/08/Statement-Coverage.png" alt="Statement Coverage" class="wp-image-22225" srcset="https://www.naukri.com/learning/articles/wp-content/uploads/sites/11/2020/08/Statement-Coverage.png 500w, https://www.naukri.com/learning/articles/wp-content/uploads/sites/11/2020/08/Statement-Coverage-300x50.png 300w, https://www.naukri.com/learning/articles/wp-content/uploads/sites/11/2020/08/Statement-Coverage-440x74.png 440w" sizes="(max-width: 500px) 100vw, 500px"></figure>
+            
+            
+            
+            <h2><b>Q91. What is the formula applied for decision coverage?</b></h2>
+            
+            
+            
+            <p><b>Ans.</b><span style="font-weight: 400;"> Formula:</span></p>
+            
+            
+            
+            <figure class="wp-block-image"><img loading="lazy" width="500" height="94" src="https://www.naukri.com/learning/articles/wp-content/uploads/sites/11/2020/08/Decision-Coverage.png" alt="Decision Coverage" class="wp-image-22229" srcset="https://www.naukri.com/learning/articles/wp-content/uploads/sites/11/2020/08/Decision-Coverage.png 500w, https://www.naukri.com/learning/articles/wp-content/uploads/sites/11/2020/08/Decision-Coverage-300x56.png 300w, https://www.naukri.com/learning/articles/wp-content/uploads/sites/11/2020/08/Decision-Coverage-440x83.png 440w" sizes="(max-width: 500px) 100vw, 500px"></figure>
+            
+            
+            
+            <h2><b>Q92. What is the formula applied for branch coverage?</b></h2>
+            
+            
+            
+            <p><b>Ans.</b><span style="font-weight: 400;"> Formula:</span></p>
+            
+            
+            
+            <figure class="wp-block-image"><img loading="lazy" width="500" height="99" src="https://www.naukri.com/learning/articles/wp-content/uploads/sites/11/2020/08/Branch-Coverage.png" alt="Branch Coverage" class="wp-image-22233" srcset="https://www.naukri.com/learning/articles/wp-content/uploads/sites/11/2020/08/Branch-Coverage.png 500w, https://www.naukri.com/learning/articles/wp-content/uploads/sites/11/2020/08/Branch-Coverage-300x59.png 300w, https://www.naukri.com/learning/articles/wp-content/uploads/sites/11/2020/08/Branch-Coverage-440x87.png 440w" sizes="(max-width: 500px) 100vw, 500px"></figure>
+            
+            
+            
+            <h2><b>Q93. What is the formula for condition coverage?</b></h2>
+            
+            
+            
+            <p><b>Ans.</b></p>
+            
+            
+            
+            <figure class="wp-block-image"><img loading="lazy" width="554" height="103" src="https://www.naukri.com/learning/articles/wp-content/uploads/sites/11/2020/08/Condition-Coverage.png" alt="Condition Coverage" class="wp-image-22235" srcset="https://www.naukri.com/learning/articles/wp-content/uploads/sites/11/2020/08/Condition-Coverage.png 554w, https://www.naukri.com/learning/articles/wp-content/uploads/sites/11/2020/08/Condition-Coverage-300x56.png 300w, https://www.naukri.com/learning/articles/wp-content/uploads/sites/11/2020/08/Condition-Coverage-440x82.png 440w" sizes="(max-width: 554px) 100vw, 554px"></figure>
+            
+            
+            
+            <h2><b>Q94. How is Code coverage different from Functional coverage?</b></h2>
+            
+            
+            
+            <p><b>Ans.</b><span style="font-weight: 400;"> The key difference between code coverage and functional coverage are:</span></p>
+            
+            
+            
+            <figure class="wp-block-table"><div class="web-tables"><table><tbody><tr><td class="long"><b>Code Coverage</b></td><td><b>Functional Coverage</b></td></tr><tr><td class="long"><span style="font-weight: 400;">It validates the functionality of the source code</span></td><td><span style="font-weight: 400;">It tests the functionality of design</span></td></tr><tr><td class="long"><span style="font-weight: 400;">Works on different design specifications</span></td><td><span style="font-weight: 400;">It works on a single design specification</span></td></tr></tbody></table></div></figure>
+            
+            
+            
+            <h2><b>Q95. What do you mean by software build?</b></h2>
+            
+            
+            
+            <p><b>Ans.</b><span style="font-weight: 400;"> When software is designed, there are multiple source code files, and creating an executable program is a difficult task. This is where software build works well. A software build helps in generating executable programs in software engineering.</span></p>
+            
+            
+            
+            <h2><b>Q96. How is sanity testing different from smoke testing?</b></h2>
+            
+            
+            
+            <p><b>Ans.</b><span style="font-weight: 400;"> Below is the difference between sanity and smoke testing:</span></p>
+            
+            
+            
+            <figure class="wp-block-table"><div class="web-tables"><table><tbody><tr><td class="long"><b>Smoke Testing</b></td><td><b>Sanity Testing</b></td></tr><tr><td class="long"><span style="font-weight: 400;">It checks if the core functionalities of the software are functioning fine</span></td><td><span style="font-weight: 400;">Checks if all bugs are resolved and fixed</span></td></tr><tr><td class="long"><span style="font-weight: 400;">It verifies the stability of the system</span></td><td><span style="font-weight: 400;">Verifies the rationality of the system</span></td></tr><tr><td class="long"><span style="font-weight: 400;">Documented</span></td><td><span style="font-weight: 400;">Not documented</span></td></tr><tr><td class="long"><span style="font-weight: 400;">Acceptance testing</span></td><td><span style="font-weight: 400;">Regression testing</span></td></tr><tr><td class="long"><span style="font-weight: 400;">Complete focus on end to end system</span></td><td><span style="font-weight: 400;">Focused on a specific part</span></td></tr><tr><td class="long"><span style="font-weight: 400;">Done by both developers and testers</span></td><td><span style="font-weight: 400;">Done by testers</span></td></tr></tbody></table></div></figure>
+            
+            
+            
+            <h2><b>Q97. What is not suitable for automation testing?</b></h2>
+            
+            
+            
+            <p><b>Ans.</b><span style="font-weight: 400;"> In the below cases automation testing will not be of much help:</span></p>
+            
+            
+            
+            <ul><li style="font-weight: 400;"><span style="font-weight: 400;">When test changes are regular</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">When test changes are conducted just once</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">When planning for a random test</span></li></ul>
+            
+            
+            
+            <h2><b>Q98. What are the different kinds of frameworks in automation testing?</b></h2>
+            
+            
+            
+            <p><b>Ans.</b><span style="font-weight: 400;"> Below is the list:</span></p>
+            
+            
+            
+            <ul><li style="font-weight: 400;"><span style="font-weight: 400;">Keyword-driven</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Data-driven</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Hybrid automation</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Modular automation</span></li></ul>
+            
+            
+            
+            <h2><b>Q99. Define data-driven testing.</b></h2>
+            
+            
+            
+            <p><b>Ans.</b><span style="font-weight: 400;"> In such a testing case, the inputs are reported from files like Excel, CSV, ODBC which are used for performing automated testing.</span></p>
+            
+            
+            
+            <h2><b>Q100. Which software performance testing tools you use?</b></h2>
+            
+            
+            
+            <p><b>Ans.</b><span style="font-weight: 400;"> To answer this question, you can tell the names of the tools that you use. Below is the list of some of the top software performance tools:</span></p>
+            
+            
+            
+            <ul><li style="font-weight: 400;"><span style="font-weight: 400;">WebLoad</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Apache Jmeter</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">HP Load Runner</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Load Complete</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">WAPT (web application performance tool)</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Open STA (System Testing Architecture)</span></li></ul>
+            
+            
+            
+            <h2><b>Q101. What do you mean by protocol testing?</b></h2>
+            
+            
+            
+            <p><b>Ans.</b><span style="font-weight: 400;"> It is a means to check communication protocols in various domains like:</span></p>
+            
+            
+            
+            <ul><li style="font-weight: 400;"><span style="font-weight: 400;">Switching</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Wireless</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">VoIP</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Routing</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Switching</span></li></ul>
+            
+            
+            
+            <h2><b>Q102. What do you mean by L2 and L3?</b></h2>
+            
+            
+            
+            <p><b>Ans.</b><span style="font-weight: 400;"> OSI or the open system interconnection model has 7 layers, out of which L2 and L3 i.e. Layer 2 and Layer 3 play a significant role.</span></p>
+            
+            
+            
+            <p><span style="font-weight: 400;">Layer 2: It is referred to as ‘Data Link’ (example – Ethernet and token ring)</span></p>
+            
+            
+            
+            <p><span style="font-weight: 400;">Layer 3: It is referred to as ‘Network’ (example – IP address)</span></p>
+            
+            
+            
+            <h2><b>Q103. Name some tools for protocol testing.</b></h2>
+            
+            
+            
+            <p><b>Ans.</b><span style="font-weight: 400;"> Below is the list of protocol testing tools:</span></p>
+            
+            
+            
+            <ul><li style="font-weight: 400;"><span style="font-weight: 400;">TTCN</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Wireshark</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Python</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Netperf</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Scapy</span></li></ul>
+            
+            
+            
+            <h2><b>Q104. Is it possible to skip a method in TestNG?</b></h2>
+            
+            
+            
+            <p><b>Ans.</b><span style="font-weight: 400;"> If the enabled parameter in test annotation is selected as false, we can skip a method in TestNG.</span></p>
+            
+            
+            
+            <p><span style="font-weight: 400;">Code:</span></p>
+            
+            
+            
+            <p><span style="font-weight: 400;">@Test(enabled = false)</span></p>
+            
+            
+            
+            <h2><b>Q105. Define boundary value analysis.</b></h2>
+            
+            
+            
+            <p><b>Ans.</b><span style="font-weight: 400;"> Boundary value analysis is a test case design strategy in Black-Box Testing. It tests valid and invalid partitions’ boundary values.&nbsp;</span></p>
+            
+            
+            
+            <h2><b>Q106. What do you mean by defect age?</b></h2>
+            
+            
+            
+            <p><b>Ans.</b><span style="font-weight: 400;"> It is the time between defect detection and defect closure. It can be measured in terms of Time or Phases. The defect age should be as low as possible at least for the HotFix issues.&nbsp;</span></p>
+            
+            
+            
+            <p><b>Defect Age Formula:&nbsp;</b></p>
+            
+            
+            
+            <p><span style="font-weight: 400;">Defect Age in Time = Defect Fix Date (OR Current Date) – Defect Detection Date</span></p>
+            
+            
+            
+            <p><span style="font-weight: 400;">Defect Age in Phase = Defect Detection Phase – Defect Injection Phase</span></p>
+            
+            
+            
+            <h2><b>Q107. What do you mean by the pesticide paradox?</b></h2>
+            
+            
+            
+            <p><b>Ans.</b><span style="font-weight: 400;"> When a tester uses the same test cases, repeatedly it is possible that after some interval, the test case will not be able to catch new bugs. Thus in the pesticide paradox, the tester frequently updates the test case to maintain efficiency.</span></p>
+            
+            
+            
+            <h2><b>Q108. What do you mean by a test stub?</b></h2>
+            
+            
+            
+            <p><b>Ans.</b><span style="font-weight: 400;"> The test stub is integrated with an application as a dummy program. The objective is to complete the functionality of the application. Unlike the test driver, a test stub uses a top-down approach.</span></p>
+            
+            
+          
+            
+            <h2><b>Q109. Apart from white, black, and grey-box testing, name some of the different color box testings.</b></h2>
+            
+            
+            
+            <p><b>Ans.</b><span style="font-weight: 400;"> Color box or rainbow testing types are:</span></p>
+            
+            
+            
+            <ul><li style="font-weight: 400;"><span style="font-weight: 400;">Glass box testing</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Red box scripts</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Yellow box testing</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Green box checking</span></li></ul>
+            
+            
+            
+            <h2><b>Q110. Mention HTTP response codes that are returned by the server.</b></h2>
+            
+            
+            
+            <p><b>Ans.</b><span style="font-weight: 400;"> HTTP response codes are mentioned as below:</span></p>
+            
+            
+            
+            <ul><li style="font-weight: 400;"><span style="font-weight: 400;">2xx – It means ‘Success’</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">3xx-&nbsp; It&nbsp; means ‘Redirection’</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">4xx-&nbsp; It&nbsp; means ‘Application error’</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">5xx-&nbsp; It&nbsp; means ‘Server error’</span></li></ul>
+            
+            
+            
+            <h2><b>Q111. What are the different types of environments available on the Web?</b></h2>
+            
+            
+            
+            <p><b>Ans.</b><span style="font-weight: 400;"> The different types of environment available on the Web are:</span></p>
+            
+            
+            
+            <ul><li style="font-weight: 400;"><span style="font-weight: 400;">Internet (Wide Area Network)</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Intranet (Local Network)</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Extranet(Private network over the internet)</span></li></ul>
+            
+            
+          
+            
+            
+            <h2><strong>Q112. What makes Automation testing in agile methodology useful?</strong></h2>
+            
+            
+            
+            <p><strong>Ans. </strong>Automation testing is an integral part if the agile testing due to the following reasons:</p>
+            
+            
+            
+            <ul><li><strong>Multiple testing:</strong> Agile requires continous and early testing on both newly and already existing iterations. This is important since it ensures that the newly added functionalities do not disrupt the existing functionalities.</li><li><strong>Visibility in code quality:</strong> Using the suite of test scripts, testers can take a quick look into code quality. This allows them with more time to fix things when the code does not act accordingly.</li><li><strong>Exhaustive testing:</strong> Automation testing can be repeated any number of times that allows exhaustive and detailed examinatoom of code. This ensures code quality while working within limited testing window.</li></ul>
+            
+            
+            
+            <h2 id="advanced"><b>Advanced Level Software Testing Interview Questions</b></h2>
+            
+            
+            
+            <h2><b>Q113. Which type of functional testing investigates the functions related to the detection of threats, such as viruses from malicious outsiders?</b></h2>
+            
+            
+            
+            <p><b>Ans.</b><span style="font-weight: 400;"> Security testing investigates the functions related to the detection of threats, such as viruses from malicious outsiders.&nbsp;</span></p>
+            
+            
+            
+            <p><span style="font-weight: 400;">It identifies the vulnerabilities of the system and determines that its data and resources are protected from possible intruders. It uncovers the flaws in the security mechanisms of an information system that protect data and helps in maintaining functionality.</span></p>
+            
+            
+            
+            <h2><b>Q114. What are the types of maintenance in software testing?</b></h2>
+            
+            
+            
+            <p><b>Ans.</b><span style="font-weight: 400;"> There are four types of maintenance in software testing:</span></p>
+            
+            
+            
+            <ol><li style="font-weight: 400;"><b>Corrective maintenance</b><span style="font-weight: 400;"> – It focuses on the errors and faults within software applications that could impact various parts of the software, like the design, logic, and code. It is used to rectify some bugs observed while the system is in use, or even to enhance the system performance.</span></li><li style="font-weight: 400;"><b>Adaptive maintenance</b><span style="font-weight: 400;"> – It is used when the environment of the software changes, i.e. if the customer wants to run it on a new operating system or change the hardware or software.&nbsp;</span></li><li style="font-weight: 400;"><b>Perfective maintenance</b><span style="font-weight: 400;"> – It emphasizes the evolution of requirements and features that exist in the system.</span></li><li style="font-weight: 400;"><b>Preventive maintenance</b><span style="font-weight: 400;"> – It includes modifications and updations to prevent future problems. This helps to make changes to the software so that it can work for a longer period.</span></li></ol>
+            
+            
+            
+            <h2><b>Q115. Define Agile Testing. What are its advantages?</b></h2>
+            
+            
+            
+            <p><b>Ans.</b><span style="font-weight: 400;"> Agile testing is a software testing practice that follows the principles of agile software development. Unlike the Waterfall method, Agile Testing can begin at the start of the project with continuous integration between development and testing. It is an iterative development methodology. There are several advantages of Agile Testing:</span></p>
+            
+            
+            
+            <ol><li style="font-weight: 400;"><span style="font-weight: 400;">It Saves time and money</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Requires documentation</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Regular feedback from the end-user</span></li></ol>
+            
+            
+            
+            <p><span style="font-weight: 400;">The following image describes the Agile Development Process (Behavior Driven Development):</span></p>
+            
+            
+            
+            <figure class="wp-block-image"><img loading="lazy" width="512" height="323" src="https://www.naukri.com/learning/articles/wp-content/uploads/sites/11/2020/08/Agile-Testing.png" alt="Agile Testing" class="wp-image-22237" srcset="https://www.naukri.com/learning/articles/wp-content/uploads/sites/11/2020/08/Agile-Testing.png 512w, https://www.naukri.com/learning/articles/wp-content/uploads/sites/11/2020/08/Agile-Testing-300x189.png 300w, https://www.naukri.com/learning/articles/wp-content/uploads/sites/11/2020/08/Agile-Testing-440x278.png 440w" sizes="(max-width: 512px) 100vw, 512px"></figure>
+            
+            
+            
+            <h2><b>Q116. What is Cyclomatic Complexity?</b></h2>
+            
+            
+            
+            <p><b>Ans.</b><span style="font-weight: 400;"> Cyclomatic complexity is used to measure the complexity of the software using the control flow graph of the software. The following are the steps to calculate cyclomatic complexity and test cases design are:&nbsp;</span></p>
+            
+            
+            
+            <ul><li style="font-weight: 400;"><span style="font-weight: 400;">Construct graph with nodes and edges from code</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Identify independent paths</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Cyclomatic complexity calculation</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Design of test cases</span></li></ul>
+            
+            
+            
+            <h2><b>Q117. What are the different approaches and strategies used in Integration Testing?</b></h2>
+            
+            
+            
+            <p><b>Ans.</b><span style="font-weight: 400;"> Below are the two approaches used in integration testing:</span></p>
+            
+            
+            
+            <ul><li><b>Big Bang Approach</b></li></ul>
+            
+            
+            
+            <p><span style="font-weight: 400;">In the big bang integration testing approach, separate components are integrated together and tested at once. This type of testing is convenient when the systems are small and manageable but in this approach, fault localization is a challenging task.</span></p>
+            
+            
+            
+            <ul><li><b>Incremental Approach</b></li></ul>
+            
+            
+            
+            <p><span style="font-weight: 400;">This is an advanced approach where two or more modules are joined by considering a logical relationship between them. Once a set of the module is tested, more modules are added in the loop until all the modules are assembled and tested. This type of testing is conducted via two approaches – bottom-up and top-down testing.</span></p>
+            
+            
+            
+            <h2><b>Q118. What is the difference between functional testing and non-functional testing?</b></h2>
+            
+            
+            
+            <p><b>Ans.</b><span style="font-weight: 400;"> Below are some major differences between both:</span></p>
+            
+            
+            
+            <figure class="wp-block-table"><div class="web-tables"><table><tbody><tr><td class="long"><b>Functional testing</b></td><td class="long"><b>Non-functional testing</b></td></tr><tr><td class="long"><span style="font-weight: 400;">It tests the overall functionality and behavior of a software</span></td><td class="long"><span style="font-weight: 400;">It checks the software’s quality which is to be tested.</span></td></tr><tr><td class="long"><span style="font-weight: 400;">This type of testing is conducted before the non-functional testing</span></td><td class="long"><span style="font-weight: 400;">It is only performed after the functional testing is finished</span></td></tr><tr><td class="long"><span style="font-weight: 400;">It is used to check software as per the client’s requirement</span></td><td class="long"><span style="font-weight: 400;">Checks the software as per the client’s expectations</span></td></tr><tr><td class="long"><span style="font-weight: 400;">Behavior-oriented</span></td><td class="long"><span style="font-weight: 400;">Performance-oriented</span></td></tr><tr><td class="long"><span style="font-weight: 400;">Manual ways are used for testing</span></td><td class="long"><span style="font-weight: 400;">It is difficult to conduct via manual testing hence requires automation tools</span></td></tr><tr><td class="long"><span style="font-weight: 400;">Software is tested in the real environment</span></td><td class="long"><span style="font-weight: 400;">Software is tested based on factors like time, accuracy, durability, stability, etc.</span></td></tr></tbody></table></div></figure>
+            
+            
+            
+            <h2><b>Q119. How is unit testing different from integration and functional testing?</b></h2>
+            
+            
+            
+            <p><b>Ans.</b><span style="font-weight: 400;"> The below table gives a clear difference between all three:</span></p>
+            
+            
+            
+            <figure class="wp-block-table"><div class="web-tables"><table><tbody><tr><td><b>Basis</b></td><td class="long"><b>Unit Testing</b></td><td class="long"><b>Integration Testing</b></td><td class="long"><b>Functional Testing</b></td></tr><tr><td><b>Purpose</b></td><td class="long"><span style="font-weight: 400;">It individually tests every smallest unit and module</span></td><td class="long"><span style="font-weight: 400;">Tests a combination of two or more units or modules</span></td><td class="long"><span style="font-weight: 400;">It is used to test the behavior of software based on the client’s requirements</span></td></tr><tr><td><b>Complexity</b></td><td class="long"><span style="font-weight: 400;">Not complex</span></td><td class="long"><span style="font-weight: 400;">Slightly complex</span></td><td class="long"><span style="font-weight: 400;">Complex</span></td></tr><tr><td><b>Technique</b></td><td class="long"><span style="font-weight: 400;">White-box testing</span></td><td class="long"><span style="font-weight: 400;">White box and black box Testing</span></td><td class="long"><span style="font-weight: 400;">Black-box Testing</span></td></tr><tr><td><b>Test</b></td><td class="long"><span style="font-weight: 400;">It highlights frequently occurring issues in the unit</span></td><td class="long"><span style="font-weight: 400;">Highlights issues occurring during module integration</span></td><td class="long"><span style="font-weight: 400;">Finds issues that affect the functionality of the software</span></td></tr></tbody></table></div></figure>
+            
+            
+            
+            <h2><b>Q120. State standalone application vs client-server application vs web application.</b></h2>
+            
+            
+            
+            <p><b>Ans.</b></p>
+            
+            
+            
+            <figure class="wp-block-table"><div class="web-tables"><table><tbody><tr><td class="long"><b>Standalone Application</b></td><td class="long"><b>Client-server Application</b></td><td class="long"><b>Web Application</b></td></tr><tr><td class="long"><span style="font-weight: 400;">One-tier architecture</span></td><td class="long"><span style="font-weight: 400;">Two-tier architecture</span></td><td class="long"><span style="font-weight: 400;">Three-tier architecture</span></td></tr><tr><td class="long"><span style="font-weight: 400;">The system layer consists of presentation, business, and database</span></td><td class="long"><span style="font-weight: 400;">Client system layer consists of presentation and business</span></td><td class="long"><span style="font-weight: 400;">The presentation layer is in the client system, business in the application server, database layer in a database server</span></td></tr><tr><td class="long"><span style="font-weight: 400;">Works in one system</span></td><td class="long"><span style="font-weight: 400;">Works in intranet</span></td><td class="long"><span style="font-weight: 400;">It works in intranet and internet</span></td></tr></tbody></table></div></figure>
+            
+            
+            
+            <h2><b>Q121. Mention a few subclasses of HTTP response objects?</b></h2>
+            
+            
+            
+            <p><b>Ans.</b><span style="font-weight: 400;"> Flush, tell, Write,&nbsp; etc are few HTTP response objects.</span></p>
+            
+            
+            
+            <p><span style="font-weight: 400;">The sub-classes of HTTP response are:</span></p>
+            
+            
+            
+            <ul><li style="font-weight: 400;"><span style="font-weight: 400;">HttpResponseRedirect</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">HttpResponseBadRequest</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">HttpResponseNotfound</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">HttpResponsePermanentRedirect</span></li></ul>
+            
+            
+            
+            <h2><b>Q122. Explain DFD (Data Flow Diagram)?</b></h2>
+            
+            
+            
+            <p><b>Ans.</b><span style="font-weight: 400;"> When data flows through a data system is graphically depicted then it is known as Data Flow Diagram. It is a traditional visual representation of the information that flows within a system. A DFD shows how data enters and leaves the system, what changes the information, and where data is stored. It helps us to visualize the major steps and data involved in software-system processes.</span></p>
+            
+            
+            
+            <p><span style="font-weight: 400;">There are 3 Levels of DFD:&nbsp;</span></p>
+            
+            
+            
+            <ul><li style="font-weight: 400;"><span style="font-weight: 400;">0-level DFD</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">1-level DFD:</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">2-level DFD:</span></li></ul>
+            
+            
+            
+            <h2><b>Q123. What do you mean by the Workbench concept in software testing methodology?</b></h2>
+            
+            
+            
+            <p><b>Ans.</b><span style="font-weight: 400;"> Workbench methods aim to examine and verify the structure of the testing performance. It is often referred to as phases, steps, and tasks as it is a popular way of documenting the below-mentioned activities:</span></p>
+            
+            
+            
+            <ul><li style="font-weight: 400;"><span style="font-weight: 400;">Input</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Execute</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Check</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Production Output</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Rework</span></li></ul>
+            
+            
+            
+            <figure class="wp-block-image"><img loading="lazy" width="671" height="291" src="https://www.naukri.com/learning/articles/wp-content/uploads/sites/11/2020/08/WorkBench.png" alt="WorkBench" class="wp-image-22239" srcset="https://www.naukri.com/learning/articles/wp-content/uploads/sites/11/2020/08/WorkBench.png 671w, https://www.naukri.com/learning/articles/wp-content/uploads/sites/11/2020/08/WorkBench-300x130.png 300w, https://www.naukri.com/learning/articles/wp-content/uploads/sites/11/2020/08/WorkBench-440x191.png 440w" sizes="(max-width: 671px) 100vw, 671px"></figure>
+            
+            
+            
+            <h2><b>Q124. What are the two parameters that determine the quality of testing?</b></h2>
+            
+            
+            
+            <p><b>Ans.</b><span style="font-weight: 400;"> You can identify the quality of testing by using:</span></p>
+            
+            
+            
+            <ul><li style="font-weight: 400;"><span style="font-weight: 400;">Defect reject ratio: (No. of defects rejected/ total no. of defects raised) X 100</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Defect leakage ratio: (No. of defect missed/total defects of software) X 100</span></li></ul>
+            
+            
+            
+            <h2><strong>Q125. </strong><b>What are the different Workbench Phases?</b></h2>
+            
+            
+            
+            <p><b>Ans.</b><span style="font-weight: 400;"> Below is the list of different Workbench phases:</span></p>
+            
+            
+            
+            <ul><li style="font-weight: 400;"><span style="font-weight: 400;">Requirement phase</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Execution phase</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Testing phase</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Distribution phase</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Maintenance phase</span></li><li style="font-weight: 400;"><span style="font-weight: 400;">Design phase</span></li></ul>
+            
+            
+            
+            <figure class="wp-block-image"><img loading="lazy" width="773" height="409" src="https://www.naukri.com/learning/articles/wp-content/uploads/sites/11/2020/08/Workbench-Phases.png" alt="Workbench Phases" class="wp-image-22241" srcset="https://www.naukri.com/learning/articles/wp-content/uploads/sites/11/2020/08/Workbench-Phases.png 773w, https://www.naukri.com/learning/articles/wp-content/uploads/sites/11/2020/08/Workbench-Phases-300x159.png 300w, https://www.naukri.com/learning/articles/wp-content/uploads/sites/11/2020/08/Workbench-Phases-768x406.png 768w, https://www.naukri.com/learning/articles/wp-content/uploads/sites/11/2020/08/Workbench-Phases-440x233.png 440w" sizes="(max-width: 773px) 100vw, 773px"></figure>
+            
+            
+            
+            <h2><b>Q126. What is the procedure to launch the browser using WebDriver?</b></h2>
+            
+            
+            
+            <p><b>Ans.</b><span style="font-weight: 400;"> Syntax:</span></p>
+            
+            
+            
+            <p><span style="font-weight: 400;">WebDriver driver = new FirefoxDriver();</span></p>
+            
+            
+            
+            <p><span style="font-weight: 400;">WebDriver driver = new ChromeDriver();</span></p>
+            
+            
+            
+            <p><span style="font-weight: 400;">WebDriver driver = new InternetExplorerDriver();</span></p>
+            
+            
+            
+            <h2><b>Q127. Define Defect Cascading.</b></h2>
+            
+            
+            
+            <p><b>Ans.</b><span style="font-weight: 400;"> If one defect is caused due to the occurrence of another defect (probably an unattained defect), it is termed as defect cascading. It happens when a defect is present at any stage but is not identified. This defect moves to other phases without getting noticed and invokes other defects. This increases the number of defects.</span></p>
+            
+            
+            
+            <p><b>Example:&nbsp;</b></p>
+            
+            
+            
+            <p><span style="font-weight: 400;">Let us assume that there is an app to calculate the employee’s monthly salary. The module required for calculating salaries has an unidentified defect. As result, it miscalculates the salary.&nbsp;</span></p>
+            
+            
+            
+            <p><span style="font-weight: 400;">This prompts the database to convey wrong salary numbers that further reflects in the annual salary calculations, tax calculations, and balance sheet.</span></p>
+            
+            
+          
+
+
+        </div>	
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
