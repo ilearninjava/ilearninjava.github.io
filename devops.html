@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Java Interview Q&A</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Sailor - v4.9.1
+  * Template URL: https://bootstrapmade.com/sailor-free-bootstrap-theme/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center">
+      <h1 class="logo me-auto"><a href="index.html">Java Interview Q&A</a></h1>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+
+          <li class="dropdown"><a href="framework.html"><span>Framework</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="spring.html">Spring</a></li>
+              <li><a href="hibernate.html">Hibernate</a></li>
+              <li><a href="springboot.html">SpringBoot</a></li>
+              <li><a href="jsf.html">JSF</a></li>
+              <li><a href="struts.html">Struts</a></li>
+              <li class="dropdown"><a href="#"><span>Entity Framework</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="jpa.html">JPA</a></li>
+                  <li><a href="hibernate.html">Hibernate</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          
+          <li class="dropdown"><a href="database.html"><span>Database</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="sql.html">SQL</a></li>
+              <li><a href="plsql.html">PL-SQL</a></li>
+              <li class="dropdown"><a href="nosql.html"><span>NoSQL</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">Apache Cassandra</a></li>
+                  <li><a href="#">MongoDB</a></li>
+                  <li><a href="#">Redis</a></li>
+                  <li><a href="#">ArangoDB</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="cloud.html"><span>Cloud</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="aws.html">AWS</a></li>
+              <li><a href="gcp.html">GCP</a></li>
+              <li><a href="azure.html">Azure</a></li>
+              <li><a href="ibm-cloud.html">IBM Cloud</a></li>
+              <li><a href="docker.html">Docker</a></li>
+              <li><a href="kubernetes.html">Kubernetes</a></li>
+              <li><a href="devops.html">DevOps</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="ui.html"><span>UI</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="angular.html">Angular</a></li>
+              <li><a href="react.html">ReactJS</a></li>
+              <li><a href="javascript.html">Javascript</a></li>
+              <li><a href="css.html">css</a></li>
+              <li><a href="html.html">html</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>Other</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Company wise</a></li>
+              <li><a href="#">Design pattern</a></li>
+              <li><a href="microservices.html">Microservices</a></li>
+              <li><a href="data-structure.html">Data Structure</a></li>
+              <li><a href="#">Architect</a></li>
+            </ul>
+          </li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+  </header>
+
+</br>
+  <main id="main">
+
+    <section id="about" class="about">
+      <div class="container">
+        <div class="row-content"> 
+          
+
+         
+            <ul>
+            <li style="line-height: 1.5;"><strong><a title="DevOps Interview Questions For Freshers" href="#freshers"><span style="font-size: 14px;">For Freshers</span></a></strong></li>
+            <li style="line-height: 1.5;"><strong><a title="DevOps Interview Questions For 3 Years Experienced" href="#three-years-experienced"><span style="font-size: 14px;">For 3 Years Experienced</span></a></strong></li>
+            <li style="line-height: 1.5;"><strong><a title="DevOps Interview Questions For 6 Years Experienced" href="#six-years-experienced">For 6 Years Experienced</a></strong></li>
+            </ul>
+            <h2 id="Devops-Questions"><span style="font-size: 22px;">Top 10 Frequently Asked DevOps Interview Questions in 2022</span></h2>
+            <ol>
+            <li style="line-height: 2;"><strong><a title="What Is DevOps?" href="#devops">What Is DevOps?</a></strong></li>
+            <li style="line-height: 2;"><strong><a title="Why DevOps Is Important?" href="#important">Why DevOps Is Important?</a></strong></li>
+            <li style="line-height: 2;"><strong><a title="What Is the Difference Between Agile and DevOps?" href="#agile-and-devops">What Is the Difference Between Agile and DevOps?</a></strong></li>
+            <li style="line-height: 2;"><strong><a title="Which Are the Most Popular DevOps Tools?" href="#tools">Which Are the Most Popular DevOps Tools?</a></strong></li>
+            <li style="line-height: 2;"><strong><a title="What Are Devop's Key Performance Indicators?" href="#kpi">What Are DevOps Key Performance Indicators?</a></strong></li>
+            <li style="line-height: 2;"><strong><a title="What Is the DevOps Toolchain?" href="#toolchain">What Is the DevOps Toolchain?</a></strong></li>
+            <li style="line-height: 2;"><strong><a title="Explain Puppet Codedir" href="#codedir">Explain Puppet Codedir</a></strong></li>
+            <li style="line-height: 2;"><strong><a title="How Chef Cookbook Is Different From Chef Recipe?" href="#cookbook">How Chef Cookbook Is Different From Chef Recipe?</a></strong></li>
+            <li style="line-height: 2;"><strong><a title="How to Turn Off the Auto-deployment Feature?" href="#auto-deployment">How to Turn Off the Auto-deployment Feature?</a></strong></li>
+            <li style="line-height: 2;"><strong><a title="What Is a Docker Container and How Do You Create It?" href="#docker-container">What Is a Docker Container and How Do You Create It?</a></strong></li>
+            </ol>
+            <h2 id="Devops-Questions"><a id="freshers"></a><span style="font-size: 22px;">Basic DevOps Interview Questions and Answers</span></h2>
+            <h3><a id="devops"></a><span style="font-size: 18px;">1. What is DevOps?</span></h3>
+            <p>DevOps can be defined as a combination of software development practices and tools used for increasing organizations' ability while delivering applications, services, and more in close alignment with business objectives.</p>
+            <table style="border-collapse: collapse; width: 100%; height: 18px;" border="1px" cellpadding="10">
+           
+            <h2 id="Devops-Questions"></h2>
+            <h3><span style="font-size: 18px;"><a id="important"></a>2. Why DevOps is Important?</span></h3>
+            <p><span ><span>DevOps is more about a set of processes that correlate to bring development teams and processes to support software development. The important reason behind the DevOps popularity is that it helps enterprises to build and enhance products at a quicker pace than traditional software development methods.</span> <strong><br></strong></span></p>
+            <p><strong>The major reasons to adopt DevOps are listed below:</strong></p>
+            <ul>
+            <li>Faster innovations</li>
+            <li>Shorter development cycles</li>
+            <li>Reduced deployment failures</li>
+            <li>Improved communication and collaboration</li>
+            <li>More stable operating environments</li>
+            <li>Increased efficiencies</li>
+            <li>Reduced Costs and IT Headcount</li>
+            </ul>
+            <h3><a id="agile-and-devops"></a><span style="font-size: 18px;">3. What is the difference between Agile and DevOps?</span></h3>
+            <p>The major <a href="../agile-vs-devops" target="_blank">differences between Agile and DevOps</a> are listed below:</p>
+            <table style="border-collapse: collapse; width: 100%;" border="1" cellpadding="5">
+            <tbody>
+            <tr style="height: 21px; background-color: #fff5ee;">
+            <td style="width: 33.3333%; text-align: center; height: 21px;"><strong>Description</strong></td>
+            <td style="width: 33.3333%; text-align: center; height: 21px;"><strong>Agile</strong></td>
+            <td style="width: 33.3333%; text-align: center; height: 21px;"><strong>DevOps</strong></td>
+            </tr>
+            <tr style="height: 21px;">
+            <td style="width: 33.3333%; height: 21px;"><strong>Definition</strong></td>
+            <td style="width: 33.3333%; height: 21px;">It's an iterative approach that focuses on development.</td>
+            <td style="width: 33.3333%; height: 21px;">It's a practice of both development and operations.</td>
+            </tr>
+            <tr style="height: 21px;">
+            <td style="width: 33.3333%; height: 21px;"><strong>Purpose</strong></td>
+            <td style="width: 33.3333%; height: 21px;">Manages complex projects.</td>
+            <td style="width: 33.3333%; height: 21px;">Manages end-to-end engineering processes.</td>
+            </tr>
+            <tr style="height: 21px;">
+            <td style="width: 33.3333%; height: 21px;"><strong>Target areas</strong></td>
+            <td style="width: 33.3333%; height: 21px;">Software development.</td>
+            <td style="width: 33.3333%; height: 21px;">End-to-end business solutions and faster deliveries.</td>
+            </tr>
+            <tr style="height: 21px;">
+            <td style="width: 33.3333%; height: 21px;"><strong>Tools</strong></td>
+            <td style="width: 33.3333%; height: 21px;">Kanboard, JIRA, and Bugzilla are popular Agile tools.</td>
+            <td style="width: 33.3333%; height: 21px;">AWS, Puppet, Chef are some popular DevOps tools.</td>
+            </tr>
+            <tr style="height: 21px;">
+            <td style="width: 33.3333%; height: 21px;"><strong>Release cycles</strong></td>
+            <td style="width: 33.3333%; height: 21px;">Supports Agile release Cycles</td>
+            <td style="width: 33.3333%; height: 21px;">Shorter release cycles and also supports defect detection.</td>
+            </tr>
+            <tr style="height: 22px;">
+            <td style="width: 33.3333%; height: 22px;"><strong>Feedback source</strong></td>
+            <td style="width: 33.3333%; height: 22px;">Self-feedback</td>
+            <td style="width: 33.3333%; height: 22px;">Feedback from customers.</td>
+            </tr>
+            </tbody>
+            </table>
+            <h3><span style="font-size: 18px;">4. List the core operations of DevOps for application development and infrastructure.</span></h3>
+            <p>The core operations of DevOps for application development and infrastructure are listed below:</p>
+            <p><strong>Application development consists of the following core operations:<br></strong></p>
+            <ul>
+            <li>Code building</li>
+            <li>Code coverage</li>
+            <li>Unit testing</li>
+            <li>Packaging</li>
+            <li>Deployment</li>
+            </ul>
+            <p><strong>Infrastructure </strong><strong><strong>consists of the following core operations:</strong></strong></p>
+            <ul>
+            <li>Provisioning</li>
+            <li>Configuration</li>
+            <li>Orchestration</li>
+            <li>Deployment</li>
+            </ul>
+            <h3><a id="tools"></a><span style="font-size: 18px;">5. Which are the most popular DevOps tools?</span></h3>
+            <p>The most popular DevOps tools are listed below:</p>
+            <ul>
+            <li><strong>Git</strong>: Version Control System tool</li>
+            <li><strong>Jenkins:</strong> Continuous Integration tool</li>
+            <li><strong>Docker:</strong> Containerization tool</li>
+            <li><strong>Puppet:</strong> Configuration Management and Deployment tools</li>
+            <li><strong>Ansible:</strong> Configuration Management and Deployment tool</li>
+            <li><strong>Nagios:</strong> Continuous Monitoring tool</li>
+            </ul>
+       
+            
+            <h3><a id="kpi"></a><span style="font-size: 18px;">6. What are DevOps key performance indicators?</span></h3>
+            <p>The following are the DevOps key performance indicators (KPIs):</p>
+            <ul>
+            <li>Deployment Frequency</li>
+            <li>Deployment Failure</li>
+            <li>Change Lead Time</li>
+            <li>Change Volume</li>
+            <li>Mean Time To Detection</li>
+            <li>Mean Time Between Failures</li>
+            <li>Mean Time To Recovery</li>
+            <li>Change Failure Rate</li>
+            <li>Efficiency</li>
+            <li>Performance</li>
+            <li>Pipeline Adoption</li>
+            </ul>
+            <h3><span style="font-size: 18px;">7. List the key components of DevOps.</span></h3>
+            <p>The following are the key components of DevOps:</p>
+            <ul>
+            <li>Continuous Integration</li>
+            <li>Continuous Delivery</li>
+            <li>Microservices</li>
+            <li>Infrastructure as Code</li>
+            <li>Monitoring and Logging</li>
+            <li>Communication and Collaboration</li>
+            </ul>
+            <h3><a id="toolchain"></a><span style="font-size: 18px;">8. What is the DevOps toolchain?</span></h3>
+            <p>A stack of tools combine to form a DevOps toolchain, it automates the tasks like developing and deploying your application. DevOps can be performed manually with simple steps, but the need for automation quickly increases with the increase in its complexity, and toolchain automation is essential for continuous delivery. GitHub a Version Control Repository is the core component of a DevOps toolchain. More tools may contain backlog tracking, delivery pipelines, etc.</p>
+            
+            <h3><span style="font-size: 18px;">9. What is AWS DevOps?</span></h3>
+            <p><span style="font-size: 16px;">AWS facilitates essential services that help you implement DevOps at your company and that are built to use in collaboration with AWS. These services automate manual actions, help teams manage complex environments at scale, and keep engineers stable of the high velocity generated by DevOps.</span></p>
+            <h3><span style="font-size: 18px;">10. What is the significance of NRPE in Nagios?</span></h3>
+            <p>“Nagios Remote Plugin executor”&nbsp; popularly known as NERP enables us to execute the Nagios plugins remotely. With the help of this mechanism, we can check the performance parameters of the remote Machine.</p>
+            <h3><span style="font-size: 18px;">11. Explain Nagios working?</span></h3>
+            <p>Nagios runs on a server either as a background process or as a service. Nagios will run the plugins regularly with the help of the hosts or servers present in your Network. We can check the status information by using the web interface. It will execute the scripts based on a schedule.&nbsp;&nbsp;</p>
+            <h3><span style="font-size: 18px;">12. What is VCS?</span></h3>
+            <p><span style="font-size: 12pt;">Version control systems are a kind of software tool which reports the changes in the code and integrates these changes with the existing code. As the developer makes changes in the code frequently, these types of tools are helpful in integrating the new code smoothly without disturbing the work of other team members. Along with integration, it will test the new code so that we can avoid the code leading to bugs)</span></p>
+            <h3><span style="font-size: 18px;">13. What are the types of Version Control Systems?</span></h3>
+            <p>Primarily there are three types of Version control systems they are:</p>
+            <ul>
+            <li>Local Version Control Systems</li>
+            <li>Centralized Version Control Systems</li>
+            <li>Distributed Version Control Systems</li>
+            </ul>
+            <h3><span style="font-size: 18px;">14. What are the benefits of version control?</span></h3>
+            <p>The primary benefits you can expect from a version control system are the following:</p>
+            <ul>
+            <li>Complete long-term change history of every file is available.</li>
+            <li>All the past versions and variants are kept independent from each other inside the VCS through branching, and whenever required, you can merge back together with the file’s content to verify the changes.&nbsp;</li>
+            </ul>
+            <h3><span style="font-size: 18px;">15. What is a branching strategy in DevOps?</span></h3>
+            <p>Branching is a technique employed for code isolation. In simple terms, it makes a copy of the source code to create two versions that are developed separately. There are various types of branching available. Therefore, the DevOps team must make a choice depending on application requirements. This choice is called a branching strategy.</p>
+            <h3><span style="font-size: 18px;">16. What is Git?</span></h3>
+            <p>Git is a distributed version control system particularly used for recording the changes in the source code during software development. It manages a set of files or a project that change over time. It stores the information in a data structure called the repository.</p>
+            <p><strong>Let's understand the importance of Git through its benefits to organizations:</strong></p>
+            <ul>
+            <li>Feature branch workflow</li>
+            <li>Distributed development</li>
+            <li>Pull requests</li>
+            <li>Data redundancy and replication</li>
+            <li>High availability</li>
+            <li>Superior disk utilization and network performance</li>
+            <li>Collaboration friendly</li>
+            </ul>
+           
+            <h3><span style="font-size: 18px;">17. What’s the main purpose of Continuous Integration (CI)?</span></h3>
+            <p>Continuous integration is a development practice of automating the integration of code changes from several contributors to a single software project. By regularly integrating, you can detect errors quickly and locate them easily. The source code version control is the crux of the CI process.</p>
+            <h3><span style="font-size: 18px;">18. What are the benefits of Continuous Integration?</span></h3>
+            <p>The major benefits of Continuous Integration are listed below:</p>
+            <ul>
+            <li>Faster development cycles</li>
+            <li>Smarter risk mitigation</li>
+            <li>Stable codes</li>
+            <li>Team Communication</li>
+            <li>Reduced Overhead</li>
+            <li>Flexibility&nbsp;</li>
+            <li>Consistency of Build Process</li>
+            </ul>
+            <h3><span style="font-size: 18px;">19. What is Trunk-Based development?</span>&nbsp;</h3>
+            <p>A Trunk-Based development is a source control branching model for software development where developers associate on code in a single branch called trunk and employ documented techniques to create long-lived development branches. This process is called Trunk-Based development. It is a key enabler of continuous integration and by extension continuous delivery.</p>
+            <h3><span style="font-size: 18px;">20. How to create a backup and copy files in Jenkins?</span></h3>
+            <p>The following steps will help you understand how to create a backup and copy files in Jenkins:</p>
+            <ul>
+            <li>Periodically backup your JENKINS_HOME directory, which contains job configurations, slave node configurations, and all your build history.</li>
+            <li>To create a backup of your Jenkins setup, just copy this directory. You can also copy a job directory to clone or replicate a job or rename the directory.</li>
+            </ul>
+            <h2><a id="three-years-experienced"></a><span style="font-size: 22px;">DevOps Interview Questions for 3 Years Experienced</span></h2>
+            <h3><span style="font-size: 18px;">21. How to move or copy Jenkins from one server to another?</span></h3>
+            <p>There are multiple ways to copy or move Jenkins from one server to another:</p>
+            <ol>
+            <li>Move a job from one installation of Jenkins to another by simply copying the corresponding job directory.</li>
+            <li>Make a copy of an existing job by making a clone of a job directory by a different name.</li>
+            <li>Rename an existing job by renaming a directory. Note that if you change a job name you will need to change any other job that tries to call the renamed job.</li>
+            </ol>
+            <h3><span style="font-size: 18px;">22. How to create a new build job in Jenkins?</span></h3>
+            <p>The following steps will help you understand how to create a Jenkins job:</p>
+            <ul>
+            <li><strong>Step1:</strong> Logon to the Jenkins dashboard and click on the new item at the top left side of the dashboard.</li>
+            <li><strong>Step2:</strong> Enter the item name and click on the freestyle project.</li>
+            <li><strong>Step3:</strong> Enter the details of the project you want to test.</li>
+            <li><strong>Step4:</strong> Enter your repository URL under source code management.</li>
+            <li><strong>Step5:</strong> Under the build, click on add build step, and click on execute Windows batch command.</li>
+            <li><strong>Step6:</strong> After entering the data, click on apply and save the project.&nbsp;</li>
+            <li><strong>Step7:</strong> Click on Build now button to build the source code.</li>
+            <li><strong>Step8:</strong> To see the status of the build you run, click on the build number and click on the console output.</li>
+            </ul>
+            <h3><span style="font-size: 18px;">&nbsp;23. List the top Jenkins plugins.</span></h3>
+            <p>There are many useful plugins in Jenkins. Here, I have listed a few of the top plugins used in Jenkins.</p>
+            <ul>
+            <li>Dashboard view plugin</li>
+            <li>Performance plugin</li>
+            <li>Kubernetes plugin</li>
+            <li>Amazon ECS Container Service</li>
+            <li>Git plugin</li>
+            <li>Monitoring plugin</li>
+            </ul>
+            
+            <h3><span style="font-size: 18px;">24. Can we build multiple jobs at a time using Jenkins?</span></h3>
+            <p>Yes. we can build multiple jobs or projects at a time using a Jenkins plugin. After the parent job is implemented, other jobs are implemented automatically. A pipeline multibranch plugin is used for creating a job automatically.</p>
+            <h3><span style="font-size: 18px;">25. What is Continuous Testing? Explain its benefits.</span></h3>
+            <p>Continuous Testing is defined as a process of executing automated tests as part of the software delivery lifecycle to obtain feedback on business risks associated with the software release. The objective of continuous testing is to test early and test often to prevent the problems from progressing to the next stage of the SDLC.</p>
+            <p><strong>The benefits of Continuous Testing are listed below:</strong></p>
+            <ul>
+            <li>Mitigates business risks.</li>
+            <li>Improves code quality.</li>
+            <li>Agile and reliable process.</li>
+            <li>Provides test environment access with service virtualization.</li>
+            <li>Maintains consistency through the same configuration for all the tests.</li>
+            </ul>
+            <h3><span style="font-size: 18px;">26. What do you mean by Automation Testing?&nbsp;</span></h3>
+            <p>Automation Testing or Test Automation is a software testing technique. It is used to automate the testing tasks and repetitive tasks that are difficult to perform manually. It involves the use of separate testing tools which lets you create test scripts to test and compare the actual and expected outcomes.</p>
+            <h3><span style="font-size: 18px;">27. What are the benefits of Automation Testing?</span></h3>
+            <p>The major benefits of automation testing are listed below:</p>
+            <ul>
+            <li>Supports wider test coverage of application features</li>
+            <li>Ensures consistency</li>
+            <li>Allows parallel execution</li>
+            <li>Improves efficiency</li>
+            <li>Reusable test scripts</li>
+            <li>Saves money and time</li>
+            <li>Reliable results</li>
+            </ul>
+            <h3><span style="font-size: 18px;">28. List the best Continuous Testing tools?</span></h3>
+            <p>The following are the best Continuous Testing tools:</p>
+            <ul>
+            <li>Selenium</li>
+            <li>Katalon Studio</li>
+            <li>Eggplant</li>
+            <li>Watir</li>
+            <li>Tosca</li>
+            </ul>
+            <h3><span style="font-size: 18px;">29. Mention the testing types supported by Selenium?</span></h3>
+            <p>Selenium supports functional testing and regression testing.</p>
+            <ul>
+            <li><strong>Functional Testing:</strong> It verifies each function of the software application against the functional specifications/requirements.</li>
+            <li><strong>Regression Testing:</strong> In this, test cases are re-executed to verify the previous functionality of the application.</li>
+            </ul>
+            <h3><span style="font-size: 18px;">30. How to launch the Browser using WebDriver?</span></h3>
+            <ul>
+            <li>For Firefox:</li>
+            </ul>
+            <pre class="language-markup"><code>WebDriver driver = new FirefoxDriver();</code></pre>
+            <ul>
+            <li>For Chrome:</li>
+            </ul>
+            <pre class="language-markup"><code>WebDriver driver = new ChromeDriver();</code></pre>
+            <ul>
+            <li>For Internet Explorer (IE):</li>
+            </ul>
+            <pre class="language-markup"><code>WebDriver driver = new InternetExplorerDriver();</code></pre>
+            <h3><span style="font-size: 18px;">31. What’s the difference between Continuous Delivery and Continuous Deployment?</span></h3>
+            <p><strong>Continuous Delivery:</strong> It is a process in which continuous integration, automated testing, and automated deployment capabilities develop, build, test, and release high-quality software rapidly and reliably with minimal manual overhead.</p>
+            <p><strong>Continuous Deployment:</strong> It is a process in which qualified changes in the architecture or software code are deployed automatically to production as soon as they are ready and without human intervention.</p>
+            <h3><span style="font-size: 18px;">32. Explain the implementation of Continuous Testing in DevOps?</span></h3>
+            <p>By following the below-mentioned steps we can implement continuous testing in DevOps:</p>
+            <ul>
+            <li>&nbsp;In DevOps continuous testing starts in the development phase, as the developer tests the functionality of the code by using tools like selenium.</li>
+            <li>Tools like GitHub store these tests and versions along with the software code. DevOps team uses these tests to perform testing on the new build of the software code.</li>
+            <li>when the code reaches pre-production, the professional QA team uses these tests by making some changes to the test specifications.</li>
+            <li>the operations team can reuse these tests for user acceptance testing and for resolving the post-delivery issues.</li>
+            </ul>
+            <h3><span style="font-size: 18px;">33. What is the significance of Continuous Testing in DevOps?</span></h3>
+            <p>The continuous testing process is done in DevOps to avoid testing the entire code at a time. In traditional SDLC, we will test the code after the whole code is developed but in DevOps, we will test instantly every change made in the code. This kind of testing avoids delays in the product release, and it will also help to achieve better quality in the product.</p>
+            <h3><span style="font-size: 18px;">34. What is the objective of Configuration Management?</span></h3>
+            <ul>
+            <li>The objective of Continuous Management is to manage all the configurations of the SDLC by making the development/deployment process controllable and reliable to provide high-quality software.</li>
+            <li>There are various components in a configuration management system such as servers, networking, storage, and software. The main purpose of configuration management is to make sure the target systems and software are in the desired state.</li>
+            </ul>
+            <h3><span style="font-size: 18px;">35. Which are the best configuration management tools?</span></h3>
+            <p>The best Configuration Management tools are mentioned below:</p>
+            <ul>
+            <li><strong>Chef -</strong> Automation platform that transforms infrastructure into code.</li>
+            <li><strong>Ansible -</strong> Automates entire IT infrastructure.</li>
+            <li><strong>Puppet -</strong> Open-source configuration management tool.</li>
+            <li><strong>Saltstack -</strong> It is based on the Python programming language and allows scalable and efficient configuration.</li>
+            <li><strong>CFEngine -</strong> Open-source configuration management tool, which automates large-scale and complex IT infrastructure.</li>
+            </ul>
+            <p>You can also mention any other tools if you have real-time experience in your previous job and explain how it improves the software development process.</p>
+            
+            <h3><span style="font-size: 18px;">36. Why is Infrastructure as code important?&nbsp;</span></h3>
+            <ul>
+            <li>Infrastructure as code (IaC) is a method to manage and provision IT infrastructure (networks, databases, connection topology, etc.) through source code, rather than manual process or interactive configuration tools.</li>
+            <li>It helps you to automate the infrastructure deployment process easily, consistently, and reliably.</li>
+            </ul>
+            <h3><span style="font-size: 18px;">37. How does configuration management differ from provisioning infrastructure?</span></h3>
+            <p>Configuration management and provisioning infrastructure, both are important for the DevOps toolchain. While configuration management is best when it comes to employing desired configurations for target machines or groups of machines, provisioning helps you to create, modify, delete, and track infrastructure using APIs or code.</p>
+            <h3><span style="font-size: 18px;">38. What is Puppet?</span></h3>
+            <p>Puppet is an open-source configuration management tool used for deploying, configuring, and managing servers. It follows a client-server architecture, in which the client is an agent, and the server is known as the master.</p>
+            <p>Puppet agent and master communicate through a secure encrypted channel with the help of SSL.</p>
+            <h3><span style="font-size: 18px;">39. What is a Puppet Manifest?</span></h3>
+            <p>Puppet Manifest is a base component for the Puppet configuration management policy. In Puppet Master, each Puppet node or Puppet Agent has its configuration details written in the native Puppet language. The details that are written in a language that puppets can understand and describe how resources should be configured are termed as Puppet manifests.</p>
+            <p>Puppet Manifests declares resources that define a state to be enforced on a node. They are considered to be building blocks for complex Puppet modules.</p>
+            <h2><a id="six-years-experienced"></a>DevOps Interview Questions for 6 Years Experienced</h2>
+            <h3><span style="font-size: 18px;">40. How Puppet Module is different from Puppet Manifests?</span></h3>
+            <p>Puppet Module is a bundle of manifests and data. They have a specific directory structure that allows Puppet to automatically load classes, facts, custom types, defined types, and tasks. Modules must have a valid name and are installed in Puppet’s module path.</p>
+            <p>Puppet Manifests are nothing but Puppet programs that are composed of Puppet code. It uses.PP extension.</p>
+            <h3><a id="codedir"></a><span style="font-size: 18px;">41. Explain Puppet Codedir.</span></h3>
+            <p>Puppet Codedir is the main directory for Puppet code and data and is mostly used by Puppet master and Puppetapply. It consists of a global modules directory, Hiera data, and environments (which consists of your manifests and modules).</p>
+            <p><strong>The Codedir will be located in one of the following locations:</strong></p>
+            <ul>
+            <li>Unix:</li>
+            </ul>
+            <pre class="language-markup"><code>/etc/puppetlabs/code
+            
+            Unix non-root users:
+            
+             ~/.puppetlabs/etc/code</code></pre>
+            <ul>
+            <li>Windows:</li>
+            </ul>
+            <pre class="language-markup"><code> %PROGRAMDATA%PuppetLabscode </code></pre>
+            <h3><span style="font-size: 18px;">42. How can you configure systems with Puppet?</span></h3>
+            <p>You can configure systems with Puppet in two ways:&nbsp;</p>
+            <ul>
+            <li>In client or server architecture, you should use the Puppet Agent and Puppet Master.</li>
+            <li>In stand-alone architecture, you should use the Puppet application.</li>
+            </ul>
+            <h3><span style="font-size: 18px;">43. What is Factor in Puppet? How does it work?</span></h3>
+            <p>The factor is Puppet’s cross-platform system profiling library. Puppet uses factors to gather information during the Puppet run.</p>
+            <p>Factor discovers and reports basic information of Puppet Agent including network settings, IP addresses, hardware details, etc., and makes available in Puppet manifests as variables.</p>
+            <h3><span style="font-size: 18px;">44. How does Ansible work?</span></h3>
+            <p>Ansible is an open-source automation tool. It operates by connecting to your nodes and pushing out small programs called Ansible modules to them. It executes these modules through SSH by default and removes them when finished.</p>
+            <p>It handles many nodes from a single system over an SSH connection by using Ansible playbooks. These Playbooks are capable to execute multiple tasks and represented in YAML format.</p>
+            <h3><span style="font-size: 18px;">45. How Ansible playbook is different from ad-hoc commands?&nbsp;</span></h3>
+            <ul>
+            <li>Ansible playbook is a structured unit of scripts that describes work for server configuration. It is used for repeated actions.</li>
+            <li>An ad-hoc command is used to do something quicker, mostly one-time use.</li>
+            </ul>
+           
+            <h3><span style="font-size: 18px;">46. How to get a list of Ansible predefined variables?</span></h3>
+            <p>Ansible stores facts about machines under management by default and these can be accessed in playbooks and templates. To get a list of all the facts that are available about a machine, run a setup module as an ad-hoc action:&nbsp;</p>
+            <pre class="language-markup"><code>Ansible -m setup hostname</code></pre>
+            <p>This will present all the facts that are available under that particular host.</p>
+            <h3><span style="font-size: 18px;">47. What are Ansible Handlers?</span></h3>
+            <p>Handlers are exactly like regular tasks inside an Ansible playbook but run only when the task contains notify directive and also additional information if it changes something.</p>
+            <p><strong>Eg:</strong> When a config file was changed, the task referencing that config file notifies the service restart handler.</p>
+            <h3><span style="font-size: 18px;">48. How does Chef work?</span></h3>
+            <p>Start your answer by defining Chef. It is an automation platform that is particularly used for transforming infrastructure into code. It uses pure-Ruby domain-specific language to write system configurations.</p>
+            <p>Now you can explain the architecture of Chef and how it works.</p>
+            <p><strong>Chef architecture consists of three core components: </strong></p>
+            <p>Chef Workstation, Chef Node, and Chef Servers.</p>
+            <ul>
+            <li><strong>Chef Server:</strong> The chef Server is the core point for infrastructure configuration data. It stores, configures, manages, and presents the configuration data to all components.</li>
+            <li><strong>Chef Workstation:</strong> Workstations are the hosts where you can create, test, and modify your cookbooks and configuration data.</li>
+            <li><strong>Chef Node:</strong> These are the servers managed by the Chef. Chef client is installed on each node which is under management by Chef. Chef clients run on the nodes to contact the chef server for the information required to configure the node.</li>
+            </ul>
+            <h3><span style="font-size: 18px;">49. Explain Chef Resources.</span></h3>
+            <p>First, begin with the definition of a Chef Resource. A Chef Resource describes a piece of an operating system at its desired state. It is a configuration policy statement that is used for representing the desired state of a node to which you want to take the current configuration for using the resource providers.</p>
+            <p><strong>The functions of a Chef Resource are listed below:</strong></p>
+            <ul>
+            <li>It helps to know the present status of the target machine.</li>
+            <li>Defines the steps needed to perform for getting the target machine to the desired state.</li>
+            <li>Specifies resource types such as template, package, file, or service.</li>
+            </ul>
+            <h3><a id="cookbook"></a><span style="font-size: 18px;">50. How Chef CookBook is different from Chef Recipe?</span></h3>
+            <ul>
+            <li>A Chef Recipe is a set of resources that primarily configures a software package or some piece of infrastructure. Recipes are written in the Ruby language.</li>
+            <li>While a Chef Cookbook consists of recipes that a node desired state.</li>
+            </ul>
+            <h3><span style="font-size: 18px;">51. What happens when you don’t specify a Resource’s action in Chef</span></h3>
+            <p>In case, if you don't specify a resource’s action, then Chef applies the default action.</p>
+            <p>For example, in resource 1, the action is not specified, still, it will take a default action.</p>
+            <pre class="language-markup"><code>file 'C:UsersAdministratorchef-reposettings.ini' do
+            
+            content 'greeting=hello world'
+            
+            end</code></pre>
+            <p>In resource 2, when you define the action with create command, it is also used to create the default action.</p>
+            <pre class="language-markup"><code>file 'C:UsersAdministratorchef-reposettings.ini' do
+            
+            action :create
+            
+            content 'greeting=hello world'
+            
+            end</code></pre>
+            <h3><span style="font-size: 18px;">52. How to refresh static components of a deployed application without redeploying the entire application?</span></h3>
+            <p>By using Weblogic.Deployer you can define a component and target a server through the following syntax:</p>
+            <pre class="language-markup"><code>java weblogic.Deployer -adminurl http://admin:7001 -name appname -targets server1,server2 -deploy jsps/*.jsp</code></pre>
+            <h3><a id="auto-deployment"></a><span style="font-size: 18px;">53. How to turn off the auto-deployment feature?</span></h3>
+            <p>The auto-deployment feature is used for determining whether there are any new applications or changes in existing applications and dynamically deploy them.</p>
+            <p>It is enabled for servers that run in development mode.</p>
+            <p>To turn off the auto-deployment feature, follow one of the methods to place servers in production mode:</p>
+            <ul>
+            <li>In the Administration Console, click the name of the domain in the left pane and select the Production Mode checkbox in the right pane.</li>
+            <li>At the command line, include the following argument when starting the domain’s Administration Server:</li>
+            </ul>
+            <pre class="language-markup"><code>-Dweblogic.ProductionModeEnabled=true</code></pre>
+            <ul>
+            <li>Production mode is set for all WebLogic Server instances in a given domain.</li>
+            </ul>
+            <h3><span style="font-size: 18px;">54. Why is Continuous Monitoring important?</span></h3>
+            <p>Continuous Monitoring helps to detect and measure the security implications for planned and unexpected changes and assesses the vulnerabilities in a threat space.</p>
+            <p>It delivers information on the application’s performance and usage patterns.</p>
+            <h3><span style="font-size: 18px;">55. Which are the best Continuous Monitoring tools?</span></h3>
+            <p>The following are the best Continuous Monitoring tools:</p>
+            <ul>
+            <li>Nagios</li>
+            <li>Tenable</li>
+            <li>Solarwinds</li>
+            <li>Lansweeper</li>
+            <li>Spiceworks</li>
+            <li>Snort</li>
+            </ul>
+            
+            <h3><span style="font-size: 18px;">56. &nbsp;what is containerization in DevOps and list their benefits?</span></h3>
+            <p>Containerization is defined as a process of binding the application and its required environment. Binding makes the application run in any computational environment. DevOps main goal is to bridge the gap between the development team and the operations team. To bridge the gap between them, it should make both sides work on an identical environment. Containerization helps in setting an identical environment quickly, and it will provide easy access to operating system resources. Docker tool is widely used for implementing containerization in DevOps.</p>
+            <p>They are a streamlined way to create, test, deploy, and redeploy applications in multiple environments.</p>
+            <p><strong>Benefits of Containers are listed below:</strong></p>
+            <ul>
+            <li>Less overhead</li>
+            <li>Improved productivity</li>
+            <li>More consistent operation</li>
+            <li>Better application deployment</li>
+            <li>Greater efficiency</li>
+            </ul>
+            <h3><a id="docker-container"></a><span style="font-size: 18px;">57. What is a Docker Container and how do you create it?</span></h3>
+            <ul>
+            <li>A Docker container is an open-source software development platform that stores the code and all of its dependencies and runs the application quickly and reliably from one computing environment to the other.</li>
+            <li>Docker containers are not specified to any particular infrastructure; they can run on any infrastructure, on any computer, and in any cloud.</li>
+            <li>A Docker container image is a standalone, lightweight, and executable package of software that has everything to run the application such as code, system tools, runtime, system libraries, and settings.</li>
+            </ul>
+            <p><strong>Docker Containers can be created with the Docker image using the following command:</strong></p>
+            <pre class="language-markup"><code>docker run -t -i &lt;image name&gt; &lt;command name&gt;</code></pre>
+            <p>This will create and start the container.</p>
+            <p>If you want to check the list of all running containers with status on the host, use the following command:</p>
+            <pre class="language-markup"><code>docker ps -a</code></pre>
+            
+
+
+        </div>	
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
