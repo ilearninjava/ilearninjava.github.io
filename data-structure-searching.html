@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Java Interview Q&A</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Sailor - v4.9.1
+  * Template URL: https://bootstrapmade.com/sailor-free-bootstrap-theme/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center">
+      <h1 class="logo me-auto"><a href="index.html">Java Interview Q&A</a></h1>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+
+          <li class="dropdown"><a href="framework.html"><span>Framework</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="spring.html">Spring</a></li>
+              <li><a href="hibernate.html">Hibernate</a></li>
+              <li><a href="springboot.html">SpringBoot</a></li>
+              <li><a href="jsf.html">JSF</a></li>
+              <li><a href="struts.html">Struts</a></li>
+              <li class="dropdown"><a href="#"><span>Entity Framework</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="jpa.html">JPA</a></li>
+                  <li><a href="hibernate.html">Hibernate</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          
+          <li class="dropdown"><a href="database.html"><span>Database</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="sql.html">SQL</a></li>
+              <li><a href="plsql.html">PL-SQL</a></li>
+              <li class="dropdown"><a href="nosql.html"><span>NoSQL</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">Apache Cassandra</a></li>
+                  <li><a href="#">MongoDB</a></li>
+                  <li><a href="#">Redis</a></li>
+                  <li><a href="#">ArangoDB</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="cloud.html"><span>Cloud</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="aws.html">AWS</a></li>
+              <li><a href="gcp.html">GCP</a></li>
+              <li><a href="azure.html">Azure</a></li>
+              <li><a href="ibm-cloud.html">IBM Cloud</a></li>
+              <li><a href="docker.html">Docker</a></li>
+              <li><a href="kubernetes.html">Kubernetes</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="ui.html"><span>UI</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="angular.html">Angular</a></li>
+              <li><a href="react.html">ReactJS</a></li>
+              <li><a href="javascript.html">Javascript</a></li>
+              <li><a href="css.html">css</a></li>
+              <li><a href="html.html">html</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>Other</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Company wise</a></li>
+              <li><a href="microservices.html">Microservices</a></li>
+              
+              <li class="dropdown"><a href="data-structure.html"><span>Data Structure</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="data-structure-sorting.html">Sorting</a></li>
+                  <li><a href="data-structure-searching.html">Searching</a></li>
+                  <li><a href="data-structure-dynamic-programming.html">Dynamic Programming</a></li>
+                  <li><a href="data-structure-array.html">Array</a></li>
+                  <li><a href="data-structure-linked-list.html">Linked List</a></li>
+                  <li><a href="data-structure-stack .html">Stack</a></li>
+                  <li><a href="data-structure-queue.html">Queue</a></li>
+                  <li><a href="data-structure-binary-tree.html">Binary Tree</a></li>
+                  <li><a href="data-structure-binary-search-tree.html">Binary Search Tree</a></li>
+                  <li><a href="data-structure-heap.html">Heap</a></li>
+                  <li><a href="data-structure-hashing .html">Hashing</a></li> 
+                  <li><a href="data-structure-graph.html">Graph</a></li>
+                </ul>
+              </li>
+
+              <li><a href="#">Architect</a></li>
+            </ul>
+          </li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+  </header>
+
+</br>
+  <main id="main">
+
+    <section id="about" class="about">
+      <div class="container">
+        <div class="row-content"> 
+          
+          <div class="content"><noscript><style>.lazyload-placeholder { display: none; }</style></noscript><h3 id="introduction">Introduction</h3>
+            <p>Searching is one of the most common actions performed in regular business applications. This involves fetching some data stored in data structures like <code>Arrays</code>, <code>List</code>, <code>Map</code>, etc. More often than not, this search operation determines the responsiveness of the application for the end-user.</p>
+            <p>In this article, let's take a look at some of the searching strategies that can be used to cater to different scenarios. We will also implement them in Java and analyze their performance with some well-known parameters like <em>Time and Space Complexity</em>.</p>
+            <ul>
+            <li><a href="#linearsearch">Linear Search</a></li>
+            <li><a href="#binarysearch">Binary Search</a></li>
+            <li><a href="#knuthmorrisprattpatternsearch">Knuth Morris Pratt Pattern Search</a></li>
+            <li><a href="#jumpsearch">Jump Search</a></li>
+            <li><a href="#interpolationsearch">Interpolation Search</a></li>
+            <li><a href="#exponentialsearch">Exponential Search</a></li>
+            <li><a href="#fibonaccisearch">Fibonacci Search</a></li>
+            <li><a href="#javacollectionsapi">Java Collections API</a></li>
+            </ul>
+            <h3 id="linearsearch">Linear Search</h3>
+            <p><em>Linear or Sequential Search</em> is the simplest of search algorithms. While it most certainly is the simplest, it's most definitely not the most common, due to its inefficiency. It's a brute-force algorithm. Very rarely is it used in production, and in most cases, it's outperformed by other algorithms.</p>
+            <p>Linear Search has no pre-requisites for the state of the underlying data structure.</p>
+            <h4 id="explanation">Explanation</h4>
+            <p>Linear Search involves sequential searching for an element in the given data structure until either the element is found or the end of the structure is reached.</p>
+            <p>If the element is found, we usually just return its position in the data structure. If not, we usually return <code>-1</code>.</p>
+            <h4 id="implementation">Implementation</h4>
+            <p>Now let's see how to implement Linear Search in Java:</p>
+            <pre><code class="hljs"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> <span class="hljs-title">linearSearch</span><span class="hljs-params">(<span class="hljs-keyword">int</span> arr[], <span class="hljs-keyword">int</span> elementToSearch)</span> </span>{
+            
+                <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> index = <span class="hljs-number">0</span>; index &lt; arr.length; index++) {
+                    <span class="hljs-keyword">if</span> (arr[index] == elementToSearch)
+                        <span class="hljs-keyword">return</span> index;
+                }
+                <span class="hljs-keyword">return</span> -<span class="hljs-number">1</span>;
+            }
+            </code></pre>
+            <p>To test it, we'll use a simple Array of integers:</p>
+            <pre><code class="hljs"><span class="hljs-keyword">int</span> index = linearSearch(<span class="hljs-keyword">new</span> <span class="hljs-keyword">int</span>[]{<span class="hljs-number">89</span>, <span class="hljs-number">57</span>, <span class="hljs-number">91</span>, <span class="hljs-number">47</span>, <span class="hljs-number">95</span>, <span class="hljs-number">3</span>, <span class="hljs-number">27</span>, <span class="hljs-number">22</span>, <span class="hljs-number">67</span>, <span class="hljs-number">99</span>}, <span class="hljs-number">67</span>);
+            print(<span class="hljs-number">67</span>, index);
+            </code></pre>
+            <p>With a simple helper method to print the result:</p>
+            <pre><code class="hljs"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">print</span><span class="hljs-params">(<span class="hljs-keyword">int</span> elementToSearch, <span class="hljs-keyword">int</span> index)</span> </span>{
+                <span class="hljs-keyword">if</span> (index == -<span class="hljs-number">1</span>){
+                    System.out.println(elementToSearch + <span class="hljs-string">" not found."</span>);
+                }
+                <span class="hljs-keyword">else</span> {
+                    System.out.println(elementToSearch + <span class="hljs-string">" found at index: "</span> + index);
+                }
+            }
+            </code></pre>
+            <p>Output:</p>
+            <pre><code class="hljs">67 found at index: 8
+            </code></pre>
+            <h4 id="timecomplexity">Time Complexity</h4>
+            <p>Here we are iterating through the entire set of <code>N</code> elements sequentially to get the location of the element being searched. The worst case for this algorithm will be if the element we are searching for is the last element in the array.</p>
+            <p>In this case, we will iterate <code>N</code> times before we find the element.</p>
+            <p>Hence, the Time Complexity of Linear search is <em>O(N)</em>.</p>
+            <h4 id="spacecomplexity">Space Complexity</h4>
+            <p>This type of search requires only a single unit of memory to store the element being searched. This is not relevant to the size of the input Array.</p>
+            <p>Hence, the Space Complexity of Linear Search is <em>O(1)</em>.</p>
+            <h4 id="applications">Applications</h4>
+            <p>Linear Search can be used for searching in a small and unsorted set of data which is guaranteed not to increase in size by much.</p>
+            <div id="ad-snigel-1"><div class=" my-4 flex justify-center" style="min-height:250px"><div id="adngin-incontent1-0" data-google-query-id="CIDr8eW50_sCFflDnQkdAMcF6Q"><div id="google_ads_iframe_/22152718,21633484772/stackabuse_incontent1_0__container__" style="border: 0pt none; width: 300px; height: 0px;"></div></div></div></div><p>It is a very basic search algorithm but due to its linear increase in time complexity, it does not find application in many production systems.</p>
+            <h3 id="binarysearch">Binary Search</h3>
+            <p><em>Binary or Logarithmic Search</em> is one of the most commonly used search algorithms primarily due to its quick search time.</p>
+            <h4 id="explanation">Explanation</h4>
+            <p>This kind of search uses the <strong>Divide and Conquer</strong> methodology and requires the data set to be sorted beforehand.</p>
+            <p>It divides the input collection into equal halves, and with each iteration compares the goal element with the element in the middle.</p>
+            <p>If the element is found, the search ends. Else, we continue looking for the element by dividing and selecting the appropriate partition of the array, based on if the goal element is smaller or bigger than the middle element.</p>
+            <p>This is why it's important to have a sorted collection for Binary Search.</p>
+            <p>The search terminates when the <code>firstIndex</code> (our pointer) goes past <code>lastIndex</code> (last element), which implies we have searched the whole array and the element is not present.</p>
+            <p>There are two ways to implement this algorithm - <strong>iterative</strong> and <strong>recursive</strong>.</p>
+            <p>There <em>shouldn't</em> be a difference regarding time and space complexity between these two implementations, though this doesn't hold true to all languages.</p>
+            <h4 id="implementation">Implementation</h4>
+            <h5 id="iterative">Iterative</h5>
+            <p>Let's first take a look at the <strong>iterative</strong> approach:</p>
+            <pre><code class="hljs"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> <span class="hljs-title">binarySearch</span><span class="hljs-params">(<span class="hljs-keyword">int</span> arr[], <span class="hljs-keyword">int</span> elementToSearch)</span> </span>{
+            
+                <span class="hljs-keyword">int</span> firstIndex = <span class="hljs-number">0</span>;
+                <span class="hljs-keyword">int</span> lastIndex = arr.length - <span class="hljs-number">1</span>;
+            
+                <span class="hljs-comment">// termination condition (element isn't present)</span>
+                <span class="hljs-keyword">while</span>(firstIndex &lt;= lastIndex) {
+                    <span class="hljs-keyword">int</span> middleIndex = (firstIndex + lastIndex) / <span class="hljs-number">2</span>;
+                    <span class="hljs-comment">// if the middle element is our goal element, return its index</span>
+                    <span class="hljs-keyword">if</span> (arr[middleIndex] == elementToSearch) {
+                        <span class="hljs-keyword">return</span> middleIndex;
+                    }
+            
+                    <span class="hljs-comment">// if the middle element is smaller</span>
+                    <span class="hljs-comment">// point our index to the middle+1, taking the first half out of consideration</span>
+                    <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (arr[middleIndex] &lt; elementToSearch)
+                        firstIndex = middleIndex + <span class="hljs-number">1</span>;
+            
+                    <span class="hljs-comment">// if the middle element is bigger</span>
+                    <span class="hljs-comment">// point our index to the middle-1, taking the second half out of consideration</span>
+                    <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (arr[middleIndex] &gt; elementToSearch)
+                        lastIndex = middleIndex - <span class="hljs-number">1</span>;
+            
+                }
+                <span class="hljs-keyword">return</span> -<span class="hljs-number">1</span>;
+            }
+            </code></pre>
+            <p>We can use the algorithm like this:</p>
+            <pre><code class="hljs"><span class="hljs-keyword">int</span> index = binarySearch(<span class="hljs-keyword">new</span> <span class="hljs-keyword">int</span>[]{<span class="hljs-number">89</span>, <span class="hljs-number">57</span>, <span class="hljs-number">91</span>, <span class="hljs-number">47</span>, <span class="hljs-number">95</span>, <span class="hljs-number">3</span>, <span class="hljs-number">27</span>, <span class="hljs-number">22</span>, <span class="hljs-number">67</span>, <span class="hljs-number">99</span>}, <span class="hljs-number">67</span>);
+            print(<span class="hljs-number">67</span>, index);
+            </code></pre>
+            <p>Output:</p>
+            <pre><code class="hljs">67 found at index: 5
+            </code></pre>
+            <h5 id="recursive">Recursive</h5>
+            <p>And now let's take a look at the recursive implementation:</p>
+            <pre><code class="hljs"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> <span class="hljs-title">recursiveBinarySearch</span><span class="hljs-params">(<span class="hljs-keyword">int</span> arr[], <span class="hljs-keyword">int</span> firstElement, <span class="hljs-keyword">int</span> lastElement, <span class="hljs-keyword">int</span> elementToSearch)</span> </span>{
+            
+                <span class="hljs-comment">// termination condition</span>
+                <span class="hljs-keyword">if</span> (lastElement &gt;= firstElement) {
+                    <span class="hljs-keyword">int</span> mid = firstElement + (lastElement - firstElement) / <span class="hljs-number">2</span>;
+            
+                    <span class="hljs-comment">// if the middle element is our goal element, return its index</span>
+                    <span class="hljs-keyword">if</span> (arr[mid] == elementToSearch)
+                        <span class="hljs-keyword">return</span> mid;
+            
+                    <span class="hljs-comment">// if the middle element is bigger than the goal element</span>
+                    <span class="hljs-comment">// recursively call the method with narrowed data</span>
+                    <span class="hljs-keyword">if</span> (arr[mid] &gt; elementToSearch)
+                        <span class="hljs-keyword">return</span> recursiveBinarySearch(arr, firstElement, mid - <span class="hljs-number">1</span>, elementToSearch);
+            
+                    <span class="hljs-comment">// else, recursively call the method with narrowed data</span>
+                    <span class="hljs-keyword">return</span> recursiveBinarySearch(arr, mid + <span class="hljs-number">1</span>, lastElement, elementToSearch);
+                }
+            
+                <span class="hljs-keyword">return</span> -<span class="hljs-number">1</span>;
+            }
+            </code></pre>
+            <p>The difference in the recursive approach is that we invoke the method itself once we get the new partition. In the iterative approach, whenever we determined the new partition we modified the first and last elements and repeated the process in the same loop.</p>
+            <p>Another difference here is that recursive calls are pushed on the method call-stack and they occupy one unit of space per recursive call.</p>
+            <p>We can use this algorithm like this:</p>
+            <pre><code class="hljs"><span class="hljs-keyword">int</span> index = binarySearch(<span class="hljs-keyword">new</span> <span class="hljs-keyword">int</span>[]{<span class="hljs-number">3</span>, <span class="hljs-number">22</span>, <span class="hljs-number">27</span>, <span class="hljs-number">47</span>, <span class="hljs-number">57</span>, <span class="hljs-number">67</span>, <span class="hljs-number">89</span>, <span class="hljs-number">91</span>, <span class="hljs-number">95</span>, <span class="hljs-number">99</span>}, <span class="hljs-number">0</span>, <span class="hljs-number">10</span>, <span class="hljs-number">67</span>);
+            print(<span class="hljs-number">67</span>, index);
+            </code></pre>
+            <p>Output:</p>
+            <pre><code class="hljs">67 found at index: 5
+            </code></pre>
+            <h4 id="timecomplexity">Time Complexity</h4>
+            <p>Since Binary Search divides the array into half each time its time complexity is <em>O(log(N))</em>. This time complexity is a marked improvement on the <em>O(N)</em> time complexity of Linear Search.</p>
+            <h4 id="spacecomplexity">Space Complexity</h4>
+            <p>This search requires only one unit of space to store the element to be searched. Hence, its space complexity is <em>O(1)</em>.</p>
+            <p>If Binary Search is implemented recursively, it needs to store the call to the method on a stack. This may require <em>O(log(N))</em> space in the worst case scenario.</p>
+            <h4 id="applications">Applications</h4>
+            <p>It is the most commonly used search algorithm in most of the libraries for searching. The Binary Search tree is used by many data structures as well which store sorted data.</p>
+            <p>Binary Search is also implemented in Java APIs in the <code>Arrays.binarySearch</code> method.</p>
+            <h3 id="knuthmorrisprattpatternsearch">Knuth Morris Pratt Pattern Search</h3>
+            <p>As the name indicates, it is an algorithm for finding a pattern in the given text. This algorithm was developed by Donald Knuth, Vaughan Pratt, and James Morris, hence the name.</p>
+            <h4 id="explanation">Explanation</h4>
+            <p>In this search, the given pattern is first <em>compiled</em>. By compiling it, we try to find the prefix and suffix of the pattern string. This helps us when a mismatch happens - we will not start looking for the next match from the beginning of the index.</p>
+            <p>Instead, we skip the part of text string which we have already compared and start comparing beyond that part. We determine this part by knowing the prefix and suffix so we are sure what part is already compared and can be safely skipped.</p>
+            <p>As a result of this skip, we can save a lot of comparisons and KMP performs faster than a naive brute-force algorithm.</p>
+            <h4 id="implementation">Implementation</h4>
+            <p>Let's create the <code>compilePatternArray()</code> method, which will be used later by the KMP search algorithm:</p>
+            <pre><code class="hljs"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span>[] compilePatternArray(String pattern) {
+                <span class="hljs-keyword">int</span> patternLength = pattern.length();
+                <span class="hljs-keyword">int</span> len = <span class="hljs-number">0</span>;
+                <span class="hljs-keyword">int</span> i = <span class="hljs-number">1</span>;
+                <span class="hljs-keyword">int</span>[] compliedPatternArray = <span class="hljs-keyword">new</span> <span class="hljs-keyword">int</span>[patternLength];
+                compliedPatternArray[<span class="hljs-number">0</span>] = <span class="hljs-number">0</span>;
+            
+                <span class="hljs-keyword">while</span> (i &lt; patternLength) {
+                    <span class="hljs-keyword">if</span> (pattern.charAt(i) == pattern.charAt(len)) {
+                        len++;
+                        compliedPatternArray[i] = len;
+                        i++;
+                    } <span class="hljs-keyword">else</span> {
+                        <span class="hljs-keyword">if</span> (len != <span class="hljs-number">0</span>) {
+                            len = compliedPatternArray[len - <span class="hljs-number">1</span>];
+                        } <span class="hljs-keyword">else</span> {
+                            compliedPatternArray[i] = len;
+                            i++;
+                        }
+                    }
+                }
+                System.out.println(<span class="hljs-string">"Compiled Pattern Array "</span> + Arrays.toString(compliedPatternArray));
+                <span class="hljs-keyword">return</span> compliedPatternArray;
+            }
+            </code></pre>
+            <p>The compiled pattern array can be thought of as an array storing the pattern of characters in the pattern array. The main aim behind creating this array is to find the prefix and suffix in the pattern. If we know these elements in the pattern, we can avoid comparing from the start of the text and just compare next character after the mismatch has occurred.</p>
+            <p>The compiled array stores the index position of previous occurrence of the current character in the pattern array.</p>
+            <p>Let's implement the algorithm itself:</p>
+            <div id="ad-snigel-2"><div class=" my-4 flex justify-center" style="min-height:250px"><div id="adngin-incontent2-0" data-google-query-id="CIHr8eW50_sCFflDnQkdAMcF6Q"><div id="google_ads_iframe_/22152718,21633484772/stackabuse_incontent2_0__container__" style="border: 0pt none; width: 300px; height: 0px;"></div></div></div></div><pre><code class="hljs"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> List&lt;Integer&gt; <span class="hljs-title">performKMPSearch</span><span class="hljs-params">(String text, String pattern)</span> </span>{
+                <span class="hljs-keyword">int</span>[] compliedPatternArray = compilePatternArray(pattern);
+            
+                <span class="hljs-keyword">int</span> textIndex = <span class="hljs-number">0</span>;
+                <span class="hljs-keyword">int</span> patternIndex = <span class="hljs-number">0</span>;
+            
+                List&lt;Integer&gt; foundIndexes = <span class="hljs-keyword">new</span> ArrayList&lt;&gt;();
+            
+                <span class="hljs-keyword">while</span> (textIndex &lt; text.length()) {
+                    <span class="hljs-keyword">if</span> (pattern.charAt(patternIndex) == text.charAt(textIndex)) {
+                        patternIndex++;
+                        textIndex++;
+                    }
+                    <span class="hljs-keyword">if</span> (patternIndex == pattern.length()) {
+                        foundIndexes.add(textIndex - patternIndex);
+                        patternIndex = compliedPatternArray[patternIndex - <span class="hljs-number">1</span>];
+                    }
+            
+                    <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (textIndex &lt; text.length() &amp;&amp; pattern.charAt(patternIndex) != text.charAt(textIndex)) {
+                        <span class="hljs-keyword">if</span> (patternIndex != <span class="hljs-number">0</span>)
+                            patternIndex = compliedPatternArray[patternIndex - <span class="hljs-number">1</span>];
+                        <span class="hljs-keyword">else</span>
+                            textIndex = textIndex + <span class="hljs-number">1</span>;
+                    }
+                }
+                <span class="hljs-keyword">return</span> foundIndexes;
+            }
+            </code></pre>
+            <p>Here we start by comparing the characters in the pattern and text array sequentially. We keep moving forward until we keep getting a match of pattern and text arrays. This way, if we reach the end of the pattern array while matching it means we have found an occurrence of the pattern in the text.</p>
+            <p>However, if we find a mismatch when comparing the two arrays, we move the pattern character array index to the value in the <code>compiledPatternArray()</code> and also move to the next character in the text array. This is where the KMP search beats the brute-force approach, as it doesn't compare the text characters more than once if there is a mismatch.</p>
+            <p>Let's try running the algorithm:</p>
+            <pre><code class="hljs">String pattern = <span class="hljs-string">"AAABAAA"</span>;
+            String text = <span class="hljs-string">"ASBNSAAAAAABAAAAABAAAAAGAHUHDJKDDKSHAAJF"</span>;
+            
+            List&lt;Integer&gt; foundIndexes = KnuthMorrisPrathPatternSearch.performKMPSearch(text, pattern);
+            
+            <span class="hljs-keyword">if</span> (foundIndexes.isEmpty()) {
+                System.out.println(<span class="hljs-string">"Pattern not found in the given text String"</span>);
+            } <span class="hljs-keyword">else</span> {
+                System.out.println(<span class="hljs-string">"Pattern found in the given text String at positions: "</span> + .stream().map(Object::toString).collect(Collectors.joining(<span class="hljs-string">", "</span>)));
+            }
+            </code></pre>
+            <p>In the pattern text <code>AAABAAA</code>, the following pattern is observed and encoded in the pattern array:</p>
+            <ul>
+            <li>The pattern <code>A</code> (Single A) is repeating in index 1 and again at 4.</li>
+            <li>The pattern <code>AA</code> (Double A) is repeating in index 2 and again at index 5.</li>
+            <li>The pattern <code>AAA</code> (3 A's) is repeating at index 6.</li>
+            </ul>
+            <p>Let's see the output to validate our discussion so far:</p>
+            <pre><code class="hljs">Compiled Pattern Array [0, 1, 2, 0, 1, 2, 3]
+            Pattern found in the given text String at positions: 8, 14
+            </code></pre>
+            <p>The pattern we described is clearly shown to us in the complied pattern array in the output.</p>
+            <p>With the help of this compiled array, the KMP search algorithm can search for the given pattern in the text without moving back in the text array.</p>
+            <h4 id="timecomplexity">Time Complexity</h4>
+            <p>This algorithm needs to compare all the elements in the given text to find the pattern. The time required for that is <em>O(N)</em> . For compiling the pattern string we need to visit each of the character in the pattern and that is another <em>O(M)</em> iterations.</p>
+            <p>So the total time this algorithm takes will be <em>O(M+N)</em>.</p>
+            <h4 id="spacecomplexity">Space Complexity</h4>
+            <p>We need <em>O(M)</em> space to store the compiled pattern for a given pattern of size <code>M</code></p>
+            <h4 id="applications">Applications</h4>
+            <p>This algorithm is particularly employed in text tools for finding patterns in text files.</p>
+            <h3 id="jumpsearch">Jump Search</h3>
+            <h4 id="explanation">Explanation</h4>
+            <p>This search is similar to Binary Search but instead of jumping both forward and backward - we will only jump forward. Keep in mind that <em>Jump Search</em> also requires for the collection to be sorted.</p>
+            <p>In Jump Search, we jump in the interval <code>sqrt(arraylength)</code> ahead until we reach an element greater than current element or end of the array. On every jump, the previous step is recorded.</p>
+            <p>If we encounter an element greater than the element we are searching for, we stop jumping. Then, we run a Linear Search between the previous step and the current step.</p>
+            <p>This makes the search space a lot smaller for Linear Search, and thus it becomes a viable option.</p>
+            <h4 id="implementation">Implementation</h4>
+            <pre><code class="hljs"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> <span class="hljs-title">jumpSearch</span><span class="hljs-params">(<span class="hljs-keyword">int</span>[] integers, <span class="hljs-keyword">int</span> elementToSearch)</span> </span>{
+            
+                <span class="hljs-keyword">int</span> arrayLength = integers.length;
+                <span class="hljs-keyword">int</span> jumpStep = (<span class="hljs-keyword">int</span>) Math.sqrt(integers.length);
+                <span class="hljs-keyword">int</span> previousStep = <span class="hljs-number">0</span>;
+            
+                <span class="hljs-keyword">while</span> (integers[Math.min(jumpStep, arrayLength) - <span class="hljs-number">1</span>] &lt; elementToSearch) {
+                    previousStep = jumpStep;
+                    jumpStep += (<span class="hljs-keyword">int</span>)(Math.sqrt(arrayLength));
+                    <span class="hljs-keyword">if</span> (previousStep &gt;= arrayLength)
+                        <span class="hljs-keyword">return</span> -<span class="hljs-number">1</span>;
+                }
+                <span class="hljs-keyword">while</span> (integers[previousStep] &lt; elementToSearch) {
+                    previousStep++;
+                    <span class="hljs-keyword">if</span> (previousStep == Math.min(jumpStep, arrayLength))
+                        <span class="hljs-keyword">return</span> -<span class="hljs-number">1</span>;
+                }
+            
+                <span class="hljs-keyword">if</span> (integers[previousStep] == elementToSearch)
+                    <span class="hljs-keyword">return</span> previousStep;
+                <span class="hljs-keyword">return</span> -<span class="hljs-number">1</span>;
+            }
+            </code></pre>
+            <p>We start with the <code>jumpstep</code> of size square-root of the length of array and keep jumping forward with this same size until we find an element which is same or greater than the element we are searching for.</p>
+            <p>So we first visit element at <code>integers[jumpStep]</code>, then <code>integers[2jumpStep]</code>, <code>integers[3jumpStep]</code> and so on. We also store the previous element visited in the <code>previousStep</code> variable.</p>
+            <p>Once we find a value such that <code>integers[previousStep]</code> &lt; <code>elementToSearch</code> &lt; <code>integers[jumpStep]</code>, we perform a linear search between <code>integers[previousStep]</code> and <code>integers[jumpStep]</code> or an element greater than <code>elementToSearch</code>.</p>
+            <p>We can use the algorithm like this:</p>
+            <pre><code class="hljs"><span class="hljs-keyword">int</span> index = jumpSearch(<span class="hljs-keyword">new</span> <span class="hljs-keyword">int</span>[]{<span class="hljs-number">3</span>, <span class="hljs-number">22</span>, <span class="hljs-number">27</span>, <span class="hljs-number">47</span>, <span class="hljs-number">57</span>, <span class="hljs-number">67</span>, <span class="hljs-number">89</span>, <span class="hljs-number">91</span>, <span class="hljs-number">95</span>, <span class="hljs-number">99</span>}, <span class="hljs-number">67</span>);
+            print(<span class="hljs-number">67</span>, index);
+            </code></pre>
+            <p>Output:</p>
+            <pre><code class="hljs">67 found at Index 5
+            </code></pre>
+            <h4 id="timecomplexity">Time Complexity</h4>
+            <p>Since we jump <code>sqrt(arraylength)</code> steps in each iteration, the time complexity for this search is <em>O(sqrt(N))</em>.</p>
+            <h4 id="spacecomplexity">Space Complexity</h4>
+            <p>The space complexity for this search is <em>O(1)</em> as it requires only one unit of space to store the element to be searched.</p>
+            <h4 id="application">Application</h4>
+            <p>This search is used over Binary Search when jumping back is costly. This constraint is faced when we use spinning medium like drives when seeking forward is easy but jumping in changed direction multiple times is costly.</p>
+            <h3 id="interpolationsearch">Interpolation Search</h3>
+            <h4 id="explanation">Explanation</h4>
+            <p><em>Interpolation Search</em> is used to search elements in a sorted array. This search is particularly useful if we know the data in the underlying structure is uniformly distributed.</p>
+            <p>If the data is uniformly spread out, taking a guess about the location of an element can be more precise, opposed to Binary Search where we always try to find the element in the middle of the array.</p>
+            <p>Interpolation Search uses interpolation formulae to find the best probable place where the element can be found in the array. However, for this formulae to be effective the search array should be large otherwise it performs like Linear Search:</p>
+            <h4 id="implementation">Implementation</h4>
+            <pre><code class="hljs"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> <span class="hljs-title">interpolationSearch</span><span class="hljs-params">(<span class="hljs-keyword">int</span>[] integers, <span class="hljs-keyword">int</span> elementToSearch)</span> </span>{
+            
+                <span class="hljs-keyword">int</span> startIndex = <span class="hljs-number">0</span>;
+                <span class="hljs-keyword">int</span> lastIndex = (integers.length - <span class="hljs-number">1</span>);
+            
+                <span class="hljs-keyword">while</span> ((startIndex &lt;= lastIndex) &amp;&amp; (elementToSearch &gt;= integers[startIndex]) &amp;&amp;
+                       (elementToSearch &lt;= integers[lastIndex])) {
+                    <span class="hljs-comment">// using interpolation formulae to find the best probable position for this element to exist</span>
+                    <span class="hljs-keyword">int</span> pos = startIndex + (((lastIndex-startIndex) /
+                      (integers[lastIndex]-integers[startIndex]))*
+                                    (elementToSearch - integers[startIndex]));
+            
+                    <span class="hljs-keyword">if</span> (integers[pos] == elementToSearch)
+                        <span class="hljs-keyword">return</span> pos;
+            
+                    <span class="hljs-keyword">if</span> (integers[pos] &lt; elementToSearch)
+                        startIndex = pos + <span class="hljs-number">1</span>;
+            
+                    <span class="hljs-keyword">else</span>
+                        lastIndex = pos - <span class="hljs-number">1</span>;
+                }
+                <span class="hljs-keyword">return</span> -<span class="hljs-number">1</span>;
+            }
+            </code></pre>
+            <p>We can use this algorithm like this:</p>
+            <pre><code class="hljs"><span class="hljs-keyword">int</span> index = interpolationSearch(<span class="hljs-keyword">new</span> <span class="hljs-keyword">int</span>[]{<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>,<span class="hljs-number">5</span>,<span class="hljs-number">6</span>,<span class="hljs-number">7</span>,<span class="hljs-number">8</span>}, <span class="hljs-number">6</span>);
+            print(<span class="hljs-number">67</span>, index);
+            </code></pre>
+            <p>Output:</p>
+            <div id="ad-lead-magnet"><div class="mx-auto pt-3 pb-4 mb-4 lg:mb-2 lg:pt-4 lg:pb-5"><div class="bg-gray-100 px-4 py-1 rounded-lg shadow-lg border border-gray-400 md:py-2 md:px-6 lg:py-3 lg:px-8 flex items-center flex-col xl:flex-row"><div class="xl:pt-2 w-1/2 xs:w-full sm:mx-auto"><div class="lazyload-wrapper "><img class="rounded-sm" src="https://s3.stackabuse.com/media/ebooks/git-essentials/git-essentials-cover-transparent-cropped.png"></div></div><div class="mt-2 w-full sm:max-w-xl xl:mt-0 xl:ml-8 sm:w-2/3 sm:mx-auto"><h2 class="mt-2 mb-1 text-xl leading-4 font-extrabold tracking-tight text-gray-600 sm:text-2xl sm:leading-6 sm:text-center">Free eBook: Git Essentials</h2><p class="mt-3 max-w-3xl text-md leading-6 text-gray-500 sm:text-center">Check out our hands-on, practical guide to learning Git, with best-practices, industry-accepted standards, and included cheat sheet. Stop Googling Git commands and actually <em>learn</em> it!</p><div class="mt-4 flex sm:justify-center sm:mx-auto"><div class="ml-3 xl:inline-flex rounded-md shadow"><button class="inline-flex items-center justify-center px-3 py-1 bg-orange-400 border border-transparent text-base leading-6 font-medium rounded-md hover:bg-orange-500 hover:no-underline focus:outline-none focus:ring transition duration-150 ease-in-out"><span class="inline-flex items-center text-white">Download the eBook<!-- --> &nbsp;<svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></span></button></div></div></div></div></div></div><pre><code class="hljs">6 found at Index 5
+            </code></pre>
+            <p>Let's take a look at how the interpolation formulae works its magic to look for <code>6</code>:</p>
+            <pre><code class="hljs">startIndex = <span class="hljs-number">0</span>
+            lastIndex = <span class="hljs-number">7</span>
+            integers[lastIndex] = <span class="hljs-number">8</span>
+            integers[startIndex] = <span class="hljs-number">1</span>
+            elementToSearch = <span class="hljs-number">6</span>
+            </code></pre>
+            <p>Now let's apply this values to the formulae to estimate the index of search Element:</p>
+            <p><span class="MathJax_Preview" style="color: inherit;"></span><span class="mjx-chtml MJXc-display" style="text-align: center;"><span id="MathJax-Element-1-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; display=&quot;block&quot;><mi>i</mi><mi>n</mi><mi>d</mi><mi>e</mi><mi>x</mi><mo>=</mo><mn>0</mn><mo>+</mo><mo stretchy=&quot;false&quot;>(</mo><mn>7</mn><mo>&amp;#x2212;</mo><mn>0</mn><mo stretchy=&quot;false&quot;>)</mo><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mo>/</mo></mrow><mo stretchy=&quot;false&quot;>(</mo><mn>8</mn><mo>&amp;#x2212;</mo><mn>1</mn><mo stretchy=&quot;false&quot;>)</mo><mo>&amp;#x2217;</mo><mo stretchy=&quot;false&quot;>(</mo><mn>6</mn><mo>&amp;#x2212;</mo><mn>1</mn><mo stretchy=&quot;false&quot;>)</mo><mo>=</mo><mn>5</mn></math>" role="presentation" style="font-size: 117%; text-align: center; position: relative;"><span id="MJXc-Node-1" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-2" class="mjx-mrow"><span id="MJXc-Node-3" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.43em; padding-bottom: 0.287em;">i</span></span><span id="MJXc-Node-4" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.24em; padding-bottom: 0.287em;">n</span></span><span id="MJXc-Node-5" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.477em; padding-bottom: 0.287em; padding-right: 0.003em;">d</span></span><span id="MJXc-Node-6" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.24em; padding-bottom: 0.287em;">e</span></span><span id="MJXc-Node-7" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.24em; padding-bottom: 0.287em;">x</span></span><span id="MJXc-Node-8" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.097em; padding-bottom: 0.335em;">=</span></span><span id="MJXc-Node-9" class="mjx-mn MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.382em; padding-bottom: 0.382em;">0</span></span><span id="MJXc-Node-10" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.287em; padding-bottom: 0.43em;">+</span></span><span id="MJXc-Node-11" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.477em; padding-bottom: 0.572em;">(</span></span><span id="MJXc-Node-12" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.382em; padding-bottom: 0.382em;">7</span></span><span id="MJXc-Node-13" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.287em; padding-bottom: 0.43em;">−</span></span><span id="MJXc-Node-14" class="mjx-mn MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.382em; padding-bottom: 0.382em;">0</span></span><span id="MJXc-Node-15" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.477em; padding-bottom: 0.572em;">)</span></span><span id="MJXc-Node-16" class="mjx-texatom"><span id="MJXc-Node-17" class="mjx-mrow"><span id="MJXc-Node-18" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.477em; padding-bottom: 0.572em;">/</span></span></span></span><span id="MJXc-Node-19" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.477em; padding-bottom: 0.572em;">(</span></span><span id="MJXc-Node-20" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.382em; padding-bottom: 0.382em;">8</span></span><span id="MJXc-Node-21" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.287em; padding-bottom: 0.43em;">−</span></span><span id="MJXc-Node-22" class="mjx-mn MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.382em; padding-bottom: 0.335em;">1</span></span><span id="MJXc-Node-23" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.477em; padding-bottom: 0.572em;">)</span></span><span id="MJXc-Node-24" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.192em; padding-bottom: 0.335em;">∗</span></span><span id="MJXc-Node-25" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.477em; padding-bottom: 0.572em;">(</span></span><span id="MJXc-Node-26" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.382em; padding-bottom: 0.382em;">6</span></span><span id="MJXc-Node-27" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.287em; padding-bottom: 0.43em;">−</span></span><span id="MJXc-Node-28" class="mjx-mn MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.382em; padding-bottom: 0.335em;">1</span></span><span id="MJXc-Node-29" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.477em; padding-bottom: 0.572em;">)</span></span><span id="MJXc-Node-30" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.097em; padding-bottom: 0.335em;">=</span></span><span id="MJXc-Node-31" class="mjx-mn MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.382em; padding-bottom: 0.382em;">5</span></span></span></span><span class="MJX_Assistive_MathML MJX_Assistive_MathML_Block" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mi>i</mi><mi>n</mi><mi>d</mi><mi>e</mi><mi>x</mi><mo>=</mo><mn>0</mn><mo>+</mo><mo stretchy="false">(</mo><mn>7</mn><mo>−</mo><mn>0</mn><mo stretchy="false">)</mo><mrow class="MJX-TeXAtom-ORD"><mo>/</mo></mrow><mo stretchy="false">(</mo><mn>8</mn><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo><mo>∗</mo><mo stretchy="false">(</mo><mn>6</mn><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo><mo>=</mo><mn>5</mn></math></span></span></span><script type="math/tex; mode=display" id="MathJax-Element-1"> 
+            index = 0 + (7-0)/(8-1)*(6-1) = 5 
+            </script></p>
+            <p>The element at <code>integers[5]</code> is 6 which is the element we were looking for. As we can see here, the index for the element is calculated in just one step since the data is uniformly spread.</p>
+            <h4 id="timecomplexity">Time Complexity</h4>
+            <p>The best case time complexity for this algorithm is <em>O(log log N)</em> but in the worst case, i.e. when the elements are not uniformly distributed, it is comparable to linear search time complexity which is <em>O(N)</em>.</p>
+            <h4 id="spacecomplexity">Space Complexity</h4>
+            <p>This algorithm also requires only one unit of space to store the element to be searched. Hence its space complexity is <em>O(1)</em>.</p>
+            <h4 id="application">Application</h4>
+            <p>This search is useful when the data is uniformly distributed like Phone Numbers in a directory.</p>
+            <h3 id="exponentialsearch">Exponential Search</h3>
+            <h4 id="explanation">Explanation</h4>
+            <p><em>Exponential Search</em> is used to search elements by jumping in exponential positions i.e. in powers of 2.</p>
+            <p>In this search we are basically trying to find a comparatively smaller range in which we can search the element using other bounded searches algorithms like Binary Search.</p>
+            <p>Needless to say, the collection should be sorted for this to work.</p>
+            <h4 id="implementation">Implementation</h4>
+            <pre><code class="hljs"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> <span class="hljs-title">exponentialSearch</span><span class="hljs-params">(<span class="hljs-keyword">int</span>[] integers, <span class="hljs-keyword">int</span> elementToSearch)</span> </span>{
+            
+                <span class="hljs-keyword">if</span> (integers[<span class="hljs-number">0</span>] == elementToSearch)
+                    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+                <span class="hljs-keyword">if</span> (integers[integers.length - <span class="hljs-number">1</span>] == elementToSearch)
+                    <span class="hljs-keyword">return</span> integers.length;
+            
+                <span class="hljs-keyword">int</span> range = <span class="hljs-number">1</span>;
+            
+                <span class="hljs-keyword">while</span> (range &lt; integers.length &amp;&amp; integers[range] &lt;= elementToSearch) {
+                    range = range * <span class="hljs-number">2</span>;
+                }
+            
+                <span class="hljs-keyword">return</span> Arrays.binarySearch(integers, range / <span class="hljs-number">2</span>, Math.min(range, integers.length), elementToSearch);
+            }
+            </code></pre>
+            <p>We can use this algorithm like this:</p>
+            <pre><code class="hljs"><span class="hljs-keyword">int</span> index = exponentialSearch(<span class="hljs-keyword">new</span> <span class="hljs-keyword">int</span>[]{<span class="hljs-number">3</span>, <span class="hljs-number">22</span>, <span class="hljs-number">27</span>, <span class="hljs-number">47</span>, <span class="hljs-number">57</span>, <span class="hljs-number">67</span>, <span class="hljs-number">89</span>, <span class="hljs-number">91</span>, <span class="hljs-number">95</span>, <span class="hljs-number">99</span>}, <span class="hljs-number">67</span>);
+            print(<span class="hljs-number">67</span>, index);
+            </code></pre>
+            <p>This is how the algorithm works:</p>
+            <p>We try to find an element which is greater than the element we are searching. We do this to minimise the range of elements we are looking for. We increase the range by multiplying it with 2 and check again if we reached an element greater than element we are searching or the end of array. Once either of this is achieved, we break out of the loop. Then we perform binary search with <code>startIndex</code> as <code>range/2</code> and <code>lastIndex</code> as <code>range</code>.</p>
+            <p>In our case, this range value is achieved at 8 and the element at <code>integers[8]</code> is 95. So, the range where we perform binary search is:</p>
+            <pre><code class="hljs">startIndex = range/2 = 4
+            
+            lastIndex = range = 8
+            </code></pre>
+            <p>With this the binary search call becomes:</p>
+            <pre><code class="hljs">Arrays.binarySearch(integers, <span class="hljs-number">4</span>, <span class="hljs-number">8</span>, <span class="hljs-number">6</span>);
+            </code></pre>
+            <p>Output:</p>
+            <pre><code class="hljs">67 found at Index 5
+            </code></pre>
+            <p>A important thing to note here we can speedup the multiplication by 2 by using the left shift operator <code>range &lt;&lt; 1</code>instead of <code>*</code> operator.</p>
+            <h4 id="timecomplexity">Time Complexity</h4>
+            <p>The worst-case time complexity for this type of search is <em>O(log(N))</em>.</p>
+            <h4 id="spacecomplexity">Space Complexity</h4>
+            <p>This algorithm requires <em>O(1)</em> space to store the element being searched if the underlying Binary Search algorithm is iterative.</p>
+            <p>If the underlying Binary Search algorithm is recursive, the space complexity becomes <em>O(log(N))</em>.</p>
+            <h4 id="applications">Applications</h4>
+            <p>Exponential search is used when we have a huge or unbounded array. Applying Binary Search on the entire dataset may prove to be costly. Exponential Search can reduce this data into smaller, easily searchable partitions.</p>
+            <h3 id="fibonaccisearch">Fibonacci Search</h3>
+            <h4 id="explanation">Explanation</h4>
+            <p>Fibonacci search employs divide and conquer approach wherein we unequally split element as per the Fibonacci series. This search requires the array to be sorted.</p>
+            <p>Unlike in Binary Search where we divide the elements into equal halves to reduce the array range - In Fibonacci search we try to use addition or subtraction to get a smaller range.</p>
+            <p>Remember the formula for Fibonacci series is:</p>
+            <p><span class="MathJax_Preview" style="color: inherit;"></span><span class="mjx-chtml MJXc-display" style="text-align: center;"><span id="MathJax-Element-2-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; display=&quot;block&quot;><mi>F</mi><mi>i</mi><mi>b</mi><mi>o</mi><mo stretchy=&quot;false&quot;>(</mo><mi>N</mi><mo stretchy=&quot;false&quot;>)</mo><mo>=</mo><mi>F</mi><mi>i</mi><mi>b</mi><mi>o</mi><mo stretchy=&quot;false&quot;>(</mo><mi>N</mi><mo>&amp;#x2212;</mo><mn>1</mn><mo stretchy=&quot;false&quot;>)</mo><mo>+</mo><mi>F</mi><mi>i</mi><mi>b</mi><mi>o</mi><mo stretchy=&quot;false&quot;>(</mo><mi>N</mi><mo>&amp;#x2212;</mo><mn>2</mn><mo stretchy=&quot;false&quot;>)</mo></math>" role="presentation" style="font-size: 117%; text-align: center; position: relative;"><span id="MJXc-Node-32" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-33" class="mjx-mrow"><span id="MJXc-Node-34" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.477em; padding-bottom: 0.287em; padding-right: 0.106em;">F</span></span><span id="MJXc-Node-35" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.43em; padding-bottom: 0.287em;">i</span></span><span id="MJXc-Node-36" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.477em; padding-bottom: 0.287em;">b</span></span><span id="MJXc-Node-37" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.24em; padding-bottom: 0.287em;">o</span></span><span id="MJXc-Node-38" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.477em; padding-bottom: 0.572em;">(</span></span><span id="MJXc-Node-39" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.477em; padding-bottom: 0.287em; padding-right: 0.085em;">N</span></span><span id="MJXc-Node-40" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.477em; padding-bottom: 0.572em;">)</span></span><span id="MJXc-Node-41" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.097em; padding-bottom: 0.335em;">=</span></span><span id="MJXc-Node-42" class="mjx-mi MJXc-space3"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.477em; padding-bottom: 0.287em; padding-right: 0.106em;">F</span></span><span id="MJXc-Node-43" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.43em; padding-bottom: 0.287em;">i</span></span><span id="MJXc-Node-44" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.477em; padding-bottom: 0.287em;">b</span></span><span id="MJXc-Node-45" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.24em; padding-bottom: 0.287em;">o</span></span><span id="MJXc-Node-46" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.477em; padding-bottom: 0.572em;">(</span></span><span id="MJXc-Node-47" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.477em; padding-bottom: 0.287em; padding-right: 0.085em;">N</span></span><span id="MJXc-Node-48" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.287em; padding-bottom: 0.43em;">−</span></span><span id="MJXc-Node-49" class="mjx-mn MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.382em; padding-bottom: 0.335em;">1</span></span><span id="MJXc-Node-50" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.477em; padding-bottom: 0.572em;">)</span></span><span id="MJXc-Node-51" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.287em; padding-bottom: 0.43em;">+</span></span><span id="MJXc-Node-52" class="mjx-mi MJXc-space2"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.477em; padding-bottom: 0.287em; padding-right: 0.106em;">F</span></span><span id="MJXc-Node-53" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.43em; padding-bottom: 0.287em;">i</span></span><span id="MJXc-Node-54" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.477em; padding-bottom: 0.287em;">b</span></span><span id="MJXc-Node-55" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.24em; padding-bottom: 0.287em;">o</span></span><span id="MJXc-Node-56" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.477em; padding-bottom: 0.572em;">(</span></span><span id="MJXc-Node-57" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.477em; padding-bottom: 0.287em; padding-right: 0.085em;">N</span></span><span id="MJXc-Node-58" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.287em; padding-bottom: 0.43em;">−</span></span><span id="MJXc-Node-59" class="mjx-mn MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.382em; padding-bottom: 0.335em;">2</span></span><span id="MJXc-Node-60" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.477em; padding-bottom: 0.572em;">)</span></span></span></span><span class="MJX_Assistive_MathML MJX_Assistive_MathML_Block" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mi>F</mi><mi>i</mi><mi>b</mi><mi>o</mi><mo stretchy="false">(</mo><mi>N</mi><mo stretchy="false">)</mo><mo>=</mo><mi>F</mi><mi>i</mi><mi>b</mi><mi>o</mi><mo stretchy="false">(</mo><mi>N</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo><mo>+</mo><mi>F</mi><mi>i</mi><mi>b</mi><mi>o</mi><mo stretchy="false">(</mo><mi>N</mi><mo>−</mo><mn>2</mn><mo stretchy="false">)</mo></math></span></span></span><script type="math/tex; mode=display" id="MathJax-Element-2"> 
+            Fibo(N) = Fibo(N-1)+Fibo(N-2) 
+            </script></p>
+            <p>The first two numbers in this series are <code>Fibo(0) = 0</code> and <code>Fibo(1) = 1</code>. So as per this formula, the series looks like this <em>0, 1, 1, 2, 3, 5, 8, 13, 21...</em> Interesting observations to note here is that:</p>
+            <p><code>Fibo(N-2)</code> is approximately 1/3rd of <code>Fibo(N)</code></p>
+            <p><code>Fibo(N-1)</code> is approximately 2/3rd of <code>Fibo(N)</code></p>
+            <p>So when we use fibonacci series numbers to partition the range it gets split in the same ratio as above.</p>
+            <h4 id="implementation">Implementation</h4>
+            <p>Let's take a look at the implementation to get a clearer idea:</p>
+            <pre><code class="hljs"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> <span class="hljs-title">fibonacciSearch</span><span class="hljs-params">(<span class="hljs-keyword">int</span>[] integers, <span class="hljs-keyword">int</span> elementToSearch)</span> </span>{
+            
+                <span class="hljs-keyword">int</span> fibonacciMinus2 = <span class="hljs-number">0</span>;
+                <span class="hljs-keyword">int</span> fibonacciMinus1 = <span class="hljs-number">1</span>;
+                <span class="hljs-keyword">int</span> fibonacciNumber = fibonacciMinus2 + fibonacciMinus1;
+                <span class="hljs-keyword">int</span> arrayLength = integers.length;
+            
+                <span class="hljs-keyword">while</span> (fibonacciNumber &lt; arrayLength) {
+                    fibonacciMinus2 = fibonacciMinus1;
+                    fibonacciMinus1 = fibonacciNumber;
+                    fibonacciNumber = fibonacciMinus2 + fibonacciMinus1;
+                }
+            
+                <span class="hljs-keyword">int</span> offset = -<span class="hljs-number">1</span>;
+            
+                <span class="hljs-keyword">while</span> (fibonacciNumber &gt; <span class="hljs-number">1</span>) {
+                    <span class="hljs-keyword">int</span> i = Math.min(offset+fibonacciMinus2, arrayLength-<span class="hljs-number">1</span>);
+            
+                    <span class="hljs-keyword">if</span> (integers[i] &lt; elementToSearch) {
+                        fibonacciNumber = fibonacciMinus1;
+                        fibonacciMinus1 = fibonacciMinus2;
+                        fibonacciMinus2 = fibonacciNumber - fibonacciMinus1;
+                        offset = i;
+                    }
+            
+                    <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (integers[i] &gt; elementToSearch) {
+                        fibonacciNumber = fibonacciMinus2;
+                        fibonacciMinus1 = fibonacciMinus1 - fibonacciMinus2;
+                        fibonacciMinus2 = fibonacciNumber - fibonacciMinus1;
+                    }
+            
+                    <span class="hljs-keyword">else</span> <span class="hljs-keyword">return</span> i;
+                }
+            
+                <span class="hljs-keyword">if</span> (fibonacciMinus1 == <span class="hljs-number">1</span> &amp;&amp; integers[offset+<span class="hljs-number">1</span>] == elementToSearch)
+                    <span class="hljs-keyword">return</span> offset+<span class="hljs-number">1</span>;
+            
+                <span class="hljs-keyword">return</span> -<span class="hljs-number">1</span>;
+            }
+            </code></pre>
+            <div id="ad-snigel-3"><div class=" my-4 flex justify-center" style="min-height:250px"><div id="adngin-incontent3-0" data-google-query-id="CILr8eW50_sCFflDnQkdAMcF6Q"><div id="google_ads_iframe_/22152718,21633484772/stackabuse_incontent3_0__container__" style="border: 0pt none; width: 300px; height: 0px;"></div></div></div></div><p>We can run this algorithm like this:</p>
+            <pre><code class="hljs"><span class="hljs-keyword">int</span> index = fibonacciSearch(<span class="hljs-keyword">new</span> <span class="hljs-keyword">int</span>[]{<span class="hljs-number">3</span>, <span class="hljs-number">22</span>, <span class="hljs-number">27</span>, <span class="hljs-number">47</span>, <span class="hljs-number">57</span>, <span class="hljs-number">67</span>, <span class="hljs-number">89</span>, <span class="hljs-number">91</span>, <span class="hljs-number">95</span>, <span class="hljs-number">99</span>}, <span class="hljs-number">67</span>);
+            print(<span class="hljs-number">67</span>, index);
+            </code></pre>
+            <p>This is how the algorithm works:</p>
+            <p>It starts by first finding the number in the Fibonacci series closest to but more than the length of array. This happens when <code>fibonacciNumber</code> is at 13 which is just more than array length - 10.</p>
+            <p>Next, we compare the elements of the array and on the basis of that comparison , we take one of the below actions:</p>
+            <ul>
+            <li>Compare the element to be searched with the element at <code>fibonacciMinus2</code> and return the index if the value matches.</li>
+            <li>If the <code>elementToSearch</code> is greater than the current element, we move one step back in the fibonacci series and change the values of <code>fibonacciNumber</code>, <code>fibonacciMinus1</code> &amp; <code>fibonacciMinus2</code> accordingly. The offset is reset to the current Index.</li>
+            <li>If the <code>elementToSearch</code> is smaller than the current element, we move two steps back in the fibonacci series and change the values of <code>fibonacciNumber</code>, <code>fibonacciMinus1</code> &amp; <code>fibonacciMinus2</code> accordingly.</li>
+            </ul>
+            <p>Output:</p>
+            <pre><code class="hljs">67 found at Index 5
+            </code></pre>
+            <h4 id="timecomplexity">Time Complexity</h4>
+            <p>The worst-case time complexity for this search is <em>O(log(N))</em>.</p>
+            <h4 id="spacecomplexity">Space Complexity</h4>
+            <p>While we need to save the three numbers in Fibonacci series and the element to be searched we need four extra units of space.</p>
+            <p>This requirement of space does not increase with the size of the input array. Hence, we can say that the space complexity for Fibonacci search is <em>O(1)</em>.</p>
+            <h4 id="applications">Applications</h4>
+            <p>This search is used when the division is a costly operation for the CPU to perform. Algorithms like Binary Search tend to fare poorly as they use division to divide the array.</p>
+            <p>Another benefit of this search is when elements of the input array cannot fit into the RAM. In such situations, a localized scope of operation that this algorithm performs helps it to run much faster.</p>
+            <h3 id="javacollectionsapi">Java Collections API</h3>
+            <p>Now that we have seen the implementation of multiple algorithms in Java, let's also take a brief look at the way searching is performed in different Java Collections.</p>
+            <h4 id="arrays">Arrays</h4>
+            <p>Arrays in Java can be searched using one of the <code>java.util.BinarySearch</code> methods. The binary Search in the <a rel="nofollow" target="_blank" href="https://openjdk.java.net/">Open JDK</a> version uses the iterative form of the search.</p>
+            <p>Let's take a quick look at how we can use this method:</p>
+            <pre><code class="hljs"><span class="hljs-keyword">int</span>[] integers = {<span class="hljs-number">3</span>, <span class="hljs-number">22</span>, <span class="hljs-number">27</span>, <span class="hljs-number">47</span>, <span class="hljs-number">57</span>, <span class="hljs-number">67</span>, <span class="hljs-number">89</span>, <span class="hljs-number">91</span>, <span class="hljs-number">95</span>, <span class="hljs-number">99</span>};
+            
+            <span class="hljs-keyword">int</span> elementToSearch = <span class="hljs-number">67</span>;
+            
+            <span class="hljs-keyword">int</span> index = java.util.Arrays.binarySearch(integers, elementToSearch);
+            </code></pre>
+            <p>Output:</p>
+            <pre><code class="hljs">67 found at Index 5
+            </code></pre>
+            <h4 id="thelistinterface">The List Interface</h4>
+            <p>The List Interface has primarily two methods which can be used for searching: <code>indexOf()</code> and <code>contains()</code>.</p>
+            <p>The <code>indexOf()</code> method returns the index of the element if it exists in the list or <code>-1</code> if it doesn't exist.</p>
+            <p>The <code>contains()</code> method returns <code>true</code> or <code>false</code> depending upon the existence of the element. It internally calls the <code>indexOf()</code> method.</p>
+            <p>The <a target="_blank" href="/java-collections-the-list-interface/">List interface</a> uses Sequential Search to perform the index lookup and hence its time complexity is <code>O(N)</code>.</p>
+            <p>Let's try out a search operation on a <code>List</code>:</p>
+            <pre><code class="hljs">java.util.List&lt;Integer&gt; integers = <span class="hljs-keyword">new</span> java.util.ArrayList&lt;&gt;();
+            integers.add(<span class="hljs-number">3</span>);
+            integers.add(<span class="hljs-number">22</span>);
+            integers.add(<span class="hljs-number">27</span>);
+            integers.add(<span class="hljs-number">47</span>);
+            integers.add(<span class="hljs-number">57</span>);
+            integers.add(<span class="hljs-number">67</span>);
+            integers.add(<span class="hljs-number">89</span>);
+            integers.add(<span class="hljs-number">91</span>);
+            integers.add(<span class="hljs-number">95</span>);
+            integers.add(<span class="hljs-number">99</span>);
+            
+            <span class="hljs-keyword">int</span> elementToSearch = <span class="hljs-number">67</span>;
+            
+            <span class="hljs-keyword">int</span> index = integers.indexOf(elementToSearch);
+            </code></pre>
+            <p>Output:</p>
+            <pre><code class="hljs">67 found at Index 5
+            </code></pre>
+            <p>Similarly, if we are not interested in the index but only want to know if the element exists in the List or not we can use the <code>contains()</code> method:</p>
+            <pre><code class="hljs">integers.contains(<span class="hljs-number">67</span>)
+            </code></pre>
+            <p>Output:</p>
+            <pre><code class="hljs">true
+            </code></pre>
+            <h4 id="themapinterface">The Map Interface</h4>
+            <p>The Map is a key-value pair data structure. The <code>Map</code> interface in Java uses <code>HashBased</code> searching as well as the <code>Binary Search Tree</code>.</p>
+            <p>The <code>java.util.HashMap</code> class uses a hash-value of the <code>key</code> to store the elements in the Map. Retrieving the element from the Map using right keys to hash and a good Hashing algorithm (such that no collisions occur) is <code>O(1)</code>.</p>
+            <p>Another implementation of the Map interface is the <code>java.util.TreeMap</code>, which internally uses <a rel="nofollow" target="_blank" href="https://en.wikipedia.org/wiki/Red%E2%80%93black_tree">Red-Black Tree</a> which is a type of self-balancing binary search tree. The elements added to this tree are automatically stored in the sorted fashion by the tree.</p>
+            <p>The time complexity of searching a Binary Tree is <code>O(log(N))</code>.</p>
+            <p>Let's see how we can search an element in a Map:</p>
+            <div id="ad-snigel-4"><div class=" my-4 flex justify-center" style="min-height:250px"><div id="adngin-incontent4-0" data-google-query-id="CIPr8eW50_sCFflDnQkdAMcF6Q"><div id="google_ads_iframe_/22152718,21633484772/stackabuse_incontent4_0__container__" style="border: 0pt none; width: 300px; height: 0px;"></div></div></div></div><pre><code class="hljs">java.util.Map&lt;Integer, String&gt; integers = <span class="hljs-keyword">new</span> java.util.HashMap&lt;&gt;();
+            integers.put(<span class="hljs-number">3</span>,<span class="hljs-string">"three"</span>);
+            integers.put(<span class="hljs-number">22</span>,<span class="hljs-string">"twentytwo"</span>);
+            integers.put(<span class="hljs-number">27</span>,<span class="hljs-string">"twentyseven"</span>);
+            integers.put(<span class="hljs-number">47</span>,<span class="hljs-string">"fortyseven"</span>);
+            integers.put(<span class="hljs-number">57</span>,<span class="hljs-string">"fiftyseven"</span>);
+            integers.put(<span class="hljs-number">67</span>,<span class="hljs-string">"sixtyseven"</span>);
+            integers.put(<span class="hljs-number">89</span>,<span class="hljs-string">"eightynine"</span>);
+            integers.put(<span class="hljs-number">91</span>,<span class="hljs-string">"ninetyone"</span>);
+            integers.put(<span class="hljs-number">95</span>,<span class="hljs-string">"ninetyfive"</span>);
+            integers.put(<span class="hljs-number">99</span>,<span class="hljs-string">"ninetynine"</span>);
+            
+            String value = integers.get(<span class="hljs-number">67</span>);
+            
+            System.out.println(<span class="hljs-string">"the value at key 67 is: "</span> + value);
+            </code></pre>
+            <p>We have created a map with a key as an Integer and the value as that Integer in words. We then search for a key and get the Integer as words in the output.</p>
+            <p>An important thing to note here is that the map will not store duplicate keys. If we try to insert a duplicate value it will overwrite the existing key and value with the new one.</p>
+            <p>Output:</p>
+            <pre><code class="hljs">the value at key 67 is: sixtyseven
+            </code></pre>
+            <p><code>Map</code> interface also contains the <code>containsKey()</code> method which can be used to determine if a given key exists or not:</p>
+            <pre><code class="hljs">integers.containsKey(<span class="hljs-number">67</span>);
+            </code></pre>
+            <h4 id="thesetinterface">The Set Interface</h4>
+            <p>The <code>Set</code> data-structure is used to store unique elements. The <a target="_blank" href="/java-collections-the-set-interface/">Set interface</a> is essentially a wrapper over the <code>Map</code> interface described above storing elements in the Key of the <code>Map</code>.</p>
+            <p>As with the <code>Map</code> interface it uses the <code>Binary</code> and <code>Hash-based</code> search.</p>
+            <pre><code class="hljs">java.util.Set&lt;Integer&gt; integers = <span class="hljs-keyword">new</span> java.util.HashSet&lt;&gt;();
+            integers.add(<span class="hljs-number">3</span>);
+            integers.add(<span class="hljs-number">22</span>);
+            integers.add(<span class="hljs-number">27</span>);
+            integers.add(<span class="hljs-number">47</span>);
+            integers.add(<span class="hljs-number">57</span>);
+            integers.add(<span class="hljs-number">67</span>);
+            integers.add(<span class="hljs-number">89</span>);
+            integers.add(<span class="hljs-number">91</span>);
+            integers.add(<span class="hljs-number">95</span>);
+            integers.add(<span class="hljs-number">99</span>);
+            
+            <span class="hljs-keyword">int</span> elementToSearch = <span class="hljs-number">67</span>;
+            
+            <span class="hljs-keyword">boolean</span> isNumberExists = integers.contains(elementToSearch);
+            
+            <span class="hljs-keyword">if</span> (isNumberExists)
+                System.out.println(elementToSearch + <span class="hljs-string">" exists in the set"</span>);
+            <span class="hljs-keyword">else</span>
+                System.out.println(elementToSearch + <span class="hljs-string">" does not exist in the set"</span>);
+            </code></pre>
+            <p>There is no index in the <code>Set</code> interface and as such the search operation <code>contains()</code> returns <code>true</code> or <code>false</code> depending upon the existence of the element being searched.</p>
+            <p>In this case, since the element exists in the set we get the below output:</p>
+            <pre><code class="hljs">67 exists in the set
+            </code></pre>
+            <h3 id="searchalgorithmtimecomparison">Search Algorithm Time Comparison</h3>
+            <p>That being said, it's often useful to run all of these algorithms a few times to get an idea of how they perform.</p>
+            <p>Let's search for the element <code>573400</code> in a sorted array that's populated with a million integers.</p>
+            <p>Here are the results of the algorithms:</p>
+            <table class="table table" style="font-size:15px; color: #c5bbbb;">
+              <tbody><tr>
+                <th>time(ns)</th>
+                <th>Linear</th>
+                <th>Binary (Iterative)</th>
+                <th>Binary (Recursive)</th>
+                <th>Jump</th>
+                <th>Interpolation</th>
+                <th>Exponential</th>
+                <th>Fibonacci</th>
+              </tr>
+              <tr>
+                <td>First Run</td>
+                <td>5 229 901</td>
+                <td>23 014</td>
+                <td>14 928</td>
+                <td>125 647</td>
+                <td>18 661</td>
+                <td>49 762</td>
+                <td>13 373</td>
+              </tr>
+              <tr>
+                <td>Second Run</td>
+                <td>8 436 389</td>
+                <td>24 570</td>
+                <td>14 306</td>
+                <td>329 046</td>
+                <td>18 349</td>
+                <td>206 820</td>
+                <td>21 770</td>
+              </tr>
+              <tr>
+                <td>Third Run</td>
+                <td>7 207 909</td>
+                <td>24 569</td>
+                <td>23 326</td>
+                <td>585 005</td>
+                <td>19 593</td>
+                <td>106 054</td>
+                <td>23 325</td>
+              </tr>
+              <tr>
+                <td>Fourth Run</td>
+                <td>5 888 615</td>
+                <td>33 589</td>
+                <td>27 057</td>
+                <td>218 327</td>
+                <td>23 015</td>
+                <td>111 341</td>
+                <td>25 813</td>
+              </tr>
+              <tr>
+                <td>Fifth Run</td>
+                <td>3 002 466</td>
+                <td>20 216</td>
+                <td>46 962</td>
+                <td>132 800</td>
+                <td>15 861</td>
+                <td>65 311</td>
+                <td>20 216</td>
+              </tr>
+              <tr>
+                <td>Sixth Run</td>
+                <td>6 896 901</td>
+                <td>12 440</td>
+                <td>26 124</td>
+                <td>212 107</td>
+                <td>7 465</td>
+                <td>106 054</td>
+                <td>38 254</td>
+              </tr>
+              <tr>
+                <td>Seventh Run</td>
+                <td>6 916 495</td>
+                <td>59 714</td>
+                <td>13 373</td>
+                <td>210 241</td>
+                <td>15 240</td>
+                <td>126 891</td>
+                <td>13 684</td>
+              </tr>
+              <tr>
+                <td>Eight Run</td>
+                <td>6 781 828</td>
+                <td>22 393</td>
+                <td>46 962</td>
+                <td>159 235</td>
+                <td>10 575</td>
+                <td>83 972</td>
+                <td>26 436</td>
+              </tr>
+              <tr>
+                <td>Ninth Run</td>
+                <td>6 917 116</td>
+                <td>11 507</td>
+                <td>18 660</td>
+                <td>265 911</td>
+                <td>28 302</td>
+                <td>130 002</td>
+                <td>12 751</td>
+              </tr>
+              <tr>
+                <td>Tenth Run</td>
+                <td>3 811 085</td>
+                <td>41 053</td>
+                <td>89 259</td>
+                <td>302 922</td>
+                <td>26 436</td>
+                <td>183 184</td>
+                <td>25 192</td>
+              </tr>
+            </tbody></table>
+            <p>It's easy to see that Linear Search takes <strong>significantly</strong> longer than any other algorithm to search for this element, since it evaluated each and every element before the one we're searching for. If we were searching for the first element, Linear Search would be the most efficient one here.</p>
+            <p>It's also easy to see the Binary, Interpolation and Fibonacci Search show the best results for this particular array.</p>
+            <h3 id="conclusion">Conclusion</h3>
+            <p>Every system has its own unique set of constraints and requirements. A correctly used search algorithm, based on those constraints, can go a long way in determining the performance of the system.</p>
+            
+           
+            </div>
+
+        </div>	
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Java Interview Q&A</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Sailor - v4.9.1
+  * Template URL: https://bootstrapmade.com/sailor-free-bootstrap-theme/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center">
+      <h1 class="logo me-auto"><a href="index.html">Java Interview Q&A</a></h1>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+
+          <li class="dropdown"><a href="framework.html"><span>Framework</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="spring.html">Spring</a></li>
+              <li><a href="hibernate.html">Hibernate</a></li>
+              <li><a href="springboot.html">SpringBoot</a></li>
+              <li><a href="jsf.html">JSF</a></li>
+              <li><a href="struts.html">Struts</a></li>
+              <li class="dropdown"><a href="#"><span>Entity Framework</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="jpa.html">JPA</a></li>
+                  <li><a href="hibernate.html">Hibernate</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          
+          <li class="dropdown"><a href="database.html"><span>Database</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="sql.html">SQL</a></li>
+              <li><a href="plsql.html">PL-SQL</a></li>
+              <li class="dropdown"><a href="nosql.html"><span>NoSQL</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">Apache Cassandra</a></li>
+                  <li><a href="#">MongoDB</a></li>
+                  <li><a href="#">Redis</a></li>
+                  <li><a href="#">ArangoDB</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="cloud.html"><span>Cloud</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="aws.html">AWS</a></li>
+              <li><a href="gcp.html">GCP</a></li>
+              <li><a href="azure.html">Azure</a></li>
+              <li><a href="ibm-cloud.html">IBM Cloud</a></li>
+              <li><a href="docker.html">Docker</a></li>
+              <li><a href="kubernetes.html">Kubernetes</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="ui.html"><span>UI</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="angular.html">Angular</a></li>
+              <li><a href="react.html">ReactJS</a></li>
+              <li><a href="javascript.html">Javascript</a></li>
+              <li><a href="css.html">css</a></li>
+              <li><a href="html.html">html</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>Other</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Company wise</a></li>
+              <li><a href="microservices.html">Microservices</a></li>
+              
+              <li class="dropdown"><a href="data-structure.html"><span>Data Structure</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="data-structure-sorting.html">Sorting</a></li>
+                  <li><a href="data-structure-searching.html">Searching</a></li>
+                  <li><a href="data-structure-dynamic-programming.html">Dynamic Programming</a></li>
+                  <li><a href="data-structure-array.html">Array</a></li>
+                  <li><a href="data-structure-linked-list.html">Linked List</a></li>
+                  <li><a href="data-structure-stack .html">Stack</a></li>
+                  <li><a href="data-structure-queue.html">Queue</a></li>
+                  <li><a href="data-structure-binary-tree.html">Binary Tree</a></li>
+                  <li><a href="data-structure-binary-search-tree.html">Binary Search Tree</a></li>
+                  <li><a href="data-structure-heap.html">Heap</a></li>
+                  <li><a href="data-structure-hashing .html">Hashing</a></li> 
+                  <li><a href="data-structure-graph.html">Graph</a></li>
+                </ul>
+              </li>
+
+              <li><a href="#">Architect</a></li>
+            </ul>
+          </li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+  </header>
+
+</br>
+  <main id="main">
+
+    <section id="about" class="about">
+      <div class="container">
+        <div class="row-content"> 
+          
+          <div class="toc-toggle">Table of contents</div>
+          <ol class="menu_level_2">
+            <li><a href="#rodcuttingalgorithm">Rod Cutting Algorithm</a></li>
+            <li><a href="#simplifiedknapsackproblem">Simplified Knapsack Problem</a></li>
+            <li><a href="#thetraditionalknapsackproblem">The Traditional Knapsack Problem</a></li>
+            <li><a href="#levenshteindistance">Levenshtein Distance</a></li>
+            <li><a href="#longestcommonsubsequencelcs">Longest Common Subsequence (LCS)</a></li>
+          </ol>
+
+          <div class="content"><noscript><style>.lazyload-placeholder { display: none; }</style></noscript><h3 id="introduction">Introduction</h3>
+            <p><strong><em>Dynamic Programming</em></strong> is typically used to optimize recursive algorithms, as they tend to scale exponentially. The main idea is to break down complex problems (with many recursive calls) into smaller subproblems and then save them into memory so that we don't have to recalculate them each time we use them.</p>
+            <h3 id="whatisdynamicprogramming">What is Dynamic Programming?</h3>
+            <p>Dynamic programming is a programming principle where a very complex problem can be solved by dividing it into smaller subproblems. This principle is very similar to recursion, but with a key difference, every distinct subproblem has to be solved only <em>once</em>.</p>
+            <p>To understand what this means, we first have to understand the problem of solving recurrence relations. Every single complex problem can be divided into very similar subproblems, this means we can construct a <em>recurrence relation</em> between them.</p>
+            <p>Let's take a look at an example we all are familiar with, the <strong><em>Fibonacci sequence</em></strong>! The Fibonacci sequence is defined with the following <em>recurrence relation</em>:</p>
+            <p><span class="MathJax_Preview" style="color: inherit;"></span><span class="mjx-chtml MJXc-display" style="text-align: center;"><span id="MathJax-Element-1-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; display=&quot;block&quot;><mi>f</mi><mi>i</mi><mi>b</mi><mi>o</mi><mi>n</mi><mi>a</mi><mi>c</mi><mi>c</mi><mi>i</mi><mo stretchy=&quot;false&quot;>(</mo><mi>n</mi><mo stretchy=&quot;false&quot;>)</mo><mo>=</mo><mi>f</mi><mi>i</mi><mi>b</mi><mi>o</mi><mi>n</mi><mi>a</mi><mi>c</mi><mi>c</mi><mi>i</mi><mo stretchy=&quot;false&quot;>(</mo><mi>n</mi><mo>&amp;#x2212;</mo><mn>1</mn><mo stretchy=&quot;false&quot;>)</mo><mo>+</mo><mi>f</mi><mi>i</mi><mi>b</mi><mi>o</mi><mi>n</mi><mi>a</mi><mi>c</mi><mi>c</mi><mi>i</mi><mo stretchy=&quot;false&quot;>(</mo><mi>n</mi><mo>&amp;#x2212;</mo><mn>2</mn><mo stretchy=&quot;false&quot;>)</mo></math>" role="presentation" style="font-size: 117%; text-align: center; position: relative;"><span id="MJXc-Node-1" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-2" class="mjx-mrow"><span id="MJXc-Node-3" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.477em; padding-bottom: 0.477em; padding-right: 0.06em;">f</span></span><span id="MJXc-Node-4" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.43em; padding-bottom: 0.287em;">i</span></span><span id="MJXc-Node-5" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.477em; padding-bottom: 0.287em;">b</span></span><span id="MJXc-Node-6" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.24em; padding-bottom: 0.287em;">o</span></span><span id="MJXc-Node-7" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.24em; padding-bottom: 0.287em;">n</span></span><span id="MJXc-Node-8" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.24em; padding-bottom: 0.287em;">a</span></span><span id="MJXc-Node-9" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.24em; padding-bottom: 0.287em;">c</span></span><span id="MJXc-Node-10" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.24em; padding-bottom: 0.287em;">c</span></span><span id="MJXc-Node-11" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.43em; padding-bottom: 0.287em;">i</span></span><span id="MJXc-Node-12" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.477em; padding-bottom: 0.572em;">(</span></span><span id="MJXc-Node-13" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.24em; padding-bottom: 0.287em;">n</span></span><span id="MJXc-Node-14" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.477em; padding-bottom: 0.572em;">)</span></span><span id="MJXc-Node-15" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.097em; padding-bottom: 0.335em;">=</span></span><span id="MJXc-Node-16" class="mjx-mi MJXc-space3"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.477em; padding-bottom: 0.477em; padding-right: 0.06em;">f</span></span><span id="MJXc-Node-17" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.43em; padding-bottom: 0.287em;">i</span></span><span id="MJXc-Node-18" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.477em; padding-bottom: 0.287em;">b</span></span><span id="MJXc-Node-19" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.24em; padding-bottom: 0.287em;">o</span></span><span id="MJXc-Node-20" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.24em; padding-bottom: 0.287em;">n</span></span><span id="MJXc-Node-21" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.24em; padding-bottom: 0.287em;">a</span></span><span id="MJXc-Node-22" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.24em; padding-bottom: 0.287em;">c</span></span><span id="MJXc-Node-23" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.24em; padding-bottom: 0.287em;">c</span></span><span id="MJXc-Node-24" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.43em; padding-bottom: 0.287em;">i</span></span><span id="MJXc-Node-25" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.477em; padding-bottom: 0.572em;">(</span></span><span id="MJXc-Node-26" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.24em; padding-bottom: 0.287em;">n</span></span><span id="MJXc-Node-27" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.287em; padding-bottom: 0.43em;">−</span></span><span id="MJXc-Node-28" class="mjx-mn MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.382em; padding-bottom: 0.335em;">1</span></span><span id="MJXc-Node-29" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.477em; padding-bottom: 0.572em;">)</span></span><span id="MJXc-Node-30" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.287em; padding-bottom: 0.43em;">+</span></span><span id="MJXc-Node-31" class="mjx-mi MJXc-space2"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.477em; padding-bottom: 0.477em; padding-right: 0.06em;">f</span></span><span id="MJXc-Node-32" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.43em; padding-bottom: 0.287em;">i</span></span><span id="MJXc-Node-33" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.477em; padding-bottom: 0.287em;">b</span></span><span id="MJXc-Node-34" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.24em; padding-bottom: 0.287em;">o</span></span><span id="MJXc-Node-35" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.24em; padding-bottom: 0.287em;">n</span></span><span id="MJXc-Node-36" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.24em; padding-bottom: 0.287em;">a</span></span><span id="MJXc-Node-37" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.24em; padding-bottom: 0.287em;">c</span></span><span id="MJXc-Node-38" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.24em; padding-bottom: 0.287em;">c</span></span><span id="MJXc-Node-39" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.43em; padding-bottom: 0.287em;">i</span></span><span id="MJXc-Node-40" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.477em; padding-bottom: 0.572em;">(</span></span><span id="MJXc-Node-41" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.24em; padding-bottom: 0.287em;">n</span></span><span id="MJXc-Node-42" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.287em; padding-bottom: 0.43em;">−</span></span><span id="MJXc-Node-43" class="mjx-mn MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.382em; padding-bottom: 0.335em;">2</span></span><span id="MJXc-Node-44" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.477em; padding-bottom: 0.572em;">)</span></span></span></span><span class="MJX_Assistive_MathML MJX_Assistive_MathML_Block" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mi>f</mi><mi>i</mi><mi>b</mi><mi>o</mi><mi>n</mi><mi>a</mi><mi>c</mi><mi>c</mi><mi>i</mi><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo><mo>=</mo><mi>f</mi><mi>i</mi><mi>b</mi><mi>o</mi><mi>n</mi><mi>a</mi><mi>c</mi><mi>c</mi><mi>i</mi><mo stretchy="false">(</mo><mi>n</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo><mo>+</mo><mi>f</mi><mi>i</mi><mi>b</mi><mi>o</mi><mi>n</mi><mi>a</mi><mi>c</mi><mi>c</mi><mi>i</mi><mo stretchy="false">(</mo><mi>n</mi><mo>−</mo><mn>2</mn><mo stretchy="false">)</mo></math></span></span></span><script type="math/tex; mode=display" id="MathJax-Element-1"> 
+            fibonacci(n)=fibonacci(n-1)+fibonacci(n-2) 
+            </script></p>
+            <p><strong>Note:</strong> A <em>recurrence relation</em> is an equation that recursively defines a sequence where the next term is a function of the previous terms. The Fibonacci sequence is a great example of this.</p>
+            <p>So, if we want to find the <code>n-th</code> number in the Fibonacci sequence, we have to know the two numbers preceding the <code>n-th</code> in the sequence.</p>
+            <p>However, every single time we want to calculate a different element of the Fibonacci sequence, we have have certain <em>duplicate</em> calls in our recursive calls, as can be seen in following image, where we calculate <em>Fibonacci(5)</em>:</p>
+            <div class="lazyload-wrapper "><img src="https://s3.amazonaws.com/stackabuse/media/dynamic-programming-in-java-1.png" alt="fibonacci_sequence"></div><noscript><img src="https://s3.amazonaws.com/stackabuse/media/dynamic-programming-in-java-1.png" alt="fibonacci_sequence"/></noscript><p></p>
+            <p>For example, if we want to calculate F(5), we obviously need to calculate F(4) and F(3) as a prerequisite. However, to calculate F(4), we need to calculate F(3) and F(2), which in turn requires us to calculate F(2) and F(1) in order to get F(3) – and so on.</p>
+            <p>This leads to many repeated calculations, which are essentially redundant and slow down the algorithm significantly. To solve this issue, we're introducing ourselves to <strong>Dynamic Programming</strong>.</p>
+            <p>In this approach, we model a solution as if we were to solve it recursively, but we solve it from the ground up, <em>memoizing</em> the solutions to the subproblems (steps) we take to reach the top.</p>
+            <p>Therefore, for the Fibonacci sequence, we <em>first</em> solve and memoize F(1) and F(2), then calculate F(3) using the two memoized steps, and so on. This means that the calculation of every individual element of the sequence is <em>O(1)</em>, because we already know the former two.</p>
+            <p>When solving a problem using dynamic programming, we have to follow three steps:</p>
+            <ul>
+            <li>Determine the recurrence relation that applies to said problem</li>
+            <li>Initialize the memory/array/matrix's starting values</li>
+            <li>Make sure that when we make a "recursive call" (access the memoized solution of a subproblem) it's always solved in advance</li>
+            </ul>
+            <p>Following these rules, let's take a look at some examples of algorithms that use dynamic programming.</p>
+            <h3 id="rodcuttingalgorithm">Rod Cutting Algorithm</h3>
+            <p>Let's start with something simple:</p>
+            <blockquote>
+            <p>Given a rod of length <code>n</code> and an array that contains prices of all pieces of size smaller than <code>n</code>. Determine the maximum value obtainable by cutting up the rod and selling the pieces.</p>
+            </blockquote>
+            <h4 id="naivesolution">Naive Solution</h4>
+            <p>This problem is practically tailor-made for dynamic programming, but because this is our first real example, let's see how many fires we can start by letting this code run:</p>
+            <pre><code class="hljs"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">naiveSolution</span> </span>{
+                <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> <span class="hljs-title">getValue</span><span class="hljs-params">(<span class="hljs-keyword">int</span>[] values, <span class="hljs-keyword">int</span> length)</span> </span>{
+                    <span class="hljs-keyword">if</span> (length &lt;= <span class="hljs-number">0</span>)
+                        <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+                    <span class="hljs-keyword">int</span> tmpMax = -<span class="hljs-number">1</span>;
+                    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; length; i++) {
+                        tmpMax = Math.max(tmpMax, values[i] + getValue(values, length - i - <span class="hljs-number">1</span>));
+                    }
+                    <span class="hljs-keyword">return</span> tmpMax;
+                }
+            
+                <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+                    <span class="hljs-keyword">int</span>[] values = <span class="hljs-keyword">new</span> <span class="hljs-keyword">int</span>[]{<span class="hljs-number">3</span>, <span class="hljs-number">7</span>, <span class="hljs-number">1</span>, <span class="hljs-number">3</span>, <span class="hljs-number">9</span>};
+                    <span class="hljs-keyword">int</span> rodLength = values.length;
+            
+                    System.out.println(<span class="hljs-string">"Max rod value: "</span> + getValue(values, rodLength));
+                }
+            }
+            </code></pre>
+            <p><strong>Output:</strong></p>
+            <pre><code class="hljs">Max rod value: 17
+            </code></pre>
+            <p>This solution, while correct, is <strong>highly inefficient</strong>. Recursive calls aren't memoized so the poor code has to solve the same subproblem every time there's a single overlapping solution.</p>
+            <h4 id="dynamicapproach">Dynamic Approach</h4>
+            <p>Utilizing the same basic principle from above, but adding <strong>memoization</strong> and excluding recursive calls, we get the following implementation:</p>
+            <pre><code class="hljs"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">dpSolution</span> </span>{
+                <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> <span class="hljs-title">getValue</span><span class="hljs-params">(<span class="hljs-keyword">int</span>[] values, <span class="hljs-keyword">int</span> rodLength)</span> </span>{
+                    <span class="hljs-keyword">int</span>[] subSolutions = <span class="hljs-keyword">new</span> <span class="hljs-keyword">int</span>[rodLength + <span class="hljs-number">1</span>];
+            
+                    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">1</span>; i &lt;= rodLength; i++) {
+                        <span class="hljs-keyword">int</span> tmpMax = -<span class="hljs-number">1</span>;
+                        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> j = <span class="hljs-number">0</span>; j &lt; i; j++)
+                            tmpMax = Math.max(tmpMax, values[j] + subSolutions[i - j - <span class="hljs-number">1</span>]);
+                        subSolutions[i] = tmpMax;
+                    }
+                    <span class="hljs-keyword">return</span> subSolutions[rodLength];
+                }
+            
+                <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+                    <span class="hljs-keyword">int</span>[] values = <span class="hljs-keyword">new</span> <span class="hljs-keyword">int</span>[]{<span class="hljs-number">3</span>, <span class="hljs-number">7</span>, <span class="hljs-number">1</span>, <span class="hljs-number">3</span>, <span class="hljs-number">9</span>};
+                    <span class="hljs-keyword">int</span> rodLength = values.length;
+            
+                    System.out.println(<span class="hljs-string">"Max rod value: "</span> + getValue(values, rodLength));
+                }
+            }
+            </code></pre>
+            <p><strong>Output:</strong></p>
+            <pre><code class="hljs">Max rod value: 17
+            </code></pre>
+            <p>As we can see, the resulting outputs are the same, only with different time/space complexity.</p>
+            <p>We eliminate the need for recursive calls by solving the subproblems from the ground-up, utilizing the fact that all previous subproblems to a given problem are already solved.</p>
+            <h4 id="performanceboost">Performance Boost</h4>
+            <p>Just to give a perspective of how much more efficient the Dynamic approach is, let's try running the algorithm with 30 values.</p>
+            <p>The Naive solution took <strong>~5.2s</strong> to execute whereas the Dynamic solution took <strong>~0.000095s</strong> to execute.</p>
+            <h3 id="simplifiedknapsackproblem">Simplified Knapsack Problem</h3>
+            <p>The Simplified Knapsack problem is a problem of optimization, for which there is no <em>one</em> solution. The question for this problem would be - "Does a solution even exist?":</p>
+            <blockquote>
+            <p>Given a set of items, each with a weight <code>w1</code>, <code>w2</code>... determine the number of each item to put in a knapsack so that the total weight is less than or equal to a given limit <code>K</code>.</p>
+            </blockquote>
+            <p>So let's take a step back and figure out how will we represent the solutions to this problem. First, let's store the weights of all the items in an array <code>W</code>.</p>
+            <p>Next, let's say that there are <code>n</code> items and we'll enumerate them with numbers from <code>1 to n</code>, so the weight of the <code>i-th</code> item is <code>W[i]</code>.</p>
+            <p>We'll form a matrix <code>M</code> of <code>(n+1)</code>x<code>(K+1)</code> dimensions. <code>M[x][y]</code> corresponding to the solution of the knapsack problem, but only including the first <code>x</code> items of the beginning array, and with a maximum capacity of <code>y</code>.</p>
+            <h4 id="example">Example</h4>
+            <p>Let's say we have 3 items, with the weights being <code>w1=2kg</code>, <code>w2=3kg</code>, and <code>w3=4kg</code>.</p>
+            <p>Utilizing the method above, we can say that <code>M[1][2]</code> is a valid solution. This means that we are trying to fill a knapsack with a capacity of 2kg with just the first item from the weight array (<code>w1</code>).</p>
+            <p>While in <code>M[3][5]</code> we are trying to fill up a knapsack with a capacity of 5kg using the first <code>3</code> items of the weight array (<code>w1,w2,w3</code>). This isn't a valid solution, since we're overfitting it.</p>
+            <h4 id="matrixinitialization">Matrix Initialization</h4>
+            <p>There are 2 things to note when filling up the matrix:</p>
+            <blockquote>
+            <p>Does a solution exist for the given subproblem (M[x][y].exists) AND does the given solution include the latest item added to the array (M[x][y].includes).</p>
+            </blockquote>
+            <p>Therefore, initialization of the matrix is quite easy, <code>M[0][k].exists</code> is always <code>false</code>, if <code>k &gt; 0</code>, because we didn't put any items in a knapsack with <code>k</code> capacity.</p>
+            <p>On the other hand, <code>M[0][0].exists = true</code>, because the knapsack <strong>should</strong> be empty to begin with since <code>k = 0</code>, and therefore we <em>can't</em> put anything in and this is a valid solution.</p>
+            <p>Furthermore, we can say that <code>M[k][0].exists = true</code> but also <code>M[k][0].includes = false</code> for every <code>k</code>.</p>
+            <p><strong>Note</strong>: Just because a solution <em>exists</em> for a given <code>M[x][y]</code>, it doesn't necessarily mean that that particular combination is the solution. In the case of <code>M[10][0]</code>, a solution exists - not including any of the 10 elements. This is why <code>M[10][0].exists = true</code> but <code>M[10][0].includes = false</code>.</p>
+            <h4 id="algorithmprinciple">Algorithm Principle</h4>
+            <p>Next, let's construct the recurrence relation for <code>M[i][k]</code> with the following pseudo-code:</p>
+            <pre><code class="hljs"><span class="hljs-keyword">if</span> (M[i-<span class="hljs-number">1</span>][k].exists == <span class="hljs-literal">True</span>):
+                M[i][k].exists = <span class="hljs-literal">True</span>
+                M[i][k].includes = <span class="hljs-literal">False</span>
+            <span class="hljs-keyword">elif</span> (k-W[i]&gt;=<span class="hljs-number">0</span>):
+                <span class="hljs-keyword">if</span>(M[i-<span class="hljs-number">1</span>][k-W[i]].exists == true):
+                    M[i][k].exists = <span class="hljs-literal">True</span>
+                    M[i][k].includes = <span class="hljs-literal">True</span>
+            <span class="hljs-keyword">else</span>:
+                M[i][k].exists = <span class="hljs-literal">False</span>
+            </code></pre>
+            <p>So the gist of the solution is dividing the subproblem into two cases:</p>
+            <ol>
+            <li>When a solution exists for the first <code>i-1</code> elements, for capacity <code>k</code></li>
+            <li>When a solution exists for the first <code>i-1</code> elements, but for capacity <code>k-W[i]</code></li>
+            </ol>
+            <p>The first case is self-explanatory, we already have a solution to the problem.</p>
+            <p>The second case refers to knowing the solution for the first <code>i-1</code> elements, but the capacity is with exactly one <code>i-th</code> element short of being full, which means we can just add one <code>i-th</code> element, and we have a new solution!</p>
+            <h4 id="implementation">Implementation</h4>
+            <p>In this implementation, to make things easier, we'll make the class <code>Element</code> for storing elements:</p>
+            <pre><code class="hljs"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Element</span> </span>{
+                <span class="hljs-keyword">private</span> <span class="hljs-keyword">boolean</span> exists;
+                <span class="hljs-keyword">private</span> <span class="hljs-keyword">boolean</span> includes;
+            
+                <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Element</span><span class="hljs-params">(<span class="hljs-keyword">boolean</span> exists, <span class="hljs-keyword">boolean</span> includes)</span> </span>{
+                    <span class="hljs-keyword">this</span>.exists = exists;
+                    <span class="hljs-keyword">this</span>.includes = includes;
+                }
+            
+                <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Element</span><span class="hljs-params">(<span class="hljs-keyword">boolean</span> exists)</span> </span>{
+                    <span class="hljs-keyword">this</span>.exists = exists;
+                    <span class="hljs-keyword">this</span>.includes = <span class="hljs-keyword">false</span>;
+                }
+            
+                <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">boolean</span> <span class="hljs-title">isExists</span><span class="hljs-params">()</span> </span>{
+                    <span class="hljs-keyword">return</span> exists;
+                }
+            
+                <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setExists</span><span class="hljs-params">(<span class="hljs-keyword">boolean</span> exists)</span> </span>{
+                    <span class="hljs-keyword">this</span>.exists = exists;
+                }
+            
+                <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">boolean</span> <span class="hljs-title">isIncludes</span><span class="hljs-params">()</span> </span>{
+                    <span class="hljs-keyword">return</span> includes;
+                }
+            
+                <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setIncludes</span><span class="hljs-params">(<span class="hljs-keyword">boolean</span> includes)</span> </span>{
+                    <span class="hljs-keyword">this</span>.includes = includes;
+                }
+            }
+            </code></pre>
+            <p>Now we can dive into the main class:</p>
+            <pre><code class="hljs"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Knapsack</span> </span>{
+                <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+                    Scanner scanner = <span class="hljs-keyword">new</span> Scanner (System.in);
+            
+                    System.out.println(<span class="hljs-string">"Insert knapsack capacity:"</span>);
+                    <span class="hljs-keyword">int</span> k = scanner.nextInt();
+            
+                    System.out.println(<span class="hljs-string">"Insert number of items:"</span>);
+                    <span class="hljs-keyword">int</span> n = scanner.nextInt();
+            
+                    System.out.println(<span class="hljs-string">"Insert weights: "</span>);
+                    <span class="hljs-keyword">int</span>[] weights = <span class="hljs-keyword">new</span> <span class="hljs-keyword">int</span>[n + <span class="hljs-number">1</span>];
+            
+                    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">1</span>; i &lt;= n; i++) {
+                        weights[i] = scanner.nextInt();
+                    }
+            
+                    Element[][] elementMatrix = <span class="hljs-keyword">new</span> Element[n + <span class="hljs-number">1</span>][k + <span class="hljs-number">1</span>];
+            
+                    elementMatrix[<span class="hljs-number">0</span>][<span class="hljs-number">0</span>] = <span class="hljs-keyword">new</span> Element(<span class="hljs-keyword">true</span>);
+            
+                    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">1</span>; i &lt;= k; i++) {
+                        elementMatrix[<span class="hljs-number">0</span>][i] = <span class="hljs-keyword">new</span> Element(<span class="hljs-keyword">false</span>);
+                    }
+            
+                    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">1</span>; i &lt;= n; i++) {
+                        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> j = <span class="hljs-number">0</span>; j &lt;= k; j++) {
+                            elementMatrix[i][j] = <span class="hljs-keyword">new</span> Element(<span class="hljs-keyword">false</span>);
+                            <span class="hljs-keyword">if</span> (elementMatrix[i - <span class="hljs-number">1</span>][j].isExists()) {
+                                elementMatrix[i][j].setExists(<span class="hljs-keyword">true</span>);
+                                elementMatrix[i][j].setIncludes(<span class="hljs-keyword">false</span>);
+                            } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (j &gt;= weights[i]) {
+                                <span class="hljs-keyword">if</span> (elementMatrix[i - <span class="hljs-number">1</span>][j - weights[i]].isExists()) {
+                                    elementMatrix[i][j].setExists(<span class="hljs-keyword">true</span>);
+                                    elementMatrix[i][j].setIncludes(<span class="hljs-keyword">true</span>);
+                                }
+                            }
+                        }
+                    }
+            
+                    System.out.println(elementMatrix[n][k].isExists());
+                }
+            }
+            </code></pre>
+            <p>The only thing that's left is reconstruction of the solution, in the class above, we know that a solution <em>EXISTS</em>, however we don't know what it is.</p>
+            <p>For reconstruction we use the following code:</p>
+            <pre><code class="hljs">List&lt;Integer&gt; solution = <span class="hljs-keyword">new</span> ArrayList&lt;&gt;(n);
+            
+            <span class="hljs-keyword">if</span> (elementMatrix[n][k].isExists()) {
+                <span class="hljs-keyword">int</span> i = n;
+                <span class="hljs-keyword">int</span> j = k;
+                <span class="hljs-keyword">while</span> (j &gt; <span class="hljs-number">0</span> &amp;&amp; i &gt; <span class="hljs-number">0</span>) {
+                    <span class="hljs-keyword">if</span> (elementMatrix[i][j].isIncludes()) {
+                        solution.add(i);
+                        j = j - weights[i];
+                    }
+                    i = i - <span class="hljs-number">1</span>;
+                }
+            }
+            
+            System.out.println(<span class="hljs-string">"The elements with the following indexes are in the solution:\n"</span> + (solution.toString()));
+            </code></pre>
+            <p><strong>Output:</strong></p>
+            <pre><code class="hljs">Insert knapsack capacity:
+            12
+            Insert number of items:
+            5
+            Insert weights:
+            9 7 4 10 3
+            true
+            The elements with the following indexes are in the solution:
+            [5, 1]
+            </code></pre>
+            <p>A simple variation of the knapsack problem is filling a knapsack without value optimization, but now with unlimited amounts of every individual item.</p>
+            <p>This variation can be solved by making a simple adjustment to our existing code:</p>
+            <pre><code class="hljs"><span class="hljs-comment">// Old code for simplified knapsack problem</span>
+            <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (j &gt;= weights[i]) {
+                <span class="hljs-keyword">if</span> (elementMatrix[i - <span class="hljs-number">1</span>][j - weights[i]].isExists()) {
+                    elementMatrix[i][j].setExists(<span class="hljs-keyword">true</span>);
+                    elementMatrix[i][j].setIncludes(<span class="hljs-keyword">true</span>);
+                }
+            }
+            
+            <span class="hljs-comment">// New code, note that we're searching for a solution in the same</span>
+            <span class="hljs-comment">// row (i-th row), which means we're looking for a solution that</span>
+            <span class="hljs-comment">// already has some number of i-th elements (including 0) in it's solution</span>
+            <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (j &gt;= weights[i]) {
+                <span class="hljs-keyword">if</span> (elementMatrix[i][j - weights[i]].isExists()) {
+                    elementMatrix[i][j].setExists(<span class="hljs-keyword">true</span>);
+                    elementMatrix[i][j].setIncludes(<span class="hljs-keyword">true</span>);
+                }
+            }
+            </code></pre>
+            <h3 id="thetraditionalknapsackproblem">The Traditional Knapsack Problem</h3>
+            <p>Utilizing both previous variations, let's now take a look at the traditional knapsack problem and see how it differs from the simplified variation:</p>
+            <blockquote>
+            <p>Given a set of items, each with a weight <code>w1</code>, <code>w2</code>... and a value <code>v1</code>, <code>v2</code>... determine the number of each item to include in a collection so that the total weight is less than or equal to a given limit <code>k</code> and the total value is as large as possible.</p>
+            </blockquote>
+            <p>In the simplified version, every single solution was equally as good. However, now we have a criteria for finding an <strong>optimal</strong> solution (aka the largest value possible). Keep in mind, this time we have an <em>infinite number of each item</em>, so items can occur multiple times in a solution.</p>
+            <p>In the implementation we'll be using the old class <code>Element</code>, with an added private field <code>value</code> for storing the largest possible value for a given subproblem:</p>
+            <pre><code class="hljs"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Element</span> </span>{
+                <span class="hljs-keyword">private</span> <span class="hljs-keyword">boolean</span> exists;
+                <span class="hljs-keyword">private</span> <span class="hljs-keyword">boolean</span> includes;
+                <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> value;
+                <span class="hljs-comment">// appropriate constructors, getters and setters</span>
+            }
+            </code></pre>
+            <p>The implementation is very similar, with the only difference being that now we have to choose the optimal solution judging by the resulting value:</p>
+            <pre><code class="hljs"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+                <span class="hljs-comment">// Same code as before with the addition of the values[] array</span>
+                System.out.println(<span class="hljs-string">"Insert values: "</span>);
+                <span class="hljs-keyword">int</span>[] values = <span class="hljs-keyword">new</span> <span class="hljs-keyword">int</span>[n + <span class="hljs-number">1</span>];
+            
+                <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i=<span class="hljs-number">1</span>; i &lt;= n; i++) {
+                    values[i] = scanner.nextInt();
+                }
+            
+                Element[][] elementMatrix = <span class="hljs-keyword">new</span> Element[n + <span class="hljs-number">1</span>][k + <span class="hljs-number">1</span>];
+            
+                <span class="hljs-comment">// A matrix that indicates how many newest objects are used</span>
+                <span class="hljs-comment">// in the optimal solution.</span>
+                <span class="hljs-comment">// Example: contains[5][10] indicates how many objects with</span>
+                <span class="hljs-comment">// the weight of W[5] are contained in the optimal solution</span>
+                <span class="hljs-comment">// for a knapsack of capacity K=10</span>
+                <span class="hljs-keyword">int</span>[][] contains = <span class="hljs-keyword">new</span> <span class="hljs-keyword">int</span>[n + <span class="hljs-number">1</span>][k + <span class="hljs-number">1</span>];
+            
+                elementMatrix[<span class="hljs-number">0</span>][<span class="hljs-number">0</span>] = <span class="hljs-keyword">new</span> Element(<span class="hljs-number">0</span>);
+            
+                <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">1</span>; i &lt;= n; i++) {
+                    elementMatrix[i][<span class="hljs-number">0</span>] = <span class="hljs-keyword">new</span> Element(<span class="hljs-number">0</span>);
+                    contains[i][<span class="hljs-number">0</span>] = <span class="hljs-number">0</span>;
+                }
+            
+                <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">1</span>; i &lt;= k; i++) {
+                    elementMatrix[<span class="hljs-number">0</span>][i] = <span class="hljs-keyword">new</span> Element(<span class="hljs-number">0</span>);
+                    contains[<span class="hljs-number">0</span>][i] = <span class="hljs-number">0</span>;
+                }
+            
+                <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">1</span>; i &lt;= n; i++) {
+                    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> j = <span class="hljs-number">0</span>; j &lt;= k; j++) {
+                        elementMatrix[i][j] = <span class="hljs-keyword">new</span> Element(elementMatrix[i - <span class="hljs-number">1</span>][j].getValue());
+                        contains[i][j] = <span class="hljs-number">0</span>;
+            
+                        elementMatrix[i][j].setIncludes(<span class="hljs-keyword">false</span>);
+                        elementMatrix[i][j].setValue(M[i - <span class="hljs-number">1</span>][j].getValue());
+            
+                        <span class="hljs-keyword">if</span> (j &gt;= weights[i]) {
+                            <span class="hljs-keyword">if</span> ((elementMatrix[i][j - weights[i]].getValue() &gt; <span class="hljs-number">0</span> || j == weights[i])) {
+                                <span class="hljs-keyword">if</span> (elementMatrix[i][j - weights[i]].getValue() + values[i] &gt; M[i][j].getValue()) {
+                                    elementMatrix[i][j].setIncludes(<span class="hljs-keyword">true</span>);
+                                    elementMatrix[i][j].setValue(M[i][j - weights[i]].getValue() + values[i]);
+                                    contains[i][j] = contains[i][j - weights[i]] + <span class="hljs-number">1</span>;
+                                }
+                            }
+                        }
+            
+                        System.out.print(elementMatrix[i][j].getValue() + <span class="hljs-string">"/"</span> + contains[i][j] + <span class="hljs-string">"  "</span>);
+                    }
+            
+                    System.out.println();
+                }
+            
+                System.out.println(<span class="hljs-string">"Value: "</span> + elementMatrix[n][k].getValue());
+            }
+            </code></pre>
+            <p><strong>Output:</strong></p>
+            <pre><code class="hljs">Insert knapsack capacity:
+            12
+            Insert number of items:
+            5
+            Insert weights:
+            9 7 4 10 3
+            Insert values:
+            1 2 3 4 5
+            0/0  0/0  0/0  0/0  0/0  0/0  0/0  0/0  0/0  1/1  0/0  0/0  0/0
+            0/0  0/0  0/0  0/0  0/0  0/0  0/0  2/1  0/0  1/0  0/0  0/0  0/0
+            0/0  0/0  0/0  0/0  3/1  0/0  0/0  2/0  6/2  1/0  0/0  5/1  9/3
+            0/0  0/0  0/0  0/0  3/0  0/0  0/0  2/0  6/0  1/0  4/1  5/0  9/0
+            0/0  0/0  0/0  5/1  3/0  0/0  10/2  8/1  6/0  15/3  13/2  11/1  20/4
+            Value: 20
+            </code></pre>
+            <h3 id="levenshteindistance">Levenshtein Distance</h3>
+            <p>Another very good example of using dynamic programming is <em>Edit Distance</em> or the <em>Levenshtein Distance</em>.</p>
+            <p>The Levenshtein distance for 2 strings <code>A</code> and <code>B</code> is the number of atomic operations we need to use to transform <code>A</code> into <code>B</code> which are:</p>
+            <ol>
+            <li>Character deletion</li>
+            <li>Character insertion</li>
+            <li>Character substitution (technically it's more than one operation, but for the sake of simplicity let's call it an atomic operation)</li>
+            </ol>
+            <p>This problem is handled by methodically solving the problem for substrings of the beginning strings, gradually increasing the size of the substrings until they're equal to the beginning strings.</p>
+            <p>The recurrence relation we use for this problem is as follows:</p>
+            <div>
+            <span class="MathJax_Preview" style="color: inherit;"></span><span class="mjx-chtml MJXc-display" style="text-align: center;"><span id="MathJax-Element-2-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; display=&quot;block&quot;><mi>l</mi><mi>e</mi><msub><mi>v</mi><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mi>a</mi><mo>,</mo><mi>b</mi></mrow></msub><mo stretchy=&quot;false&quot;>(</mo><mi>i</mi><mo>,</mo><mi>j</mi><mo stretchy=&quot;false&quot;>)</mo><mo>=</mo><mi>m</mi><mi>i</mi><mi>n</mi><mrow><mo>{</mo><mtable columnalign=&quot;left left&quot; rowspacing=&quot;.2em&quot; columnspacing=&quot;1em&quot; displaystyle=&quot;false&quot;><mtr><mtd><mi>l</mi><mi>e</mi><msub><mi>v</mi><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mi>a</mi><mo>,</mo><mi>b</mi></mrow></msub><mo stretchy=&quot;false&quot;>(</mo><mi>i</mi><mo>&amp;#x2212;</mo><mn>1</mn><mo>,</mo><mi>j</mi><mo stretchy=&quot;false&quot;>)</mo><mo>+</mo><mn>1</mn></mtd></mtr><mtr><mtd><mi>l</mi><mi>e</mi><msub><mi>v</mi><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mi>a</mi><mo>,</mo><mi>b</mi></mrow></msub><mo stretchy=&quot;false&quot;>(</mo><mi>i</mi><mo>,</mo><mi>j</mi><mo>&amp;#x2212;</mo><mn>1</mn><mo stretchy=&quot;false&quot;>)</mo><mo>+</mo><mn>1</mn></mtd></mtr><mtr><mtd><mi>l</mi><mi>e</mi><msub><mi>v</mi><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mi>a</mi><mo>,</mo><mi>b</mi></mrow></msub><mo stretchy=&quot;false&quot;>(</mo><mi>i</mi><mo>&amp;#x2212;</mo><mn>1</mn><mo>,</mo><mi>j</mi><mo>&amp;#x2212;</mo><mn>1</mn><mo stretchy=&quot;false&quot;>)</mo><mo>+</mo><mi>c</mi><mo stretchy=&quot;false&quot;>(</mo><msub><mi>a</mi><mi>i</mi></msub><mo>,</mo><msub><mi>b</mi><mi>j</mi></msub><mo stretchy=&quot;false&quot;>)</mo></mtd></mtr></mtable><mo fence=&quot;true&quot; stretchy=&quot;true&quot; symmetric=&quot;true&quot;></mo></mrow></math>" role="presentation" style="font-size: 117%; text-align: center; position: relative;"><span id="MJXc-Node-45" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-46" class="mjx-mrow"><span id="MJXc-Node-47" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.477em; padding-bottom: 0.287em;">l</span></span><span id="MJXc-Node-48" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.24em; padding-bottom: 0.287em;">e</span></span><span id="MJXc-Node-49" class="mjx-msubsup"><span class="mjx-base"><span id="MJXc-Node-50" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.24em; padding-bottom: 0.287em;">v</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.219em; padding-right: 0.071em;"><span id="MJXc-Node-51" class="mjx-texatom" style=""><span id="MJXc-Node-52" class="mjx-mrow"><span id="MJXc-Node-53" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.24em; padding-bottom: 0.287em;">a</span></span><span id="MJXc-Node-54" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.188em; padding-bottom: 0.525em;">,</span></span><span id="MJXc-Node-55" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.477em; padding-bottom: 0.287em;">b</span></span></span></span></span></span><span id="MJXc-Node-56" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.477em; padding-bottom: 0.572em;">(</span></span><span id="MJXc-Node-57" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.43em; padding-bottom: 0.287em;">i</span></span><span id="MJXc-Node-58" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.188em; padding-bottom: 0.525em;">,</span></span><span id="MJXc-Node-59" class="mjx-mi MJXc-space1"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.43em; padding-bottom: 0.477em;">j</span></span><span id="MJXc-Node-60" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.477em; padding-bottom: 0.572em;">)</span></span><span id="MJXc-Node-61" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.097em; padding-bottom: 0.335em;">=</span></span><span id="MJXc-Node-62" class="mjx-mi MJXc-space3"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.24em; padding-bottom: 0.287em;">m</span></span><span id="MJXc-Node-63" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.43em; padding-bottom: 0.287em;">i</span></span><span id="MJXc-Node-64" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.24em; padding-bottom: 0.287em;">n</span></span><span id="MJXc-Node-65" class="mjx-mrow MJXc-space1"><span id="MJXc-Node-66" class="mjx-mo" style="vertical-align: -0.692em;"><span class="mjx-delim-v"><span class="mjx-char MJXc-TeX-size4-R" style="padding-top: 0.667em; padding-bottom: 0.287em;">⎧</span><span class="mjx-char MJXc-TeX-size4-R" style="line-height: 0.022em; margin-bottom: 0.087em; margin-top: -0.137em;">⎪</span><span class="mjx-char MJXc-TeX-size4-R" style="padding-top: 0.952em; padding-bottom: 0.952em;">⎨</span><span class="mjx-char MJXc-TeX-size4-R" style="line-height: 0.022em; margin-bottom: 0.087em; margin-top: -0.137em;">⎪</span><span class="mjx-char MJXc-TeX-size4-R" style="margin-top: -0.235em; padding-bottom: 1.189em;">⎩</span></span></span><span id="MJXc-Node-67" class="mjx-mtable" style="vertical-align: -1.616em; padding: 0px 0.167em;"><span class="mjx-table"><span id="MJXc-Node-68" class="mjx-mtr" style="height: 1.21em;"><span id="MJXc-Node-69" class="mjx-mtd" style="padding: 0px; text-align: left; width: 12.025em;"><span id="MJXc-Node-70" class="mjx-mrow" style="margin-top: -0.2em;"><span id="MJXc-Node-71" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.477em; padding-bottom: 0.287em;">l</span></span><span id="MJXc-Node-72" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.24em; padding-bottom: 0.287em;">e</span></span><span id="MJXc-Node-73" class="mjx-msubsup"><span class="mjx-base"><span id="MJXc-Node-74" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.24em; padding-bottom: 0.287em;">v</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.219em; padding-right: 0.071em;"><span id="MJXc-Node-75" class="mjx-texatom" style=""><span id="MJXc-Node-76" class="mjx-mrow"><span id="MJXc-Node-77" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.24em; padding-bottom: 0.287em;">a</span></span><span id="MJXc-Node-78" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.188em; padding-bottom: 0.525em;">,</span></span><span id="MJXc-Node-79" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.477em; padding-bottom: 0.287em;">b</span></span></span></span></span></span><span id="MJXc-Node-80" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.477em; padding-bottom: 0.572em;">(</span></span><span id="MJXc-Node-81" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.43em; padding-bottom: 0.287em;">i</span></span><span id="MJXc-Node-82" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.287em; padding-bottom: 0.43em;">−</span></span><span id="MJXc-Node-83" class="mjx-mn MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.382em; padding-bottom: 0.335em;">1</span></span><span id="MJXc-Node-84" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.188em; padding-bottom: 0.525em;">,</span></span><span id="MJXc-Node-85" class="mjx-mi MJXc-space1"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.43em; padding-bottom: 0.477em;">j</span></span><span id="MJXc-Node-86" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.477em; padding-bottom: 0.572em;">)</span></span><span id="MJXc-Node-87" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.287em; padding-bottom: 0.43em;">+</span></span><span id="MJXc-Node-88" class="mjx-mn MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.382em; padding-bottom: 0.335em;">1</span></span><span class="mjx-strut"></span></span></span></span><span id="MJXc-Node-89" class="mjx-mtr" style="height: 1.31em;"><span id="MJXc-Node-90" class="mjx-mtd" style="padding: 0.1em 0px 0px; text-align: left;"><span id="MJXc-Node-91" class="mjx-mrow" style="margin-top: -0.2em;"><span id="MJXc-Node-92" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.477em; padding-bottom: 0.287em;">l</span></span><span id="MJXc-Node-93" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.24em; padding-bottom: 0.287em;">e</span></span><span id="MJXc-Node-94" class="mjx-msubsup"><span class="mjx-base"><span id="MJXc-Node-95" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.24em; padding-bottom: 0.287em;">v</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.219em; padding-right: 0.071em;"><span id="MJXc-Node-96" class="mjx-texatom" style=""><span id="MJXc-Node-97" class="mjx-mrow"><span id="MJXc-Node-98" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.24em; padding-bottom: 0.287em;">a</span></span><span id="MJXc-Node-99" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.188em; padding-bottom: 0.525em;">,</span></span><span id="MJXc-Node-100" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.477em; padding-bottom: 0.287em;">b</span></span></span></span></span></span><span id="MJXc-Node-101" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.477em; padding-bottom: 0.572em;">(</span></span><span id="MJXc-Node-102" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.43em; padding-bottom: 0.287em;">i</span></span><span id="MJXc-Node-103" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.188em; padding-bottom: 0.525em;">,</span></span><span id="MJXc-Node-104" class="mjx-mi MJXc-space1"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.43em; padding-bottom: 0.477em;">j</span></span><span id="MJXc-Node-105" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.287em; padding-bottom: 0.43em;">−</span></span><span id="MJXc-Node-106" class="mjx-mn MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.382em; padding-bottom: 0.335em;">1</span></span><span id="MJXc-Node-107" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.477em; padding-bottom: 0.572em;">)</span></span><span id="MJXc-Node-108" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.287em; padding-bottom: 0.43em;">+</span></span><span id="MJXc-Node-109" class="mjx-mn MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.382em; padding-bottom: 0.335em;">1</span></span><span class="mjx-strut"></span></span></span></span><span id="MJXc-Node-110" class="mjx-mtr" style="height: 1.212em;"><span id="MJXc-Node-111" class="mjx-mtd" style="padding: 0.1em 0px 0px; text-align: left;"><span id="MJXc-Node-112" class="mjx-mrow" style="margin-top: -0.2em;"><span id="MJXc-Node-113" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.477em; padding-bottom: 0.287em;">l</span></span><span id="MJXc-Node-114" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.24em; padding-bottom: 0.287em;">e</span></span><span id="MJXc-Node-115" class="mjx-msubsup"><span class="mjx-base"><span id="MJXc-Node-116" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.24em; padding-bottom: 0.287em;">v</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.219em; padding-right: 0.071em;"><span id="MJXc-Node-117" class="mjx-texatom" style=""><span id="MJXc-Node-118" class="mjx-mrow"><span id="MJXc-Node-119" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.24em; padding-bottom: 0.287em;">a</span></span><span id="MJXc-Node-120" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.188em; padding-bottom: 0.525em;">,</span></span><span id="MJXc-Node-121" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.477em; padding-bottom: 0.287em;">b</span></span></span></span></span></span><span id="MJXc-Node-122" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.477em; padding-bottom: 0.572em;">(</span></span><span id="MJXc-Node-123" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.43em; padding-bottom: 0.287em;">i</span></span><span id="MJXc-Node-124" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.287em; padding-bottom: 0.43em;">−</span></span><span id="MJXc-Node-125" class="mjx-mn MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.382em; padding-bottom: 0.335em;">1</span></span><span id="MJXc-Node-126" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.188em; padding-bottom: 0.525em;">,</span></span><span id="MJXc-Node-127" class="mjx-mi MJXc-space1"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.43em; padding-bottom: 0.477em;">j</span></span><span id="MJXc-Node-128" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.287em; padding-bottom: 0.43em;">−</span></span><span id="MJXc-Node-129" class="mjx-mn MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.382em; padding-bottom: 0.335em;">1</span></span><span id="MJXc-Node-130" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.477em; padding-bottom: 0.572em;">)</span></span><span id="MJXc-Node-131" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.287em; padding-bottom: 0.43em;">+</span></span><span id="MJXc-Node-132" class="mjx-mi MJXc-space2"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.24em; padding-bottom: 0.287em;">c</span></span><span id="MJXc-Node-133" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.477em; padding-bottom: 0.572em;">(</span></span><span id="MJXc-Node-134" class="mjx-msubsup"><span class="mjx-base"><span id="MJXc-Node-135" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.24em; padding-bottom: 0.287em;">a</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-136" class="mjx-mi" style=""><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.43em; padding-bottom: 0.287em;">i</span></span></span></span><span id="MJXc-Node-137" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.188em; padding-bottom: 0.525em;">,</span></span><span id="MJXc-Node-138" class="mjx-msubsup MJXc-space1"><span class="mjx-base"><span id="MJXc-Node-139" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.477em; padding-bottom: 0.287em;">b</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-140" class="mjx-mi" style=""><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.43em; padding-bottom: 0.477em;">j</span></span></span></span><span id="MJXc-Node-141" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.477em; padding-bottom: 0.572em;">)</span></span><span class="mjx-strut"></span></span></span></span></span></span><span id="MJXc-Node-142" class="mjx-mo" style="width: 0.12em;"></span></span></span></span><span class="MJX_Assistive_MathML MJX_Assistive_MathML_Block" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mi>l</mi><mi>e</mi><msub><mi>v</mi><mrow class="MJX-TeXAtom-ORD"><mi>a</mi><mo>,</mo><mi>b</mi></mrow></msub><mo stretchy="false">(</mo><mi>i</mi><mo>,</mo><mi>j</mi><mo stretchy="false">)</mo><mo>=</mo><mi>m</mi><mi>i</mi><mi>n</mi><mrow><mo>{</mo><mtable columnalign="left left" rowspacing=".2em" columnspacing="1em" displaystyle="false"><mtr><mtd><mi>l</mi><mi>e</mi><msub><mi>v</mi><mrow class="MJX-TeXAtom-ORD"><mi>a</mi><mo>,</mo><mi>b</mi></mrow></msub><mo stretchy="false">(</mo><mi>i</mi><mo>−</mo><mn>1</mn><mo>,</mo><mi>j</mi><mo stretchy="false">)</mo><mo>+</mo><mn>1</mn></mtd></mtr><mtr><mtd><mi>l</mi><mi>e</mi><msub><mi>v</mi><mrow class="MJX-TeXAtom-ORD"><mi>a</mi><mo>,</mo><mi>b</mi></mrow></msub><mo stretchy="false">(</mo><mi>i</mi><mo>,</mo><mi>j</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo><mo>+</mo><mn>1</mn></mtd></mtr><mtr><mtd><mi>l</mi><mi>e</mi><msub><mi>v</mi><mrow class="MJX-TeXAtom-ORD"><mi>a</mi><mo>,</mo><mi>b</mi></mrow></msub><mo stretchy="false">(</mo><mi>i</mi><mo>−</mo><mn>1</mn><mo>,</mo><mi>j</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo><mo>+</mo><mi>c</mi><mo stretchy="false">(</mo><msub><mi>a</mi><mi>i</mi></msub><mo>,</mo><msub><mi>b</mi><mi>j</mi></msub><mo stretchy="false">)</mo></mtd></mtr></mtable><mo fence="true" stretchy="true" symmetric="true"></mo></mrow></math></span></span></span><script type="math/tex; mode=display" id="MathJax-Element-2">
+            lev_{a,b}(i,j)=min\begin{cases}
+            lev_{a,b}(i-1,j)+1\\lev_{a,b}(i,j-1)+1\\lev_{a,b}(i-1,j-1)+c(a_i,b_j)\end{cases}
+            </script>
+            </div>
+            <p><code>c(a,b)</code> being 0 if <code>a==b</code>, and 1 if <code>a!=b</code>.</p>
+            <p>If you're interested in reading more about Levenshtein Distance, we've already got it covered in Python in another article: <a target="_blank" href="/levenshtein-distance-and-text-similarity-in-python/>">Levenshtein Distance and Text Similarity in Python</a></p>
+            <h3 id="implementation">Implementation</h3>
+            <pre><code class="hljs"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">editDistance</span> </span>{
+                <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+                    String s1, s2;
+                    Scanner scanner = <span class="hljs-keyword">new</span> Scanner(System.in);
+                    System.out.println(<span class="hljs-string">"Insert first string:"</span>);
+                    s1 = scanner.next();
+                    System.out.println(<span class="hljs-string">"Insert second string:"</span>);
+                    s2 = scanner.next();
+            
+                    <span class="hljs-keyword">int</span> n, m;
+                    n = s1.length();
+                    m = s2.length();
+            
+                    <span class="hljs-comment">// Matrix of substring edit distances</span>
+                    <span class="hljs-comment">// example: distance[a][b] is the edit distance</span>
+                    <span class="hljs-comment">// of the first a letters of s1 and b letters of s2</span>
+                    <span class="hljs-keyword">int</span>[][] distance = <span class="hljs-keyword">new</span> <span class="hljs-keyword">int</span>[n + <span class="hljs-number">1</span>][m + <span class="hljs-number">1</span>];
+            
+                    <span class="hljs-comment">// Matrix initialization:</span>
+                    <span class="hljs-comment">// If we want to turn any string into an empty string</span>
+                    <span class="hljs-comment">// the fastest way no doubt is to just delete</span>
+                    <span class="hljs-comment">// every letter individually.</span>
+                    <span class="hljs-comment">// The same principle applies if we have to turn an empty string</span>
+                    <span class="hljs-comment">// into a non empty string, we just add appropriate letters</span>
+                    <span class="hljs-comment">// until the strings are equal.</span>
+                    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt;= n; i++) {
+                        distance[i][<span class="hljs-number">0</span>] = i;
+                    }
+                    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> j = <span class="hljs-number">0</span>; j &lt;= n; j++) {
+                        distance[<span class="hljs-number">0</span>][j] = j;
+                    }
+            
+                    <span class="hljs-comment">// Variables for storing potential values of current edit distance</span>
+                    <span class="hljs-keyword">int</span> e1, e2, e3, min;
+            
+                    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">1</span>; i &lt;= n; i++) {
+                        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> j = <span class="hljs-number">1</span>; j &lt;= m; j++) {
+                            e1 = distance[i - <span class="hljs-number">1</span>][j] + <span class="hljs-number">1</span>;
+                            e2 = distance[i][j - <span class="hljs-number">1</span>] + <span class="hljs-number">1</span>;
+                            <span class="hljs-keyword">if</span> (s1.charAt(i - <span class="hljs-number">1</span>) == s2.charAt(j - <span class="hljs-number">1</span>)) {
+                                e3 = distance[i - <span class="hljs-number">1</span>][j - <span class="hljs-number">1</span>];
+                            } <span class="hljs-keyword">else</span> {
+                                e3 = distance[i - <span class="hljs-number">1</span>][j - <span class="hljs-number">1</span>] + <span class="hljs-number">1</span>;
+                            }
+                            min = Math.min(e1, e2);
+                            min = Math.min(min, e3);
+                            distance[i][j] = min;
+                        }
+            
+                    }
+            
+                    System.out.println(<span class="hljs-string">"Edit distance of s1 and s2 is: "</span> + distance[n][m]);
+                }
+            }
+            </code></pre>
+            <p><strong>Output</strong>:</p>
+            <pre><code class="hljs">Insert first string:
+            man
+            Insert second string:
+            machine
+            Edit distance of s1 and s2 is: 3
+            </code></pre>
+            <h3 id="longestcommonsubsequencelcs">Longest Common Subsequence (LCS)</h3>
+            <p>The problem goes as follows:</p>
+            <blockquote>
+            <p>Given two sequences, find the length of the longest subsequence present in both of them. A subsequence is a sequence that appears in the same relative order, but not necessarily contiguous.</p>
+            </blockquote>
+            <h4 id="clarification">Clarification</h4>
+            <p>If we have two strings, <code>s1 = "MICE"</code> and <code>s2 = "MINCE"</code>, the longest common <strong>substring</strong> would be "MI" or "CE", however, the longest common <strong>subsequence</strong> would be "MICE" because the elements of the resulting subsequence don't have to be in consecutive order.</p>
+            <h4 id="recurrencerelationandgenerallogic">Recurrence Relation and General Logic</h4>
+            <div>
+            <span class="MathJax_Preview" style="color: inherit;"></span><span class="mjx-chtml MJXc-display" style="text-align: center;"><span id="MathJax-Element-3-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; display=&quot;block&quot;><mi>l</mi><mi>c</mi><msub><mi>s</mi><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mi>a</mi><mo>,</mo><mi>b</mi></mrow></msub><mo stretchy=&quot;false&quot;>(</mo><mi>i</mi><mo>,</mo><mi>j</mi><mo stretchy=&quot;false&quot;>)</mo><mo>=</mo><mi>m</mi><mi>i</mi><mi>n</mi><mrow><mo>{</mo><mtable columnalign=&quot;left left&quot; rowspacing=&quot;.2em&quot; columnspacing=&quot;1em&quot; displaystyle=&quot;false&quot;><mtr><mtd><mi>l</mi><mi>c</mi><msub><mi>s</mi><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mi>a</mi><mo>,</mo><mi>b</mi></mrow></msub><mo stretchy=&quot;false&quot;>(</mo><mi>i</mi><mo>&amp;#x2212;</mo><mn>1</mn><mo>,</mo><mi>j</mi><mo stretchy=&quot;false&quot;>)</mo></mtd></mtr><mtr><mtd><mi>l</mi><mi>c</mi><msub><mi>s</mi><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mi>a</mi><mo>,</mo><mi>b</mi></mrow></msub><mo stretchy=&quot;false&quot;>(</mo><mi>i</mi><mo>,</mo><mi>j</mi><mo>&amp;#x2212;</mo><mn>1</mn><mo stretchy=&quot;false&quot;>)</mo></mtd></mtr><mtr><mtd><mi>l</mi><mi>c</mi><msub><mi>s</mi><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mi>a</mi><mo>,</mo><mi>b</mi></mrow></msub><mo stretchy=&quot;false&quot;>(</mo><mi>i</mi><mo>&amp;#x2212;</mo><mn>1</mn><mo>,</mo><mi>j</mi><mo>&amp;#x2212;</mo><mn>1</mn><mo stretchy=&quot;false&quot;>)</mo><mo>+</mo><mi>c</mi><mo stretchy=&quot;false&quot;>(</mo><msub><mi>a</mi><mi>i</mi></msub><mo>,</mo><msub><mi>b</mi><mi>j</mi></msub><mo stretchy=&quot;false&quot;>)</mo></mtd></mtr></mtable><mo fence=&quot;true&quot; stretchy=&quot;true&quot; symmetric=&quot;true&quot;></mo></mrow></math>" role="presentation" style="font-size: 117%; text-align: center; position: relative;"><span id="MJXc-Node-143" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-144" class="mjx-mrow"><span id="MJXc-Node-145" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.477em; padding-bottom: 0.287em;">l</span></span><span id="MJXc-Node-146" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.24em; padding-bottom: 0.287em;">c</span></span><span id="MJXc-Node-147" class="mjx-msubsup"><span class="mjx-base"><span id="MJXc-Node-148" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.24em; padding-bottom: 0.287em;">s</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.219em; padding-right: 0.071em;"><span id="MJXc-Node-149" class="mjx-texatom" style=""><span id="MJXc-Node-150" class="mjx-mrow"><span id="MJXc-Node-151" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.24em; padding-bottom: 0.287em;">a</span></span><span id="MJXc-Node-152" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.188em; padding-bottom: 0.525em;">,</span></span><span id="MJXc-Node-153" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.477em; padding-bottom: 0.287em;">b</span></span></span></span></span></span><span id="MJXc-Node-154" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.477em; padding-bottom: 0.572em;">(</span></span><span id="MJXc-Node-155" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.43em; padding-bottom: 0.287em;">i</span></span><span id="MJXc-Node-156" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.188em; padding-bottom: 0.525em;">,</span></span><span id="MJXc-Node-157" class="mjx-mi MJXc-space1"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.43em; padding-bottom: 0.477em;">j</span></span><span id="MJXc-Node-158" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.477em; padding-bottom: 0.572em;">)</span></span><span id="MJXc-Node-159" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.097em; padding-bottom: 0.335em;">=</span></span><span id="MJXc-Node-160" class="mjx-mi MJXc-space3"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.24em; padding-bottom: 0.287em;">m</span></span><span id="MJXc-Node-161" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.43em; padding-bottom: 0.287em;">i</span></span><span id="MJXc-Node-162" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.24em; padding-bottom: 0.287em;">n</span></span><span id="MJXc-Node-163" class="mjx-mrow MJXc-space1"><span id="MJXc-Node-164" class="mjx-mo" style="vertical-align: -0.692em;"><span class="mjx-delim-v"><span class="mjx-char MJXc-TeX-size4-R" style="padding-top: 0.667em; padding-bottom: 0.287em;">⎧</span><span class="mjx-char MJXc-TeX-size4-R" style="line-height: 0.022em; margin-bottom: 0.087em; margin-top: -0.137em;">⎪</span><span class="mjx-char MJXc-TeX-size4-R" style="padding-top: 0.952em; padding-bottom: 0.952em;">⎨</span><span class="mjx-char MJXc-TeX-size4-R" style="line-height: 0.022em; margin-bottom: 0.087em; margin-top: -0.137em;">⎪</span><span class="mjx-char MJXc-TeX-size4-R" style="margin-top: -0.235em; padding-bottom: 1.189em;">⎩</span></span></span><span id="MJXc-Node-165" class="mjx-mtable" style="vertical-align: -1.616em; padding: 0px 0.167em;"><span class="mjx-table"><span id="MJXc-Node-166" class="mjx-mtr" style="height: 1.21em;"><span id="MJXc-Node-167" class="mjx-mtd" style="padding: 0px; text-align: left; width: 11.976em;"><span id="MJXc-Node-168" class="mjx-mrow" style="margin-top: -0.2em;"><span id="MJXc-Node-169" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.477em; padding-bottom: 0.287em;">l</span></span><span id="MJXc-Node-170" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.24em; padding-bottom: 0.287em;">c</span></span><span id="MJXc-Node-171" class="mjx-msubsup"><span class="mjx-base"><span id="MJXc-Node-172" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.24em; padding-bottom: 0.287em;">s</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.219em; padding-right: 0.071em;"><span id="MJXc-Node-173" class="mjx-texatom" style=""><span id="MJXc-Node-174" class="mjx-mrow"><span id="MJXc-Node-175" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.24em; padding-bottom: 0.287em;">a</span></span><span id="MJXc-Node-176" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.188em; padding-bottom: 0.525em;">,</span></span><span id="MJXc-Node-177" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.477em; padding-bottom: 0.287em;">b</span></span></span></span></span></span><span id="MJXc-Node-178" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.477em; padding-bottom: 0.572em;">(</span></span><span id="MJXc-Node-179" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.43em; padding-bottom: 0.287em;">i</span></span><span id="MJXc-Node-180" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.287em; padding-bottom: 0.43em;">−</span></span><span id="MJXc-Node-181" class="mjx-mn MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.382em; padding-bottom: 0.335em;">1</span></span><span id="MJXc-Node-182" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.188em; padding-bottom: 0.525em;">,</span></span><span id="MJXc-Node-183" class="mjx-mi MJXc-space1"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.43em; padding-bottom: 0.477em;">j</span></span><span id="MJXc-Node-184" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.477em; padding-bottom: 0.572em;">)</span></span><span class="mjx-strut"></span></span></span></span><span id="MJXc-Node-185" class="mjx-mtr" style="height: 1.31em;"><span id="MJXc-Node-186" class="mjx-mtd" style="padding: 0.1em 0px 0px; text-align: left;"><span id="MJXc-Node-187" class="mjx-mrow" style="margin-top: -0.2em;"><span id="MJXc-Node-188" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.477em; padding-bottom: 0.287em;">l</span></span><span id="MJXc-Node-189" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.24em; padding-bottom: 0.287em;">c</span></span><span id="MJXc-Node-190" class="mjx-msubsup"><span class="mjx-base"><span id="MJXc-Node-191" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.24em; padding-bottom: 0.287em;">s</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.219em; padding-right: 0.071em;"><span id="MJXc-Node-192" class="mjx-texatom" style=""><span id="MJXc-Node-193" class="mjx-mrow"><span id="MJXc-Node-194" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.24em; padding-bottom: 0.287em;">a</span></span><span id="MJXc-Node-195" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.188em; padding-bottom: 0.525em;">,</span></span><span id="MJXc-Node-196" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.477em; padding-bottom: 0.287em;">b</span></span></span></span></span></span><span id="MJXc-Node-197" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.477em; padding-bottom: 0.572em;">(</span></span><span id="MJXc-Node-198" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.43em; padding-bottom: 0.287em;">i</span></span><span id="MJXc-Node-199" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.188em; padding-bottom: 0.525em;">,</span></span><span id="MJXc-Node-200" class="mjx-mi MJXc-space1"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.43em; padding-bottom: 0.477em;">j</span></span><span id="MJXc-Node-201" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.287em; padding-bottom: 0.43em;">−</span></span><span id="MJXc-Node-202" class="mjx-mn MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.382em; padding-bottom: 0.335em;">1</span></span><span id="MJXc-Node-203" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.477em; padding-bottom: 0.572em;">)</span></span><span class="mjx-strut"></span></span></span></span><span id="MJXc-Node-204" class="mjx-mtr" style="height: 1.212em;"><span id="MJXc-Node-205" class="mjx-mtd" style="padding: 0.1em 0px 0px; text-align: left;"><span id="MJXc-Node-206" class="mjx-mrow" style="margin-top: -0.2em;"><span id="MJXc-Node-207" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.477em; padding-bottom: 0.287em;">l</span></span><span id="MJXc-Node-208" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.24em; padding-bottom: 0.287em;">c</span></span><span id="MJXc-Node-209" class="mjx-msubsup"><span class="mjx-base"><span id="MJXc-Node-210" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.24em; padding-bottom: 0.287em;">s</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.219em; padding-right: 0.071em;"><span id="MJXc-Node-211" class="mjx-texatom" style=""><span id="MJXc-Node-212" class="mjx-mrow"><span id="MJXc-Node-213" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.24em; padding-bottom: 0.287em;">a</span></span><span id="MJXc-Node-214" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.188em; padding-bottom: 0.525em;">,</span></span><span id="MJXc-Node-215" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.477em; padding-bottom: 0.287em;">b</span></span></span></span></span></span><span id="MJXc-Node-216" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.477em; padding-bottom: 0.572em;">(</span></span><span id="MJXc-Node-217" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.43em; padding-bottom: 0.287em;">i</span></span><span id="MJXc-Node-218" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.287em; padding-bottom: 0.43em;">−</span></span><span id="MJXc-Node-219" class="mjx-mn MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.382em; padding-bottom: 0.335em;">1</span></span><span id="MJXc-Node-220" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.188em; padding-bottom: 0.525em;">,</span></span><span id="MJXc-Node-221" class="mjx-mi MJXc-space1"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.43em; padding-bottom: 0.477em;">j</span></span><span id="MJXc-Node-222" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.287em; padding-bottom: 0.43em;">−</span></span><span id="MJXc-Node-223" class="mjx-mn MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.382em; padding-bottom: 0.335em;">1</span></span><span id="MJXc-Node-224" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.477em; padding-bottom: 0.572em;">)</span></span><span id="MJXc-Node-225" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.287em; padding-bottom: 0.43em;">+</span></span><span id="MJXc-Node-226" class="mjx-mi MJXc-space2"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.24em; padding-bottom: 0.287em;">c</span></span><span id="MJXc-Node-227" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.477em; padding-bottom: 0.572em;">(</span></span><span id="MJXc-Node-228" class="mjx-msubsup"><span class="mjx-base"><span id="MJXc-Node-229" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.24em; padding-bottom: 0.287em;">a</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-230" class="mjx-mi" style=""><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.43em; padding-bottom: 0.287em;">i</span></span></span></span><span id="MJXc-Node-231" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.188em; padding-bottom: 0.525em;">,</span></span><span id="MJXc-Node-232" class="mjx-msubsup MJXc-space1"><span class="mjx-base"><span id="MJXc-Node-233" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.477em; padding-bottom: 0.287em;">b</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-234" class="mjx-mi" style=""><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.43em; padding-bottom: 0.477em;">j</span></span></span></span><span id="MJXc-Node-235" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.477em; padding-bottom: 0.572em;">)</span></span><span class="mjx-strut"></span></span></span></span></span></span><span id="MJXc-Node-236" class="mjx-mo" style="width: 0.12em;"></span></span></span></span><span class="MJX_Assistive_MathML MJX_Assistive_MathML_Block" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mi>l</mi><mi>c</mi><msub><mi>s</mi><mrow class="MJX-TeXAtom-ORD"><mi>a</mi><mo>,</mo><mi>b</mi></mrow></msub><mo stretchy="false">(</mo><mi>i</mi><mo>,</mo><mi>j</mi><mo stretchy="false">)</mo><mo>=</mo><mi>m</mi><mi>i</mi><mi>n</mi><mrow><mo>{</mo><mtable columnalign="left left" rowspacing=".2em" columnspacing="1em" displaystyle="false"><mtr><mtd><mi>l</mi><mi>c</mi><msub><mi>s</mi><mrow class="MJX-TeXAtom-ORD"><mi>a</mi><mo>,</mo><mi>b</mi></mrow></msub><mo stretchy="false">(</mo><mi>i</mi><mo>−</mo><mn>1</mn><mo>,</mo><mi>j</mi><mo stretchy="false">)</mo></mtd></mtr><mtr><mtd><mi>l</mi><mi>c</mi><msub><mi>s</mi><mrow class="MJX-TeXAtom-ORD"><mi>a</mi><mo>,</mo><mi>b</mi></mrow></msub><mo stretchy="false">(</mo><mi>i</mi><mo>,</mo><mi>j</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo></mtd></mtr><mtr><mtd><mi>l</mi><mi>c</mi><msub><mi>s</mi><mrow class="MJX-TeXAtom-ORD"><mi>a</mi><mo>,</mo><mi>b</mi></mrow></msub><mo stretchy="false">(</mo><mi>i</mi><mo>−</mo><mn>1</mn><mo>,</mo><mi>j</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo><mo>+</mo><mi>c</mi><mo stretchy="false">(</mo><msub><mi>a</mi><mi>i</mi></msub><mo>,</mo><msub><mi>b</mi><mi>j</mi></msub><mo stretchy="false">)</mo></mtd></mtr></mtable><mo fence="true" stretchy="true" symmetric="true"></mo></mrow></math></span></span></span><script type="math/tex; mode=display" id="MathJax-Element-3">
+            lcs_{a,b}(i,j)=min\begin{cases}
+            lcs_{a,b}(i-1,j)\\lcs_{a,b}(i,j-1)\\lcs_{a,b}(i-1,j-1)+c(a_i,b_j)\end{cases}
+            </script>
+            </div>
+            <p>As we can see, there is only a slight difference between Levenshtein distance and LCS, specifically, in the cost of moves.</p>
+            <p>In LCS, we have no cost for character insertion and character deletion, which means that we only count the cost for character substitution (diagonal moves), which have a cost of 1 if the two current string characters <code>a[i]</code> and <code>b[j]</code> are the same.</p>
+            <p>The final cost of LCS is the length of the longest subsequence for the 2 strings, which is exactly what we needed.</p>
+            <blockquote>
+            <p>Using this logic, we can boil down a lot of string comparison algorithms to simple recurrence relations which utilize the base formula of the Levenshtein distance.</p>
+            </blockquote>
+            <h4 id="implementation">Implementation</h4>
+            <pre><code class="hljs"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">LCS</span> </span>{
+                <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+                    String s1 = <span class="hljs-keyword">new</span> String(<span class="hljs-string">"Hillfinger"</span>);
+                    String s2 = <span class="hljs-keyword">new</span> String(<span class="hljs-string">"Hilfiger"</span>);
+                    <span class="hljs-keyword">int</span> n = s1.length();
+                    <span class="hljs-keyword">int</span> m = s2.length();
+                    <span class="hljs-keyword">int</span>[][] solutionMatrix = <span class="hljs-keyword">new</span> <span class="hljs-keyword">int</span>[n+<span class="hljs-number">1</span>][m+<span class="hljs-number">1</span>];
+                    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; n; i++) {
+                        solutionMatrix[i][<span class="hljs-number">0</span>] = <span class="hljs-number">0</span>;
+                    }
+                    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; m; i++) {
+                        solutionMatrix[<span class="hljs-number">0</span>][i] = <span class="hljs-number">0</span>;
+                    }
+            
+                    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">1</span>; i &lt;= n; i++) {
+                        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> j = <span class="hljs-number">1</span>; j &lt;= m; j++) {
+                            <span class="hljs-keyword">int</span> max1, max2, max3;
+                            max1 = solutionMatrix[i - <span class="hljs-number">1</span>][j];
+                            max2 = solutionMatrix[i][j - <span class="hljs-number">1</span>];
+                            <span class="hljs-keyword">if</span> (s1.charAt(i - <span class="hljs-number">1</span>) == s2.charAt(j - <span class="hljs-number">1</span>)) {
+                                max3 = solutionMatrix[i - <span class="hljs-number">1</span>][j - <span class="hljs-number">1</span>] + <span class="hljs-number">1</span>;
+                            } <span class="hljs-keyword">else</span> {
+                                max3 = solutionMatrix[i - <span class="hljs-number">1</span>][j - <span class="hljs-number">1</span>];
+                            }
+                            <span class="hljs-keyword">int</span> tmp = Math.max(max1, max2);
+                            solutionMatrix[i][j] = Math.max(tmp, max3);
+                        }
+                    }
+                    
+                    System.out.println(<span class="hljs-string">"Length of longest continuous subsequence: "</span> + solutionMatrix[n][m]);
+                }
+            }
+            </code></pre>
+            <p><strong>Output</strong>:</p>
+            <pre><code class="hljs">Length of longest continuous subsequence: 8
+            </code></pre>
+            <h3 id="otherproblemsthatutilizedynamicprogramming">Other Problems that Utilize Dynamic Programming</h3>
+            <p>There are a lot more problems that can be solved with dynamic programming, these are just a few of them:</p>
+            <ul>
+            <li>Partition Problem (<em>coming soon</em>)</li>
+            <li>Given a set of integers, find out if it can be divided into two subsets with equal sums</li>
+            <li>Subset Sum Problem (<em>coming soon</em>)</li>
+            <li>Given a set of positive integers, and a value sum, determine if there is a subset of the given set with sum equal to given sum.</li>
+            <li>Coin Change Problem (Total number of ways to get the denomination of coins, <em>coming soon</em>)</li>
+            <li>Given an unlimited supply of coins of given denominations, find the total number of distinct ways to get a desired change.</li>
+            <li>Total possible solutions to linear equation of <code>k</code> variables (<em>coming soon</em>)</li>
+            <li>Given a linear equation of <code>k</code> variables, count total number of possible solutions of it.</li>
+            <li>Find Probability that a Drunkard doesn't fall off a cliff (<strong>Kids, do not try this at home</strong>)</li>
+            <li>Given a linear space representing the distance from a cliff, and providing you know the starting distance of the drunkard from the cliff, and his tendency to go towards the cliff <code>p</code> and away from the cliff <code>1-p</code>, calculate the probability of his survival.</li>
+            <li>Many more...</li>
+            </ul>
+            <h3 id="conclusion">Conclusion</h3>
+            <p>Dynamic programming is a tool that can save us a lot of <em>computational time</em> in exchange for a bigger <em>space complexity</em>, granted some of them only go halfway (a matrix is needed for memoization, but an ever-changing array is used).</p>
+            <p>This highly depends on the type of system you're working on, if CPU time is precious, you opt for a memory-consuming solution, on the other hand, if your memory is limited, you opt for a more time-consuming solution for a better time/space complexity ratio.</p>
+            </div>
+
+        </div>	
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
