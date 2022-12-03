@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Java Interview Q&A</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+</script>
+<script> 
+$(function(){
+  $("#header").load("header.html"); 
+  $("#footer").load("footer.html"); 
+});
+</script>
+
+</head>
+
+<body>
+
+  <div id="header"></div>
+
+  <main id="main">
+
+    <section id="about" class="about">
+      <div class="container">
+        <div class="row-content"> 
+          
+
+          
+            <h2><span id="About_Java_Architect">About Java Architect</span></h2>
+            <p>A Java architect is primarily responsible for designing, upgrading, and integrating Java applications. This involves his contributions in terms of recommending and reviewing design plans and strategies during the design phase and resolving design or network issues during the development, integration, or release phase of the application.</p>
+            <p>The candidate must have experience preparing budgets, scheduling expenses, analyzing variations, and implementing changes required by business requirements.</p>
+            <p>He should have in-depth knowledge of various features like concurrency, Threads, API and web services, Java Server Pages, Servlet, Java Server Faces, EJB, Java Persistent API, JAX-RS, JAX-WS, JNDI, and application, and web servers.</p>
+            <p>He should have hands-on experience in implementing various design patterns for Java applications and successfully designing workable, scalable solutions for various business challenges.</p>
+            <h2><span id="Most_Frequently_Asked_Interview_Questions">Most Frequently Asked Interview Questions</span></h2>
+            <h3><span id="Q_1_Explain_Continuous_Integration_Continuous_Delivery_and_Continuous_Deployment">Q #1) Explain <a href="https://www.softwaretestinghelp.com/continuous-integration/">Continuous Integration</a>, <a href="https://www.softwaretestinghelp.com/what-is-continuous-delivery/">Continuous Delivery</a>, and <a href="https://www.softwaretestinghelp.com/continuous-deployment-tools/">Continuous Deployment</a>.</span></h3>
+            <p><strong>Answer:</strong> In the current software industries, DevOps helps with Continuous integration, delivery, and deployment for agile environments all done using automated scripts.</p>
+            <p><strong>Continuous Integration</strong></p>
+            <p>In the agile development environment, developers integrate their changes to the central repository that contains builds multiple times in a day. These builds are stored based on their version in version control systems like Git, SVN, or CVS.</p>
+            <p>The changed code files added are validated for syntax style, code quality, and compile-time error using automated tests before final integration with the build during release.</p>
+            <p><strong>Continuous Delivery</strong></p>
+            <p>It is an extension of continuous integration, where the changes to your codebase can be deployed to the testing or development environment on a successful build. With continuous delivery, there is an improvement in velocity, productivity, and sustainability. You can plan to release your codebase daily, weekly, or deploy production quickly with continuous delivery.</p>
+            <p><strong>Continuous Deployment</strong></p>
+            <p>Based on well-designed and reliable test automation, releasing developer changes to the codebase from the version control repository to production is defined as continuous deployment. Improved productivity, the real-time response of developers to market demands, and any defects and release of daily stress have become things of the past with continuous deployment.</p>
+            <h3><span id="Q_2_Explain_Domain-driven_Design">Q #2) Explain Domain-driven Design.</span></h3>
+            <p><strong>Answer:</strong> Domain-driven Design focuses on core domain and business logic related to domain problems, with a complex design based on domain models and collaborations with domain and technical experts to resolve specific domain problems. The domain model consists of data, goals, metrics, ideas, and knowledge about the domain problem to be resolved.</p>
+            <h3><span id="Q_3_Describe_the_Single_Responsibility_Principle">Q #3) Describe the Single Responsibility Principle.</span></h3>
+            <p><strong>Answer:</strong> Single Responsibility Principle in short can be described as each class should have a single purpose and responsibility, thereby making software implementation easy and preventing side-effects resulting from changes made in the future.</p>
+            <p>With more often changes in class, dependencies of other classes also get affected, increasing complexity. With a single responsibility in class, the number of bugs reduces, and the speed of development increases.</p>
+            <p>The real-time example of a single responsibility principle is Java Persistence API (JPA) with managing data persisting in a relational database in a standard way being the only responsibility.</p>
+            <h3><span id="Q_4_Explain_SOLID_principles">Q #4) Explain SOLID principles.</span></h3>
+            <p><strong>Answer:</strong> SOLID represents the initials of design principles popular in the development of object-oriented software, making it easy to remember them.</p>
+            <p><strong>The list of these principles is listed below:</strong></p>
+            <ul>
+            <li>Single Responsibility Principle</li>
+            <li>Open/Closed Principle</li>
+            <li>Liskov Substitution Principle</li>
+            <li>Interface Segregation Principle</li>
+            <li>Dependency Inversion</li>
+            </ul>
+            <h3><span id="Q_5_How_would_you_deal_with_memory_leaks_in_Java_applications">Q #5) How would you deal with memory leaks in Java applications?</span></h3>
+            <p><strong>Answer:</strong> When the garbage collector fails to identify unused objects, reduces the amount of memory allocated to the Java application. The unused object still referred to in the application results in OutOfMemoryError making the application less reliable. This results in a memory leak.</p>
+            <p><strong>Memory leaks can be a result of the following:</strong></p>
+            <ul>
+            <li>Use of unused object reference.</li>
+            <li>Using Static objects.</li>
+            <li>Failing cleaning up of Native system resources.</li>
+            <li>Defects in Third-party libraries.</li>
+            </ul>
+            <p><strong>We can prevent a memory leak in the following ways:</strong></p>
+            <ul>
+            <li>You should not create unnecessary objects.</li>
+            <li>Minimize using String Concatenation</li>
+            <li>Use String Builder to append, insert, replace and delete operations on String.</li>
+            <li>Avoid storing excessive data in the session.</li>
+            <li>Use time out for sessions no longer in use.</li>
+            <li>Avoid the use of System.gc() method.</li>
+            <li>Limit using static objects, if used explicitly refer them to null.</li>
+            <li>Finally block close Connection, Statement, and ResultSet.</li>
+            </ul>
+            <h3><span id="Q_6_What_are_the_twelve-factor_application_principles">Q #6) What are the twelve-factor application principles?</span></h3>
+            <p><strong>Answer:</strong> The twelve-factor app methodology is used in order to build software as a service. It is applied to all applications written in any programming language and uses a combination of cache, database, memory, and queue as backing services.</p>
+            <p><strong>The twelve factors are as listed below:</strong></p>
+            <ul>
+            <li><strong>Admin processes: </strong>Automated scripts for the admin task can be packaged along with the application or in source control to ensure they run in the same environment like that of an application.</li>
+            <li><strong>Build, release, run: </strong>The delivery pipeline should have three separate stages—build, release and run.</li>
+            <li><strong>Backing services: </strong>backing services like database, <a href="https://www.softwaretestinghelp.com/free-smtp-server/">SMTP</a>, or FTP server, web services should be treated as attached services and should be managed by the execution environment.</li>
+            <li><strong>Codebase: </strong>Maintain the one-to-one association between versioned codebases. Use branches for different versions to avoid complexity with a repository.</li>
+            <li><strong>Configuration: </strong>Environment-specific configuration should be stored in the environment and not in the application.</li>
+            <li><strong>Concurrency: </strong>The application should handle load-balanced requests for multiple identical nodes running simultaneously and scale horizontally for the processes and threads in parallel execution using a feature of handling multithreading in a <a href="https://www.softwaretestinghelp.com/java/java-virtual-machine/">Java virtual machine</a>.</li>
+            <li><strong>Dependencies: </strong>The services running in the application should declare dependencies explicitly and should not rely on system-level libraries or tools. You can install apache maven to maintain application dependencies.</li>
+            <li><strong>Disposability: </strong>Application processes should be disposable, and applications should have a quick start-up and graceful shutdown process. During the shutdown, it should not accept any new tasks but allow the existing tasks to complete.</li>
+            <li><strong>Development/Production parity: </strong>The gap between application development, test environment, and production deployment should be minimal.</li>
+            <li><strong>Logs: </strong>The application when executed, should have logged as a stream of events that should be integrated with ELK stack or Splunk as centralized logging.</li>
+            <li><strong>Processes: </strong>Application transient processes should not share anything and are stateless in nature. The backing services should be present to store persistent data.</li>
+            <li><strong>Port binding: </strong>Applications should be self-contained and accessible to HTTP ports.</li>
+            </ul>
+            <h3><span id="Q_7_List_the_differences_between_monolithic_SOA_and_microservices_architecture">Q #7) List the differences between monolithic, SOA, and microservices architecture.</span></h3>
+            <p><strong>Answer:</strong> Application architecture is categorized into three major categories – monolithic, SOA, and microservices. The definition, and differences between them are explained below:</p>
+            <p><strong>Monolithic</strong> applications are single tiered wherein data access and user interface code are combined in a single platform. Ecommerce software as a service (SaaS) is an example of a monolithic application.</p>
+            <p><strong>Service Oriented Architecture (SOA) </strong>applications use network services such as the web, and mobile applications using the Global Positioning System (GPS) to send the current locations is an example of SOA architecture.</p>
+            <p><strong>Microservices</strong> architecture is a collection of loosely-coupled services where services are fine-grained and protocols are lightweight. Amazon Web Services and Netflix are some examples of microservices applications.</p>
+            <div id="tablepress-4189-scroll-wrapper" class="tablepress-scroll-wrapper">
+            <table id="tablepress-4189" class="tablepress tablepress-id-4189 tablepress-responsive">
+            <thead>
+            <tr class="row-1 odd">
+            <th class="column-1">Monolithic architecture</th><th class="column-2">Service oriented architecture (SOA)</th><th class="column-3">Micro services architecture</th>
+            </tr>
+            </thead>
+            <tbody class="row-hover">
+            <tr class="row-2 even">
+            <td class="column-1">Better performance</td><td class="column-2">Better maintainable</td><td class="column-3">Increased agility</td>
+            </tr>
+            <tr class="row-3 odd">
+            <td class="column-1">Simple deployment and development</td><td class="column-2">Higher reliability</td><td class="column-3">Able to horizontal scaling</td>
+            </tr>
+            <tr class="row-4 even">
+            <td class="column-1">Easy to overcome cross cutting concerns</td><td class="column-2">Parallel development</td><td class="column-3">Complex design</td>
+            </tr>
+            <tr class="row-5 odd">
+            <td class="column-1">Limited agility</td><td class="column-2">Complex management</td><td class="column-3">Security concerns</td>
+            </tr>
+            <tr class="row-6 even">
+            <td class="column-1">Codebase getting cumbersome over time</td><td class="column-2">High investment costs</td><td class="column-3">Different programming languages</td>
+            </tr>
+            <tr class="row-7 odd">
+            <td class="column-1">Difficult to adopt new technologies</td><td class="column-2">Extra overload</td><td class="column-3"></td>
+            </tr>
+            </tbody>
+            </table>
+            </div>
+            <h3><span id="Q_8_List_the_benefits_of_sharding_in_the_database">Q #8) List the benefits of sharding in the database.</span></h3>
+            <p><strong>Answer:</strong> In Sharding single dataset is distributed across multiple databases and eventually stored on multiple machines.</p>
+            <p><strong>Benefits database sharding offer is listed below:</strong></p>
+            <ul>
+            <li><strong>Improved Read/Write Throughput: </strong>With reading and write operations assigned to a single shard, and dataset distributed across multiple shards. The capacity for reading and writing operations is enhanced.</li>
+            <li><strong>Enhanced Storage Capacity: </strong>Capacity to store increases with infinite scalability on increasing shards count.</li>
+            <li><strong>High availability: </strong>Shard offers higher availability in two ways – First, with each shard a replica set, each data is replicated. Second, the entire shard becomes unavailable for distributed data, the database remaining partially functional, and part of the schema on different shards.</li>
+            </ul>
+            <h3><span id="Q_9_Explain_the_advantages_of_the_Spring_framework_for_Java_applications">Q #9) Explain the advantages of the Spring framework for Java applications.</span></h3>
+            <p><strong>Answer: The advantages of the spring framework are listed below:</strong></p>
+            <ul>
+            <li>Spring is lightweight due to POJO (plain old java objects) implementation</li>
+            <li>Spring framework provides flexible libraries with configurations with either XML or Java annotations.</li>
+            <li>Applications developed using the Spring framework are loosely coupled due to dependency injections.</li>
+            <li>Framework provided powerful abstraction for JEE specifications like JDBC, JTA, JPA, and JMS.</li>
+            <li>Spring provides declarative support for validation, transaction, caching, and formatting.</li>
+            <li>Swing application client-side business logic is portable.</li>
+            <li>The resource manager is easy to copy and paste wherever needed, cross-cutting concerns.</li>
+            <li>The spring framework provides a configuration separate from the application logic.</li>
+            <li>The framework has well-defined components of the lifecycle, such as init(), destroy().</li>
+            <li>The dependency injection concept simplifies JavaEE development.</li>
+            <li>The testing spring application is easier due to the use of dependency injection.</li>
+            <li>Fast Starting, Fast Shut down and optimized execution performance make the Spring framework desirable in the industry.</li>
+            <li>The spring security framework makes applications secure.</li>
+            <li>Spring community supports the developers with tutorials, videos, and guides.</li>
+            <li>It is produced as we can combine spring boot with spring cloud.</li>
+            </ul>
+            <h3><span id="Q_10_List_and_explain_different_memory_types_allocated_by_Java_virtual_machine">Q #10) List and explain different memory types allocated by Java virtual machine.</span></h3>
+            <p><strong>Answer: The different memory types allocated by JVM are explained below:</strong></p>
+            
+            <div class="quads-location quads-ad2" id="quads-ad2" style="float:none;margin:10px 0 10px 0;text-align:center;">
+            
+            <div align="center" data-freestar-ad="__300x250 __336x280" id="softwaretestinghelp_midcontent" name="softwaretestinghelp_midcontent" data-google-query-id="CKu4ifHa3fsCFUp_fQodHeUDcQ">
+            
+            <div id="google_ads_iframe_/15184186,1018030/softwaretestinghelp_midcontent_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/15184186,1018030/softwaretestinghelp_midcontent_0" name="google_ads_iframe_/15184186,1018030/softwaretestinghelp_midcontent_0" title="3rd party ad content" width="300" height="250" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" role="region" aria-label="Advertisement" tabindex="0" style="border: 0px; vertical-align: bottom;" data-load-complete="true" data-google-container-id="2"></iframe></div></div>
+            </div>
+            <ul>
+            <li><strong>Class: </strong>Class area in JVM stores class, variable, method, and constructor code of Java program. It stores runtime constant pool, method, and field data – class-level data of every class and method code.</li>
+            <li><strong>Heap: </strong>Objects are created and stored in the heap area. Heap memory is allocated for arrays, class interfaces, and objects at runtime.</li>
+            <li><strong>Stack: </strong>There is a private JVM stack for each of the threads that stores partial results and data that is required while returning value for performing dynamic linking and method. Java stack stores frame created at every method invocation.</li>
+            <li><strong>Program Counter Register: </strong>Special method carried out by the JVM thread has a program counter register associated with the thread. JVM instruction address is stored in the non-native method of a program counter, whereas the program counter value is undefined for the native method. The native pointer on the platform or return address can be stored on the program counter register.</li>
+            <li><strong>Native Method Stack: </strong>Each thread is allocated each thread when created, which is fixed or dynamic in nature.</li>
+            </ul>
+            <h3><span id="Q_11_List_various_class_loaders_of_Java_Virtual_machine">Q #11) List various class loaders of Java Virtual machine.</span></h3>
+            <p><strong>Answer:</strong> Class loaders dynamically load Java classes to Java virtual machine (JVM) during the runtime.</p>
+            <p><strong>The different class loaders in JVM are described below:</strong></p>
+            <ul>
+            <li><strong>Application</strong> or system class loader loads application type classes that are found in the environment variable with any of the command-line options such as CLASSPATH, -classpath, or –cp option.</li>
+            <li><strong>Bootstrap </strong>or primordial class loader executes the code on the JVM call. It loads the first pure Java ClassLoader and classes from rt.jar location.</li>
+            <li><strong>Extension </strong>class loader is child of bootstrap class loader, loads core java class from respective JDK extension library. It loads the file from location <strong>jre/lib/ext</strong> OR directories that point to system property <strong>java.ext.dirs </strong></li>
+            </ul>
+            <h3><span id="Q_12_List_the_difference_between_Interface_and_abstract_class_in_Java">Q #12) List the difference between Interface and abstract class in Java.</span></h3>
+            <p><strong>Answer:</strong> Both abstract class and interface contain methods that are declared with or without implementation. You cannot instantiate them.</p>
+            <p><strong>The differences between them are as listed below:</strong></p>
+            <div id="tablepress-4190-scroll-wrapper" class="tablepress-scroll-wrapper">
+            <table id="tablepress-4190" class="tablepress tablepress-id-4190 tablepress-responsive">
+            <thead>
+            <tr class="row-1 odd">
+            <th class="column-1">Abstract class</th><th class="column-2">Interface</th>
+            </tr>
+            </thead>
+            <tbody class="row-hover">
+            <tr class="row-2 even">
+            <td class="column-1">It can have abstract and non-abstract methods</td><td class="column-2">It can have abstract methods as well as default and static methods since Java 8</td>
+            </tr>
+            <tr class="row-3 odd">
+            <td class="column-1">There is no support for multiple inheritance</td><td class="column-2">There is support multiple inheritance</td>
+            </tr>
+            <tr class="row-4 even">
+            <td class="column-1">It can have final, non-final, static and non-static variables.</td><td class="column-2">Can have only static and final variables</td>
+            </tr>
+            <tr class="row-5 odd">
+            <td class="column-1">Provide implementation of interface</td><td class="column-2">Can’t provide implementation of abstract class</td>
+            </tr>
+            <tr class="row-6 even">
+            <td class="column-1">To declare abstract class use abstract keyword</td><td class="column-2">To declare interface use interface keyword</td>
+            </tr>
+            <tr class="row-7 odd">
+            <td class="column-1">It can extend another Java class and implement multiple Java interfaces</td><td class="column-2">It can extend another Java interface only</td>
+            </tr>
+            <tr class="row-8 even">
+            <td class="column-1">Use “extends” keyword to extend abstract class</td><td class="column-2">Use “implements” keyword to implement interface</td>
+            </tr>
+            <tr class="row-9 odd">
+            <td class="column-1">Have Class members like private, protected etc.</td><td class="column-2">Java interface members are public by default.</td>
+            </tr>
+            </tbody>
+            </table>
+            </div>
+            <h3><span id="Q_13_List_the_difference_between_the_local_variable_and_instance_variable_in_Java">Q #13) List the difference between the local variable and instance variable in Java.</span></h3>
+            <p><strong>Answer:</strong> Java has three variable types – class variable, instance variable, and local variable.</p>
+            <p><strong> The difference between the instance variable and local variable are listed below:</strong></p>
+            <div id="tablepress-4191-scroll-wrapper" class="tablepress-scroll-wrapper">
+            <table id="tablepress-4191" class="tablepress tablepress-id-4191 tablepress-responsive">
+            <thead>
+            <tr class="row-1 odd">
+            <th class="column-1">Instance (variable)</th><th class="column-2">Local (variable)</th>
+            </tr>
+            </thead>
+            <tbody class="row-hover">
+            <tr class="row-2 even">
+            <td class="column-1">Defined in class but outside of method body</td><td class="column-2">Declared within programming blocks or subroutine</td>
+            </tr>
+            <tr class="row-3 odd">
+            <td class="column-1">Created when object is instantiated and accessible to all blocks, methods and constructors in class</td><td class="column-2">Created when block, method or constructor starts and destroyed on exit from block, method and constructor</td>
+            </tr>
+            <tr class="row-4 even">
+            <td class="column-1">Destroyed when object is destroyed</td><td class="column-2">Destroyed when method or constructor is exited</td>
+            </tr>
+            <tr class="row-5 odd">
+            <td class="column-1">Accessible throughout the class</td><td class="column-2">Access is limited to the methods in which they are declared</td>
+            </tr>
+            <tr class="row-6 even">
+            <td class="column-1">Used for reservation of memory for data class needs and lifetime of an object</td><td class="column-2">Used to decrease component dependencies.</td>
+            </tr>
+            <tr class="row-7 odd">
+            <td class="column-1">Initializing instance variable before its use is not mandatory</td><td class="column-2">It is essential to initialize local variable before its use</td>
+            </tr>
+            <tr class="row-8 even">
+            <td class="column-1">Access modifiers – private, public and protected is included while declaring variable.</td><td class="column-2">While declaring local variable, access modifiers are not included.</td>
+            </tr>
+            </tbody>
+            </table>
+            </div>
+            <h3><span id="Q_14_Explain_various_collections_classes_and_interface_used_in_Java_applications">Q #14) Explain various collections classes and interface used in Java applications.</span></h3>
+            <p><strong>Answer:</strong> In Java – The collection interface and Map interface are two root interfaces of Java collection classes. Prior to the Collection framework – Arrays Vectors or Hashtables were used to group Java objects.</p>
+            <ul>
+            <li><strong>Class</strong> is a prototype objects are created from these prototypes and represent a set of methods or properties common to one type of all the objects.</li>
+            <li><strong>Interface</strong> like class, can have variables and methods, with methods declared as abstract having only a method signature but without a body. Interface – blueprints for class, instructs class what to do and what not to do.</li>
+            </ul>
+            <h3><span id="Q_15_List_ways_to_manage_sessions_in_Java_using_JSP_and_Servlets">Q #15) List ways to manage sessions in Java using JSP and Servlets.</span></h3>
+            <p><strong>Answer:</strong> In modern web applications, the session tracking feature helps the server to remember clients and previous visitors with a session for each user. It helps in the personalization of profiles, safety, and security for eCommerce applications.</p>
+            <p><strong>You can manage sessions for Java application build with JSP and Servlet in the following four ways:</strong></p>
+            <ul>
+            <li>Cookies</li>
+            <li>HTTPS and SSL</li>
+            <li>Hidden Form fields</li>
+            <li>URL rewriting</li>
+            </ul>
+            <h3><span id="Q_16_Describe_different_ways_of_exception_handling_in_the_Spring_MVC_framework">Q #16) Describe different ways of exception handling in the Spring MVC framework.</span></h3>
+            <p><strong>Answer: The exception is handled in multiple ways in the Spring MVC framework in the following ways:</strong></p>
+            <ul>
+            <li><strong>Controller-based classes: </strong>Using @ExceptionHandler annotation using exception class as an argument in exception handling methods in controller classes.</li>
+            <li><strong>Global exception handler: </strong>Spring provides @ControllerAdvice annotation are used with any class for defining global exception handler. This exception is used when the controller class cannot handle exceptions.</li>
+            <li><strong>HandleExceptionResolver: </strong>In order to create a global exception handler HandleExceptionResolver interface can be implemented. We can define default implementation classes in the Spring bean configuration file for spring framework exception handling benefits.</li>
+            </ul>
+            <h3><span id="Q_17_What_are_ACID_properties">Q #17) What are ACID properties?</span></h3>
+            <p><strong>Answer:</strong> A single unit of work by accessing and updating the content in the database is described as a Transaction. Using Read and Write operations access to records (data) from the database is handled by the transaction. The consistency in the database, before and after the transaction, is maintained by ACID properties.</p>
+            <ul>
+            <li><strong>Atomicity:</strong> The transaction in the database takes place successfully or does not take place at all.</li>
+            <li><strong>Consistency: </strong>Before the transaction and after the transaction, the database remains consistent.</li>
+            <li><strong>Isolation: </strong>There occur independent multiple transactions without any interference</li>
+            <li><strong>Durability: </strong>The changes due to successful transactions are reflected even the system fails.</li>
+            </ul>
+            <h3><span id="Q_18_List_the_beneficiaries_of_API_reusability">Q #18) List the beneficiaries of API reusability.</span></h3>
+            <p><strong>Answer:</strong> Using API functionality for multiple applications instead of creating new ones for each application is known as API reusability.</p>
+            <p>There are two beneficiaries of API reusability:</p>
+            <ul>
+            <li>Information is shared internally for multiple applications for utilization. <strong>For example,</strong> API designed to manage inventory can also be utilized for e-commerce order updates by the marketing team, resource management by the human resource team, as well as the ERP system.</li>
+            <li>Third parties use the API for retrieving information,<strong> for example,</strong> the payment gateway API application is integrated with multiple payment options used by third parties. The customization, like payment using foreign currency, can be applied as a wrapper to this API.</li>
+            </ul>
+            <h3><span id="Q_19_List_the_difference_between_SOAP_and_REST_services">Q #19) List the difference between SOAP and REST services.</span></h3>
+            <p><strong>Answer:</strong> The services that are built on standards such as TCP/IP, HTTP, XML, and Java can be invoked over the network to communicate between software using XML or JSON-based medium for data exchange. SOAP and REST are commonly used web services.</p>
+            <p><strong>The difference between them is listed below:</strong></p>
+            <div id="tablepress-4192-scroll-wrapper" class="tablepress-scroll-wrapper">
+            <table id="tablepress-4192" class="tablepress tablepress-id-4192 tablepress-responsive">
+            <thead>
+            <tr class="row-1 odd">
+            <th class="column-1">Simple Object Access Protocol</th><th class="column-2">Representational State Transfer</th>
+            </tr>
+            </thead>
+            <tbody class="row-hover">
+            <tr class="row-2 even">
+            <td class="column-1">It is a protocol</td><td class="column-2">It is architecture</td>
+            </tr>
+            <tr class="row-3 odd">
+            <td class="column-1">Business logic is exposed with services interface</td><td class="column-2">Business logic exposed using URI</td>
+            </tr>
+            <tr class="row-4 even">
+            <td class="column-1">JAX-WS is a Java API used for SOAP web services</td><td class="column-2">JAX-RS – Java API used for RESTful web services</td>
+            </tr>
+            <tr class="row-5 odd">
+            <td class="column-1">Need more resources and bandwidth compared to REST</td><td class="column-2">Need less resources and bandwidth compared to SOAP</td>
+            </tr>
+            <tr class="row-6 even">
+            <td class="column-1">Data format permitted is XML</td><td class="column-2">Accepts plain text, XML, HTML and JSON as data format</td>
+            </tr>
+            <tr class="row-7 odd">
+            <td class="column-1">It is less preferred compared to REST</td><td class="column-2">It is preferred than SOAP</td>
+            </tr>
+            </tbody>
+            </table>
+            </div>
+            <h3><span id="Q_20_List_the_difference_between_API_and_web_service">Q #20) List the difference between API and web service<strong>.</strong></span></h3>
+            <p><strong>Answer:</strong> API without any implementation knowledge allows applications to communicate with other applications or services without user intervention. Web service is a collection of standards or open protocols used to exchange information between applications or systems.</p>
+            <p>The list of differences between API and web services is given below:</p>
+            <div id="tablepress-4193-scroll-wrapper" class="tablepress-scroll-wrapper">
+            <table id="tablepress-4193" class="tablepress tablepress-id-4193 tablepress-responsive">
+            <thead>
+            <tr class="row-1 odd">
+            <th class="column-1">API</th><th class="column-2">Web service</th>
+            </tr>
+            </thead>
+            <tbody class="row-hover">
+            <tr class="row-2 even">
+            <td class="column-1">API service cannot essentially be a web service</td><td class="column-2">All web services are essentially APIs</td>
+            </tr>
+            <tr class="row-3 odd">
+            <td class="column-1">Response format for API are XML, JSON or any other format.</td><td class="column-2">XML is only response format supported</td>
+            </tr>
+            <tr class="row-4 even">
+            <td class="column-1">Its architecture is light weight.</td><td class="column-2">Web services need SOAP protocol for exchange of data over network hence it is not considered light weight.</td>
+            </tr>
+            <tr class="row-5 odd">
+            <td class="column-1">Used with any communication style</td><td class="column-2">Use SOAP, REST and XML-RPC</td>
+            </tr>
+            <tr class="row-6 even">
+            <td class="column-1">It supports URL request/Response header in addition to HTTP/s protocol</td><td class="column-2">It supports only HTTP protocol</td>
+            </tr>
+            <tr class="row-7 odd">
+            <td class="column-1">Used for client with XML OR JSON knowledge</td><td class="column-2">Used for client that has only XML understanding</td>
+            </tr>
+            </tbody>
+            </table>
+            </div>
+            <h3><span id="Q_21_Differentiate_between_JDBC_and_Hibernate">Q #21) Differentiate between JDBC and Hibernate.</span></h3>
+            <p><strong>Answer:</strong> Java Database Connectivity (JDBC) is an application programming interface (API) for Java programming language that decides how the client interface connects with or accesses the database. A part of Java Standard Edition, JDBC API has classes and interfaces that help connect the backend database with the front-end client.</p>
+            <p>Hibernate is an object-relational mapping (ORM) tool and Java persistent framework that helps to store and retrieve data from the database and maps this data with Java objects using XML.</p>
+            <h3><span id="Q_22_How_would_you_resolve_database_deadlock">Q #22) How would you resolve database deadlock?</span></h3>
+            <p><strong>Answer:</strong> The database deadlock is a situation that occurs when two or more transactions are waiting for other transaction to get complete and give away the lock. The deadlock occurs when both processes are on hold for each other to finish. We can avoid this situation by allocating resources in such a way that deadlock never occurs.</p>
+            <ul>
+            <li>A queue can be designed that would verify each request before sending it to the database.</li>
+            <li>Use very few cursors in our queries to prevent the locking of database tables.</li>
+            </ul>
+            <h3><span id="Q_23_Select_which_one_is_a_better_option_8211_you_store_session_info_or_use_session_info_in_the_request">Q #23) Select which one is a better option – you store session info or use session info in the request?</span></h3>
+            <p><strong>Answer:</strong> Storing session info is a better option than using session info in a request, as the latter option is vulnerable and can be intercepted. The respective domain can only access session info stored in cookies in order to ensure the right session information is provided by the user.</p>
+            <h3><span id="Q_24_What_are_the_main_differences_between_the_first-level_and_second-level_cache_in_Hibernate">Q #24) What are the main differences between the first-level and second-level cache in Hibernate?</span></h3>
+            <p><strong>Answer:</strong> The first-level cache in Hibernate is accessible to Sessions and maintained at the Session level whereas the second-level cache is available to all Sessions and maintained at the SessionFactory level.</p>
+            <p>For the second-level cache–concurrency strategy to be decided, cache expiration and physical cache attributes need to be configured. The first-level cache does not need any additional configuration.</p>
+            <h3><span id="Q_25_List_the_steps_to_avoid_LazyInitializationException">Q #25) List the steps to avoid LazyInitializationException</span></h3>
+            <p><strong>Answer:</strong> LazyInitializationException is thrown by the Hibernate framework while initializing a lazily fetched association to another entity without active session context.</p>
+            <p><strong>You can avoid it using the following steps:</strong></p>
+            <ul>
+            <li>By setting parameter value, lazy=false in hibernate config file.</li>
+            <li>At mapping setting @Basic(fetch=FetchType.EAGER).</li>
+            <li>By making sure the dependent objects are accessed before the closing of the session.</li>
+            <li>Using Hibernate.initialize.</li>
+            <li>Use of Fetch Joins in HQL.</li>
+            </ul>
+            <h3><span id="Q_26_What_are_the_ways_to_improve_application_performance_that_needs_improvement_in_database_communication">Q #26) What are the ways to improve application performance that needs improvement in database communication?</span></h3>
+            <p><strong>Answer: The following steps will improve application performance that needs improved database communication:</strong></p>
+            <ul>
+            <li>Optimization of queries using rewriting queries and using Prepared Statements.</li>
+            <li>Restructuring of Indexes.</li>
+            <li>Tuning of DB caching when ORM tool like Hibernate is used,</li>
+            <li>Identifying problems with ORM strategy if used.</li>
+            </ul>
+            <h3><span id="Q_27_Explain_with_reason_what_approach_you_would_choose_in_code_implementation_8211_inserting_a_record_or_updating_if_the_record_already_exists">Q #27) Explain with reason what approach you would choose in code implementation – inserting a record or updating if the record already exists.</span></h3>
+            <ul>
+            <li>Insert record in a database table, if an exception occurs, update an existing record.</li>
+            <li>Verify if the record exists and update if the record exists, or else insert a new record.</li>
+            </ul>
+            <p><strong>Answer:</strong> Decision on the selection of approach will depend on</p>
+            <ul>
+            <li>Are we using hibernate indices, and how costly is a call to the database Approach 1 should be selected if the DB call is costly.</li>
+            <li>The advantage of using the 1st call to DB in the first approach should be bigger than Bookkeeping for exceptions.</li>
+            <li>If the DB table is empty, using the 1st approach will make sense, as it will pass without any exception.</li>
+            </ul>
+            <h3><span id="Q_28_List_the_new_features_introduced_in_Java_8">Q #28) List the new features introduced in Java 8</span></h3>
+            <p><strong>Answer: Following are the newly introduced features in Java 8</strong></p>
+            <ul>
+            <li>Functional interfaces.</li>
+            <li>Default and Static methods in interfaces.</li>
+            <li>Use of forEach() method in Iterable interface.</li>
+            <li>Introduction to Java Date Time API.</li>
+            <li>Introduction of Optional class.</li>
+            <li>Improvement in Collection API.</li>
+            <li>Improvements in Java IO.</li>
+            <li>Java Stream API for bulk data operations on collections.</li>
+            <li>Lambda expressions.</li>
+            </ul>
+            <h3><span id="Q_29_What_is_Metaspace_in_Java_8">Q #29) What is Metaspace in Java 8?</span></h3>
+            <p><strong>Answer:</strong> The permanent generation space (permgen) has been replaced with a new space called metaspace, thereby JVM arguments – PermSize and MaxPermSize are ignored and you will never get java.lang.OutOfMemoryError due to PermGen.</p>
+            <h3><span id="Q_30_While_creating_your_own_exception_in_Java_list_the_measures_you_should_consider">Q #30) While creating your own exception in Java, list the measures you should consider.</span></h3>
+            <p><strong>Answer: The following measures should be taken while creating your own exceptions in Java.</strong></p>
+            <ul>
+            <li>All exceptions should be children of Throwable class.</li>
+            <li>You should extend the Exception class, to write a checked exception enforced by the Handle or Declare Rule.</li>
+            <li>You should extend RuntimeException class, to write a runtime exception.</li>
+            </ul>
+            <h2><span id="Conclusion">Conclusion</span></h2>
+            <p>Java architect develops application design and helps the team in identifying business requirements, troubleshoot design flaws, and suggest development frameworks and technologies to be applied to obtain the appropriate resolution in the form of Java-based software applications across the design, development, test, and release stage.</p>
+            <span id="tve_leads_end_content" style="display: block; visibility: hidden; border: 1px solid transparent;"></span>
+            
+            <div class="quads-location quads-ad3" id="quads-ad3" style="float:none;margin:12px 0 12px 0;text-align:center;">
+            
+            <div align="center" data-freestar-ad="__300x250 __336x280" id="softwaretestinghelp_endcontent" name="softwaretestinghelp_endcontent" data-google-query-id="CKy4ifHa3fsCFUp_fQodHeUDcQ">
+            
+            <div id="google_ads_iframe_/15184186,1018030/softwaretestinghelp_endcontent_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/15184186,1018030/softwaretestinghelp_endcontent_0" name="google_ads_iframe_/15184186,1018030/softwaretestinghelp_endcontent_0" title="3rd party ad content" width="728" height="90" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" role="region" aria-label="Advertisement" tabindex="0" style="border: 0px; vertical-align: bottom;" data-load-complete="true" data-google-container-id="3"></iframe></div></div>
+            </div>
+            
+
+
+        </div>	
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+
+
+  <div id="footer"></div>
+
+</body>
+
+</html>
