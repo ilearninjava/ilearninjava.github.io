@@ -4,7 +4,29 @@
     <nav id="navbar" class="navbar">
       <ul>
         <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="java.html">Java</a> </li>
+        <li class="dropdown"><a href="java.html"><span>Java</span> <i class="bi bi-chevron-down"></i></a>
+          <ul>
+            <li><a href="java-oops.html">Oops</a></li>
+            <li><a href="java-multithreading.html">Multithreading</a></li>
+            <li><a href="java-exception.html">Exception handling</a></li>
+
+            <li class="dropdown"><a href="java-collection.html"><span>Collection framework</span> <i class="bi bi-chevron-right"></i></a>
+              <ul>
+                <li><a href="java-collection.html">Map</a></li>
+                <li><a href="java-collection.html">List</a></li>
+                <li><a href="java-collection.html">Queue</a></li>
+              </ul>
+            </li>
+            <li><a href="jdk8.html">JDK8 features</a></li>
+            <li class="dropdown"><a href="design-pattern.html"><span>Design Patterns</span> <i class="bi bi-chevron-right"></i></a>
+              <ul>
+                <li><a href="creational-design-pattern.html">Creational Design Patterns</a></li>
+                <li><a href="structural-design-pattern.html">Structural Design Patterns</a></li>
+                <li><a href="behavioral-design-pattern.html">Behavioral Design Patterns</a></li>
+              </ul>
+            </li>              
+          </ul>
+        </li>
         <li class="dropdown"><a href="framework.html"><span>Framework</span> <i class="bi bi-chevron-down"></i></a>
           <ul>
             <li><a href="spring.html">Spring</a></li>
@@ -64,6 +86,8 @@
             <li><a href="gcp.html">GCP</a></li>
             <li><a href="azure.html">Azure</a></li>
             <li><a href="ibm-cloud.html">IBM Cloud</a></li>
+            <li><a href="pcf.html">PCF</a></li>
+            <li><a href="confluent-cloud.html">Confluent  Cloud</a></li>
             <li><a href="docker.html">Docker</a></li>
             <li><a href="kubernetes.html">Kubernetes</a></li>
             <li><a href="devops.html">DevOps</a></li>
@@ -82,8 +106,29 @@
           <ul>
             <li><a href="#">Company wise</a></li>
             <li><a href="#">Design pattern</a></li>
-            <li><a href="microservices.html">Microservices</a></li>
-            <li><a href="data-structure.html">Data Structure</a></li>
+            <li class="dropdown"><a href="microservices.html"><span>Microservices</span> <i class="bi bi-chevron-down"></i></a>
+              <ul>
+                <li><a href="microservices-12-factor-app.html">The Twelve-Factor App</a></li>
+                <li><a href="microservices-saga-pattern.html">Saga Pattern</a></li>
+                <li><a href="microservices-blue-green-deployment.html">Blue Green Deployment</a></li>              
+              </ul>
+            </li>
+            <li class="dropdown"><a href="data-structure.html"><span>Data Structure</span> <i class="bi bi-chevron-right"></i></a>
+              <ul>
+                <li><a href="data-structure-sorting.html">Sorting</a></li>
+                <li><a href="data-structure-searching.html">Searching</a></li>
+                <li><a href="data-structure-dynamic-programming.html">Dynamic Programming</a></li>
+                <li><a href="data-structure-array.html">Array</a></li>
+                <li><a href="data-structure-linked-list.html">Linked List</a></li>
+                <li><a href="data-structure-stack .html">Stack</a></li>
+                <li><a href="data-structure-queue.html">Queue</a></li>
+                <li><a href="data-structure-binary-tree.html">Binary Tree</a></li>
+                <li><a href="data-structure-binary-search-tree.html">Binary Search Tree</a></li>
+                <li><a href="data-structure-heap.html">Heap</a></li>
+                <li><a href="data-structure-hashing .html">Hashing</a></li> 
+                <li><a href="data-structure-graph.html">Graph</a></li>
+              </ul>
+            </li>
             <li><a href="architect.html">Architect</a></li>
           </ul>
         </li>

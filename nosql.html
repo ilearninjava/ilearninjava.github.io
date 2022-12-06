@@ -28,6 +28,10 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+  <script> $(function(){$("#header").load("header.html"); $("#footer").load("footer.html");  }); </script>
+
+
   <!-- =======================================================
   * Template Name: Sailor - v4.9.1
   * Template URL: https://bootstrapmade.com/sailor-free-bootstrap-theme/
@@ -38,75 +42,7 @@
 
 <body>
 
-  <header id="header" class="fixed-top d-flex align-items-center">
-    <div class="container d-flex align-items-center">
-      <h1 class="logo me-auto"><a href="index.html">Java Interview Q&A</a></h1>
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a href="index.html" class="active">Home</a></li>
-
-          <li class="dropdown"><a href="framework.html"><span>Framework</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="spring.html">Spring</a></li>
-              <li><a href="hibernate.html">Hibernate</a></li>
-              <li><a href="springboot.html">SpringBoot</a></li>
-              <li><a href="jsf.html">JSF</a></li>
-              <li><a href="struts.html">Struts</a></li>
-              <li class="dropdown"><a href="#"><span>Entity Framework</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="jpa.html">JPA</a></li>
-                  <li><a href="hibernate.html">Hibernate</a></li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-          
-          <li class="dropdown"><a href="database.html"><span>Database</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="sql.html">SQL</a></li>
-              <li><a href="plsql.html">PL-SQL</a></li>
-              <li class="dropdown"><a href="nosql.html"><span>NoSQL</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#">Apache Cassandra</a></li>
-                  <li><a href="#">MongoDB</a></li>
-                  <li><a href="#">Redis</a></li>
-                  <li><a href="#">ArangoDB</a></li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-          <li class="dropdown"><a href="cloud.html"><span>Cloud</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="aws.html">AWS</a></li>
-              <li><a href="gcp.html">GCP</a></li>
-              <li><a href="azure.html">Azure</a></li>
-              <li><a href="ibm-cloud.html">IBM Cloud</a></li>
-              <li><a href="docker.html">Docker</a></li>
-              <li><a href="kubernetes.html">Kubernetes</a></li>
-            </ul>
-          </li>
-          <li class="dropdown"><a href="ui.html"><span>UI</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="angular.html">Angular</a></li>
-              <li><a href="react.html">ReactJS</a></li>
-              <li><a href="javascript.html">Javascript</a></li>
-              <li><a href="css.html">css</a></li>
-              <li><a href="html.html">html</a></li>
-            </ul>
-          </li>
-          <li class="dropdown"><a href="#"><span>Other</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="#">Company wise</a></li>
-              <li><a href="#">Design pattern</a></li>
-              <li><a href="microservices.html">Microservices</a></li>
-              <li><a href="data-structure.html">Data Structure</a></li>
-              <li><a href="#">Architect</a></li>
-            </ul>
-          </li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav>
-  </header>
+  <div id="header"></div>
 
 </br>
   <main id="main">
@@ -144,7 +80,7 @@
   </main><!-- End #main -->
 
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <div id="footer"></div>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
