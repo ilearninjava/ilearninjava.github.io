@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Java Interview Q&A</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+  <script> $(function(){$("#header").load("header.html"); $("#footer").load("footer.html");  }); </script>
+
+
+  <!-- =======================================================
+  * Template Name: Sailor - v4.9.1
+  * Template URL: https://bootstrapmade.com/sailor-free-bootstrap-theme/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <div id="header"></div>
+
+<main id="main">
+
+    <section id="about" class="about">
+      <div class="container">
+        <div class="row-content"> 
+          
+          
+          <div class="mk-single-content clearfix">
+           
+          <p><span style="font-weight: 400;">We are all working remotely with multiple files being shared and myriad login attempts being made from different sources for the various tools that we use. Such activities are often unavoidable and are a necessity for businesses to function smoothly. Let us first talk about credentials. In many organizations, a username and password are present in a table in a database. When someone attempts to log in, the system checks the username and compares the password entered by the user with the one present in the table to check for a match. The most basic password storage format is </span><i><span style="font-weight: 400;">cleartext</span></i><span style="font-weight: 400;"> where “readable data is stored in the clear”. However, security at this level is nothing much to talk about as it is almost like writing down the credentials in a piece of digital paper which can easily be hacked by hackers. So, you can imagine how vulnerable the system is! The solution?</span></p>
+          <h1 style="text-align: center;"><b>Hashing Algorithms</b></h1>
+          <p><span style="font-weight: 400;">Enter hashing algorithm, a fundamental part of cryptography, which refers to “chopping data into smaller, mixed up pieces which makes it difficult for the end user to go back to the original text/state”. A hash function is an algorithm that generates a fixed-length result or hash value from a specific input data. It is different from encryption which converts plain text to encrypted text and with the help of decryption, converts the encrypted text back to the original plain text. In the case of a hashing algorithm, plain text is converted into a hashed text through a cryptographic hash function, thereby making it difficult for hackers to make sense of it. (A hash length of 160 to 512 bits is good). But it doesn’t provide a way to go back to the original text.&nbsp;</span></p>
+          <p><img class="aligncenter size-full wp-image-12369" src="https://resources.appsealing.com/4-svc/wp-content/uploads/2021/04/27124415/image1.png" data-src="https://resources.appsealing.com/4-svc/wp-content/uploads/2021/04/27124415/image1.png" alt="" width="611" height="223" data-srcset="https://resources.appsealing.com/4-svc/wp-content/uploads/2021/04/27124415/image1.png 611w, https://resources.appsealing.com/4-svc/wp-content/uploads/2021/04/27124415/image1-300x109.png 300w, https://resources.appsealing.com/4-svc/wp-content/uploads/2021/04/27124415/image1-595xh.png 595w" sizes="(max-width: 611px) 100vw, 611px" srcset="https://resources.appsealing.com/4-svc/wp-content/uploads/2021/04/27124415/image1.png 611w, https://resources.appsealing.com/4-svc/wp-content/uploads/2021/04/27124415/image1-300x109.png 300w, https://resources.appsealing.com/4-svc/wp-content/uploads/2021/04/27124415/image1-595xh.png 595w"></p>
+          <p><span style="font-weight: 400;">So, if we have to ensure password security, hashing ensures that the passwords are hashed and stored in pairs along with usernames in the database table. When one logs in, the password typed is hashed and compared with the hashed entry from the database table. If there is a match, voila! The user is allowed to continue.&nbsp;</span></p>
+          <p><span style="font-weight: 400;">Hashtags can be used for password storage, integrity checks, digital signatures, message authentication codes. They can also come in handy for fingerprinting, file transfers, checksums etc.&nbsp;</span></p>
+          <h2 style="text-align: center;"><b>What is an ideal cryptographic hash function?</b></h2>
+          <p><span style="font-weight: 400;">There are some key aspects that make a hash function ideal for usage.</span></p>
+          <h3><b>Hash functions behave as one-way functions</b></h3>
+          <p><span style="font-weight: 400;">It is impossible to go back to the original text once it has been subjected to a hashing algorithm. So, if you get a specific result, an ideal hash function will ensure that you do not get the initial inputs which lead to the result. For example, 6 divided by 2 gives you a result of 3. But so does 9 divided by 3. But there would be no way to determine the initial two numbers from just the result ‘3’.</span></p>
+          <h3><b>Hash functions make use of the avalanche effect very well</b></h3>
+          <p><span style="font-weight: 400;">A particular input provides a particular output, but even a very minor change in the input (even if very insignificant) will lead to a pretty drastic change in the output.</span></p>
+          <p><span style="font-weight: 400;">For example:</span></p>
+          <p style="padding-left: 40px;"><span style="font-weight: 400;">Input: App1sealing583<br>
+          </span><span style="font-weight: 400;">Hash: 5420d1938buif7686dedsf9560bb5087d24676de5f83b7cb4c3b96bf46ec388b</span></p>
+          <p style="padding-left: 40px;"><span style="font-weight: 400;">Input: App2sealing583<br>
+          </span><span style="font-weight: 400;">Hash: 4ic79ff6a81da0b5fc63989d6b6db7dbf1264228052d2da70baqsf7f82961rt6</span></p>
+          <h3><b>Hash functions should be fast to compute</b></h3>
+          <p><span style="font-weight: 400;">For any given input data subjected to hashing, getting results within seconds should not be a problem if the hash function is built strongly</span></p>
+          <h3><b>Hash function outputs shouldn’t have any collision&nbsp;</b></h3>
+          <p><span style="font-weight: 400;">The outputs of two input parameters should never be the same (look at the length of a hash function output and you will get what we are saying)</span></p>
+          <h3><b>Hash functions are deterministic&nbsp;</b></h3>
+          <p><span style="font-weight: 400;">The output of one input parameter has to be the same irrespective of whenever one checks or how many ever times one uses it. This especially comes in handy when multiple people need to be verified at different points in time</span></p>
+          <h2 style="text-align: center;"><b>Hashing algorithm in action – How does it work?&nbsp;</b></h2>
+          <p><span style="font-weight: 400;">We spoke about passwords and credentials at the start of the article. Now let us talk about file transfer. If one person (let us call him X) wants to transfer a file to another (let us call her Y). Without a hashing algorithm in place, the only way X can confirm the contents or the recipients would be to check in person with Y. But that would be cumbersome, and in a way, pointless in a busy, fast-moving yet highly insecure world. And if the message is long, the files are heavy or the mail contains multiple types, formats and numbers of attachments associated with it, this process will go for days on end.</span></p>
+          <p><span style="font-weight: 400;">But with a hashing algorithm, X can generate a checksum (a small-sized block of digital data derived from another block to detect errors during transmissions) for the specific file. Once Y receives the file and the checksum, she can use the same hashing algorithm on the received file. This would ensure that the correct file is sent by the correct sender, to the correct recipient.&nbsp;&nbsp;</span></p>
+          <h2 style="text-align: center;"><span style="font-weight: 400;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><b>Types of Hashing Algorithms</b></h2>
+          <h3><b>MD5 (MD stands for Message Digest)</b></h3>
+          <p><span style="font-weight: 400;">One of the most commonly used yet amongst the most unsecure algorithms. When a password is converted into a specific pattern using this method, it is very easy to simply Google the hash value to get the original value. So, this is best avoided and, in fact, considered unsuitable for further use.</span></p>
+          <p><span style="font-weight: 400;">An example: </span></p>
+          <p style="padding-left: 40px;"><span style="font-weight: 400;">Input: An example of MD5<br>
+          </span><span style="font-weight: 400;">Output (Checksum containing 32 digits hexadecimal number like the following): 6c30eeb06ce8eb66b7a65191272b9743</span></p>
+          <p>&nbsp;</p>
+          <h3><b>SHA (Secure Hash Algorithm) family of algorithms</b></h3>
+          <p><span style="font-weight: 400;">SHA-0, introduced in 1993, has been compromised myriad times. SHA-1, though a slightly improved version which has been used for Secure Socket Layer (SSL) security, has also been subjected to many attacks. SHA-2 is now recommended since it is more complicated. SHA-3 can be used by companies who are very serious about security.</span></p>
+          <p><span style="font-weight: 400;">An example:&nbsp;</span></p>
+          <p style="padding-left: 40px;"><span style="font-weight: 400;">Input: An example of SHA-1<br>
+          </span><span style="font-weight: 400;">Output: 482ae821c8245e9545e3275cfec2e2657ccab6fb&nbsp;&nbsp;</span></p>
+          <p>&nbsp;</p>
+          <h3><b>Whirlpool</b></h3>
+          <p><span style="font-weight: 400;">It is a 512-bit hash function, derived from Advanced Encryption Standard (AES).&nbsp;&nbsp;</span></p>
+          <p><span style="font-weight: 400;">An example:&nbsp;</span></p>
+          <p style="padding-left: 40px;"><span style="font-weight: 400;">Input: An example of Whirlpool<br>
+          </span><span style="font-weight: 400;">Output: 42fefc20dd412b5ad776271d1008ca65d1503a5acd384f3b4e3c8793ded11a0c3d853d721c6d23c37deeecc9b98765575c806099cec4a61b402b65b7a271bfd7</span></p>
+          <p>&nbsp;</p>
+          <h3><b>RIPEMD family of algorithms:</b></h3>
+          <p><span style="font-weight: 400;">It stands for RACE Integrity Primitives Evaluation Message Digest and was developed sometime in the mid-1990s. There are multiple versions like RIPEMD-160, RIPEMD-256 and RIPEMD-320. Since the output lengths keep increasing in the subsequent versions, the security coverage also increases.&nbsp;</span></p>
+          <p><span style="font-weight: 400;">An example:</span></p>
+          <p style="padding-left: 40px;"><span style="font-weight: 400;">Input: An example of RIPEMD-160<br>
+          </span><span style="font-weight: 400;">Output: 033432770126267d6640cb35b1d7e1e75a78e7e5</span></p>
+          <p>&nbsp;</p>
+          <h3><b>CRC32:</b></h3>
+          <p><span style="font-weight: 400;">It is known as cyclic redundancy code and is commonly known for its spreading properties. It is also supposed to be a lot quicker leading to smooth file transfers and validations.&nbsp;</span></p>
+          <p><span style="font-weight: 400;">An example:</span></p>
+          <p style="padding-left: 40px;"><span style="font-weight: 400;">Input: An example of CRC32<br>
+          </span><span style="font-weight: 400;">Output: 5c8e1a03</span></p>
+          <h2 style="text-align: center;"><b>Hashing Algorithm’s Security Limitations</b></h2>
+          <p><span style="font-weight: 400;">Hashing algorithms are secure but are not immune to attackers. At times, a hacker has to provide an input to the hash function which can then be used for authentication. Multiple login attempts through brute force attacks can also be tried out till a match is found.&nbsp;</span></p>
+          <p><span style="font-weight: 400;">Since one exact input can have one exact output every single time, a typical, commonly-used password like ‘123456’ will be easier for a hacker to hash and gain unauthorised entry. Also, if multiple users are mapped to the same password, the hacker will be smiling all the way.&nbsp;</span></p>
+          <p><span style="font-weight: 400;">Another method called rainbow table attack where a hacker uses a large database of precomputed hash chains to crack passwords is common. Let us talk about the most commonly used password in the world – 123456. Let us consider Md5 hashing function. The way a rainbow table attack will work is as follows:</span></p>
+          <ol>
+          <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Pass the password (123456) through an MD5 hashing function to get: e10adc3949ba59abbe56e057f20f883e</span></li>
+          <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Pass only the first few characters of the hashed value above (e10adc) to further get another re-hashed value: 96bf38d01b84aa16cf2bb9f55c61ac85</span></li>
+          <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Repeat the above procedure until enough hashes are obtained in the form of a chain, starting from the initial plain text to the final hashed text</span></li>
+          <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Store all of them in a table</span></li>
+          <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Keep going through the list one at a time until a match is found&nbsp;</span></li>
+          </ol>
+          <p><span style="font-weight: 400;">To counter such attempts, salting technique is used wherein further complexity is added to the hashed value to make it more difficult to crack the password. Here, random data is added to the input of a hash function to generate a much more complex output. Rainbow table mainly works on unsalted hash values, so this adds a further layer of security.&nbsp;&nbsp;</span></p>
+          <p><span style="text-decoration: underline;"><a href="https://www.appsealing.com/rasp-security/"><span style="font-weight: 400;">Runtime Application Self-Protection</span></a></span><span style="font-weight: 400;"> (RASP), which detects attacks on an application in real time, is a good practice to watch out for. With limited human intervention and a smart analysis of contextual behaviour of applications, better security is guaranteed. So, when any suspicious activity is detected, RASP would ensure to terminate a session or provide the relevant alerts to the users for further actions. And they do have an advantage over firewalls which just look at the perimeter of an application and don’t have much of an idea about what is going on inside an application.&nbsp;</span></p>
+          <h2 style="text-align: center;"><b>Final Thoughts</b></h2>
+          <p><span style="font-weight: 400;">Even though newer versions of hashing algorithms are introduced in the market with an added layer of security and SHA-2 does seem to be a good option out there, it is always better to be updated with the latest in the hashing algorithm technology.&nbsp;</span></p>
+          <p><span style="font-weight: 400;">But definitely when it comes to business continuity where credential verification and file/message transfers are an on-going activity across the world, hashing algorithm does the job well.&nbsp;</span></p>
+          <p><span style="font-weight: 400;"><br>
+          </span><span style="font-weight: 400;">To secure your javascript code without ANY CODING from reverse engineering and tampering attacks, click on the link below to know more about </span><span style="text-decoration: underline;"><a href="https://www.appsealing.com/"><span style="font-weight: 400;">AppSealing</span></a></span><span style="font-weight: 400;"> and sign-up for a free trial. </span><span style="font-weight: 400;"><br>
+          </span><span style="text-decoration: underline;"><a href="https://console.appsealing.com/#/signUp"><span style="font-weight: 400;">Secure My App</span></a></span></p>
+          <h2 style="text-align: center;"><b>Frequently Asked Questions</b></h2>
+          <h3><span style="font-weight: 400;">1. Is AES a hashing algorithm?</span></h3>
+          <p><span style="font-weight: 400;">AES is not a hashing algorithm. AES is an encryption standard used to protect electronic data. It is a block cipher that encrypts data in blocks of 128 bits each. It is a symmetric algorithm that uses the same key for encryption and decryption.&nbsp;</span></p>
+          <h3><span style="font-weight: 400;">2. Is RSA a hashing algorithm?</span></h3>
+          <p><span style="font-weight: 400;">RSA is an asymmetric encryption algorithm that uses two different keys to encrypt and decrypt data. RSA keys are 1024-bits or 2048-bits long.</span></p>
+          <h3><span style="font-weight: 400;">3. What is MD5 and SHA256?</span></h3>
+          <p><span style="font-weight: 400;">The MD5 (Message-Digest algorithm) is a hashing algorithm that generates a 128-bit digest. It ensures that the file remains unaltered by producing and comparing checksums for both sets of data. However, it is no longer considered a secure hashing method. SHA256 stands for Secure Hash Algorithm 256-bit which is an irreversible hash function. It is used for secure password hashing and resists brute force attacks.&nbsp;</span></p>
+          <h3><span style="font-weight: 400;">4. What are the 3 types of the hash collision algorithms?</span></h3>
+          <p><span style="font-weight: 400;">CRC-32, MD5, and SHA-1 are the three types of hash algorithm that have varying levels of collision risk. CRC-32 poses the highest risk for collision whereas SHA-1 presents the lowest risk.&nbsp;</span></p>
+          <h3><span style="font-weight: 400;">5. Which hash algorithm is fastest?</span></h3>
+          <p><span style="font-weight: 400;">SHA-1 is the fastest hashing algorithm that delivers ~587.9 ms per 1M operations for short strings and 881.7 ms per 1M for longer strings.</span></p>
+          <h3><span style="font-weight: 400;">6. How many types of hashing are there?</span></h3>
+          <p><span style="font-weight: 400;">MD5, SHA-2 and CRC32 are the three important types of hashing used for file integrity checks. MD5 encodes information into 128-bit fingerprints and is used as a checksum. SHA-2 has hash functions with values of 224, 256, 384 or 512 bits. CRC is used to identify accidental changes to data. Common areas of application for CRC32 include ZIP files and FTP servers.</span></p>
+          </div>
+
+
+        </div>	
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+
+
+  <div id="footer"></div>
+
+
+</body>
+
+</html>
