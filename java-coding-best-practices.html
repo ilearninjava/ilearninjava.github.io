@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Java Interview Q&A</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+  <script> $(function () { $("#header").load("header.html"); $("#footer").load("footer.html"); }); </script>
+
+
+  <!-- =======================================================
+  * Template Name: Sailor - v4.9.1
+  * Template URL: https://bootstrapmade.com/sailor-free-bootstrap-theme/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <div id="header"></div>
+
+  <main id="main">
+
+    <section id="about" class="about">
+      <div class="container">
+        <div class="row-content">
+
+          
+                <summary class="text-delta"> Table of contents </summary>
+                <ol id="markdown-toc">
+                  <li><a href="#good-practices-for-rest-api-design"
+                      id="markdown-toc-good-practices-for-rest-api-design">Good Practices for REST API Design</a>
+                    <ol>
+                      <li><a href="#accept-and-respond-with-json" id="markdown-toc-accept-and-respond-with-json">Accept
+                          and respond with JSON</a></li>
+                      <li><a href="#use-nouns-instead-of-verbs-in-endpoint-paths"
+                          id="markdown-toc-use-nouns-instead-of-verbs-in-endpoint-paths">Use nouns instead of verbs in
+                          endpoint paths</a></li>
+                      <li><a href="#nesting-resources-for-hierarchical-objects"
+                          id="markdown-toc-nesting-resources-for-hierarchical-objects">Nesting resources for
+                          hierarchical objects</a></li>
+                      <li><a href="#handle-errors-gracefully-and-return-standard-error-codes"
+                          id="markdown-toc-handle-errors-gracefully-and-return-standard-error-codes">Handle errors
+                          gracefully and return standard error codes</a></li>
+                      <li><a href="#allow-filtering-sorting-and-pagination"
+                          id="markdown-toc-allow-filtering-sorting-and-pagination">Allow filtering, sorting, and
+                          pagination</a></li>
+                      <li><a href="#maintain-good-security-practices"
+                          id="markdown-toc-maintain-good-security-practices">Maintain Good Security Practices</a></li>
+                      <li><a href="#cache-data-to-improve-performance"
+                          id="markdown-toc-cache-data-to-improve-performance">Cache data to improve performance</a></li>
+                      <li><a href="#versioning-our-apis" id="markdown-toc-versioning-our-apis">Versioning our APIs</a>
+                      </li>
+                    </ol>
+                  </li>
+                  <li><a href="#java-code-review-checklist" id="markdown-toc-java-code-review-checklist">Java code
+                      review checklist</a>
+                    <ol>
+                      <li><a href="#code-quality" id="markdown-toc-code-quality">Code Quality</a></li>
+                      <li><a href="#branching-strategy" id="markdown-toc-branching-strategy">Branching Strategy</a></li>
+                      <li><a href="#application-structure" id="markdown-toc-application-structure">Application
+                          Structure</a></li>
+                      <li><a href="#model" id="markdown-toc-model">Model</a></li>
+                      <li><a href="#rest-api" id="markdown-toc-rest-api">Rest API</a></li>
+                      <li><a href="#mvc" id="markdown-toc-mvc">MVC</a></li>
+                      <li><a href="#performance" id="markdown-toc-performance">Performance</a></li>
+                      <li><a href="#security" id="markdown-toc-security">Security</a></li>
+                      <li><a href="#thead-safety" id="markdown-toc-thead-safety">Thead-safety</a></li>
+                      <li><a href="#logging" id="markdown-toc-logging">Logging</a></li>
+                      <li><a href="#alerting" id="markdown-toc-alerting">Alerting</a></li>
+                    </ol>
+                  </li>
+                  <li><a href="#code-quality-1" id="markdown-toc-code-quality-1">Code Quality</a>
+                    <ol>
+                      <li><a href="#clean-code" id="markdown-toc-clean-code">Clean Code</a></li>
+                      <li><a href="#design-patterns" id="markdown-toc-design-patterns">Design Patterns</a></li>
+                      <li><a href="#naming-conventions" id="markdown-toc-naming-conventions">Naming Conventions</a></li>
+                      <li><a href="#app-structure" id="markdown-toc-app-structure">App Structure</a></li>
+                      <li><a href="#model-1" id="markdown-toc-model-1">Model</a></li>
+                      <li><a href="#exception-handling" id="markdown-toc-exception-handling">Exception Handling</a></li>
+                      <li><a href="#unit-testing" id="markdown-toc-unit-testing">Unit Testing</a></li>
+                      <li><a href="#rest-api-1" id="markdown-toc-rest-api-1">Rest API</a></li>
+                      <li><a href="#error-codes" id="markdown-toc-error-codes">Error Codes</a></li>
+                      <li><a href="#mvc-1" id="markdown-toc-mvc-1">MVC</a></li>
+                    </ol>
+                  </li>
+                  <li><a href="#resolving-a-production-issue-on-a-live-server"
+                      id="markdown-toc-resolving-a-production-issue-on-a-live-server">Resolving a Production Issue on a
+                      Live Server</a>
+                    <ol>
+                      <li><a href="#notify-all-stakeholders" id="markdown-toc-notify-all-stakeholders">Notify All
+                          Stakeholders</a></li>
+                      <li><a href="#reproduce--replicate-the-production-environment-locally"
+                          id="markdown-toc-reproduce--replicate-the-production-environment-locally">Reproduce :
+                          Replicate the production environment locally</a></li>
+                      <li><a href="#root-cause-analysis--fix" id="markdown-toc-root-cause-analysis--fix">Root Cause
+                          Analysis &amp; Fix</a></li>
+                      <li><a href="#re-test--regression-testing" id="markdown-toc-re-test--regression-testing">Re-test
+                          &amp; Regression Testing</a></li>
+                      <li><a href="#backup-the-system-before-implementing-complex-solution"
+                          id="markdown-toc-backup-the-system-before-implementing-complex-solution">Backup the System
+                          Before Implementing Complex Solution</a></li>
+                      <li><a href="#document-the-problem-and-how-it-was-resolved"
+                          id="markdown-toc-document-the-problem-and-how-it-was-resolved">Document the Problem and How it
+                          was Resolved</a></li>
+                    </ol>
+                  </li>
+                  <li><a href="#for-more-information" id="markdown-toc-for-more-information">For more information</a>
+                  </li>
+                </ol>
+              </details>
+              <hr>
+              <h2 id="good-practices-for-rest-api-design"> <a href="#good-practices-for-rest-api-design"
+                  class="anchor-heading" aria-labelledby="good-practices-for-rest-api-design"></a> Good Practices for REST API Design </h2>
+              <p>A REST API is an application programming interface that conforms to specific architectural constraints,
+                like stateless communication and cacheable data. It is not a protocol or standard. While REST APIs can
+                be accessed through a number of communication protocols, most commonly, they are called over HTTPS,</p>
+              <h4 id="accept-and-respond-with-json"> <a href="#accept-and-respond-with-json" class="anchor-heading"
+                  aria-labelledby="accept-and-respond-with-json"></a> Accept and respond with JSON </h4>
+              <p>REST APIs should accept JSON for request payload and also send responses to JSON. JSON is the standard
+                for transferring data. Almost every networked technology can use it</p>
+              <p>To make sure that when our REST API app responds with JSON that clients interpret it as such, we should
+                set <code class="language-plaintext highlighter-rouge">Content-Type</code> in the response header to
+                <code class="language-plaintext highlighter-rouge">application/json</code></p>
+              <h4 id="use-nouns-instead-of-verbs-in-endpoint-paths"> <a
+                  href="#use-nouns-instead-of-verbs-in-endpoint-paths" class="anchor-heading"
+                  aria-labelledby="use-nouns-instead-of-verbs-in-endpoint-paths"></a> Use nouns instead of verbs in endpoint paths </h4>
+              <p>We shouldn’t use verbs in our endpoint paths. Instead, we should use the nouns which represent the
+                entity that the endpoint that we’re retrieving or manipulating as the pathname.</p>
+              <p>we should create routes like</p>
+              <ul>
+                <li>GET /articles/ for getting news articles. Likewise,</li>
+                <li>POST /articles/ is for adding a new article ,</li>
+                <li>PUT /articles/:id is for updating the article with the given id.</li>
+                <li>DELETE /articles/:id is for deleting an existing article with the given ID.</li>
+              </ul>
+              <h4 id="nesting-resources-for-hierarchical-objects"> <a href="#nesting-resources-for-hierarchical-objects"
+                  class="anchor-heading" aria-labelledby="nesting-resources-for-hierarchical-objects"></a> Nesting resources for hierarchical objects </h4>
+              <p>When designing endpoints, it makes sense to group those that contain associated information. That is,
+                if one object can contain another object, you should design the endpoint to reflect that.</p>
+              <p>For example, if we want an endpoint to get the comments for a news article, we should append the
+                /comments path to the end of the /articles path.</p>
+              <h4 id="handle-errors-gracefully-and-return-standard-error-codes"> <a
+                  href="#handle-errors-gracefully-and-return-standard-error-codes" class="anchor-heading"
+                  aria-labelledby="handle-errors-gracefully-and-return-standard-error-codes"></a> Handle errors gracefully and return standard error codes </h4>
+              <p>we should handle errors gracefully and return HTTP response codes that indicate what kind of error
+                occurred. This gives maintainers of the API enough information to understand the problem that’s
+                occurred. We don’t want errors to bring down our system, so we can leave them unhandled, which means
+                that the API consumer has to handle them.</p>
+              <p>Common error HTTP status codes include:</p>
+              <ul>
+                <li><strong>400 Bad Request</strong> – This means that client-side input fails validation.</li>
+                <li><strong>401 Unauthorized</strong> – This means the user isn’t not authorized to access a resource.
+                  It usually returns when the user isn’t authenticated.</li>
+                <li><strong>403 Forbidden</strong> – This means the user is authenticated, but it’s not allowed to
+                  access a resource.</li>
+                <li><strong>404 Not Found</strong> – This indicates that a resource is not found.</li>
+                <li><strong>500 Internal server error</strong> – This is a generic server error. It probably shouldn’t
+                  be thrown explicitly.</li>
+                <li><strong>502 Bad Gateway</strong> – This indicates an invalid response from an upstream server.</li>
+                <li><strong>503 Service Unavailable</strong> – This indicates that something unexpected happened on
+                  server side (It can be anything like server overload, some parts of the system failed, etc.).</li>
+              </ul>
+              <p>We should be throwing errors that correspond to the problem that our app has encountered. For example,
+                if we want to reject the data from the request payload, then we should return a 400 response</p>
+              <h4 id="allow-filtering-sorting-and-pagination"> <a href="#allow-filtering-sorting-and-pagination"
+                  class="anchor-heading" aria-labelledby="allow-filtering-sorting-and-pagination"></a> Allow filtering, sorting, and pagination </h4>
+              <p>The databases behind a REST API can get very large. Sometimes, there’s so much data that it shouldn’t
+                be returned all at once because it’s way too slow or will bring down our systems. Therefore, we need
+                ways to filter items.</p>
+              <p>We also need ways to paginate data so that we only return a few results at a time. We don’t want to tie
+                up resources for too long by trying to get all the requested data at once.</p>
+              <p>Filtering and pagination both increase performance by reducing the usage of server resources. As more
+                data accumulates in the database, the more important these features become.</p>
+              <h4 id="maintain-good-security-practices"> <a href="#maintain-good-security-practices"
+                  class="anchor-heading" aria-labelledby="maintain-good-security-practices"></a> Maintain Good Security Practices </h4>
+              <p>Most communication between client and server should be private since we often send and receive private
+                information. Therefore, using SSL/TLS for security is a must.</p>
+              <p>People shouldn’t be able to access more information that they requested. For example, a normal user
+                shouldn’t be able to access information of another user. They also shouldn’t be able to access data of
+                admins.</p>
+              <p>If we choose to group users into a few roles, then the roles should have the permissions that cover all
+                they need and no more.</p>
+              <h4 id="cache-data-to-improve-performance"> <a href="#cache-data-to-improve-performance"
+                  class="anchor-heading" aria-labelledby="cache-data-to-improve-performance"></a> Cache data to improve performance </h4>
+              <p>We can add caching to return data from the local memory cache instead of querying the database to get
+                the data every time we want to retrieve some data that users request. The good thing about caching is
+                that users can get data faster. However, the data that users get may be outdated. This may also lead to
+                issues when debugging in production environments when something goes wrong as we keep seeing old data.
+              </p>
+              <p>There are many kinds of caching solutions like Redis, in-memory caching,etc. We can change the way data
+                is cached as our needs change.</p>
+              <h4 id="versioning-our-apis"> <a href="#versioning-our-apis" class="anchor-heading"
+                  aria-labelledby="versioning-our-apis"></a> Versioning our APIs </h4>
+              <p>We should have different versions of API if we’re making any changes to them that may break clients.
+                The versioning can be done according to semantic version (for example, 2.0.6 to indicate major version 2
+                and the sixth patch) like most apps do nowadays.</p>
+              <p>Versioning is usually done with /v1/, /v2/, etc. added at the start of the API path.</p>
+              <hr>
+              <h2 id="java-code-review-checklist"> <a href="#java-code-review-checklist" class="anchor-heading"
+                  aria-labelledby="java-code-review-checklist"></a> Java code review checklist </h2>
+              <h4 id="code-quality"> <a href="#code-quality" class="anchor-heading" aria-labelledby="code-quality"></a> Code Quality </h4>
+              <ul>
+                <li>Basic Checks (before) <ul>
+                    <li>The code compiles</li>
+                    <li>Old unit tests pass</li>
+                  </ul>
+                </li>
+                <li>The code was tested <ul>
+                    <li>The code was developer-tested</li>
+                    <li>The new code must be covered by unit tests</li>
+                    <li>Any refactoring must be covered by unit tests</li>
+                    <li>At least 80% coverage for the code changes</li>
+                  </ul>
+                </li>
+                <li>Clean Code <ul>
+                    <li>Naming Conventions (classes, constants, variables, methods (void vs return), etc)</li>
+                    <li>No hard-coded variables</li>
+                    <li>Indentation</li>
+                    <li>No spelling mistakes</li>
+                    <li>The code does what it says it does</li>
+                    <li>The code is easy to read (<strong>Readability</strong>)</li>
+                    <li>Avoid duplicate code</li>
+                    <li>Check if the code could be replaced by calling functions in other libraries/components</li>
+                  </ul>
+                </li>
+                <li>Best Practices <ul>
+                    <li>OOP Principles are correctly used</li>
+                    <li>The code follows the SOLID PRINCIPLES</li>
+                    <li>Design Patterns <ul>
+                        <li>Recommend a design pattern when you fill that a pattern could fit there</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li>Exception Handling <ul>
+                    <li>Ensure that each exception is raised and handled correctly</li>
+                    <li>Ensure that you have a well-defined exception hierarchy</li>
+                    <li>Split the exceptions in two types: technical and business</li>
+                  </ul>
+                </li>
+              </ul>
+              <h4 id="branching-strategy"> <a href="#branching-strategy" class="anchor-heading"
+                  aria-labelledby="branching-strategy"></a> Branching Strategy </h4>
+              <h4 id="application-structure"> <a href="#application-structure" class="anchor-heading"
+                  aria-labelledby="application-structure"></a> Application Structure </h4>
+              <ul>
+                <li>Ensure that your changes are correctly written on layers and it respects the Spring Boo App
+                  Structure</li>
+                <li>Do not mixt up a Rest Service with a Web App (like Spring Rest with Spring MVC )</li>
+              </ul>
+              <h4 id="model"> <a href="#model" class="anchor-heading" aria-labelledby="model"></a> Model </h4>
+              <ul>
+                <li>Understand the meaning of each model you defined and treat it like the most appropiate terminology
+                  for it: DTO (form for MVC), entity, Value Object, Java Bean</li>
+                <li>Place it in the correct package</li>
+              </ul>
+              <h4 id="rest-api"> <a href="#rest-api" class="anchor-heading" aria-labelledby="rest-api"></a> Rest API </h4>
+              <ul>
+                <li>Ensure your Rest API respects the REST maturity levels</li>
+                <li>Error Codes <ul>
+                    <li>Ensure that in case of any error or exception the API replies with the standard error codes
+                      (defined at the system level)</li>
+                    <li>Do not write Rest API which have different directions for receiving requestions from <ul>
+                        <li>Example: having a service which facilitates communication with an external 3rd party, do not
+                          expose the same service for the 3rd party to request back, for this use a different service
+                          (e.g. a notification service)</li>
+                        <li>You can get into a confusion when you have to handle differently the same exception in the
+                          service, but it comes from different directions, you have 2 clients and cannot reply with the
+                          same error codes (one should be internally and the other one specific to the 3rd party)</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li>DTO <ul>
+                    <li>Use DTO pattern for passing data between controller and service layer (at least when using
+                      <strong>sensitive</strong> or ** aggregated** data)</li>
+                  </ul>
+                </li>
+              </ul>
+              <h4 id="mvc"> <a href="#mvc" class="anchor-heading" aria-labelledby="mvc"></a> MVC </h4>
+              <ul>
+                <li>Ensure that your Model-View-Controller parts of the Web Application are compliant to the Best
+                  Practices <ul>
+                    <li>JSP don’t have business logic (no Java code, only JSTL, Spring or Thymeleaf tags)</li>
+                    <li>Model doesn’t have business logic</li>
+                    <li>Controller delegates the requests to the business (service) layer, it doesn’t have logic</li>
+                    <li>Use DTO (classes ending with Form in case of MVC) pattern for passing data between controller
+                      and service layer ( at least when using <strong>sensitive</strong> or <strong>aggregated</strong>
+                      data)</li>
+                  </ul>
+                </li>
+              </ul>
+              <h4 id="performance"> <a href="#performance" class="anchor-heading" aria-labelledby="performance"></a> Performance </h4>
+              <ul>
+                <li>Release resources (HTTP connections, DB connections, Files, any I/O streams )</li>
+              </ul>
+              <h4 id="security"> <a href="#security" class="anchor-heading" aria-labelledby="security"></a> Security </h4>
+              <h4 id="thead-safety"> <a href="#thead-safety" class="anchor-heading" aria-labelledby="thead-safety"></a> Thead-safety </h4>
+              <ul>
+                <li>Ensure your code is not a candidate for race conditions and deadlocks</li>
+              </ul>
+              <h4 id="logging"> <a href="#logging" class="anchor-heading" aria-labelledby="logging"></a> Logging </h4>
+              <h4 id="alerting"> <a href="#alerting" class="anchor-heading" aria-labelledby="alerting"></a> Alerting </h4>
+              <hr>
+              <h2 id="code-quality-1"> <a href="#code-quality-1" class="anchor-heading"
+                  aria-labelledby="code-quality-1"></a> Code Quality </h2>
+              <h4 id="clean-code"> <a href="#clean-code" class="anchor-heading" aria-labelledby="clean-code"></a> Clean Code </h4>
+              <p>Ensure that the code is clean as much as possible. Check also that SOLID principles are followed TODO
+                Link to be provided</p>
+              <h4 id="design-patterns"> <a href="#design-patterns" class="anchor-heading"
+                  aria-labelledby="design-patterns"></a> Design Patterns </h4>
+              <p>Recommend a design pattern where is the case</p>
+              <h4 id="naming-conventions"> <a href="#naming-conventions" class="anchor-heading"
+                  aria-labelledby="naming-conventions"></a> Naming Conventions </h4>
+              <h4 id="app-structure"> <a href="#app-structure" class="anchor-heading"
+                  aria-labelledby="app-structure"></a> App Structure </h4>
+              <p>Check that the changes are correctly written on layers and it respects the Spring Boot App Structure Do
+                not mixt up a Rest Service with a Web App</p>
+              <h4 id="model-1"> <a href="#model-1" class="anchor-heading" aria-labelledby="model-1"></a> Model </h4>
+              <p>Understand the meaning of usage of each model and try to find where is the most appropriate to be
+                placed as TODO - link to be provided</p>
+              <h4 id="exception-handling"> <a href="#exception-handling" class="anchor-heading"
+                  aria-labelledby="exception-handling"></a> Exception Handling </h4>
+              <p>Ensure that each exception is raised and handled correctly</p>
+              <h4 id="unit-testing"> <a href="#unit-testing" class="anchor-heading" aria-labelledby="unit-testing"></a> Unit Testing </h4>
+              <p>Coverage of minimum 80% Ensure that all corner cases are covered and it follows the unit testing
+                standards</p>
+              <h4 id="rest-api-1"> <a href="#rest-api-1" class="anchor-heading" aria-labelledby="rest-api-1"></a> Rest API </h4>
+              <p>Ensure that the API changes respect the REST maturity levels</p>
+              <h4 id="error-codes"> <a href="#error-codes" class="anchor-heading" aria-labelledby="error-codes"></a> Error Codes </h4>
+              <p>Ensure that in case of a program error or exception, the API replies with the standard error codes</p>
+              <h4 id="mvc-1"> <a href="#mvc-1" class="anchor-heading" aria-labelledby="mvc-1"></a> MVC </h4>
+              <p>Ensure that the Model-View-Controller parts of the Web Application are compliant with the Best
+                Practices</p>
+              <hr>
+              <hr>
+              <h2 id="resolving-a-production-issue-on-a-live-server"> <a
+                  href="#resolving-a-production-issue-on-a-live-server" class="anchor-heading"
+                  aria-labelledby="resolving-a-production-issue-on-a-live-server"></a> Resolving a Production Issue on a Live Server </h2>
+              <h4 id="notify-all-stakeholders"> <a href="#notify-all-stakeholders" class="anchor-heading"
+                  aria-labelledby="notify-all-stakeholders"></a> Notify All Stakeholders </h4>
+              <p>This can be done in form of a slack message to the general channel, an email copying relevant personnel
+                or through any communication tool that the team uses. The importance of communication is to bring up the
+                issue to everyone’s attention and for all hands to be on deck. Sometimes, someone may just respond to
+                your message with why the issue is happening (assuming it was a mistake from his/her part). But the goal
+                is to inform and bring in the members of your team.</p>
+              <h4 id="reproduce--replicate-the-production-environment-locally"> <a
+                  href="#reproduce--replicate-the-production-environment-locally" class="anchor-heading"
+                  aria-labelledby="reproduce--replicate-the-production-environment-locally"></a> Reproduce : Replicate the production environment locally </h4>
+              <ul>
+                <li>Replicate locally and step through code to figure out what is going on.</li>
+                <li>Add logs and replicate in production, then use logs to debug. This is only feasible if it is easy to
+                  do additional deployments that contain the logging code, and if the issue is in-fact reproducible.
+                </li>
+                <li>Write similar code to what’s running in production (often starting with a copy/pasted variant of the
+                  production code), and try to replicate and isolate the issue that way.</li>
+              </ul>
+              <p>The objective here is to reproduce the exact same bug that exists in the production environment in a
+                more accessible location. In the local environment, we can change data, slow down the execution, and
+                write tons of logs without users being impacted in any way.</p>
+              <h4 id="root-cause-analysis--fix"> <a href="#root-cause-analysis--fix" class="anchor-heading"
+                  aria-labelledby="root-cause-analysis--fix"></a> Root Cause Analysis &amp; Fix </h4>
+              <p>Logging and debuggers are your best friends here. If you’re dealing with a large codebase or new to the
+                project, just attach a debugger and follow through navigation and triggering actions. Else, add logs
+                around the suspicious code and perform the steps. You’ll eventually find the piece of code that’s
+                causing the issue.</p>
+              <h4 id="re-test--regression-testing"> <a href="#re-test--regression-testing" class="anchor-heading"
+                  aria-labelledby="re-test--regression-testing"></a> Re-test &amp; Regression Testing </h4>
+              <p>Test the steps that you found earlier, which caused the bug.</p>
+              <h4 id="backup-the-system-before-implementing-complex-solution"> <a
+                  href="#backup-the-system-before-implementing-complex-solution" class="anchor-heading"
+                  aria-labelledby="backup-the-system-before-implementing-complex-solution"></a> Backup the System Before Implementing Complex Solution </h4>
+              <h4 id="document-the-problem-and-how-it-was-resolved"> <a
+                  href="#document-the-problem-and-how-it-was-resolved" class="anchor-heading"
+                  aria-labelledby="document-the-problem-and-how-it-was-resolved"></a> Document the Problem and How it was Resolved </h4>
+              <p>add the problem and the steps you took towards resolving it to the engineering runbook. The importance
+                of this, is that it will help the team to quickly recover from such when/if it happens next time. It
+                also serves as a reference to the team when they want to rebuild the system to be resistant to such
+                issues.</p>
+              <h2 id="for-more-information"> <a href="#for-more-information" class="anchor-heading"
+                  aria-labelledby="for-more-information"></a> For more information </h2>
+              <ol>
+                <li><a
+                    href="https://stackoverflow.blog/2020/03/02/best-practices-for-rest-api-design/#h-name-collections-with-plural-nouns">Best
+                    practices for REST API design</a></li>
+                <li><a href="https://medium.com/hashmapinc/rest-good-practices-for-api-design-881439796dc9">REST: Good
+                    Practices for API Design</a></li>
+              </ol>
+              <hr>
+              
+
+        </div>
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+
+
+  <div id="footer"></div>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Java Interview Q&A</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+  <script> $(function () { $("#header").load("header.html"); $("#footer").load("footer.html"); }); </script>
+
+
+  <!-- =======================================================
+  * Template Name: Sailor - v4.9.1
+  * Template URL: https://bootstrapmade.com/sailor-free-bootstrap-theme/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <div id="header"></div>
+
+  <main id="main">
+
+    <section id="about" class="about">
+      <div class="container">
+        <div class="row-content">
+
+                <summary class="text-delta"> Table of contents </summary>
+                <ol id="markdown-toc">
+                  <li><a href="#find" id="markdown-toc-find">Find</a></li>
+                  <li><a href="#search" id="markdown-toc-search">Search</a></li>
+                  <li><a href="#processes" id="markdown-toc-processes">Processes</a></li>
+                  <li><a href="#file-permissions" id="markdown-toc-file-permissions">File permissions</a></li>
+                  <li><a href="#list-files" id="markdown-toc-list-files">List files</a></li>
+                  <li><a href="#symlinks" id="markdown-toc-symlinks">Symlinks</a></li>
+                  <li><a href="#checking-logs" id="markdown-toc-checking-logs">Checking logs</a></li>
+                  <li><a href="#text-manipulation" id="markdown-toc-text-manipulation">Text manipulation</a></li>
+                  <li><a href="#sed" id="markdown-toc-sed">Sed</a></li>
+                  <li><a href="#networking" id="markdown-toc-networking">Networking</a></li>
+                  <li><a href="#space" id="markdown-toc-space">Space</a></li>
+                  <li><a href="#miscellaneous" id="markdown-toc-miscellaneous">Miscellaneous</a></li>
+                  <li><a href="#for-more-information" id="markdown-toc-for-more-information">For more information</a>
+                  </li>
+                </ol>
+              </details>
+              <hr>
+              <h2 id="find"> <a href="#find" class="anchor-heading" aria-labelledby="find"></a> Find </h2>
+              <ul>
+                <li><code class="language-plaintext highlighter-rouge">find dir -type f</code> Find all files in the
+                  directory</li>
+                <li><code class="language-plaintext highlighter-rouge">find dir -type d</code> File all directories
+                  within this directory</li>
+                <li><code class="language-plaintext highlighter-rouge">find dir -name "a*.mp3" -print0</code> Find all
+                  files/directory with name like a***.mp3</li>
+                <li><code class="language-plaintext highlighter-rouge">find dir -type f -name "a*.txt"</code> Find all
+                  files (recursively) with name like a***.txt</li>
+                <li><code
+                    class="language-plaintext highlighter-rouge">find dir -type f -print0 | xargs -0 grep -l "word"</code>
+                  List file names with matching word</li>
+                <li><code class="language-plaintext highlighter-rouge">find dir -type f -print0 | xargs -0 mv -t</code>
+                  Move all files from dir tree into single directory</li>
+              </ul>
+              <hr>
+              <h2 id="search"> <a href="#search" class="anchor-heading" aria-labelledby="search"></a> Search </h2>
+              <ul>
+                <li><code class="language-plaintext highlighter-rouge">grep "word" file</code> All matching lines in the
+                  file</li>
+                <li><code class="language-plaintext highlighter-rouge">grep -i "word" file</code> All matching lines -
+                  Ignore case</li>
+                <li><code class="language-plaintext highlighter-rouge">grep -r "word" dir</code> All matching lines in
+                  (recursively) all files or directory</li>
+                <li><code class="language-plaintext highlighter-rouge">grep -c "word" file</code> Count of matching
+                  lines</li>
+                <li><code class="language-plaintext highlighter-rouge">grep "word" file | wc -l</code> Count of matching
+                  lines</li>
+                <li><code class="language-plaintext highlighter-rouge">grep -v "word" file | wc -l</code> Count of
+                  non-matching lines</li>
+                <li><code class="language-plaintext highlighter-rouge">grep -o -w "word" file | wc -w</code> Word count
+                </li>
+                <li><code class="language-plaintext highlighter-rouge">grep -l -r "word" dir</code> List file names with
+                  matching word</li>
+                <li><code
+                    class="language-plaintext highlighter-rouge">find dir -type f -print0 | xargs -0 grep -l "word"</code>
+                  List file names with matching word</li>
+              </ul>
+              <hr>
+              <h2 id="processes"> <a href="#processes" class="anchor-heading" aria-labelledby="processes"></a> Processes </h2>
+              <ul>
+                <li><code
+                    class="language-plaintext highlighter-rouge">nohup program.sh &gt; mylog.txt 2&gt;&amp;1 &amp;</code>
+                  <ul>
+                    <li><code class="language-plaintext highlighter-rouge">&amp;</code> starts process as child process
+                      in the background</li>
+                    <li><code class="language-plaintext highlighter-rouge">nohup</code> Ctrl-C or terminating session
+                      sends kill signal to all child processes, <code
+                        class="language-plaintext highlighter-rouge">nohup</code> catches and ignores it</li>
+                    <li><code class="language-plaintext highlighter-rouge">&gt;</code> redirect output (from left/source
+                      to right/target)</li>
+                    <li><code class="language-plaintext highlighter-rouge">2</code> error stream</li>
+                    <li><code class="language-plaintext highlighter-rouge">1</code> output stream</li>
+                    <li><code class="language-plaintext highlighter-rouge">2&gt;&amp;1</code> append all errors to
+                      output</li>
+                  </ul>
+                </li>
+                <li><code class="language-plaintext highlighter-rouge">top</code> Check CPU and memory consumption</li>
+                <li><code class="language-plaintext highlighter-rouge">kill -9 processId</code> kill the process with
+                  that pid</li>
+                <li><code class="language-plaintext highlighter-rouge">kill -3 processId</code> for a JVM process, will
+                  write thread dump to output stream</li>
+                <li><code class="language-plaintext highlighter-rouge">ps -ef | grep word</code> find process with
+                  matching word</li>
+                <li><code class="language-plaintext highlighter-rouge">echo $?</code> print output of last process</li>
+              </ul>
+              <hr>
+              <h2 id="file-permissions"> <a href="#file-permissions" class="anchor-heading"
+                  aria-labelledby="file-permissions"></a> File permissions </h2>
+              <ul>
+                <li><code class="language-plaintext highlighter-rouge">chmod file</code> Change</li>
+                <li><code class="language-plaintext highlighter-rouge">chmod +x file</code> Add execute permission</li>
+                <li><code class="language-plaintext highlighter-rouge">chmod +w file</code> Add write permission</li>
+                <li><code class="language-plaintext highlighter-rouge">chmod +r file</code> Add read permission</li>
+                <li><code class="language-plaintext highlighter-rouge">chmod 755 file</code> Change permission</li>
+                <li><code class="language-plaintext highlighter-rouge">chmod -R 755 dir</code> Change permission
+                  recursively</li>
+                <li><code class="language-plaintext highlighter-rouge">chmod g+w file</code> Add write permission at
+                  group level</li>
+                <li>Numbers: 1=x, 2=w, 3=w+x, 4=r, 5=r+x, 6=r+w, 7=r+w+x</li>
+                <li>References: u=user, g=group, o=others, a=all</li>
+              </ul>
+              <hr>
+              <h2 id="list-files"> <a href="#list-files" class="anchor-heading" aria-labelledby="list-files"></a> List files </h2>
+              <ul>
+                <li><code class="language-plaintext highlighter-rouge">ls</code> list files in this directory</li>
+                <li><code class="language-plaintext highlighter-rouge">ls -ltr</code> list files in this directory with
+                  more details and in reverse chronological order</li>
+                <li><code class="language-plaintext highlighter-rouge">ls -ltra</code> same as above + list hidden files
+                  (names starting with <code class="language-plaintext highlighter-rouge">.</code>)</li>
+                <li><code class="language-plaintext highlighter-rouge">ls -ltr | grep "^l"</code> Lists all symlinks
+                  (<code class="language-plaintext highlighter-rouge">ls -ltr</code> lists symlinks with <code
+                    class="language-plaintext highlighter-rouge">l</code> as first character of output)</li>
+              </ul>
+              <hr>
+              <h2 id="symlinks"> <a href="#symlinks" class="anchor-heading" aria-labelledby="symlinks"></a> Symlinks </h2>
+              <ul>
+                <li>Symbolic or soft links. Pointer to a file.</li>
+                <li><code class="language-plaintext highlighter-rouge">ln -s /java/jdk7 jdk</code> create symlink jdk
+                  which points to <code class="language-plaintext highlighter-rouge">/java/jdk7</code></li>
+                <li><code class="language-plaintext highlighter-rouge">ln -ns /java/jdk8 jdk</code> update symlink jdk
+                  to point to <code class="language-plaintext highlighter-rouge">/java/jdk8</code></li>
+              </ul>
+              <hr>
+              <h2 id="checking-logs"> <a href="#checking-logs" class="anchor-heading"
+                  aria-labelledby="checking-logs"></a> Checking logs </h2>
+              <ul>
+                <li><code class="language-plaintext highlighter-rouge">tail -f logfile</code> output appended data as
+                  file grows (f=follow)</li>
+                <li><code class="language-plaintext highlighter-rouge">less +F logfile</code> open file, and output
+                  appended data as file grows</li>
+              </ul>
+              <hr>
+              <h2 id="text-manipulation"> <a href="#text-manipulation" class="anchor-heading"
+                  aria-labelledby="text-manipulation"></a> Text manipulation </h2>
+              <ul>
+                <li><code class="language-plaintext highlighter-rouge">head file</code> display first 10 lines</li>
+                <li><code class="language-plaintext highlighter-rouge">head -20 file</code> display first 20 lines</li>
+                <li><code class="language-plaintext highlighter-rouge">tail file</code> display last 10 lines</li>
+                <li><code class="language-plaintext highlighter-rouge">tail -5 file</code> display last 5 lines</li>
+                <li><code class="language-plaintext highlighter-rouge">head -20 file | tail -1</code> display 20th line
+                </li>
+                <li><code class="language-plaintext highlighter-rouge">cut -f3 file</code> display 3rd field for each
+                  line, tab as separator</li>
+                <li><code class="language-plaintext highlighter-rouge">cut -d',' -f3 file</code> display 3rd field for
+                  each line, <code class="language-plaintext highlighter-rouge">,</code> as separator</li>
+                <li><code class="language-plaintext highlighter-rouge">cut -c3-6 file</code> display characters from 3rd
+                  to 6th position for each line</li>
+                <li><code class="language-plaintext highlighter-rouge">cut -c7- file</code> display characters from 7th
+                  to end of each line</li>
+              </ul>
+              <hr>
+              <h2 id="sed"> <a href="#sed" class="anchor-heading" aria-labelledby="sed"></a> Sed </h2>
+              <ul>
+                <li><code class="language-plaintext highlighter-rouge">sed s/unix/linux file</code> replace first
+                  occurrence of “unix with “linux”</li>
+                <li><code class="language-plaintext highlighter-rouge">sed s/unix/linux/3 file</code> replace 3rd
+                  occurrence</li>
+                <li><code class="language-plaintext highlighter-rouge">sed s/unix/linux/g file</code> replace all
+                  occurrences</li>
+                <li><code class="language-plaintext highlighter-rouge">sed s/unix/linux/3g file</code> replace all
+                  occurrences starting from 3rd one</li>
+                <li><code class="language-plaintext highlighter-rouge">sed -i '1 d' file</code> delete header of file
+                </li>
+                <li><code class="language-plaintext highlighter-rouge">sed -i '$ d' file</code> delete footer of file
+                </li>
+                <li><code class="language-plaintext highlighter-rouge">sed –n '10 p' file</code> print 10th line of the
+                  file</li>
+              </ul>
+              <hr>
+              <h2 id="networking"> <a href="#networking" class="anchor-heading" aria-labelledby="networking"></a> Networking </h2>
+              <ul>
+                <li><code class="language-plaintext highlighter-rouge">ping hostname</code> or <code
+                    class="language-plaintext highlighter-rouge">telnet hostname port</code> check if remote host is
+                  alive</li>
+                <li><code
+                    class="language-plaintext highlighter-rouge">scp /dir/file user@hostname:/targetdir/file</code> copy
+                  file to different host</li>
+                <li><code class="language-plaintext highlighter-rouge">netstat -a | grep "port"</code> check host
+                  connected to machine’s port</li>
+              </ul>
+              <hr>
+              <h2 id="space"> <a href="#space" class="anchor-heading" aria-labelledby="space"></a> Space </h2>
+              <ul>
+                <li><code class="language-plaintext highlighter-rouge">df -h</code> space in current drive (<code
+                    class="language-plaintext highlighter-rouge">-h</code> is human readable format)</li>
+                <li><code class="language-plaintext highlighter-rouge">du -h .</code> sizes of all files in current
+                  directory</li>
+                <li><code class="language-plaintext highlighter-rouge">du -sh .</code> sizes of current directory</li>
+                <li><code class="language-plaintext highlighter-rouge">du /bin/* | sort -n</code> sort all files based
+                  on size (asc)</li>
+              </ul>
+              <hr>
+              <h2 id="miscellaneous"> <a href="#miscellaneous" class="anchor-heading"
+                  aria-labelledby="miscellaneous"></a> Miscellaneous </h2>
+              <ul>
+                <li><code class="language-plaintext highlighter-rouge">lsof file</code> list processes using the file
+                </li>
+                <li><code class="language-plaintext highlighter-rouge">rev file</code> reverses the text in each line
+                </li>
+                <li><code class="language-plaintext highlighter-rouge">echo "string" | rev </code> reverses the string
+                </li>
+                <li><code class="language-plaintext highlighter-rouge">sort file</code> sorts file lines alphabetically
+                </li>
+                <li><code class="language-plaintext highlighter-rouge">sort -n file</code> sorts file lines numerically
+                </li>
+                <li><code class="language-plaintext highlighter-rouge">uniq file</code> filter out adjacent duplicate
+                  lines and print</li>
+                <li><code class="language-plaintext highlighter-rouge">uniq -c file</code> print with count at the
+                  begining of each line of output</li>
+                <li><code class="language-plaintext highlighter-rouge">uniq -d file</code> print only duplicates</li>
+              </ul>
+              
+              <hr> <h2 id="for-more-information"> <a href="#for-more-information" class="anchor-heading" aria-labelledby="for-more-information">
+
+              </a> For more information </h2> <ul> <li><a href="https://gist.github.com/riipandi/3097780" target="_blank">Linux commands cheat sheet</a></li> </ul>
+
+
+        </div>
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+
+
+  <div id="footer"></div>
+
+
+
+</body>
+
+</html>
