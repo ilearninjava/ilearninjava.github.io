@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Java Interview Q&A</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+  <script> $(function(){$("#header").load("header.html"); $("#footer").load("footer.html");  }); </script>
+
+
+  <!-- =======================================================
+  * Template Name: Sailor - v4.9.1
+  * Template URL: https://bootstrapmade.com/sailor-free-bootstrap-theme/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <div id="header"></div>
+
+  <main id="main">
+
+    <section id="about" class="about">
+      <div class="container">
+        <div class="row-content">
+
+          
+<p>Here are the top 8 Java programs asked about in interviews:</p>
+
+<h3><b>1. The Fibonacci series</b></h3>
+<p>Starting with 0 and 1, the Fibonacci series is a series of elements in which the previous two elements are added to get the next element.</p>
+<p>Any number of integers from the Fibonacci series can be displayed using this programme. Each number in the Fibonacci sequence equals the sum of the two numbers before it.</p>
+<p>For the above method, here is a Java programme:</p>
+<p>class GFG {</p>
+<p>// Function to print N Fibonacci Number</p>
+<p>static void Fibonacci(int N)</p>
+<p>{</p>
+<p>int num1 = 0, num2 = 1;</p>
+<p>int counter = 0;</p>
+<p>// Iterate till counter is N</p>
+<p>while (counter &lt; N) {</p>
+<p>// Print the number</p>
+<p>System.out.print(num1 + ” “);</p>
+<p>// Swap</p>
+<p>int num3 = num2 + num1;</p>
+<p>num1 = num2;</p>
+<p>num2 = num3;</p>
+<p>counter = counter + 1;</p>
+<p>}</p>
+<p>}</p>
+<p>// Driver Code</p>
+<p>public static void main(String args[])</p>
+<p>{</p>
+<p>// Given Number N</p>
+<p>int N = 10;</p>
+<p>// Function Call</p>
+<p>Fibonacci(N);</p>
+<p>}</p>
+<p>}</p>
+
+<h3><b>2. Checking for prime number</b></h3>
+<p>You will be expected to write a programme to determine whether a given number is prime or composite. A prime number is greater than 1 and can only be divided by 1 or itself.</p>
+<p>For instance, Prime numbers include 2, 3, 5, 7, 11, 13, and 17. We’ll take a number variable and verify whether it’s prime or not in this Java programme. Let’s look at a Java prime number programme:</p>
+><p>public class PrimeExample{</p>
+<p>public static void main(String args[]){</p>
+<p>int i,m=0,flag=0;</p>
+<p>int n=3;//it is the number to be checked</p>
+<p>m=n/2;</p>
+<p>if(n==0||n==1){</p>
+<p>System.out.println(n+” is not prime number”);</p>
+<p>}else{</p>
+<p>for(i=2;i&lt;=m;i++){</p>
+<p>if(n%i==0){</p>
+<p>System.out.println(n+” is not prime number”);</p>
+<p>flag=1;</p>
+<p>break;</p>
+<p>}</p>
+<p>}</p>
+<p>if(flag==0)&nbsp; { System.out.println(n+” is prime number”); }</p>
+<p>}//end of else</p>
+<p>}</p>
+<p>}</p>
+<p>After you run the above code, you’d receive the number 3 as Output (prime number).</p>
+<h3><b>3. String palindrome</b></h3>
+<p>It is a program that determines whether or not a given string is a palindrome. A palindrome is a string, which, when read forward and backward, means the same. To check whether or not a string is a palindrome, a string needs to be compared with its reverse.</p>
+<p>So let us consider two strings, “12121” and “apple”, now the task is to find out if its reverse string is the same as it is.</p>
+<p>package org.arpit.java2blog;</p>
+<p>import java.util.Scanner;</p>
+<p>public class StringFullLoopPalindrome {</p>
+<p>public static void main(String[] args) {</p>
+<p>Scanner scanner = new Scanner(System.in);</p>
+<p>System.out.print(“Enter string : “);</p>
+<p>String str = scanner.nextLine();</p>
+<p>String reverseStr = “”;</p>
+<p>for(int i = str.length() – 1; i &gt;= 0; i–){</p>
+<p>reverseStr = reverseStr + str.charAt(i);</p>
+<p>}</p>
+<p>if(str.equals(reverseStr)){</p>
+<p>System.out.println(“String is palindrome”);</p>
+<p>} else {</p>
+<p>System.out.println(“String is not palindrome”);</p>
+<p>}</p>
+<p>}</p>
+<p>}</p>
+<p>When you run the above program, you will get below output:</p>
+<p>Enter string : 12121</p>
+<p>String is palindrome</p>
+<p>Enter a string: Apple</p>
+<p>String is not a palindrome</p>
+<h3><b>4. Bubble sort&nbsp;</b></h3>
+<p>You may be asked to write a code snippet to implement bubble sort. Bubble Sort is the most basic sorting algorithm, and it works by repeatedly swapping adjacent elements if they are out of order. However, because of its average and worst-case time complexity, this algorithm is unsuitable for large data sets.</p>
+<p>In each iteration, each element of the array moves to the end of the array, similar to how air bubbles rise to the water’s surface. That’s why it’s referred to as a bubble sort.</p>
+<p>The code below is the solution to a common Java interview question about bubble sort:</p>
+<p>// Bubble sort in Java</p>
+<p>import java.util.Arrays;</p>
+<p>class Main {</p>
+<p>// perform the bubble sort</p>
+<p>static void bubbleSort(int array[]) {</p>
+<p>int size = array.length;</p>
+<p>// loop to access each array element</p>
+<p>for (int i = 0; i &lt; size – 1; i++)</p>
+<p>// loop to compare array elements</p>
+<p>for (int j = 0; j &lt; size – i – 1; j++)</p>
+<p>// compare two adjacent elements</p>
+<p>// change &gt; to &lt; to sort in descending order</p>
+<p>if (array[j] &gt; array[j + 1]) {</p>
+<p>// swapping occurs if elements</p>
+<p>// are not in the intended order</p>
+<p>int temp = array[j];</p>
+<p>array[j] = array[j + 1];</p>
+<p>array[j + 1] = temp;</p>
+<p>}</p>
+<p>}</p>
+<p>public static void main(String args[]) {</p>
+<p>int[] data = { -2, 45, 0, 11, -9 };</p>
+<p>// call method using class name</p>
+<p>Main.bubbleSort(data);</p>
+<p>System.out.println(“Sorted Array in Ascending Order:”);</p>
+<p>System.out.println(Arrays.toString(data));</p>
+<p>}</p>
+<p>}</p>
+<h3><b>5. Armstrong number</b></h3>
+<p>An Armstrong number is simply the sum of the cubes of its digits. This is a Java programme to verify whether or not a given number is an Armstrong number.</p>
+<p>As an input, you need to enter the integer to be checked. Then, you can use modulos and division operations, loops and if-else statements to get the output.</p>
+<p>Here is the Java source code for checking if a given number is an Armstrong number. The output of the programme is also shown below.</p>
+<p>import java.util.Scanner;</p>
+<p>public class ArmStrong</p>
+<p>{</p>
+<p>public static void main(String[] args)</p>
+<p>{</p>
+<p>int n, count = 0, a, b, c, sum = 0;</p>
+<p>Scanner s = new Scanner(System.in);</p>
+<p>System.out.print(“Enter any integer you want to check:”);</p>
+<p>n = s.nextInt();</p>
+<p>a = n;</p>
+<p>c = n;</p>
+<p>while(a &gt; 0)</p>
+<p>{</p>
+<p>a = a / 10;</p>
+<p>count++;</p>
+<p>}</p>
+<p>while(n &gt; 0)</p>
+<p>{</p>
+<p>b = n % 10;</p>
+<p>sum = (int) (sum+Math.pow(b, count));</p>
+<p>n = n / 10;</p>
+<p>}</p>
+<p>if(sum == c)</p>
+<p>{</p>
+<p>System.out.println(“Given number is Armstrong”);</p>
+<p>}</p>
+<p>else</p>
+<p>{</p>
+<p>System.out.println(“Given number is not Armstrong”);</p>
+<p>}</p>
+<p>}</p>
+<p>}</p>
+<p>Output:</p>
+<p>$ javac ArmStrong.java</p>
+<p>$ java ArmStrong</p>
+<p>Enter any integer to be checked: 153</p>
+<p>The given number is Armstrong.</p>
+
+<h3><b>6. Merge Sort</b></h3>
+<p>Merge Sort is one of the most effective sorting algorithms, operating on the divide-and-conquer principle. It is built on the notion of breaking down a list into several sub-lists, each of which contains a single element. Then merge those sublists in a way that produces a sorted list.</p>
+<p>Here’s the code example to Merge Sort:</p>
+<p>public class MergeSort {</p>
+<p>public static void main(String[] args) {</p>
+<p>int[] arr = { 70, 50, 30, 10, 20, 40, 60 };</p>
+<p>int[] merged = mergeSort(arr, 0, arr.length – 1);</p>
+<p>for (int val : merged) {</p>
+<p>System.out.print(val + ” “);</p>
+<p>}</p>
+<p>}</p>
+<p>public static int[] mergeTwoSortedArrays(int[] one, int[] two) {</p>
+<p>int[] sorted = new int[one.length + two.length];</p>
+<p>int i = 0;</p>
+<p>int j = 0;</p>
+<p>int k = 0;</p>
+<p>while (i &lt; one.length &amp;&amp; j &lt; two.length) {</p>
+<p>if (one[i] &lt; two[j]) {</p>
+<p>sorted[k] = one[i];</p>
+<p>k++;</p>
+<p>i++;</p>
+<p>} else {</p>
+<p>sorted[k] = two[j];</p>
+<p>k++;</p>
+<p>j++;</p>
+<p>}</p>
+<p>}</p>
+<p>if (i == one.length) {</p>
+<p>while (j &lt; two.length) {</p>
+<p>sorted[k] = two[j];</p>
+<p>k++;</p>
+<p>j++;</p>
+<p>}</p>
+<p>}</p>
+<p>if (j == two.length) {</p>
+<p>while (i &lt; one.length) {</p>
+<p>sorted[k] = one[i];</p>
+<p>k++;</p>
+<p>i++;</p>
+<p>}</p>
+<p>}</p>
+<p>return sorted;</p>
+<p>}</p>
+<p>public static int[] mergeSort(int[] arr, int lo, int hi) {</p>
+<p>if (lo == hi) {</p>
+<p>int[] br = new int[1];</p>
+<p>br[0] = arr[lo];</p>
+<p>return br;</p>
+<p>}</p>
+<p>int mid = (lo + hi) / 2;</p>
+<p>int[] fh = mergeSort(arr, lo, mid);</p>
+<p>int[] sh = mergeSort(arr, mid + 1, hi);</p>
+<p>int[] merged = mergeTwoSortedArrays(fh, sh);</p>
+<p>return merged;</p>
+<p>}</p>
+<p>}</p>
+<h3><b>7. Factorial</b></h3>
+<p>Factorial is one of the simplest and most popular programmes and is commonly asked in Java interviews and other programming languages such as C or C++. For example, the interviewer may examine converting a recursive solution to an iterative one or vice versa.</p>
+<p>The factorial of a number is calculated using the formula number*(number -1) until zero. Because the value of factorial zero is 1, it serves as the base case in the recursive version of the factorial method.</p>
+<p>Let’s look at a complete code example of a Java programme that calculates a number’s factorial in both recursive and iterative ways.</p>
+<p>If you look closely, you will notice that the recursive solution to calculating factorial is much easier to write and read because it represents the formula number* (number -1).</p>
+<p>Here’s an example of a Java programme for calculating a number’s factorial:</p>
+<p>/**</p>
+<p>* Simple Java program to find the factorial of a number using recursion and iteration.</p>
+<p>* Iteration will use for loop while recursion will call method itself</p>
+<p>*/</p>
+<p>public class FactorialInJava{</p>
+<p>public static void main(String args[]) {</p>
+<p>//finding factorial of a number in Java using recursion – Example</p>
+<p>System.out.println(“factorial of 5 using recursion in Java is: ” + factorial(5));</p>
+<p>//finding factorial of a number in Java using Iteration – Example</p>
+<p>System.out.println(“factorial of 6 using iteration in Java is: ” + fact(6));</p>
+<p>}</p>
+<p>/*</p>
+<p>* Java program example to find factorial of a number using recursion</p>
+<p>* @return factorial of a number</p>
+<p>*/</p>
+<p>public static int factorial(int number){</p>
+<p>//base case</p>
+<p>if(number == 0){</p>
+<p>return 1;</p>
+<p>}</p>
+<p>return number*factorial(number -1); //is this tail-recursion?</p>
+<p>}</p>
+<p>/*</p>
+<p>* Java program example to calculate factorial using while loop or iteration</p>
+<p>* @return factorial of a number</p>
+<p>*/</p>
+<p>public static int fact(int number){</p>
+<p>int result = 1;</p>
+<p>while(number != 0){</p>
+<p>result = result*number;</p>
+<p>number–;</p>
+<p>}</p>
+<p>return result;</p>
+<p>}</p>
+<p>}</p>
+<p>When you run the above program and you will get the below output:</p>
+<p>The factorial of 5 using recursion in Java is 120.</p>
+<p>The factorial of 6 using iteration in Java is 720.</p>
+<h3><b>8. Reversing strings</b></h3>
+<p>Strings are character sequences in Java. They are one of Java’s most popular data structures. While programming, you may be required to reverse a string in Java.</p>
+<p>Consider a crossword puzzle: the answer to the clue is nothing but a string, and the letters that make up the answer are characters.</p>
+<p>There are different ways to reverse a string in Java, and we’ll look at the most common method – By using toCharArray()</p>
+<p>The toCharArray() function is one way to reverse a string in Java.</p>
+<p>public static String reverse(String str) {</p>
+<p>String rev = “”;</p>
+<p>char[] finalarray = str.toCharArray();</p>
+<p>for (int i = finalarray.length – 1; i &gt;= 0; i–)</p>
+<p>rev += finalarray[i];</p>
+<p>return rev;</p>
+<p>}</p>
+<p>//Sample Input- “Java Program”</p>
+<p>//Sample Output-“margorP avaJ”</p>
+
+
+        </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+
+
+  <div id="footer"></div>
+
+
+</body>
+
+</html>

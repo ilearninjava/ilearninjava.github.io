@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Java Interview Q&A</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+  <script> $(function(){$("#header").load("header.html"); $("#footer").load("footer.html");  }); </script>
+
+
+  <!-- =======================================================
+  * Template Name: Sailor - v4.9.1
+  * Template URL: https://bootstrapmade.com/sailor-free-bootstrap-theme/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <div id="header"></div>
+
+  <main id="main">
+
+    <section id="about" class="about">
+      <div class="container">
+        <div class="row-content">
+
+          
+          
+
+<h3><b>1. What will the following Java program print?</b></h3>
+<p>public class Test { public static void main(String[] args) {</p>
+<p>System.out.println(Math.min(Double.MIN_VALUE, 0.0d)); } }</p>
+<h4>Answer:</h4>
+<p>This question is tricky because, unlike the Integer class, where the MIN VALUE is negative, the Double class’s MAX VALUE and MIN VALUE are both positive integers. Double.MIN VALUE is 2^(-1074), a double constant with the least magnitude of all double values.</p>
+<p>Because of Double, this program will print 0.0 instead of the obvious answer. The value of MIN VALUE is greater than zero.</p>
+
+<h3><b>2. What will happen if you put the return statement or System.exit () on the ‘try‘ or ‘catch‘ block? Will the ‘finally’ block execute?</b></h3>
+<h4>Answer:</h4>
+<p>Many experienced Java programmers think that the ‘finally’ block will always execute. However, that reasoning is challenged here by putting a return statement in the ‘try’ or ‘catch’ block or calling System.exit() from the ‘try’ or ‘catch’ block.</p>
+<p>The solution for this mind-bender is that the ‘finally’ block will execute successfully, even if you put a return statement in the ‘try’ or ‘catch’ block. However, the ‘finally’ block will fail to execute if you call System.exit() from the ‘try’ or ‘catch’ block.</p>
+<h3><b>3. Can you override a private or static method in Java?</b></h3>
+<h4>Answer:</h4>
+<p>Method overriding is always an excellent topic to confuse developers. You cannot override a static method in Java. If you create an identical method with the same return type and method arguments as the ones in the child class, then it will hide the superclass method. This is also known as method hiding.</p>
+<p>Likewise, overriding a private method in the subclass is impossible as it is not accessible there. You can create a new private method with the same name in the child class as a workaround.</p>
+
+<h3><b>4. What will the expression 1.0 / 0.0 return? Will it throw an exception or any compile-time errors?</b></h3>
+<h4>Answer:</h4>
+<p>It will compile successfully and not throw ArithmeticException. It will instead return Double.Infinity.</p>
+<h3>
+    <b>5. Does Java support multiple inheritances?</b></h3>
+<h4>Answer:</h4>
+<p>This is the most challenging problem in Java. Interviewers frequently a
+  gue that since C++ can allow direct multiple inheritances, <strong>why can’t Java?&nbsp;</strong>
+</p>
+<p>Because Java supports multiple inheritances of Type by enabling one interface to extend other interfaces, the answer is considerably more complicated than it appears. Java does not allow multiple inheritances of implementation.</p>
+<h3><b>6. What will happen if we put a key object in a HashMap already there?</b></h3>
+<h4>Answer:</h4>
+<p>HashMap does not allow duplicate keys, so putting the same key again will overwrite the original mapping. The same key will generate the same hashcode and will end up at the same bucket position. Each bucket contains a linked list of maps.</p>
+<p>This is an entry object that has both a Key and a Value. Now Java will compare each entry’s Key object to this new key using the equals() method, and if the comparison returns true, the value object in that entry will be replaced by the new value.</p>
+<h3><b>7. What does the following Java program print?</b></h3>
+<p>public class Test { public static void main(String[] args) throws Exception { char[] chars = new char[] {‘\u0097’}; String str = new String(chars); byte[] bytes = str.getBytes(); System.out.println(Arrays.toString(bytes)); } }</p>
+<h4>Answer:</h4>
+<p>This question is particularly tricky because the output of this program is dependent on the operating system and locale. On a Windows XP with the US locale, the above program prints 63, but if you run this program on Linux or Solaris, you will get different values.</p>
+<h3><b>8. If a method throws NullPointerException in the superclass, can we override it with a method that throws RuntimeException?</b></h3>
+<h4>Answer:</h4>
+<p>Yes, you can throw a superclass of RuntimeException in overridden method, but you can not do that if it’s a checked Exception.</p>
+
+    <div class="ctaButton"></div></a></div><h3><b>9. What is the difference between CyclicBarrier and CountDownLatch in Java?</b></h3>
+<h4>Answer:</h4>
+<p>You can reuse CyclicBarrier even if the Barrier is broken, but you can not reuse CountDownLatch in Java.</p>
+<h3><b>10. Can you access a non-static variable in the static context?</b></h3>
+<h4>Answer:</h4>
+<p>No, you cannot access a non-static variable from the static context in Java as it will give a compile-time error.</p>
+
+
+        </div>
+
+
+        </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+
+
+  <div id="footer"></div>
+
+
+</body>
+
+</html>
