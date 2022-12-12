@@ -1,0 +1,1532 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Java Interview Q&A</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script> $(function () { $("#header").load("header.html"); $("#footer").load("footer.html"); }); </script>
+
+
+    <!-- =======================================================
+  * Template Name: Sailor - v4.9.1
+  * Template URL: https://bootstrapmade.com/sailor-free-bootstrap-theme/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+    <div id="header"></div>
+
+    <main id="main">
+
+        <section id="about" class="about">
+            <div class="container">
+                <div class="row-content">
+
+
+
+                            <ul class="toc_list">
+                                <li><a href="#What_Is_A_Java_Queue">What Is A Java Queue?</a>
+                                    <ul>
+                                        <li><a href="#How_To_Use_A_Queue_In_Java">How To Use A Queue In Java?</a></li>
+                                        <li><a href="#Java_Queue_Example">Java Queue Example</a></li>
+                                        <li><a href="#Queue_Methods_In_Java">Queue Methods In Java</a></li>
+                                        <li><a href="#Iterating_The_Queue_Elements">Iterating The Queue Elements</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="#Java_Queue_Implementation">Java Queue Implementation</a>
+                                    <ul>
+                                        <li><a href="#Java_Queue_Array_Implementation">Java Queue Array
+                                                Implementation</a></li>
+                                        <li><a href="#Java_Queue_Linked_List_Implementation">Java Queue Linked List
+                                                Implementation</a></li>
+                                        <li><a href="#BlockingQueue_In_Java">BlockingQueue In Java</a></li>
+                                        <li><a href="#BlockingQueue_Types">BlockingQueue Types</a>
+                                            <ul>
+                                                <li><a href="#Bounded_Queue">Bounded Queue</a></li>
+                                                <li><a href="#Unbounded_Queue">Unbounded Queue</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#Frequently_Asked_Questions">Frequently Asked Questions</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#Conclusion">Conclusion</a>
+                                    <ul>
+                                        <li><a href="#Recommended_Reading">Recommended Reading</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <h2><span id="What_Is_A_Java_Queue">What Is A Java Queue?</span></h2>
+                        <p><strong>A queue data structure is represented as shown below:</strong></p>
+                        <p><a href="https://www.softwaretestinghelp.com/wp-content/qa/uploads/2020/04/1-8.png"><img
+                                    decoding="async" class="alignnone size-full wp-image-127078 entered lazyloaded"
+                                    src="https://www.softwaretestinghelp.com/wp-content/qa/uploads/2020/04/1-8.png"
+                                    alt="queue data structure" width="577" height="142"
+                                    data-lazy-srcset="https://www.softwaretestinghelp.com/wp-content/qa/uploads/2020/04/1-8.png 577w, https://www.softwaretestinghelp.com/wp-content/qa/uploads/2020/04/1-8-300x74.png 300w"
+                                    data-lazy-sizes="(max-width: 577px) 100vw, 577px"
+                                    data-lazy-src="https://www.softwaretestinghelp.com/wp-content/qa/uploads/2020/04/1-8.png"
+                                    data-ll-status="loaded" sizes="(max-width: 577px) 100vw, 577px"
+                                    srcset="https://www.softwaretestinghelp.com/wp-content/qa/uploads/2020/04/1-8.png 577w, https://www.softwaretestinghelp.com/wp-content/qa/uploads/2020/04/1-8-300x74.png 300w"><noscript><img
+                                        decoding="async" class="alignnone size-full wp-image-127078"
+                                        src="https://www.softwaretestinghelp.com/wp-content/qa/uploads/2020/04/1-8.png"
+                                        alt="queue data structure" width="577" height="142"
+                                        srcset="https://www.softwaretestinghelp.com/wp-content/qa/uploads/2020/04/1-8.png 577w, https://www.softwaretestinghelp.com/wp-content/qa/uploads/2020/04/1-8-300x74.png 300w"
+                                        sizes="(max-width: 577px) 100vw, 577px" /></noscript></a></p>
+                        <p>As shown in the above diagram, a queue is a structure having two points i.e. start (front)
+                            and end (rear). Elements are inserted into the queue at the rear end and removed from the
+                            queue at the front.</p>
+                        <p>In Java, Queue is an interface that is a part of java.util package. The queue interface
+                            extends the Java Collection interface.</p>
+                        <p><strong>The general definition of the Queue interface is:</strong></p>
+                        <pre>public interface Queue&lt;E&gt; extends Collection&lt;E&gt;</pre>
+                        <p>As the Queue is an interface, it cannot be instantiated. We need some concrete classes to
+                            implement the functionality of the Queue interface. Two classes implement the Queue
+                            interface i.e. LinkedList and PriorityQueue.</p>
+                        <p><a href="https://www.softwaretestinghelp.com/wp-content/qa/uploads/2020/04/2-8.png"><img
+                                    decoding="async" class="alignnone wp-image-127079 size-full entered lazyloaded"
+                                    src="https://www.softwaretestinghelp.com/wp-content/qa/uploads/2020/04/2-8.png"
+                                    alt="Classes in Queue interface" width="317" height="187"
+                                    data-lazy-srcset="https://www.softwaretestinghelp.com/wp-content/qa/uploads/2020/04/2-8.png 317w, https://www.softwaretestinghelp.com/wp-content/qa/uploads/2020/04/2-8-300x177.png 300w"
+                                    data-lazy-sizes="(max-width: 317px) 100vw, 317px"
+                                    data-lazy-src="https://www.softwaretestinghelp.com/wp-content/qa/uploads/2020/04/2-8.png"
+                                    data-ll-status="loaded" sizes="(max-width: 317px) 100vw, 317px"
+                                    srcset="https://www.softwaretestinghelp.com/wp-content/qa/uploads/2020/04/2-8.png 317w, https://www.softwaretestinghelp.com/wp-content/qa/uploads/2020/04/2-8-300x177.png 300w"><noscript><img
+                                        decoding="async" class="alignnone wp-image-127079 size-full"
+                                        src="https://www.softwaretestinghelp.com/wp-content/qa/uploads/2020/04/2-8.png"
+                                        alt="Classes in Queue interface" width="317" height="187"
+                                        srcset="https://www.softwaretestinghelp.com/wp-content/qa/uploads/2020/04/2-8.png 317w, https://www.softwaretestinghelp.com/wp-content/qa/uploads/2020/04/2-8-300x177.png 300w"
+                                        sizes="(max-width: 317px) 100vw, 317px" /></noscript></a></p>
+                        <p><strong>Following are some of the major characteristics of the Queue data structure:</strong>
+                        </p>
+                        <ul>
+                            <li>Queue follows the FIFO (First In, First Out) order. This means that the element is
+                                inserted in the queue at the end and removed from the queue at the beginning.</li>
+                            <li>The Java queue interface provides all the methods of Collection interface like
+                                insertion, deletion, etc.</li>
+                            <li>LinkedList and PriorityQueue are the classes that implement the Queue interface.
+                                ArrayBlockingQueue is yet another class that implements the Queue interface.</li>
+                            <li>The Queues that are a part of the java.util package can be classified as unbounded
+                                queues while those present in java.util.the concurrent package is bounded queues.</li>
+                            <li>The Deque is a queue that supports insertion and deletion from both the ends.</li>
+                            <li>The deque is thread-safe.</li>
+                            <li>BlockingQueues are thread-safe and are used to implement producer-consumer problems.
+                            </li>
+                            <li>BlockingQueues do not allow null elements. A NullPointerException is thrown if any
+                                operation related to null values is attempted.</li>
+                        </ul>
+                        <h3><span id="How_To_Use_A_Queue_In_Java">How To Use A Queue In Java?</span></h3>
+                        <p><strong>To use a queue in Java, we must first import the queue interface as follows:</strong>
+                        </p>
+                        <pre><em>import java.util.queue;</em></pre>
+                        <p>Or</p>
+                        <pre><em>import java.util.*;</em></pre>
+                        <p><strong>Once this is imported, we can create a queue as shown below:</strong></p>
+                        <pre><em>Queue&lt;String&gt; str_queue = new LinkedList&lt;&gt; ();</em></pre>
+                        <p>As Queue is an interface, we use a LinkedList class that implements the Queue interface to
+                            create a queue object.</p>
+                        <p>Similarly, we can create a queue with other concrete classes.</p>
+                        <pre><em>Queue&lt;String&gt; str_pqueue = new PriorityQueue&lt;&gt; ();</em>
+                <em>Queue&lt;Integer&gt; int_queue = new ArrayDeque&lt;&gt; ();</em></pre>
+                        <p>Now that the queue object is created, we can initialize the queue object by providing the
+                            values to it through the add method as shown below.</p>
+                        <pre><em>str_queue.add(“one”);</em>
+                <em>str_queue.add(“two”);</em>
+                str_queue.add(“three”);</pre>
+                        <h3><span id="Java_Queue_Example">Java Queue Example</span></h3>
+                        <div>
+                            <div id="highlighter_487298" class="syntaxhighlighter nogutter  java">
+                                <table border="0" cellpadding="0" cellspacing="0">
+                                    <tbody>
+                                        <tr>
+                                            <td class="code">
+                                                <div class="container">
+                                                    <div class="line number1 index0 alt2"><code
+                                                            class="java keyword">import</code> <code
+                                                            class="java plain">java.util.*;</code></div>
+                                                    <div class="line number2 index1 alt1">&nbsp;</div>
+                                                    <div class="line number3 index2 alt2"><code
+                                                            class="java keyword">public</code> <code
+                                                            class="java keyword">class</code> <code
+                                                            class="java plain">Main {</code></div>
+                                                    <div class="line number4 index3 alt1"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java keyword">public</code> <code
+                                                            class="java keyword">static</code> <code
+                                                            class="java keyword">void</code> <code
+                                                            class="java plain">main(String[] args) {</code></div>
+                                                    <div class="line number5 index4 alt2"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java comments">//declare a Queue&nbsp;&nbsp; </code>
+                                                    </div>
+                                                    <div class="line number6 index5 alt1"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java plain">Queue&lt;String&gt; str_queue = </code><code
+                                                            class="java keyword">new</code> <code
+                                                            class="java plain">LinkedList&lt;&gt;();</code></div>
+                                                    <div class="line number7 index6 alt2"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java comments">//initialize the queue with values</code>
+                                                    </div>
+                                                    <div class="line number8 index7 alt1"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java plain">str_queue.add(</code><code
+                                                            class="java string">"one"</code><code
+                                                            class="java plain">);</code></div>
+                                                    <div class="line number9 index8 alt2"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java plain">str_queue.add(</code><code
+                                                            class="java string">"two"</code><code
+                                                            class="java plain">);</code></div>
+                                                    <div class="line number10 index9 alt1"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java plain">str_queue.add(</code><code
+                                                            class="java string">"three"</code><code
+                                                            class="java plain">);</code></div>
+                                                    <div class="line number11 index10 alt2"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java plain">str_queue.add(</code><code
+                                                            class="java string">"four"</code><code
+                                                            class="java plain">);</code></div>
+                                                    <div class="line number12 index11 alt1"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java comments">//print the Queue</code></div>
+                                                    <div class="line number13 index12 alt2"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java plain">System.out.println(</code><code
+                                                            class="java string">"The Queue contents:"</code> <code
+                                                            class="java plain">+ str_queue);</code></div>
+                                                    <div class="line number14 index13 alt1"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java plain">}</code></div>
+                                                    <div class="line number15 index14 alt2"><code
+                                                            class="java plain">}</code></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <p><strong>Output:</strong></p>
+                        <p>The&nbsp;Queue&nbsp;contents:[one,&nbsp;two,&nbsp;three,&nbsp;four]</p>
+                        <p><a href="https://www.softwaretestinghelp.com/wp-content/qa/uploads/2020/04/3-8.png"><img
+                                    decoding="async" class="alignnone wp-image-127080 size-full"
+                                    src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20374%2021'%3E%3C/svg%3E"
+                                    alt="simple queue - output" width="374" height="21"
+                                    data-lazy-srcset="https://www.softwaretestinghelp.com/wp-content/qa/uploads/2020/04/3-8.png 374w, https://www.softwaretestinghelp.com/wp-content/qa/uploads/2020/04/3-8-300x17.png 300w"
+                                    data-lazy-sizes="(max-width: 374px) 100vw, 374px"
+                                    data-lazy-src="https://www.softwaretestinghelp.com/wp-content/qa/uploads/2020/04/3-8.png"><noscript><img
+                                        decoding="async" class="alignnone wp-image-127080 size-full"
+                                        src="https://www.softwaretestinghelp.com/wp-content/qa/uploads/2020/04/3-8.png"
+                                        alt="simple queue - output" width="374" height="21"
+                                        srcset="https://www.softwaretestinghelp.com/wp-content/qa/uploads/2020/04/3-8.png 374w, https://www.softwaretestinghelp.com/wp-content/qa/uploads/2020/04/3-8-300x17.png 300w"
+                                        sizes="(max-width: 374px) 100vw, 374px" /></noscript></a></p>
+                        <p>The above example shows the declaration and initialization of a Queue object. Then, we just
+                            print the contents of the queue.</p>
+                        <h3><span id="Queue_Methods_In_Java">Queue Methods In Java</span></h3>
+                        <p>In this section, we will discuss the methods of API for the queue. Queue interface supports
+                            various operations like insert, delete, peek, etc. Some operations raise an exception while
+                            some return a specific value when the method succeeds or fails.</p>
+                        <p>Note that there are no specific changes to the Queue collection in Java 8. The below methods
+                            are also available in later versions of Java like Java 9, etc.</p>
+                        <p><strong>The below table summarizes all these methods.</strong></p>
+                        <div id="tablepress-1359-scroll-wrapper" class="tablepress-scroll-wrapper">
+                            <table id="tablepress-1359" class="tablepress tablepress-id-1359 tablepress-responsive">
+                                <thead>
+                                    <tr class="row-1 odd">
+                                        <th class="column-1">Method</th>
+                                        <th class="column-2">Method Prototype</th>
+                                        <th class="column-3">Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="row-hover">
+                                    <tr class="row-2 even">
+                                        <td class="column-1">add</td>
+                                        <td class="column-2">boolean add(E e)</td>
+                                        <td class="column-3">Adds element e to the queue at the end (tail) of the queue
+                                            without violating the restrictions on the capacity. Returns true if success
+                                            or IllegalStateException&nbsp;if the capacity is exhausted.</td>
+                                    </tr>
+                                    <tr class="row-3 odd">
+                                        <td class="column-1">peek</td>
+                                        <td class="column-2">E peek()</td>
+                                        <td class="column-3">Returns the head (front) of the queue without removing it.
+                                        </td>
+                                    </tr>
+                                    <tr class="row-4 even">
+                                        <td class="column-1">element</td>
+                                        <td class="column-2">E element()</td>
+                                        <td class="column-3">Performs the same operation as the peek () method. Throws
+                                            NoSuchElementException when the queue is empty.</td>
+                                    </tr>
+                                    <tr class="row-5 odd">
+                                        <td class="column-1">remove</td>
+                                        <td class="column-2">E remove()</td>
+                                        <td class="column-3">Removes the head of the queue and returns it. Throws
+                                            NoSuchElementException if queue is empty.</td>
+                                    </tr>
+                                    <tr class="row-6 even">
+                                        <td class="column-1">poll</td>
+                                        <td class="column-2">E poll()</td>
+                                        <td class="column-3">Removes the head of the queue and returns it. If the queue
+                                            is empty, it returns null.</td>
+                                    </tr>
+                                    <tr class="row-7 odd">
+                                        <td class="column-1">Offer</td>
+                                        <td class="column-2">boolean offer(E e)</td>
+                                        <td class="column-3">Insert the new element e into the queue without violating
+                                            capacity restrictions.</td>
+                                    </tr>
+                                    <tr class="row-8 even">
+                                        <td class="column-1">size</td>
+                                        <td class="column-2">int size()</td>
+                                        <td class="column-3">Returns the size or number of elements in the queue.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <h3><span id="Iterating_The_Queue_Elements">Iterating The Queue Elements</span></h3>
+                        <p><span style="font-size: 16px;">We can traverse the queue elements either using the forEach
+                                loop or using an iterator. The program given below implements both the approaches to
+                                traverse the Queue.</span></p>
+                        <div>
+                            <div id="highlighter_319477" class="syntaxhighlighter nogutter  java">
+                                <table border="0" cellpadding="0" cellspacing="0">
+                                    <tbody>
+                                        <tr>
+                                            <td class="code">
+                                                <div class="container">
+                                                    <div class="line number1 index0 alt2"><code
+                                                            class="java keyword">import</code> <code
+                                                            class="java plain">java.util.*;</code></div>
+                                                    <div class="line number2 index1 alt1"><code
+                                                            class="java keyword">public</code> <code
+                                                            class="java keyword">class</code> <code
+                                                            class="java plain">Main {</code></div>
+                                                    <div class="line number3 index2 alt2"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java keyword">public</code> <code
+                                                            class="java keyword">static</code> <code
+                                                            class="java keyword">void</code> <code
+                                                            class="java plain">main(String[] args) {</code></div>
+                                                    <div class="line number4 index3 alt1"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java comments">//declare a Queue&nbsp; </code></div>
+                                                    <div class="line number5 index4 alt2"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java plain">Queue LL_queue = </code><code
+                                                            class="java keyword">new</code> <code
+                                                            class="java plain">LinkedList();</code></div>
+                                                    <div class="line number6 index5 alt1"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java comments">//initialize the Queue</code></div>
+                                                    <div class="line number7 index6 alt2"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java plain">LL_queue.add(</code><code
+                                                            class="java string">"Value-0"</code><code
+                                                            class="java plain">);</code></div>
+                                                    <div class="line number8 index7 alt1"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java plain">LL_queue.add(</code><code
+                                                            class="java string">"Value-1"</code><code
+                                                            class="java plain">);</code></div>
+                                                    <div class="line number9 index8 alt2"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java plain">LL_queue.add(</code><code
+                                                            class="java string">"Value-2"</code><code
+                                                            class="java plain">);</code></div>
+                                                    <div class="line number10 index9 alt1"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java plain">LL_queue.add(</code><code
+                                                            class="java string">"Value-3"</code><code
+                                                            class="java plain">);</code></div>
+                                                    <div class="line number11 index10 alt2"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java comments">//traverse the Queue using Iterator</code>
+                                                    </div>
+                                                    <div class="line number12 index11 alt1"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java plain">System.out.println(</code><code
+                                                            class="java string">"The Queue elements through iterator:"</code><code
+                                                            class="java plain">);</code></div>
+                                                    <div class="line number13 index12 alt2"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java plain">Iterator iterator = LL_queue.iterator();</code>
+                                                    </div>
+                                                    <div class="line number14 index13 alt1"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java keyword">while</code><code
+                                                            class="java plain">(iterator.hasNext()){</code></div>
+                                                    <div class="line number15 index14 alt2"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java plain">String element = (String) iterator.next();</code>
+                                                    </div>
+                                                    <div class="line number16 index15 alt1"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java plain">System.out.print(element + </code><code
+                                                            class="java string">" "</code><code
+                                                            class="java plain">);</code></div>
+                                                    <div class="line number17 index16 alt2"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java plain">}</code></div>
+                                                    <div class="line number18 index17 alt1"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java plain">System.out.println(</code><code
+                                                            class="java string">"\n\nThe Queue elements using for loop:"</code><code
+                                                            class="java plain">);</code></div>
+                                                    <div class="line number19 index18 alt2"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java comments">//use new for loop to traverse the Queue</code>
+                                                    </div>
+                                                    <div class="line number20 index19 alt1"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java keyword">for</code><code
+                                                            class="java plain">(Object object : LL_queue) {</code></div>
+                                                    <div class="line number21 index20 alt2"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java plain">String element = (String) object;</code>
+                                                    </div>
+                                                    <div class="line number22 index21 alt1"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java plain">System.out.print(element + </code><code
+                                                            class="java string">" "</code><code
+                                                            class="java plain">);</code></div>
+                                                    <div class="line number23 index22 alt2"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java plain">}</code></div>
+                                                    <div class="line number24 index23 alt1"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java plain">}</code></div>
+                                                    <div class="line number25 index24 alt2"><code
+                                                            class="java plain">}</code></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <p><strong>Output:</strong></p>
+                        <p>The Queue elements through iterator:<br>
+                            Value-0 Value-1 Value-2 Value-3<br>
+                            The Queue elements using for loop:<br>
+                            Value-0 Value-1 Value-2 Value-3</p>
+                        <p><a href="https://www.softwaretestinghelp.com/wp-content/qa/uploads/2020/04/4-7.png"><img
+                                    decoding="async" class="alignnone wp-image-127081 size-full"
+                                    src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20310%20159'%3E%3C/svg%3E"
+                                    alt="Iterating the Queue elements - output" width="310" height="159"
+                                    data-lazy-srcset="https://www.softwaretestinghelp.com/wp-content/qa/uploads/2020/04/4-7.png 310w, https://www.softwaretestinghelp.com/wp-content/qa/uploads/2020/04/4-7-300x154.png 300w"
+                                    data-lazy-sizes="(max-width: 310px) 100vw, 310px"
+                                    data-lazy-src="https://www.softwaretestinghelp.com/wp-content/qa/uploads/2020/04/4-7.png"><noscript><img
+                                        decoding="async" class="alignnone wp-image-127081 size-full"
+                                        src="https://www.softwaretestinghelp.com/wp-content/qa/uploads/2020/04/4-7.png"
+                                        alt="Iterating the Queue elements - output" width="310" height="159"
+                                        srcset="https://www.softwaretestinghelp.com/wp-content/qa/uploads/2020/04/4-7.png 310w, https://www.softwaretestinghelp.com/wp-content/qa/uploads/2020/04/4-7-300x154.png 300w"
+                                        sizes="(max-width: 310px) 100vw, 310px" /></noscript></a></p>
+                        <h2><span id="Java_Queue_Implementation">Java Queue Implementation</span></h2>
+                        <p><strong>The program below demonstrates the methods that we discussed above.</strong></p>
+                        <div>
+                            <div id="highlighter_556339" class="syntaxhighlighter nogutter  java">
+                                <table border="0" cellpadding="0" cellspacing="0">
+                                    <tbody>
+                                        <tr>
+                                            <td class="code">
+                                                <div class="container">
+                                                    <div class="line number1 index0 alt2"><code
+                                                            class="java keyword">import</code> <code
+                                                            class="java plain">java.util.*;</code></div>
+                                                    <div class="line number2 index1 alt1"><code
+                                                            class="java keyword">public</code> <code
+                                                            class="java keyword">class</code> <code
+                                                            class="java plain">Main {</code></div>
+                                                    <div class="line number3 index2 alt2"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java keyword">public</code> <code
+                                                            class="java keyword">static</code> <code
+                                                            class="java keyword">void</code> <code
+                                                            class="java plain">main(String[] args) {</code></div>
+                                                    <div class="line number4 index3 alt1"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java plain">Queue&lt;Integer&gt; q1 = </code><code
+                                                            class="java keyword">new</code> <code
+                                                            class="java plain">LinkedList&lt;Integer&gt;();</code></div>
+                                                    <div class="line number5 index4 alt2"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java comments">//Add elements to the Queue</code>
+                                                    </div>
+                                                    <div class="line number6 index5 alt1"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java plain">q1.add(</code><code
+                                                            class="java value">10</code><code
+                                                            class="java plain">);</code></div>
+                                                    <div class="line number7 index6 alt2"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java plain">q1.add(</code><code
+                                                            class="java value">20</code><code
+                                                            class="java plain">);</code></div>
+                                                    <div class="line number8 index7 alt1"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java plain">q1.add(</code><code
+                                                            class="java value">30</code><code
+                                                            class="java plain">);</code></div>
+                                                    <div class="line number9 index8 alt2"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java plain">q1.add(</code><code
+                                                            class="java value">40</code><code
+                                                            class="java plain">);</code></div>
+                                                    <div class="line number10 index9 alt1"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java plain">q1.add(</code><code
+                                                            class="java value">50</code><code
+                                                            class="java plain">);</code></div>
+                                                    <div class="line number11 index10 alt2"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java plain">System.out.println(</code><code
+                                                            class="java string">"Elements in Queue:"</code><code
+                                                            class="java plain">+q1);</code></div>
+                                                    <div class="line number12 index11 alt1"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java comments">//remove () method =&gt;removes first element from the queue</code>
+                                                    </div>
+                                                    <div class="line number13 index12 alt2"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java plain">System.out.println(</code><code
+                                                            class="java string">"Element removed from the queue: "</code><code
+                                                            class="java plain">+q1.remove());</code></div>
+                                                    <div class="line number14 index13 alt1"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java comments">//element() =&gt; returns head of the queue</code>
+                                                    </div>
+                                                    <div class="line number15 index14 alt2"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java plain">System.out.println(</code><code
+                                                            class="java string">"Head of the queue: "</code><code
+                                                            class="java plain">+q1.element());</code></div>
+                                                    <div class="line number16 index15 alt1"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java comments">//poll () =&gt; removes and returns the head</code>
+                                                    </div>
+                                                    <div class="line number17 index16 alt2"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java plain">System.out.println(</code><code
+                                                            class="java string">"Poll():Returned Head of the queue: "</code><code
+                                                            class="java plain">+q1.poll());</code></div>
+                                                    <div class="line number18 index17 alt1"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java comments">//returns head of the queue</code>
+                                                    </div>
+                                                    <div class="line number19 index18 alt2"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java plain">System.out.println(</code><code
+                                                            class="java string">"peek():Head of the queue: "</code><code
+                                                            class="java plain">+q1.peek());</code></div>
+                                                    <div class="line number20 index19 alt1"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java comments">//print the contents of the Queue</code>
+                                                    </div>
+                                                    <div class="line number21 index20 alt2"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java plain">System.out.println(</code><code
+                                                            class="java string">"Final Queue:"</code><code
+                                                            class="java plain">+q1);</code></div>
+                                                    <div class="line number22 index21 alt1"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java plain">}</code></div>
+                                                    <div class="line number23 index22 alt2"><code
+                                                            class="java plain">}</code></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <p><strong>Output:</strong></p>
+                        <p>Elements in Queue:[10, 20, 30, 40, 50]<br>
+                            Element removed from the queue: 10<br>
+                            Head of the queue: 20<br>
+                            Poll():Returned Head of the queue: 20<br>
+                            peek():Head of the queue: 30<br>
+                            Final Queue:[30, 40, 50]</p>
+                        <p><a href="https://www.softwaretestinghelp.com/wp-content/qa/uploads/2020/04/5-7.png"><img
+                                    decoding="async" class="alignnone wp-image-127082 size-full"
+                                    src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20324%20175'%3E%3C/svg%3E"
+                                    alt="Java Queue Implementation - output" width="324" height="175"
+                                    data-lazy-srcset="https://www.softwaretestinghelp.com/wp-content/qa/uploads/2020/04/5-7.png 324w, https://www.softwaretestinghelp.com/wp-content/qa/uploads/2020/04/5-7-300x162.png 300w"
+                                    data-lazy-sizes="(max-width: 324px) 100vw, 324px"
+                                    data-lazy-src="https://www.softwaretestinghelp.com/wp-content/qa/uploads/2020/04/5-7.png"><noscript><img
+                                        decoding="async" class="alignnone wp-image-127082 size-full"
+                                        src="https://www.softwaretestinghelp.com/wp-content/qa/uploads/2020/04/5-7.png"
+                                        alt="Java Queue Implementation - output" width="324" height="175"
+                                        srcset="https://www.softwaretestinghelp.com/wp-content/qa/uploads/2020/04/5-7.png 324w, https://www.softwaretestinghelp.com/wp-content/qa/uploads/2020/04/5-7-300x162.png 300w"
+                                        sizes="(max-width: 324px) 100vw, 324px" /></noscript></a></p>
+                        <h3><span id="Java_Queue_Array_Implementation">Java Queue Array Implementation</span></h3>
+                        <p>Queue implementation is not as straightforward as a stack implementation. First of all, the
+                            queue contains two pointers, rear, and front. Also, different operations are done at two
+                            different ends.</p>
+                        <p>To implement queue using Arrays, we first declare an array that will hold n number of queue
+                            elements.</p>
+                        <p><strong> Then we define the following operations to be performed in this queue.</strong></p>
+                        <p><strong>#1) Enqueue:</strong> An operation to insert an element in the queue is Enqueue
+                            (function queueEnqueue in the program). For inserting an element at the rear end, we need to
+                            first check if the queue is full. If it is full, then we cannot insert the element. If rear
+                            &lt; n, then we insert the element in the queue.</p>
+                        <p><strong>#2) Dequeue:</strong> The operation to delete an element from the queue is Dequeue
+                            (function queueDequeue in the program). First, we check whether the queue is empty. For
+                            dequeue operation to work, there has to be at least one element in the queue.</p>
+                        <p><strong>#3) Front:</strong> This method returns the front of the queue.</p>
+
+                        <div class="quads-location quads-ad2" id="quads-ad2"
+                            style="float:none;margin:10px 0 10px 0;text-align:center;">
+
+                            <div align="center" data-freestar-ad="__300x250 __336x280"
+                                id="softwaretestinghelp_midcontent" name="softwaretestinghelp_midcontent"
+                                data-google-query-id="CJaDmYfM9PsCFSn6cwEdsUAAKg">
+
+                                <div id="google_ads_iframe_/15184186,1018030/softwaretestinghelp_midcontent_0__container__"
+                                    style="border: 0pt none;"><iframe
+                                        id="google_ads_iframe_/15184186,1018030/softwaretestinghelp_midcontent_0"
+                                        name="google_ads_iframe_/15184186,1018030/softwaretestinghelp_midcontent_0"
+                                        title="3rd party ad content" width="728" height="280" scrolling="no"
+                                        marginwidth="0" marginheight="0" frameborder="0" role="region"
+                                        aria-label="Advertisement" tabindex="0"
+                                        sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation"
+                                        style="border: 0px; vertical-align: bottom;" data-load-complete="true"
+                                        data-google-container-id="2"></iframe></div>
+                            </div>
+                        </div>
+                        <p><strong>#4) Display:</strong> This method traverses the queue and displays the elements of
+                            the queue.</p>
+                        <p><strong>The following Java program demonstrates the Array implementation of Queue.</strong>
+                        </p>
+                        <div>
+                            <div id="highlighter_971779" class="syntaxhighlighter nogutter  java">
+                                <table border="0" cellpadding="0" cellspacing="0">
+                                    <tbody>
+                                        <tr>
+                                            <td class="code">
+                                                <div class="container">
+                                                    <div class="line number1 index0 alt2"><code
+                                                            class="java keyword">class</code> <code
+                                                            class="java plain">Queue { </code></div>
+                                                    <div class="line number2 index1 alt1"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java keyword">private</code> <code
+                                                            class="java keyword">static</code> <code
+                                                            class="java keyword">int</code> <code
+                                                            class="java plain">front, rear, capacity; </code></div>
+                                                    <div class="line number3 index2 alt2"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java keyword">private</code> <code
+                                                            class="java keyword">static</code> <code
+                                                            class="java keyword">int</code> <code
+                                                            class="java plain">queue[]; </code></div>
+                                                    <div class="line number4 index3 alt1"><code
+                                                            class="java spaces">&nbsp;&nbsp;</code>&nbsp;</div>
+                                                    <div class="line number5 index4 alt2"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java plain">Queue(</code><code
+                                                            class="java keyword">int</code> <code
+                                                            class="java plain">size) { </code></div>
+                                                    <div class="line number6 index5 alt1"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java plain">front = rear = </code><code
+                                                            class="java value">0</code><code
+                                                            class="java plain">; </code></div>
+                                                    <div class="line number7 index6 alt2"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java plain">capacity = size; </code></div>
+                                                    <div class="line number8 index7 alt1"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java plain">queue = </code><code
+                                                            class="java keyword">new</code> <code
+                                                            class="java keyword">int</code><code
+                                                            class="java plain">[capacity]; </code></div>
+                                                    <div class="line number9 index8 alt2"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java plain">} </code></div>
+                                                    <div class="line number10 index9 alt1"><code
+                                                            class="java spaces">&nbsp;&nbsp;</code>&nbsp;</div>
+                                                    <div class="line number11 index10 alt2"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java comments">// insert an element into the queue</code>
+                                                    </div>
+                                                    <div class="line number12 index11 alt1"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java keyword">static</code> <code
+                                                            class="java keyword">void</code> <code
+                                                            class="java plain">queueEnqueue(</code><code
+                                                            class="java keyword">int</code> <code
+                                                            class="java plain">item)&nbsp; { </code></div>
+                                                    <div class="line number13 index12 alt2"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java comments">// check if the queue is full</code>
+                                                    </div>
+                                                    <div class="line number14 index13 alt1"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java keyword">if</code> <code
+                                                            class="java plain">(capacity == rear) { </code></div>
+                                                    <div class="line number15 index14 alt2"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java plain">System.out.printf(</code><code
+                                                            class="java string">"\nQueue is full\n"</code><code
+                                                            class="java plain">); </code></div>
+                                                    <div class="line number16 index15 alt1"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java keyword">return</code><code
+                                                            class="java plain">; </code></div>
+                                                    <div class="line number17 index16 alt2"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java plain">} </code></div>
+                                                    <div class="line number18 index17 alt1"><code
+                                                            class="java spaces">&nbsp;&nbsp;</code>&nbsp;</div>
+                                                    <div class="line number19 index18 alt2"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java comments">// insert element at the rear </code>
+                                                    </div>
+                                                    <div class="line number20 index19 alt1"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java keyword">else</code> <code
+                                                            class="java plain">{ </code></div>
+                                                    <div class="line number21 index20 alt2"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java plain">queue[rear] = item; </code></div>
+                                                    <div class="line number22 index21 alt1"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java plain">rear++; </code></div>
+                                                    <div class="line number23 index22 alt2"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java plain">} </code></div>
+                                                    <div class="line number24 index23 alt1"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java keyword">return</code><code
+                                                            class="java plain">; </code></div>
+                                                    <div class="line number25 index24 alt2"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java plain">} </code></div>
+                                                    <div class="line number26 index25 alt1"><code
+                                                            class="java spaces">&nbsp;&nbsp;</code>&nbsp;</div>
+                                                    <div class="line number27 index26 alt2"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java comments">//remove an element from the queue</code>
+                                                    </div>
+                                                    <div class="line number28 index27 alt1"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java keyword">static</code> <code
+                                                            class="java keyword">void</code> <code
+                                                            class="java plain">queueDequeue()&nbsp; { </code></div>
+                                                    <div class="line number29 index28 alt2"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java comments">// check if queue is empty </code>
+                                                    </div>
+                                                    <div class="line number30 index29 alt1"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java keyword">if</code> <code
+                                                            class="java plain">(front == rear) { </code></div>
+                                                    <div class="line number31 index30 alt2"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java plain">System.out.printf(</code><code
+                                                            class="java string">"\nQueue is empty\n"</code><code
+                                                            class="java plain">); </code></div>
+                                                    <div class="line number32 index31 alt1"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java keyword">return</code><code
+                                                            class="java plain">; </code></div>
+                                                    <div class="line number33 index32 alt2"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java plain">} </code></div>
+                                                    <div class="line number34 index33 alt1"><code
+                                                            class="java spaces">&nbsp;&nbsp;</code>&nbsp;</div>
+                                                    <div class="line number35 index34 alt2"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java comments">// shift elements to the right by one place uptil rear </code>
+                                                    </div>
+                                                    <div class="line number36 index35 alt1"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java keyword">else</code> <code
+                                                            class="java plain">{ </code></div>
+                                                    <div class="line number37 index36 alt2"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java keyword">for</code> <code
+                                                            class="java plain">(</code><code
+                                                            class="java keyword">int</code> <code
+                                                            class="java plain">i = </code><code
+                                                            class="java value">0</code><code
+                                                            class="java plain">; i &lt; rear - </code><code
+                                                            class="java value">1</code><code
+                                                            class="java plain">; i++) { </code></div>
+                                                    <div class="line number38 index37 alt1"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java plain">queue[i] = queue[i + </code><code
+                                                            class="java value">1</code><code
+                                                            class="java plain">]; </code></div>
+                                                    <div class="line number39 index38 alt2"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java plain">} </code></div>
+                                                    <div class="line number40 index39 alt1"><code
+                                                            class="java spaces">&nbsp;&nbsp;</code>&nbsp;</div>
+                                                    <div class="line number41 index40 alt2"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code>&nbsp;
+                                                    </div>
+                                                    <div class="line number42 index41 alt1"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java comments">// set queue[rear] to 0</code></div>
+                                                    <div class="line number43 index42 alt2"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java keyword">if</code> <code
+                                                            class="java plain">(rear &lt; capacity) </code></div>
+                                                    <div class="line number44 index43 alt1"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java plain">queue[rear] = </code><code
+                                                            class="java value">0</code><code
+                                                            class="java plain">; </code></div>
+                                                    <div class="line number45 index44 alt2"><code
+                                                            class="java spaces">&nbsp;&nbsp;</code>&nbsp;</div>
+                                                    <div class="line number46 index45 alt1"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java comments">// decrement rear </code></div>
+                                                    <div class="line number47 index46 alt2"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java plain">rear--; </code></div>
+                                                    <div class="line number48 index47 alt1"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java plain">} </code></div>
+                                                    <div class="line number49 index48 alt2"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java keyword">return</code><code
+                                                            class="java plain">; </code></div>
+                                                    <div class="line number50 index49 alt1"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java plain">} </code></div>
+                                                    <div class="line number51 index50 alt2"><code
+                                                            class="java spaces">&nbsp;&nbsp;</code>&nbsp;</div>
+                                                    <div class="line number52 index51 alt1"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java comments">// print queue elements </code></div>
+                                                    <div class="line number53 index52 alt2"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java keyword">static</code> <code
+                                                            class="java keyword">void</code> <code
+                                                            class="java plain">queueDisplay() </code></div>
+                                                    <div class="line number54 index53 alt1"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java plain">{ </code></div>
+                                                    <div class="line number55 index54 alt2"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java keyword">int</code> <code
+                                                            class="java plain">i; </code></div>
+                                                    <div class="line number56 index55 alt1"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java keyword">if</code> <code
+                                                            class="java plain">(front == rear) { </code></div>
+                                                    <div class="line number57 index56 alt2"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java plain">System.out.printf(</code><code
+                                                            class="java string">"Queue is Empty\n"</code><code
+                                                            class="java plain">); </code></div>
+                                                    <div class="line number58 index57 alt1"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java keyword">return</code><code
+                                                            class="java plain">; </code></div>
+                                                    <div class="line number59 index58 alt2"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java plain">} </code></div>
+                                                    <div class="line number60 index59 alt1"><code
+                                                            class="java spaces">&nbsp;&nbsp;</code>&nbsp;</div>
+                                                    <div class="line number61 index60 alt2"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java comments">// traverse front to rear and print elements </code>
+                                                    </div>
+                                                    <div class="line number62 index61 alt1"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java keyword">for</code> <code
+                                                            class="java plain">(i = front; i &lt; rear; i++) { </code>
+                                                    </div>
+                                                    <div class="line number63 index62 alt2"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java plain">System.out.printf(</code><code
+                                                            class="java string">" %d = "</code><code
+                                                            class="java plain">, queue[i]); </code></div>
+                                                    <div class="line number64 index63 alt1"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java plain">} </code></div>
+                                                    <div class="line number65 index64 alt2"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java keyword">return</code><code
+                                                            class="java plain">; </code></div>
+                                                    <div class="line number66 index65 alt1"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java plain">} </code></div>
+                                                    <div class="line number67 index66 alt2"><code
+                                                            class="java spaces">&nbsp;&nbsp;</code>&nbsp;</div>
+                                                    <div class="line number68 index67 alt1"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java comments">// print front of queue </code></div>
+                                                    <div class="line number69 index68 alt2"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java keyword">static</code> <code
+                                                            class="java keyword">void</code> <code
+                                                            class="java plain">queueFront() </code></div>
+                                                    <div class="line number70 index69 alt1"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java plain">{ </code></div>
+                                                    <div class="line number71 index70 alt2"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java keyword">if</code> <code
+                                                            class="java plain">(front == rear) { </code></div>
+                                                    <div class="line number72 index71 alt1"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java plain">System.out.printf(</code><code
+                                                            class="java string">"Queue is Empty\n"</code><code
+                                                            class="java plain">); </code></div>
+                                                    <div class="line number73 index72 alt2"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java keyword">return</code><code
+                                                            class="java plain">; </code></div>
+                                                    <div class="line number74 index73 alt1"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java plain">} </code></div>
+                                                    <div class="line number75 index74 alt2"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java plain">System.out.printf(</code><code
+                                                            class="java string">"\nFront Element of the queue: %d"</code><code
+                                                            class="java plain">, queue[front]); </code></div>
+                                                    <div class="line number76 index75 alt1"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java keyword">return</code><code
+                                                            class="java plain">; </code></div>
+                                                    <div class="line number77 index76 alt2"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java plain">} </code></div>
+                                                    <div class="line number78 index77 alt1"><code
+                                                            class="java plain">} </code></div>
+                                                    <div class="line number79 index78 alt2">&nbsp;</div>
+                                                    <div class="line number80 index79 alt1"><code
+                                                            class="java keyword">public</code> <code
+                                                            class="java keyword">class</code> <code
+                                                            class="java plain">Main {</code></div>
+                                                    <div class="line number81 index80 alt2"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java keyword">public</code> <code
+                                                            class="java keyword">static</code> <code
+                                                            class="java keyword">void</code> <code
+                                                            class="java plain">main(String[] args) { </code></div>
+                                                    <div class="line number82 index81 alt1"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java comments">// Create a queue of capacity 4 </code>
+                                                    </div>
+                                                    <div class="line number83 index82 alt2"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java plain">Queue q = </code><code
+                                                            class="java keyword">new</code> <code
+                                                            class="java plain">Queue(</code><code
+                                                            class="java value">4</code><code
+                                                            class="java plain">); </code></div>
+                                                    <div class="line number84 index83 alt1"><code
+                                                            class="java spaces">&nbsp;&nbsp;</code>&nbsp;</div>
+                                                    <div class="line number85 index84 alt2"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java plain">System.out.println(</code><code
+                                                            class="java string">"Initial Queue:"</code><code
+                                                            class="java plain">);</code></div>
+                                                    <div class="line number86 index85 alt1"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java comments">// print Queue elements </code></div>
+                                                    <div class="line number87 index86 alt2"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java plain">q.queueDisplay(); </code></div>
+                                                    <div class="line number88 index87 alt1"><code
+                                                            class="java spaces">&nbsp;&nbsp;</code>&nbsp;</div>
+                                                    <div class="line number89 index88 alt2"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java comments">// inserting elements in the queue </code>
+                                                    </div>
+                                                    <div class="line number90 index89 alt1"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java plain">q.queueEnqueue(</code><code
+                                                            class="java value">10</code><code
+                                                            class="java plain">); </code></div>
+                                                    <div class="line number91 index90 alt2"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java plain">q.queueEnqueue(</code><code
+                                                            class="java value">30</code><code
+                                                            class="java plain">); </code></div>
+                                                    <div class="line number92 index91 alt1"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java plain">q.queueEnqueue(</code><code
+                                                            class="java value">50</code><code
+                                                            class="java plain">); </code></div>
+                                                    <div class="line number93 index92 alt2"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java plain">q.queueEnqueue(</code><code
+                                                            class="java value">70</code><code
+                                                            class="java plain">); </code></div>
+                                                    <div class="line number94 index93 alt1"><code
+                                                            class="java spaces">&nbsp;&nbsp;</code>&nbsp;</div>
+                                                    <div class="line number95 index94 alt2"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java comments">// print Queue elements </code></div>
+                                                    <div class="line number96 index95 alt1"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java plain">System.out.println(</code><code
+                                                            class="java string">"Queue after Enqueue Operation:"</code><code
+                                                            class="java plain">);</code></div>
+                                                    <div class="line number97 index96 alt2"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java plain">q.queueDisplay(); </code></div>
+                                                    <div class="line number98 index97 alt1"><code
+                                                            class="java spaces">&nbsp;&nbsp;</code>&nbsp;</div>
+                                                    <div class="line number99 index98 alt2"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java comments">// print front of the queue </code>
+                                                    </div>
+                                                    <div class="line number100 index99 alt1"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java plain">q.queueFront(); </code></div>
+                                                    <div class="line number101 index100 alt2"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code>&nbsp;
+                                                    </div>
+                                                    <div class="line number102 index101 alt1"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java comments">// insert element in the queue </code>
+                                                    </div>
+                                                    <div class="line number103 index102 alt2"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java plain">q.queueEnqueue(</code><code
+                                                            class="java value">90</code><code
+                                                            class="java plain">); </code></div>
+                                                    <div class="line number104 index103 alt1"><code
+                                                            class="java spaces">&nbsp;&nbsp;</code>&nbsp;</div>
+                                                    <div class="line number105 index104 alt2"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java comments">// print Queue elements </code></div>
+                                                    <div class="line number106 index105 alt1"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java plain">q.queueDisplay(); </code></div>
+                                                    <div class="line number107 index106 alt2"><code
+                                                            class="java spaces">&nbsp;&nbsp;</code>&nbsp;</div>
+                                                    <div class="line number108 index107 alt1"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java plain">q.queueDequeue(); </code></div>
+                                                    <div class="line number109 index108 alt2"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java plain">q.queueDequeue(); </code></div>
+                                                    <div class="line number110 index109 alt1"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java plain">System.out.printf(</code><code
+                                                            class="java string">"\nQueue after two dequeue operations:"</code><code
+                                                            class="java plain">); </code></div>
+                                                    <div class="line number111 index110 alt2"><code
+                                                            class="java spaces">&nbsp;&nbsp;</code>&nbsp;</div>
+                                                    <div class="line number112 index111 alt1"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java comments">// print Queue elements </code></div>
+                                                    <div class="line number113 index112 alt2"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java plain">q.queueDisplay(); </code></div>
+                                                    <div class="line number114 index113 alt1"><code
+                                                            class="java spaces">&nbsp;&nbsp;</code>&nbsp;</div>
+                                                    <div class="line number115 index114 alt2"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java comments">// print front of the queue </code>
+                                                    </div>
+                                                    <div class="line number116 index115 alt1"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java plain">q.queueFront(); </code></div>
+                                                    <div class="line number117 index116 alt2"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java plain">} </code></div>
+                                                    <div class="line number118 index117 alt1"><code
+                                                            class="java plain">}</code></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <p><strong>Output:</strong></p>
+                        <p>Initial Queue:<br>
+                            Queue is Empty<br>
+                            Queue after Enqueue Operation:<br>
+                            10 = 30 = 50 = 70 =<br>
+                            Front Element of the queue: 10<br>
+                            Queue is full<br>
+                            10 = 30 = 50 = 70 =<br>
+                            Queue after two dequeue operations: 50 = 70 =<br>
+                            Front Element of the queue: 50</p>
+                        <p><a href="https://www.softwaretestinghelp.com/wp-content/qa/uploads/2020/04/6-6.png"><img
+                                    decoding="async" class="alignnone wp-image-127083 size-full"
+                                    src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20398%20276'%3E%3C/svg%3E"
+                                    alt="Array implementation of Queue - output" width="398" height="276"
+                                    data-lazy-srcset="https://www.softwaretestinghelp.com/wp-content/qa/uploads/2020/04/6-6.png 398w, https://www.softwaretestinghelp.com/wp-content/qa/uploads/2020/04/6-6-300x208.png 300w"
+                                    data-lazy-sizes="(max-width: 398px) 100vw, 398px"
+                                    data-lazy-src="https://www.softwaretestinghelp.com/wp-content/qa/uploads/2020/04/6-6.png"><noscript><img
+                                        decoding="async" class="alignnone wp-image-127083 size-full"
+                                        src="https://www.softwaretestinghelp.com/wp-content/qa/uploads/2020/04/6-6.png"
+                                        alt="Array implementation of Queue - output" width="398" height="276"
+                                        srcset="https://www.softwaretestinghelp.com/wp-content/qa/uploads/2020/04/6-6.png 398w, https://www.softwaretestinghelp.com/wp-content/qa/uploads/2020/04/6-6-300x208.png 300w"
+                                        sizes="(max-width: 398px) 100vw, 398px" /></noscript></a></p>
+                        <h3><span id="Java_Queue_Linked_List_Implementation">Java Queue Linked List
+                                Implementation</span></h3>
+                        <p>As we have implemented the Queue data structure using Arrays in the above program, we can
+                            also implement the Queue using Linked List.</p>
+                        <p>We will implement the same methods enqueue, dequeue, front, and display in this program. The
+                            difference is that we will be using the Linked List data structure instead of Array.</p>
+                        <p><strong>The below program demonstrates the Linked List implementation of Queue in
+                                Java.</strong></p>
+                        <div>
+                            <div id="highlighter_52737" class="syntaxhighlighter nogutter  java">
+                                <table border="0" cellpadding="0" cellspacing="0">
+                                    <tbody>
+                                        <tr>
+                                            <td class="code">
+                                                <div class="container">
+                                                    <div class="line number1 index0 alt2"><code
+                                                            class="java keyword">class</code> <code
+                                                            class="java plain">LinkedListQueue</code></div>
+                                                    <div class="line number2 index1 alt1"><code
+                                                            class="java plain">{</code></div>
+                                                    <div class="line number3 index2 alt2"><code
+                                                            class="java spaces">&nbsp;</code><code
+                                                            class="java keyword">private</code> <code
+                                                            class="java plain">Node front, rear; </code></div>
+                                                    <div class="line number4 index3 alt1"><code
+                                                            class="java spaces">&nbsp;</code><code
+                                                            class="java keyword">private</code> <code
+                                                            class="java keyword">int</code> <code
+                                                            class="java plain">queueSize; </code><code
+                                                            class="java comments">// queue size </code></div>
+                                                    <div class="line number5 index4 alt2"><code
+                                                            class="java spaces">&nbsp;</code>&nbsp;</div>
+                                                    <div class="line number6 index5 alt1"><code
+                                                            class="java spaces">&nbsp;</code><code
+                                                            class="java comments">//linked list node</code></div>
+                                                    <div class="line number7 index6 alt2"><code
+                                                            class="java spaces">&nbsp;</code><code
+                                                            class="java keyword">private</code> <code
+                                                            class="java keyword">class</code> <code
+                                                            class="java plain">Node { </code></div>
+                                                    <div class="line number8 index7 alt1"><code
+                                                            class="java spaces">&nbsp;</code><code
+                                                            class="java keyword">int</code> <code
+                                                            class="java plain">data;</code></div>
+                                                    <div class="line number9 index8 alt2"><code
+                                                            class="java spaces">&nbsp;</code><code
+                                                            class="java plain">Node next;</code></div>
+                                                    <div class="line number10 index9 alt1"><code
+                                                            class="java spaces">&nbsp;</code><code
+                                                            class="java plain">}</code></div>
+                                                    <div class="line number11 index10 alt2"><code
+                                                            class="java spaces">&nbsp;</code>&nbsp;</div>
+                                                    <div class="line number12 index11 alt1"><code
+                                                            class="java spaces">&nbsp;</code><code
+                                                            class="java comments">//default constructor - initially front &amp; rear are null; size=0; queue is empty</code>
+                                                    </div>
+                                                    <div class="line number13 index12 alt2"><code
+                                                            class="java spaces">&nbsp;</code><code
+                                                            class="java keyword">public</code> <code
+                                                            class="java plain">LinkedListQueue()</code></div>
+                                                    <div class="line number14 index13 alt1"><code
+                                                            class="java spaces">&nbsp;</code><code
+                                                            class="java plain">{</code></div>
+                                                    <div class="line number15 index14 alt2"><code
+                                                            class="java spaces">&nbsp;</code><code
+                                                            class="java plain">front = </code><code
+                                                            class="java keyword">null</code><code
+                                                            class="java plain">;</code></div>
+                                                    <div class="line number16 index15 alt1"><code
+                                                            class="java spaces">&nbsp;</code><code
+                                                            class="java plain">rear = </code><code
+                                                            class="java keyword">null</code><code
+                                                            class="java plain">;</code></div>
+                                                    <div class="line number17 index16 alt2"><code
+                                                            class="java spaces">&nbsp;</code><code
+                                                            class="java plain">queueSize = </code><code
+                                                            class="java value">0</code><code class="java plain">;</code>
+                                                    </div>
+                                                    <div class="line number18 index17 alt1"><code
+                                                            class="java spaces">&nbsp;</code><code
+                                                            class="java plain">}</code></div>
+                                                    <div class="line number19 index18 alt2">&nbsp;</div>
+                                                    <div class="line number20 index19 alt1">&nbsp;</div>
+                                                    <div class="line number21 index20 alt2"><code
+                                                            class="java comments">//check if the queue is empty</code>
+                                                    </div>
+                                                    <div class="line number22 index21 alt1"><code
+                                                            class="java spaces">&nbsp;</code><code
+                                                            class="java keyword">public</code> <code
+                                                            class="java keyword">boolean</code> <code
+                                                            class="java plain">isEmpty()</code></div>
+                                                    <div class="line number23 index22 alt2"><code
+                                                            class="java spaces">&nbsp;</code><code
+                                                            class="java plain">{</code></div>
+                                                    <div class="line number24 index23 alt1"><code
+                                                            class="java spaces">&nbsp;</code><code
+                                                            class="java keyword">return</code> <code
+                                                            class="java plain">(queueSize == </code><code
+                                                            class="java value">0</code><code
+                                                            class="java plain">);</code></div>
+                                                    <div class="line number25 index24 alt2"><code
+                                                            class="java spaces">&nbsp;</code><code
+                                                            class="java plain">}</code></div>
+                                                    <div class="line number26 index25 alt1"><code
+                                                            class="java spaces">&nbsp;</code>&nbsp;</div>
+                                                    <div class="line number27 index26 alt2"><code
+                                                            class="java spaces">&nbsp;</code><code
+                                                            class="java comments">//Remove item from the front of the queue.</code>
+                                                    </div>
+                                                    <div class="line number28 index27 alt1"><code
+                                                            class="java spaces">&nbsp;</code><code
+                                                            class="java keyword">public</code> <code
+                                                            class="java keyword">int</code> <code
+                                                            class="java plain">dequeue()</code></div>
+                                                    <div class="line number29 index28 alt2"><code
+                                                            class="java spaces">&nbsp;</code><code
+                                                            class="java plain">{</code></div>
+                                                    <div class="line number30 index29 alt1"><code
+                                                            class="java spaces">&nbsp;</code><code
+                                                            class="java keyword">int</code> <code
+                                                            class="java plain">data = front.data;</code></div>
+                                                    <div class="line number31 index30 alt2"><code
+                                                            class="java spaces">&nbsp;</code><code
+                                                            class="java plain">front = front.next;</code></div>
+                                                    <div class="line number32 index31 alt1"><code
+                                                            class="java spaces">&nbsp;</code><code
+                                                            class="java keyword">if</code> <code
+                                                            class="java plain">(isEmpty()) </code></div>
+                                                    <div class="line number33 index32 alt2"><code
+                                                            class="java spaces">&nbsp;</code><code
+                                                            class="java plain">{</code></div>
+                                                    <div class="line number34 index33 alt1"><code
+                                                            class="java spaces">&nbsp;</code><code
+                                                            class="java plain">rear = </code><code
+                                                            class="java keyword">null</code><code
+                                                            class="java plain">;</code></div>
+                                                    <div class="line number35 index34 alt2"><code
+                                                            class="java spaces">&nbsp;</code><code
+                                                            class="java plain">}</code></div>
+                                                    <div class="line number36 index35 alt1"><code
+                                                            class="java spaces">&nbsp;</code><code
+                                                            class="java plain">queueSize--;</code></div>
+                                                    <div class="line number37 index36 alt2"><code
+                                                            class="java spaces">&nbsp;</code><code
+                                                            class="java plain">System.out.println(</code><code
+                                                            class="java string">"Element "</code> <code
+                                                            class="java plain">+ data+ </code><code
+                                                            class="java string">" removed from the queue"</code><code
+                                                            class="java plain">);</code></div>
+                                                    <div class="line number38 index37 alt1"><code
+                                                            class="java spaces">&nbsp;</code><code
+                                                            class="java keyword">return</code> <code
+                                                            class="java plain">data;</code></div>
+                                                    <div class="line number39 index38 alt2"><code
+                                                            class="java spaces">&nbsp;</code><code
+                                                            class="java plain">}</code></div>
+                                                    <div class="line number40 index39 alt1"><code
+                                                            class="java spaces">&nbsp;</code>&nbsp;</div>
+                                                    <div class="line number41 index40 alt2"><code
+                                                            class="java spaces">&nbsp;</code><code
+                                                            class="java comments">//Add data at the rear of the queue.</code>
+                                                    </div>
+                                                    <div class="line number42 index41 alt1"><code
+                                                            class="java spaces">&nbsp;</code><code
+                                                            class="java keyword">public</code> <code
+                                                            class="java keyword">void</code> <code
+                                                            class="java plain">enqueue(</code><code
+                                                            class="java keyword">int</code> <code
+                                                            class="java plain">data)</code></div>
+                                                    <div class="line number43 index42 alt2"><code
+                                                            class="java spaces">&nbsp;</code><code
+                                                            class="java plain">{</code></div>
+                                                    <div class="line number44 index43 alt1"><code
+                                                            class="java spaces">&nbsp;</code><code
+                                                            class="java plain">Node oldRear = rear;</code></div>
+                                                    <div class="line number45 index44 alt2"><code
+                                                            class="java spaces">&nbsp;</code><code
+                                                            class="java plain">rear = </code><code
+                                                            class="java keyword">new</code> <code
+                                                            class="java plain">Node();</code></div>
+                                                    <div class="line number46 index45 alt1"><code
+                                                            class="java spaces">&nbsp;</code><code
+                                                            class="java plain">rear.data = data;</code></div>
+                                                    <div class="line number47 index46 alt2"><code
+                                                            class="java spaces">&nbsp;</code><code
+                                                            class="java plain">rear.next = </code><code
+                                                            class="java keyword">null</code><code
+                                                            class="java plain">;</code></div>
+                                                    <div class="line number48 index47 alt1"><code
+                                                            class="java spaces">&nbsp;</code><code
+                                                            class="java keyword">if</code> <code
+                                                            class="java plain">(isEmpty()) </code></div>
+                                                    <div class="line number49 index48 alt2"><code
+                                                            class="java spaces">&nbsp;</code><code
+                                                            class="java plain">{</code></div>
+                                                    <div class="line number50 index49 alt1"><code
+                                                            class="java spaces">&nbsp;</code><code
+                                                            class="java plain">front = rear;</code></div>
+                                                    <div class="line number51 index50 alt2"><code
+                                                            class="java spaces">&nbsp;</code><code
+                                                            class="java plain">}</code></div>
+                                                    <div class="line number52 index51 alt1"><code
+                                                            class="java spaces">&nbsp;</code><code
+                                                            class="java keyword">else</code>&nbsp; <code
+                                                            class="java plain">{</code></div>
+                                                    <div class="line number53 index52 alt2"><code
+                                                            class="java spaces">&nbsp;</code><code
+                                                            class="java plain">oldRear.next = rear;</code></div>
+                                                    <div class="line number54 index53 alt1"><code
+                                                            class="java spaces">&nbsp;</code><code
+                                                            class="java plain">}</code></div>
+                                                    <div class="line number55 index54 alt2"><code
+                                                            class="java spaces">&nbsp;</code><code
+                                                            class="java plain">queueSize++;</code></div>
+                                                    <div class="line number56 index55 alt1"><code
+                                                            class="java spaces">&nbsp;</code><code
+                                                            class="java plain">System.out.println(</code><code
+                                                            class="java string">"Element "</code> <code
+                                                            class="java plain">+ data+ </code><code
+                                                            class="java string">" added to the queue"</code><code
+                                                            class="java plain">);</code></div>
+                                                    <div class="line number57 index56 alt2"><code
+                                                            class="java spaces">&nbsp;</code><code
+                                                            class="java plain">}</code></div>
+                                                    <div class="line number58 index57 alt1"><code
+                                                            class="java spaces">&nbsp;</code><code
+                                                            class="java comments">//print front and rear of the queue</code>
+                                                    </div>
+                                                    <div class="line number59 index58 alt2"><code
+                                                            class="java spaces">&nbsp;</code><code
+                                                            class="java keyword">public</code> <code
+                                                            class="java keyword">void</code> <code
+                                                            class="java plain">print_frontRear() {</code></div>
+                                                    <div class="line number60 index59 alt1"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java plain">System.out.println(</code><code
+                                                            class="java string">"Front of the queue:"</code> <code
+                                                            class="java plain">+ front.data </code></div>
+                                                    <div class="line number61 index60 alt2"><code
+                                                            class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                            class="java plain">+ </code><code
+                                                            class="java string">" Rear of the queue:"</code> <code
+                                                            class="java plain">+ rear.data);</code></div>
+                                                    <div class="line number62 index61 alt1"><code
+                                                            class="java spaces">&nbsp;</code><code
+                                                            class="java plain">}</code></div>
+                                                    <div class="line number63 index62 alt2"><code
+                                                            class="java plain">}</code></div>
+                                                    <div class="line number64 index63 alt1"><code
+                                                            class="java keyword">class</code> <code
+                                                            class="java plain">Main{</code></div>
+                                                    <div class="line number65 index64 alt2"><code
+                                                            class="java spaces">&nbsp;</code><code
+                                                            class="java keyword">public</code> <code
+                                                            class="java keyword">static</code> <code
+                                                            class="java keyword">void</code> <code
+                                                            class="java plain">main(String a[]){</code></div>
+                                                    <div class="line number66 index65 alt1"><code
+                                                            class="java spaces">&nbsp;</code>&nbsp;</div>
+                                                    <div class="line number67 index66 alt2"><code
+                                                            class="java spaces">&nbsp;</code><code
+                                                            class="java plain">LinkedListQueue queue = </code><code
+                                                            class="java keyword">new</code> <code
+                                                            class="java plain">LinkedListQueue();</code></div>
+                                                    <div class="line number68 index67 alt1">&nbsp;</div>
+                                                    <div class="line number69 index68 alt2"><code
+                                                            class="java spaces">&nbsp;</code><code
+                                                            class="java plain">queue.enqueue(</code><code
+                                                            class="java value">6</code><code
+                                                            class="java plain">);</code></div>
+                                                    <div class="line number70 index69 alt1"><code
+                                                            class="java spaces">&nbsp;</code><code
+                                                            class="java plain">queue.enqueue(</code><code
+                                                            class="java value">3</code><code
+                                                            class="java plain">);</code></div>
+                                                    <div class="line number71 index70 alt2"><code
+                                                            class="java spaces">&nbsp;</code><code
+                                                            class="java plain">queue.print_frontRear();</code></div>
+                                                    <div class="line number72 index71 alt1"><code
+                                                            class="java spaces">&nbsp;</code><code
+                                                            class="java plain">queue.enqueue(</code><code
+                                                            class="java value">12</code><code
+                                                            class="java plain">);</code></div>
+                                                    <div class="line number73 index72 alt2"><code
+                                                            class="java spaces">&nbsp;</code><code
+                                                            class="java plain">queue.enqueue(</code><code
+                                                            class="java value">24</code><code
+                                                            class="java plain">);</code></div>
+                                                    <div class="line number74 index73 alt1"><code
+                                                            class="java spaces">&nbsp;</code><code
+                                                            class="java plain">queue.dequeue();</code></div>
+                                                    <div class="line number75 index74 alt2"><code
+                                                            class="java spaces">&nbsp;</code><code
+                                                            class="java plain">queue.dequeue();</code></div>
+                                                    <div class="line number76 index75 alt1"><code
+                                                            class="java spaces">&nbsp;</code><code
+                                                            class="java plain">queue.enqueue(</code><code
+                                                            class="java value">9</code><code
+                                                            class="java plain">);</code></div>
+                                                    <div class="line number77 index76 alt2">&nbsp;</div>
+                                                    <div class="line number78 index77 alt1"><code
+                                                            class="java spaces">&nbsp;</code><code
+                                                            class="java plain">queue.print_frontRear();</code></div>
+                                                    <div class="line number79 index78 alt2"><code
+                                                            class="java spaces">&nbsp;</code><code
+                                                            class="java plain">}</code></div>
+                                                    <div class="line number80 index79 alt1"><code
+                                                            class="java plain">}</code></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <p><strong>Output:</strong></p>
+                        <p>Element 6 added to the queue<br>
+                            Element 3 added to the queue<br>
+                            Front of the queue:6 Rear of the queue:3<br>
+                            Element 12 added to the queue<br>
+                            Element 24 added to the queue<br>
+                            Element 6 removed from the queue<br>
+                            Element 3 removed from the queue<br>
+                            Element 9 added to the queue<br>
+                            Front of the queue:12 Rear of the queue:9</p>
+                        <p><a href="https://www.softwaretestinghelp.com/wp-content/qa/uploads/2020/04/7-6.png"><img
+                                    decoding="async" class="alignnone wp-image-127084 size-full"
+                                    src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20358%20275'%3E%3C/svg%3E"
+                                    alt="Linked List implementation of Queue in Java - output" width="358" height="275"
+                                    data-lazy-srcset="https://www.softwaretestinghelp.com/wp-content/qa/uploads/2020/04/7-6.png 358w, https://www.softwaretestinghelp.com/wp-content/qa/uploads/2020/04/7-6-300x230.png 300w"
+                                    data-lazy-sizes="(max-width: 358px) 100vw, 358px"
+                                    data-lazy-src="https://www.softwaretestinghelp.com/wp-content/qa/uploads/2020/04/7-6.png"><noscript><img
+                                        decoding="async" class="alignnone wp-image-127084 size-full"
+                                        src="https://www.softwaretestinghelp.com/wp-content/qa/uploads/2020/04/7-6.png"
+                                        alt="Linked List implementation of Queue in Java - output" width="358"
+                                        height="275"
+                                        srcset="https://www.softwaretestinghelp.com/wp-content/qa/uploads/2020/04/7-6.png 358w, https://www.softwaretestinghelp.com/wp-content/qa/uploads/2020/04/7-6-300x230.png 300w"
+                                        sizes="(max-width: 358px) 100vw, 358px" /></noscript></a></p>
+                        <h3><span id="BlockingQueue_In_Java">BlockingQueue In Java</span></h3>
+                        <p>BlockingQueue is an Interface added in Java 1.5 and is a part of the
+                            <strong>java.util.concurrent </strong>package. This interface introduces blocking in case
+                            the BlockingQueue is full or empty.</p>
+                        <p>Thus when a thread accesses the queue and tries to insert (enqueue) elements in a queue that
+                            is already full is blocked till another thread creates a space in the queue (maybe by
+                            dequeue operation or clearing queue).</p>
+                        <p>Similarly, in the case of dequeuing, the operation is blocked if the queue is empty until the
+                            element becomes available for the dequeue operation.</p>
+                        <p>The BlockingQueue methods use some form of concurrency control like internal locks and are
+                            atomic. The BlockingQueue is a concurrent queue that manages the queue operations
+                            concurrently.</p>
+                        <p><strong>The BlockingQueue is shown below:</strong></p>
+                        <p><a href="https://www.softwaretestinghelp.com/wp-content/qa/uploads/2020/04/8-6.png"><img
+                                    decoding="async" class="alignnone size-full wp-image-127085"
+                                    src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20576%20165'%3E%3C/svg%3E"
+                                    alt="BlockingQueue" width="576" height="165"
+                                    data-lazy-srcset="https://www.softwaretestinghelp.com/wp-content/qa/uploads/2020/04/8-6.png 576w, https://www.softwaretestinghelp.com/wp-content/qa/uploads/2020/04/8-6-300x86.png 300w"
+                                    data-lazy-sizes="(max-width: 576px) 100vw, 576px"
+                                    data-lazy-src="https://www.softwaretestinghelp.com/wp-content/qa/uploads/2020/04/8-6.png"><noscript><img
+                                        decoding="async" class="alignnone size-full wp-image-127085"
+                                        src="https://www.softwaretestinghelp.com/wp-content/qa/uploads/2020/04/8-6.png"
+                                        alt="BlockingQueue" width="576" height="165"
+                                        srcset="https://www.softwaretestinghelp.com/wp-content/qa/uploads/2020/04/8-6.png 576w, https://www.softwaretestinghelp.com/wp-content/qa/uploads/2020/04/8-6-300x86.png 300w"
+                                        sizes="(max-width: 576px) 100vw, 576px" /></noscript></a></p>
+                        <p>Note that BlockingQueue does not accept null values. An attempt to insert a null value in the
+                            queue results in NullPointerException.</p>
+                        <p>Some of the BlockingQueue implementations provided in Java are LinkedBlockingQueue,
+                            PriorityBlockingQueue, ArrayBlockingQueue, and SynchonousQueue. All these implementations
+                            are thread-safe.</p>
+                        <h3><span id="BlockingQueue_Types">BlockingQueue Types</span></h3>
+                        <p><strong>BlockingQueues are of two types:</strong></p>
+                        <h4><span id="Bounded_Queue"><span style="color: #ff6600;">Bounded Queue</span></span></h4>
+                        <p>In the bounded queue, the capacity of the queue is passed to the constructor of the queue.
+                        </p>
+                        <p><strong>The queue declaration is as follows:</strong></p>
+                        <p>BlockingQueue blockingQueue = new LinkedBlockingDeque (5);</p>
+                        <h4><span id="Unbounded_Queue"><span style="color: #ff6600;">Unbounded Queue</span></span></h4>
+                        <p>In the unbounded queue, we don’t set the capacity of the queue explicitly and it can grow in
+                            size. The capacity is set to Integer.MAX_VALUE.</p>
+                        <p><strong>The declaration of the unbounded queue is as follows:</strong></p>
+                        <p>BlockingQueue blockingQueue = new LinkedBlockingDeque ();</p>
+                        <p>The BlockingQueue interface is primarily used for producer-consumer types of problems wherein
+                            producer produces the resources and consumer consumes the resources.</p>
+                        <h3><span id="Frequently_Asked_Questions">Frequently Asked Questions</span></h3>
+                        <p><span style="color: #ff6600;"><strong>Q #1) What is a Queue in Java?</strong></span></p>
+                        <p><strong>Answer:</strong> Queue in Java is a linear ordered data structure that follows FIFO
+                            (First In, First Out) ordering of elements. This means that the element inserted first in
+                            the queue will be the first element to be removed. In Java, the queue is implemented as an
+                            interface that inherits the Collection interface.</p>
+                        <p><span style="color: #ff6600;"><strong>Q #2) </strong><strong>Is a Queue thread-safe
+                                    Java?</strong></span></p>
+                        <p><strong>Answer:</strong> Not all queues are thread-safe but BlockingQueues in Java are
+                            thread-safe.</p>
+                        <p><span style="color: #ff6600;"><strong>Q #3)</strong> <strong>Which is faster – Stack or
+                                    Queue?</strong></span></p>
+                        <p><strong>Answer:</strong> The stack is faster. In stack, the elements are processed from one
+                            end only, hence no shifting is required. But in the queue, the elements need to be shifted
+                            and adjusted as there are two different pointers to insert and delete elements.</p>
+                        <p><span style="color: #ff6600;"><strong>Q #4) </strong><strong>What are the Types of the
+                                    Queue?</strong></span></p>
+                        <p><strong>Answer: The queues are of the following types:</strong></p>
+                        <ul>
+                            <li>Simple queue</li>
+                            <li>Circular queue</li>
+                            <li>Priority queue</li>
+                            <li>Double-ended queue</li>
+                        </ul>
+                        <p><span style="color: #ff6600;"><strong>Q #5) </strong><strong>Why is the Queue
+                                    used?</strong></span></p>
+                        <p><strong>Answer:</strong> The queue data structure is used for synchronization purposes. The
+                            queue is also used for disk and CPU scheduling.</p>
+                        <h2><span id="Conclusion">Conclusion</span></h2>
+                        <p>In this tutorial, we have discussed the simple queues along with their details like
+                            declarations, initialization implementation, and methods. We also learned about the Array
+                            and LinkedList implementation of Queue in Java.</p>
+                        
+
+
+
+                </div>
+            </div>
+        </section>
+
+    </main><!-- End #main -->
+
+
+    <div id="footer"></div>
+
+
+</body>
+
+</html>
