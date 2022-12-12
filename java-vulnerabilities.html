@@ -1,0 +1,1162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Java Interview Q&A</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+  <script> $(function () { $("#header").load("header.html"); $("#footer").load("footer.html"); }); </script>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+  <script> $(function () { $("#header").load("header.html"); $("#footer").load("footer.html"); }); </script>
+
+</head>
+
+<body>
+
+  <div id="header"></div>
+
+  <main id="main">
+
+    <section id="about" class="about">
+      <div class="container">
+        <div class="row-content">
+
+
+
+
+          <nav class="docs-toc d-none d-xl-block col-xl-3" aria-label="Secondary navigation">
+            <div class="page-links">
+              <h3>Table of contents</h3>
+              <nav id="TableOfContents">
+                <ul>
+                  <li><a href="#a1--injection">A1- Injection</a>
+                    <ul>
+                      <li><a href="#sql-injection">SQL Injection</a></li>
+                      <li><a href="#hql-injection">HQL Injection</a></li>
+                      <li><a href="#os-command-injection">OS Command Injection</a></li>
+                      <li><a href="#ldap-injection">LDAP Injection</a></li>
+                      <li><a href="#code-injection">Code Injection</a></li>
+                      <li><a href="#log-injection">Log Injection</a></li>
+                      <li><a href="#nosql-injection">NoSQL Injection</a></li>
+                      <li><a href="#htmljavascriptcss-injection">HTML/JavaScript/CSS Injection</a></li>
+                      <li><a href="#server-side-request-forgeryssrf">Server Side Request Forgery(SSRF)</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#a2---broken-authentication">A2 - Broken Authentication</a>
+                    <ul>
+                      <li><a href="#authentication-solution-and-sensitive-accounts">Authentication Solution and
+                          Sensitive Accounts</a></li>
+                      <li><a href="#implement-proper-password-strength-controls">Implement Proper Password Strength
+                          Controls</a></li>
+                      <li><a href="#compare-password-hashes-using-safe-functions">Compare Password Hashes Using Safe
+                          Functions</a></li>
+                      <li><a href="#authentication-and-error-messages">Authentication and Error Messages</a></li>
+                      <li><a href="#password-managers">Password Managers</a></li>
+                      <li><a href="#forgot-password-services">Forgot Password Services</a></li>
+                      <li><a href="#session-management">Session management</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#a3---sensitive-data-exposure">A3 - Sensitive Data Exposure</a>
+                    <ul>
+                      <li><a href="#unrestricted-file-upload">Unrestricted File Upload</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#a4---xml-external-entities-xxe">A4 - XML External Entities (XXE)</a>
+                    <ul>
+                      <li><a href="#xxe-attacks">XXE attacks</a></li>
+                      <li><a href="#xpath-injection">XPath Injection</a></li>
+                      <li><a href="#xml-injection">XML Injection</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#a5---broken-access-control">A5 - Broken Access Control</a>
+                    <ul>
+                      <li><a href="#missing-functional-level-access-controls">Missing Functional Level Access
+                          Controls</a></li>
+                      <li><a href="#insecure-direct-object-references">Insecure Direct Object References</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#a6---security-misconfiguration">A6 - Security Misconfiguration</a>
+                    <ul>
+                      <li><a href="#clickjacking">Clickjacking</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#a7---cross-site-scripting-xss">A7 - Cross Site Scripting (XSS)</a></li>
+                  <li><a href="#a8---insecure-deserialization">A8 - Insecure Deserialization</a></li>
+                  <li><a href="#a9---using-components-with-known-vulnerabilities">A9 - Using Components with known
+                      vulnerabilities</a></li>
+                  <li><a href="#a10---insufficient-logging-and-monitoring">A10 - Insufficient Logging and Monitoring</a>
+                  </li>
+                  <li><a href="#cross-site-request-forgery-csrf">Cross Site Request Forgery (CSRF)</a></li>
+                  <li><a href="#unvalidated-redirects-and-forwards">Unvalidated Redirects and Forwards</a></li>
+                  <li><a href="#references">References</a></li>
+                </ul>
+              </nav>
+            </div>
+          </nav>
+
+
+
+
+
+          <main class="docs-content col-lg-11 col-xl-9">
+           
+            <h2 id="a1--injection">A1- Injection<a href="#a1--injection" class="anchor" aria-hidden="true">#</a></h2>
+            <h3 id="sql-injection">SQL Injection<a href="#sql-injection" class="anchor" aria-hidden="true">#</a></h3>
+            <ul>
+              <li>Use of Stored Procedures</li>
+            </ul>
+            <pre><code>// This should REALLY be validated
+            String custname = request.getParameter("customerName");
+            try {
+             CallableStatement cs = connection.prepareCall("{call sp_getAccountBalance(?)}");
+             cs.setString(1, custname);
+             ResultSet results = cs.executeQuery();
+             // Result set handling...
+            } catch (SQLException se) {
+             // Logging and error handling...
+            }
+            </code></pre>
+            <ul>
+              <li>Whitelist Input Validation</li>
+              <li>Escaping Wildcard characters in Like Clauses</li>
+              <li>Escaping All User Supplied Input</li>
+            </ul>
+            <p><strong>Noncompliant Code</strong></p>
+            <pre><code>String query = "SELECT user_id FROM user_data WHERE user_name = '"
+                          + req.getParameter("userID")
+                          + "' and user_password = '" + req.getParameter("pwd") +"'";
+            try {
+                Statement statement = connection.createStatement( … );
+                ResultSet results = statement.executeQuery( query );
+            }
+            </code></pre>
+            <p><strong>Compliant Code</strong></p>
+            <pre><code>Codec ORACLE_CODEC = new OracleCodec();
+            String query = "SELECT user_id FROM user_data WHERE user_name = '"
+            + ESAPI.encoder().encodeForSQL( ORACLE_CODEC, req.getParameter("userID"))
+            + "' and user_password = '"
+            + ESAPI.encoder().encodeForSQL( ORACLE_CODEC, req.getParameter("pwd")) +"'";
+            </code></pre>
+            <ul>
+              <li>Enforcing Least Privilege</li>
+              <li>Performing Whitelist Input Validation as a Secondary Defense</li>
+              <li>Use of Prepared Statements (with Parameterized Queries)</li>
+            </ul>
+            <p><strong>Noncompliant Code</strong></p>
+            <pre><code>String query = "SELECT * FROM users WHERE username = '"+ username +"' AND password = '" + password + "'";
+            Statement stmt = connection.createStatement();
+            ResultSet rs = stmt.executeQuery(query);
+            </code></pre>
+            <p><strong>Compliant Code</strong></p>
+            <pre><code>String query = "select * from db_user where username=? and password=?";
+            PreparedStatement stmt = connection.prepareStatement(query);
+            stmt.setString(1, username);
+            stmt.setString(2, password);
+            ResultSet rs = stmt.executeQuery();
+            </code></pre>
+            <h3 id="hql-injection">HQL Injection<a href="#hql-injection" class="anchor" aria-hidden="true">#</a></h3>
+            <ul>
+              <li>Use of Prepared Statements (with Parameterized Queries)</li>
+            </ul>
+            <p><strong>Noncompliant Code</strong></p>
+            <pre><code>Query unsafeHQLQuery = session.createQuery("from Inventory where productID='"+userSuppliedParameter+"'");
+            </code></pre>
+            <p><strong>Compliant Code</strong></p>
+            <pre><code>Query safeHQLQuery = session.createQuery("from Inventory where productID=:productid");
+            safeHQLQuery.setParameter("productid", userSuppliedParameter);
+            </code></pre>
+            <h3 id="os-command-injection">OS Command Injection<a href="#os-command-injection" class="anchor"
+                aria-hidden="true">#</a></h3>
+            <ul>
+              <li>Avoid calling OS commands directly</li>
+            </ul>
+            <p><strong>Noncompliant Code</strong></p>
+            <pre><code>ProcessBuilder b = new ProcessBuilder("C:\DoStuff.exe -arg1 -arg2");
+            </code></pre>
+            <p><strong>Compliant Code</strong></p>
+            <pre><code>ProcessBuilder pb = new ProcessBuilder("TrustedCmd", "TrustedArg1", "TrustedArg2");
+            Map&lt;String, String&gt; env = pb.environment();
+            pb.directory(new File("TrustedDir"));
+            Process p = pb.start();
+            </code></pre>
+            <ul>
+              <li>Escape values added to OS commands specific to each OS</li>
+              <li>Parameterization in conjunction with Input Validation</li>
+              <li>Use structured mechanisms that automatically enforce the separation between data and command.</li>
+            </ul>
+            <p><strong>Noncompliant Code</strong></p>
+            <pre><code>String folder = request.getParameter("folder");
+            String cmd = "mkdir " + folder;
+            Runtime.getRuntime().exec(cmd);
+            </code></pre>
+            <p><strong>Compliant Code</strong></p>
+            <pre><code>String folder = request.getParameter("folder");
+            String cmd = "mkdir " + ESAPI.encoder().encodeForOS(new WindowsCodec(), folder);
+            Runtime.getRuntime().exec(cmd);
+            </code></pre>
+            <h3 id="ldap-injection">LDAP Injection<a href="#ldap-injection" class="anchor" aria-hidden="true">#</a></h3>
+            <ul>
+              <li>Escape all variables using the right LDAP encoding function</li>
+            </ul>
+            <pre><code>public String escapeDN (String name) {
+             //From RFC 2253 and the / character for JNDI
+             final char[] META_CHARS = {'+', '"', '&lt;', '&gt;', ';', '/'};
+             String escapedStr = new String(name);
+             //Backslash is both a Java and an LDAP escape character,
+             //so escape it first
+             escapedStr = escapedStr.replaceAll("\\\\\\\\","\\\\\\\\");
+             //Positional characters - see RFC 2253
+             escapedStr = escapedStr.replaceAll("\^#","\\\\\\\\#");
+             escapedStr = escapedStr.replaceAll("\^ | $","\\\\\\\\ ");
+             for (int i=0 ; i &lt; META_CHARS.length ; i++) {
+                    escapedStr = escapedStr.replaceAll("\\\\" +
+                                 META_CHARS[i],"\\\\\\\\" + META_CHARS[i]);
+             }
+             return escapedStr;
+            }
+            </code></pre>
+            <p>Note, that the backslash character is a Java String literal and a regular expression escape character.
+            </p>
+            <pre><code>public String escapeSearchFilter (String filter) {
+             //From RFC 2254
+             String escapedStr = new String(filter);
+             escapedStr = escapedStr.replaceAll("\\\\\\\\","\\\\\\\\5c");
+             escapedStr = escapedStr.replaceAll("\\\\\*","\\\\\\\\2a");
+             escapedStr = escapedStr.replaceAll("\\\\(","\\\\\\\\28");
+             escapedStr = escapedStr.replaceAll("\\\\)","\\\\\\\\29");
+             escapedStr = escapedStr.replaceAll("\\\\" +
+                           Character.toString('\\u0000'), "\\\\\\\\00");
+             return escapedStr;
+            }
+            </code></pre>
+            <ul>
+              <li>Use Frameworks that Automatically Protect from LDAP Injection</li>
+              <li>Minimize the privileges assigned to the LDAP binding account in your environment.</li>
+              <li>Input validation can be used to detect unauthorized input before it is passed to the LDAP query.</li>
+            </ul>
+            <p><strong>Noncompliant Code</strong></p>
+            <pre><code>String filter = "(&amp;(uid=" + user + ")(userPassword=" + pass + "))"; 
+            NamingEnumeration&lt;SearchResult&gt; results = ctx.search("ou=system", filter, new SearchControls()); 
+            return results.hasMore();
+            </code></pre>
+            <p><strong>Compliant Code</strong></p>
+            <pre><code>String filter = "(&amp;(uid={0})(userPassword={1}))";
+            NamingEnumeration&lt;SearchResult&gt; results = ctx.search("ou=system", filter, new String[]{user, pass}, new SearchControls();
+            return results.hasMore();
+            </code></pre>
+            <h3 id="code-injection">Code Injection<a href="#code-injection" class="anchor" aria-hidden="true">#</a></h3>
+            <p><strong>Noncompliant Code</strong></p>
+            <pre><code>ScriptEngineManager manager = new ScriptEngineManager();
+            ScriptEngine engine = manager.getEngineByName("javascript");
+            engine.eval("print('"+ firstName + "')");
+            </code></pre>
+            <p><strong>Compliant Code</strong></p>
+            <pre><code>// Whitelisting
+            if (!firstName.matches("[\\w]*")) {
+                throw new IllegalArgumentException();
+                }
+            ScriptEngineManager manager = new ScriptEngineManager();
+            ScriptEngine engine = manager.getEngineByName("javascript");
+            engine.eval("print('"+ firstName + "')");
+            </code></pre>
+            <h3 id="log-injection">Log Injection<a href="#log-injection" class="anchor" aria-hidden="true">#</a></h3>
+            <ul>
+              <li>Filter the user input used to prevent injection of Carriage Return (CR) or Line Feed (LF) characters.
+              </li>
+              <li>Limit the size of the user input value used to create the log message.</li>
+              <li>Make sure all XSS defenses are applied when viewing log files in a web browser.</li>
+            </ul>
+            <pre><code>import org.apache.logging.log4j.LogManager;
+            import org.apache.logging.log4j.Logger;
+            ...
+            Logger logger = LogManager.getLogger(MyClass.class);
+            logger.info(logMessage);
+            ...
+            </code></pre>
+            <h3 id="nosql-injection">NoSQL Injection<a href="#nosql-injection" class="anchor" aria-hidden="true">#</a>
+            </h3>
+            <ul>
+              <li>Do not use string concatenation to build API call expression but use the API to create the expression.
+              </li>
+            </ul>
+            <p><strong>Example: MongoDB</strong></p>
+            <pre><code>String userInput = "Brooklyn";
+            
+            ArrayList&lt;String&gt; specialCharsList = new ArrayList&lt;String&gt;() { {
+                add("'");
+                add("\"");
+                add("\\");
+                add(";");
+                add("{");
+                add("}");
+                add("$");
+            } };
+            specialCharsList.forEach(specChar -&gt; Assert.assertFalse(userInput.contains(specChar)));
+            Assert.assertTrue(userInput.length() &lt;= 50);
+            
+            try(MongoClient mongoClient = new MongoClient()){
+                MongoDatabase db = mongoClient.getDatabase("test");
+                Bson expression = eq("borough", userInput);
+                FindIterable&lt;org.bson.Document&gt; restaurants = db.getCollection("restaurants").find(expression);
+                restaurants.forEach(new Block&lt;org.bson.Document&gt;() {
+                    @Override
+                    public void apply(final org.bson.Document doc) {
+                        String restBorough = (String)doc.get("borough");
+                        Assert.assertTrue("Brooklyn".equals(restBorough));
+                    }
+                });
+            }
+            </code></pre>
+            <h3 id="htmljavascriptcss-injection">HTML/JavaScript/CSS Injection<a href="#htmljavascriptcss-injection"
+                class="anchor" aria-hidden="true">#</a></h3>
+            <ul>
+              <li>Either apply strict input validation (whitelist approach)</li>
+              <li>Use output sanitizing+escaping if input validation is not possible (combine both every time is
+                possible).</li>
+            </ul>
+            <p><strong>Example:</strong></p>
+            <pre><code>String userInput = "You user login is owasp-user01";
+            Assert.assertTrue(Pattern.matches("[a-zA-Z0-9\\s\\-]{1,50}", userInput));
+            
+            Assert.assertEquals(0, StringUtils.countMatches(userInput.replace(" ", ""), "--"));
+            
+            String outputToUser = "You &lt;p&gt;user login&lt;/p&gt; is &lt;strong&gt;owasp-user01&lt;/strong&gt;";
+            outputToUser += "&lt;script&gt;alert(22);&lt;/script&gt;&lt;img src='#' onload='javascript:alert(23);'&gt;";
+            
+            PolicyFactory policy = new HtmlPolicyBuilder().allowElements("p", "strong").toFactory();
+            
+            String safeOutput = policy.sanitize(outputToUser);
+            
+            safeOutput = Encode.forHtml(safeOutput);
+            String finalSafeOutputExpected = "You &lt;p&gt;user login&lt;/p&gt; is &lt;strong&gt;owasp-user01&lt;/strong&gt;";
+            Assert.assertEquals(finalSafeOutputExpected, safeOutput);
+            </code></pre>
+            <h3 id="server-side-request-forgeryssrf">Server Side Request Forgery(SSRF)<a
+                href="#server-side-request-forgeryssrf" class="anchor" aria-hidden="true">#</a></h3>
+            <ul>
+              <li>Use a whitelist of allowed domains, resources and protocols from where the web server can fetch
+                resources.</li>
+              <li>Any input accepted from the user should be validated and rejected if it does not match the positive
+                specification expected.</li>
+              <li>If possible, do not accept user input in functions that control where the web server can fetch
+                resources.</li>
+              <li>Disable unused URL schemas</li>
+            </ul>
+            <p>** Noncompliant Code **</p>
+            <pre><code>protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
+              URL url = new URL(req.getParameter("url"));
+              HttpURLConnection conn = (HttpURLConnection) url.openConnection(); // Noncompliant
+            }
+            </code></pre>
+            <p>** Compliant Code **</p>
+            <pre><code>protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
+              String urlWhiteListed = "https://example.com/";
+              String str = req.getParameter("url");
+              if (!str.startsWith(urlWhiteListed))
+                throw new IOException();
+            
+              URL url2 = new URL(str);
+              HttpURLConnection conn2 = (HttpURLConnection) url2.openConnection(); // compliant
+            }
+            </code></pre>
+            <h2 id="a2---broken-authentication">A2 - Broken Authentication<a href="#a2---broken-authentication"
+                class="anchor" aria-hidden="true">#</a></h2>
+            <ul>
+              <li>Where possible, implement multi-factor authentication to prevent automated, credential stuffing, brute
+                force, and stolen credential re-use attacks.</li>
+              <li>Ensure registration, credential recovery, and API pathways are hardened against account enumeration
+                attacks by using the same messages for all outcomes.</li>
+              <li>Limit or increasingly delay failed login attempts. Log all failures and alert administrators when
+                credential stuffing, brute force, or other attacks are detected.</li>
+              <li>Use a server-side, secure, built-in session manager that generates a new random session ID with high
+                entropy after login. Session IDs should not be in the URL, be securely stored and invalidated after
+                logout, idle, and absolute timeouts.</li>
+            </ul>
+            <p><strong>Noncompliant Code</strong></p>
+            <p>This example violates the principle of least privilege because an unprivileged caller could also cause
+              the authentication library to be loaded. An unprivileged caller cannot invoke the System.loadLibrary()
+              method directly because this could expose native methods to the unprivileged code</p>
+            <pre><code>AccessController.doPrivileged(new PrivilegedAction() {
+                public Object run() {
+                  try {    
+                    String passwordFile = System.getProperty("user.dir") + File.separator + "PasswordFileName";
+                    f[0] = new FileInputStream(passwordFile);                                                   
+                    // Check whether oldPassword matches the one in the file
+                    // If not, throw an exception
+                    System.loadLibrary("authentication");
+                  } catch (FileNotFoundException cnf) {
+                    // Forward to handler
+                  }
+                  return null;
+                }
+              }); // End of doPrivileged()
+            </code></pre>
+            <p><strong>Compliant Code</strong></p>
+            <p>This compliant solution moves the call to System.loadLibrary() outside the doPrivileged() block. Doing so
+              allows unprivileged code to perform preliminary password reset checks using the file but prevents it from
+              loading the authentication library.</p>
+            <pre><code>AccessController.doPrivileged(new PrivilegedAction() {
+                public Object run() {
+                  try {
+                    String passwordFile = System.getProperty("user.dir") + File.separator + "PasswordFileName";
+                    f[0] = new FileInputStream(passwordFile);                                                   
+                    // Check whether oldPassword matches the one in the file
+                    // If not, throw an exception
+                  } catch (FileNotFoundException cnf) {
+                    // Forward to handler
+                  }
+                  return null;
+                }
+              }); // End of doPrivileged()
+                       
+              System.loadLibrary("authentication");
+            </code></pre>
+            <h3 id="authentication-solution-and-sensitive-accounts">Authentication Solution and Sensitive Accounts<a
+                href="#authentication-solution-and-sensitive-accounts" class="anchor" aria-hidden="true">#</a></h3>
+            <ul>
+              <li>Do NOT allow login with sensitive accounts (i.e. accounts that can be used internally within the
+                solution such as to a back-end / middle-ware / DB) to any front-end user-interface</li>
+              <li>Do NOT use the same authentication solution (e.g. IDP / AD) used internally for unsecured access (e.g.
+                public access / DMZ)</li>
+            </ul>
+            <h3 id="implement-proper-password-strength-controls">Implement Proper Password Strength Controls<a
+                href="#implement-proper-password-strength-controls" class="anchor" aria-hidden="true">#</a></h3>
+            <ul>
+              <li>Minimum length of the passwords should be enforced by the application. Passwords shorter than 8
+                characters are considered to be weak</li>
+              <li>Maximum password length should not be set too low, as it will prevent users from creating passphrases.
+                A common maximum length is 64 characters due to limitations in certain hashing algorithms.</li>
+              <li>Allow usage of all characters including unicode and whitespace. There should be no password
+                composition rules limiting the type of characters permitted.</li>
+              <li>Implement weak-password checks, such as testing new or changed passwords against a list of the top
+                10000 worst passwords.</li>
+              <li>Ensure credential rotation when a password leak, or at the time of compromise identification.</li>
+              <li>Include password strength meter to help users create a more complex password and block common and
+                previously breached passwords</li>
+              <li>Align password length, complexity and rotation policies with <a
+                  href="https://pages.nist.gov/800-63-3/sp800-63b.html#memsecret">NIST 800-63 B’s guidelines in section
+                  5.1.1 for Memorized Secrets</a> or other modern, evidence based password policies.</li>
+              <li>Do not ship or deploy with any default credentials, particularly for admin users.</li>
+            </ul>
+            <h3 id="compare-password-hashes-using-safe-functions">Compare Password Hashes Using Safe Functions<a
+                href="#compare-password-hashes-using-safe-functions" class="anchor" aria-hidden="true">#</a></h3>
+            <p>Ensure that the comparison function:</p>
+            <ul>
+              <li>Has a maximum input length, to protect against denial of service attacks with very long inputs.</li>
+              <li>Explicitly sets the type of both variable, to protect against type confusion attacks.</li>
+              <li>Returns in constant time, to protect against timing attacks.</li>
+            </ul>
+            <h3 id="authentication-and-error-messages">Authentication and Error Messages<a
+                href="#authentication-and-error-messages" class="anchor" aria-hidden="true">#</a></h3>
+            <ul>
+              <li>The application may should different HTTP Error code depending on the authentication attempt response.
+              </li>
+              <li>Do not return different error messages.</li>
+            </ul>
+            <p><strong>Authentication Responses</strong></p>
+            <p>Using any of the authentication mechanisms (login, registration, password reset or password recovery), an
+              application must respond with a generic error message regardless of whether:</p>
+            <ul>
+              <li>The user ID or password was incorrect.</li>
+              <li>The account does not exist.</li>
+              <li>The account is locked or disabled.</li>
+            </ul>
+            <h3 id="password-managers">Password Managers<a href="#password-managers" class="anchor"
+                aria-hidden="true">#</a></h3>
+            <p>Web applications should at least not make password managers job more difficult than necessary by
+              observing the following recommendations:</p>
+            <ul>
+              <li>Use standard HTML forms for username and password input with appropriate type attributes.</li>
+              <li>Avoid plugin-based login pages (such as Flash or Silverlight).</li>
+              <li>Allow any printable characters to be used in passwords.</li>
+              <li>Allow users to paste into the username and password fields.</li>
+              <li>Allow users to navigate between the username and password field with a single press of the Tab key.
+              </li>
+            </ul>
+            <h3 id="forgot-password-services">Forgot Password Services<a href="#forgot-password-services" class="anchor"
+                aria-hidden="true">#</a></h3>
+            <ul>
+              <li>Return a consistent message for both existent and non-existent accounts.</li>
+              <li>Ensure that the time taken for the user response message is uniform.</li>
+              <li>Use a side-channel to communicate the method to reset their password.</li>
+              <li>Use URL tokens for the simplest and fastest implementation.</li>
+              <li>Ensure that generated tokens or codes are:</li>
+              <li>Randomly genererated using a cryptographically safe algorithm.</li>
+              <li>Sufficiently long to protect against brute-force attacks.</li>
+              <li>Stored securely.</li>
+              <li>Single use and expire after an appropriate period.</li>
+            </ul>
+            <h3 id="session-management">Session management<a href="#session-management" class="anchor"
+                aria-hidden="true">#</a></h3>
+            <ul>
+              <li>Force Session Logout On Web Browser Window Close Events</li>
+              <li>Disable Web Browser Cross-Tab Sessions</li>
+              <li>Renew the Session ID After Any Privilege Level Change</li>
+              <li>All sessions should implement an idle or inactivity timeout.</li>
+              <li>Session IDs are vulnerable to hijacking when they are passed across the network with http requests. As
+                with hashed passwords it’s essential that session ID tokens are protected with SSL to ensure they remain
+                secure.</li>
+              <li>Session IDs should never be under the control of users and clients to create. They should all be
+                generated, controlled, and secured centrally by the authentication and authorisation mechanism.</li>
+              <li>Session IDs should not be stored between browser sessions. They should be destroyed when a browser is
+                closed. This prevents an attacker retrieving a valid session by using the history in a Browser or by
+                finding the Session ID on the client’s local storage.</li>
+            </ul>
+            <h2 id="a3---sensitive-data-exposure">A3 - Sensitive Data Exposure<a href="#a3---sensitive-data-exposure"
+                class="anchor" aria-hidden="true">#</a></h2>
+            <ul>
+              <li>Classify data processed, stored or transmitted by an application. Identify which data is sensitive
+                according to privacy laws, regulatory requirements, or business needs.</li>
+              <li>Apply controls as per the classification.</li>
+              <li>Don’t store sensitive data unnecessarily. Discard it as soon as possible or use PCI DSS compliant
+                tokenization or even truncation. Data that is not retained cannot be stolen.</li>
+              <li>Make sure to encrypt all sensitive data at rest.</li>
+              <li>Ensure up-to-date and strong standard algorithms, protocols, and keys are in place; use proper key
+                management.</li>
+              <li>Encrypt all data in transit with secure protocols such as TLS with perfect forward secrecy (PFS)
+                ciphers, cipher prioritization by the server, and secure parameters. Enforce encryption using directives
+                like HTTP Strict Transport Security (HSTS).</li>
+              <li>Disable caching for response that contain sensitive data.</li>
+              <li>Store passwords using strong adaptive and salted hashing functions with a work factor (delay factor),
+                such as Argon2, scrypt, bcrypt or PBKDF2.</li>
+              <li>Verify independently the effectiveness of configuration and settings.</li>
+            </ul>
+            <h3 id="unrestricted-file-upload">Unrestricted File Upload<a href="#unrestricted-file-upload" class="anchor"
+                aria-hidden="true">#</a></h3>
+            <ul>
+              <li>The file types allowed to be uploaded should be restricted to only those that are necessary for
+                business functionality.</li>
+              <li>Never accept a filename and its extension directly without having an allow list filter.</li>
+              <li>The application should perform filtering and content checking on any files which are uploaded to the
+                server. Files should be thoroughly scanned and validated before being made available to other users. If
+                in doubt, the file should be discarded.</li>
+              <li>It is necessary to have a list of only permitted extensions on the web application. And, file
+                extension can be selected from the list.</li>
+              <li>All the control characters and Unicode ones should be removed from the filenames and their extensions
+                without any exception. Also, the special characters such as “;”, “:”, “&gt;”, “&lt;”, “/” ,”\”,
+                additional “.”, “*”, “%”, “$”, and so on should be discarded as well. If it is applicable and there is
+                no need to have Unicode characters, it is highly recommended to only accept Alpha-Numeric characters and
+                only 1 dot as an input for the file name and the extension; in which the file name and also the
+                extension should not be empty at all (regular expression: [a-zA-Z0-9]{1,200}.[a-zA-Z0-9]{1,10}).</li>
+              <li>Limit the filename length. For instance, the maximum length of the name of a file plus its extension
+                should be less than 255 characters (without any directory) in an NTFS partition.</li>
+              <li>It is recommended to use an algorithm to determine the filenames. For instance, a filename can be a
+                MD5 hash of the name of file plus the date of the day.</li>
+              <li>Uploaded directory should not have any “execute” permission and all the script handlers should be
+                removed from these directories.</li>
+              <li>Limit the file size to a maximum value in order to prevent denial of service attacks (on file space or
+                other web application’s functions such as the image resizer).</li>
+              <li>Restrict small size files as they can lead to denial of service attacks. So, the minimum size of files
+                should be considered.</li>
+              <li>Use Cross Site Request Forgery protection methods.</li>
+              <li>Prevent from overwriting a file in case of having the same hash for both.</li>
+              <li>Use a virus scanner on the server (if it is applicable). Or, if the contents of files are not
+                confidential, a free virus scanner website can be used. In this case, file should be stored with a
+                random name and without any extension on the server first, and after the virus checking (uploading to a
+                free virus scanner website and getting back the result), it can be renamed to its specific name and
+                extension.</li>
+              <li>Try to use POST method instead of PUT (or GET!)</li>
+              <li>Log users’ activities. However, the logging mechanism should be secured against log forgery and code
+                injection itself.</li>
+              <li>In case of having compressed file extract functions, contents of the compressed file should be checked
+                one by one as a new file.</li>
+              <li>If it is possible, consider saving the files in a database rather than on the filesystem.</li>
+              <li>If files should be saved in a filesystem, consider using an isolated server with a different domain to
+                serve the uploaded files.</li>
+              <li>File uploaders should be only accessible to authenticated and authorised users if possible.</li>
+              <li>Write permission should be removed from files and folders other than the upload folders.</li>
+              <li>Ensure that configuration files such as “.htaccess” or “web.config” cannot be replaced using file
+                uploaders. Ensure that appropriate settings are available to ignore the “.htaccess” or “web.config”
+                files if uploaded in the upload directories.</li>
+              <li>Ensure that files with double extensions (e.g. “file.jsp.txt”) cannot be executed especially in
+                Apache.</li>
+              <li>Ensure that uploaded files cannot be accessed by unauthorised users.</li>
+              <li>Adding the <code>“Content-Disposition: Attachment”</code> and
+                <code>“X-Content-Type-Options: nosniff”</code> headers to the response of static files will secure the
+                website against Flash or PDF-based cross-site content-hijacking attacks. It is recommended that this
+                practice be performed for all of the files that users need to download in all the modules that deal with
+                a file download. Although this method does not fully secure the website against attacks using
+                Silverlight or similar objects, it can mitigate the risk of using Adobe Flash and PDF objects,
+                especially when uploading PDF files is permitted.</li>
+              <li>CORS headers should be reviewed to only be enabled for static or publicly accessible data. Otherwise,
+                the “Access-Control-Allow-Origin” header should only contain authorised addresses. Other CORS headers
+                such as “Access-Control-Allow-Credentials” should only be used when they are required. Items within the
+                CORS headers such as “Access-Control-Allow-Methods” or “Access-Control-Allow-Headers” should be reviewed
+                and removed if they are not required.</li>
+            </ul>
+            <p><strong>Noncompliant Code</strong></p>
+            <pre><code>public class UploadAction extends ActionSupport {
+              private File uploadedFile;
+              // setter and getter for uploadedFile
+               
+              public String execute() {
+                try {
+                  // File path and file name are hardcoded for illustration
+                  File fileToCreate = new File("filepath", "filename");
+                  // Copy temporary file content to this file
+                  FileUtils.copyFile(uploadedFile, fileToCreate);
+                  return "SUCCESS";
+                } catch (Throwable e) {
+                  addActionError(e.getMessage());
+                  return "ERROR";
+                }
+              }
+            } 
+            </code></pre>
+            <p><strong>Compliant Code</strong></p>
+            <pre><code>public class UploadAction extends ActionSupport {
+              private File uploadedFile;
+              // setter and getter for uploadedFile
+               
+              public String execute() {
+                try {
+                  // File path and file name are hardcoded for illustration
+                  File fileToCreate = new File("filepath", "filename");
+             
+                  boolean textPlain = checkMetaData(uploadedFile, "text/plain");
+                  boolean img = checkMetaData(uploadedFile, "image/JPEG");
+                  boolean textHtml = checkMetaData(uploadedFile, "text/html");
+             
+                  if (!textPlain &amp;&amp; !img &amp;&amp; !textHtml) {
+                    return "ERROR";
+                  }    
+             
+                  // Copy temporary file content to this file
+                  FileUtils.copyFile(uploadedFile, fileToCreate);
+                  return "SUCCESS";
+                } catch (Throwable e) {
+                  addActionError(e.getMessage());
+                  return "ERROR";
+                }
+              }
+             
+              public static boolean checkMetaData(
+                File f, String getContentType) {
+                try (InputStream is = new FileInputStream(f)) {
+                  ContentHandler contenthandler = new BodyContentHandler();
+                  Metadata metadata = new Metadata();
+                  metadata.set(Metadata.RESOURCE_NAME_KEY, f.getName());
+                  Parser parser = new AutoDetectParser();
+                  try {
+                    parser.parse(is, contenthandler, metadata, new ParseContext());
+                  } catch (SAXException | TikaException e) {
+                    // Handle error
+                    return false;
+                  }
+                   
+                  if (metadata.get(Metadata.CONTENT_TYPE).equalsIgnoreCase(getContentType)) {
+                    return true;
+                  } else {
+                    return false;
+                  }
+                } catch (IOException e) {
+                  // Handle error
+                  return false;
+                }
+              }
+            }
+            </code></pre>
+            <h2 id="a4---xml-external-entities-xxe">A4 - XML External Entities (XXE)<a
+                href="#a4---xml-external-entities-xxe" class="anchor" aria-hidden="true">#</a></h2>
+            <ul>
+              <li>Whenever possible, use less complex data formats such as JSON, and avoiding serialization of sensitive
+                data.</li>
+              <li>Patch or upgrade all XML processors and libraries in use by the application or on the underlying
+                operating system. Use dependency checkers. Update SOAP to SOAP 1.2 or higher.</li>
+              <li>Disable XML external entity and DTD processing in all XML parsers in the application.</li>
+              <li>Implement positive (“whitelisting”) server-side input validation, filtering, or sanitization to
+                prevent hostile data within XML documents, headers, or nodes.</li>
+              <li>Verify that XML or XSL file upload functionality validates incoming XML using XSD validation or
+                similar.</li>
+              <li><a href="https://owasp.org/www-community/Source_Code_Analysis_Tools">SAST</a> tools can help detect
+                XXE in source code, although manual code review is the best alternative in large, complex applications
+                with many integrations.</li>
+            </ul>
+            <h3 id="xxe-attacks">XXE attacks<a href="#xxe-attacks" class="anchor" aria-hidden="true">#</a></h3>
+            <p><strong>Noncompliant Code</strong></p>
+            <pre><code>class XXE {
+              private static void receiveXMLStream(InputStream inStream,
+                                                   DefaultHandler defaultHandler)
+                  throws ParserConfigurationException, SAXException, IOException {
+                SAXParserFactory factory = SAXParserFactory.newInstance();
+                SAXParser saxParser = factory.newSAXParser();
+                saxParser.parse(inStream, defaultHandler);
+              }
+             
+              public static void main(String[] args) throws ParserConfigurationException,
+                  SAXException, IOException {
+                try {
+                  receiveXMLStream(new FileInputStream("evil.xml"), new DefaultHandler());
+                } catch (java.net.MalformedURLException mue) {
+                  System.err.println("Malformed URL Exception: " + mue);
+                }
+              }
+            }
+            </code></pre>
+            <p><strong>Compliant Code</strong></p>
+            <pre><code>class CustomResolver implements EntityResolver {
+              public InputSource resolveEntity(String publicId, String systemId)
+                  throws SAXException, IOException {
+             
+                // Check for known good entities
+                String entityPath = "file:/Users/onlinestore/good.xml";
+                if (systemId.equals(entityPath)) {
+                  System.out.println("Resolving entity: " + publicId + " " + systemId);
+                  return new InputSource(entityPath);
+                } else {
+                  // Disallow unknown entities by returning a blank path
+                  return new InputSource();
+                }
+              }
+            }
+            </code></pre>
+            <h3 id="xpath-injection">XPath Injection<a href="#xpath-injection" class="anchor" aria-hidden="true">#</a>
+            </h3>
+            <ul>
+              <li>Treat all user input as untrusted, and perform appropriate sanitization.</li>
+              <li>When sanitizing user input, verify the correctness of the data type, length, format, and content. For
+                example, use a regular expression that checks for XML tags and special characters in user input. This
+                practice corresponds to input sanitization. See IDS52-J. Prevent code injection for additional details.
+              </li>
+              <li>In a client-server application, perform validation at both the client and the server sides.</li>
+              <li>Extensively test applications that supply, propagate, or accept user input.</li>
+            </ul>
+            <p><strong>Noncompliant Code</strong></p>
+            <pre><code>XPathFactory factory = XPathFactory.newInstance();
+            XPath xpath = factory.newXPath();
+            XPathExpression expr = xpath.compile("//users/user[username/text()='" + userName + "' and password/text()='" + pwd + "' ]");
+            Object result = expr.evaluate(doc, XPathConstants.NODESET);
+            NodeList nodes = (NodeList) result;
+            </code></pre>
+            <p><strong>Compliant Code</strong></p>
+            <pre><code>XQuery xquery = new XQueryFactory().createXQuery(new File("login.xq"));
+              Map queryVars = new HashMap();
+              queryVars.put("userName", userName);
+              queryVars.put("password", pwd);
+              NodeList nodes = xquery.execute(doc, null, queryVars).toNodes();
+            </code></pre>
+            <h3 id="xml-injection">XML Injection<a href="#xml-injection" class="anchor" aria-hidden="true">#</a></h3>
+            <p><strong>Noncompliant Code</strong></p>
+            <pre><code>public class OnlineStore {
+              private static void createXMLStreamBad(final BufferedOutputStream outStream,
+                  final String quantity) throws IOException {
+                String xmlString = "&lt;item&gt;\n&lt;description&gt;Widget&lt;/description&gt;\n"
+                    + "&lt;price&gt;500&lt;/price&gt;\n" + "&lt;quantity&gt;" + quantity
+                    + "&lt;/quantity&gt;&lt;/item&gt;";
+                outStream.write(xmlString.getBytes());
+                outStream.flush();
+              }
+            }
+            </code></pre>
+            <p><strong>Compliant Code</strong></p>
+            <pre><code>public class OnlineStore {
+              private static void createXMLStream(final BufferedOutputStream outStream,
+                  final String quantity) throws IOException, NumberFormatException {
+                // Write XML string only if quantity is an unsigned integer (count).
+                int count = Integer.parseUnsignedInt(quantity);
+                String xmlString = "&lt;item&gt;\n&lt;description&gt;Widget&lt;/description&gt;\n"
+                    + "&lt;price&gt;500&lt;/price&gt;\n" + "&lt;quantity&gt;" + count + "&lt;/quantity&gt;&lt;/item&gt;";
+                outStream.write(xmlString.getBytes());
+                outStream.flush();
+              }
+            }
+            </code></pre>
+            <h2 id="a5---broken-access-control">A5 - Broken Access Control<a href="#a5---broken-access-control"
+                class="anchor" aria-hidden="true">#</a></h2>
+            <p>Access control is only effective if enforced in trusted server-side code or server-less API, where the
+              attacker cannot modify the access control check or metadata.</p>
+            <ul>
+              <li>With the exception of public resources, deny by default.</li>
+              <li>Implement access control mechanisms once and re-use them throughout the application, including
+                minimizing CORS usage.</li>
+              <li>Model access controls should enforce record ownership, rather than accepting that the user can create,
+                read, update, or delete any record.</li>
+              <li>Unique application business limit requirements should be enforced by domain models.</li>
+              <li>Disable web server directory listing and ensure file metadata (e.g. .git) and backup files are not
+                present within web roots.</li>
+              <li>Log access control failures, alert admins when appropriate (e.g. repeated failures).</li>
+              <li>Rate limit API and controller access to minimize the harm from automated attack tooling.</li>
+              <li>JWT tokens should be invalidated on the server after logout.</li>
+              <li>Developers and QA staff should include functional access control unit and integration tests.</li>
+            </ul>
+            <p><strong>Role-Based Access Control (RBAC)</strong></p>
+            <ul>
+              <li>Roles must be only be transferred or delegated using strict sign-offs and procedures.</li>
+              <li>When a user changes their role to another one, the administrator must make sure that the earlier
+                access is revoked such that at any given point of time, a user is assigned to only those roles on a need
+                to know basis.</li>
+              <li>Assurance for RBAC must be carried out using strict access control reviews.</li>
+            </ul>
+            <p><strong>Discretionary Access Control (DAC)</strong></p>
+            <ul>
+              <li>Assurance while granting trusts to different user roles.</li>
+              <li>Assurance for DAC must be carried out using strict access control reviews.</li>
+            </ul>
+            <p><strong>Mandatory Access Control (MAC)</strong></p>
+            <ul>
+              <li>Classification and sensitivity assignment at an appropriate and pragmatic level</li>
+              <li>Assurance for MAC must be carried out to ensure that the classification of the objects is at the
+                appropriate level.</li>
+            </ul>
+            <p><strong>Permission Based Access Control</strong></p>
+            <ul>
+              <li>Access decisions should be made by checking if the current user has the permission associated with the
+                requested application action.</li>
+              <li>The has relationship between the user and permission may be satisfied by creating a direct
+                relationship between the user and permission (called a grant), or an indirect one.</li>
+            </ul>
+            <h3 id="missing-functional-level-access-controls">Missing Functional Level Access Controls<a
+                href="#missing-functional-level-access-controls" class="anchor" aria-hidden="true">#</a></h3>
+            <ul>
+              <li>The authentication mechanism should deny all access by default, and provide access to specific roles
+                for every function.</li>
+              <li>In a workflow based application, verify the users’ state before allowing them to access any resources.
+              </li>
+            </ul>
+            <h3 id="insecure-direct-object-references">Insecure Direct Object References<a
+                href="#insecure-direct-object-references" class="anchor" aria-hidden="true">#</a></h3>
+            <ul>
+              <li>Developers should use only one user or session for indirect object references.</li>
+              <li>It is also recommended to check the access before using a direct object reference from an untrusted
+                source.</li>
+            </ul>
+            <h2 id="a6---security-misconfiguration">A6 - Security Misconfiguration<a
+                href="#a6---security-misconfiguration" class="anchor" aria-hidden="true">#</a></h2>
+            <ul>
+              <li>A repeatable hardening process that makes it fast and easy to deploy another environment that is
+                properly locked down. Development, QA, and production environments should all be configured identically,
+                with different credentials used in each environment. This process should be automated to minimize the
+                effort required to setup a new secure environment.</li>
+              <li>A minimal platform without any unnecessary features, components, documentation, and samples. Remove or
+                do not install unused features and frameworks.</li>
+              <li>A task to review and update the configurations appropriate to all security notes, updates and patches
+                as part of the patch management process. In particular, review cloud storage permissions (e.g. S3 bucket
+                permissions).</li>
+              <li>A segmented application architecture that provides effective, secure separation between components or
+                tenants, with segmentation, containerization, or cloud security groups (ACLs).</li>
+              <li>Sending security directives to clients, e.g. Security Headers.</li>
+              <li>An automated process to verify the effectiveness of the configurations and settings in all
+                environments.</li>
+              <li>Ensure that a strong application architecture is being adopted that provides effective, secure
+                separation between components.</li>
+              <li>It can also minimize the possibility of this attack by running automated scans and doing audits
+                periodically.</li>
+            </ul>
+            <h3 id="clickjacking">Clickjacking<a href="#clickjacking" class="anchor" aria-hidden="true">#</a></h3>
+            <ul>
+              <li>Preventing the browser from loading the page in frame using the X-Frame-Options or Content Security
+                Policy (frame-ancestors) HTTP headers.</li>
+              <li>Preventing session cookies from being included when the page is loaded in a frame using the SameSite
+                cookie attribute.</li>
+              <li>Implementing JavaScript code in the page to attempt to prevent it being loaded in a frame (known as a
+                “frame-buster”).</li>
+            </ul>
+            <h2 id="a7---cross-site-scripting-xss">A7 - Cross Site Scripting (XSS)<a
+                href="#a7---cross-site-scripting-xss" class="anchor" aria-hidden="true">#</a></h2>
+            <ul>
+              <li>Implement Content Security Policy.</li>
+            </ul>
+            <pre><code>Content-Security-Policy: default-src: 'self'; script-src: 'self' static.domain.tld
+            </code></pre>
+            <ul>
+              <li>Never Insert Untrusted Data Except in Allowed Locations.</li>
+              <li>HTML Escape Before Inserting Untrusted Data into HTML Element Content. Escape the following characters
+                with HTML entity encoding to prevent switching into any execution context, such as script, style, or
+                event handlers</li>
+            </ul>
+            <pre><code> &amp; --&gt; &amp;amp;
+             &lt; --&gt; &amp;lt;
+             &gt; --&gt; &amp;gt;
+             " --&gt; &amp;quot;
+             ' --&gt; &amp;#x27;
+             / --&gt; &amp;#x2F;
+            
+            </code></pre>
+            <ul>
+              <li>Sanitize HTML Markup with a Library Designed for the Job</li>
+            </ul>
+            <p><strong><a href="https://owasp.org/www-project-java-html-sanitizer/">OWASP Java Html
+                  Sanitizer</a></strong></p>
+            <pre><code>PolicyFactory sanitizer = Sanitizers.FORMATTING.and(Sanitizers.BLOCKS);
+            String cleanResults = sanitizer.sanitize("&lt;p&gt;Hello, &lt;b&gt;World!&lt;/b&gt;");
+            </code></pre>
+            <ul>
+              <li>Use HTTPOnly cookie flag</li>
+            </ul>
+            <p><strong>Noncompliant Code</strong></p>
+            <pre><code>Cookie c = new Cookie(COOKIENAME, sensitivedata);
+            c.setHttpOnly(false);  
+            </code></pre>
+            <p><strong>Compliant Code</strong></p>
+            <pre><code>Cookie c = new Cookie(COOKIENAME, sensitivedata);
+            c.setHttpOnly(true);
+            </code></pre>
+            <ul>
+              <li>Applications that use user provided data to construct the response header should always validate the
+                data first. Validation should be based on a whitelist.</li>
+            </ul>
+            <p><strong>Noncompliant Code</strong></p>
+            <pre><code>String value = req.getParameter("value");
+            resp.addHeader("X-Header", value); //
+            </code></pre>
+            <p><strong>Compliant Code</strong></p>
+            <pre><code>String value = req.getParameter("value");
+            String whitelist = "safevalue1 safevalue2";
+            if (!whitelist.contains(value))
+                throw new IOException();
+            resp.addHeader("X-Header", value);
+            </code></pre>
+            <ul>
+              <li>Encode user provided data being reflected as output. Adjust the encoding to the output context so
+                that, for example, HTML encoding is used for HTML content, HTML attribute encoding is used for attribute
+                values, and JavaScript encoding is used for server-generated JavaScript.</li>
+            </ul>
+            <ol>
+              <li>Example 1:</li>
+            </ol>
+            <p><strong>Noncompliant Code</strong></p>
+            <pre><code>String name = req.getParameter("name");
+            PrintWriter out = resp.getWriter();
+            out.write("Hello " + name); 
+            </code></pre>
+            <p><strong>Compliant Code</strong></p>
+            <pre><code>String name = req.getParameter("name");
+            String encodedName = org.owasp.encoder.Encode.forHtml(name);
+            PrintWriter out = resp.getWriter();
+            out.write("Hello " + encodedName);
+            </code></pre>
+            <ol start="2">
+              <li>Example 2:</li>
+            </ol>
+            <p><strong>Noncompliant Code</strong></p>
+            <pre><code>String url = "https://example.com?query=" + q;
+            return url;
+            </code></pre>
+            <p><strong>Compliant Code</strong></p>
+            <pre><code>String encodedUrl = "https://example.com?query=" + Base64.getUrlEncoder().encodeToString(q.getBytes());
+            return encodedUrl;
+            </code></pre>
+            <h2 id="a8---insecure-deserialization">A8 - Insecure Deserialization<a href="#a8---insecure-deserialization"
+                class="anchor" aria-hidden="true">#</a></h2>
+            <p>The only safe architectural pattern is not to accept serialized objects from untrusted sources or to use
+              serialization mediums that only permit primitive data types. If that is not possible, consider one of more
+              of the following:</p>
+            <ul>
+              <li>Implementing integrity checks such as digital signatures on any serialized objects to prevent hostile
+                object creation or data tampering.</li>
+              <li>Enforcing strict type constraints during deserialization before object creation as the code typically
+                expects a definable set of classes. Bypasses to this technique have been demonstrated, so reliance
+                solely on this is not advisable.</li>
+              <li>Isolating and running code that deserializes in low privilege environments when possible.</li>
+              <li>Log deserialization exceptions and failures, such as where the incoming type is not the expected type,
+                or the deserialization throws exceptions.</li>
+              <li>Restricting or monitoring incoming and outgoing network connectivity from containers or servers that
+                deserialize.</li>
+              <li>Monitoring deserialization, alerting if a user deserializes constantly.</li>
+              <li>In your code, override the <code>ObjectInputStream#resolveClass()</code> method to prevent arbitrary
+                classes from being deserialized. This safe behavior can be wrapped in a library like <a
+                  href="https://github.com/ikkisoft/SerialKiller">SerialKiller</a>.</li>
+              <li>Use a safe replacement for the generic <code>readObject()</code> method as shown below. Note that this
+                addresses “billion laughs” type attacks by checking input length and number of objects deserialized.
+              </li>
+            </ul>
+            <pre><code>private final void readObject(ObjectInputStream in) throws java.io.IOException {
+                throw new java.io.IOException("Cannot be deserialized");
+            }
+            </code></pre>
+            <ul>
+              <li>Harden Your Own java.io.ObjectInputStream</li>
+            </ul>
+            <pre><code>public class LookAheadObjectInputStream extends ObjectInputStream {
+            
+                public LookAheadObjectInputStream(InputStream inputStream) throws IOException {
+                    super(inputStream);
+                }
+            
+                /**
+                * Only deserialize instances of our expected Bicycle class
+                */
+                @Override
+                protected Class&lt;?&gt; resolveClass(ObjectStreamClass desc) throws IOException, ClassNotFoundException {
+                    if (!desc.getName().equals(Bicycle.class.getName())) {
+                        throw new InvalidClassException("Unauthorized deserialization attempt", desc.getName());
+                    }
+                    return super.resolveClass(desc);
+                }
+            }
+            </code></pre>
+            <h2 id="a9---using-components-with-known-vulnerabilities">A9 - Using Components with known vulnerabilities<a
+                href="#a9---using-components-with-known-vulnerabilities" class="anchor" aria-hidden="true">#</a></h2>
+            <p>There should be a patch management process in place to:</p>
+            <ul>
+              <li>Remove unused dependencies, unnecessary features, components, files, and documentation.</li>
+              <li>Continuously inventory the versions of both client-side and server-side components (e.g. frameworks,
+                libraries) and their dependencies using tools like versions, DependencyCheck, retire.js, etc.
+                Continuously monitor sources like CVE and NVD for vulnerabilities in the components. Use software
+                composition analysis tools to automate the process. Subscribe to email alerts for security
+                vulnerabilities related to components you use.</li>
+              <li>Only obtain components from official sources over secure links. Prefer signed packages to reduce the
+                chance of including a modified, malicious component.</li>
+              <li>Monitor for libraries and components that are unmaintained or do not create security patches for older
+                versions. If patching is not possible, consider deploying a virtual patch to monitor, detect, or protect
+                against the discovered issue.</li>
+              <li>Every organization must ensure that there is an ongoing plan for monitoring, triaging, and applying
+                updates or configuration changes for the lifetime of the application or portfolio.</li>
+            </ul>
+            <h2 id="a10---insufficient-logging-and-monitoring">A10 - Insufficient Logging and Monitoring<a
+                href="#a10---insufficient-logging-and-monitoring" class="anchor" aria-hidden="true">#</a></h2>
+            <ul>
+              <li>Ensure all login, access control failures, and server-side input validation failures can be logged
+                with sufficient user context to identify suspicious or malicious accounts, and held for sufficient time
+                to allow delayed forensic analysis.</li>
+              <li>Ensure that logs are generated in a format that can be easily consumed by a centralized log management
+                solutions.</li>
+              <li>Ensure high-value transactions have an audit trail with integrity controls to prevent tampering or
+                deletion, such as append-only database tables or similar.</li>
+              <li>Establish effective monitoring and alerting such that suspicious activities are detected and responded
+                to in a timely fashion.</li>
+              <li>Establish or adopt an incident response and recovery plan, such as NIST <a
+                  href="https://csrc.nist.gov/publications/detail/sp/800-61/rev-2/final">800-61 rev 2</a> or later.
+                There are commercial and open source application protection frameworks such as OWASP AppSensor, web
+                application firewalls such as ModSecurity with the <a
+                  href="https://owasp.org/www-project-modsecurity-core-rule-set/">OWASP ModSecurity Core Rule Set</a>,
+                and log correlation software with custom dashboards and alerting.</li>
+            </ul>
+            <h2 id="cross-site-request-forgery-csrf">Cross Site Request Forgery (CSRF)<a
+                href="#cross-site-request-forgery-csrf" class="anchor" aria-hidden="true">#</a></h2>
+            <ul>
+              <li>Check if your framework has built-in CSRF protection and use it.</li>
+              <li>If framework does not have built-in CSRF protection add CSRF tokens to all state changing requests
+                (requests that cause actions on the site) and validate them on backend.</li>
+              <li>Always use SameSite Cookie Attribute for session cookies</li>
+              <li>Use custom request headers</li>
+              <li>Verify the origin with standard headers</li>
+              <li>Use double submit cookies</li>
+              <li>Consider implementing user interaction based protection for highly sensitive operations</li>
+              <li>Remember that any Cross-Site Scripting (XSS) can be used to defeat all CSRF mitigation techniques.
+              </li>
+              <li>See the OWASP XSS Prevention Cheat Sheet for detailed guidance on how to prevent XSS flaws.</li>
+              <li>Do not use GET requests for state changing operations.</li>
+              <li>CSRF can be avoided by creating a unique token in a hidden field which would be sent in the body of
+                the HTTP request rather than in an URL, which is more prone to exposure.</li>
+              <li>Forcing the user to re-authenticate or proving that they are users in order to protect CSRF. For
+                example, CAPTCHA.</li>
+            </ul>
+            <p><strong>Noncompliant Code</strong></p>
+            <pre><code>@EnableWebSecurity
+            public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
+            
+              @Override
+              protected void configure(HttpSecurity http) throws Exception {
+                http.csrf().disable(); // It will disable the CSRF protection
+              }
+            }
+            </code></pre>
+            <p><strong>Compliant Code</strong></p>
+            <pre><code>@EnableWebSecurity
+            public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
+            
+              @Override
+              protected void configure(HttpSecurity http) throws Exception {
+                // http.csrf().disable(); // By default CSRF protection is enabled
+              }
+            }
+            </code></pre>
+            <h2 id="unvalidated-redirects-and-forwards">Unvalidated Redirects and Forwards<a
+                href="#unvalidated-redirects-and-forwards" class="anchor" aria-hidden="true">#</a></h2>
+            <ul>
+              <li>Simply avoid using redirects and forwards.</li>
+              <li>If used, do not allow the URL as user input for the destination.</li>
+              <li>Where possible, have the user provide short name, ID or token which is mapped server-side to a full
+                target URL.</li>
+              <li>This provides the highest degree of protection against the attack tampering with the URL.</li>
+              <li>Be careful that this doesn’t introduce an enumeration vulnerability where a user could cycle through
+                IDs to find all possible redirect targets</li>
+              <li>If user input can’t be avoided, ensure that the supplied value is valid, appropriate for the
+                application, and is authorized for the user.</li>
+              <li>Sanitize input by creating a list of trusted URLs (lists of hosts or a regex).</li>
+              <li>This should be based on a white-list approach, rather than a blacklist.</li>
+              <li>Force all redirects to first go through a page notifying users that they are going off of your site,
+                with the destination clearly displayed, and have them click a link to confirm.</li>
+            </ul>
+            <p><strong>Noncompliant Code</strong></p>
+            <pre><code>protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
+              String location = req.getParameter("url");
+              resp.sendRedirect(location); // Noncompliant
+            }
+            </code></pre>
+            <p><strong>Compliant Code</strong></p>
+            <pre><code>protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
+                String whiteList = "http://localhost/safe";
+                String location = req.getParameter("url");
+            
+                if (!location.startsWith(whiteList))
+                  throw new IOException();
+            
+                resp.sendRedirect(location); // Compliant
+            }
+            </code></pre>
+            <h2 id="references">References<a href="#references" class="anchor" aria-hidden="true">#</a></h2>
+            <ul>
+              <li><a target="_blank"
+                  href="https://wiki.sei.cmu.edu/confluence/display/java">https://wiki.sei.cmu.edu/confluence/display/java</a>
+              </li>
+              <li><a target="_blank"
+                  href="https://rules.sonarsource.com/java/RSPEC-2078">https://rules.sonarsource.com/java/RSPEC-2078</a>
+              </li>
+              <li><a target="_blank"
+                  href="https://cheatsheetseries.owasp.org/cheatsheets">https://cheatsheetseries.owasp.org/cheatsheets</a>
+              </li>
+              <li><a target="_blank"
+                  href="https://owasp.org/www-project-top-ten/OWASP_Top_Ten_2017/">https://owasp.org/www-project-top-ten/OWASP_Top_Ten_2017/</a>
+              </li>
+              <li><a target="_blank"
+                  href="https://www.tutorialspoint.com/security_testing">https://www.tutorialspoint.com/security_testing</a>
+              </li>
+            </ul>
+            
+          </main>
+
+
+        </div>
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+
+
+  <div id="footer"></div>
+
+</body>
+
+</html>
